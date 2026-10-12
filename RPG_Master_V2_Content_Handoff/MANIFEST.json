@@ -1,0 +1,102 @@
+{
+  "pacote": "RPG Master V2 | content platform",
+  "versao": "2026-10-12",
+  "arquivos": [
+    {
+      "categoria": "aventuras",
+      "caminho": "originais/aventuras/Aventura 1.docx",
+      "bytes": 21366,
+      "sha256": "becdde25480319bfe11d8408c5b6681c207ceec727230fbfa57f09ea7789d9f0"
+    },
+    {
+      "categoria": "aventuras",
+      "caminho": "originais/aventuras/aventura 2 - Crônica de Origem – “As Sombras de Tharbad”.docx",
+      "bytes": 17913,
+      "sha256": "5ec76db2dc88307be390bb5b161fe5ef8680e732d78e9822b24c9c5fe6e80013"
+    },
+    {
+      "categoria": "aventuras",
+      "caminho": "originais/aventuras/aventura 3 - Crônica Invernal – O Azul que Caminha na Neve.docx",
+      "bytes": 20620,
+      "sha256": "3c94acd8ed3b0c526b430adae35eb437f339d107e7ff28e2d2bc20b52f2bc22b"
+    },
+    {
+      "categoria": "aventuras",
+      "caminho": "originais/aventuras/aventura 4 - Crônica dos Três - Destinos Parte I_ A Marca e a Luz.docx",
+      "bytes": 321522,
+      "sha256": "3433d25c3174f44049e79e7ebb4eb9105c18c279d3abb85c313a7dd48188747d"
+    },
+    {
+      "categoria": "aventuras",
+      "caminho": "originais/aventuras/Aventura 5.docx",
+      "bytes": 32632,
+      "sha256": "c36e993d16ed7c504c7d32b9cb11bd12b02fb26d80175651b517d60034d19dcf"
+    },
+    {
+      "categoria": "cartas",
+      "caminho": "originais/cartas/Carta Nando Serenata.docx",
+      "bytes": 7844,
+      "sha256": "ae9623458065fcfa098abbd81a9e49c5c01f8250d0e6058ec36127244366b698"
+    },
+    {
+      "categoria": "cartas",
+      "caminho": "originais/cartas/Carta Elenya.docx",
+      "bytes": 7590,
+      "sha256": "b2addf727c481b907588b560f831ef7f4f396d6a76d471477894a8344fe9255d"
+    },
+    {
+      "categoria": "cartas",
+      "caminho": "originais/cartas/Carta Calion.docx",
+      "bytes": 7755,
+      "sha256": "289c0863d43b0745d952c300e119929f9e642bb6031fe156eee3a9c4c17c2430"
+    },
+    {
+      "categoria": "itens",
+      "caminho": "originais/itens/Item Lendário - Alaúde de Húrinel, O Eco da Esperança(1).docx",
+      "bytes": 9411,
+      "sha256": "fe8b8a1edc01beede42380d7c6af7cea27ff7f01b622675e8f05d88413128609"
+    },
+    {
+      "categoria": "regras",
+      "caminho": "originais/regras/D20 Simplificado.docx",
+      "bytes": 1898933,
+      "sha256": "3b55f267bf954989a93506d4443603065858bb26dac798efb3509b8a252cd3cb"
+    },
+    {
+      "categoria": "regras",
+      "caminho": "originais/regras/Resumo Técnico.docx",
+      "bytes": 15346,
+      "sha256": "869e4f9655cf7ec7a488b294b20863d8be54f7c5d413738c999ccb8888ca89d3"
+    },
+    {
+      "categoria": "atlas",
+      "caminho": "originais/atlas/big-middle-earth-map.jpg",
+      "bytes": 1244901,
+      "sha256": "22a7ef23dcf3557edb28ba6ae4a2c05988af75ab8c2fd121c1bdd7805e26d5d9"
+    },
+    {
+      "categoria": "atlas",
+      "caminho": "originais/atlas/map-middle-earth-50.jpg",
+      "bytes": 1263970,
+      "sha256": "a0fb7d2b80977b94356065f52d69109f5220c9ba082cae92ec01d9baf88a1577"
+    },
+    {
+      "categoria": "atlas",
+      "caminho": "originais/atlas/map-middle-earth-b.jpg",
+      "bytes": 1551413,
+      "sha256": "77a5991d59e1e69ee77693783323b2f180af51c04bb19fa858140d90ef093c07"
+    },
+    {
+      "categoria": "atlas",
+      "caminho": "originais/atlas/mordor-map.jpg",
+      "bytes": 1727751,
+      "sha256": "a3f34d9bb40f5e3decafd985dc1185a4a154db8cf652cf1601bd0b60b7a552bc"
+    },
+    {
+      "categoria": "atlas",
+      "caminho": "originais/atlas/Cidades LOTR.pdf",
+      "bytes": 103129,
+      "sha256": "3462d335e80869679ba5e0e1092cb9ab9b46890cc745814a44fb2a6b626176c3"
+    }
+  ]
+}
