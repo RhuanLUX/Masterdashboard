@@ -1,0 +1,1343 @@
+{
+  "schemaVersion": 1,
+  "sourceFile": "Rodrigo(1).docx",
+  "paragraphCount": 40,
+  "blocks": [
+    {
+      "type": "paragraph",
+      "sourceParagraph": 1,
+      "style": "normal",
+      "alignment": null,
+      "text": "Nome: Calion Aranwë\n Título: “Descendente do Luz”\n Raça: Elfo\n Classe e Nível: Feiticeiro\n Antecedente: Exilado de Aman\n Jogador: Rodrigo",
+      "runs": [
+        {
+          "text": "Nome:",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        },
+        {
+          "text": " Calion Aranwë\n ",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        },
+        {
+          "text": "Título:",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        },
+        {
+          "text": " “Descendente do Luz”\n ",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        },
+        {
+          "text": "Raça:",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        },
+        {
+          "text": " Elfo\n ",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        },
+        {
+          "text": "Classe e Nível:",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        },
+        {
+          "text": " Feiticeiro\n ",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        },
+        {
+          "text": "Antecedente:",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        },
+        {
+          "text": " Exilado de Aman\n ",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        },
+        {
+          "text": "Jogador:",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        },
+        {
+          "text": " Rodrigo",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 2,
+      "style": "Heading 3",
+      "alignment": null,
+      "text": "🧮 Atributos",
+      "runs": [
+        {
+          "text": "🧮 Atributos",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "sourceTable": 1,
+      "rows": [
+        [
+          {
+            "text": "Atributo",
+            "paragraphs": [
+              {
+                "text": "Atributo",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "Atributo",
+                    "bold": true,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "Valor",
+            "paragraphs": [
+              {
+                "text": "Valor",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "Valor",
+                    "bold": true,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "Mod.",
+            "paragraphs": [
+              {
+                "text": "Mod.",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "Mod.",
+                    "bold": true,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "Salvaguarda",
+            "paragraphs": [
+              {
+                "text": "Salvaguarda",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "Salvaguarda",
+                    "bold": true,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "text": "Força (FOR)",
+            "paragraphs": [
+              {
+                "text": "Força (FOR)",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "Força (FOR)",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "8",
+            "paragraphs": [
+              {
+                "text": "8",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "8",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "-1",
+            "paragraphs": [
+              {
+                "text": "-1",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "-1",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "—",
+            "paragraphs": [
+              {
+                "text": "—",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "—",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "text": "Destreza (DES)",
+            "paragraphs": [
+              {
+                "text": "Destreza (DES)",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "Destreza (DES)",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "13 + 2",
+            "paragraphs": [
+              {
+                "text": "13 + 2",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "13 + 2",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "+3",
+            "paragraphs": [
+              {
+                "text": "+3",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "+3",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "—",
+            "paragraphs": [
+              {
+                "text": "—",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "—",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "text": "Constituição (CON)",
+            "paragraphs": [
+              {
+                "text": "Constituição (CON)",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "Constituição (CON)",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "15",
+            "paragraphs": [
+              {
+                "text": "15",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "15",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "+2",
+            "paragraphs": [
+              {
+                "text": "+2",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "+2",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "—",
+            "paragraphs": [
+              {
+                "text": "—",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "—",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "text": "Inteligência (INT)",
+            "paragraphs": [
+              {
+                "text": "Inteligência (INT)",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "Inteligência (INT)",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "12",
+            "paragraphs": [
+              {
+                "text": "12",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "12",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "+1",
+            "paragraphs": [
+              {
+                "text": "+1",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "+1",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "—",
+            "paragraphs": [
+              {
+                "text": "—",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "—",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "text": "Sabedoria (SAB)",
+            "paragraphs": [
+              {
+                "text": "Sabedoria (SAB)",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "Sabedoria (SAB)",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "12",
+            "paragraphs": [
+              {
+                "text": "12",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "12",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "+1",
+            "paragraphs": [
+              {
+                "text": "+1",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "+1",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "—",
+            "paragraphs": [
+              {
+                "text": "—",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "—",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "text": "Carisma (CAR)",
+            "paragraphs": [
+              {
+                "text": "Carisma (CAR)",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "Carisma (CAR)",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "15",
+            "paragraphs": [
+              {
+                "text": "15",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "15",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "+2",
+            "paragraphs": [
+              {
+                "text": "+2",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "+2",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "—",
+            "paragraphs": [
+              {
+                "text": "—",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "—",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 3,
+      "style": "Heading 3",
+      "alignment": null,
+      "text": "🎯 Perícias",
+      "runs": [
+        {
+          "text": "🎯 Perícias",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "sourceTable": 2,
+      "rows": [
+        [
+          {
+            "text": "Perícia",
+            "paragraphs": [
+              {
+                "text": "Perícia",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "Perícia",
+                    "bold": true,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "Modificador",
+            "paragraphs": [
+              {
+                "text": "Modificador",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "Modificador",
+                    "bold": true,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "Observações",
+            "paragraphs": [
+              {
+                "text": "Observações",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "Observações",
+                    "bold": true,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "text": "Percepção (SAB)",
+            "paragraphs": [
+              {
+                "text": "Percepção (SAB)",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "Percepção (SAB)",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "+1",
+            "paragraphs": [
+              {
+                "text": "+1",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "+1",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "Elfo",
+            "paragraphs": [
+              {
+                "text": "Elfo",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "Elfo",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "text": "Persuasão (CAR)",
+            "paragraphs": [
+              {
+                "text": "Persuasão (CAR)",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "Persuasão (CAR)",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "+2",
+            "paragraphs": [
+              {
+                "text": "+2",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "+2",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "—",
+            "paragraphs": [
+              {
+                "text": "—",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "—",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 4,
+      "style": "Heading 3",
+      "alignment": null,
+      "text": "⚔️ Combate",
+      "runs": [
+        {
+          "text": "⚔️ Combate",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 5,
+      "style": "normal",
+      "alignment": null,
+      "text": "Pontos de Vida (PV): 10",
+      "runs": [
+        {
+          "text": "Pontos de Vida (PV):",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        },
+        {
+          "text": " 10",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 6,
+      "style": "normal",
+      "alignment": null,
+      "text": "Classe de Armadura (CA): 12 + (bônus da veste leve = +1) → 13",
+      "runs": [
+        {
+          "text": "Classe de Armadura (CA):",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        },
+        {
+          "text": " 12 + (bônus da veste leve = +1) → ",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        },
+        {
+          "text": "13",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 7,
+      "style": "normal",
+      "alignment": null,
+      "text": "Inspiração: +1",
+      "runs": [
+        {
+          "text": "Inspiração:",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        },
+        {
+          "text": " +1",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 8,
+      "style": "normal",
+      "alignment": null,
+      "text": "Ataques e Conjuração: Encantado – Testes de Conjuração +1",
+      "runs": [
+        {
+          "text": "Ataques e Conjuração: ",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        },
+        {
+          "text": "Encantado – Testes de Conjuração +1",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 9,
+      "style": "Heading 3",
+      "alignment": null,
+      "text": "🎒 Equipamento & Inventário",
+      "runs": [
+        {
+          "text": "🎒 Equipamento & Inventário",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 10,
+      "style": "normal",
+      "alignment": null,
+      "text": "Veste leve (+1 CA)",
+      "runs": [
+        {
+          "text": "Veste leve (+1 CA)",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 11,
+      "style": "normal",
+      "alignment": null,
+      "text": "Espada e Machado Preto",
+      "runs": [
+        {
+          "text": "Espada e Machado Preto",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 12,
+      "style": "Heading 3",
+      "alignment": null,
+      "text": "🧝 Proficências, Características e Talentos",
+      "runs": [
+        {
+          "text": "🧝 Proficências, Características e Talentos",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 13,
+      "style": "normal",
+      "alignment": null,
+      "text": "Visão no escuro",
+      "runs": [
+        {
+          "text": "Visão no escuro",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 14,
+      "style": "normal",
+      "alignment": null,
+      "text": "Sentidos aguçados – teste de percepção",
+      "runs": [
+        {
+          "text": "Sentidos aguçados – teste de percepção",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 15,
+      "style": "normal",
+      "alignment": null,
+      "text": "Ancestralidade feérica – vantagem em resistir a encantamentos\n",
+      "runs": [
+        {
+          "text": "Ancestralidade feérica – vantagem em resistir a encantamentos\n",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 16,
+      "style": "normal",
+      "alignment": null,
+      "text": "Magias Conhecidas (nível 1)",
+      "runs": [
+        {
+          "text": "Magias Conhecidas (nível 1)",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 17,
+      "style": "normal",
+      "alignment": null,
+      "text": "Truques: Luz, Rajada Mística, Toque Gélido",
+      "runs": [
+        {
+          "text": "Truques: Luz, Rajada Mística, Toque Gélido",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 18,
+      "style": "normal",
+      "alignment": null,
+      "text": "Magias de 1º nível: Escudo Arcano, Mísseis Mágicos, Disfarçar-s",
+      "runs": [
+        {
+          "text": "Magias de 1º nível: Escudo Arcano, Mísseis Mágicos, Disfarçar-s",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 19,
+      "style": "normal",
+      "alignment": null,
+      "text": "",
+      "runs": []
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 20,
+      "style": "normal",
+      "alignment": null,
+      "text": "História",
+      "runs": [
+        {
+          "text": "História",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 21,
+      "style": "normal",
+      "alignment": null,
+      "text": "",
+      "runs": []
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 22,
+      "style": "normal",
+      "alignment": null,
+      "text": "Os ventos que sopram das Montanhas Sombrias trazem frio e silêncio.",
+      "runs": [
+        {
+          "text": "Os ventos que sopram das Montanhas Sombrias trazem frio e silêncio.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 23,
+      "style": "normal",
+      "alignment": null,
+      "text": "As antigas estradas dos reinos do norte estão quase desertas, cruzadas apenas por viajantes solitários e por aqueles que não têm mais lar.",
+      "runs": [
+        {
+          "text": "As antigas estradas dos reinos do norte estão quase desertas, cruzadas apenas por viajantes solitários e por aqueles que não têm mais lar.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 24,
+      "style": "normal",
+      "alignment": null,
+      "text": "Entre eles caminha Calion, um elfo noldor de longos cabelos negros e olhar profundo como o céu sem estrelas — um dos últimos herdeiros da Casa de Fingolfin.",
+      "runs": [
+        {
+          "text": "Entre eles caminha Calion, um elfo noldor de longos cabelos negros e olhar profundo como o céu sem estrelas — um dos últimos herdeiros da Casa de Fingolfin.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 25,
+      "style": "normal",
+      "alignment": null,
+      "text": "Nos dias imortais de Aman, antes da queda das Duas Árvores, Calion foi um estudioso e artesão da luz.",
+      "runs": [
+        {
+          "text": "Nos dias imortais de Aman, antes da queda das Duas Árvores, Calion foi um estudioso e artesão da luz.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 26,
+      "style": "normal",
+      "alignment": null,
+      "text": "Seu nome, Calion, significa “Filho da Luz Dourada”, dado por sua mãe em homenagem a Laurelin, a Árvore do Sol.",
+      "runs": [
+        {
+          "text": "Seu nome, Calion, significa “Filho da Luz Dourada”, dado por sua mãe em homenagem a Laurelin, a Árvore do Sol.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 27,
+      "style": "normal",
+      "alignment": null,
+      "text": "Ele testemunhou o orgulho e a beleza de Fëanor, a rebelião dos Noldor e, com relutância, seguiu Fingolfin através do gelo de Helcaraxë — um ato de lealdade que selou seu exílio eterno.",
+      "runs": [
+        {
+          "text": "Ele testemunhou o orgulho e a beleza de Fëanor, a rebelião dos Noldor e, com relutância, seguiu Fingolfin através do gelo de Helcaraxë — um ato de lealdade que selou seu exílio eterno.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 28,
+      "style": "normal",
+      "alignment": null,
+      "text": "Nas eras seguintes, Calion lutou nas guerras contra Morgoth, viu o brilho das Silmarils desaparecer e os reinos élficos se tornarem apenas lembranças.",
+      "runs": [
+        {
+          "text": "Nas eras seguintes, Calion lutou nas guerras contra Morgoth, viu o brilho das Silmarils desaparecer e os reinos élficos se tornarem apenas lembranças.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 29,
+      "style": "normal",
+      "alignment": null,
+      "text": "Quando o mar se ergueu para engolir Beleriand, ele sobreviveu — mas algo de sua alma ficou submerso para sempre.",
+      "runs": [
+        {
+          "text": "Quando o mar se ergueu para engolir Beleriand, ele sobreviveu — mas algo de sua alma ficou submerso para sempre.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 30,
+      "style": "normal",
+      "alignment": null,
+      "text": "Agora vive em Lindon, entre as ruínas do esplendor antigo, um erudito que fala pouco e observa muito.",
+      "runs": [
+        {
+          "text": "Agora vive em Lindon, entre as ruínas do esplendor antigo, um erudito que fala pouco e observa muito.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 31,
+      "style": "normal",
+      "alignment": null,
+      "text": "Mas o mundo muda outra vez.",
+      "runs": [
+        {
+          "text": "Mas o mundo muda outra vez.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 32,
+      "style": "normal",
+      "alignment": null,
+      "text": "Os reinos dos homens estão inquietos, o comércio rareia e as sombras se alongam nas fronteiras.",
+      "runs": [
+        {
+          "text": "Os reinos dos homens estão inquietos, o comércio rareia e as sombras se alongam nas fronteiras.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 33,
+      "style": "normal",
+      "alignment": null,
+      "text": "Dizem que um rei humano enviou um chamado aos povos livres — uma missão para levar um artefato sagrado através das montanhas até as forjas dos anões.",
+      "runs": [
+        {
+          "text": "Dizem que um rei humano enviou um chamado aos povos livres — uma missão para levar um artefato sagrado através das montanhas até as forjas dos anões.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 34,
+      "style": "normal",
+      "alignment": null,
+      "text": "Poucos atenderam.",
+      "runs": [
+        {
+          "text": "Poucos atenderam.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 35,
+      "style": "normal",
+      "alignment": null,
+      "text": "Calion, porém, ouviu o eco desse chamado como se fosse o murmúrio distante das Árvores de Aman.",
+      "runs": [
+        {
+          "text": "Calion, porém, ouviu o eco desse chamado como se fosse o murmúrio distante das Árvores de Aman.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 36,
+      "style": "normal",
+      "alignment": null,
+      "text": "Ele parte não por glória, mas por esperança.",
+      "runs": [
+        {
+          "text": "Ele parte não por glória, mas por esperança.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 37,
+      "style": "normal",
+      "alignment": null,
+      "text": "Talvez, entre os ecos dos antigos reinos, encontre algum vestígio da luz que perdeu — ou algo que o aproxime da redenção dos Noldor.",
+      "runs": [
+        {
+          "text": "Talvez, entre os ecos dos antigos reinos, encontre algum vestígio da luz que perdeu — ou algo que o aproxime da redenção dos Noldor.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 38,
+      "style": "normal",
+      "alignment": null,
+      "text": "Seu poder vem das sombras, mas nelas brilha a lembrança do ouro de Laurelin.",
+      "runs": [
+        {
+          "text": "Seu poder vem das sombras, mas nelas brilha a lembrança do ouro de Laurelin.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 39,
+      "style": "normal",
+      "alignment": null,
+      "text": "",
+      "runs": []
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 40,
+      "style": "normal",
+      "alignment": null,
+      "text": "Enquanto as estrelas ainda dançarem sobre as terras mortais, Calion, o Filho da Luz Dourada, seguirá seu caminho — buscando não apenas a luz do mundo, mas a que sobrevive em seu coração.",
+      "runs": [
+        {
+          "text": "Enquanto as estrelas ainda dançarem sobre as terras mortais, Calion, o Filho da Luz Dourada, seguirá seu caminho — buscando não apenas a luz do mundo, mas a que sobrevive em seu coração.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+# Arquivos de checkpoint e pacotes redundantes; a aplicação usa vendor/dice-box/package/.
+docs/checkpoint-*.zip
+vendor/*.tgz
+
+# Artefatos locais.
+*.log
+.DS_Store
+Thumbs.db

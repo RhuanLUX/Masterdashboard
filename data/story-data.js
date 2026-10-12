@@ -1,0 +1,16872 @@
+window.FANGORN_STORY={
+  "schemaVersion": 1,
+  "sourceFile": "Aventura 5.docx",
+  "title": "CRÔNICA DOS TRÊS DESTINOS",
+  "subtitle": "Parte II: A Floresta que Lembra",
+  "campaign": "História 5",
+  "sourceParagraphs": 1058,
+  "blocks": [
+    {
+      "type": "paragraph",
+      "sourceParagraph": 1,
+      "style": "Heading 1",
+      "alignment": null,
+      "text": "CRÔNICA DOS TRÊS DESTINOS",
+      "runs": [
+        {
+          "text": "CRÔNICA DOS TRÊS DESTINOS",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 2,
+      "style": "Heading 2",
+      "alignment": null,
+      "text": "Parte II: A Floresta que Lembra",
+      "runs": [
+        {
+          "text": "Parte II: A Floresta que Lembra",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 3,
+      "style": "normal",
+      "alignment": null,
+      "text": "Local: Floresta de Fangorn\nPersonagens: Elenya, Calion, Nando Serenata\nCompanheiro introduzido: o Anão Caolho e seu javali de guerra\nNível inicial: 4\nNível ao final: 5\nDuração estimada: 4h30 a 5h30",
+      "runs": [
+        {
+          "text": "Local:",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        },
+        {
+          "text": " Floresta de Fangorn\n",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        },
+        {
+          "text": "Personagens:",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        },
+        {
+          "text": " Elenya, Calion, Nando Serenata\n",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        },
+        {
+          "text": "Companheiro introduzido:",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        },
+        {
+          "text": " o Anão Caolho e seu javali de guerra\n",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        },
+        {
+          "text": "Nível inicial:",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        },
+        {
+          "text": " 4\n",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        },
+        {
+          "text": "Nível ao final:",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        },
+        {
+          "text": " 5\n",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        },
+        {
+          "text": "Duração estimada:",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        },
+        {
+          "text": " 4h30 a 5h30",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 4,
+      "style": "Heading 1",
+      "alignment": null,
+      "text": "MECÂNICA ESPECIAL DA SESSÃO",
+      "runs": [
+        {
+          "text": "MECÂNICA ESPECIAL DA SESSÃO",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 5,
+      "style": "Heading 2",
+      "alignment": null,
+      "text": "Medo, Perseverança e Esperança",
+      "runs": [
+        {
+          "text": "Medo, Perseverança e Esperança",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 6,
+      "style": "normal",
+      "alignment": null,
+      "text": "Fangorn não precisa utilizar uma magia tradicional para causar medo.",
+      "runs": [
+        {
+          "text": "Fangorn não precisa utilizar uma magia tradicional para causar medo.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 7,
+      "style": "normal",
+      "alignment": null,
+      "text": "Existe algo mais antigo naquela floresta.",
+      "runs": [
+        {
+          "text": "Existe algo mais antigo naquela floresta.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 8,
+      "style": "normal",
+      "alignment": null,
+      "text": "A sensação de que as árvores estavam ali antes de qualquer estrada, qualquer cidade e qualquer reino humano. E que continuarão ali quando todas essas coisas desaparecerem.",
+      "runs": [
+        {
+          "text": "A sensação de que as árvores estavam ali antes de qualquer estrada, qualquer cidade e qualquer reino humano. E que continuarão ali quando todas essas coisas desaparecerem.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 9,
+      "style": "normal",
+      "alignment": null,
+      "text": "Durante esta sessão, alguns momentos pedirão um Teste de Espírito.",
+      "runs": [
+        {
+          "text": "Durante esta sessão, alguns momentos pedirão um ",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        },
+        {
+          "text": "Teste de Espírito",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        },
+        {
+          "text": ".",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 10,
+      "style": "normal",
+      "alignment": null,
+      "text": "O personagem rola:",
+      "runs": [
+        {
+          "text": "O personagem rola:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 11,
+      "style": "normal",
+      "alignment": null,
+      "text": "1d20 + Sabedoria ou Carisma",
+      "runs": [
+        {
+          "text": "1d20 + Sabedoria ou Carisma",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 12,
+      "style": "normal",
+      "alignment": null,
+      "text": "O jogador escolhe qual atributo representa melhor a maneira como seu personagem resiste naquele momento.",
+      "runs": [
+        {
+          "text": "O jogador escolhe qual atributo representa melhor a maneira como seu personagem resiste naquele momento.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 13,
+      "style": "normal",
+      "alignment": null,
+      "text": "Itens lendários, habilidades ou efeitos específicos contra medo podem conceder vantagem quando fizer sentido.",
+      "runs": [
+        {
+          "text": "Itens lendários, habilidades ou efeitos específicos contra medo podem conceder vantagem quando fizer sentido.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 14,
+      "style": "Heading 3",
+      "alignment": null,
+      "text": "Abalo",
+      "runs": [
+        {
+          "text": "Abalo",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 15,
+      "style": "normal",
+      "alignment": null,
+      "text": "Quando um personagem falhar em determinados Testes de Espírito, recebe 1 ponto de Abalo.",
+      "runs": [
+        {
+          "text": "Quando um personagem falhar em determinados Testes de Espírito, recebe 1 ponto de Abalo.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 16,
+      "style": "normal",
+      "alignment": null,
+      "text": "1 Abalo: efeito puramente narrativo. Tremores, insegurança, sensação de estar sendo observado.",
+      "runs": [
+        {
+          "text": "1 Abalo:",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        },
+        {
+          "text": " efeito puramente narrativo. Tremores, insegurança, sensação de estar sendo observado.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 17,
+      "style": "normal",
+      "alignment": null,
+      "text": "2 Abalos: -1 no próximo teste importante.",
+      "runs": [
+        {
+          "text": "2 Abalos:",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        },
+        {
+          "text": " -1 no próximo teste importante.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 18,
+      "style": "normal",
+      "alignment": null,
+      "text": "3 Abalos: desvantagem na primeira ação quando uma ameaça real surgir.",
+      "runs": [
+        {
+          "text": "3 Abalos:",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        },
+        {
+          "text": " desvantagem na primeira ação quando uma ameaça real surgir.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 19,
+      "style": "normal",
+      "alignment": null,
+      "text": "Os pontos desaparecem quando o personagem tem um momento real de segurança ou ao final da sessão.",
+      "runs": [
+        {
+          "text": "Os pontos desaparecem quando o personagem tem um momento real de segurança ou ao final da sessão.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 20,
+      "style": "Heading 3",
+      "alignment": null,
+      "text": "Esperança",
+      "runs": [
+        {
+          "text": "Esperança",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 21,
+      "style": "normal",
+      "alignment": null,
+      "text": "Um personagem pode receber 1 ponto de Esperança quando:",
+      "runs": [
+        {
+          "text": "Um personagem pode receber 1 ponto de Esperança quando:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 22,
+      "style": "normal",
+      "alignment": null,
+      "text": "protege outro personagem mesmo se colocando em risco;",
+      "runs": [
+        {
+          "text": "protege outro personagem mesmo se colocando em risco;",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 23,
+      "style": "normal",
+      "alignment": null,
+      "text": "continua apesar de uma falha importante;",
+      "runs": [
+        {
+          "text": "continua apesar de uma falha importante;",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 24,
+      "style": "normal",
+      "alignment": null,
+      "text": "ajuda um companheiro que sucumbiu ao medo;",
+      "runs": [
+        {
+          "text": "ajuda um companheiro que sucumbiu ao medo;",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 25,
+      "style": "normal",
+      "alignment": null,
+      "text": "mantém-se fiel a uma decisão importante do próprio personagem;",
+      "runs": [
+        {
+          "text": "mantém-se fiel a uma decisão importante do próprio personagem;",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 26,
+      "style": "normal",
+      "alignment": null,
+      "text": "ou escolhe alguém do grupo em vez de poder, vingança ou segurança.",
+      "runs": [
+        {
+          "text": "ou escolhe alguém do grupo em vez de poder, vingança ou segurança.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 27,
+      "style": "normal",
+      "alignment": null,
+      "text": "Máximo de 2 pontos de Esperança por personagem.",
+      "runs": [
+        {
+          "text": "Máximo de ",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        },
+        {
+          "text": "2 pontos de Esperança por personagem",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        },
+        {
+          "text": ".",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 28,
+      "style": "normal",
+      "alignment": null,
+      "text": "Um ponto pode ser gasto para:",
+      "runs": [
+        {
+          "text": "Um ponto pode ser gasto para:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 29,
+      "style": "normal",
+      "alignment": null,
+      "text": "rerrolar um d20 falho",
+      "runs": [
+        {
+          "text": "rerrolar um d20 falho",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 30,
+      "style": "normal",
+      "alignment": null,
+      "text": "ou",
+      "runs": [
+        {
+          "text": "ou",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 31,
+      "style": "normal",
+      "alignment": null,
+      "text": "dar +1d6 ao teste de outro personagem depois de uma falha.",
+      "runs": [
+        {
+          "text": "dar +1d6 ao teste de outro personagem depois de uma falha.",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 32,
+      "style": "normal",
+      "alignment": null,
+      "text": "O objetivo é simples:",
+      "runs": [
+        {
+          "text": "O objetivo é simples:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 33,
+      "style": "normal",
+      "alignment": null,
+      "text": "falhar não significa ser fraco.",
+      "runs": [
+        {
+          "text": "falhar não significa ser fraco.",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 34,
+      "style": "normal",
+      "alignment": null,
+      "text": "Às vezes, perseverança significa apenas continuar caminhando.",
+      "runs": [
+        {
+          "text": "Às vezes, perseverança significa apenas continuar caminhando.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 35,
+      "style": "Heading 1",
+      "alignment": null,
+      "text": "ATO I A FLORESTA FECHA-SE",
+      "runs": [
+        {
+          "text": "ATO I A FLORESTA FECHA-SE",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 36,
+      "style": "Heading 3",
+      "alignment": null,
+      "text": "Considerações do Ato",
+      "runs": [
+        {
+          "text": "Considerações do Ato",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 37,
+      "style": "normal",
+      "alignment": null,
+      "text": "Este ato apresenta Fangorn como um local antigo, opressor e imprevisível. Barbárvore ainda acompanha os personagens, mas não será um protetor. Haverá um combate logo no início para mostrar que até criaturas hostis têm medo da floresta. Os jogadores devem perceber rapidamente que, dentro de Fangorn, os inimigos não são necessariamente aquilo que mais deveria preocupá-los.",
+      "runs": [
+        {
+          "text": "Este ato apresenta Fangorn como um local antigo, opressor e imprevisível. Barbárvore ainda acompanha os personagens, mas não será um protetor. Haverá um combate logo no início para mostrar que até criaturas hostis têm medo da floresta. Os jogadores devem perceber rapidamente que, dentro de Fangorn, os inimigos não são necessariamente aquilo que mais deveria preocupá-los.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 38,
+      "style": "normal",
+      "alignment": "CENTER (1)",
+      "text": "–//––//––//––//––//––//––//––",
+      "runs": [
+        {
+          "text": "–//––//––//––//––//––//––//––",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 39,
+      "style": "normal",
+      "alignment": null,
+      "text": "Barbárvore caminha à frente.",
+      "runs": [
+        {
+          "text": "Barbárvore caminha à frente.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 40,
+      "style": "normal",
+      "alignment": null,
+      "text": "Não existe uma estrada.",
+      "runs": [
+        {
+          "text": "Não existe uma estrada.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 41,
+      "style": "normal",
+      "alignment": null,
+      "text": "Não existe sequer uma trilha.",
+      "runs": [
+        {
+          "text": "Não existe sequer uma trilha.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 42,
+      "style": "normal",
+      "alignment": null,
+      "text": "As próprias árvores parecem conceder passagem à criatura.",
+      "runs": [
+        {
+          "text": "As próprias árvores parecem conceder passagem à criatura.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 43,
+      "style": "normal",
+      "alignment": null,
+      "text": "Raízes lentamente deslizam pela terra.",
+      "runs": [
+        {
+          "text": "Raízes lentamente deslizam pela terra.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 44,
+      "style": "normal",
+      "alignment": null,
+      "text": "Galhos elevados se afastam.",
+      "runs": [
+        {
+          "text": "Galhos elevados se afastam.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 45,
+      "style": "normal",
+      "alignment": null,
+      "text": "O grupo segue.",
+      "runs": [
+        {
+          "text": "O grupo segue.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 46,
+      "style": "normal",
+      "alignment": null,
+      "text": "Depois de alguns minutos, fica difícil determinar se ainda estão caminhando na mesma direção.",
+      "runs": [
+        {
+          "text": "Depois de alguns minutos, fica difícil determinar se ainda estão caminhando na mesma direção.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 47,
+      "style": "normal",
+      "alignment": null,
+      "text": "Depois de meia hora, torna-se impossível.",
+      "runs": [
+        {
+          "text": "Depois de meia hora, torna-se impossível.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 48,
+      "style": "normal",
+      "alignment": null,
+      "text": "A luz começa a diminuir.",
+      "runs": [
+        {
+          "text": "A luz começa a diminuir.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 49,
+      "style": "normal",
+      "alignment": null,
+      "text": "Não porque o sol esteja se pondo.",
+      "runs": [
+        {
+          "text": "Não porque o sol esteja se pondo.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 50,
+      "style": "normal",
+      "alignment": null,
+      "text": "As copas das árvores simplesmente começam a crescer umas sobre as outras.",
+      "runs": [
+        {
+          "text": "As copas das árvores simplesmente começam a crescer umas sobre as outras.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 51,
+      "style": "normal",
+      "alignment": null,
+      "text": "Leia:",
+      "runs": [
+        {
+          "text": "Leia:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 52,
+      "style": "normal",
+      "alignment": null,
+      "text": "Conforme vocês avançam, as árvores tornam-se maiores.",
+      "runs": [
+        {
+          "text": "Conforme vocês avançam, as árvores tornam-se maiores.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 53,
+      "style": "normal",
+      "alignment": null,
+      "text": "Algumas possuem troncos tão largos que quatro homens de mãos dadas não conseguiriam cercá-las.",
+      "runs": [
+        {
+          "text": "Algumas possuem troncos tão largos que quatro homens de mãos dadas não conseguiriam cercá-las.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 54,
+      "style": "normal",
+      "alignment": null,
+      "text": "Raízes atravessam o chão como enormes serpentes petrificadas.",
+      "runs": [
+        {
+          "text": "Raízes atravessam o chão como enormes serpentes petrificadas.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 55,
+      "style": "normal",
+      "alignment": null,
+      "text": "Há árvores cobertas por musgo tão velho que pequenas flores crescem sobre ele.",
+      "runs": [
+        {
+          "text": "Há árvores cobertas por musgo tão velho que pequenas flores crescem sobre ele.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 56,
+      "style": "normal",
+      "alignment": null,
+      "text": "Outras possuem cascas abertas que lembram cicatrizes.",
+      "runs": [
+        {
+          "text": "Outras possuem cascas abertas que lembram cicatrizes.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 57,
+      "style": "normal",
+      "alignment": null,
+      "text": "Algumas parecem retorcidas pelo peso dos séculos.",
+      "runs": [
+        {
+          "text": "Algumas parecem retorcidas pelo peso dos séculos.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 58,
+      "style": "normal",
+      "alignment": null,
+      "text": "E existe algo particularmente estranho.",
+      "runs": [
+        {
+          "text": "E existe algo particularmente estranho.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 59,
+      "style": "normal",
+      "alignment": null,
+      "text": "Quando vocês olham diretamente para uma árvore, ela é apenas uma árvore.",
+      "runs": [
+        {
+          "text": "Quando vocês olham diretamente para uma árvore, ela é apenas uma árvore.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 60,
+      "style": "normal",
+      "alignment": null,
+      "text": "Quando desviam os olhos...",
+      "runs": [
+        {
+          "text": "Quando desviam os olhos...",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 61,
+      "style": "normal",
+      "alignment": null,
+      "text": "por um instante vocês têm certeza de que alguma coisa mudou.",
+      "runs": [
+        {
+          "text": "por um instante vocês têm certeza de que alguma coisa mudou.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 62,
+      "style": "normal",
+      "alignment": null,
+      "text": "Espere alguns segundos.",
+      "runs": [
+        {
+          "text": "Espere alguns segundos.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 63,
+      "style": "normal",
+      "alignment": null,
+      "text": "Continue:",
+      "runs": [
+        {
+          "text": "Continue:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 64,
+      "style": "normal",
+      "alignment": null,
+      "text": "Depois vocês percebem outra coisa.",
+      "runs": [
+        {
+          "text": "Depois vocês percebem outra coisa.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 65,
+      "style": "normal",
+      "alignment": null,
+      "text": "Não existem pássaros.",
+      "runs": [
+        {
+          "text": "Não existem pássaros.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 66,
+      "style": "normal",
+      "alignment": null,
+      "text": "Não existem insetos.",
+      "runs": [
+        {
+          "text": "Não existem insetos.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 67,
+      "style": "normal",
+      "alignment": null,
+      "text": "Não existe vento.",
+      "runs": [
+        {
+          "text": "Não existe vento.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 68,
+      "style": "normal",
+      "alignment": null,
+      "text": "Apenas os passos de vocês.",
+      "runs": [
+        {
+          "text": "Apenas os passos de vocês.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 69,
+      "style": "normal",
+      "alignment": null,
+      "text": "E os passos lentos de Barbárvore.",
+      "runs": [
+        {
+          "text": "E os passos lentos de Barbárvore.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 70,
+      "style": "Heading 3",
+      "alignment": null,
+      "text": "Teste de Espírito",
+      "runs": [
+        {
+          "text": "Teste de Espírito",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 71,
+      "style": "normal",
+      "alignment": null,
+      "text": "CD 12",
+      "runs": [
+        {
+          "text": "CD 12",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 72,
+      "style": "normal",
+      "alignment": null,
+      "text": "Quem falhar recebe 1 Abalo.",
+      "runs": [
+        {
+          "text": "Quem falhar recebe 1 Abalo.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 73,
+      "style": "normal",
+      "alignment": null,
+      "text": "Não explique imediatamente o efeito.",
+      "runs": [
+        {
+          "text": "Não explique imediatamente o efeito.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 74,
+      "style": "normal",
+      "alignment": null,
+      "text": "Apenas descreva individualmente.",
+      "runs": [
+        {
+          "text": "Apenas descreva individualmente.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 75,
+      "style": "normal",
+      "alignment": null,
+      "text": "Para Elenya:",
+      "runs": [
+        {
+          "text": "Para Elenya:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 76,
+      "style": "normal",
+      "alignment": null,
+      "text": "Por um instante, você sente alguma coisa observando suas costas.",
+      "runs": [
+        {
+          "text": "Por um instante, você sente alguma coisa observando suas costas.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 77,
+      "style": "normal",
+      "alignment": null,
+      "text": "Quando se vira, não há ninguém.",
+      "runs": [
+        {
+          "text": "Quando se vira, não há ninguém.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 78,
+      "style": "normal",
+      "alignment": null,
+      "text": "Mas uma árvore possui uma fenda na casca exatamente na altura de seus olhos.",
+      "runs": [
+        {
+          "text": "Mas uma árvore possui uma fenda na casca exatamente na altura de seus olhos.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 79,
+      "style": "normal",
+      "alignment": null,
+      "text": "Para Calion:",
+      "runs": [
+        {
+          "text": "Para Calion:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 80,
+      "style": "normal",
+      "alignment": null,
+      "text": "Você já viu florestas antigas.",
+      "runs": [
+        {
+          "text": "Você já viu florestas antigas.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 81,
+      "style": "normal",
+      "alignment": null,
+      "text": "Já viu árvores que existiam antes de muitos reinos.",
+      "runs": [
+        {
+          "text": "Já viu árvores que existiam antes de muitos reinos.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 82,
+      "style": "normal",
+      "alignment": null,
+      "text": "Mas existe alguma coisa aqui que incomoda até sua memória.",
+      "runs": [
+        {
+          "text": "Mas existe alguma coisa aqui que incomoda até sua memória.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 83,
+      "style": "normal",
+      "alignment": null,
+      "text": "Algumas destas árvores parecem mais antigas do que deveriam ser.",
+      "runs": [
+        {
+          "text": "Algumas destas árvores parecem mais antigas do que deveriam ser.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 84,
+      "style": "normal",
+      "alignment": null,
+      "text": "Para Nando Serenata:",
+      "runs": [
+        {
+          "text": "Para Nando Serenata:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 85,
+      "style": "normal",
+      "alignment": null,
+      "text": "Você percebe pequenos sons.",
+      "runs": [
+        {
+          "text": "Você percebe pequenos sons.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 86,
+      "style": "normal",
+      "alignment": null,
+      "text": "Madeira estalando.",
+      "runs": [
+        {
+          "text": "Madeira estalando.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 87,
+      "style": "normal",
+      "alignment": null,
+      "text": "Folhas se tocando.",
+      "runs": [
+        {
+          "text": "Folhas se tocando.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 88,
+      "style": "normal",
+      "alignment": null,
+      "text": "Galhos flexionando.",
+      "runs": [
+        {
+          "text": "Galhos flexionando.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 89,
+      "style": "normal",
+      "alignment": null,
+      "text": "Existe um ritmo.",
+      "runs": [
+        {
+          "text": "Existe um ritmo.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 90,
+      "style": "normal",
+      "alignment": null,
+      "text": "Mas toda vez que você tenta acompanhá-lo, ele muda.",
+      "runs": [
+        {
+          "text": "Mas toda vez que você tenta acompanhá-lo, ele muda.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 91,
+      "style": "normal",
+      "alignment": null,
+      "text": "Alguns minutos depois:",
+      "runs": [
+        {
+          "text": "Alguns minutos depois:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 92,
+      "style": "normal",
+      "alignment": null,
+      "text": "CRAC.",
+      "runs": [
+        {
+          "text": "CRAC.",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 93,
+      "style": "normal",
+      "alignment": null,
+      "text": "Um galho quebra atrás do grupo.",
+      "runs": [
+        {
+          "text": "Um galho quebra atrás do grupo.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 94,
+      "style": "normal",
+      "alignment": null,
+      "text": "Todos se viram.",
+      "runs": [
+        {
+          "text": "Todos se viram.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 95,
+      "style": "normal",
+      "alignment": null,
+      "text": "A passagem por onde entraram desapareceu.",
+      "runs": [
+        {
+          "text": "A passagem por onde entraram desapareceu.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 96,
+      "style": "normal",
+      "alignment": null,
+      "text": "Não existe trilha.",
+      "runs": [
+        {
+          "text": "Não existe trilha.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 97,
+      "style": "normal",
+      "alignment": null,
+      "text": "Não existe clareira.",
+      "runs": [
+        {
+          "text": "Não existe clareira.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 98,
+      "style": "normal",
+      "alignment": null,
+      "text": "Apenas árvores.",
+      "runs": [
+        {
+          "text": "Apenas árvores.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 99,
+      "style": "normal",
+      "alignment": null,
+      "text": "Se questionarem Barbárvore:",
+      "runs": [
+        {
+          "text": "Se questionarem Barbárvore:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 100,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Hmmm...”",
+      "runs": [
+        {
+          "text": "“Hmmm...”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 101,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Fangorn não gosta muito de caminhos.”",
+      "runs": [
+        {
+          "text": "“Fangorn não gosta muito de caminhos.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 102,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Caminhos dizem às criaturas para onde elas devem ir.”",
+      "runs": [
+        {
+          "text": "“Caminhos dizem às criaturas para onde elas devem ir.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 103,
+      "style": "normal",
+      "alignment": null,
+      "text": "Ele continua andando.",
+      "runs": [
+        {
+          "text": "Ele continua andando.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 104,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Árvores preferem decidir.”",
+      "runs": [
+        {
+          "text": "“Árvores preferem decidir.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 105,
+      "style": "Heading 2",
+      "alignment": null,
+      "text": "O primeiro grito",
+      "runs": [
+        {
+          "text": "O primeiro grito",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 106,
+      "style": "normal",
+      "alignment": null,
+      "text": "Mais alguns minutos.",
+      "runs": [
+        {
+          "text": "Mais alguns minutos.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 107,
+      "style": "normal",
+      "alignment": null,
+      "text": "Um grito surge à frente.",
+      "runs": [
+        {
+          "text": "Um grito surge à frente.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 108,
+      "style": "normal",
+      "alignment": null,
+      "text": "Humano?",
+      "runs": [
+        {
+          "text": "Humano?",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 109,
+      "style": "normal",
+      "alignment": null,
+      "text": "Orc?",
+      "runs": [
+        {
+          "text": "Orc?",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 110,
+      "style": "normal",
+      "alignment": null,
+      "text": "É difícil dizer.",
+      "runs": [
+        {
+          "text": "É difícil dizer.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 111,
+      "style": "normal",
+      "alignment": null,
+      "text": "Outro grito.",
+      "runs": [
+        {
+          "text": "Outro grito.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 112,
+      "style": "normal",
+      "alignment": null,
+      "text": "Depois:",
+      "runs": [
+        {
+          "text": "Depois:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 113,
+      "style": "normal",
+      "alignment": null,
+      "text": "passos.",
+      "runs": [
+        {
+          "text": "passos.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 114,
+      "style": "normal",
+      "alignment": null,
+      "text": "Muitos.",
+      "runs": [
+        {
+          "text": "Muitos.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 115,
+      "style": "normal",
+      "alignment": null,
+      "text": "Algo está correndo na direção do grupo.",
+      "runs": [
+        {
+          "text": "Algo está correndo na direção do grupo.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 116,
+      "style": "normal",
+      "alignment": null,
+      "text": "Barbárvore para.",
+      "runs": [
+        {
+          "text": "Barbárvore para.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 117,
+      "style": "normal",
+      "alignment": null,
+      "text": "Não assume posição de combate.",
+      "runs": [
+        {
+          "text": "Não assume posição de combate.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 118,
+      "style": "normal",
+      "alignment": null,
+      "text": "Não parece preocupado.",
+      "runs": [
+        {
+          "text": "Não parece preocupado.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 119,
+      "style": "normal",
+      "alignment": null,
+      "text": "Uma voz grita de dentro da mata:",
+      "runs": [
+        {
+          "text": "Uma voz grita de dentro da mata:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 120,
+      "style": "normal",
+      "alignment": null,
+      "text": "“NÃO OLHE PARA ELAS!”",
+      "runs": [
+        {
+          "text": "“NÃO OLHE PARA ELAS!”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 121,
+      "style": "normal",
+      "alignment": null,
+      "text": "Seis figuras atravessam violentamente os arbustos.",
+      "runs": [
+        {
+          "text": "Seis figuras atravessam violentamente os arbustos.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 122,
+      "style": "normal",
+      "alignment": null,
+      "text": "Quatro goblins.",
+      "runs": [
+        {
+          "text": "Quatro goblins.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 123,
+      "style": "normal",
+      "alignment": null,
+      "text": "Dois orcs.",
+      "runs": [
+        {
+          "text": "Dois orcs.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 124,
+      "style": "normal",
+      "alignment": null,
+      "text": "Eles estão machucados.",
+      "runs": [
+        {
+          "text": "Eles estão machucados.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 125,
+      "style": "normal",
+      "alignment": null,
+      "text": "Um goblin perdeu parte da orelha.",
+      "runs": [
+        {
+          "text": "Um goblin perdeu parte da orelha.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 126,
+      "style": "normal",
+      "alignment": null,
+      "text": "Um dos orcs possui vários arranhões profundos nas costas.",
+      "runs": [
+        {
+          "text": "Um dos orcs possui vários arranhões profundos nas costas.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 127,
+      "style": "normal",
+      "alignment": null,
+      "text": "Todos parecem aterrorizados.",
+      "runs": [
+        {
+          "text": "Todos parecem aterrorizados.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 128,
+      "style": "normal",
+      "alignment": null,
+      "text": "Eles percebem os aventureiros.",
+      "runs": [
+        {
+          "text": "Eles percebem os aventureiros.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 129,
+      "style": "normal",
+      "alignment": null,
+      "text": "Param.",
+      "runs": [
+        {
+          "text": "Param.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 130,
+      "style": "normal",
+      "alignment": null,
+      "text": "Um dos goblins olha para trás.",
+      "runs": [
+        {
+          "text": "Um dos goblins olha para trás.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 131,
+      "style": "normal",
+      "alignment": null,
+      "text": "Depois para o grupo.",
+      "runs": [
+        {
+          "text": "Depois para o grupo.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 132,
+      "style": "normal",
+      "alignment": null,
+      "text": "Depois para Barbárvore.",
+      "runs": [
+        {
+          "text": "Depois para Barbárvore.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 133,
+      "style": "normal",
+      "alignment": null,
+      "text": "O orc maior grita:",
+      "runs": [
+        {
+          "text": "O orc maior grita:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 134,
+      "style": "normal",
+      "alignment": null,
+      "text": "“SAIAM DO CAMINHO!”",
+      "runs": [
+        {
+          "text": "“SAIAM DO CAMINHO!”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 135,
+      "style": "normal",
+      "alignment": null,
+      "text": "Se os jogadores permitirem passagem, os goblins tentam atravessar.",
+      "runs": [
+        {
+          "text": "Se os jogadores permitirem passagem, os goblins tentam atravessar.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 136,
+      "style": "normal",
+      "alignment": null,
+      "text": "Mas uma raiz se move e fecha a passagem.",
+      "runs": [
+        {
+          "text": "Mas uma raiz se move e fecha a passagem.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 137,
+      "style": "normal",
+      "alignment": null,
+      "text": "O orc entra em pânico.",
+      "runs": [
+        {
+          "text": "O orc entra em pânico.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 138,
+      "style": "normal",
+      "alignment": null,
+      "text": "“NÃO!”",
+      "runs": [
+        {
+          "text": "“NÃO!”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 139,
+      "style": "normal",
+      "alignment": null,
+      "text": "“NÃO DE NOVO!”",
+      "runs": [
+        {
+          "text": "“NÃO DE NOVO!”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 140,
+      "style": "normal",
+      "alignment": null,
+      "text": "Ele ataca.",
+      "runs": [
+        {
+          "text": "Ele ataca.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 141,
+      "style": "Heading 3",
+      "alignment": null,
+      "text": "Combate: Os Perdidos de Fangorn",
+      "runs": [
+        {
+          "text": "Combate: Os Perdidos de Fangorn",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 142,
+      "style": "normal",
+      "alignment": null,
+      "text": "4 Goblins",
+      "runs": [
+        {
+          "text": "4 Goblins",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 143,
+      "style": "normal",
+      "alignment": null,
+      "text": "CA 13\nPV 10\nAtaque +4\nDano 1d6+2",
+      "runs": [
+        {
+          "text": "CA 13\nPV 10\nAtaque +4\nDano 1d6+2",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 144,
+      "style": "normal",
+      "alignment": null,
+      "text": "2 Orcs",
+      "runs": [
+        {
+          "text": "2 Orcs",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 145,
+      "style": "normal",
+      "alignment": null,
+      "text": "CA 14\nPV 20\nAtaque +4\nDano 1d8+2",
+      "runs": [
+        {
+          "text": "CA 14\nPV 20\nAtaque +4\nDano 1d8+2",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 146,
+      "style": "normal",
+      "alignment": null,
+      "text": "Barbárvore não participa.",
+      "runs": [
+        {
+          "text": "Barbárvore não participa.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 147,
+      "style": "normal",
+      "alignment": null,
+      "text": "Se pedirem ajuda:",
+      "runs": [
+        {
+          "text": "Se pedirem ajuda:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 148,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Vocês trouxeram armas.”",
+      "runs": [
+        {
+          "text": "“Vocês trouxeram armas.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 149,
+      "style": "normal",
+      "alignment": null,
+      "text": "Ele olha para os orcs.",
+      "runs": [
+        {
+          "text": "Ele olha para os orcs.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 150,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Eles também.”",
+      "runs": [
+        {
+          "text": "“Eles também.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 151,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Parece uma conversa para aqueles que gostam de armas.”",
+      "runs": [
+        {
+          "text": "“Parece uma conversa para aqueles que gostam de armas.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 152,
+      "style": "Heading 2",
+      "alignment": null,
+      "text": "Fangorn participa",
+      "runs": [
+        {
+          "text": "Fangorn participa",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 153,
+      "style": "normal",
+      "alignment": null,
+      "text": "No final de cada rodada, role 1d4.",
+      "runs": [
+        {
+          "text": "No final de cada rodada, role 1d4.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "sourceTable": 1,
+      "rows": [
+        [
+          {
+            "text": "d4",
+            "paragraphs": [
+              {
+                "text": "d4",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "d4",
+                    "bold": true,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "Efeito",
+            "paragraphs": [
+              {
+                "text": "Efeito",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "Efeito",
+                    "bold": true,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "text": "1",
+            "paragraphs": [
+              {
+                "text": "1",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "1",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "Uma raiz se move. Uma criatura aleatória faz DES CD 12 ou fica presa até gastar uma ação para se libertar.",
+            "paragraphs": [
+              {
+                "text": "Uma raiz se move. Uma criatura aleatória faz DES CD 12 ou fica presa até gastar uma ação para se libertar.",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "Uma raiz se move. Uma criatura aleatória faz DES CD 12 ou fica presa até gastar uma ação para se libertar.",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "text": "2",
+            "paragraphs": [
+              {
+                "text": "2",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "2",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "Um galho enorme cai. DES CD 12 ou 1d6 de dano.",
+            "paragraphs": [
+              {
+                "text": "Um galho enorme cai. DES CD 12 ou 1d6 de dano.",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "Um galho enorme cai. DES CD 12 ou 1d6 de dano.",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "text": "3",
+            "paragraphs": [
+              {
+                "text": "3",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "3",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "Alguma coisa enorme passa entre as árvores próximas. Todos fazem Espírito CD 12.",
+            "paragraphs": [
+              {
+                "text": "Alguma coisa enorme passa entre as árvores próximas. Todos fazem Espírito CD 12.",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "Alguma coisa enorme passa entre as árvores próximas. Todos fazem Espírito CD 12.",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "text": "4",
+            "paragraphs": [
+              {
+                "text": "4",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "4",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "Nada acontece. Silêncio completo.",
+            "paragraphs": [
+              {
+                "text": "Nada acontece. Silêncio completo.",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "Nada acontece. Silêncio completo.",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 154,
+      "style": "normal",
+      "alignment": null,
+      "text": "Na terceira rodada, independentemente do dado:",
+      "runs": [
+        {
+          "text": "Na terceira rodada, independentemente do dado:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 155,
+      "style": "normal",
+      "alignment": null,
+      "text": "Um goblin tenta fugir.",
+      "runs": [
+        {
+          "text": "Um goblin tenta fugir.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 156,
+      "style": "normal",
+      "alignment": null,
+      "text": "Ele corre para trás de uma árvore.",
+      "runs": [
+        {
+          "text": "Ele corre para trás de uma árvore.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 157,
+      "style": "normal",
+      "alignment": null,
+      "text": "Vocês escutam:",
+      "runs": [
+        {
+          "text": "Vocês escutam:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 158,
+      "style": "normal",
+      "alignment": null,
+      "text": "“NÃO!”",
+      "runs": [
+        {
+          "text": "“NÃO!”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 159,
+      "style": "normal",
+      "alignment": null,
+      "text": "Depois um grito.",
+      "runs": [
+        {
+          "text": "Depois um grito.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 160,
+      "style": "normal",
+      "alignment": null,
+      "text": "Depois nada.",
+      "runs": [
+        {
+          "text": "Depois nada.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 161,
+      "style": "normal",
+      "alignment": null,
+      "text": "Se alguém investigar:",
+      "runs": [
+        {
+          "text": "Se alguém investigar:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 162,
+      "style": "normal",
+      "alignment": null,
+      "text": "não existe corpo.",
+      "runs": [
+        {
+          "text": "não existe corpo.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 163,
+      "style": "normal",
+      "alignment": null,
+      "text": "Não existe sangue.",
+      "runs": [
+        {
+          "text": "Não existe sangue.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 164,
+      "style": "normal",
+      "alignment": null,
+      "text": "Não existe trilha.",
+      "runs": [
+        {
+          "text": "Não existe trilha.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 165,
+      "style": "normal",
+      "alignment": null,
+      "text": "Nem mesmo pegadas.",
+      "runs": [
+        {
+          "text": "Nem mesmo pegadas.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 166,
+      "style": "normal",
+      "alignment": null,
+      "text": "O goblin simplesmente desapareceu.",
+      "runs": [
+        {
+          "text": "O goblin simplesmente desapareceu.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 167,
+      "style": "Heading 2",
+      "alignment": null,
+      "text": "Depois do combate",
+      "runs": [
+        {
+          "text": "Depois do combate",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 168,
+      "style": "normal",
+      "alignment": null,
+      "text": "Se algum orc sobreviver, ele pode ser interrogado.",
+      "runs": [
+        {
+          "text": "Se algum orc sobreviver, ele pode ser interrogado.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 169,
+      "style": "normal",
+      "alignment": null,
+      "text": "Está apavorado.",
+      "runs": [
+        {
+          "text": "Está apavorado.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 170,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Deixem-me sair.”",
+      "runs": [
+        {
+          "text": "“Deixem-me sair.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 171,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Eu não volto.”",
+      "runs": [
+        {
+          "text": "“Eu não volto.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 172,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Nunca mais.”",
+      "runs": [
+        {
+          "text": "“Nunca mais.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 173,
+      "style": "normal",
+      "alignment": null,
+      "text": "“As árvores sabem nossos nomes.”",
+      "runs": [
+        {
+          "text": "“As árvores sabem nossos nomes.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 174,
+      "style": "normal",
+      "alignment": null,
+      "text": "Se perguntarem o que aconteceu:",
+      "runs": [
+        {
+          "text": "Se perguntarem o que aconteceu:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 175,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Ela chamou meu irmão.”",
+      "runs": [
+        {
+          "text": "“Ela chamou meu irmão.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 176,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Com a voz da nossa mãe.”",
+      "runs": [
+        {
+          "text": "“Com a voz da nossa mãe.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 177,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Ele respondeu.”",
+      "runs": [
+        {
+          "text": "“Ele respondeu.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 178,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Depois...”",
+      "runs": [
+        {
+          "text": "“Depois...”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 179,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Depois ele começou a andar.”",
+      "runs": [
+        {
+          "text": "“Depois ele começou a andar.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 180,
+      "style": "normal",
+      "alignment": null,
+      "text": "“E nós nunca mais vimos ele.”",
+      "runs": [
+        {
+          "text": "“E nós nunca mais vimos ele.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 181,
+      "style": "normal",
+      "alignment": null,
+      "text": "Barbárvore permanece olhando para o orc.",
+      "runs": [
+        {
+          "text": "Barbárvore permanece olhando para o orc.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 182,
+      "style": "normal",
+      "alignment": null,
+      "text": "Sem raiva.",
+      "runs": [
+        {
+          "text": "Sem raiva.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 183,
+      "style": "normal",
+      "alignment": null,
+      "text": "Sem piedade.",
+      "runs": [
+        {
+          "text": "Sem piedade.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 184,
+      "style": "normal",
+      "alignment": null,
+      "text": "Apenas observando.",
+      "runs": [
+        {
+          "text": "Apenas observando.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 185,
+      "style": "normal",
+      "alignment": null,
+      "text": "Quando o grupo estiver pronto para continuar:",
+      "runs": [
+        {
+          "text": "Quando o grupo estiver pronto para continuar:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 186,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Hmmm...”",
+      "runs": [
+        {
+          "text": "“Hmmm...”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 187,
+      "style": "normal",
+      "alignment": null,
+      "text": "Barbárvore começa a andar.",
+      "runs": [
+        {
+          "text": "Barbárvore começa a andar.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 188,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Uma pequena recomendação.”",
+      "runs": [
+        {
+          "text": "“Uma pequena recomendação.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 189,
+      "style": "normal",
+      "alignment": null,
+      "text": "Ele para.",
+      "runs": [
+        {
+          "text": "Ele para.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 190,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Se alguma coisa nesta floresta chamar vocês pelo nome...”",
+      "runs": [
+        {
+          "text": "“Se alguma coisa nesta floresta chamar vocês pelo nome...”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 191,
+      "style": "normal",
+      "alignment": null,
+      "text": "longa pausa.",
+      "runs": [
+        {
+          "text": "longa pausa.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 192,
+      "style": "normal",
+      "alignment": null,
+      "text": "“...não respondam depressa.”",
+      "runs": [
+        {
+          "text": "“...não respondam depressa.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 193,
+      "style": "normal",
+      "alignment": "CENTER (1)",
+      "text": "–//––//––//––//––//––//––//––",
+      "runs": [
+        {
+          "text": "–//––//––//––//––//––//––//––",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 194,
+      "style": "Heading 1",
+      "alignment": null,
+      "text": "ATO II O CAOLHO E O JAVALI",
+      "runs": [
+        {
+          "text": "ATO II O CAOLHO E O JAVALI",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 195,
+      "style": "Heading 3",
+      "alignment": null,
+      "text": "Considerações do Ato",
+      "runs": [
+        {
+          "text": "Considerações do Ato",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 196,
+      "style": "normal",
+      "alignment": null,
+      "text": "Este ato reduz momentaneamente a tensão e introduz o Anão Caolho como quarto integrante da companhia. Ele já conhece os personagens por causa dos acontecimentos da aventura de Natal e possui uma dívida com eles. Entretanto, ele não estava procurando os aventureiros. Está rastreando dois ladrões que entraram em Fangorn. Sua presença deve trazer humor e segurança por alguns minutos antes de a floresta voltar a ficar ameaçadora.",
+      "runs": [
+        {
+          "text": "Este ato reduz momentaneamente a tensão e introduz o Anão Caolho como quarto integrante da companhia. Ele já conhece os personagens por causa dos acontecimentos da aventura de Natal e possui uma dívida com eles. Entretanto, ele não estava procurando os aventureiros. Está rastreando dois ladrões que entraram em Fangorn. Sua presença deve trazer humor e segurança por alguns minutos antes de a floresta voltar a ficar ameaçadora.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 197,
+      "style": "normal",
+      "alignment": "CENTER (1)",
+      "text": "–//––//––//––//––//––//––//––",
+      "runs": [
+        {
+          "text": "–//––//––//––//––//––//––//––",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 198,
+      "style": "normal",
+      "alignment": null,
+      "text": "Barbárvore conduz o grupo por mais algum tempo.",
+      "runs": [
+        {
+          "text": "Barbárvore conduz o grupo por mais algum tempo.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 199,
+      "style": "normal",
+      "alignment": null,
+      "text": "Até que para.",
+      "runs": [
+        {
+          "text": "Até que para.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 200,
+      "style": "normal",
+      "alignment": null,
+      "text": "Olha para as árvores.",
+      "runs": [
+        {
+          "text": "Olha para as árvores.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 201,
+      "style": "normal",
+      "alignment": null,
+      "text": "Depois olha para os aventureiros.",
+      "runs": [
+        {
+          "text": "Depois olha para os aventureiros.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 202,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Vocês procuram respostas.”",
+      "runs": [
+        {
+          "text": "“Vocês procuram respostas.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 203,
+      "style": "normal",
+      "alignment": null,
+      "text": "“E eu tenho outras coisas para ouvir.”",
+      "runs": [
+        {
+          "text": "“E eu tenho outras coisas para ouvir.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 204,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Fangorn anda inquieta.”",
+      "runs": [
+        {
+          "text": "“Fangorn anda inquieta.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 205,
+      "style": "normal",
+      "alignment": null,
+      "text": "Se perguntarem se ele vai abandoná-los:",
+      "runs": [
+        {
+          "text": "Se perguntarem se ele vai abandoná-los:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 206,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Vocês não estão abandonados.”",
+      "runs": [
+        {
+          "text": "“Vocês não estão abandonados.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 207,
+      "style": "normal",
+      "alignment": null,
+      "text": "Ele olha ao redor.",
+      "runs": [
+        {
+          "text": "Ele olha ao redor.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 208,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Estão em Fangorn.”",
+      "runs": [
+        {
+          "text": "“Estão em Fangorn.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 209,
+      "style": "normal",
+      "alignment": null,
+      "text": "Isso provavelmente não tranquiliza ninguém.",
+      "runs": [
+        {
+          "text": "Isso provavelmente não tranquiliza ninguém.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 210,
+      "style": "normal",
+      "alignment": null,
+      "text": "Barbárvore começa a se afastar.",
+      "runs": [
+        {
+          "text": "Barbárvore começa a se afastar.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 211,
+      "style": "normal",
+      "alignment": null,
+      "text": "Antes de desaparecer:",
+      "runs": [
+        {
+          "text": "Antes de desaparecer:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 212,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Vocês encontrarão alguém que conhecem.”",
+      "runs": [
+        {
+          "text": "“Vocês encontrarão alguém que conhecem.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 213,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Ou ele encontrará vocês.”",
+      "runs": [
+        {
+          "text": "“Ou ele encontrará vocês.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 214,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Ele costuma fazer bastante barulho.”",
+      "runs": [
+        {
+          "text": "“Ele costuma fazer bastante barulho.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 215,
+      "style": "normal",
+      "alignment": null,
+      "text": "Barbárvore desaparece entre as árvores.",
+      "runs": [
+        {
+          "text": "Barbárvore desaparece entre as árvores.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 216,
+      "style": "normal",
+      "alignment": "CENTER (1)",
+      "text": "–//––//––//––//––//––//––//––",
+      "runs": [
+        {
+          "text": "–//––//––//––//––//––//––//––",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 217,
+      "style": "normal",
+      "alignment": null,
+      "text": "Alguns minutos de caminhada.",
+      "runs": [
+        {
+          "text": "Alguns minutos de caminhada.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 218,
+      "style": "normal",
+      "alignment": null,
+      "text": "Silêncio.",
+      "runs": [
+        {
+          "text": "Silêncio.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 219,
+      "style": "normal",
+      "alignment": null,
+      "text": "Então:",
+      "runs": [
+        {
+          "text": "Então:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 220,
+      "style": "normal",
+      "alignment": null,
+      "text": "BUM.",
+      "runs": [
+        {
+          "text": "BUM.",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 221,
+      "style": "normal",
+      "alignment": null,
+      "text": "Algo distante.",
+      "runs": [
+        {
+          "text": "Algo distante.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 222,
+      "style": "normal",
+      "alignment": null,
+      "text": "BUM. BUM.",
+      "runs": [
+        {
+          "text": "BUM. BUM.",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 223,
+      "style": "normal",
+      "alignment": null,
+      "text": "Galhos quebrando.",
+      "runs": [
+        {
+          "text": "Galhos quebrando.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 224,
+      "style": "normal",
+      "alignment": null,
+      "text": "O chão vibra levemente.",
+      "runs": [
+        {
+          "text": "O chão vibra levemente.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 225,
+      "style": "normal",
+      "alignment": null,
+      "text": "Prepare os jogadores para uma possível iniciativa.",
+      "runs": [
+        {
+          "text": "Prepare os jogadores para uma possível iniciativa.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 226,
+      "style": "normal",
+      "alignment": null,
+      "text": "Um arbusto enorme se abre.",
+      "runs": [
+        {
+          "text": "Um arbusto enorme se abre.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 227,
+      "style": "normal",
+      "alignment": null,
+      "text": "Surge um javali.",
+      "runs": [
+        {
+          "text": "Surge um javali.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 228,
+      "style": "normal",
+      "alignment": null,
+      "text": "Grande.",
+      "runs": [
+        {
+          "text": "Grande.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 229,
+      "style": "normal",
+      "alignment": null,
+      "text": "Coberto por placas de couro e metal.",
+      "runs": [
+        {
+          "text": "Coberto por placas de couro e metal.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 230,
+      "style": "normal",
+      "alignment": null,
+      "text": "Presas enormes.",
+      "runs": [
+        {
+          "text": "Presas enormes.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 231,
+      "style": "normal",
+      "alignment": null,
+      "text": "Espuma no focinho.",
+      "runs": [
+        {
+          "text": "Espuma no focinho.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 232,
+      "style": "normal",
+      "alignment": null,
+      "text": "E sobre ele:",
+      "runs": [
+        {
+          "text": "E sobre ele:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 233,
+      "style": "normal",
+      "alignment": null,
+      "text": "o Anão Caolho.",
+      "runs": [
+        {
+          "text": "o Anão Caolho.",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 234,
+      "style": "normal",
+      "alignment": null,
+      "text": "Martelo apoiado no ombro.",
+      "runs": [
+        {
+          "text": "Martelo apoiado no ombro.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 235,
+      "style": "normal",
+      "alignment": null,
+      "text": "Ele vê os três.",
+      "runs": [
+        {
+          "text": "Ele vê os três.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 236,
+      "style": "normal",
+      "alignment": null,
+      "text": "Puxa as rédeas.",
+      "runs": [
+        {
+          "text": "Puxa as rédeas.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 237,
+      "style": "normal",
+      "alignment": null,
+      "text": "O javali para.",
+      "runs": [
+        {
+          "text": "O javali para.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 238,
+      "style": "normal",
+      "alignment": null,
+      "text": "Silêncio.",
+      "runs": [
+        {
+          "text": "Silêncio.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 239,
+      "style": "normal",
+      "alignment": null,
+      "text": "O Anão olha para eles.",
+      "runs": [
+        {
+          "text": "O Anão olha para eles.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 240,
+      "style": "normal",
+      "alignment": null,
+      "text": "“...”",
+      "runs": [
+        {
+          "text": "“...”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 241,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Vocês.”",
+      "runs": [
+        {
+          "text": "“Vocês.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 242,
+      "style": "normal",
+      "alignment": null,
+      "text": "Ele suspira.",
+      "runs": [
+        {
+          "text": "Ele suspira.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 243,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Toda vez que encontro vocês, alguma coisa antiga está tentando matar alguém.”",
+      "runs": [
+        {
+          "text": "“Toda vez que encontro vocês, alguma coisa antiga está tentando matar alguém.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 244,
+      "style": "normal",
+      "alignment": null,
+      "text": "Deixe os jogadores reagirem.",
+      "runs": [
+        {
+          "text": "Deixe os jogadores reagirem.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 245,
+      "style": "normal",
+      "alignment": null,
+      "text": "Ele desmonta.",
+      "runs": [
+        {
+          "text": "Ele desmonta.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 246,
+      "style": "normal",
+      "alignment": null,
+      "text": "Cumprimenta-os do jeito dele.",
+      "runs": [
+        {
+          "text": "Cumprimenta-os do jeito dele.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 247,
+      "style": "normal",
+      "alignment": null,
+      "text": "Pode mencionar a aventura de inverno.",
+      "runs": [
+        {
+          "text": "Pode mencionar a aventura de inverno.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 248,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Vocês ajudaram minha aldeia.”",
+      "runs": [
+        {
+          "text": "“Vocês ajudaram minha aldeia.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 249,
+      "style": "normal",
+      "alignment": null,
+      "text": "“E destruíram aquela coisa no gelo.”",
+      "runs": [
+        {
+          "text": "“E destruíram aquela coisa no gelo.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 250,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Eu não esqueci.”",
+      "runs": [
+        {
+          "text": "“Eu não esqueci.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 251,
+      "style": "normal",
+      "alignment": null,
+      "text": "Se perguntarem por Barbárvore:",
+      "runs": [
+        {
+          "text": "Se perguntarem por Barbárvore:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 252,
+      "style": "normal",
+      "alignment": null,
+      "text": "“A árvore velha?”",
+      "runs": [
+        {
+          "text": "“A árvore velha?”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 253,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Conheço.”",
+      "runs": [
+        {
+          "text": "“Conheço.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 254,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Ele fala devagar demais.”",
+      "runs": [
+        {
+          "text": "“Ele fala devagar demais.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 255,
+      "style": "normal",
+      "alignment": null,
+      "text": "“E pensa que isso é sabedoria.”",
+      "runs": [
+        {
+          "text": "“E pensa que isso é sabedoria.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 256,
+      "style": "normal",
+      "alignment": null,
+      "text": "Uma voz de Barbárvore pode surgir muito distante:",
+      "runs": [
+        {
+          "text": "Uma voz de Barbárvore pode surgir muito distante:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 257,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Eu ouvi.”",
+      "runs": [
+        {
+          "text": "“Eu ouvi.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 258,
+      "style": "normal",
+      "alignment": null,
+      "text": "O Anão:",
+      "runs": [
+        {
+          "text": "O Anão:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 259,
+      "style": "normal",
+      "alignment": null,
+      "text": "“É CLARO QUE OUVIU!”",
+      "runs": [
+        {
+          "text": "“É CLARO QUE OUVIU!”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 260,
+      "style": "normal",
+      "alignment": null,
+      "text": "Momento leve.",
+      "runs": [
+        {
+          "text": "Momento leve.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 261,
+      "style": "normal",
+      "alignment": "CENTER (1)",
+      "text": "–//––//––//––//––//––//––//––",
+      "runs": [
+        {
+          "text": "–//––//––//––//––//––//––//––",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 262,
+      "style": "Heading 2",
+      "alignment": null,
+      "text": "O que ele está fazendo aqui?",
+      "runs": [
+        {
+          "text": "O que ele está fazendo aqui?",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 263,
+      "style": "normal",
+      "alignment": null,
+      "text": "Ele estava rastreando dois ladrões.",
+      "runs": [
+        {
+          "text": "Ele estava rastreando dois ladrões.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 264,
+      "style": "normal",
+      "alignment": null,
+      "text": "Um manca da perna direita.",
+      "runs": [
+        {
+          "text": "Um manca da perna direita.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 265,
+      "style": "normal",
+      "alignment": null,
+      "text": "O outro utiliza um lenço vermelho no pescoço.",
+      "runs": [
+        {
+          "text": "O outro utiliza um lenço vermelho no pescoço.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 266,
+      "style": "normal",
+      "alignment": null,
+      "text": "Roubaram:",
+      "runs": [
+        {
+          "text": "Roubaram:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 267,
+      "style": "normal",
+      "alignment": null,
+      "text": "ferramentas;",
+      "runs": [
+        {
+          "text": "ferramentas;",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 268,
+      "style": "normal",
+      "alignment": null,
+      "text": "comida;",
+      "runs": [
+        {
+          "text": "comida;",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 269,
+      "style": "normal",
+      "alignment": null,
+      "text": "algumas moedas;",
+      "runs": [
+        {
+          "text": "algumas moedas;",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 270,
+      "style": "normal",
+      "alignment": null,
+      "text": "e objetos de viajantes encontrados mortos.",
+      "runs": [
+        {
+          "text": "e objetos de viajantes encontrados mortos.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 271,
+      "style": "normal",
+      "alignment": null,
+      "text": "O Anão os seguiu até Fangorn.",
+      "runs": [
+        {
+          "text": "O Anão os seguiu até Fangorn.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 272,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Não são guerreiros.”",
+      "runs": [
+        {
+          "text": "“Não são guerreiros.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 273,
+      "style": "normal",
+      "alignment": null,
+      "text": "“São ladrões.”",
+      "runs": [
+        {
+          "text": "“São ladrões.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 274,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Mas alguma coisa mudou.”",
+      "runs": [
+        {
+          "text": "“Mas alguma coisa mudou.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 275,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Começaram fugindo de mim.”",
+      "runs": [
+        {
+          "text": "“Começaram fugindo de mim.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 276,
+      "style": "normal",
+      "alignment": null,
+      "text": "Ele olha para a floresta.",
+      "runs": [
+        {
+          "text": "Ele olha para a floresta.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 277,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Agora acho que estão fugindo de outra coisa.”",
+      "runs": [
+        {
+          "text": "“Agora acho que estão fugindo de outra coisa.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 278,
+      "style": "normal",
+      "alignment": null,
+      "text": "Ele encontrou marcas estranhas.",
+      "runs": [
+        {
+          "text": "Ele encontrou marcas estranhas.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 279,
+      "style": "normal",
+      "alignment": null,
+      "text": "Três conjuntos de pegadas.",
+      "runs": [
+        {
+          "text": "Três conjuntos de pegadas.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 280,
+      "style": "normal",
+      "alignment": null,
+      "text": "Depois quatro.",
+      "runs": [
+        {
+          "text": "Depois quatro.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 281,
+      "style": "normal",
+      "alignment": null,
+      "text": "Depois três novamente.",
+      "runs": [
+        {
+          "text": "Depois três novamente.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 282,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Eu sei contar.”",
+      "runs": [
+        {
+          "text": "“Eu sei contar.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 283,
+      "style": "normal",
+      "alignment": null,
+      "text": "“E meu javali também.”",
+      "runs": [
+        {
+          "text": "“E meu javali também.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 284,
+      "style": "normal",
+      "alignment": null,
+      "text": "O javali bufa.",
+      "runs": [
+        {
+          "text": "O javali bufa.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 285,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Ele só não gosta quando eu digo isso.”",
+      "runs": [
+        {
+          "text": "“Ele só não gosta quando eu digo isso.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 286,
+      "style": "normal",
+      "alignment": null,
+      "text": "O Anão decide seguir com o grupo.",
+      "runs": [
+        {
+          "text": "O Anão decide seguir com o grupo.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 287,
+      "style": "normal",
+      "alignment": null,
+      "text": "Por enquanto.",
+      "runs": [
+        {
+          "text": "Por enquanto.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 288,
+      "style": "Heading 1",
+      "alignment": null,
+      "text": "ATO III",
+      "runs": [
+        {
+          "text": "ATO III",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 289,
+      "style": "Heading 1",
+      "alignment": null,
+      "text": "O PRISIONEIRO",
+      "runs": [
+        {
+          "text": "O PRISIONEIRO",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 290,
+      "style": "Heading 3",
+      "alignment": null,
+      "text": "Considerações do Ato",
+      "runs": [
+        {
+          "text": "Considerações do Ato",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 291,
+      "style": "normal",
+      "alignment": null,
+      "text": "Este será o principal momento social e investigativo da aventura. Os personagens encontram os dois ladrões e descobrem que eles mantêm um jovem aparentemente indefeso amarrado. Os ladrões são realmente criminosos, mas afirmam que o prisioneiro não é humano. O objetivo não é existir uma resposta óbvia. Os jogadores deverão observar, conversar, negociar e decidir em quem acreditar. A experiência anterior com Eira e Maelith deve começar a voltar à memória do grupo.",
+      "runs": [
+        {
+          "text": "Este será o principal momento social e investigativo da aventura. Os personagens encontram os dois ladrões e descobrem que eles mantêm um jovem aparentemente indefeso amarrado. Os ladrões são realmente criminosos, mas afirmam que o prisioneiro não é humano. O objetivo não é existir uma resposta óbvia. Os jogadores deverão observar, conversar, negociar e decidir em quem acreditar. A experiência anterior com Eira e Maelith deve começar a voltar à memória do grupo.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 292,
+      "style": "normal",
+      "alignment": "CENTER (1)",
+      "text": "–//––//––//––//––//––//––//––",
+      "runs": [
+        {
+          "text": "–//––//––//––//––//––//––//––",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 293,
+      "style": "normal",
+      "alignment": null,
+      "text": "O grupo segue os rastros.",
+      "runs": [
+        {
+          "text": "O grupo segue os rastros.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 294,
+      "style": "normal",
+      "alignment": null,
+      "text": "O Anão desmonta do javali.",
+      "runs": [
+        {
+          "text": "O Anão desmonta do javali.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 295,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Daqui em diante vamos devagar.”",
+      "runs": [
+        {
+          "text": "“Daqui em diante vamos devagar.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 296,
+      "style": "normal",
+      "alignment": null,
+      "text": "Teste de Sobrevivência ou Percepção.",
+      "runs": [
+        {
+          "text": "Teste de Sobrevivência ou Percepção.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 297,
+      "style": "normal",
+      "alignment": null,
+      "text": "CD 11: existem três pessoas adiante.",
+      "runs": [
+        {
+          "text": "CD 11:",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        },
+        {
+          "text": " existem três pessoas adiante.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 298,
+      "style": "normal",
+      "alignment": null,
+      "text": "CD 14: uma delas parece estar sendo carregada ou arrastada.",
+      "runs": [
+        {
+          "text": "CD 14:",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        },
+        {
+          "text": " uma delas parece estar sendo carregada ou arrastada.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 299,
+      "style": "normal",
+      "alignment": null,
+      "text": "CD 16: várias pegadas não fazem sentido. Algumas parecem mudar de tamanho.",
+      "runs": [
+        {
+          "text": "CD 16:",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        },
+        {
+          "text": " várias pegadas não fazem sentido. Algumas parecem mudar de tamanho.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 300,
+      "style": "normal",
+      "alignment": null,
+      "text": "Depois de alguns minutos:",
+      "runs": [
+        {
+          "text": "Depois de alguns minutos:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 301,
+      "style": "normal",
+      "alignment": null,
+      "text": "cheiro de fumaça.",
+      "runs": [
+        {
+          "text": "cheiro de fumaça.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 302,
+      "style": "normal",
+      "alignment": null,
+      "text": "Uma pequena fogueira.",
+      "runs": [
+        {
+          "text": "Uma pequena fogueira.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 303,
+      "style": "normal",
+      "alignment": null,
+      "text": "Vozes.",
+      "runs": [
+        {
+          "text": "Vozes.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 304,
+      "style": "normal",
+      "alignment": null,
+      "text": "Uma discussão.",
+      "runs": [
+        {
+          "text": "Uma discussão.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 305,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Eu disse que a gente devia ter matado ele!”",
+      "runs": [
+        {
+          "text": "“Eu disse que a gente devia ter matado ele!”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 306,
+      "style": "normal",
+      "alignment": null,
+      "text": "Outra voz:",
+      "runs": [
+        {
+          "text": "Outra voz:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 307,
+      "style": "normal",
+      "alignment": null,
+      "text": "“E se estivermos errados?”",
+      "runs": [
+        {
+          "text": "“E se estivermos errados?”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 308,
+      "style": "normal",
+      "alignment": null,
+      "text": "Então uma terceira:",
+      "runs": [
+        {
+          "text": "Então uma terceira:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 309,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Por favor...”",
+      "runs": [
+        {
+          "text": "“Por favor...”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 310,
+      "style": "normal",
+      "alignment": null,
+      "text": "O grupo chega a uma pequena clareira.",
+      "runs": [
+        {
+          "text": "O grupo chega a uma pequena clareira.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 311,
+      "style": "normal",
+      "alignment": null,
+      "text": "Dois homens armados.",
+      "runs": [
+        {
+          "text": "Dois homens armados.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 312,
+      "style": "normal",
+      "alignment": null,
+      "text": "Um manca.",
+      "runs": [
+        {
+          "text": "Um manca.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 313,
+      "style": "normal",
+      "alignment": null,
+      "text": "O outro possui um lenço vermelho.",
+      "runs": [
+        {
+          "text": "O outro possui um lenço vermelho.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 314,
+      "style": "normal",
+      "alignment": null,
+      "text": "Entre eles:",
+      "runs": [
+        {
+          "text": "Entre eles:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 315,
+      "style": "normal",
+      "alignment": null,
+      "text": "um jovem de aproximadamente 18 anos.",
+      "runs": [
+        {
+          "text": "um jovem de aproximadamente 18 anos.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 316,
+      "style": "normal",
+      "alignment": null,
+      "text": "Amarrado.",
+      "runs": [
+        {
+          "text": "Amarrado.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 317,
+      "style": "normal",
+      "alignment": null,
+      "text": "Roupa rasgada.",
+      "runs": [
+        {
+          "text": "Roupa rasgada.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 318,
+      "style": "normal",
+      "alignment": null,
+      "text": "Sangue no rosto.",
+      "runs": [
+        {
+          "text": "Sangue no rosto.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 319,
+      "style": "normal",
+      "alignment": null,
+      "text": "Mãos presas atrás das costas.",
+      "runs": [
+        {
+          "text": "Mãos presas atrás das costas.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 320,
+      "style": "normal",
+      "alignment": null,
+      "text": "Quando vê o grupo:",
+      "runs": [
+        {
+          "text": "Quando vê o grupo:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 321,
+      "style": "normal",
+      "alignment": null,
+      "text": "“AJUDEM-ME!”",
+      "runs": [
+        {
+          "text": "“AJUDEM-ME!”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 322,
+      "style": "normal",
+      "alignment": null,
+      "text": "O ladrão do lenço imediatamente aponta a espada.",
+      "runs": [
+        {
+          "text": "O ladrão do lenço imediatamente aponta a espada.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 323,
+      "style": "normal",
+      "alignment": null,
+      "text": "Não para os heróis.",
+      "runs": [
+        {
+          "text": "Não para os heróis.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 324,
+      "style": "normal",
+      "alignment": null,
+      "text": "Para o jovem.",
+      "runs": [
+        {
+          "text": "Para o jovem.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 325,
+      "style": "normal",
+      "alignment": null,
+      "text": "“NÃO CHEGUEM PERTO DELE!”",
+      "runs": [
+        {
+          "text": "“NÃO CHEGUEM PERTO DELE!”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 326,
+      "style": "normal",
+      "alignment": null,
+      "text": "O jovem começa a chorar.",
+      "runs": [
+        {
+          "text": "O jovem começa a chorar.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 327,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Eles vão me matar!”",
+      "runs": [
+        {
+          "text": "“Eles vão me matar!”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 328,
+      "style": "normal",
+      "alignment": null,
+      "text": "O ladrão grita:",
+      "runs": [
+        {
+          "text": "O ladrão grita:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 329,
+      "style": "normal",
+      "alignment": null,
+      "text": "“ISSO NÃO É UM HOMEM!”",
+      "runs": [
+        {
+          "text": "“ISSO NÃO É UM HOMEM!”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 330,
+      "style": "normal",
+      "alignment": null,
+      "text": "Silêncio.",
+      "runs": [
+        {
+          "text": "Silêncio.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 331,
+      "style": "normal",
+      "alignment": "CENTER (1)",
+      "text": "–//––//––//––//––//––//––//––",
+      "runs": [
+        {
+          "text": "–//––//––//––//––//––//––//––",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 332,
+      "style": "Heading 2",
+      "alignment": null,
+      "text": "A versão dos ladrões",
+      "runs": [
+        {
+          "text": "A versão dos ladrões",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 333,
+      "style": "normal",
+      "alignment": null,
+      "text": "Eles admitem os roubos.",
+      "runs": [
+        {
+          "text": "Eles admitem os roubos.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 334,
+      "style": "normal",
+      "alignment": null,
+      "text": "Não tentam parecer inocentes.",
+      "runs": [
+        {
+          "text": "Não tentam parecer inocentes.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 335,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Sim, roubamos.”",
+      "runs": [
+        {
+          "text": "“Sim, roubamos.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 336,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Sim, fugimos.”",
+      "runs": [
+        {
+          "text": "“Sim, fugimos.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 337,
+      "style": "normal",
+      "alignment": null,
+      "text": "“E se quiserem nos prender depois, prendam.”",
+      "runs": [
+        {
+          "text": "“E se quiserem nos prender depois, prendam.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 338,
+      "style": "normal",
+      "alignment": null,
+      "text": "O homem que manca aponta para o jovem.",
+      "runs": [
+        {
+          "text": "O homem que manca aponta para o jovem.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 339,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Mas aquela coisa não vai conosco.”",
+      "runs": [
+        {
+          "text": "“Mas aquela coisa não vai conosco.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 340,
+      "style": "normal",
+      "alignment": null,
+      "text": "Encontraram o rapaz dois dias antes.",
+      "runs": [
+        {
+          "text": "Encontraram o rapaz dois dias antes.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 341,
+      "style": "normal",
+      "alignment": null,
+      "text": "Sozinho.",
+      "runs": [
+        {
+          "text": "Sozinho.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 342,
+      "style": "normal",
+      "alignment": null,
+      "text": "Ferido.",
+      "runs": [
+        {
+          "text": "Ferido.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 343,
+      "style": "normal",
+      "alignment": null,
+      "text": "Ele pediu ajuda.",
+      "runs": [
+        {
+          "text": "Ele pediu ajuda.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 344,
+      "style": "normal",
+      "alignment": null,
+      "text": "Disse que viajantes tinham sido mortos por orcs.",
+      "runs": [
+        {
+          "text": "Disse que viajantes tinham sido mortos por orcs.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 345,
+      "style": "normal",
+      "alignment": null,
+      "text": "Os ladrões permitiram que dormisse próximo à fogueira.",
+      "runs": [
+        {
+          "text": "Os ladrões permitiram que dormisse próximo à fogueira.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 346,
+      "style": "normal",
+      "alignment": null,
+      "text": "Durante a noite, o homem do lenço acordou.",
+      "runs": [
+        {
+          "text": "Durante a noite, o homem do lenço acordou.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 347,
+      "style": "normal",
+      "alignment": null,
+      "text": "E viu:",
+      "runs": [
+        {
+          "text": "E viu:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 348,
+      "style": "normal",
+      "alignment": null,
+      "text": "dois homens idênticos ao companheiro manco.",
+      "runs": [
+        {
+          "text": "dois homens idênticos ao companheiro manco.",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 349,
+      "style": "normal",
+      "alignment": null,
+      "text": "Um dormindo.",
+      "runs": [
+        {
+          "text": "Um dormindo.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 350,
+      "style": "normal",
+      "alignment": null,
+      "text": "Outro sentado do outro lado da fogueira.",
+      "runs": [
+        {
+          "text": "Outro sentado do outro lado da fogueira.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 351,
+      "style": "normal",
+      "alignment": null,
+      "text": "O segundo percebeu que havia sido visto.",
+      "runs": [
+        {
+          "text": "O segundo percebeu que havia sido visto.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 352,
+      "style": "normal",
+      "alignment": null,
+      "text": "E voltou a assumir a aparência do jovem.",
+      "runs": [
+        {
+          "text": "E voltou a assumir a aparência do jovem.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 353,
+      "style": "normal",
+      "alignment": null,
+      "text": "Os dois conseguiram dominá-lo.",
+      "runs": [
+        {
+          "text": "Os dois conseguiram dominá-lo.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 354,
+      "style": "normal",
+      "alignment": null,
+      "text": "Ou acreditam que conseguiram.",
+      "runs": [
+        {
+          "text": "Ou acreditam que conseguiram.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 355,
+      "style": "normal",
+      "alignment": "CENTER (1)",
+      "text": "–//––//––//––//––//––//––//––",
+      "runs": [
+        {
+          "text": "–//––//––//––//––//––//––//––",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 356,
+      "style": "Heading 2",
+      "alignment": null,
+      "text": "A versão do jovem",
+      "runs": [
+        {
+          "text": "A versão do jovem",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 357,
+      "style": "normal",
+      "alignment": null,
+      "text": "Chama-se Tarin.",
+      "runs": [
+        {
+          "text": "Chama-se ",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        },
+        {
+          "text": "Tarin",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        },
+        {
+          "text": ".",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 358,
+      "style": "normal",
+      "alignment": null,
+      "text": "Diz ser filho de um comerciante.",
+      "runs": [
+        {
+          "text": "Diz ser filho de um comerciante.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 359,
+      "style": "normal",
+      "alignment": null,
+      "text": "A caravana foi atacada.",
+      "runs": [
+        {
+          "text": "A caravana foi atacada.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 360,
+      "style": "normal",
+      "alignment": null,
+      "text": "Os ladrões o encontraram.",
+      "runs": [
+        {
+          "text": "Os ladrões o encontraram.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 361,
+      "style": "normal",
+      "alignment": null,
+      "text": "Roubaram seus pertences.",
+      "runs": [
+        {
+          "text": "Roubaram seus pertences.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 362,
+      "style": "normal",
+      "alignment": null,
+      "text": "Quando ele ameaçou denunciá-los, decidiram inventar aquela história.",
+      "runs": [
+        {
+          "text": "Quando ele ameaçou denunciá-los, decidiram inventar aquela história.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 363,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Olhem para mim!”",
+      "runs": [
+        {
+          "text": "“Olhem para mim!”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 364,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Eu estou amarrado!”",
+      "runs": [
+        {
+          "text": "“Eu estou amarrado!”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 365,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Eles têm armas!”",
+      "runs": [
+        {
+          "text": "“Eles têm armas!”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 366,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Eu não tenho nada!”",
+      "runs": [
+        {
+          "text": "“Eu não tenho nada!”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 367,
+      "style": "normal",
+      "alignment": null,
+      "text": "Ele olha para os personagens.",
+      "runs": [
+        {
+          "text": "Ele olha para os personagens.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 368,
+      "style": "normal",
+      "alignment": null,
+      "text": "Especialmente para Elenya.",
+      "runs": [
+        {
+          "text": "Especialmente para Elenya.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 369,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Vocês parecem pessoas boas.”",
+      "runs": [
+        {
+          "text": "“Vocês parecem pessoas boas.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 370,
+      "style": "normal",
+      "alignment": "CENTER (1)",
+      "text": "–//––//––//––//––//––//––//––",
+      "runs": [
+        {
+          "text": "–//––//––//––//––//––//––//––",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 371,
+      "style": "Heading 2",
+      "alignment": null,
+      "text": "Investigação",
+      "runs": [
+        {
+          "text": "Investigação",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 372,
+      "style": "normal",
+      "alignment": null,
+      "text": "Não dê todas as pistas de uma vez.",
+      "runs": [
+        {
+          "text": "Não dê todas as pistas de uma vez.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 373,
+      "style": "normal",
+      "alignment": null,
+      "text": "Deixe os jogadores escolherem o que querem observar.",
+      "runs": [
+        {
+          "text": "Deixe os jogadores escolherem o que querem observar.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 374,
+      "style": "Heading 3",
+      "alignment": null,
+      "text": "Percepção CD 12",
+      "runs": [
+        {
+          "text": "Percepção CD 12",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 375,
+      "style": "normal",
+      "alignment": null,
+      "text": "As cordas estão muito apertadas.",
+      "runs": [
+        {
+          "text": "As cordas estão muito apertadas.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 376,
+      "style": "normal",
+      "alignment": null,
+      "text": "Entretanto:",
+      "runs": [
+        {
+          "text": "Entretanto:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 377,
+      "style": "normal",
+      "alignment": null,
+      "text": "os pulsos do jovem quase não possuem marcas.",
+      "runs": [
+        {
+          "text": "os pulsos do jovem quase não possuem marcas.",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 378,
+      "style": "Heading 3",
+      "alignment": null,
+      "text": "Medicina CD 13",
+      "runs": [
+        {
+          "text": "Medicina CD 13",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 379,
+      "style": "normal",
+      "alignment": null,
+      "text": "Existe uma ferida na testa.",
+      "runs": [
+        {
+          "text": "Existe uma ferida na testa.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 380,
+      "style": "normal",
+      "alignment": null,
+      "text": "Mas perdeu sangue demais para o tamanho da lesão.",
+      "runs": [
+        {
+          "text": "Mas perdeu sangue demais para o tamanho da lesão.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 381,
+      "style": "normal",
+      "alignment": null,
+      "text": "Ou sangue de menos.",
+      "runs": [
+        {
+          "text": "Ou sangue de menos.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 382,
+      "style": "normal",
+      "alignment": null,
+      "text": "Algo não fecha.",
+      "runs": [
+        {
+          "text": "Algo não fecha.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 383,
+      "style": "Heading 3",
+      "alignment": null,
+      "text": "Intuição CD 14",
+      "runs": [
+        {
+          "text": "Intuição CD 14",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 384,
+      "style": "normal",
+      "alignment": null,
+      "text": "O jovem parece assustado.",
+      "runs": [
+        {
+          "text": "O jovem parece assustado.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 385,
+      "style": "normal",
+      "alignment": null,
+      "text": "Mas algumas emoções chegam um instante atrasadas.",
+      "runs": [
+        {
+          "text": "Mas algumas emoções chegam um instante atrasadas.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 386,
+      "style": "normal",
+      "alignment": null,
+      "text": "Como se precisasse lembrar como uma pessoa assustada deveria reagir.",
+      "runs": [
+        {
+          "text": "Como se precisasse lembrar como uma pessoa assustada deveria reagir.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 387,
+      "style": "Heading 3",
+      "alignment": null,
+      "text": "Investigação CD 14",
+      "runs": [
+        {
+          "text": "Investigação CD 14",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 388,
+      "style": "normal",
+      "alignment": null,
+      "text": "As botas dele possuem lama.",
+      "runs": [
+        {
+          "text": "As botas dele possuem lama.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 389,
+      "style": "normal",
+      "alignment": null,
+      "text": "Mas não correspondem perfeitamente às pegadas que chegaram até aquele local.",
+      "runs": [
+        {
+          "text": "Mas não correspondem perfeitamente às pegadas que chegaram até aquele local.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 390,
+      "style": "Heading 3",
+      "alignment": null,
+      "text": "Percepção CD 15",
+      "runs": [
+        {
+          "text": "Percepção CD 15",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 391,
+      "style": "normal",
+      "alignment": null,
+      "text": "Ele observa frequentemente:",
+      "runs": [
+        {
+          "text": "Ele observa frequentemente:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 392,
+      "style": "normal",
+      "alignment": null,
+      "text": "o Alaúde;",
+      "runs": [
+        {
+          "text": "o Alaúde;",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 393,
+      "style": "normal",
+      "alignment": null,
+      "text": "o Relicário;",
+      "runs": [
+        {
+          "text": "o Relicário;",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 394,
+      "style": "normal",
+      "alignment": null,
+      "text": "e os pertences lendários.",
+      "runs": [
+        {
+          "text": "e os pertences lendários.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 395,
+      "style": "normal",
+      "alignment": null,
+      "text": "Não observa as armas com a mesma frequência.",
+      "runs": [
+        {
+          "text": "Não observa as armas com a mesma frequência.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 396,
+      "style": "normal",
+      "alignment": "CENTER (1)",
+      "text": "–//––//––//––//––//––//––//––",
+      "runs": [
+        {
+          "text": "–//––//––//––//––//––//––//––",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 397,
+      "style": "Heading 2",
+      "alignment": null,
+      "text": "O erro",
+      "runs": [
+        {
+          "text": "O erro",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 398,
+      "style": "normal",
+      "alignment": null,
+      "text": "Durante a conversa, em algum momento o jovem diz:",
+      "runs": [
+        {
+          "text": "Durante a conversa, em algum momento o jovem diz:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 399,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Elenya... por favor.”",
+      "runs": [
+        {
+          "text": "“Elenya... por favor.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 400,
+      "style": "normal",
+      "alignment": null,
+      "text": "Se ninguém havia dito o nome dela:",
+      "runs": [
+        {
+          "text": "Se ninguém havia dito o nome dela:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 401,
+      "style": "normal",
+      "alignment": null,
+      "text": "pare.",
+      "runs": [
+        {
+          "text": "pare.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 402,
+      "style": "normal",
+      "alignment": null,
+      "text": "Não explique.",
+      "runs": [
+        {
+          "text": "Não explique.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 403,
+      "style": "normal",
+      "alignment": null,
+      "text": "Deixe os jogadores perceberem.",
+      "runs": [
+        {
+          "text": "Deixe os jogadores perceberem.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 404,
+      "style": "normal",
+      "alignment": null,
+      "text": "Se alguém perguntar como sabe o nome:",
+      "runs": [
+        {
+          "text": "Se alguém perguntar como sabe o nome:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 405,
+      "style": "normal",
+      "alignment": null,
+      "text": "ele responde rapidamente:",
+      "runs": [
+        {
+          "text": "ele responde rapidamente:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 406,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Eles disseram.”",
+      "runs": [
+        {
+          "text": "“Eles disseram.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 407,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Ouvi eles falando.”",
+      "runs": [
+        {
+          "text": "“Ouvi eles falando.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 408,
+      "style": "normal",
+      "alignment": null,
+      "text": "Os ladrões imediatamente:",
+      "runs": [
+        {
+          "text": "Os ladrões imediatamente:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 409,
+      "style": "normal",
+      "alignment": null,
+      "text": "“MENTIRA!”",
+      "runs": [
+        {
+          "text": "“MENTIRA!”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 410,
+      "style": "normal",
+      "alignment": null,
+      "text": "Talvez seja verdade.",
+      "runs": [
+        {
+          "text": "Talvez seja verdade.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 411,
+      "style": "normal",
+      "alignment": null,
+      "text": "Talvez não.",
+      "runs": [
+        {
+          "text": "Talvez não.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 412,
+      "style": "normal",
+      "alignment": null,
+      "text": "Continue.",
+      "runs": [
+        {
+          "text": "Continue.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 413,
+      "style": "normal",
+      "alignment": "CENTER (1)",
+      "text": "–//––//––//––//––//––//––//––",
+      "runs": [
+        {
+          "text": "–//––//––//––//––//––//––//––",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 414,
+      "style": "Heading 2",
+      "alignment": null,
+      "text": "O Sino de Haldrim",
+      "runs": [
+        {
+          "text": "O Sino de Haldrim",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 415,
+      "style": "normal",
+      "alignment": null,
+      "text": "Caso algum jogador lembre do Eco da Verdade:",
+      "runs": [
+        {
+          "text": "Caso algum jogador lembre do Eco da Verdade:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 416,
+      "style": "normal",
+      "alignment": null,
+      "text": "recompense imediatamente.",
+      "runs": [
+        {
+          "text": "recompense imediatamente.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 417,
+      "style": "normal",
+      "alignment": null,
+      "text": "Quando o Sino toca:",
+      "runs": [
+        {
+          "text": "Quando o Sino toca:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 418,
+      "style": "normal",
+      "alignment": null,
+      "text": "A nota atravessa a clareira.",
+      "runs": [
+        {
+          "text": "A nota atravessa a clareira.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 419,
+      "style": "normal",
+      "alignment": null,
+      "text": "As árvores parecem silenciar.",
+      "runs": [
+        {
+          "text": "As árvores parecem silenciar.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 420,
+      "style": "normal",
+      "alignment": null,
+      "text": "O jovem continua sentado.",
+      "runs": [
+        {
+          "text": "O jovem continua sentado.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 421,
+      "style": "normal",
+      "alignment": null,
+      "text": "Seu rosto não muda.",
+      "runs": [
+        {
+          "text": "Seu rosto não muda.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 422,
+      "style": "normal",
+      "alignment": null,
+      "text": "Mas sua sombra muda.",
+      "runs": [
+        {
+          "text": "Mas sua sombra muda.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 423,
+      "style": "normal",
+      "alignment": null,
+      "text": "A sombra projetada atrás dele possui:",
+      "runs": [
+        {
+          "text": "A sombra projetada atrás dele possui:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 424,
+      "style": "normal",
+      "alignment": null,
+      "text": "braços longos demais;",
+      "runs": [
+        {
+          "text": "braços longos demais;",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 425,
+      "style": "normal",
+      "alignment": null,
+      "text": "pescoço fino;",
+      "runs": [
+        {
+          "text": "pescoço fino;",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 426,
+      "style": "normal",
+      "alignment": null,
+      "text": "dedos compridos;",
+      "runs": [
+        {
+          "text": "dedos compridos;",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 427,
+      "style": "normal",
+      "alignment": null,
+      "text": "e nenhuma face.",
+      "runs": [
+        {
+          "text": "e nenhuma face.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 428,
+      "style": "normal",
+      "alignment": null,
+      "text": "Durante um segundo aparecem outros rostos.",
+      "runs": [
+        {
+          "text": "Durante um segundo aparecem outros rostos.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 429,
+      "style": "normal",
+      "alignment": null,
+      "text": "Eira.",
+      "runs": [
+        {
+          "text": "Eira.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 430,
+      "style": "normal",
+      "alignment": null,
+      "text": "Maelith.",
+      "runs": [
+        {
+          "text": "Maelith.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 431,
+      "style": "normal",
+      "alignment": null,
+      "text": "Um homem velho.",
+      "runs": [
+        {
+          "text": "Um homem velho.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 432,
+      "style": "normal",
+      "alignment": null,
+      "text": "Uma criança.",
+      "runs": [
+        {
+          "text": "Uma criança.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 433,
+      "style": "normal",
+      "alignment": null,
+      "text": "Então tudo volta ao normal.",
+      "runs": [
+        {
+          "text": "Então tudo volta ao normal.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 434,
+      "style": "normal",
+      "alignment": null,
+      "text": "O jovem percebe.",
+      "runs": [
+        {
+          "text": "O jovem percebe.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 435,
+      "style": "normal",
+      "alignment": null,
+      "text": "Olha para o Sino.",
+      "runs": [
+        {
+          "text": "Olha para o Sino.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 436,
+      "style": "normal",
+      "alignment": null,
+      "text": "Depois sorri.",
+      "runs": [
+        {
+          "text": "Depois sorri.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 437,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Interessante.”",
+      "runs": [
+        {
+          "text": "“Interessante.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 438,
+      "style": "normal",
+      "alignment": null,
+      "text": "Não possui mais voz de vítima.",
+      "runs": [
+        {
+          "text": "Não possui mais voz de vítima.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 439,
+      "style": "normal",
+      "alignment": "CENTER (1)",
+      "text": "–//––//––//––//––//––//––//––",
+      "runs": [
+        {
+          "text": "–//––//––//––//––//––//––//––",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 440,
+      "style": "Heading 2",
+      "alignment": null,
+      "text": "Se for descoberto",
+      "runs": [
+        {
+          "text": "Se for descoberto",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 441,
+      "style": "normal",
+      "alignment": null,
+      "text": "Ele não ataca.",
+      "runs": [
+        {
+          "text": "Ele não ataca.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 442,
+      "style": "normal",
+      "alignment": null,
+      "text": "Ainda.",
+      "runs": [
+        {
+          "text": "Ainda.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 443,
+      "style": "normal",
+      "alignment": null,
+      "text": "Olha para as cordas.",
+      "runs": [
+        {
+          "text": "Olha para as cordas.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 444,
+      "style": "normal",
+      "alignment": null,
+      "text": "Desloca o próprio polegar.",
+      "runs": [
+        {
+          "text": "Desloca o próprio polegar.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 445,
+      "style": "normal",
+      "alignment": null,
+      "text": "Um som seco.",
+      "runs": [
+        {
+          "text": "Um som seco.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 446,
+      "style": "normal",
+      "alignment": null,
+      "text": "A mão passa facilmente pela amarra.",
+      "runs": [
+        {
+          "text": "A mão passa facilmente pela amarra.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 447,
+      "style": "normal",
+      "alignment": null,
+      "text": "Faz o mesmo com a outra.",
+      "runs": [
+        {
+          "text": "Faz o mesmo com a outra.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 448,
+      "style": "normal",
+      "alignment": null,
+      "text": "Os ladrões recuam.",
+      "runs": [
+        {
+          "text": "Os ladrões recuam.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 449,
+      "style": "normal",
+      "alignment": null,
+      "text": "Ele se levanta.",
+      "runs": [
+        {
+          "text": "Ele se levanta.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 450,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Agora sabemos mais uns sobre os outros.”",
+      "runs": [
+        {
+          "text": "“Agora sabemos mais uns sobre os outros.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 451,
+      "style": "normal",
+      "alignment": null,
+      "text": "Corre.",
+      "runs": [
+        {
+          "text": "Corre.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 452,
+      "style": "normal",
+      "alignment": null,
+      "text": "Quando entra entre as árvores, seu rosto muda por uma fração de segundo.",
+      "runs": [
+        {
+          "text": "Quando entra entre as árvores, seu rosto muda por uma fração de segundo.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 453,
+      "style": "normal",
+      "alignment": null,
+      "text": "Eira.",
+      "runs": [
+        {
+          "text": "Eira.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 454,
+      "style": "normal",
+      "alignment": null,
+      "text": "Maelith.",
+      "runs": [
+        {
+          "text": "Maelith.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 455,
+      "style": "normal",
+      "alignment": null,
+      "text": "Depois desaparece.",
+      "runs": [
+        {
+          "text": "Depois desaparece.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 456,
+      "style": "normal",
+      "alignment": "CENTER (1)",
+      "text": "–//––//––//––//––//––//––//––",
+      "runs": [
+        {
+          "text": "–//––//––//––//––//––//––//––",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 457,
+      "style": "Heading 2",
+      "alignment": null,
+      "text": "Se não for descoberto",
+      "runs": [
+        {
+          "text": "Se não for descoberto",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 458,
+      "style": "normal",
+      "alignment": null,
+      "text": "Nada acontece imediatamente.",
+      "runs": [
+        {
+          "text": "Nada acontece imediatamente.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 459,
+      "style": "normal",
+      "alignment": null,
+      "text": "Ele permanece vulnerável.",
+      "runs": [
+        {
+          "text": "Ele permanece vulnerável.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 460,
+      "style": "normal",
+      "alignment": null,
+      "text": "Os jogadores podem libertá-lo.",
+      "runs": [
+        {
+          "text": "Os jogadores podem libertá-lo.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 461,
+      "style": "normal",
+      "alignment": null,
+      "text": "Ele acompanha o grupo.",
+      "runs": [
+        {
+          "text": "Ele acompanha o grupo.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 462,
+      "style": "normal",
+      "alignment": null,
+      "text": "É gentil.",
+      "runs": [
+        {
+          "text": "É gentil.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 463,
+      "style": "normal",
+      "alignment": null,
+      "text": "Fala pouco.",
+      "runs": [
+        {
+          "text": "Fala pouco.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 464,
+      "style": "normal",
+      "alignment": null,
+      "text": "Pergunta:",
+      "runs": [
+        {
+          "text": "Pergunta:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 465,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Para onde vocês estão indo?”",
+      "runs": [
+        {
+          "text": "“Para onde vocês estão indo?”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 466,
+      "style": "normal",
+      "alignment": null,
+      "text": "“O que esse sino faz?”",
+      "runs": [
+        {
+          "text": "“O que esse sino faz?”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 467,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Esse instrumento pertence a você há muito tempo?”",
+      "runs": [
+        {
+          "text": "“Esse instrumento pertence a você há muito tempo?”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 468,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Vocês sempre viajam juntos?”",
+      "runs": [
+        {
+          "text": "“Vocês sempre viajam juntos?”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 469,
+      "style": "normal",
+      "alignment": null,
+      "text": "Não force suspeita.",
+      "runs": [
+        {
+          "text": "Não force suspeita.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 470,
+      "style": "normal",
+      "alignment": null,
+      "text": "Se enganou os jogadores, a criatura venceu esta etapa.",
+      "runs": [
+        {
+          "text": "Se enganou os jogadores, a criatura venceu esta etapa.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 471,
+      "style": "normal",
+      "alignment": null,
+      "text": "A revelação acontecerá mais tarde.",
+      "runs": [
+        {
+          "text": "A revelação acontecerá mais tarde.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 472,
+      "style": "normal",
+      "alignment": "CENTER (1)",
+      "text": "–//––//––//––//––//––//––//––",
+      "runs": [
+        {
+          "text": "–//––//––//––//––//––//––//––",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 473,
+      "style": "Heading 2",
+      "alignment": null,
+      "text": "O destino dos ladrões",
+      "runs": [
+        {
+          "text": "O destino dos ladrões",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 474,
+      "style": "normal",
+      "alignment": null,
+      "text": "Os ladrões são culpados de roubo.",
+      "runs": [
+        {
+          "text": "Os ladrões são culpados de roubo.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 475,
+      "style": "normal",
+      "alignment": null,
+      "text": "Não são seguidores de Aglor.",
+      "runs": [
+        {
+          "text": "Não são seguidores de Aglor.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 476,
+      "style": "normal",
+      "alignment": null,
+      "text": "Não são assassinos.",
+      "runs": [
+        {
+          "text": "Não são assassinos.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 477,
+      "style": "normal",
+      "alignment": null,
+      "text": "O Anão prefere levá-los vivos.",
+      "runs": [
+        {
+          "text": "O Anão prefere levá-los vivos.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 478,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Ladrão pode devolver o que roubou.”",
+      "runs": [
+        {
+          "text": "“Ladrão pode devolver o que roubou.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 479,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Morto não devolve nada.”",
+      "runs": [
+        {
+          "text": "“Morto não devolve nada.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 480,
+      "style": "normal",
+      "alignment": null,
+      "text": "Deixe o grupo decidir.",
+      "runs": [
+        {
+          "text": "Deixe o grupo decidir.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 481,
+      "style": "normal",
+      "alignment": null,
+      "text": "Se os pouparem, eles seguirão em outra direção após indicar o caminho.",
+      "runs": [
+        {
+          "text": "Se os pouparem, eles seguirão em outra direção após indicar o caminho.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 482,
+      "style": "normal",
+      "alignment": null,
+      "text": "Se confiarem minimamente neles, um deles poderá aparecer brevemente no combate final.",
+      "runs": [
+        {
+          "text": "Se confiarem minimamente neles, um deles poderá aparecer brevemente no combate final.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 483,
+      "style": "normal",
+      "alignment": null,
+      "text": "Não como herói.",
+      "runs": [
+        {
+          "text": "Não como herói.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 484,
+      "style": "normal",
+      "alignment": null,
+      "text": "Como alguém retribuindo uma escolha.",
+      "runs": [
+        {
+          "text": "Como alguém retribuindo uma escolha.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 485,
+      "style": "Heading 1",
+      "alignment": null,
+      "text": "ATO IV FANGORN SABE SEUS NOMES",
+      "runs": [
+        {
+          "text": "ATO IV FANGORN SABE SEUS NOMES",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 486,
+      "style": "Heading 3",
+      "alignment": null,
+      "text": "Considerações do Ato",
+      "runs": [
+        {
+          "text": "Considerações do Ato",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 487,
+      "style": "normal",
+      "alignment": null,
+      "text": "Este ato abandona temporariamente o combate. Fangorn passa a mexer com a percepção e as memórias dos personagens. O objetivo é fazer os jogadores rolarem, falharem e dependerem uns dos outros. Cada personagem receberá uma manifestação pessoal. Nando Serenata terá o momento mais importante, pois a floresta ou aquilo que está nela utilizará a memória de Maerion para separá-lo do grupo.",
+      "runs": [
+        {
+          "text": "Este ato abandona temporariamente o combate. Fangorn passa a mexer com a percepção e as memórias dos personagens. O objetivo é fazer os jogadores rolarem, falharem e dependerem uns dos outros. Cada personagem receberá uma manifestação pessoal. Nando Serenata terá o momento mais importante, pois a floresta ou aquilo que está nela utilizará a memória de Maerion para separá-lo do grupo.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 488,
+      "style": "normal",
+      "alignment": "CENTER (1)",
+      "text": "–//––//––//––//––//––//––//––",
+      "runs": [
+        {
+          "text": "–//––//––//––//––//––//––//––",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 489,
+      "style": "normal",
+      "alignment": null,
+      "text": "O grupo continua.",
+      "runs": [
+        {
+          "text": "O grupo continua.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 490,
+      "style": "normal",
+      "alignment": null,
+      "text": "Mas a floresta muda.",
+      "runs": [
+        {
+          "text": "Mas a floresta muda.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 491,
+      "style": "normal",
+      "alignment": null,
+      "text": "As árvores ficam mais próximas.",
+      "runs": [
+        {
+          "text": "As árvores ficam mais próximas.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 492,
+      "style": "normal",
+      "alignment": null,
+      "text": "Galhos bloqueiam o céu.",
+      "runs": [
+        {
+          "text": "Galhos bloqueiam o céu.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 493,
+      "style": "normal",
+      "alignment": null,
+      "text": "O chão fica úmido.",
+      "runs": [
+        {
+          "text": "O chão fica úmido.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 494,
+      "style": "normal",
+      "alignment": null,
+      "text": "Existe uma névoa baixa entre as raízes.",
+      "runs": [
+        {
+          "text": "Existe uma névoa baixa entre as raízes.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 495,
+      "style": "normal",
+      "alignment": null,
+      "text": "A temperatura cai.",
+      "runs": [
+        {
+          "text": "A temperatura cai.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 496,
+      "style": "normal",
+      "alignment": "CENTER (1)",
+      "text": "–//––//––//––//––//––//––//––",
+      "runs": [
+        {
+          "text": "–//––//––//––//––//––//––//––",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 497,
+      "style": "Heading 2",
+      "alignment": null,
+      "text": "As árvores que respiram",
+      "runs": [
+        {
+          "text": "As árvores que respiram",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 498,
+      "style": "normal",
+      "alignment": null,
+      "text": "Eles precisam atravessar um espaço muito estreito entre duas árvores enormes.",
+      "runs": [
+        {
+          "text": "Eles precisam atravessar um espaço muito estreito entre duas árvores enormes.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 499,
+      "style": "normal",
+      "alignment": null,
+      "text": "Quando passam:",
+      "runs": [
+        {
+          "text": "Quando passam:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 500,
+      "style": "normal",
+      "alignment": null,
+      "text": "um dos personagens encosta a mão na casca.",
+      "runs": [
+        {
+          "text": "um dos personagens encosta a mão na casca.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 501,
+      "style": "normal",
+      "alignment": null,
+      "text": "Ela está quente.",
+      "runs": [
+        {
+          "text": "Ela está quente.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 502,
+      "style": "normal",
+      "alignment": null,
+      "text": "Não morna.",
+      "runs": [
+        {
+          "text": "Não morna.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 503,
+      "style": "normal",
+      "alignment": null,
+      "text": "Quente.",
+      "runs": [
+        {
+          "text": "Quente.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 504,
+      "style": "normal",
+      "alignment": null,
+      "text": "Depois:",
+      "runs": [
+        {
+          "text": "Depois:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 505,
+      "style": "normal",
+      "alignment": null,
+      "text": "a superfície se move.",
+      "runs": [
+        {
+          "text": "a superfície se move.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 506,
+      "style": "normal",
+      "alignment": null,
+      "text": "Muito lentamente.",
+      "runs": [
+        {
+          "text": "Muito lentamente.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 507,
+      "style": "normal",
+      "alignment": null,
+      "text": "Expande.",
+      "runs": [
+        {
+          "text": "Expande.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 508,
+      "style": "normal",
+      "alignment": null,
+      "text": "Contrai.",
+      "runs": [
+        {
+          "text": "Contrai.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 509,
+      "style": "normal",
+      "alignment": null,
+      "text": "Expande.",
+      "runs": [
+        {
+          "text": "Expande.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 510,
+      "style": "normal",
+      "alignment": null,
+      "text": "Contrai.",
+      "runs": [
+        {
+          "text": "Contrai.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 511,
+      "style": "normal",
+      "alignment": null,
+      "text": "Como um peito respirando.",
+      "runs": [
+        {
+          "text": "Como um peito respirando.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 512,
+      "style": "normal",
+      "alignment": null,
+      "text": "Então outra árvore faz o mesmo.",
+      "runs": [
+        {
+          "text": "Então outra árvore faz o mesmo.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 513,
+      "style": "normal",
+      "alignment": null,
+      "text": "Depois outra.",
+      "runs": [
+        {
+          "text": "Depois outra.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 514,
+      "style": "normal",
+      "alignment": null,
+      "text": "A floresta inteira parece respirar.",
+      "runs": [
+        {
+          "text": "A floresta inteira parece respirar.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 515,
+      "style": "Heading 3",
+      "alignment": null,
+      "text": "Teste de Espírito",
+      "runs": [
+        {
+          "text": "Teste de Espírito",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 516,
+      "style": "normal",
+      "alignment": null,
+      "text": "CD 13",
+      "runs": [
+        {
+          "text": "CD 13",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 517,
+      "style": "normal",
+      "alignment": null,
+      "text": "Falha: +1 Abalo.",
+      "runs": [
+        {
+          "text": "Falha: +1 Abalo.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 518,
+      "style": "normal",
+      "alignment": null,
+      "text": "Sucesso por 5 ou mais:",
+      "runs": [
+        {
+          "text": "Sucesso por 5 ou mais:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 519,
+      "style": "normal",
+      "alignment": null,
+      "text": "o personagem percebe que não é exatamente hostilidade.",
+      "runs": [
+        {
+          "text": "o personagem percebe que não é exatamente hostilidade.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 520,
+      "style": "normal",
+      "alignment": null,
+      "text": "É consciência.",
+      "runs": [
+        {
+          "text": "É consciência.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 521,
+      "style": "normal",
+      "alignment": null,
+      "text": "Algo sabe que eles estão ali.",
+      "runs": [
+        {
+          "text": "Algo sabe que eles estão ali.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 522,
+      "style": "normal",
+      "alignment": "CENTER (1)",
+      "text": "–//––//––//––//––//––//––//––",
+      "runs": [
+        {
+          "text": "–//––//––//––//––//––//––//––",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 523,
+      "style": "Heading 2",
+      "alignment": null,
+      "text": "O caminho impossível",
+      "runs": [
+        {
+          "text": "O caminho impossível",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 524,
+      "style": "normal",
+      "alignment": null,
+      "text": "Depois de aproximadamente vinte minutos:",
+      "runs": [
+        {
+          "text": "Depois de aproximadamente vinte minutos:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 525,
+      "style": "normal",
+      "alignment": null,
+      "text": "Calion ou Elenya percebe pegadas.",
+      "runs": [
+        {
+          "text": "Calion ou Elenya percebe pegadas.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 526,
+      "style": "normal",
+      "alignment": null,
+      "text": "São deles.",
+      "runs": [
+        {
+          "text": "São deles.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 527,
+      "style": "normal",
+      "alignment": null,
+      "text": "Eles retornaram ao mesmo lugar.",
+      "runs": [
+        {
+          "text": "Eles retornaram ao mesmo lugar.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 528,
+      "style": "normal",
+      "alignment": null,
+      "text": "Continuam.",
+      "runs": [
+        {
+          "text": "Continuam.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 529,
+      "style": "normal",
+      "alignment": null,
+      "text": "Mais quinze minutos.",
+      "runs": [
+        {
+          "text": "Mais quinze minutos.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 530,
+      "style": "normal",
+      "alignment": null,
+      "text": "Novamente:",
+      "runs": [
+        {
+          "text": "Novamente:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 531,
+      "style": "normal",
+      "alignment": null,
+      "text": "as próprias pegadas.",
+      "runs": [
+        {
+          "text": "as próprias pegadas.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 532,
+      "style": "normal",
+      "alignment": null,
+      "text": "Só que agora existe algo diferente.",
+      "runs": [
+        {
+          "text": "Só que agora existe algo diferente.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 533,
+      "style": "normal",
+      "alignment": null,
+      "text": "Contem.",
+      "runs": [
+        {
+          "text": "Contem.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 534,
+      "style": "normal",
+      "alignment": null,
+      "text": "Nando.",
+      "runs": [
+        {
+          "text": "Nando.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 535,
+      "style": "normal",
+      "alignment": null,
+      "text": "Elenya.",
+      "runs": [
+        {
+          "text": "Elenya.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 536,
+      "style": "normal",
+      "alignment": null,
+      "text": "Calion.",
+      "runs": [
+        {
+          "text": "Calion.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 537,
+      "style": "normal",
+      "alignment": null,
+      "text": "Anão.",
+      "runs": [
+        {
+          "text": "Anão.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 538,
+      "style": "normal",
+      "alignment": null,
+      "text": "Javali.",
+      "runs": [
+        {
+          "text": "Javali.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 539,
+      "style": "normal",
+      "alignment": null,
+      "text": "E...",
+      "runs": [
+        {
+          "text": "E...",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 540,
+      "style": "normal",
+      "alignment": null,
+      "text": "um quinto conjunto de botas.",
+      "runs": [
+        {
+          "text": "um quinto conjunto de botas.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 541,
+      "style": "normal",
+      "alignment": null,
+      "text": "Se o jovem os acompanha, existe um conjunto além do número esperado.",
+      "runs": [
+        {
+          "text": "Se o jovem os acompanha, existe ",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        },
+        {
+          "text": "um conjunto além do número esperado",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        },
+        {
+          "text": ".",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 542,
+      "style": "normal",
+      "alignment": null,
+      "text": "Essas pegadas caminharam junto com o grupo.",
+      "runs": [
+        {
+          "text": "Essas pegadas caminharam junto com o grupo.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 543,
+      "style": "normal",
+      "alignment": null,
+      "text": "Durante quilômetros.",
+      "runs": [
+        {
+          "text": "Durante quilômetros.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 544,
+      "style": "normal",
+      "alignment": null,
+      "text": "Ninguém viu a pessoa.",
+      "runs": [
+        {
+          "text": "Ninguém viu a pessoa.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 545,
+      "style": "normal",
+      "alignment": null,
+      "text": "Teste de Percepção CD 14.",
+      "runs": [
+        {
+          "text": "Teste de Percepção CD 14.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 546,
+      "style": "normal",
+      "alignment": null,
+      "text": "As pegadas extras seguem até uma árvore.",
+      "runs": [
+        {
+          "text": "As pegadas extras seguem até uma árvore.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 547,
+      "style": "normal",
+      "alignment": null,
+      "text": "E terminam.",
+      "runs": [
+        {
+          "text": "E terminam.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 548,
+      "style": "normal",
+      "alignment": null,
+      "text": "Não contornam.",
+      "runs": [
+        {
+          "text": "Não contornam.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 549,
+      "style": "normal",
+      "alignment": null,
+      "text": "Não voltam.",
+      "runs": [
+        {
+          "text": "Não voltam.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 550,
+      "style": "normal",
+      "alignment": null,
+      "text": "Entram no tronco.",
+      "runs": [
+        {
+          "text": "Entram no tronco.",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 551,
+      "style": "normal",
+      "alignment": null,
+      "text": "Se alguém tocar a árvore:",
+      "runs": [
+        {
+          "text": "Se alguém tocar a árvore:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 552,
+      "style": "normal",
+      "alignment": null,
+      "text": "fria.",
+      "runs": [
+        {
+          "text": "fria.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 553,
+      "style": "normal",
+      "alignment": null,
+      "text": "Completamente morta.",
+      "runs": [
+        {
+          "text": "Completamente morta.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 554,
+      "style": "normal",
+      "alignment": "CENTER (1)",
+      "text": "–//––//––//––//––//––//––//––",
+      "runs": [
+        {
+          "text": "–//––//––//––//––//––//––//––",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 555,
+      "style": "Heading 2",
+      "alignment": null,
+      "text": "As vozes",
+      "runs": [
+        {
+          "text": "As vozes",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 556,
+      "style": "normal",
+      "alignment": null,
+      "text": "O grupo começa a ouvir coisas separadamente.",
+      "runs": [
+        {
+          "text": "O grupo começa a ouvir coisas separadamente.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 557,
+      "style": "normal",
+      "alignment": null,
+      "text": "Não anuncie para todos ao mesmo tempo.",
+      "runs": [
+        {
+          "text": "Não anuncie para todos ao mesmo tempo.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 558,
+      "style": "Heading 3",
+      "alignment": null,
+      "text": "Elenya",
+      "runs": [
+        {
+          "text": "Elenya",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 559,
+      "style": "normal",
+      "alignment": null,
+      "text": "Primeiro:",
+      "runs": [
+        {
+          "text": "Primeiro:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 560,
+      "style": "normal",
+      "alignment": null,
+      "text": "um sussurro.",
+      "runs": [
+        {
+          "text": "um sussurro.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 561,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Elenya...”",
+      "runs": [
+        {
+          "text": "“Elenya...”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 562,
+      "style": "normal",
+      "alignment": null,
+      "text": "É uma voz masculina.",
+      "runs": [
+        {
+          "text": "É uma voz masculina.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 563,
+      "style": "normal",
+      "alignment": null,
+      "text": "Distante.",
+      "runs": [
+        {
+          "text": "Distante.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 564,
+      "style": "normal",
+      "alignment": null,
+      "text": "Calma.",
+      "runs": [
+        {
+          "text": "Calma.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 565,
+      "style": "normal",
+      "alignment": null,
+      "text": "Familiar mesmo que ela não consiga imediatamente identificar.",
+      "runs": [
+        {
+          "text": "Familiar mesmo que ela não consiga imediatamente identificar.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 566,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Você queria a verdade.”",
+      "runs": [
+        {
+          "text": "“Você queria a verdade.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 567,
+      "style": "normal",
+      "alignment": null,
+      "text": "Pausa.",
+      "runs": [
+        {
+          "text": "Pausa.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 568,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Ainda quer?”",
+      "runs": [
+        {
+          "text": "“Ainda quer?”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 569,
+      "style": "normal",
+      "alignment": null,
+      "text": "Se ela responder:",
+      "runs": [
+        {
+          "text": "Se ela responder:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 570,
+      "style": "normal",
+      "alignment": null,
+      "text": "nenhuma resposta.",
+      "runs": [
+        {
+          "text": "nenhuma resposta.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 571,
+      "style": "normal",
+      "alignment": null,
+      "text": "Apenas:",
+      "runs": [
+        {
+          "text": "Apenas:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 572,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Então continue.”",
+      "runs": [
+        {
+          "text": "“Então continue.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 573,
+      "style": "normal",
+      "alignment": null,
+      "text": "Teste de Espírito CD 13.",
+      "runs": [
+        {
+          "text": "Teste de Espírito CD 13.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 574,
+      "style": "normal",
+      "alignment": null,
+      "text": "Se ela falhar mas continuar andando:",
+      "runs": [
+        {
+          "text": "Se ela falhar mas continuar andando:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 575,
+      "style": "normal",
+      "alignment": null,
+      "text": "ganha 1 Esperança.",
+      "runs": [
+        {
+          "text": "ganha 1 Esperança.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 576,
+      "style": "normal",
+      "alignment": "CENTER (1)",
+      "text": "–//––//––//––//––//––//––//––",
+      "runs": [
+        {
+          "text": "–//––//––//––//––//––//––//––",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 577,
+      "style": "Heading 3",
+      "alignment": null,
+      "text": "Calion",
+      "runs": [
+        {
+          "text": "Calion",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 578,
+      "style": "normal",
+      "alignment": null,
+      "text": "Ele ouve élfico.",
+      "runs": [
+        {
+          "text": "Ele ouve élfico.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 579,
+      "style": "normal",
+      "alignment": null,
+      "text": "Muito antigo.",
+      "runs": [
+        {
+          "text": "Muito antigo.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 580,
+      "style": "normal",
+      "alignment": null,
+      "text": "Uma voz de uma época que nenhum humano presente poderia conhecer.",
+      "runs": [
+        {
+          "text": "Uma voz de uma época que nenhum humano presente poderia conhecer.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 581,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Calion.”",
+      "runs": [
+        {
+          "text": "“Calion.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 582,
+      "style": "normal",
+      "alignment": null,
+      "text": "Depois:",
+      "runs": [
+        {
+          "text": "Depois:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 583,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Você ainda procura a Luz.”",
+      "runs": [
+        {
+          "text": "“Você ainda procura a Luz.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 584,
+      "style": "normal",
+      "alignment": null,
+      "text": "À frente, entre duas árvores:",
+      "runs": [
+        {
+          "text": "À frente, entre duas árvores:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 585,
+      "style": "normal",
+      "alignment": null,
+      "text": "um brilho.",
+      "runs": [
+        {
+          "text": "um brilho.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 586,
+      "style": "normal",
+      "alignment": null,
+      "text": "Branco.",
+      "runs": [
+        {
+          "text": "Branco.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 587,
+      "style": "normal",
+      "alignment": null,
+      "text": "Dourado.",
+      "runs": [
+        {
+          "text": "Dourado.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 588,
+      "style": "normal",
+      "alignment": null,
+      "text": "Puro.",
+      "runs": [
+        {
+          "text": "Puro.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 589,
+      "style": "normal",
+      "alignment": null,
+      "text": "Por um segundo:",
+      "runs": [
+        {
+          "text": "Por um segundo:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 590,
+      "style": "normal",
+      "alignment": null,
+      "text": "lembra aquilo que ele busca desde eras antigas.",
+      "runs": [
+        {
+          "text": "lembra aquilo que ele busca desde eras antigas.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 591,
+      "style": "normal",
+      "alignment": null,
+      "text": "Se Calion caminhar até ela, deixe.",
+      "runs": [
+        {
+          "text": "Se Calion caminhar até ela, deixe.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 592,
+      "style": "normal",
+      "alignment": null,
+      "text": "O brilho recua.",
+      "runs": [
+        {
+          "text": "O brilho recua.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 593,
+      "style": "normal",
+      "alignment": null,
+      "text": "Vai atraindo-o para longe.",
+      "runs": [
+        {
+          "text": "Vai atraindo-o para longe.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 594,
+      "style": "normal",
+      "alignment": null,
+      "text": "Então:",
+      "runs": [
+        {
+          "text": "Então:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 595,
+      "style": "normal",
+      "alignment": null,
+      "text": "um companheiro tropeça ou uma raiz prende o pé de Elenya.",
+      "runs": [
+        {
+          "text": "um companheiro tropeça ou uma raiz prende o pé de Elenya.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 596,
+      "style": "normal",
+      "alignment": null,
+      "text": "Calion percebe que, se continuar atrás da luz, deixará o grupo.",
+      "runs": [
+        {
+          "text": "Calion percebe que, se continuar atrás da luz, deixará o grupo.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 597,
+      "style": "normal",
+      "alignment": null,
+      "text": "Não faça teste.",
+      "runs": [
+        {
+          "text": "Não faça teste.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 598,
+      "style": "normal",
+      "alignment": null,
+      "text": "Pergunte:",
+      "runs": [
+        {
+          "text": "Pergunte:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 599,
+      "style": "normal",
+      "alignment": null,
+      "text": "O que Calion faz?",
+      "runs": [
+        {
+          "text": "O que Calion faz?",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 600,
+      "style": "normal",
+      "alignment": null,
+      "text": "Se abandonar a luz e voltar para ajudar:",
+      "runs": [
+        {
+          "text": "Se abandonar a luz e voltar para ajudar:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 601,
+      "style": "normal",
+      "alignment": null,
+      "text": "ganha 1 Esperança.",
+      "runs": [
+        {
+          "text": "ganha 1 Esperança.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 602,
+      "style": "normal",
+      "alignment": null,
+      "text": "Quando olhar novamente:",
+      "runs": [
+        {
+          "text": "Quando olhar novamente:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 603,
+      "style": "normal",
+      "alignment": null,
+      "text": "a luz desapareceu.",
+      "runs": [
+        {
+          "text": "a luz desapareceu.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 604,
+      "style": "normal",
+      "alignment": "CENTER (1)",
+      "text": "–//––//––//––//––//––//––//––",
+      "runs": [
+        {
+          "text": "–//––//––//––//––//––//––//––",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 605,
+      "style": "Heading 3",
+      "alignment": null,
+      "text": "Nando Serenata",
+      "runs": [
+        {
+          "text": "Nando Serenata",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 606,
+      "style": "normal",
+      "alignment": null,
+      "text": "Primeiro ele ouve apenas música.",
+      "runs": [
+        {
+          "text": "Primeiro ele ouve apenas música.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 607,
+      "style": "normal",
+      "alignment": null,
+      "text": "Uma melodia simples.",
+      "runs": [
+        {
+          "text": "Uma melodia simples.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 608,
+      "style": "normal",
+      "alignment": null,
+      "text": "Talvez até familiar.",
+      "runs": [
+        {
+          "text": "Talvez até familiar.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 609,
+      "style": "normal",
+      "alignment": null,
+      "text": "Depois outra nota.",
+      "runs": [
+        {
+          "text": "Depois outra nota.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 610,
+      "style": "normal",
+      "alignment": null,
+      "text": "O Alaúde vibra sozinho.",
+      "runs": [
+        {
+          "text": "O Alaúde vibra sozinho.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 611,
+      "style": "normal",
+      "alignment": null,
+      "text": "Uma corda.",
+      "runs": [
+        {
+          "text": "Uma corda.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 612,
+      "style": "normal",
+      "alignment": null,
+      "text": "Depois duas.",
+      "runs": [
+        {
+          "text": "Depois duas.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 613,
+      "style": "normal",
+      "alignment": null,
+      "text": "A melodia continua.",
+      "runs": [
+        {
+          "text": "A melodia continua.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 614,
+      "style": "normal",
+      "alignment": null,
+      "text": "E finalmente Nando reconhece.",
+      "runs": [
+        {
+          "text": "E finalmente Nando reconhece.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 615,
+      "style": "normal",
+      "alignment": null,
+      "text": "Maerion.",
+      "runs": [
+        {
+          "text": "Maerion.",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 616,
+      "style": "normal",
+      "alignment": null,
+      "text": "A mesma maneira de cantar.",
+      "runs": [
+        {
+          "text": "A mesma maneira de cantar.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 617,
+      "style": "normal",
+      "alignment": null,
+      "text": "O mesmo erro em determinada nota.",
+      "runs": [
+        {
+          "text": "O mesmo erro em determinada nota.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 618,
+      "style": "normal",
+      "alignment": null,
+      "text": "O mesmo ritmo.",
+      "runs": [
+        {
+          "text": "O mesmo ritmo.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 619,
+      "style": "normal",
+      "alignment": null,
+      "text": "Uma voz distante:",
+      "runs": [
+        {
+          "text": "Uma voz distante:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 620,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Mestre?”",
+      "runs": [
+        {
+          "text": "“Mestre?”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 621,
+      "style": "normal",
+      "alignment": null,
+      "text": "Pare.",
+      "runs": [
+        {
+          "text": "Pare.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 622,
+      "style": "normal",
+      "alignment": null,
+      "text": "Espere Giovane reagir.",
+      "runs": [
+        {
+          "text": "Espere Giovane reagir.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 623,
+      "style": "normal",
+      "alignment": null,
+      "text": "A voz novamente:",
+      "runs": [
+        {
+          "text": "A voz novamente:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 624,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Mestre...”",
+      "runs": [
+        {
+          "text": "“Mestre...”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 625,
+      "style": "normal",
+      "alignment": null,
+      "text": "Está vindo de dentro da floresta.",
+      "runs": [
+        {
+          "text": "Está vindo de dentro da floresta.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 626,
+      "style": "normal",
+      "alignment": null,
+      "text": "Teste de Espírito.",
+      "runs": [
+        {
+          "text": "Teste de Espírito.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 627,
+      "style": "normal",
+      "alignment": null,
+      "text": "CD 15.",
+      "runs": [
+        {
+          "text": "CD 15.",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 628,
+      "style": "Heading 3",
+      "alignment": null,
+      "text": "Sucesso",
+      "runs": [
+        {
+          "text": "Sucesso",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 629,
+      "style": "normal",
+      "alignment": null,
+      "text": "Nando para.",
+      "runs": [
+        {
+          "text": "Nando para.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 630,
+      "style": "normal",
+      "alignment": null,
+      "text": "Sabe que alguma coisa está errada.",
+      "runs": [
+        {
+          "text": "Sabe que alguma coisa está errada.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 631,
+      "style": "normal",
+      "alignment": null,
+      "text": "Mas a voz continua.",
+      "runs": [
+        {
+          "text": "Mas a voz continua.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 632,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Você não vem?”",
+      "runs": [
+        {
+          "text": "“Você não vem?”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 633,
+      "style": "Heading 3",
+      "alignment": null,
+      "text": "Falha",
+      "runs": [
+        {
+          "text": "Falha",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 634,
+      "style": "normal",
+      "alignment": null,
+      "text": "Não diga simplesmente \"você falhou\".",
+      "runs": [
+        {
+          "text": "Não diga simplesmente \"você falhou\".",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 635,
+      "style": "normal",
+      "alignment": null,
+      "text": "Diga:",
+      "runs": [
+        {
+          "text": "Diga:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 636,
+      "style": "normal",
+      "alignment": null,
+      "text": "Quando você percebe...",
+      "runs": [
+        {
+          "text": "Quando você percebe...",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 637,
+      "style": "normal",
+      "alignment": null,
+      "text": "já está andando.",
+      "runs": [
+        {
+          "text": "já está andando.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 638,
+      "style": "normal",
+      "alignment": null,
+      "text": "Ele começa a seguir a música.",
+      "runs": [
+        {
+          "text": "Ele começa a seguir a música.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 639,
+      "style": "normal",
+      "alignment": null,
+      "text": "O grupo deve notar.",
+      "runs": [
+        {
+          "text": "O grupo deve notar.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 640,
+      "style": "normal",
+      "alignment": null,
+      "text": "Percepção CD 11.",
+      "runs": [
+        {
+          "text": "Percepção CD 11.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 641,
+      "style": "normal",
+      "alignment": null,
+      "text": "Se ninguém perceber imediatamente, Nando se afasta aproximadamente 15 metros.",
+      "runs": [
+        {
+          "text": "Se ninguém perceber imediatamente, Nando se afasta aproximadamente 15 metros.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 642,
+      "style": "normal",
+      "alignment": null,
+      "text": "A música fica mais clara.",
+      "runs": [
+        {
+          "text": "A música fica mais clara.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 643,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Você demorou.”",
+      "runs": [
+        {
+          "text": "“Você demorou.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 644,
+      "style": "normal",
+      "alignment": null,
+      "text": "Quando outro personagem vai buscá-lo, segura-o, chama por ele ou impede que continue:",
+      "runs": [
+        {
+          "text": "Quando outro personagem vai buscá-lo, segura-o, chama por ele ou impede que continue:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 645,
+      "style": "normal",
+      "alignment": null,
+      "text": "esse personagem ganha 1 Esperança.",
+      "runs": [
+        {
+          "text": "esse personagem ganha 1 Esperança.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 646,
+      "style": "normal",
+      "alignment": null,
+      "text": "Se Nando decidir resistir depois de falhar:",
+      "runs": [
+        {
+          "text": "Se Nando decidir resistir depois de falhar:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 647,
+      "style": "normal",
+      "alignment": null,
+      "text": "ele também ganha 1 Esperança.",
+      "runs": [
+        {
+          "text": "ele também ganha 1 Esperança.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 648,
+      "style": "normal",
+      "alignment": null,
+      "text": "A música para.",
+      "runs": [
+        {
+          "text": "A música para.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 649,
+      "style": "normal",
+      "alignment": null,
+      "text": "Silêncio.",
+      "runs": [
+        {
+          "text": "Silêncio.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 650,
+      "style": "Heading 1",
+      "alignment": null,
+      "text": "ATO V A CLAREIRA DOS ROSTOS",
+      "runs": [
+        {
+          "text": "ATO V A CLAREIRA DOS ROSTOS",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 651,
+      "style": "Heading 3",
+      "alignment": null,
+      "text": "Considerações do Ato",
+      "runs": [
+        {
+          "text": "Considerações do Ato",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 652,
+      "style": "normal",
+      "alignment": null,
+      "text": "Este é o clímax da sessão. A ameaça perseguindo o grupo revela que Eira e Maelith não foram acontecimentos isolados. O terceiro infiltrado utiliza memórias e rostos para desestabilizar a companhia. O foco emocional será Nando Serenata, utilizando Maerion para atingir sua culpa e sua função dentro do grupo. O combate deve ser difícil, mas permitir que os itens lendários sejam relevantes e recompensar o uso inteligente deles.",
+      "runs": [
+        {
+          "text": "Este é o clímax da sessão. A ameaça perseguindo o grupo revela que Eira e Maelith não foram acontecimentos isolados. O terceiro infiltrado utiliza memórias e rostos para desestabilizar a companhia. O foco emocional será Nando Serenata, utilizando Maerion para atingir sua culpa e sua função dentro do grupo. O combate deve ser difícil, mas permitir que os itens lendários sejam relevantes e recompensar o uso inteligente deles.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 653,
+      "style": "normal",
+      "alignment": "CENTER (1)",
+      "text": "–//––//––//––//––//––//––//––",
+      "runs": [
+        {
+          "text": "–//––//––//––//––//––//––//––",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 654,
+      "style": "normal",
+      "alignment": null,
+      "text": "A música volta.",
+      "runs": [
+        {
+          "text": "A música volta.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 655,
+      "style": "normal",
+      "alignment": null,
+      "text": "Desta vez todos ouvem.",
+      "runs": [
+        {
+          "text": "Desta vez todos ouvem.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 656,
+      "style": "normal",
+      "alignment": null,
+      "text": "Ela conduz o grupo.",
+      "runs": [
+        {
+          "text": "Ela conduz o grupo.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 657,
+      "style": "normal",
+      "alignment": null,
+      "text": "As árvores começam lentamente a se afastar.",
+      "runs": [
+        {
+          "text": "As árvores começam lentamente a se afastar.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 658,
+      "style": "normal",
+      "alignment": null,
+      "text": "Até chegarem a uma clareira.",
+      "runs": [
+        {
+          "text": "Até chegarem a uma clareira.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 659,
+      "style": "normal",
+      "alignment": null,
+      "text": "Pela primeira vez em horas:",
+      "runs": [
+        {
+          "text": "Pela primeira vez em horas:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 660,
+      "style": "normal",
+      "alignment": null,
+      "text": "céu.",
+      "runs": [
+        {
+          "text": "céu.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 661,
+      "style": "normal",
+      "alignment": null,
+      "text": "Mas não existe alívio.",
+      "runs": [
+        {
+          "text": "Mas não existe alívio.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 662,
+      "style": "normal",
+      "alignment": null,
+      "text": "Leia:",
+      "runs": [
+        {
+          "text": "Leia:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 663,
+      "style": "normal",
+      "alignment": null,
+      "text": "As árvores ao redor desta clareira são diferentes.",
+      "runs": [
+        {
+          "text": "As árvores ao redor desta clareira são diferentes.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 664,
+      "style": "normal",
+      "alignment": null,
+      "text": "Nenhuma possui folhas.",
+      "runs": [
+        {
+          "text": "Nenhuma possui folhas.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 665,
+      "style": "normal",
+      "alignment": null,
+      "text": "Seus galhos estão secos.",
+      "runs": [
+        {
+          "text": "Seus galhos estão secos.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 666,
+      "style": "normal",
+      "alignment": null,
+      "text": "Os troncos são retorcidos.",
+      "runs": [
+        {
+          "text": "Os troncos são retorcidos.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 667,
+      "style": "normal",
+      "alignment": null,
+      "text": "Existem cavidades na madeira.",
+      "runs": [
+        {
+          "text": "Existem cavidades na madeira.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 668,
+      "style": "normal",
+      "alignment": null,
+      "text": "Algumas lembram olhos.",
+      "runs": [
+        {
+          "text": "Algumas lembram olhos.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 669,
+      "style": "normal",
+      "alignment": null,
+      "text": "Outras lembram bocas.",
+      "runs": [
+        {
+          "text": "Outras lembram bocas.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 670,
+      "style": "normal",
+      "alignment": null,
+      "text": "Todas estão voltadas para o centro.",
+      "runs": [
+        {
+          "text": "Todas estão voltadas para o centro.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 671,
+      "style": "normal",
+      "alignment": null,
+      "text": "Como se estivessem assistindo.",
+      "runs": [
+        {
+          "text": "Como se estivessem assistindo.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 672,
+      "style": "normal",
+      "alignment": null,
+      "text": "No centro existe uma fogueira.",
+      "runs": [
+        {
+          "text": "No centro existe uma fogueira.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 673,
+      "style": "normal",
+      "alignment": null,
+      "text": "Pequena.",
+      "runs": [
+        {
+          "text": "Pequena.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 674,
+      "style": "normal",
+      "alignment": null,
+      "text": "Quase apagada.",
+      "runs": [
+        {
+          "text": "Quase apagada.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 675,
+      "style": "normal",
+      "alignment": null,
+      "text": "E alguém está sentado diante dela.",
+      "runs": [
+        {
+          "text": "E alguém está sentado diante dela.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 676,
+      "style": "normal",
+      "alignment": null,
+      "text": "De costas.",
+      "runs": [
+        {
+          "text": "De costas.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 677,
+      "style": "normal",
+      "alignment": null,
+      "text": "Cabelo conhecido.",
+      "runs": [
+        {
+          "text": "Cabelo conhecido.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 678,
+      "style": "normal",
+      "alignment": null,
+      "text": "Roupas conhecidas.",
+      "runs": [
+        {
+          "text": "Roupas conhecidas.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 679,
+      "style": "normal",
+      "alignment": null,
+      "text": "A pessoa canta.",
+      "runs": [
+        {
+          "text": "A pessoa canta.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 680,
+      "style": "normal",
+      "alignment": null,
+      "text": "Nando reconhece antes de qualquer outro personagem.",
+      "runs": [
+        {
+          "text": "Nando reconhece antes de qualquer outro personagem.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 681,
+      "style": "normal",
+      "alignment": null,
+      "text": "Maerion.",
+      "runs": [
+        {
+          "text": "Maerion.",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 682,
+      "style": "normal",
+      "alignment": null,
+      "text": "Ele para de cantar.",
+      "runs": [
+        {
+          "text": "Ele para de cantar.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 683,
+      "style": "normal",
+      "alignment": null,
+      "text": "Vira o rosto.",
+      "runs": [
+        {
+          "text": "Vira o rosto.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 684,
+      "style": "normal",
+      "alignment": null,
+      "text": "Sorri.",
+      "runs": [
+        {
+          "text": "Sorri.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 685,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Demorou, mestre.”",
+      "runs": [
+        {
+          "text": "“Demorou, mestre.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 686,
+      "style": "normal",
+      "alignment": null,
+      "text": "Silêncio.",
+      "runs": [
+        {
+          "text": "Silêncio.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 687,
+      "style": "normal",
+      "alignment": null,
+      "text": "Não diga mais nada imediatamente.",
+      "runs": [
+        {
+          "text": "Não diga mais nada imediatamente.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 688,
+      "style": "normal",
+      "alignment": "CENTER (1)",
+      "text": "–//––//––//––//––//––//––//––",
+      "runs": [
+        {
+          "text": "–//––//––//––//––//––//––//––",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 689,
+      "style": "Heading 2",
+      "alignment": null,
+      "text": "A conversa",
+      "runs": [
+        {
+          "text": "A conversa",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 690,
+      "style": "normal",
+      "alignment": null,
+      "text": "Se Nando se aproximar:",
+      "runs": [
+        {
+          "text": "Se Nando se aproximar:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 691,
+      "style": "normal",
+      "alignment": null,
+      "text": "Maerion não foge.",
+      "runs": [
+        {
+          "text": "Maerion não foge.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 692,
+      "style": "normal",
+      "alignment": null,
+      "text": "Não ataca.",
+      "runs": [
+        {
+          "text": "Não ataca.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 693,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Achei que você viria mais rápido.”",
+      "runs": [
+        {
+          "text": "“Achei que você viria mais rápido.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 694,
+      "style": "normal",
+      "alignment": null,
+      "text": "Se perguntarem quem ele é:",
+      "runs": [
+        {
+          "text": "Se perguntarem quem ele é:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 695,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Ele sabe.”",
+      "runs": [
+        {
+          "text": "“Ele sabe.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 696,
+      "style": "normal",
+      "alignment": null,
+      "text": "Aponta para Nando.",
+      "runs": [
+        {
+          "text": "Aponta para Nando.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 697,
+      "style": "normal",
+      "alignment": null,
+      "text": "Se Nando disser que Maerion morreu:",
+      "runs": [
+        {
+          "text": "Se Nando disser que Maerion morreu:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 698,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Morreu?”",
+      "runs": [
+        {
+          "text": "“Morreu?”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 699,
+      "style": "normal",
+      "alignment": null,
+      "text": "Ele olha para as próprias mãos.",
+      "runs": [
+        {
+          "text": "Ele olha para as próprias mãos.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 700,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Curioso.”",
+      "runs": [
+        {
+          "text": "“Curioso.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 701,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Na memória dele eu continuo muito vivo.”",
+      "runs": [
+        {
+          "text": "“Na memória dele eu continuo muito vivo.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 702,
+      "style": "normal",
+      "alignment": null,
+      "text": "Agora a voz muda levemente.",
+      "runs": [
+        {
+          "text": "Agora a voz muda levemente.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 703,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Você pensa bastante em mim.”",
+      "runs": [
+        {
+          "text": "“Você pensa bastante em mim.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 704,
+      "style": "normal",
+      "alignment": null,
+      "text": "Ele olha para Calion.",
+      "runs": [
+        {
+          "text": "Ele olha para Calion.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 705,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Pensa neles também.”",
+      "runs": [
+        {
+          "text": "“Pensa neles também.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 706,
+      "style": "normal",
+      "alignment": null,
+      "text": "Elenya.",
+      "runs": [
+        {
+          "text": "Elenya.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 707,
+      "style": "normal",
+      "alignment": null,
+      "text": "Anão.",
+      "runs": [
+        {
+          "text": "Anão.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 708,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Mas não da mesma maneira.”",
+      "runs": [
+        {
+          "text": "“Mas não da mesma maneira.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 709,
+      "style": "normal",
+      "alignment": null,
+      "text": "Ele volta para Nando.",
+      "runs": [
+        {
+          "text": "Ele volta para Nando.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 710,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Você não conseguiu salvar Maerion.”",
+      "runs": [
+        {
+          "text": "“Você não conseguiu salvar Maerion.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 711,
+      "style": "normal",
+      "alignment": null,
+      "text": "Pausa.",
+      "runs": [
+        {
+          "text": "Pausa.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 712,
+      "style": "normal",
+      "alignment": null,
+      "text": "“E agora acredita que vai salvar estes três?”",
+      "runs": [
+        {
+          "text": "“E agora acredita que vai salvar estes três?”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 713,
+      "style": "normal",
+      "alignment": null,
+      "text": "Se Nando argumentar:",
+      "runs": [
+        {
+          "text": "Se Nando argumentar:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 714,
+      "style": "normal",
+      "alignment": null,
+      "text": "a criatura escuta.",
+      "runs": [
+        {
+          "text": "a criatura escuta.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 715,
+      "style": "normal",
+      "alignment": null,
+      "text": "Se Nando ficar em silêncio:",
+      "runs": [
+        {
+          "text": "Se Nando ficar em silêncio:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 716,
+      "style": "normal",
+      "alignment": null,
+      "text": "também.",
+      "runs": [
+        {
+          "text": "também.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 717,
+      "style": "normal",
+      "alignment": null,
+      "text": "Depois:",
+      "runs": [
+        {
+          "text": "Depois:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 718,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Quando chegar a hora...”",
+      "runs": [
+        {
+          "text": "“Quando chegar a hora...”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 719,
+      "style": "normal",
+      "alignment": null,
+      "text": "aponta para Elenya.",
+      "runs": [
+        {
+          "text": "aponta para Elenya.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 720,
+      "style": "normal",
+      "alignment": null,
+      "text": "“ela...”",
+      "runs": [
+        {
+          "text": "“ela...”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 721,
+      "style": "normal",
+      "alignment": null,
+      "text": "aponta para Calion.",
+      "runs": [
+        {
+          "text": "aponta para Calion.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 722,
+      "style": "normal",
+      "alignment": null,
+      "text": "“ele...”",
+      "runs": [
+        {
+          "text": "“ele...”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 723,
+      "style": "normal",
+      "alignment": null,
+      "text": "aponta para o Anão.",
+      "runs": [
+        {
+          "text": "aponta para o Anão.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 724,
+      "style": "normal",
+      "alignment": null,
+      "text": "“ou você?”",
+      "runs": [
+        {
+          "text": "“ou você?”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 725,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Quem ficará para trás?”",
+      "runs": [
+        {
+          "text": "“Quem ficará para trás?”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 726,
+      "style": "normal",
+      "alignment": "CENTER (1)",
+      "text": "–//––//––//––//––//––//––//––",
+      "runs": [
+        {
+          "text": "–//––//––//––//––//––//––//––",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 727,
+      "style": "Heading 2",
+      "alignment": null,
+      "text": "O verdadeiro teste de Nando",
+      "runs": [
+        {
+          "text": "O verdadeiro teste de Nando",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 728,
+      "style": "normal",
+      "alignment": null,
+      "text": "Faça:",
+      "runs": [
+        {
+          "text": "Faça:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 729,
+      "style": "normal",
+      "alignment": null,
+      "text": "CAR ou SAB CD 15",
+      "runs": [
+        {
+          "text": "CAR ou SAB CD 15",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 730,
+      "style": "normal",
+      "alignment": null,
+      "text": "Se passar:",
+      "runs": [
+        {
+          "text": "Se passar:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 731,
+      "style": "normal",
+      "alignment": null,
+      "text": "ele reconhece que aquilo não é Maerion.",
+      "runs": [
+        {
+          "text": "ele reconhece que aquilo não é Maerion.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 732,
+      "style": "normal",
+      "alignment": null,
+      "text": "Recebe 1 Esperança se ainda tiver espaço.",
+      "runs": [
+        {
+          "text": "Recebe 1 Esperança se ainda tiver espaço.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 733,
+      "style": "normal",
+      "alignment": null,
+      "text": "Se falhar:",
+      "runs": [
+        {
+          "text": "Se falhar:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 734,
+      "style": "normal",
+      "alignment": null,
+      "text": "+1 Abalo.",
+      "runs": [
+        {
+          "text": "+1 Abalo.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 735,
+      "style": "normal",
+      "alignment": null,
+      "text": "E a aparência de Maerion afeta profundamente Nando.",
+      "runs": [
+        {
+          "text": "E a aparência de Maerion afeta profundamente Nando.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 736,
+      "style": "normal",
+      "alignment": null,
+      "text": "Mas não retire sua agência.",
+      "runs": [
+        {
+          "text": "Mas não retire sua agência.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 737,
+      "style": "normal",
+      "alignment": null,
+      "text": "Ele ainda poderá agir.",
+      "runs": [
+        {
+          "text": "Ele ainda poderá agir.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 738,
+      "style": "normal",
+      "alignment": "CENTER (1)",
+      "text": "–//––//––//––//––//––//––//––",
+      "runs": [
+        {
+          "text": "–//––//––//––//––//––//––//––",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 739,
+      "style": "Heading 2",
+      "alignment": null,
+      "text": "A revelação",
+      "runs": [
+        {
+          "text": "A revelação",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 740,
+      "style": "normal",
+      "alignment": null,
+      "text": "Quando a conversa terminar:",
+      "runs": [
+        {
+          "text": "Quando a conversa terminar:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 741,
+      "style": "normal",
+      "alignment": null,
+      "text": "Maerion sorri.",
+      "runs": [
+        {
+          "text": "Maerion sorri.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 742,
+      "style": "normal",
+      "alignment": null,
+      "text": "Só que o sorriso continua crescendo.",
+      "runs": [
+        {
+          "text": "Só que o sorriso continua crescendo.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 743,
+      "style": "normal",
+      "alignment": null,
+      "text": "Um pouco demais.",
+      "runs": [
+        {
+          "text": "Um pouco demais.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 744,
+      "style": "normal",
+      "alignment": null,
+      "text": "Depois muito demais.",
+      "runs": [
+        {
+          "text": "Depois muito demais.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 745,
+      "style": "normal",
+      "alignment": null,
+      "text": "O maxilar desloca.",
+      "runs": [
+        {
+          "text": "O maxilar desloca.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 746,
+      "style": "normal",
+      "alignment": null,
+      "text": "A pele treme.",
+      "runs": [
+        {
+          "text": "A pele treme.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 747,
+      "style": "normal",
+      "alignment": null,
+      "text": "O rosto muda.",
+      "runs": [
+        {
+          "text": "O rosto muda.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 748,
+      "style": "normal",
+      "alignment": null,
+      "text": "Maerion.",
+      "runs": [
+        {
+          "text": "Maerion.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 749,
+      "style": "normal",
+      "alignment": null,
+      "text": "Eira.",
+      "runs": [
+        {
+          "text": "Eira.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 750,
+      "style": "normal",
+      "alignment": null,
+      "text": "Maelith.",
+      "runs": [
+        {
+          "text": "Maelith.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 751,
+      "style": "normal",
+      "alignment": null,
+      "text": "O jovem da floresta.",
+      "runs": [
+        {
+          "text": "O jovem da floresta.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 752,
+      "style": "normal",
+      "alignment": null,
+      "text": "Um velho.",
+      "runs": [
+        {
+          "text": "Um velho.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 753,
+      "style": "normal",
+      "alignment": null,
+      "text": "Uma mulher.",
+      "runs": [
+        {
+          "text": "Uma mulher.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 754,
+      "style": "normal",
+      "alignment": null,
+      "text": "Uma criança.",
+      "runs": [
+        {
+          "text": "Uma criança.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 755,
+      "style": "normal",
+      "alignment": null,
+      "text": "Outro homem.",
+      "runs": [
+        {
+          "text": "Outro homem.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 756,
+      "style": "normal",
+      "alignment": null,
+      "text": "Outro.",
+      "runs": [
+        {
+          "text": "Outro.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 757,
+      "style": "normal",
+      "alignment": null,
+      "text": "Outro.",
+      "runs": [
+        {
+          "text": "Outro.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 758,
+      "style": "normal",
+      "alignment": null,
+      "text": "Dezenas.",
+      "runs": [
+        {
+          "text": "Dezenas.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 759,
+      "style": "normal",
+      "alignment": null,
+      "text": "Finalmente o rosto desaparece.",
+      "runs": [
+        {
+          "text": "Finalmente o rosto desaparece.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 760,
+      "style": "normal",
+      "alignment": null,
+      "text": "Não existe nariz.",
+      "runs": [
+        {
+          "text": "Não existe nariz.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 761,
+      "style": "normal",
+      "alignment": null,
+      "text": "Não existe boca.",
+      "runs": [
+        {
+          "text": "Não existe boca.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 762,
+      "style": "normal",
+      "alignment": null,
+      "text": "Não existem olhos.",
+      "runs": [
+        {
+          "text": "Não existem olhos.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 763,
+      "style": "normal",
+      "alignment": null,
+      "text": "Apenas uma superfície pálida e lisa.",
+      "runs": [
+        {
+          "text": "Apenas uma superfície pálida e lisa.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 764,
+      "style": "normal",
+      "alignment": null,
+      "text": "Então:",
+      "runs": [
+        {
+          "text": "Então:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 765,
+      "style": "normal",
+      "alignment": null,
+      "text": "Uma abertura negra surge onde deveria existir a boca.",
+      "runs": [
+        {
+          "text": "Uma abertura negra surge onde deveria existir a boca.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 766,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Agora vocês já viram rostos demais.”",
+      "runs": [
+        {
+          "text": "“Agora vocês já viram rostos demais.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 767,
+      "style": "normal",
+      "alignment": null,
+      "text": "Role iniciativa.",
+      "runs": [
+        {
+          "text": "Role iniciativa.",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 768,
+      "style": "normal",
+      "alignment": "CENTER (1)",
+      "text": "–//––//––//––//––//––//––//––",
+      "runs": [
+        {
+          "text": "–//––//––//––//––//––//––//––",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 769,
+      "style": "Heading 1",
+      "alignment": null,
+      "text": "O TERCEIRO ROSTO DE AGLOR",
+      "runs": [
+        {
+          "text": "O TERCEIRO ROSTO DE AGLOR",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 770,
+      "style": "normal",
+      "alignment": null,
+      "text": "CA: 16\nPV: 100\nDeslocamento: 9 m",
+      "runs": [
+        {
+          "text": "CA:",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        },
+        {
+          "text": " 16\n",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        },
+        {
+          "text": "PV:",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        },
+        {
+          "text": " 100\n",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        },
+        {
+          "text": "Deslocamento:",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        },
+        {
+          "text": " 9 m",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 771,
+      "style": "Heading 3",
+      "alignment": null,
+      "text": "Ataque: Garras Sombrias",
+      "runs": [
+        {
+          "text": "Ataque: Garras Sombrias",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 772,
+      "style": "normal",
+      "alignment": null,
+      "text": "+6 para atingir.",
+      "runs": [
+        {
+          "text": "+6 para atingir.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 773,
+      "style": "normal",
+      "alignment": null,
+      "text": "Dano:",
+      "runs": [
+        {
+          "text": "Dano:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 774,
+      "style": "normal",
+      "alignment": null,
+      "text": "1d8+3 físico + 1d4 necrótico",
+      "runs": [
+        {
+          "text": "1d8+3 físico + 1d4 necrótico",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 775,
+      "style": "normal",
+      "alignment": null,
+      "text": "Pode realizar 2 ataques por turno.",
+      "runs": [
+        {
+          "text": "Pode realizar ",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        },
+        {
+          "text": "2 ataques por turno",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        },
+        {
+          "text": ".",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 776,
+      "style": "normal",
+      "alignment": "CENTER (1)",
+      "text": "–//––//––//––//––//––//––//––",
+      "runs": [
+        {
+          "text": "–//––//––//––//––//––//––//––",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 777,
+      "style": "Heading 2",
+      "alignment": null,
+      "text": "Passo entre Troncos",
+      "runs": [
+        {
+          "text": "Passo entre Troncos",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 778,
+      "style": "normal",
+      "alignment": null,
+      "text": "Uma vez por rodada.",
+      "runs": [
+        {
+          "text": "Uma vez por rodada.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 779,
+      "style": "normal",
+      "alignment": null,
+      "text": "A criatura entra na sombra de uma árvore e reaparece junto de outra em até 9 metros.",
+      "runs": [
+        {
+          "text": "A criatura entra na sombra de uma árvore e reaparece junto de outra em até 9 metros.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 780,
+      "style": "normal",
+      "alignment": null,
+      "text": "Não provoca ataque de oportunidade.",
+      "runs": [
+        {
+          "text": "Não provoca ataque de oportunidade.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 781,
+      "style": "normal",
+      "alignment": "CENTER (1)",
+      "text": "–//––//––//––//––//––//––//––",
+      "runs": [
+        {
+          "text": "–//––//––//––//––//––//––//––",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 782,
+      "style": "Heading 2",
+      "alignment": null,
+      "text": "Roubar Rosto",
+      "runs": [
+        {
+          "text": "Roubar Rosto",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 783,
+      "style": "normal",
+      "alignment": null,
+      "text": "Recarga 5-6.",
+      "runs": [
+        {
+          "text": "Recarga 5-6.",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 784,
+      "style": "normal",
+      "alignment": null,
+      "text": "Escolhe um personagem.",
+      "runs": [
+        {
+          "text": "Escolhe um personagem.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 785,
+      "style": "normal",
+      "alignment": null,
+      "text": "Teste de CAR CD 14.",
+      "runs": [
+        {
+          "text": "Teste de CAR CD 14.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 786,
+      "style": "normal",
+      "alignment": null,
+      "text": "Se o personagem falhar:",
+      "runs": [
+        {
+          "text": "Se o personagem falhar:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 787,
+      "style": "normal",
+      "alignment": null,
+      "text": "o Terceiro Rosto assume perfeitamente:",
+      "runs": [
+        {
+          "text": "o Terceiro Rosto assume perfeitamente:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 788,
+      "style": "normal",
+      "alignment": null,
+      "text": "voz;",
+      "runs": [
+        {
+          "text": "voz;",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 789,
+      "style": "normal",
+      "alignment": null,
+      "text": "aparência;",
+      "runs": [
+        {
+          "text": "aparência;",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 790,
+      "style": "normal",
+      "alignment": null,
+      "text": "movimentos;",
+      "runs": [
+        {
+          "text": "movimentos;",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 791,
+      "style": "normal",
+      "alignment": null,
+      "text": "roupas.",
+      "runs": [
+        {
+          "text": "roupas.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 792,
+      "style": "normal",
+      "alignment": null,
+      "text": "Até o turno seguinte.",
+      "runs": [
+        {
+          "text": "Até o turno seguinte.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 793,
+      "style": "normal",
+      "alignment": null,
+      "text": "Ataques contra ele têm desvantagem até alguém conseguir identificar o verdadeiro.",
+      "runs": [
+        {
+          "text": "Ataques contra ele têm desvantagem até alguém conseguir identificar o verdadeiro.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 794,
+      "style": "normal",
+      "alignment": null,
+      "text": "Intuição ou Percepção CD 14.",
+      "runs": [
+        {
+          "text": "Intuição ou Percepção CD 14.",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 795,
+      "style": "normal",
+      "alignment": "CENTER (1)",
+      "text": "–//––//––//––//––//––//––//––",
+      "runs": [
+        {
+          "text": "–//––//––//––//––//––//––//––",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 796,
+      "style": "Heading 2",
+      "alignment": null,
+      "text": "Voz dos Mortos",
+      "runs": [
+        {
+          "text": "Voz dos Mortos",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 797,
+      "style": "normal",
+      "alignment": null,
+      "text": "Uma vez por combate.",
+      "runs": [
+        {
+          "text": "Uma vez por combate.",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 798,
+      "style": "normal",
+      "alignment": null,
+      "text": "Somente contra Nando Serenata.",
+      "runs": [
+        {
+          "text": "Somente contra Nando Serenata.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 799,
+      "style": "normal",
+      "alignment": null,
+      "text": "No início do turno de Nando:",
+      "runs": [
+        {
+          "text": "No início do turno de Nando:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 800,
+      "style": "normal",
+      "alignment": null,
+      "text": "a criatura assume novamente o rosto de Maerion.",
+      "runs": [
+        {
+          "text": "a criatura assume novamente o rosto de Maerion.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 801,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Mestre...”",
+      "runs": [
+        {
+          "text": "“Mestre...”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 802,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Vai fazer isso outra vez?”",
+      "runs": [
+        {
+          "text": "“Vai fazer isso outra vez?”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 803,
+      "style": "normal",
+      "alignment": null,
+      "text": "Teste de SAB ou CAR.",
+      "runs": [
+        {
+          "text": "Teste de SAB ou CAR.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 804,
+      "style": "normal",
+      "alignment": null,
+      "text": "CD 15.",
+      "runs": [
+        {
+          "text": "CD 15.",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 805,
+      "style": "normal",
+      "alignment": null,
+      "text": "Se Nando falhar:",
+      "runs": [
+        {
+          "text": "Se Nando falhar:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 806,
+      "style": "normal",
+      "alignment": null,
+      "text": "ele não consegue atacar diretamente a criatura durante aquele turno.",
+      "runs": [
+        {
+          "text": "ele não consegue atacar diretamente a criatura durante aquele turno.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 807,
+      "style": "normal",
+      "alignment": null,
+      "text": "Mas ainda pode:",
+      "runs": [
+        {
+          "text": "Mas ainda pode:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 808,
+      "style": "normal",
+      "alignment": null,
+      "text": "curar;",
+      "runs": [
+        {
+          "text": "curar;",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 809,
+      "style": "normal",
+      "alignment": null,
+      "text": "ajudar;",
+      "runs": [
+        {
+          "text": "ajudar;",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 810,
+      "style": "normal",
+      "alignment": null,
+      "text": "inspirar;",
+      "runs": [
+        {
+          "text": "inspirar;",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 811,
+      "style": "normal",
+      "alignment": null,
+      "text": "usar o Alaúde;",
+      "runs": [
+        {
+          "text": "usar o Alaúde;",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 812,
+      "style": "normal",
+      "alignment": null,
+      "text": "defender outro personagem;",
+      "runs": [
+        {
+          "text": "defender outro personagem;",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 813,
+      "style": "normal",
+      "alignment": null,
+      "text": "interagir com o ambiente.",
+      "runs": [
+        {
+          "text": "interagir com o ambiente.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 814,
+      "style": "normal",
+      "alignment": null,
+      "text": "A falha não transforma Nando em alguém inútil.",
+      "runs": [
+        {
+          "text": "A falha não transforma Nando em alguém inútil.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 815,
+      "style": "normal",
+      "alignment": null,
+      "text": "Ela o força a descobrir que sua maior força talvez não seja causar dano.",
+      "runs": [
+        {
+          "text": "Ela o força a descobrir que sua maior força talvez não seja causar dano.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 816,
+      "style": "normal",
+      "alignment": "CENTER (1)",
+      "text": "–//––//––//––//––//––//––//––",
+      "runs": [
+        {
+          "text": "–//––//––//––//––//––//––//––",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 817,
+      "style": "Heading 1",
+      "alignment": null,
+      "text": "FANGORN DURANTE O COMBATE",
+      "runs": [
+        {
+          "text": "FANGORN DURANTE O COMBATE",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 818,
+      "style": "normal",
+      "alignment": null,
+      "text": "No final de cada rodada, role 1d4.",
+      "runs": [
+        {
+          "text": "No final de cada rodada, role 1d4.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "sourceTable": 2,
+      "rows": [
+        [
+          {
+            "text": "d4",
+            "paragraphs": [
+              {
+                "text": "d4",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "d4",
+                    "bold": true,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "Fangorn reage",
+            "paragraphs": [
+              {
+                "text": "Fangorn reage",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "Fangorn reage",
+                    "bold": true,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "text": "1",
+            "paragraphs": [
+              {
+                "text": "1",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "1",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "Raízes atacam alguém. DES CD 13 ou fica preso.",
+            "paragraphs": [
+              {
+                "text": "Raízes atacam alguém. DES CD 13 ou fica preso.",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "Raízes atacam alguém. DES CD 13 ou fica preso.",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "text": "2",
+            "paragraphs": [
+              {
+                "text": "2",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "2",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "Galho cai. DES CD 13 ou 1d8 de dano.",
+            "paragraphs": [
+              {
+                "text": "Galho cai. DES CD 13 ou 1d8 de dano.",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "Galho cai. DES CD 13 ou 1d8 de dano.",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "text": "3",
+            "paragraphs": [
+              {
+                "text": "3",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "3",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "As árvores sussurram os nomes dos personagens. Espírito CD 13.",
+            "paragraphs": [
+              {
+                "text": "As árvores sussurram os nomes dos personagens. Espírito CD 13.",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "As árvores sussurram os nomes dos personagens. Espírito CD 13.",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "text": "4",
+            "paragraphs": [
+              {
+                "text": "4",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "4",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "Uma raiz agarra o Terceiro Rosto. Ele perde Passo entre Troncos durante a próxima rodada.",
+            "paragraphs": [
+              {
+                "text": "Uma raiz agarra o Terceiro Rosto. Ele perde Passo entre Troncos durante a próxima rodada.",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "Uma raiz agarra o Terceiro Rosto. Ele perde Passo entre Troncos durante a próxima rodada.",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 819,
+      "style": "normal",
+      "alignment": "CENTER (1)",
+      "text": "–//––//––//––//––//––//––//––",
+      "runs": [
+        {
+          "text": "–//––//––//––//––//––//––//––",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 820,
+      "style": "Heading 1",
+      "alignment": null,
+      "text": "O ANÃO FINALMENTE MOSTRA O QUE É",
+      "runs": [
+        {
+          "text": "O ANÃO FINALMENTE MOSTRA O QUE É",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 821,
+      "style": "normal",
+      "alignment": null,
+      "text": "No momento em que o combate realmente ficar perigoso:",
+      "runs": [
+        {
+          "text": "No momento em que o combate realmente ficar perigoso:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 822,
+      "style": "normal",
+      "alignment": null,
+      "text": "o Anão entra na frente.",
+      "runs": [
+        {
+          "text": "o Anão entra na frente.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 823,
+      "style": "normal",
+      "alignment": null,
+      "text": "Talvez proteja Elenya.",
+      "runs": [
+        {
+          "text": "Talvez proteja Elenya.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 824,
+      "style": "normal",
+      "alignment": null,
+      "text": "Talvez Nando.",
+      "runs": [
+        {
+          "text": "Talvez Nando.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 825,
+      "style": "normal",
+      "alignment": null,
+      "text": "Talvez receba um ataque que iria atingir Calion.",
+      "runs": [
+        {
+          "text": "Talvez receba um ataque que iria atingir Calion.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 826,
+      "style": "normal",
+      "alignment": null,
+      "text": "Então:",
+      "runs": [
+        {
+          "text": "Então:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 827,
+      "style": "normal",
+      "alignment": null,
+      "text": "Ele segura o martelo com uma mão.",
+      "runs": [
+        {
+          "text": "Ele segura o martelo com uma mão.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 828,
+      "style": "normal",
+      "alignment": null,
+      "text": "Fecha o punho.",
+      "runs": [
+        {
+          "text": "Fecha o punho.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 829,
+      "style": "normal",
+      "alignment": null,
+      "text": "Bate no próprio peito.",
+      "runs": [
+        {
+          "text": "Bate no próprio peito.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 830,
+      "style": "normal",
+      "alignment": null,
+      "text": "BUM.",
+      "runs": [
+        {
+          "text": "BUM.",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 831,
+      "style": "normal",
+      "alignment": null,
+      "text": "Uma runa surge sob a pele.",
+      "runs": [
+        {
+          "text": "Uma runa surge sob a pele.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 832,
+      "style": "normal",
+      "alignment": null,
+      "text": "Outra pancada.",
+      "runs": [
+        {
+          "text": "Outra pancada.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 833,
+      "style": "normal",
+      "alignment": null,
+      "text": "BUM.",
+      "runs": [
+        {
+          "text": "BUM.",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 834,
+      "style": "normal",
+      "alignment": null,
+      "text": "Vapor começa a sair entre as placas da armadura.",
+      "runs": [
+        {
+          "text": "Vapor começa a sair entre as placas da armadura.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 835,
+      "style": "normal",
+      "alignment": null,
+      "text": "A terceira.",
+      "runs": [
+        {
+          "text": "A terceira.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 836,
+      "style": "normal",
+      "alignment": null,
+      "text": "BUM.",
+      "runs": [
+        {
+          "text": "BUM.",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 837,
+      "style": "normal",
+      "alignment": null,
+      "text": "O metal do martelo começa a ficar vermelho.",
+      "runs": [
+        {
+          "text": "O metal do martelo começa a ficar vermelho.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 838,
+      "style": "normal",
+      "alignment": null,
+      "text": "Pequenas chamas aparecem.",
+      "runs": [
+        {
+          "text": "Pequenas chamas aparecem.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 839,
+      "style": "normal",
+      "alignment": null,
+      "text": "Ele respira fundo.",
+      "runs": [
+        {
+          "text": "Ele respira fundo.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 840,
+      "style": "normal",
+      "alignment": null,
+      "text": "Sorri.",
+      "runs": [
+        {
+          "text": "Sorri.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 841,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Agora sim.”",
+      "runs": [
+        {
+          "text": "“Agora sim.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 842,
+      "style": "normal",
+      "alignment": null,
+      "text": "O javali raspa a pata no chão.",
+      "runs": [
+        {
+          "text": "O javali raspa a pata no chão.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 843,
+      "style": "normal",
+      "alignment": null,
+      "text": "O Anão entra em combate.",
+      "runs": [
+        {
+          "text": "O Anão entra em combate.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 844,
+      "style": "normal",
+      "alignment": null,
+      "text": "Não explique toda a mecânica.",
+      "runs": [
+        {
+          "text": "Não explique toda a mecânica.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 845,
+      "style": "normal",
+      "alignment": null,
+      "text": "Deixe os jogadores descobrirem aos poucos.",
+      "runs": [
+        {
+          "text": "Deixe os jogadores descobrirem aos poucos.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 846,
+      "style": "normal",
+      "alignment": "CENTER (1)",
+      "text": "–//––//––//––//––//––//––//––",
+      "runs": [
+        {
+          "text": "–//––//––//––//––//––//––//––",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 847,
+      "style": "Heading 1",
+      "alignment": null,
+      "text": "FASE 2",
+      "runs": [
+        {
+          "text": "FASE 2",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 848,
+      "style": "Heading 2",
+      "alignment": null,
+      "text": "Aos 50 PV",
+      "runs": [
+        {
+          "text": "Aos 50 PV",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 849,
+      "style": "normal",
+      "alignment": null,
+      "text": "Quando o Terceiro Rosto chegar a 50 PV:",
+      "runs": [
+        {
+          "text": "Quando o Terceiro Rosto chegar a 50 PV:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 850,
+      "style": "normal",
+      "alignment": null,
+      "text": "A criatura grita.",
+      "runs": [
+        {
+          "text": "A criatura grita.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 851,
+      "style": "normal",
+      "alignment": null,
+      "text": "Não existe uma voz.",
+      "runs": [
+        {
+          "text": "Não existe uma voz.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 852,
+      "style": "normal",
+      "alignment": null,
+      "text": "Existem dezenas.",
+      "runs": [
+        {
+          "text": "Existem dezenas.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 853,
+      "style": "normal",
+      "alignment": null,
+      "text": "Seu corpo começa a se dividir.",
+      "runs": [
+        {
+          "text": "Seu corpo começa a se dividir.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 854,
+      "style": "normal",
+      "alignment": null,
+      "text": "Uma sombra sai pela direita.",
+      "runs": [
+        {
+          "text": "Uma sombra sai pela direita.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 855,
+      "style": "normal",
+      "alignment": null,
+      "text": "Outra pela esquerda.",
+      "runs": [
+        {
+          "text": "Outra pela esquerda.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 856,
+      "style": "normal",
+      "alignment": null,
+      "text": "Outra surge atrás de vocês.",
+      "runs": [
+        {
+          "text": "Outra surge atrás de vocês.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 857,
+      "style": "normal",
+      "alignment": null,
+      "text": "Agora existem:",
+      "runs": [
+        {
+          "text": "Agora existem:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 858,
+      "style": "normal",
+      "alignment": null,
+      "text": "o verdadeiro + 3 cópias.",
+      "runs": [
+        {
+          "text": "o verdadeiro + 3 cópias.",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 859,
+      "style": "normal",
+      "alignment": null,
+      "text": "Cópias:",
+      "runs": [
+        {
+          "text": "Cópias:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 860,
+      "style": "normal",
+      "alignment": null,
+      "text": "CA 13\nPV 1\nAtaque +4\nDano 1d6 psíquico",
+      "runs": [
+        {
+          "text": "CA 13\nPV 1\nAtaque +4\nDano 1d6 psíquico",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 861,
+      "style": "normal",
+      "alignment": null,
+      "text": "Visualmente são idênticas ao original.",
+      "runs": [
+        {
+          "text": "Visualmente são idênticas ao original.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 862,
+      "style": "normal",
+      "alignment": null,
+      "text": "Caso alguém utilize o Eco da Verdade do Sino de Haldrim:",
+      "runs": [
+        {
+          "text": "Caso alguém utilize o ",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        },
+        {
+          "text": "Eco da Verdade do Sino de Haldrim",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        },
+        {
+          "text": ":",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 863,
+      "style": "normal",
+      "alignment": null,
+      "text": "o som atravessa a clareira.",
+      "runs": [
+        {
+          "text": "o som atravessa a clareira.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 864,
+      "style": "normal",
+      "alignment": null,
+      "text": "As três cópias simplesmente se desfazem.",
+      "runs": [
+        {
+          "text": "As três cópias simplesmente se desfazem.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 865,
+      "style": "normal",
+      "alignment": null,
+      "text": "Sem teste.",
+      "runs": [
+        {
+          "text": "Sem teste.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 866,
+      "style": "normal",
+      "alignment": null,
+      "text": "Sem resistência.",
+      "runs": [
+        {
+          "text": "Sem resistência.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 867,
+      "style": "normal",
+      "alignment": null,
+      "text": "Esse é o momento de fazer o item lendário parecer lendário.",
+      "runs": [
+        {
+          "text": "Esse é o momento de fazer o item lendário parecer lendário.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 868,
+      "style": "normal",
+      "alignment": "CENTER (1)",
+      "text": "–//––//––//––//––//––//––//––",
+      "runs": [
+        {
+          "text": "–//––//––//––//––//––//––//––",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 869,
+      "style": "Heading 2",
+      "alignment": null,
+      "text": "Se os ladrões foram poupados",
+      "runs": [
+        {
+          "text": "Se os ladrões foram poupados",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 870,
+      "style": "normal",
+      "alignment": null,
+      "text": "Em algum momento crítico:",
+      "runs": [
+        {
+          "text": "Em algum momento crítico:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 871,
+      "style": "normal",
+      "alignment": null,
+      "text": "uma flecha surge entre as árvores.",
+      "runs": [
+        {
+          "text": "uma flecha surge entre as árvores.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 872,
+      "style": "normal",
+      "alignment": null,
+      "text": "Atinge uma das cópias.",
+      "runs": [
+        {
+          "text": "Atinge uma das cópias.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 873,
+      "style": "normal",
+      "alignment": null,
+      "text": "Ela desaparece.",
+      "runs": [
+        {
+          "text": "Ela desaparece.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 874,
+      "style": "normal",
+      "alignment": null,
+      "text": "O ladrão do lenço vermelho surge por um instante.",
+      "runs": [
+        {
+          "text": "O ladrão do lenço vermelho surge por um instante.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 875,
+      "style": "normal",
+      "alignment": null,
+      "text": "“AINDA ESTAMOS QUITES!”",
+      "runs": [
+        {
+          "text": "“AINDA ESTAMOS QUITES!”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 876,
+      "style": "normal",
+      "alignment": null,
+      "text": "Depois foge.",
+      "runs": [
+        {
+          "text": "Depois foge.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 877,
+      "style": "normal",
+      "alignment": null,
+      "text": "Não precisa permanecer no combate.",
+      "runs": [
+        {
+          "text": "Não precisa permanecer no combate.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 878,
+      "style": "normal",
+      "alignment": null,
+      "text": "É apenas consequência.",
+      "runs": [
+        {
+          "text": "É apenas consequência.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 879,
+      "style": "normal",
+      "alignment": "CENTER (1)",
+      "text": "–//––//––//––//––//––//––//––",
+      "runs": [
+        {
+          "text": "–//––//––//––//––//––//––//––",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 880,
+      "style": "Heading 1",
+      "alignment": null,
+      "text": "A MORTE DO TERCEIRO ROSTO",
+      "runs": [
+        {
+          "text": "A MORTE DO TERCEIRO ROSTO",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 881,
+      "style": "normal",
+      "alignment": null,
+      "text": "Quando chegar a 0 PV:",
+      "runs": [
+        {
+          "text": "Quando chegar a 0 PV:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 882,
+      "style": "normal",
+      "alignment": null,
+      "text": "não cai imediatamente.",
+      "runs": [
+        {
+          "text": "não cai imediatamente.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 883,
+      "style": "normal",
+      "alignment": null,
+      "text": "A criatura permanece em pé.",
+      "runs": [
+        {
+          "text": "A criatura permanece em pé.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 884,
+      "style": "normal",
+      "alignment": null,
+      "text": "O corpo começa a tremer.",
+      "runs": [
+        {
+          "text": "O corpo começa a tremer.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 885,
+      "style": "normal",
+      "alignment": null,
+      "text": "Um rosto aparece.",
+      "runs": [
+        {
+          "text": "Um rosto aparece.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 886,
+      "style": "normal",
+      "alignment": null,
+      "text": "Eira.",
+      "runs": [
+        {
+          "text": "Eira.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 887,
+      "style": "normal",
+      "alignment": null,
+      "text": "Depois Maelith.",
+      "runs": [
+        {
+          "text": "Depois Maelith.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 888,
+      "style": "normal",
+      "alignment": null,
+      "text": "O jovem.",
+      "runs": [
+        {
+          "text": "O jovem.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 889,
+      "style": "normal",
+      "alignment": null,
+      "text": "Maerion.",
+      "runs": [
+        {
+          "text": "Maerion.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 890,
+      "style": "normal",
+      "alignment": null,
+      "text": "Um homem desconhecido.",
+      "runs": [
+        {
+          "text": "Um homem desconhecido.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 891,
+      "style": "normal",
+      "alignment": null,
+      "text": "Uma criança.",
+      "runs": [
+        {
+          "text": "Uma criança.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 892,
+      "style": "normal",
+      "alignment": null,
+      "text": "Outra mulher.",
+      "runs": [
+        {
+          "text": "Outra mulher.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 893,
+      "style": "normal",
+      "alignment": null,
+      "text": "Dezenas.",
+      "runs": [
+        {
+          "text": "Dezenas.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 894,
+      "style": "normal",
+      "alignment": null,
+      "text": "Talvez centenas.",
+      "runs": [
+        {
+          "text": "Talvez centenas.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 895,
+      "style": "normal",
+      "alignment": null,
+      "text": "Até que finalmente aparece aquilo que existia por baixo de todos eles.",
+      "runs": [
+        {
+          "text": "Até que finalmente aparece aquilo que existia por baixo de todos eles.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 896,
+      "style": "normal",
+      "alignment": null,
+      "text": "Nada.",
+      "runs": [
+        {
+          "text": "Nada.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 897,
+      "style": "normal",
+      "alignment": null,
+      "text": "Um rosto completamente liso.",
+      "runs": [
+        {
+          "text": "Um rosto completamente liso.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 898,
+      "style": "normal",
+      "alignment": null,
+      "text": "Ela cai de joelhos.",
+      "runs": [
+        {
+          "text": "Ela cai de joelhos.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 899,
+      "style": "normal",
+      "alignment": null,
+      "text": "Pela primeira vez fala com apenas uma voz:",
+      "runs": [
+        {
+          "text": "Pela primeira vez fala com apenas uma voz:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 900,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Ele já sabe que vocês estão vindo.”",
+      "runs": [
+        {
+          "text": "“Ele já sabe que vocês estão vindo.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 901,
+      "style": "normal",
+      "alignment": null,
+      "text": "O corpo desaba.",
+      "runs": [
+        {
+          "text": "O corpo desaba.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 902,
+      "style": "normal",
+      "alignment": null,
+      "text": "Transforma-se em uma substância negra.",
+      "runs": [
+        {
+          "text": "Transforma-se em uma substância negra.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 903,
+      "style": "normal",
+      "alignment": null,
+      "text": "As raízes de Fangorn imediatamente começam a absorvê-la.",
+      "runs": [
+        {
+          "text": "As raízes de Fangorn imediatamente começam a absorvê-la.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 904,
+      "style": "normal",
+      "alignment": null,
+      "text": "Em poucos segundos:",
+      "runs": [
+        {
+          "text": "Em poucos segundos:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 905,
+      "style": "normal",
+      "alignment": null,
+      "text": "não resta corpo.",
+      "runs": [
+        {
+          "text": "não resta corpo.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 906,
+      "style": "normal",
+      "alignment": null,
+      "text": "Apenas um pequeno objeto no chão.",
+      "runs": [
+        {
+          "text": "Apenas um pequeno objeto no chão.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 907,
+      "style": "normal",
+      "alignment": null,
+      "text": "Um pingente de prata negra.",
+      "runs": [
+        {
+          "text": "Um pingente de prata negra.",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 908,
+      "style": "normal",
+      "alignment": null,
+      "text": "O olho cercado de espinhos.",
+      "runs": [
+        {
+          "text": "O olho cercado de espinhos.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 909,
+      "style": "normal",
+      "alignment": null,
+      "text": "O mesmo símbolo ligado à ameaça que começou muito antes de Fangorn.",
+      "runs": [
+        {
+          "text": "O mesmo símbolo ligado à ameaça que começou muito antes de Fangorn.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 910,
+      "style": "normal",
+      "alignment": "CENTER (1)",
+      "text": "–//––//––//––//––//––//––//––",
+      "runs": [
+        {
+          "text": "–//––//––//––//––//––//––//––",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 911,
+      "style": "Heading 1",
+      "alignment": null,
+      "text": "EPÍLOGO - Considerações do Ato",
+      "runs": [
+        {
+          "text": "EPÍLOGO - Considerações do Ato",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 912,
+      "style": "normal",
+      "alignment": null,
+      "text": "Depois de uma sessão marcada por medo, dúvida e manipulação, o encerramento deve voltar à esperança. Barbárvore reconhece aquilo que aconteceu e o papel que Nando Serenata começou a ocupar dentro da companhia. O Anão decide permanecer não mais por dívida, mas por vontade própria. A recompensa principal será o amadurecimento do grupo e uma nova habilidade lendária para o bardo.",
+      "runs": [
+        {
+          "text": "Depois de uma sessão marcada por medo, dúvida e manipulação, o encerramento deve voltar à esperança. Barbárvore reconhece aquilo que aconteceu e o papel que Nando Serenata começou a ocupar dentro da companhia. O Anão decide permanecer não mais por dívida, mas por vontade própria. A recompensa principal será o amadurecimento do grupo e uma nova habilidade lendária para o bardo.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 913,
+      "style": "normal",
+      "alignment": "CENTER (1)",
+      "text": "–//––//––//––//––//––//––//––",
+      "runs": [
+        {
+          "text": "–//––//––//––//––//––//––//––",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 914,
+      "style": "normal",
+      "alignment": null,
+      "text": "Silêncio.",
+      "runs": [
+        {
+          "text": "Silêncio.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 915,
+      "style": "normal",
+      "alignment": null,
+      "text": "A clareira permanece imóvel.",
+      "runs": [
+        {
+          "text": "A clareira permanece imóvel.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 916,
+      "style": "normal",
+      "alignment": null,
+      "text": "Depois:",
+      "runs": [
+        {
+          "text": "Depois:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 917,
+      "style": "normal",
+      "alignment": null,
+      "text": "um passo.",
+      "runs": [
+        {
+          "text": "um passo.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 918,
+      "style": "normal",
+      "alignment": null,
+      "text": "THUM.",
+      "runs": [
+        {
+          "text": "THUM.",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 919,
+      "style": "normal",
+      "alignment": null,
+      "text": "Outro.",
+      "runs": [
+        {
+          "text": "Outro.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 920,
+      "style": "normal",
+      "alignment": null,
+      "text": "THUM.",
+      "runs": [
+        {
+          "text": "THUM.",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 921,
+      "style": "normal",
+      "alignment": null,
+      "text": "Barbárvore surge entre as árvores.",
+      "runs": [
+        {
+          "text": "Barbárvore surge entre as árvores.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 922,
+      "style": "normal",
+      "alignment": null,
+      "text": "Olha para o local.",
+      "runs": [
+        {
+          "text": "Olha para o local.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 923,
+      "style": "normal",
+      "alignment": null,
+      "text": "Olha para o pingente.",
+      "runs": [
+        {
+          "text": "Olha para o pingente.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 924,
+      "style": "normal",
+      "alignment": null,
+      "text": "Olha para os aventureiros.",
+      "runs": [
+        {
+          "text": "Olha para os aventureiros.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 925,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Hmmm...”",
+      "runs": [
+        {
+          "text": "“Hmmm...”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 926,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Então era esta a mentira que caminhava entre minhas árvores.”",
+      "runs": [
+        {
+          "text": "“Então era esta a mentira que caminhava entre minhas árvores.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 927,
+      "style": "normal",
+      "alignment": null,
+      "text": "Se alguém perguntar se ele sabia:",
+      "runs": [
+        {
+          "text": "Se alguém perguntar se ele sabia:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 928,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Sabia que alguma coisa mentia.”",
+      "runs": [
+        {
+          "text": "“Sabia que alguma coisa mentia.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 929,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Não sabia qual mentira estava usando.”",
+      "runs": [
+        {
+          "text": "“Não sabia qual mentira estava usando.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 930,
+      "style": "normal",
+      "alignment": null,
+      "text": "Ele observa Nando Serenata.",
+      "runs": [
+        {
+          "text": "Ele observa Nando Serenata.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 931,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Ela utilizou um morto para fazer você abandonar os vivos.”",
+      "runs": [
+        {
+          "text": "“Ela utilizou um morto para fazer você abandonar os vivos.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 932,
+      "style": "normal",
+      "alignment": null,
+      "text": "Pausa.",
+      "runs": [
+        {
+          "text": "Pausa.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 933,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Não funcionou.”",
+      "runs": [
+        {
+          "text": "“Não funcionou.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 934,
+      "style": "normal",
+      "alignment": null,
+      "text": "Barbárvore olha para o Alaúde.",
+      "runs": [
+        {
+          "text": "Barbárvore olha para o Alaúde.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 935,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Você escutou Fangorn.”",
+      "runs": [
+        {
+          "text": "“Você escutou Fangorn.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 936,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Agora Fangorn escutará você.”",
+      "runs": [
+        {
+          "text": "“Agora Fangorn escutará você.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 937,
+      "style": "normal",
+      "alignment": "CENTER (1)",
+      "text": "–//––//––//––//––//––//––//––",
+      "runs": [
+        {
+          "text": "–//––//––//––//––//––//––//––",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 938,
+      "style": "Heading 2",
+      "alignment": null,
+      "text": "A Canção das Cinco Folhas",
+      "runs": [
+        {
+          "text": "A Canção das Cinco Folhas",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 939,
+      "style": "normal",
+      "alignment": null,
+      "text": "Barbárvore aproxima a mão do instrumento.",
+      "runs": [
+        {
+          "text": "Barbárvore aproxima a mão do instrumento.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 940,
+      "style": "normal",
+      "alignment": null,
+      "text": "Não toca.",
+      "runs": [
+        {
+          "text": "Não toca.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 941,
+      "style": "normal",
+      "alignment": null,
+      "text": "Mesmo assim:",
+      "runs": [
+        {
+          "text": "Mesmo assim:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 942,
+      "style": "normal",
+      "alignment": null,
+      "text": "uma folha surge na madeira.",
+      "runs": [
+        {
+          "text": "uma folha surge na madeira.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 943,
+      "style": "normal",
+      "alignment": null,
+      "text": "Depois outra.",
+      "runs": [
+        {
+          "text": "Depois outra.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 944,
+      "style": "normal",
+      "alignment": null,
+      "text": "Outra.",
+      "runs": [
+        {
+          "text": "Outra.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 945,
+      "style": "normal",
+      "alignment": null,
+      "text": "Até existirem:",
+      "runs": [
+        {
+          "text": "Até existirem:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 946,
+      "style": "normal",
+      "alignment": null,
+      "text": "cinco pequenas folhas verdes.",
+      "runs": [
+        {
+          "text": "cinco pequenas folhas verdes.",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 947,
+      "style": "normal",
+      "alignment": null,
+      "text": "Vivas.",
+      "runs": [
+        {
+          "text": "Vivas.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 948,
+      "style": "normal",
+      "alignment": null,
+      "text": "Elas não parecem entalhadas.",
+      "runs": [
+        {
+          "text": "Elas não parecem entalhadas.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 949,
+      "style": "normal",
+      "alignment": null,
+      "text": "Parecem ter nascido do próprio Alaúde.",
+      "runs": [
+        {
+          "text": "Parecem ter nascido do próprio Alaúde.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 950,
+      "style": "normal",
+      "alignment": null,
+      "text": "Barbárvore fala:",
+      "runs": [
+        {
+          "text": "Barbárvore fala:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 951,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Existem canções para celebrar.”",
+      "runs": [
+        {
+          "text": "“Existem canções para celebrar.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 952,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Existem canções para lembrar.”",
+      "runs": [
+        {
+          "text": "“Existem canções para lembrar.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 953,
+      "style": "normal",
+      "alignment": null,
+      "text": "“E existem canções que dizem ao mundo...”",
+      "runs": [
+        {
+          "text": "“E existem canções que dizem ao mundo...”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 954,
+      "style": "normal",
+      "alignment": null,
+      "text": "pausa.",
+      "runs": [
+        {
+          "text": "pausa.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 955,
+      "style": "normal",
+      "alignment": null,
+      "text": "“...ainda não.”",
+      "runs": [
+        {
+          "text": "“...ainda não.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 956,
+      "style": "normal",
+      "alignment": null,
+      "text": "Nando sente a melodia.",
+      "runs": [
+        {
+          "text": "Nando sente a melodia.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 957,
+      "style": "normal",
+      "alignment": null,
+      "text": "Não precisa decorá-la.",
+      "runs": [
+        {
+          "text": "Não precisa decorá-la.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 958,
+      "style": "normal",
+      "alignment": null,
+      "text": "Parece que o instrumento já a conhece.",
+      "runs": [
+        {
+          "text": "Parece que o instrumento já a conhece.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 959,
+      "style": "normal",
+      "alignment": "CENTER (1)",
+      "text": "–//––//––//––//––//––//––//––",
+      "runs": [
+        {
+          "text": "–//––//––//––//––//––//––//––",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 960,
+      "style": "Heading 1",
+      "alignment": null,
+      "text": "CANÇÃO DAS RAÍZES ANTIGAS",
+      "runs": [
+        {
+          "text": "CANÇÃO DAS RAÍZES ANTIGAS",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 961,
+      "style": "normal",
+      "alignment": null,
+      "text": "Nando Serenata poderá utilizar a canção cinco vezes durante toda a vida.",
+      "runs": [
+        {
+          "text": "Nando Serenata poderá utilizar a canção ",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        },
+        {
+          "text": "cinco vezes durante toda a vida",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        },
+        {
+          "text": ".",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 962,
+      "style": "normal",
+      "alignment": null,
+      "text": "Máximo:",
+      "runs": [
+        {
+          "text": "Máximo:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 963,
+      "style": "normal",
+      "alignment": null,
+      "text": "1 vez por ciclo lunar.",
+      "runs": [
+        {
+          "text": "1 vez por ciclo lunar.",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 964,
+      "style": "normal",
+      "alignment": null,
+      "text": "Quando utiliza:",
+      "runs": [
+        {
+          "text": "Quando utiliza:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 965,
+      "style": "normal",
+      "alignment": null,
+      "text": "todos os aliados próximos recuperam todos os PV;",
+      "runs": [
+        {
+          "text": "todos os aliados próximos recuperam todos os PV;",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 966,
+      "style": "normal",
+      "alignment": null,
+      "text": "efeitos de medo e desespero terminam;",
+      "runs": [
+        {
+          "text": "efeitos de medo e desespero terminam;",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 967,
+      "style": "normal",
+      "alignment": null,
+      "text": "um aliado que tenha morrido durante aquela cena pode retornar à vida.",
+      "runs": [
+        {
+          "text": "um aliado que tenha morrido durante aquela cena pode retornar à vida.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 968,
+      "style": "normal",
+      "alignment": null,
+      "text": "Mas existe um preço.",
+      "runs": [
+        {
+          "text": "Mas existe um preço.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 969,
+      "style": "normal",
+      "alignment": null,
+      "text": "Quando a canção termina:",
+      "runs": [
+        {
+          "text": "Quando a canção termina:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 970,
+      "style": "normal",
+      "alignment": null,
+      "text": "Nando Serenata fica com 1 PV.",
+      "runs": [
+        {
+          "text": "Nando Serenata fica com 1 PV.",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 971,
+      "style": "normal",
+      "alignment": null,
+      "text": "Não pode ser curado acima de 1 PV enquanto aquela cena não terminar.",
+      "runs": [
+        {
+          "text": "Não pode ser curado acima de 1 PV enquanto aquela cena não terminar.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 972,
+      "style": "normal",
+      "alignment": null,
+      "text": "Uma das cinco folhas do Alaúde seca.",
+      "runs": [
+        {
+          "text": "Uma das cinco folhas do Alaúde seca.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 973,
+      "style": "normal",
+      "alignment": null,
+      "text": "Cai.",
+      "runs": [
+        {
+          "text": "Cai.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 974,
+      "style": "normal",
+      "alignment": null,
+      "text": "Desaparece.",
+      "runs": [
+        {
+          "text": "Desaparece.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 975,
+      "style": "normal",
+      "alignment": null,
+      "text": "Permanentemente.",
+      "runs": [
+        {
+          "text": "Permanentemente.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 976,
+      "style": "normal",
+      "alignment": null,
+      "text": "Barbárvore:",
+      "runs": [
+        {
+          "text": "Barbárvore:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 977,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Cinco vezes.”",
+      "runs": [
+        {
+          "text": "“Cinco vezes.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 978,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Nem mesmo as raízes são infinitas.”",
+      "runs": [
+        {
+          "text": "“Nem mesmo as raízes são infinitas.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 979,
+      "style": "normal",
+      "alignment": null,
+      "text": "Depois:",
+      "runs": [
+        {
+          "text": "Depois:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 980,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Escolha bem quem você se recusa a perder.”",
+      "runs": [
+        {
+          "text": "“Escolha bem quem você se recusa a perder.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 981,
+      "style": "normal",
+      "alignment": "CENTER (1)",
+      "text": "–//––//––//––//––//––//––//––",
+      "runs": [
+        {
+          "text": "–//––//––//––//––//––//––//––",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 982,
+      "style": "Heading 1",
+      "alignment": null,
+      "text": "O ANÃO",
+      "runs": [
+        {
+          "text": "O ANÃO",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 983,
+      "style": "normal",
+      "alignment": null,
+      "text": "Barbárvore olha para o Anão.",
+      "runs": [
+        {
+          "text": "Barbárvore olha para o Anão.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 984,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Sua dívida terminou.”",
+      "runs": [
+        {
+          "text": "“Sua dívida terminou.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 985,
+      "style": "normal",
+      "alignment": null,
+      "text": "O Anão fica alguns segundos em silêncio.",
+      "runs": [
+        {
+          "text": "O Anão fica alguns segundos em silêncio.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 986,
+      "style": "normal",
+      "alignment": null,
+      "text": "Olha para os aventureiros.",
+      "runs": [
+        {
+          "text": "Olha para os aventureiros.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 987,
+      "style": "normal",
+      "alignment": null,
+      "text": "Para Elenya.",
+      "runs": [
+        {
+          "text": "Para Elenya.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 988,
+      "style": "normal",
+      "alignment": null,
+      "text": "Calion.",
+      "runs": [
+        {
+          "text": "Calion.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 989,
+      "style": "normal",
+      "alignment": null,
+      "text": "Nando.",
+      "runs": [
+        {
+          "text": "Nando.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 990,
+      "style": "normal",
+      "alignment": null,
+      "text": "Depois para o próprio javali.",
+      "runs": [
+        {
+          "text": "Depois para o próprio javali.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 991,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Eu sei.”",
+      "runs": [
+        {
+          "text": "“Eu sei.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 992,
+      "style": "normal",
+      "alignment": null,
+      "text": "Coloca o martelo sobre o ombro.",
+      "runs": [
+        {
+          "text": "Coloca o martelo sobre o ombro.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 993,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Agora vou porque quero.”",
+      "runs": [
+        {
+          "text": "“Agora vou porque quero.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 994,
+      "style": "normal",
+      "alignment": null,
+      "text": "O javali bufa.",
+      "runs": [
+        {
+          "text": "O javali bufa.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 995,
+      "style": "normal",
+      "alignment": null,
+      "text": "O Anão:",
+      "runs": [
+        {
+          "text": "O Anão:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 996,
+      "style": "normal",
+      "alignment": null,
+      "text": "“Ele também.”",
+      "runs": [
+        {
+          "text": "“Ele também.”",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 997,
+      "style": "normal",
+      "alignment": "CENTER (1)",
+      "text": "–//––//––//––//––//––//––//––",
+      "runs": [
+        {
+          "text": "–//––//––//––//––//––//––//––",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 998,
+      "style": "Heading 1",
+      "alignment": null,
+      "text": "O ÚLTIMO MOMENTO",
+      "runs": [
+        {
+          "text": "O ÚLTIMO MOMENTO",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 999,
+      "style": "normal",
+      "alignment": null,
+      "text": "Quando todos acreditarem que terminou:",
+      "runs": [
+        {
+          "text": "Quando todos acreditarem que terminou:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 1000,
+      "style": "normal",
+      "alignment": null,
+      "text": "um som surge sob a terra.",
+      "runs": [
+        {
+          "text": "um som surge sob a terra.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 1001,
+      "style": "normal",
+      "alignment": null,
+      "text": "CRAC.",
+      "runs": [
+        {
+          "text": "CRAC.",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 1002,
+      "style": "normal",
+      "alignment": null,
+      "text": "As raízes da clareira começam a se mover.",
+      "runs": [
+        {
+          "text": "As raízes da clareira começam a se mover.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 1003,
+      "style": "normal",
+      "alignment": null,
+      "text": "Não agressivamente.",
+      "runs": [
+        {
+          "text": "Não agressivamente.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 1004,
+      "style": "normal",
+      "alignment": null,
+      "text": "Estão se afastando.",
+      "runs": [
+        {
+          "text": "Estão se afastando.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 1005,
+      "style": "normal",
+      "alignment": null,
+      "text": "Terra sobe.",
+      "runs": [
+        {
+          "text": "Terra sobe.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 1006,
+      "style": "normal",
+      "alignment": null,
+      "text": "Pedras antigas aparecem.",
+      "runs": [
+        {
+          "text": "Pedras antigas aparecem.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 1007,
+      "style": "normal",
+      "alignment": null,
+      "text": "Primeiro:",
+      "runs": [
+        {
+          "text": "Primeiro:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 1008,
+      "style": "normal",
+      "alignment": null,
+      "text": "uma parede.",
+      "runs": [
+        {
+          "text": "uma parede.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 1009,
+      "style": "normal",
+      "alignment": null,
+      "text": "Depois:",
+      "runs": [
+        {
+          "text": "Depois:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 1010,
+      "style": "normal",
+      "alignment": null,
+      "text": "um arco.",
+      "runs": [
+        {
+          "text": "um arco.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 1011,
+      "style": "normal",
+      "alignment": null,
+      "text": "Finalmente:",
+      "runs": [
+        {
+          "text": "Finalmente:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 1012,
+      "style": "normal",
+      "alignment": null,
+      "text": "uma superfície de pedra completamente coberta por raízes.",
+      "runs": [
+        {
+          "text": "uma superfície de pedra completamente coberta por raízes.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 1013,
+      "style": "normal",
+      "alignment": null,
+      "text": "No centro existe um símbolo.",
+      "runs": [
+        {
+          "text": "No centro existe um símbolo.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 1014,
+      "style": "normal",
+      "alignment": null,
+      "text": "Elenya reconhece.",
+      "runs": [
+        {
+          "text": "Elenya reconhece.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 1015,
+      "style": "normal",
+      "alignment": null,
+      "text": "É o símbolo que acompanha sua história.",
+      "runs": [
+        {
+          "text": "É o símbolo que acompanha sua história.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 1016,
+      "style": "normal",
+      "alignment": null,
+      "text": "Mas está diferente.",
+      "runs": [
+        {
+          "text": "Mas está diferente.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 1017,
+      "style": "normal",
+      "alignment": null,
+      "text": "Não parece corrompido.",
+      "runs": [
+        {
+          "text": "Não parece corrompido.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 1018,
+      "style": "normal",
+      "alignment": null,
+      "text": "Não parece ameaçador.",
+      "runs": [
+        {
+          "text": "Não parece ameaçador.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 1019,
+      "style": "normal",
+      "alignment": null,
+      "text": "É harmonioso.",
+      "runs": [
+        {
+          "text": "É harmonioso.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 1020,
+      "style": "normal",
+      "alignment": null,
+      "text": "Quase bonito.",
+      "runs": [
+        {
+          "text": "Quase bonito.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 1021,
+      "style": "normal",
+      "alignment": null,
+      "text": "Antigo.",
+      "runs": [
+        {
+          "text": "Antigo.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 1022,
+      "style": "normal",
+      "alignment": null,
+      "text": "A Marca de Elenya começa a aquecer.",
+      "runs": [
+        {
+          "text": "A Marca de Elenya começa a aquecer.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 1023,
+      "style": "normal",
+      "alignment": null,
+      "text": "O Relicário responde com uma pequena vibração.",
+      "runs": [
+        {
+          "text": "O Relicário responde com uma pequena vibração.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 1024,
+      "style": "normal",
+      "alignment": null,
+      "text": "O Alaúde emite uma única nota.",
+      "runs": [
+        {
+          "text": "O Alaúde emite uma única nota.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 1025,
+      "style": "normal",
+      "alignment": null,
+      "text": "Calion sente alguma coisa.",
+      "runs": [
+        {
+          "text": "Calion sente alguma coisa.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 1026,
+      "style": "normal",
+      "alignment": null,
+      "text": "Faça um teste de História, Arcana ou percepção mágica.",
+      "runs": [
+        {
+          "text": "Faça um teste de História, Arcana ou percepção mágica.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 1027,
+      "style": "normal",
+      "alignment": null,
+      "text": "Resultado baixo:",
+      "runs": [
+        {
+          "text": "Resultado baixo:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 1028,
+      "style": "normal",
+      "alignment": null,
+      "text": "Existe alguma coisa antiga atrás daquela pedra.",
+      "runs": [
+        {
+          "text": "Existe alguma coisa antiga atrás daquela pedra.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 1029,
+      "style": "normal",
+      "alignment": null,
+      "text": "Resultado médio:",
+      "runs": [
+        {
+          "text": "Resultado médio:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 1030,
+      "style": "normal",
+      "alignment": null,
+      "text": "A energia não é sombria.",
+      "runs": [
+        {
+          "text": "A energia não é sombria.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 1031,
+      "style": "normal",
+      "alignment": null,
+      "text": "Resultado alto:",
+      "runs": [
+        {
+          "text": "Resultado alto:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 1032,
+      "style": "normal",
+      "alignment": null,
+      "text": "Você conhece essa sensação.",
+      "runs": [
+        {
+          "text": "Você conhece essa sensação.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 1033,
+      "style": "normal",
+      "alignment": null,
+      "text": "Não aquele lugar.",
+      "runs": [
+        {
+          "text": "Não aquele lugar.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 1034,
+      "style": "normal",
+      "alignment": null,
+      "text": "Não aquela porta.",
+      "runs": [
+        {
+          "text": "Não aquela porta.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 1035,
+      "style": "normal",
+      "alignment": null,
+      "text": "Aquela Luz.",
+      "runs": [
+        {
+          "text": "Aquela ",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        },
+        {
+          "text": "Luz",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        },
+        {
+          "text": ".",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 1036,
+      "style": "normal",
+      "alignment": null,
+      "text": "Calion aproxima a mão da pedra.",
+      "runs": [
+        {
+          "text": "Calion aproxima a mão da pedra.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 1037,
+      "style": "normal",
+      "alignment": null,
+      "text": "A sensação cresce.",
+      "runs": [
+        {
+          "text": "A sensação cresce.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 1038,
+      "style": "normal",
+      "alignment": null,
+      "text": "Ele olha para Elenya.",
+      "runs": [
+        {
+          "text": "Ele olha para Elenya.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 1039,
+      "style": "normal",
+      "alignment": null,
+      "text": "Porque percebe algo que não deveria perceber.",
+      "runs": [
+        {
+          "text": "Porque percebe algo que não deveria perceber.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 1040,
+      "style": "normal",
+      "alignment": null,
+      "text": "A mesma presença que existe do outro lado da porta...",
+      "runs": [
+        {
+          "text": "A mesma presença que existe do outro lado da porta...",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 1041,
+      "style": "normal",
+      "alignment": null,
+      "text": "existe nela.",
+      "runs": [
+        {
+          "text": "existe nela.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 1042,
+      "style": "normal",
+      "alignment": null,
+      "text": "Não explique.",
+      "runs": [
+        {
+          "text": "Não explique.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 1043,
+      "style": "normal",
+      "alignment": null,
+      "text": "Apenas:",
+      "runs": [
+        {
+          "text": "Apenas:",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 1044,
+      "style": "normal",
+      "alignment": null,
+      "text": "Calion olha para a pedra.",
+      "runs": [
+        {
+          "text": "Calion olha para a pedra.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 1045,
+      "style": "normal",
+      "alignment": null,
+      "text": "Depois para Elenya.",
+      "runs": [
+        {
+          "text": "Depois para Elenya.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 1046,
+      "style": "normal",
+      "alignment": null,
+      "text": "E pela primeira vez naquela noite...",
+      "runs": [
+        {
+          "text": "E pela primeira vez naquela noite...",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 1047,
+      "style": "normal",
+      "alignment": null,
+      "text": "parece verdadeiramente sem palavras.",
+      "runs": [
+        {
+          "text": "parece verdadeiramente sem palavras.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 1048,
+      "style": "normal",
+      "alignment": null,
+      "text": "Fim da sessão.",
+      "runs": [
+        {
+          "text": "Fim da sessão.",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 1049,
+      "style": "normal",
+      "alignment": "CENTER (1)",
+      "text": "–//––//––//––//––//––//––//––",
+      "runs": [
+        {
+          "text": "–//––//––//––//––//––//––//––",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 1050,
+      "style": "Heading 1",
+      "alignment": null,
+      "text": "RECOMPENSA",
+      "runs": [
+        {
+          "text": "RECOMPENSA",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 1051,
+      "style": "normal",
+      "alignment": null,
+      "text": "Os personagens sobreviveram a Fangorn.",
+      "runs": [
+        {
+          "text": "Os personagens sobreviveram a Fangorn.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 1052,
+      "style": "normal",
+      "alignment": null,
+      "text": "Enfrentaram a floresta.",
+      "runs": [
+        {
+          "text": "Enfrentaram a floresta.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 1053,
+      "style": "normal",
+      "alignment": null,
+      "text": "Resistiram à manipulação.",
+      "runs": [
+        {
+          "text": "Resistiram à manipulação.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 1054,
+      "style": "normal",
+      "alignment": null,
+      "text": "Derrotaram o Terceiro Rosto.",
+      "runs": [
+        {
+          "text": "Derrotaram o Terceiro Rosto.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 1055,
+      "style": "normal",
+      "alignment": null,
+      "text": "E continuaram juntos.",
+      "runs": [
+        {
+          "text": "E continuaram juntos.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 1056,
+      "style": "Heading 3",
+      "alignment": null,
+      "text": "Todos passam do nível 4 para o nível 5.",
+      "runs": [
+        {
+          "text": "Todos passam do nível 4 para o nível 5.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 1057,
+      "style": "normal",
+      "alignment": null,
+      "text": "Fim da Crônica dos Três Destinos, Parte II: A Floresta que Lembra.",
+      "runs": [
+        {
+          "text": "Fim da Crônica dos Três Destinos, Parte II: A Floresta que Lembra.",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 1058,
+      "style": "normal",
+      "alignment": null,
+      "text": "",
+      "runs": []
+    }
+  ],
+  "headings": [
+    {
+      "blockIndex": 0,
+      "label": "CRÔNICA DOS TRÊS DESTINOS",
+      "level": 1,
+      "act": null
+    },
+    {
+      "blockIndex": 1,
+      "label": "Parte II: A Floresta que Lembra",
+      "level": 2,
+      "act": null
+    },
+    {
+      "blockIndex": 3,
+      "label": "MECÂNICA ESPECIAL DA SESSÃO",
+      "level": 1,
+      "act": null
+    },
+    {
+      "blockIndex": 4,
+      "label": "Medo, Perseverança e Esperança",
+      "level": 2,
+      "act": null
+    },
+    {
+      "blockIndex": 13,
+      "label": "Abalo",
+      "level": 3,
+      "act": null
+    },
+    {
+      "blockIndex": 19,
+      "label": "Esperança",
+      "level": 3,
+      "act": null
+    },
+    {
+      "blockIndex": 34,
+      "label": "ATO I A FLORESTA FECHA-SE",
+      "level": 1,
+      "act": "ATO I A FLORESTA FECHA-SE"
+    },
+    {
+      "blockIndex": 35,
+      "label": "Considerações do Ato",
+      "level": 3,
+      "act": "ATO I A FLORESTA FECHA-SE"
+    },
+    {
+      "blockIndex": 69,
+      "label": "Teste de Espírito",
+      "level": 3,
+      "act": "ATO I A FLORESTA FECHA-SE"
+    },
+    {
+      "blockIndex": 104,
+      "label": "O primeiro grito",
+      "level": 2,
+      "act": "ATO I A FLORESTA FECHA-SE"
+    },
+    {
+      "blockIndex": 140,
+      "label": "Combate: Os Perdidos de Fangorn",
+      "level": 3,
+      "act": "ATO I A FLORESTA FECHA-SE"
+    },
+    {
+      "blockIndex": 151,
+      "label": "Fangorn participa",
+      "level": 2,
+      "act": "ATO I A FLORESTA FECHA-SE"
+    },
+    {
+      "blockIndex": 167,
+      "label": "Depois do combate",
+      "level": 2,
+      "act": "ATO I A FLORESTA FECHA-SE"
+    },
+    {
+      "blockIndex": 194,
+      "label": "ATO II O CAOLHO E O JAVALI",
+      "level": 1,
+      "act": "ATO II O CAOLHO E O JAVALI"
+    },
+    {
+      "blockIndex": 195,
+      "label": "Considerações do Ato",
+      "level": 3,
+      "act": "ATO II O CAOLHO E O JAVALI"
+    },
+    {
+      "blockIndex": 262,
+      "label": "O que ele está fazendo aqui?",
+      "level": 2,
+      "act": "ATO II O CAOLHO E O JAVALI"
+    },
+    {
+      "blockIndex": 288,
+      "label": "ATO III",
+      "level": 1,
+      "act": "ATO III — O PRISIONEIRO"
+    },
+    {
+      "blockIndex": 289,
+      "label": "O PRISIONEIRO",
+      "level": 1,
+      "act": "ATO III — O PRISIONEIRO"
+    },
+    {
+      "blockIndex": 290,
+      "label": "Considerações do Ato",
+      "level": 3,
+      "act": "ATO III — O PRISIONEIRO"
+    },
+    {
+      "blockIndex": 332,
+      "label": "A versão dos ladrões",
+      "level": 2,
+      "act": "ATO III — O PRISIONEIRO"
+    },
+    {
+      "blockIndex": 356,
+      "label": "A versão do jovem",
+      "level": 2,
+      "act": "ATO III — O PRISIONEIRO"
+    },
+    {
+      "blockIndex": 371,
+      "label": "Investigação",
+      "level": 2,
+      "act": "ATO III — O PRISIONEIRO"
+    },
+    {
+      "blockIndex": 374,
+      "label": "Percepção CD 12",
+      "level": 3,
+      "act": "ATO III — O PRISIONEIRO"
+    },
+    {
+      "blockIndex": 378,
+      "label": "Medicina CD 13",
+      "level": 3,
+      "act": "ATO III — O PRISIONEIRO"
+    },
+    {
+      "blockIndex": 383,
+      "label": "Intuição CD 14",
+      "level": 3,
+      "act": "ATO III — O PRISIONEIRO"
+    },
+    {
+      "blockIndex": 387,
+      "label": "Investigação CD 14",
+      "level": 3,
+      "act": "ATO III — O PRISIONEIRO"
+    },
+    {
+      "blockIndex": 390,
+      "label": "Percepção CD 15",
+      "level": 3,
+      "act": "ATO III — O PRISIONEIRO"
+    },
+    {
+      "blockIndex": 397,
+      "label": "O erro",
+      "level": 2,
+      "act": "ATO III — O PRISIONEIRO"
+    },
+    {
+      "blockIndex": 414,
+      "label": "O Sino de Haldrim",
+      "level": 2,
+      "act": "ATO III — O PRISIONEIRO"
+    },
+    {
+      "blockIndex": 440,
+      "label": "Se for descoberto",
+      "level": 2,
+      "act": "ATO III — O PRISIONEIRO"
+    },
+    {
+      "blockIndex": 457,
+      "label": "Se não for descoberto",
+      "level": 2,
+      "act": "ATO III — O PRISIONEIRO"
+    },
+    {
+      "blockIndex": 473,
+      "label": "O destino dos ladrões",
+      "level": 2,
+      "act": "ATO III — O PRISIONEIRO"
+    },
+    {
+      "blockIndex": 485,
+      "label": "ATO IV FANGORN SABE SEUS NOMES",
+      "level": 1,
+      "act": "ATO IV FANGORN SABE SEUS NOMES"
+    },
+    {
+      "blockIndex": 486,
+      "label": "Considerações do Ato",
+      "level": 3,
+      "act": "ATO IV FANGORN SABE SEUS NOMES"
+    },
+    {
+      "blockIndex": 497,
+      "label": "As árvores que respiram",
+      "level": 2,
+      "act": "ATO IV FANGORN SABE SEUS NOMES"
+    },
+    {
+      "blockIndex": 515,
+      "label": "Teste de Espírito",
+      "level": 3,
+      "act": "ATO IV FANGORN SABE SEUS NOMES"
+    },
+    {
+      "blockIndex": 523,
+      "label": "O caminho impossível",
+      "level": 2,
+      "act": "ATO IV FANGORN SABE SEUS NOMES"
+    },
+    {
+      "blockIndex": 555,
+      "label": "As vozes",
+      "level": 2,
+      "act": "ATO IV FANGORN SABE SEUS NOMES"
+    },
+    {
+      "blockIndex": 558,
+      "label": "Elenya",
+      "level": 3,
+      "act": "ATO IV FANGORN SABE SEUS NOMES"
+    },
+    {
+      "blockIndex": 577,
+      "label": "Calion",
+      "level": 3,
+      "act": "ATO IV FANGORN SABE SEUS NOMES"
+    },
+    {
+      "blockIndex": 605,
+      "label": "Nando Serenata",
+      "level": 3,
+      "act": "ATO IV FANGORN SABE SEUS NOMES"
+    },
+    {
+      "blockIndex": 628,
+      "label": "Sucesso",
+      "level": 3,
+      "act": "ATO IV FANGORN SABE SEUS NOMES"
+    },
+    {
+      "blockIndex": 633,
+      "label": "Falha",
+      "level": 3,
+      "act": "ATO IV FANGORN SABE SEUS NOMES"
+    },
+    {
+      "blockIndex": 650,
+      "label": "ATO V A CLAREIRA DOS ROSTOS",
+      "level": 1,
+      "act": "ATO V A CLAREIRA DOS ROSTOS"
+    },
+    {
+      "blockIndex": 651,
+      "label": "Considerações do Ato",
+      "level": 3,
+      "act": "ATO V A CLAREIRA DOS ROSTOS"
+    },
+    {
+      "blockIndex": 689,
+      "label": "A conversa",
+      "level": 2,
+      "act": "ATO V A CLAREIRA DOS ROSTOS"
+    },
+    {
+      "blockIndex": 727,
+      "label": "O verdadeiro teste de Nando",
+      "level": 2,
+      "act": "ATO V A CLAREIRA DOS ROSTOS"
+    },
+    {
+      "blockIndex": 739,
+      "label": "A revelação",
+      "level": 2,
+      "act": "ATO V A CLAREIRA DOS ROSTOS"
+    },
+    {
+      "blockIndex": 769,
+      "label": "O TERCEIRO ROSTO DE AGLOR",
+      "level": 1,
+      "act": "ATO V A CLAREIRA DOS ROSTOS"
+    },
+    {
+      "blockIndex": 771,
+      "label": "Ataque: Garras Sombrias",
+      "level": 3,
+      "act": "ATO V A CLAREIRA DOS ROSTOS"
+    },
+    {
+      "blockIndex": 777,
+      "label": "Passo entre Troncos",
+      "level": 2,
+      "act": "ATO V A CLAREIRA DOS ROSTOS"
+    },
+    {
+      "blockIndex": 782,
+      "label": "Roubar Rosto",
+      "level": 2,
+      "act": "ATO V A CLAREIRA DOS ROSTOS"
+    },
+    {
+      "blockIndex": 796,
+      "label": "Voz dos Mortos",
+      "level": 2,
+      "act": "ATO V A CLAREIRA DOS ROSTOS"
+    },
+    {
+      "blockIndex": 817,
+      "label": "FANGORN DURANTE O COMBATE",
+      "level": 1,
+      "act": "ATO V A CLAREIRA DOS ROSTOS"
+    },
+    {
+      "blockIndex": 821,
+      "label": "O ANÃO FINALMENTE MOSTRA O QUE É",
+      "level": 1,
+      "act": "ATO V A CLAREIRA DOS ROSTOS"
+    },
+    {
+      "blockIndex": 848,
+      "label": "FASE 2",
+      "level": 1,
+      "act": "ATO V A CLAREIRA DOS ROSTOS"
+    },
+    {
+      "blockIndex": 849,
+      "label": "Aos 50 PV",
+      "level": 2,
+      "act": "ATO V A CLAREIRA DOS ROSTOS"
+    },
+    {
+      "blockIndex": 870,
+      "label": "Se os ladrões foram poupados",
+      "level": 2,
+      "act": "ATO V A CLAREIRA DOS ROSTOS"
+    },
+    {
+      "blockIndex": 881,
+      "label": "A MORTE DO TERCEIRO ROSTO",
+      "level": 1,
+      "act": "ATO V A CLAREIRA DOS ROSTOS"
+    },
+    {
+      "blockIndex": 912,
+      "label": "EPÍLOGO - Considerações do Ato",
+      "level": 1,
+      "act": "ATO V A CLAREIRA DOS ROSTOS"
+    },
+    {
+      "blockIndex": 939,
+      "label": "A Canção das Cinco Folhas",
+      "level": 2,
+      "act": "ATO V A CLAREIRA DOS ROSTOS"
+    },
+    {
+      "blockIndex": 961,
+      "label": "CANÇÃO DAS RAÍZES ANTIGAS",
+      "level": 1,
+      "act": "ATO V A CLAREIRA DOS ROSTOS"
+    },
+    {
+      "blockIndex": 983,
+      "label": "O ANÃO",
+      "level": 1,
+      "act": "ATO V A CLAREIRA DOS ROSTOS"
+    },
+    {
+      "blockIndex": 999,
+      "label": "O ÚLTIMO MOMENTO",
+      "level": 1,
+      "act": "ATO V A CLAREIRA DOS ROSTOS"
+    },
+    {
+      "blockIndex": 1051,
+      "label": "RECOMPENSA",
+      "level": 1,
+      "act": "ATO V A CLAREIRA DOS ROSTOS"
+    },
+    {
+      "blockIndex": 1057,
+      "label": "Todos passam do nível 4 para o nível 5.",
+      "level": 3,
+      "act": "ATO V A CLAREIRA DOS ROSTOS"
+    }
+  ],
+  "narrativeRule": "Render every original paragraph/table in sequence; no rewriting or invented headings."
+};

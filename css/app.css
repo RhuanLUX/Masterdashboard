@@ -1,0 +1,266 @@
+:root{--bg-void:#050C15;--bg-shell:#081523;--bg-panel:#0C1B2C;--bg-panel-elevated:#10233A;--bg-hover:#17344E;--bg-selection:#143E60;--border-base:#304358;--border-metal:#826844;--border-metal-light:#B39A6B;--gold-title:#D7BE8E;--text-primary:#F5F0E7;--text-secondary:#C6D2DF;--text-muted:#98A9BA;--blue-active:#23A3D7;--blue-active-soft:rgba(35,163,215,.20);--ember:#DC6D30;--health:#AE2F32;--health-track:#27181D;--danger:#D55A48;--success:#86B8A0;--shadow:rgba(0,0,0,.60);--font-display:'Palatino Linotype','Book Antiqua',Georgia,serif;--font-narrative:Georgia,'Times New Roman',serif;--font-interface:'Segoe UI',Tahoma,Arial,sans-serif;--font-values:'Segoe UI',Arial,sans-serif}
+*{box-sizing:border-box}
+body{margin:0;overflow:hidden;background:var(--bg-void);color:var(--text-primary);font-family:var(--font-interface)}
+button,input,textarea,select{font:inherit;color:inherit}
+button{cursor:pointer}
+.shell{height:100vh;height:100dvh;display:grid;grid-template-rows:62px minmax(0,1fr) 28px;background:radial-gradient(ellipse at 50% -30%,#17324b 0%,var(--bg-void) 55%)}
+.topbar{display:flex;align-items:center;justify-content:center;gap:8px;padding:8px 20px;background:#07111c;border-bottom:1px solid var(--border-metal);box-shadow:0 3px 15px #000}
+.brand-mini{position:absolute;left:18px;color:var(--gold-title);font:600 16px var(--font-display);font-variant:small-caps}
+.nav-btn,.metal-btn,.tab-btn{min-height:42px;padding:0 20px;border:1px solid var(--border-metal);box-shadow:inset 0 0 0 1px #202a35,inset 0 0 10px #000;background:linear-gradient(#132536,#08121e);color:var(--gold-title);font:600 14px var(--font-display);font-variant:small-caps;letter-spacing:.55px}
+.nav-btn:hover,.metal-btn:hover,.tab-btn:hover{background:var(--bg-hover);border-color:var(--border-metal-light)}
+.nav-btn.active,.tab-btn.active{border-color:var(--blue-active);box-shadow:inset 0 0 14px var(--blue-active-soft),0 0 8px #0b5474}
+.players-menu{position:relative}
+.dropdown{display:none;position:absolute;z-index:10;top:46px;left:0;min-width:230px;background:var(--bg-shell);border:1px solid var(--border-metal);padding:6px;box-shadow:0 12px 30px #000}
+.dropdown.open{display:block}
+.drop-item{display:block;width:100%;text-align:left;background:transparent;border:0;color:var(--text-secondary);padding:9px 12px}
+.drop-item:hover,.drop-item:focus{background:var(--bg-selection);outline:1px solid var(--blue-active)}
+.view{min-height:0;overflow:hidden;padding:16px 20px}
+.statusbar{display:flex;align-items:center;justify-content:space-between;padding:0 18px;background:#06101a;border-top:1px solid var(--border-base);font-size:12px;color:var(--text-muted)}
+.panel{background:linear-gradient(140deg,rgba(12,27,44,.98),rgba(5,12,21,.98));border:1px solid var(--border-metal);box-shadow:inset 0 0 0 1px #172638,0 8px 20px var(--shadow);position:relative}
+.panel:before{content:"";position:absolute;inset:4px;border:1px solid rgba(130,104,68,.25);pointer-events:none}
+.home{height:100%;display:grid;place-items:center;overflow:auto}
+.home-hero{width:min(1050px,100%);min-height:590px;display:grid;grid-template-columns:1fr 300px;gap:20px;padding:45px;background:linear-gradient(90deg,rgba(4,11,18,.6),rgba(5,12,21,.55)),url('../assets/fangorn_atmosphere_crop.jpg') center/cover;border:1px solid var(--border-metal);box-shadow:inset 0 0 0 4px #07111c,0 15px 50px #000}
+.cover-copy{align-self:center;text-align:center;text-shadow:0 3px 6px #000}
+.cover-copy h1{font:500 42px/1.06 var(--font-display);font-variant:small-caps;letter-spacing:1px;color:var(--gold-title);margin:0}
+.cover-copy h2{font:500 19px/1.35 var(--font-display);font-variant:small-caps;letter-spacing:1.2px}
+.session-card{align-self:center;padding:20px;background:rgba(5,12,21,.86);border:1px solid var(--border-metal);color:var(--text-secondary);line-height:1.65}
+.session-card h3,.panel-title{font:600 18px var(--font-display);font-variant:small-caps;color:var(--gold-title);margin:0 0 12px}
+.story-layout{height:100%;display:grid;grid-template-columns:372px minmax(0,1fr);gap:14px}
+.story-side{overflow:auto;padding:14px}
+.story-side h2{font:600 17px var(--font-display);font-variant:small-caps;color:var(--gold-title);margin:0 0 10px}
+.story-link{display:block;width:100%;text-align:left;border:0;border-left:2px solid transparent;background:transparent;color:var(--text-secondary);padding:5px 7px;font-size:13px;line-height:1.4}
+.story-link.l1{font-weight:700;color:var(--gold-title);margin-top:6px}
+.story-link.l2{padding-left:18px}
+.story-link.l3{padding-left:30px;font-size:12px}
+.story-link:hover,.story-link.active{background:var(--bg-selection);border-left-color:var(--blue-active);color:#fff}
+.story-reader{display:grid;grid-template-rows:auto minmax(0,1fr);overflow:hidden}
+.reader-head{padding:17px 28px;border-bottom:1px solid var(--border-metal);background:linear-gradient(90deg,#102638,rgba(9,22,34,.9)),url('../assets/fangorn_atmosphere_crop.jpg') right/auto 100% no-repeat}
+.reader-head h1{margin:0;color:var(--gold-title);font:600 27px var(--font-display);font-variant:small-caps}
+.reader-search{float:right;max-width:240px;background:#07121d;border:1px solid var(--border-base);padding:8px}
+.story-scroll{overflow:auto;padding:28px;scroll-behavior:smooth;background:radial-gradient(ellipse at center,#162b3b,#07111b 72%)}
+.parchment-page{box-sizing:border-box;width:min(100%,794px);min-height:1123px;margin:0 auto;padding:56px 66px;background:radial-gradient(ellipse at 12% 8%,rgba(255,248,204,.45),transparent 25%),radial-gradient(ellipse at 85% 96%,rgba(101,56,18,.20),transparent 37%),repeating-linear-gradient(8deg,rgba(89,53,19,.035) 0 1px,transparent 1px 5px),linear-gradient(100deg,#b98d50 0%,#ead6a1 7%,#f1dfae 50%,#d2a96b 93%,#8a6235 100%);box-shadow:0 14px 36px rgba(0,0,0,.62),inset 18px 0 24px rgba(65,35,13,.42),inset -18px 0 24px rgba(65,35,13,.42)}
+.story-block{max-width:62ch;margin:0 auto;color:#1d1811;text-shadow:none}
+.story-block p{white-space:pre-wrap;font:400 17px/1.7 var(--font-narrative);color:#1d1811;margin:0 0 15px}
+.story-block h1,.story-block h2,.story-block h3{color:#442a14;font-family:var(--font-display);text-shadow:0 1px rgba(255,244,209,.6);scroll-margin-top:20px}
+.story-block h1{font-size:27px;font-variant:small-caps;margin:28px 0 16px}
+.story-block h2{font-size:20px;margin:24px 0 12px}
+.story-block h3{font-size:16px;margin:18px 0 8px}
+.story-table{width:100%;border-collapse:collapse;margin:16px 0 22px}
+.story-table td{border:1px solid rgba(71,43,18,.55);padding:7px;white-space:pre-wrap;font-size:13px;vertical-align:top;color:#24180f;background:rgba(255,246,210,.18)}
+.players{height:100%;overflow:auto}
+.page-heading{text-align:center;font:600 24px var(--font-display);font-variant:small-caps;color:var(--gold-title);margin:4px 0 18px}
+.card-grid{display:grid;grid-template-columns:repeat(4,minmax(170px,244px));justify-content:center;gap:16px}
+.char-card{padding:10px;text-align:center;min-height:430px}
+.char-card img{width:100%;height:286px;object-fit:cover;border:1px solid var(--border-metal);filter:saturate(.82) contrast(1.08)}
+.sprite{width:min(100%,143px);aspect-ratio:1/2;height:auto;background-repeat:no-repeat;background-size:600% 100%;background-position:0 0;image-rendering:auto;filter:drop-shadow(0 13px 8px rgba(0,0,0,.65));animation:sprite-idle 1.6s steps(1,end) infinite}.sprite-anao{background-image:url('../assets/sprites/anao-sprite-v2.png')}.sprite-elenya{background-image:url('../assets/sprites/elenya-sprite-v3.png')}.sprite-calion{background-image:url('../assets/sprites/calion-sprite-v2.png')}.sprite-nando{background-image:url('../assets/sprites/nando-sprite-v2.png')}@keyframes sprite-idle{0%,39%{background-position:0 0}40%,74%{background-position:20% 0}75%,100%{background-position:40% 0}}@keyframes sprite-action{0%,25%{background-position:40% 0}26%,53%{background-position:60% 0}54%,80%{background-position:80% 0}81%,100%{background-position:100% 0}}.sprite.action{animation:sprite-action .74s steps(1,end) 1}.char-card .sprite{margin:0 auto;max-height:286px}
+.char-card h2{font:600 20px var(--font-display);font-variant:small-caps;color:var(--gold-title);margin:10px 0 2px}
+.char-card p{min-height:38px;color:var(--text-secondary);font:13px var(--font-interface);margin:0 0 12px}
+.sheet{height:100%;display:grid;grid-template-columns:204px minmax(300px,1.07fr) minmax(350px,.93fr);gap:14px}
+.sheet-side{padding:12px}
+.sheet-tab{width:100%;text-align:left;padding:11px 10px;border:1px solid transparent;background:none;color:var(--text-secondary);font-size:13px}
+.sheet-tab.active,.sheet-tab:hover{background:var(--bg-selection);border-color:var(--blue-active)}
+.sheet-main,.sheet-stats{min-height:0;overflow:auto;padding:16px}
+.char-name{font:600 25px/1.2 var(--font-display);font-variant:small-caps;color:var(--gold-title);margin:0}
+.char-sub{color:var(--text-secondary);margin:4px 0 13px;font-size:13px}
+.portrait-wrap{height:360px;display:grid;place-items:center;background:radial-gradient(ellipse,#1c2d35,#07111b);overflow:hidden;border:1px solid var(--border-base);position:relative}
+.portrait-wrap img{max-width:100%;max-height:100%;object-fit:contain;animation:idle 3.4s ease-in-out infinite}.portrait-wrap .sprite{width:min(100%,180px);height:auto;max-height:360px;background-size:600% 100%;background-position:0 0}
+.portrait-wrap.berserk{box-shadow:inset 0 0 55px #e72d18,0 0 24px rgba(231,45,24,.72);background:radial-gradient(ellipse,#6a110c,#18090b 72%)}.portrait-wrap.berserk:after{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle at 45% 70%,rgba(255,65,22,.48),transparent 18%),radial-gradient(circle at 65% 38%,rgba(255,104,33,.28),transparent 23%),radial-gradient(circle at 35% 22%,rgba(110,110,110,.22),transparent 25%);mix-blend-mode:screen;animation:forge-smoke .8s ease-in-out infinite alternate}@keyframes forge-smoke{to{transform:translateY(-13px) scale(1.08);opacity:.52}}
+
+/* Teste solicitado: Anão 50% mais ágil que os demais sprites. */
+.sprite-anao{background-size:100% 100%;animation:dwarf-idle-frames .5s steps(1,end) infinite}.sprite-anao.action{animation:dwarf-action-frames .493s steps(1,end) 1}
+@keyframes dwarf-idle-frames{0%,33%{background-image:url('../assets/sprites/anao-frames-v2/frame-0.png')}34%,66%{background-image:url('../assets/sprites/anao-frames-v2/frame-1.png')}67%,100%{background-image:url('../assets/sprites/anao-frames-v2/frame-2.png')}}
+@keyframes dwarf-action-frames{0%,19%{background-image:url('../assets/sprites/anao-frames-v2/frame-2.png')}20%,44%{background-image:url('../assets/sprites/anao-frames-v2/frame-3.png')}45%,73%{background-image:url('../assets/sprites/anao-frames-v2/frame-4.png')}74%,100%{background-image:url('../assets/sprites/anao-frames-v2/frame-5.png')}}
+
+/* Restaurado a pedido: recorte contínuo do sprite-sheet original de seis poses. */
+.sprite-anao{background-image:url('../assets/sprites/anao-sprite-v2.png');background-size:600% 100%;animation:sprite-idle .5s steps(1,end) infinite}.sprite-anao.action{animation:sprite-action .493s steps(1,end) 1}
+.sprite-elenya,.sprite-calion,.sprite-nando{animation-duration:.5s}.sprite-elenya.action,.sprite-calion.action,.sprite-nando.action{animation-duration:.493s}
+
+/* Elenya: cada pose vem de arquivo independente, sem qualquer recorte vizinho. */
+.sprite-elenya{background-size:100% 100%;animation:elenya-idle-frames .5s steps(1,end) infinite}.sprite-elenya.action{animation:elenya-action-frames .493s steps(1,end) 1}
+@keyframes elenya-idle-frames{0%,33%{background-image:url('../assets/sprites/elenya-frames-v3/frame-0.png')}34%,66%{background-image:url('../assets/sprites/elenya-frames-v3/frame-1.png')}67%,100%{background-image:url('../assets/sprites/elenya-frames-v3/frame-2.png')}}
+@keyframes elenya-action-frames{0%,19%{background-image:url('../assets/sprites/elenya-frames-v3/frame-2.png')}20%,44%{background-image:url('../assets/sprites/elenya-frames-v3/frame-3.png')}45%,73%{background-image:url('../assets/sprites/elenya-frames-v3/frame-4.png')}74%,100%{background-image:url('../assets/sprites/elenya-frames-v3/frame-5.png')}}
+
+/* Restaurado a pedido: folha v3 contínua, com o espaçamento visual aprovado. */
+.sprite-elenya{background-image:url('../assets/sprites/elenya-sprite-v3.png');background-size:600% 100%;animation:sprite-idle .5s steps(1,end) infinite}.sprite-elenya.action{animation:sprite-action .493s steps(1,end) 1}
+
+/* Calion: 18 frames físicos (6 idle, 6 impacto, 6 recuperação) para movimento mais fluido. */
+.sprite-calion{background-size:100% 100%;animation:calion-idle-18 .9s steps(1,end) infinite}.sprite-calion.action{animation:calion-staff-18 1.15s steps(1,end) 1}
+.portrait-wrap .sprite-calion{background-size:100% 100%;background-position:center center}
+@keyframes calion-idle-18{0%,16%{background-image:url('../assets/sprites/calion-18/frame-0.png')}17%,33%{background-image:url('../assets/sprites/calion-18/frame-1.png')}34%,50%{background-image:url('../assets/sprites/calion-18/frame-2.png')}51%,67%{background-image:url('../assets/sprites/calion-18/frame-3.png')}68%,84%{background-image:url('../assets/sprites/calion-18/frame-4.png')}85%,100%{background-image:url('../assets/sprites/calion-18/frame-5.png')}}
+@keyframes calion-staff-18{0%,8%{background-image:url('../assets/sprites/calion-18/frame-6.png')}9%,16%{background-image:url('../assets/sprites/calion-18/frame-7.png')}17%,24%{background-image:url('../assets/sprites/calion-18/frame-8.png')}25%,32%{background-image:url('../assets/sprites/calion-18/frame-8.png')}33%,40%{background-image:url('../assets/sprites/calion-18/frame-11.png')}41%,48%{background-image:url('../assets/sprites/calion-18/frame-12.png')}49%,56%{background-image:url('../assets/sprites/calion-18/frame-13.png')}57%,64%{background-image:url('../assets/sprites/calion-18/frame-14.png')}65%,72%{background-image:url('../assets/sprites/calion-18/frame-15.png')}73%,80%{background-image:url('../assets/sprites/calion-18/frame-16.png')}81%,89%{background-image:url('../assets/sprites/calion-18/frame-17.png')}90%,100%{background-image:url('../assets/sprites/calion-18/frame-0.png')}}
+
+.portrait-wrap.combat{box-shadow:inset 0 0 35px var(--danger)}
+@keyframes idle{50%{transform:scale(1.015)}
+}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.kpi{padding:8px;background:#07131f;border:1px solid var(--border-metal);text-align:center}
+.kpi label{display:block;color:var(--gold-title);font:600 12px var(--font-display);font-variant:small-caps}
+.kpi input{width:100%;text-align:center;background:transparent;border:0;border-bottom:1px solid var(--border-base);font:700 18px var(--font-values)}
+.hpbar{height:7px;background:var(--health-track);margin-top:5px}
+.hpbar i{display:block;height:100%;background:var(--health)}
+.attr-table{width:100%;border-collapse:collapse;margin-top:14px}
+.attr-table td{border-bottom:1px solid var(--border-base);padding:7px;font-size:13px}
+.attr-table input{width:100%;text-align:right;background:#08131e;border:1px solid #26394d;padding:5px}
+.section-content{margin-top:16px}
+.section-content h3{font:600 18px var(--font-display);font-variant:small-caps;color:var(--gold-title)}
+.editable-list{list-style:none;padding:0}
+.editable-list li{display:flex;gap:8px;padding:7px 0;border-bottom:1px solid rgba(48,67,88,.7)}
+.editable-list input,.note-box{width:100%;background:#08131e;border:1px solid var(--border-base);padding:8px}
+.add-row{display:flex;gap:8px}
+.gallery{height:100%;display:grid;grid-template-columns:180px minmax(0,1fr);gap:14px}
+.gallery-side{padding:12px}
+.gallery-side button{display:block;width:100%;text-align:left;background:none;border:0;color:var(--text-secondary);padding:10px}
+.gallery-side button.active,.gallery-side button:hover{background:var(--bg-selection);color:#fff}
+.gallery-main{min-height:0;overflow:auto;padding:14px}
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:12px}
+.gallery-item{margin:0;border:1px solid var(--border-metal);background:#07131f;padding:5px;color:var(--text-secondary);text-align:left}
+.gallery-item img{display:block;width:100%;height:140px;object-fit:cover}
+.gallery-item figcaption{padding:6px;font-size:12px}
+.settings{height:100%;overflow:auto;max-width:850px;margin:auto;padding:26px}
+.settings section{padding:18px;margin-bottom:14px}
+.settings h2{font:600 20px var(--font-display);font-variant:small-caps;color:var(--gold-title);margin-top:0}
+.settings p{color:var(--text-secondary);line-height:1.55}
+.toast{position:fixed;right:20px;bottom:42px;background:#102b29;border:1px solid var(--success);padding:10px 14px;z-index:30}
+.modal{position:fixed;z-index:20;inset:0;background:rgba(0,0,0,.88);display:grid;place-items:center;padding:30px}
+.modal figure{margin:0;max-width:95vw;max-height:90vh;text-align:center}
+.modal img{display:block;max-width:95vw;max-height:82vh;object-fit:contain}
+.modal figcaption{padding:8px;color:#fff}
+.modal button{position:absolute;right:22px;top:16px}
+.hidden{display:none!important}
+@media(max-width:900px){.brand-mini{display:none}
+.topbar{justify-content:stretch}
+.nav-btn{flex:1;padding:0 8px;font-size:12px}
+.story-layout,.gallery{grid-template-columns:190px minmax(0,1fr)}
+.sheet{grid-template-columns:170px minmax(0,1fr)}
+.sheet-stats{grid-column:2}
+.card-grid{grid-template-columns:repeat(2,minmax(170px,244px))}
+}
+@media(max-width:620px){body{overflow:auto}
+.shell{height:auto;min-height:100dvh}
+.topbar{flex-wrap:wrap;height:auto;padding:6px}
+.view{padding:8px}
+.story-layout,.sheet,.gallery,.home-hero{grid-template-columns:1fr;height:auto}
+.story-side{max-height:220px}
+.story-scroll{padding:14px}.parchment-page{min-height:0;padding:34px 26px}
+.sheet-stats{grid-column:auto}
+.home-hero{padding:24px}
+.cover-copy h1{font-size:34px}
+.kpis{grid-template-columns:repeat(2,1fr)}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important}
+}
+@media print{.topbar,.statusbar,.sheet-side,.metal-btn,.reader-search{display:none!important}
+body,.shell{height:auto;overflow:visible;background:#fff;color:#000}
+.view,.story-scroll,.sheet-main,.sheet-stats{overflow:visible}
+.panel{box-shadow:none;border:0}
+.story-block p{color:#000}
+}
+
+/* Placas forjadas: navegação e ações abandonam o retângulo web plano. */
+.nav-btn,.metal-btn,.tab-btn,.drop-item,.sheet-tab,.gallery-side button{--forge-edge:#5f482d;--forge-light:#c6a86f;position:relative;isolation:isolate;border:1px solid var(--forge-edge);border-radius:0;color:#f1dfb7;text-shadow:0 1px 1px #000,0 0 5px rgba(206,160,91,.18);background:linear-gradient(90deg,rgba(0,0,0,.42),transparent 10%,transparent 90%,rgba(0,0,0,.42)),repeating-linear-gradient(0deg,rgba(255,255,255,.035) 0 1px,rgba(0,0,0,.06) 1px 3px),linear-gradient(#192534 0%,#0b1420 43%,#050a10 100%);box-shadow:inset 0 1px 0 rgba(245,218,159,.18),inset 0 -2px 0 #020508,inset 2px 0 0 rgba(179,137,78,.25),inset -2px 0 0 rgba(179,137,78,.25),0 2px 4px #000;clip-path:polygon(10px 0,calc(100% - 10px) 0,100% 8px,calc(100% - 4px) 50%,100% calc(100% - 8px),calc(100% - 10px) 100%,10px 100%,0 calc(100% - 8px),4px 50%,0 8px);transition:filter .16s ease,transform .12s ease,box-shadow .16s ease,border-color .16s ease,color .16s ease}
+.nav-btn:before,.metal-btn:before,.tab-btn:before,.drop-item:before,.sheet-tab:before,.gallery-side button:before{content:"";position:absolute;z-index:-1;inset:3px;border:1px solid rgba(211,175,109,.48);opacity:.72;clip-path:polygon(8px 0,calc(100% - 8px) 0,100% 7px,calc(100% - 3px) 50%,100% calc(100% - 7px),calc(100% - 8px) 100%,8px 100%,0 calc(100% - 7px),3px 50%,0 7px)}
+.nav-btn:after,.metal-btn:after,.tab-btn:after,.sheet-tab:after,.gallery-side button:after{content:"◆";position:absolute;left:8px;top:50%;transform:translateY(-50%) scale(.46);color:#d0aa64;opacity:.8;text-shadow:0 0 4px #000;pointer-events:none}
+.nav-btn{min-width:142px;padding:0 23px 0 28px;letter-spacing:.8px}
+.metal-btn{padding:0 24px 0 29px;min-height:44px}
+.nav-btn:hover,.metal-btn:hover,.tab-btn:hover,.drop-item:hover,.drop-item:focus,.sheet-tab:hover,.gallery-side button:hover{color:#fff1cd;border-color:var(--forge-light);filter:brightness(1.15) saturate(1.12);background:linear-gradient(180deg,#2e3b3c,#142331 48%,#080d13);box-shadow:inset 0 1px 0 rgba(255,235,184,.35),inset 0 0 14px rgba(183,112,37,.19),0 0 10px rgba(190,123,44,.18),0 3px 5px #000}
+.nav-btn.active,.tab-btn.active,.sheet-tab.active,.gallery-side button.active{color:#fff0c7;border-color:#d7a64d;background:linear-gradient(180deg,#563d21 0%,#1d2e37 38%,#0a1621 100%);box-shadow:inset 0 0 0 1px rgba(255,204,104,.42),inset 0 0 17px rgba(212,130,41,.28),0 0 10px rgba(219,143,43,.36),0 2px 5px #000}
+.nav-btn:active,.metal-btn:active,.tab-btn:active,.drop-item:active,.sheet-tab:active,.gallery-side button:active{transform:translateY(2px);filter:brightness(.87);box-shadow:inset 0 2px 8px #000,0 1px 2px #000}
+.nav-btn:focus-visible,.metal-btn:focus-visible,.tab-btn:focus-visible,.drop-item:focus-visible,.sheet-tab:focus-visible,.gallery-side button:focus-visible{outline:2px solid #f0c36e;outline-offset:3px}
+.dropdown{padding:8px;background:linear-gradient(145deg,#132435,#060d15);border:1px solid #967442;box-shadow:inset 0 0 0 2px #07101a,0 12px 30px #000}
+.drop-item{margin:3px 0;min-height:36px;padding:8px 14px 8px 27px;text-align:left;width:100%;font:600 13px var(--font-display);letter-spacing:.35px}
+.drop-item:after{display:none}
+.sheet-tab{min-height:39px;margin:3px 0;padding:9px 10px 9px 27px;text-align:left;color:#dfd1b5;background:linear-gradient(90deg,#111d27,#08111a)}.sheet-tab:after{left:7px}
+.gallery-side button{min-height:37px;margin:3px 0;padding:8px 8px 8px 27px;color:#dfd1b5;background:linear-gradient(90deg,#111d27,#08111a)}.gallery-side button:after{left:7px}
+@media(max-width:900px){.nav-btn{min-width:0;padding-left:20px}.nav-btn:after{left:5px}}
+
+/* Calion leve: cada pose é um PNG 240×480 independente. Nunca há recorte
+   horizontal de uma folha de sprites, portanto nenhum fragmento lateral pode
+   aparecer entre os quadros. */
+.sprite-calion{background-size:100% 100%;background-position:center center;animation:calion-lite-idle .5s steps(1,end) infinite}
+.sprite-calion.action{animation:calion-lite-action .74s steps(1,end) 1}
+@keyframes calion-lite-idle{0%,33%{background-image:url('../assets/sprites/calion-lite-v2/idle-0.png')}34%,66%{background-image:url('../assets/sprites/calion-lite-v2/idle-1.png')}67%,100%{background-image:url('../assets/sprites/calion-lite-v2/idle-2.png')}}
+@keyframes calion-lite-action{0%,33%{background-image:url('../assets/sprites/calion-lite-v2/action-0.png')}34%,66%{background-image:url('../assets/sprites/calion-lite-v2/action-1.png')}67%,100%{background-image:url('../assets/sprites/calion-lite-v2/action-2.png')}}
+
+/* Todos os demais personagens seguem o mesmo formato leve e isolado:
+   240×480 por pose, centralizado, sem folha horizontal compartilhada. */
+.sprite-anao,.sprite-elenya,.sprite-nando{background-size:100% 100%;background-position:center center}
+.sprite-anao{animation:anao-lite-idle .5s steps(1,end) infinite}.sprite-anao.action{animation:anao-lite-action .493s steps(1,end) 1}
+@keyframes anao-lite-idle{0%,33%{background-image:url('../assets/sprites/anao-lite-v2/frame-0.png')}34%,66%{background-image:url('../assets/sprites/anao-lite-v2/frame-1.png')}67%,100%{background-image:url('../assets/sprites/anao-lite-v2/frame-2.png')}}
+@keyframes anao-lite-action{0%,19%{background-image:url('../assets/sprites/anao-lite-v2/frame-2.png')}20%,44%{background-image:url('../assets/sprites/anao-lite-v2/frame-3.png')}45%,73%{background-image:url('../assets/sprites/anao-lite-v2/frame-4.png')}74%,100%{background-image:url('../assets/sprites/anao-lite-v2/frame-5.png')}}
+.sprite-elenya{animation:elenya-lite-idle .5s steps(1,end) infinite}.sprite-elenya.action{animation:elenya-lite-action .493s steps(1,end) 1}
+@keyframes elenya-lite-idle{0%,33%{background-image:url('../assets/sprites/elenya-lite-v2/frame-0.png')}34%,66%{background-image:url('../assets/sprites/elenya-lite-v2/frame-1.png')}67%,100%{background-image:url('../assets/sprites/elenya-lite-v2/frame-2.png')}}
+@keyframes elenya-lite-action{0%,19%{background-image:url('../assets/sprites/elenya-lite-v2/frame-2.png')}20%,44%{background-image:url('../assets/sprites/elenya-lite-v2/frame-3.png')}45%,73%{background-image:url('../assets/sprites/elenya-lite-v2/frame-4.png')}74%,100%{background-image:url('../assets/sprites/elenya-lite-v2/frame-5.png')}}
+.sprite-nando{animation:nando-lite-idle .5s steps(1,end) infinite}.sprite-nando.action{animation:nando-lite-action .493s steps(1,end) 1}
+@keyframes nando-lite-idle{0%,33%{background-image:url('../assets/sprites/nando-lite-v2/frame-0.png')}34%,66%{background-image:url('../assets/sprites/nando-lite-v2/frame-1.png')}67%,100%{background-image:url('../assets/sprites/nando-lite-v2/frame-2.png')}}
+@keyframes nando-lite-action{0%,19%{background-image:url('../assets/sprites/nando-lite-v2/frame-2.png')}20%,44%{background-image:url('../assets/sprites/nando-lite-v2/frame-3.png')}45%,73%{background-image:url('../assets/sprites/nando-lite-v2/frame-4.png')}74%,100%{background-image:url('../assets/sprites/nando-lite-v2/frame-5.png')}}
+
+/* Alinhamento por conteúdo: cada pose ocupa a mesma base e o mesmo centro.
+   Isso remove o salto lateral/vertical entre quadros sem alterar o Calion. */
+@keyframes anao-lite-idle{0%,33%{background-image:url('../assets/sprites/anao-lite-v3/frame-0.png')}34%,66%{background-image:url('../assets/sprites/anao-lite-v3/frame-1.png')}67%,100%{background-image:url('../assets/sprites/anao-lite-v3/frame-2.png')}}
+@keyframes anao-lite-action{0%,19%{background-image:url('../assets/sprites/anao-lite-v3/frame-2.png')}20%,44%{background-image:url('../assets/sprites/anao-lite-v3/frame-3.png')}45%,73%{background-image:url('../assets/sprites/anao-lite-v3/frame-4.png')}74%,100%{background-image:url('../assets/sprites/anao-lite-v3/frame-5.png')}}
+@keyframes elenya-lite-idle{0%,33%{background-image:url('../assets/sprites/elenya-lite-v3/frame-0.png')}34%,66%{background-image:url('../assets/sprites/elenya-lite-v3/frame-1.png')}67%,100%{background-image:url('../assets/sprites/elenya-lite-v3/frame-2.png')}}
+@keyframes elenya-lite-action{0%,19%{background-image:url('../assets/sprites/elenya-lite-v3/frame-2.png')}20%,44%{background-image:url('../assets/sprites/elenya-lite-v3/frame-3.png')}45%,73%{background-image:url('../assets/sprites/elenya-lite-v3/frame-4.png')}74%,100%{background-image:url('../assets/sprites/elenya-lite-v3/frame-5.png')}}
+@keyframes nando-lite-idle{0%,33%{background-image:url('../assets/sprites/nando-lite-v3/frame-0.png')}34%,66%{background-image:url('../assets/sprites/nando-lite-v3/frame-1.png')}67%,100%{background-image:url('../assets/sprites/nando-lite-v3/frame-2.png')}}
+@keyframes nando-lite-action{0%,19%{background-image:url('../assets/sprites/nando-lite-v3/frame-2.png')}20%,44%{background-image:url('../assets/sprites/nando-lite-v3/frame-3.png')}45%,73%{background-image:url('../assets/sprites/nando-lite-v3/frame-4.png')}74%,100%{background-image:url('../assets/sprites/nando-lite-v3/frame-5.png')}}
+
+/* O painel de ficha tinha especificidade maior e reativava 600% de largura
+   (medida de sprite sheet). Estes são PNGs unitários e devem ocupar 100%. */
+.portrait-wrap .sprite-anao,.portrait-wrap .sprite-elenya,.portrait-wrap .sprite-nando{background-size:100% 100%;background-position:center center}
+
+/* Versão final: seis arquivos físicos por personagem; frame 5 foi gerado
+   isoladamente (não extraído de nenhuma folha), eliminando o defeito final. */
+@keyframes anao-lite-idle{0%,33%{background-image:url('../assets/sprites/anao-frames-final/frame-0.png')}34%,66%{background-image:url('../assets/sprites/anao-frames-final/frame-1.png')}67%,100%{background-image:url('../assets/sprites/anao-frames-final/frame-2.png')}}
+@keyframes anao-lite-action{0%,19%{background-image:url('../assets/sprites/anao-frames-final/frame-2.png')}20%,44%{background-image:url('../assets/sprites/anao-frames-final/frame-3.png')}45%,73%{background-image:url('../assets/sprites/anao-frames-final/frame-4.png')}74%,100%{background-image:url('../assets/sprites/anao-frames-final/frame-5.png')}}
+@keyframes elenya-lite-idle{0%,33%{background-image:url('../assets/sprites/elenya-frames-final/frame-0.png')}34%,66%{background-image:url('../assets/sprites/elenya-frames-final/frame-1.png')}67%,100%{background-image:url('../assets/sprites/elenya-frames-final/frame-2.png')}}
+@keyframes elenya-lite-action{0%,19%{background-image:url('../assets/sprites/elenya-frames-final/frame-2.png')}20%,44%{background-image:url('../assets/sprites/elenya-frames-final/frame-3.png')}45%,73%{background-image:url('../assets/sprites/elenya-frames-final/frame-4.png')}74%,100%{background-image:url('../assets/sprites/elenya-frames-final/frame-5.png')}}
+@keyframes nando-lite-idle{0%,33%{background-image:url('../assets/sprites/nando-frames-final/frame-0.png')}34%,66%{background-image:url('../assets/sprites/nando-frames-final/frame-1.png')}67%,100%{background-image:url('../assets/sprites/nando-frames-final/frame-2.png')}}
+@keyframes nando-lite-action{0%,19%{background-image:url('../assets/sprites/nando-frames-final/frame-2.png')}20%,44%{background-image:url('../assets/sprites/nando-frames-final/frame-3.png')}45%,73%{background-image:url('../assets/sprites/nando-frames-final/frame-4.png')}74%,100%{background-image:url('../assets/sprites/nando-frames-final/frame-5.png')}}
+
+/* Anão — seis imagens geradas uma por vez; não há nenhum frame recortado. */
+@keyframes anao-lite-idle{0%,33%{background-image:url('../assets/sprites/anao-ai-frames-v1/frame-0.png')}34%,66%{background-image:url('../assets/sprites/anao-ai-frames-v1/frame-1.png')}67%,100%{background-image:url('../assets/sprites/anao-ai-frames-v1/frame-2.png')}}
+@keyframes anao-lite-action{0%,19%{background-image:url('../assets/sprites/anao-ai-frames-v1/frame-2.png')}20%,44%{background-image:url('../assets/sprites/anao-ai-frames-v1/frame-3.png')}45%,73%{background-image:url('../assets/sprites/anao-ai-frames-v1/frame-4.png')}74%,100%{background-image:url('../assets/sprites/anao-ai-frames-v1/frame-5.png')}}
+
+/* Anão v2: 12 poses geradas individualmente, auditadas em contato visual. */
+@keyframes anao-lite-idle{0%,16%{background-image:url('../assets/sprites/anao-ai-frames-v2/frame-0.png')}17%,33%{background-image:url('../assets/sprites/anao-ai-frames-v2/frame-1.png')}34%,50%{background-image:url('../assets/sprites/anao-ai-frames-v2/frame-2.png')}51%,67%{background-image:url('../assets/sprites/anao-ai-frames-v2/frame-3.png')}68%,84%{background-image:url('../assets/sprites/anao-ai-frames-v2/frame-4.png')}85%,100%{background-image:url('../assets/sprites/anao-ai-frames-v2/frame-5.png')}}
+@keyframes anao-lite-action{0%,16%{background-image:url('../assets/sprites/anao-ai-frames-v2/frame-6.png')}17%,33%{background-image:url('../assets/sprites/anao-ai-frames-v2/frame-7.png')}34%,50%{background-image:url('../assets/sprites/anao-ai-frames-v2/frame-8.png')}51%,67%{background-image:url('../assets/sprites/anao-ai-frames-v2/frame-9.png')}68%,84%{background-image:url('../assets/sprites/anao-ai-frames-v2/frame-10.png')}85%,100%{background-image:url('../assets/sprites/anao-ai-frames-v2/frame-11.png')}}
+
+/* Anão troca o arquivo <img> diretamente; não há interpolação de fundo CSS. */
+.frame-actor-anao{display:block;width:min(100%,180px);height:auto;max-height:360px;object-fit:contain;filter:drop-shadow(0 13px 8px rgba(0,0,0,.65));animation:none!important}
+.char-card .frame-actor-anao{width:min(100%,143px);margin:0 auto;height:286px;object-fit:contain}
+
+/* Segunda versão aprovada: seis poses v2, idle curto e ação direta. */
+.sprite-anao,.portrait-wrap .sprite-anao{background-image:url('../assets/sprites/anao-sprite-v2.png')!important;background-size:600% 100%!important;background-position:0 0!important;animation:sprite-idle .8s steps(1,end) infinite!important}
+.sprite-anao.action{animation:sprite-action .55s steps(1,end) 1!important}
+
+/* Controlador do Anão: cada estado aponta para um PNG individual, todos na
+   mesma tela virtual de 240×480. A imagem nunca usa sprite-sheet nem blend. */
+.portrait-wrap.combat .frame-actor-anao{filter:drop-shadow(0 0 12px rgba(239,89,36,.72)) drop-shadow(0 13px 8px rgba(0,0,0,.65));transform:scale(1.035);}
+.dwarf-card{cursor:pointer}.dwarf-card .frame-actor-anao{transition:filter .18s ease,transform .18s ease}.dwarf-card:hover .frame-actor-anao{filter:drop-shadow(0 0 9px rgba(219,159,63,.4)) drop-shadow(0 13px 8px rgba(0,0,0,.65));transform:translateY(-2px)}
+
+/* Dados virtuais — painel local, com placas forjadas coerentes com a UI. */
+.dice-layout{height:100%;display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:14px}
+.dice-board,.dice-history{padding:22px;overflow:auto}
+.dice-choices{display:flex;flex-wrap:wrap;gap:9px;margin:14px 0 18px}
+.die-choice{position:relative;min-width:64px;min-height:42px;border:1px solid #80633d;color:#f5deb1;background:linear-gradient(145deg,#253641,#0a121b 58%,#03070c);clip-path:polygon(9px 0,calc(100% - 9px) 0,100% 8px,calc(100% - 3px) 50%,100% calc(100% - 8px),calc(100% - 9px) 100%,9px 100%,0 calc(100% - 8px),3px 50%,0 8px);box-shadow:inset 0 1px rgba(255,235,181,.22),inset 0 -2px #020508,0 2px 3px #000;font:700 16px var(--font-display);text-shadow:0 1px #000;cursor:pointer;transition:transform .13s ease,filter .16s ease,box-shadow .16s ease}
+.die-choice:hover,.die-choice.active{color:#fff1c9;border-color:#dda84b;filter:brightness(1.17);box-shadow:inset 0 0 15px rgba(209,130,37,.22),0 0 10px rgba(223,165,64,.22),0 2px 3px #000}.die-choice:active{transform:translateY(2px);filter:brightness(.85)}
+.dice-stage{min-height:315px;display:grid;place-items:center;align-content:center;gap:18px;border:1px solid #2d4758;background:radial-gradient(ellipse at 50% 42%,#19313b 0%,#09151f 57%,#040911 100%);box-shadow:inset 0 0 50px rgba(0,0,0,.6)}
+.die-orb{width:148px;height:148px;display:grid;place-items:center;position:relative;color:#ffe7b4;font:800 42px var(--font-display);text-shadow:0 2px 2px #000,0 0 12px rgba(255,187,67,.36);background:linear-gradient(135deg,#7f5a28,#2b3e43 38%,#0a111a 73%,#9a7030);border:2px solid #e0ae55;box-shadow:inset 0 0 0 6px rgba(8,13,19,.62),inset 0 0 24px rgba(255,192,73,.22),0 12px 20px rgba(0,0,0,.6);clip-path:polygon(50% 0,94% 20%,100% 67%,67% 100%,22% 94%,0 52%,12% 15%)}
+.die-orb.d4{clip-path:polygon(50% 0,100% 100%,0 100%)}.die-orb.d6{clip-path:polygon(17% 0,83% 0,100% 17%,100% 83%,83% 100%,17% 100%,0 83%,0 17%)}.die-orb.d8{clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%)}.die-orb.d10{clip-path:polygon(50% 0,95% 33%,77% 100%,23% 100%,5% 33%)}.die-orb.d12{clip-path:polygon(50% 0,90% 16%,100% 58%,72% 100%,28% 100%,0 58%,10% 16%)}.die-orb.d20{clip-path:polygon(50% 0,92% 25%,100% 72%,67% 100%,19% 92%,0 50%,15% 12%)}.die-orb.d100{clip-path:polygon(50% 0,96% 28%,80% 100%,20% 100%,4% 28%)}
+.die-orb.rolling{animation:dice-roll .85s cubic-bezier(.24,.8,.25,1) infinite}.die-orb.settled{animation:dice-land .35s ease-out}.die-orb.max{color:#fff5cf;border-color:#fff1a6;box-shadow:inset 0 0 0 6px rgba(8,13,19,.62),inset 0 0 30px rgba(255,210,72,.72),0 0 29px rgba(255,204,81,.6)}.die-orb.min{color:#ffc5b0;border-color:#cc5945;box-shadow:inset 0 0 0 6px rgba(8,13,19,.62),inset 0 0 28px rgba(192,48,28,.42),0 0 24px rgba(190,47,34,.42)}
+@keyframes dice-roll{0%{transform:translate(-38px,-4px) rotate(0) scale(.88)}25%{transform:translate(38px,-28px) rotate(130deg) scale(1.08)}50%{transform:translate(-31px,8px) rotate(275deg) scale(.94)}75%{transform:translate(26px,-17px) rotate(420deg) scale(1.04)}100%{transform:translate(-38px,-4px) rotate(540deg) scale(.88)}}@keyframes dice-land{0%{transform:translateY(-20px) rotate(-80deg) scale(1.13)}55%{transform:translateY(7px) rotate(8deg) scale(.94)}100%{transform:none}}
+.dice-result{min-height:67px;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:8px 17px;padding:8px 20px;color:#ead8b4;text-align:center;font-size:15px}.dice-result b,.dice-result strong{font-family:var(--font-display);color:#ffd27e}.dice-result strong{font-size:22px;text-shadow:0 0 8px rgba(239,183,67,.35)}
+.dice-controls{display:flex;align-items:end;justify-content:center;gap:18px;margin-top:18px}.dice-controls label{display:grid;gap:5px;color:#d8be8d;font-family:var(--font-display)}.dice-controls input{width:112px;min-height:43px;border:1px solid #3a5567;background:#07111b;color:#f5e4bf;padding:0 10px;font:700 18px var(--font-body)}.dice-roll{min-width:152px}.dice-history h2{margin-top:0;color:#e7c47f;font-family:var(--font-display)}.dice-history ol{min-height:250px;margin:12px 0 20px;padding-left:29px;color:#e5d8bd}.dice-history li{margin:9px 0;padding:6px 4px;border-bottom:1px solid rgba(120,144,157,.18)}.dice-history li b{color:#eac46c}.dice-history li strong{color:#fff0bf}.dice-history .dice-empty{color:#93a8af;font-style:italic}.dice-history .metal-btn{width:100%}
+@media(max-width:900px){.dice-layout{grid-template-columns:1fr;height:auto}.dice-history{max-height:260px}.dice-stage{min-height:270px}}
+@media(max-width:520px){.dice-controls{align-items:center;flex-direction:column}.dice-stage{min-height:240px}.die-orb{width:124px;height:124px;font-size:34px}}
+
+/* Mesa 3D física (Dice Box local). Substitui por completo o simulacro 2D. */
+.dice-layout-3d{grid-template-columns:minmax(0,1fr) 308px}
+.dice-layout-3d .dice-board{display:grid;grid-template-rows:auto minmax(0,1fr) auto;gap:13px;min-height:0;padding:18px}
+.dice-controlbar{display:flex;flex-wrap:wrap;align-items:center;gap:12px;padding:0 3px}.dice-controlbar>div:first-child{flex:1 0 230px;min-width:230px}.dice-controlbar .page-heading{margin:0;font-size:25px}.dice-controlbar p{margin:3px 0 0;color:var(--text-muted);font-size:12px}.dice-layout-3d .dice-choices{flex:0 0 auto;margin:0 0 0 auto;gap:6px}.dice-layout-3d .die-choice{min-width:50px;min-height:37px;font-size:14px}.dice-bonus,.dice-quantity{display:grid;flex:0 0 auto;gap:4px;min-width:76px;color:#d8be8d;font:600 12px var(--font-display);text-align:center}.dice-bonus input,.dice-quantity input{width:76px;height:37px;border:1px solid #647280;background:#07111b;color:#ffe6b8;padding:0 7px;text-align:center;font:700 16px var(--font-interface)}.dice-layout-3d .dice-roll{flex:0 0 auto;min-width:124px;min-height:40px;padding-right:16px}.dice-formula-row{display:flex;flex:0 0 100%;align-items:end;gap:14px;margin:0 3px;padding:8px 10px 0;border-top:1px solid rgba(187,143,75,.22);background:linear-gradient(90deg,rgba(17,37,48,.5),transparent)}.dice-formula-row label{display:grid;flex:0 1 305px;gap:4px;min-width:240px;color:#d8be8d;font:600 12px var(--font-display)}.dice-formula-row input{width:100%;height:33px;min-width:0;padding:0 10px;border:1px solid #647280;background:#07111b;color:#ffe6b8;font:600 14px var(--font-interface)}.dice-formula-row span{flex:1 1 180px;padding-bottom:8px;color:var(--text-muted);font-size:11px}.dice-formula-row .dice-roll{min-width:166px}
+.dice-table-frame{min-height:0;height:100%;position:relative;padding:13px;border:2px solid #8b6a3e;background:linear-gradient(142deg,#b4884e,#2a1a0d 7%,#785229 52%,#1c120a 95%,#a67c44);box-shadow:inset 0 0 0 2px #130d08,inset 0 0 34px rgba(0,0,0,.78),0 9px 20px rgba(0,0,0,.55);clip-path:polygon(17px 0,calc(100% - 17px) 0,100% 17px,100% calc(100% - 17px),calc(100% - 17px) 100%,17px 100%,0 calc(100% - 17px),0 17px)}
+.dice-table-frame:before{content:"";position:absolute;z-index:1;inset:5px;pointer-events:none;border:1px solid rgba(229,185,104,.55);clip-path:inherit}.dice-3d-stage{position:relative;width:100%;height:100%;min-height:365px;overflow:hidden;background:radial-gradient(ellipse at 48% 42%,rgba(88,57,29,.2),transparent 42%),repeating-linear-gradient(8deg,rgba(235,184,108,.035) 0 1px,rgba(0,0,0,.04) 1px 5px),linear-gradient(138deg,#18232a,#071018 45%,#15232c);box-shadow:inset 0 0 90px rgba(0,0,0,.82)}
+.dice-3d-stage:after{content:"";position:absolute;inset:0;pointer-events:none;border:1px solid rgba(149,189,197,.15);box-shadow:inset 0 0 40px rgba(0,0,0,.55)}.dice-3d-stage canvas{display:block;width:100%!important;height:100%!important;position:relative;z-index:0}.dice-loading,.dice-error{position:absolute;z-index:2;inset:0;display:grid;place-items:center;margin:0;color:#e5c384;font:600 17px var(--font-display);text-align:center;background:radial-gradient(ellipse,rgba(18,36,45,.82),rgba(3,8,13,.9))}.dice-error{padding:30px;color:#f0b79a}.dice-layout-3d .dice-result{min-height:52px;padding:4px 12px;border-top:1px solid rgba(179,139,77,.42);background:linear-gradient(90deg,transparent,rgba(23,43,54,.65),transparent)}.dice-layout-3d .dice-history{padding:20px;display:flex;flex-direction:column;min-height:0}.dice-layout-3d .dice-history ol{flex:1;min-height:0;overflow:auto}
+@media(max-width:1150px){.dice-controlbar{flex-wrap:wrap}.dice-layout-3d .dice-choices{margin-left:0}.dice-formula-row{flex-wrap:wrap}.dice-3d-stage{min-height:330px}}
+@media(max-width:900px){.dice-layout-3d .dice-board{min-height:620px}.dice-layout-3d .dice-history{min-height:220px}.dice-3d-stage{min-height:360px}}
+@media(max-width:620px){.dice-layout-3d .dice-board{min-height:690px;padding:12px}.dice-controlbar{display:grid;grid-template-columns:1fr auto}.dice-layout-3d .dice-choices{grid-column:1 / -1;flex-wrap:wrap}.dice-bonus,.dice-quantity{grid-column:auto}.dice-layout-3d .dice-roll{grid-column:2}.dice-formula-row{display:block}.dice-formula-row label,.dice-formula-row input{min-width:0;width:100%}.dice-formula-row span{display:block;padding-top:7px;padding-bottom:0}.dice-3d-stage{min-height:350px}}
+

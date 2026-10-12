@@ -1,0 +1,1131 @@
+{
+  "schemaVersion": 1,
+  "sourceFile": "Francisco(1).docx",
+  "paragraphCount": 27,
+  "blocks": [
+    {
+      "type": "paragraph",
+      "sourceParagraph": 1,
+      "style": "normal",
+      "alignment": null,
+      "text": "Nome: Elenya\n Raça: Humana\n Classe e Nível: Ladina\n Jogador: Chico",
+      "runs": [
+        {
+          "text": "Nome:",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        },
+        {
+          "text": " Elenya\n ",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        },
+        {
+          "text": "Raça:",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        },
+        {
+          "text": " Humana\n ",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        },
+        {
+          "text": "Classe e Nível:",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        },
+        {
+          "text": " Ladina\n ",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        },
+        {
+          "text": "Jogador:",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        },
+        {
+          "text": " Chico",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 2,
+      "style": "Heading 3",
+      "alignment": null,
+      "text": "🧮 Atributos",
+      "runs": [
+        {
+          "text": "🧮 Atributos",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "sourceTable": 1,
+      "rows": [
+        [
+          {
+            "text": "Atributo",
+            "paragraphs": [
+              {
+                "text": "Atributo",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "Atributo",
+                    "bold": true,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "Valor",
+            "paragraphs": [
+              {
+                "text": "Valor",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "Valor",
+                    "bold": true,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "Mod.",
+            "paragraphs": [
+              {
+                "text": "Mod.",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "Mod.",
+                    "bold": true,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "Salvaguarda",
+            "paragraphs": [
+              {
+                "text": "Salvaguarda",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "Salvaguarda",
+                    "bold": true,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "text": "Força (FOR)",
+            "paragraphs": [
+              {
+                "text": "Força (FOR)",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "Força (FOR)",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "12",
+            "paragraphs": [
+              {
+                "text": "12",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "12",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "+1",
+            "paragraphs": [
+              {
+                "text": "+1",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "+1",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "+2",
+            "paragraphs": [
+              {
+                "text": "+2",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "+2",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "text": "Destreza (DES)",
+            "paragraphs": [
+              {
+                "text": "Destreza (DES)",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "Destreza (DES)",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "15",
+            "paragraphs": [
+              {
+                "text": "15",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "15",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "+3",
+            "paragraphs": [
+              {
+                "text": "+3",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "+3",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "+3",
+            "paragraphs": [
+              {
+                "text": "+3",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "+3",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "text": "Constituição (CON)",
+            "paragraphs": [
+              {
+                "text": "Constituição (CON)",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "Constituição (CON)",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "14",
+            "paragraphs": [
+              {
+                "text": "14",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "14",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "+2",
+            "paragraphs": [
+              {
+                "text": "+2",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "+2",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "—",
+            "paragraphs": [
+              {
+                "text": "—",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "—",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "text": "Inteligência (INT)",
+            "paragraphs": [
+              {
+                "text": "Inteligência (INT)",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "Inteligência (INT)",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "10",
+            "paragraphs": [
+              {
+                "text": "10",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "10",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "0",
+            "paragraphs": [
+              {
+                "text": "0",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "0",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "—",
+            "paragraphs": [
+              {
+                "text": "—",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "—",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "text": "Sabedoria (SAB)",
+            "paragraphs": [
+              {
+                "text": "Sabedoria (SAB)",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "Sabedoria (SAB)",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "13",
+            "paragraphs": [
+              {
+                "text": "13",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "13",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "+1",
+            "paragraphs": [
+              {
+                "text": "+1",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "+1",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "+2",
+            "paragraphs": [
+              {
+                "text": "+2",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "+2",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "text": "Carisma (CAR)",
+            "paragraphs": [
+              {
+                "text": "Carisma (CAR)",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "Carisma (CAR)",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "8",
+            "paragraphs": [
+              {
+                "text": "8",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "8",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "-1",
+            "paragraphs": [
+              {
+                "text": "-1",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "-1",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "—",
+            "paragraphs": [
+              {
+                "text": "—",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "—",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 3,
+      "style": "Heading 3",
+      "alignment": null,
+      "text": "🎯 Perícias",
+      "runs": [
+        {
+          "text": "🎯 Perícias",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "sourceTable": 2,
+      "rows": [
+        [
+          {
+            "text": "Perícia",
+            "paragraphs": [
+              {
+                "text": "Perícia",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "Perícia",
+                    "bold": true,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "Modificador",
+            "paragraphs": [
+              {
+                "text": "Modificador",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "Modificador",
+                    "bold": true,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "Observações",
+            "paragraphs": [
+              {
+                "text": "Observações",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "Observações",
+                    "bold": true,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "text": "Acrobacia (DES)",
+            "paragraphs": [
+              {
+                "text": "Acrobacia (DES)",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "Acrobacia (DES)",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "+3",
+            "paragraphs": [
+              {
+                "text": "+3",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "+3",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "—",
+            "paragraphs": [
+              {
+                "text": "—",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "—",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "text": "Furtividade (DES)",
+            "paragraphs": [
+              {
+                "text": "Furtividade (DES)",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "Furtividade (DES)",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "+3",
+            "paragraphs": [
+              {
+                "text": "+3",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "+3",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "—",
+            "paragraphs": [
+              {
+                "text": "—",
+                "style": "normal",
+                "runs": [
+                  {
+                    "text": "—",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 4,
+      "style": "Heading 3",
+      "alignment": null,
+      "text": "⚔️ Combate",
+      "runs": [
+        {
+          "text": "⚔️ Combate",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 5,
+      "style": "normal",
+      "alignment": null,
+      "text": "Pontos de Vida (PV): 14",
+      "runs": [
+        {
+          "text": "Pontos de Vida (PV):",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        },
+        {
+          "text": " 14",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 6,
+      "style": "normal",
+      "alignment": null,
+      "text": "Classe de Armadura (CA): 13",
+      "runs": [
+        {
+          "text": "Classe de Armadura (CA):",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        },
+        {
+          "text": " 13",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 7,
+      "style": "normal",
+      "alignment": null,
+      "text": "Iniciativa: +3",
+      "runs": [
+        {
+          "text": "Iniciativa:",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        },
+        {
+          "text": " +3",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 8,
+      "style": "normal",
+      "alignment": null,
+      "text": "Deslocamento: 9 m",
+      "runs": [
+        {
+          "text": "Deslocamento:",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        },
+        {
+          "text": " 9 m",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 9,
+      "style": "normal",
+      "alignment": null,
+      "text": "Dados de Vida (DV): —",
+      "runs": [
+        {
+          "text": "Dados de Vida (DV):",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        },
+        {
+          "text": " —",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 10,
+      "style": "normal",
+      "alignment": null,
+      "text": "Ataques:",
+      "runs": [
+        {
+          "text": "Ataques:",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 11,
+      "style": "normal",
+      "alignment": null,
+      "text": "Adaga +3\n",
+      "runs": [
+        {
+          "text": "Adaga +3\n",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 12,
+      "style": "Heading 3",
+      "alignment": null,
+      "text": "🎒 Equipamento & Inventário",
+      "runs": [
+        {
+          "text": "🎒 Equipamento & Inventário",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 13,
+      "style": "normal",
+      "alignment": null,
+      "text": "2 adagas (lindas) +1",
+      "runs": [
+        {
+          "text": "2 adagas (lindas) +1",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 14,
+      "style": "normal",
+      "alignment": null,
+      "text": "Capa do ladino",
+      "runs": [
+        {
+          "text": "Capa do ladino",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 15,
+      "style": "normal",
+      "alignment": null,
+      "text": "1 ponto de inspiração",
+      "runs": [
+        {
+          "text": "1 ponto de inspiração",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 16,
+      "style": "Heading 3",
+      "alignment": null,
+      "text": "🧠 Proficências, Características & Talentos",
+      "runs": [
+        {
+          "text": "🧠 Proficências, Características & Talentos",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 17,
+      "style": "normal",
+      "alignment": null,
+      "text": "(não há anotações específicas além das vantagens raciais e de classe)",
+      "runs": [
+        {
+          "text": "(não há anotações específicas além das vantagens raciais e de classe)",
+          "bold": false,
+          "italic": true,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 18,
+      "style": "normal",
+      "alignment": null,
+      "text": "Elenya, filha da Estrela palida.",
+      "runs": [
+        {
+          "text": "Elenya, filha da Estrela palida.",
+          "bold": false,
+          "italic": true,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 19,
+      "style": "normal",
+      "alignment": null,
+      "text": "",
+      "runs": []
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 20,
+      "style": "normal",
+      "alignment": null,
+      "text": "Reflexo de uma paixao proibida, sua mae, uma camponesa das florestas do norte se apaixonou por um errante. Um homem intenso, reconhecido por sua frieza e por um colar em forma de Estrela no peito. O amor nao resistiu ao preconceito e seu pais desapareceu deixando-a apenas o colar como lembranca. Sua mae rejeitada pelo preconceito, enxergou a filha como um simbolo de sua vergonha. Incapaz de suportar o desprezo e a culpa, Elenya fugiu para a Floresta, levando consigo apenas um arco, duas adagas e o colar, que acreditava ter inspirado seu nome: Elenya, a nascida sob a Estrela.",
+      "runs": [
+        {
+          "text": "Reflexo de uma paixao proibida, sua mae, uma camponesa das florestas do norte se apaixonou por um errante. Um homem intenso, reconhecido por sua frieza e por um colar em forma de Estrela no peito. O amor nao resistiu ao preconceito e seu pais desapareceu deixando-a apenas o colar como lembranca. Sua mae rejeitada pelo preconceito, enxergou a filha como um simbolo de sua vergonha. Incapaz de suportar o desprezo e a culpa, Elenya fugiu para a Floresta, levando consigo apenas um arco, duas adagas e o colar, que acreditava ter inspirado seu nome: Elenya, a nascida sob a Estrela.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 21,
+      "style": "normal",
+      "alignment": null,
+      "text": "Anos depois, encontrou seu proposito como mensageira entre pequenas aldeias. Em uma dessas viagens, carregando um mapa de enorme valor, sua caravana foi emboscada por orcs. Todos foram massacrados, humanos, elfos, halflings, menos ela.",
+      "runs": [
+        {
+          "text": "Anos depois, encontrou seu proposito como mensageira entre pequenas aldeias. Em uma dessas viagens, carregando um mapa de enorme valor, sua caravana foi emboscada por orcs. Todos foram massacrados, humanos, elfos, halflings, menos ela.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 22,
+      "style": "normal",
+      "alignment": null,
+      "text": "Ela sabia que poderia ter sido facilmente morta, mas de alguma forma a pouparam. No meio do sangue e da lama, antes de perder a consciencia, ela viu algo impossivel de esquecer: o mesmo simbolo de seu colar gravado em cicatriz no peito dos orcs.",
+      "runs": [
+        {
+          "text": "Ela sabia que poderia ter sido facilmente morta, mas de alguma forma a pouparam. No meio do sangue e da lama, antes de perder a consciencia, ela viu algo impossivel de esquecer: o mesmo simbolo de seu colar gravado em cicatriz no peito dos orcs.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 23,
+      "style": "normal",
+      "alignment": null,
+      "text": "Desde entao se pergunta: quem realmente era seu pai? O que significa esse simbolo? Porque foi poupada?",
+      "runs": [
+        {
+          "text": "Desde entao se pergunta: quem realmente era seu pai? O que significa esse simbolo? Porque foi poupada?",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 24,
+      "style": "normal",
+      "alignment": null,
+      "text": "Para honrar os mortos, seus primeiros amigos, tatuou os nomes de todos em suas costas. Cada nome é uma lembranca, uma ferida, uma promessa de descobrir a verdade.",
+      "runs": [
+        {
+          "text": "Para honrar os mortos, seus primeiros amigos, tatuou os nomes de todos em suas costas. Cada nome é uma lembranca, uma ferida, uma promessa de descobrir a verdade.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 25,
+      "style": "normal",
+      "alignment": null,
+      "text": "Agora, anos depois, uma nova carta chega com uma missao: levar um artefato. Mas o que gela seu coracao é o selo da mensagem: o simbolo da Estrela.",
+      "runs": [
+        {
+          "text": "Agora, anos depois, uma nova carta chega com uma missao: levar um artefato. Mas o que gela seu coracao é o selo da mensagem: o simbolo da Estrela.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 26,
+      "style": "normal",
+      "alignment": null,
+      "text": "Nao é apenas uma missao, é um chamado, um caminho para a origem do misterio que moldou sua vida.",
+      "runs": [
+        {
+          "text": "Nao é apenas uma missao, é um chamado, um caminho para a origem do misterio que moldou sua vida.",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "sourceParagraph": 27,
+      "style": "normal",
+      "alignment": null,
+      "text": "",
+      "runs": []
+    }
+  ]
+}
