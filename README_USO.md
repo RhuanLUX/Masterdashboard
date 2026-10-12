@@ -17,3 +17,10 @@ Os originais V2 ficam intactos em `RPG_Master_V2_Content_Handoff/originais/`. A 
 ```powershell
 C:\Users\User\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe tools\generate_v2_content.py
 ```
+
+## Códice Vivo
+
+- **Imagens** agora é a Biblioteca Visual: contém NPCs, aliados, inimigos, criaturas, entidades e lendas. Há busca, filtro por categoria/origem, ordenação e tela de detalhe. Use **Adicionar item** para uma entrada manual; itens manuais podem ser editados, excluídos ou receber uma imagem local substituta.
+- **Criaturas** é o bestiário rápido: oito fichas resumidas com CA, PV, movimento, atributos, ataque, dano e habilidade especial. Use **Adicionar criatura** para criar uma ficha local editável.
+- Os cinco retratos/ilustrações estáticas novos ficam em `assets/generated/`. Não há GIFs ou novas animações nesse módulo.
+- A exportação agora usa esquema V3 e inclui as entradas e imagens manuais da Biblioteca Visual, além de criaturas manuais. A importação continua compatível com backups V1 e V2.
