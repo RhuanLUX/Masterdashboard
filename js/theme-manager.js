@@ -79,5 +79,17 @@ class ThemeManager{
     const bat={node,animation};this.activeBats.add(bat);animation.onfinish=()=>{node.remove();this.activeBats.delete(bat)};
   }
 }
+/* Intensidade V3: conserva o tema ativo e limita a carga visual em máquinas modestas. */
+const baseSeed=ThemeManager.prototype.seed;
+ThemeManager.prototype.setIntensity=function(value){
+  this.intensity=['soft','normal','intense'].includes(value)?value:'normal';
+  document.documentElement.dataset.themeIntensity=this.intensity;
+  if(this.active==='winter')this.seed();
+};
+ThemeManager.prototype.seed=function(){
+  baseSeed.call(this);
+  const factor=this.intensity==='soft'?.58:this.intensity==='intense'?1.55:1;
+  if(this.particles?.length)this.particles=this.particles.slice(0,Math.max(18,Math.min(92,Math.round(this.particles.length*factor))));
+};
 window.RPGThemeManager=new ThemeManager();
 })();

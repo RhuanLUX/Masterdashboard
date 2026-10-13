@@ -30,5 +30,6 @@
     return `${result.tensText} + ${result.units} = ${result.value}`;
   }
 
-  return {digit,percentileFromComponents,percentileFromRawDice,rollPercentile,percentileDetail};
+  function rollDie(sides,random=Math.random){return Math.floor(random()*Math.max(1,Number(sides)||1))+1}
+  return {digit,percentileFromComponents,percentileFromRawDice,rollPercentile,percentileDetail,rollDie};
 });

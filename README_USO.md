@@ -24,3 +24,9 @@ C:\Users\User\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\py
 - **Criaturas** é o bestiário rápido: oito fichas resumidas com CA, PV, movimento, atributos, ataque, dano e habilidade especial. Use **Adicionar criatura** para criar uma ficha local editável.
 - Os cinco retratos/ilustrações estáticas novos ficam em `assets/generated/`. Não há GIFs ou novas animações nesse módulo.
 - A exportação agora usa esquema V3 e inclui as entradas e imagens manuais da Biblioteca Visual, além de criaturas manuais. A importação continua compatível com backups V1 e V2.
+
+## Master Control V3
+
+O botão **♜ Mestre** abre a Central do Mestre sem alterar as telas anteriores. Ela oferece sessões, combate local (iniciativa, PV, condições e turnos), diário, missões e uma janela separada, segura para jogadores. Os controles V3 possuem **Backup V3** e **Restaurar V3** próprios; o backup inclui apenas sessões, combate, diário, missões, favoritos e preferências visuais do painel.
+
+O painel funciona integralmente offline no mesmo navegador do aplicativo. A tela dos jogadores é uma segunda janela local e pode ser bloqueada somente pelo bloqueador de pop-ups do navegador; permita pop-ups para `127.0.0.1` se quiser usá-la.
