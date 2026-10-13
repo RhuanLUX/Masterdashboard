@@ -44,3 +44,22 @@ Problemas confirmados e corrigidos:
 ## Limitação de ambiente
 
 A automação de navegador fornecida pelo ambiente não consegue alcançar o loopback do processo isolado, embora a verificação HTTP externa tenha retornado 200. Portanto, a inspeção visual interativa e o teste da segunda janela devem ser repetidos pelo proprietário em seu navegador local durante UAT. Não há declaração de aprovação UAT neste relatório.
+
+## V3.1 — Arena 2D e Combate do Mestre
+
+Status: validação técnica concluída; aguardando UAT visual do mestre.
+
+- A arena é uma camada visual sobre o Combate V3: não substitui iniciativa, PV, condições ou desfazer.
+- Rolagens ficam pendentes até confirmação. O valor aplicado pelo mestre, incluindo ajustes manuais, é registrado no evento da batalha.
+- Eventos registram atacante, alvo, tipo de ação, rolagem, resultado, dano/cura, nota narrativa e diálogo opcional.
+- A arena contém efeitos leves e reutilizáveis para corpo a corpo, distância, magia, cura, falha e crítico. `prefers-reduced-motion` e o botão de efeitos interrompem as animações.
+- `Dados 3D` leva à mesa de dados existente, preservando o módulo aprovado. O d100 permanece percentual.
+- A janela de apresentação da arena oculta inimigos por padrão. O conteúdo do jogador é separado do controle do mestre.
+- Exportações: JSON técnico e Markdown legível. Modelos, cópias e arquivos ficam em `state.v3`, portanto são incluídos no backup geral.
+
+### Testes executados
+
+1. Sintaxe aprovada para `battle-core.js`, `battle-arena.js`, `v3-core.js`, `v3-ui.js` e `app.js`.
+2. Fluxo do núcleo aprovado: criação de combate, participantes, rolagem pendente, confirmação com ajuste manual, dano, narração, modelo, duplicação, arquivamento e Markdown.
+3. Regressão d100 aprovada: casos 00+0, 00+7, 30+0, 40+6, 90+9 e 2.000 rolagens aleatórias dentro de 1–100.
+4. Integridade de diff aprovada com `git diff --check`.
