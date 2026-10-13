@@ -9,7 +9,7 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -WindowStyle Hidden -Command "
 
 set /a TRIES=0
 :wait_server
-powershell.exe -NoProfile -ExecutionPolicy Bypass -Command "$c=New-Object Net.Sockets.TcpClient;try{$c.Connect('127.0.0.1',%PORT%);exit 0}catch{exit 1}finally{$c.Dispose()}" >nul 2>&1
+powershell.exe -NoProfile -ExecutionPolicy Bypass -Command "try{$r=Invoke-WebRequest -UseBasicParsing -TimeoutSec 1 'http://127.0.0.1:%PORT%/';if($r.StatusCode -eq 200){exit 0};exit 1}catch{exit 1}" >nul 2>&1
 if not errorlevel 1 goto open_rpg
 set /a TRIES+=1
 if %TRIES% GEQ 30 goto server_error
