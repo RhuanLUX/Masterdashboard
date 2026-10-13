@@ -35,10 +35,11 @@ export async function mountDiceTable({onDieComplete,onRollComplete}={}){
 export async function throwPhysicalDice(dice){
   if(!box) throw new Error('Mesa física ainda não foi inicializada.');
   let items=Array.isArray(dice)?dice:[{sides:Number(dice),count:1}],notation=[];
-  /* Cada elemento é deliberadamente separado: assim o resultado físico
-     conserva a ordem lógica, inclusive no d100 (percentual + unidade). */
+  /* d100 percentual = dois d10 independentes, na ordem dezenas/unidades.
+     Não usamos a malha d100 da biblioteca porque ela devolve um valor inteiro
+     comum, e não a leitura percentual exigida pela mesa. */
   items.forEach(({sides,count})=>{for(let n=0;n<count;n++){
-    if(Number(sides)===100)notation.push('1d100','1d10');
+    if(Number(sides)===100)notation.push('1d10','1d10');
     else notation.push(`1d${Number(sides)}`);
   }});
   return box.roll(notation);
