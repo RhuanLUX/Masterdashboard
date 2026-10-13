@@ -28,8 +28,8 @@ class ThemeManager{
     if(name==='winter')this.startWinter();if(name==='horror')this.startHorror();
   }
   deactivate(){this.stopWinter();this.stopHorror();if(this.root)this.root.dataset.theme='normal';document.documentElement.dataset.rpgTheme='normal'}
-  pause(){this.paused=true;this.stopFrame();this.stopBatTimer()}
-  resume(){this.paused=false;if(this.active==='winter'&&!this.reduced)this.startFrame();if(this.active==='horror')this.startHorror()}
+  pause(){this.paused=true;this.stopFrame();this.stopBatTimer();this.activeBats.forEach(bat=>bat.animation?.pause())}
+  resume(){this.paused=false;this.activeBats.forEach(bat=>bat.animation?.play());if(this.active==='winter'&&!this.reduced)this.startFrame();if(this.active==='horror')this.startHorror()}
   destroy(){this.stopWinter();this.stopHorror();removeEventListener('resize',this.resize);document.removeEventListener('visibilitychange',this.visibility);this.root?.remove();this.root=this.canvas=this.ctx=this.batLayer=null}
   visibility(){document.hidden?this.pause():this.resume()}
   resize(){
@@ -57,11 +57,13 @@ class ThemeManager{
       this.batTimer=0;if(this.active!=='horror'||this.paused||document.hidden||this.reduced)return;
       const group=Math.random()<.38?2+Math.floor(Math.random()*3):1;
       for(let index=0;index<group;index++){const timer=setTimeout(()=>this.spawnBat(index,group),index*random(105,310));this.batSpawnTimers.push(timer)}
-      this.scheduleBatWave(random(540,1320));
+      const factor=this.intensity==='soft'?.58:this.intensity==='intense'?1.55:1;
+      this.scheduleBatWave(random(540,1320)/factor);
     },delay);
   }
   spawnBat(index,group){
-    if(this.active!=='horror'||this.paused||document.hidden||this.reduced||!this.batLayer||this.activeBats.size>=14)return;
+    const factor=this.intensity==='soft'?.58:this.intensity==='intense'?1.55:1;
+    if(this.active!=='horror'||this.paused||document.hidden||this.reduced||!this.batLayer||this.activeBats.size>=Math.round(14*factor))return;
     const close=Math.random()<.19,fromLeft=Math.random()<.56,wide=this.width||innerWidth,tall=this.height||innerHeight;
     const scale=close?random(1.7,3.25):random(.5,1.4),duration=random(3300,7200),startX=fromLeft?-72*scale:wide+72*scale,endX=fromLeft?wide+72*scale:-72*scale;
     const startY=clamp(random(tall*.07,tall*.86)+(group>1?(index-(group-1)/2)*random(22,58):0),28,tall-28);
