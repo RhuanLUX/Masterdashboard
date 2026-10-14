@@ -96,3 +96,26 @@ O teste verifica asset ausente, caminho divergente, retrato repetido indevidamen
 ### Evidência visual
 
 Foi iniciado o servidor local e a página respondeu HTTP 200. A ferramenta de navegador deste ambiente recusou abrir o loopback por política de segurança, portanto não foi possível capturar screenshots reais a partir daqui. Essa limitação está registrada em vez de declarar aprovação visual indevida. O UAT local precisa abrir `http://127.0.0.1:4174/`, entrar em **Mestre → Combate** e registrar os screenshots solicitados.
+
+## V3.2 — True 16-Bit Battle Arena Visual Rebuild
+
+Status: **TECHNICALLY READY FOR OWNER UAT**. Não equivale a OWNER UAT APPROVED.
+
+- A Arena deixou de montar retratos HTML em grupos limitados: o palco é agora um canvas PixiJS 8.22.0 local, com grade para todos os participantes. A auditoria inclui 20 combatentes.
+- Foram incluídos spritesheets raster originais em `assets/pixel-sprites/`: quatro frames para a companhia, Uruk-hai e Espectro, além de sprites distintos de goblin lanceiro, arqueiro e espadachim.
+- Ataque, magia, cura, falha e crítico movem/iluminam sprites pelo ticker. Regras de iniciativa, PV, condição, desfazer e histórico permanecem no núcleo V3.
+- **Mesa de Dados** abre a rolagem compacta dentro da Arena com `RPGDiceLogic`, inclusive d100 percentual, e registra evento pendente até a confirmação; não redireciona para outra tela.
+- `battle-display.html` recebe por `BroadcastChannel` somente nome, lado, sprite, título e rodada. PV, CA, notas, dano e histórico privados não são transmitidos. O mestre revela inimigos explicitamente.
+- A migração só repara o fallback histórico `1/1` quando CA e movimento também são os valores vazios do bug. Um combatente realmente ferido com 1 PV continua ferido.
+- Controles de tema e inputs/selects da Arena têm acabamento dark fantasy explícito, sem campos brancos nativos.
+
+### Testes executados
+
+1. `node --check` aprovado para `battle-pixi.js`, `battle-arena.js`, `battle-display.js` e `battle-core.js`.
+2. `node tests/battle-arena-audit.cjs` aprovado: sete bindings canônicos, paths de assets, dano real em 1 PV preservado e capacidade de 20 participantes.
+3. `git diff --check` aprovado.
+4. O servidor PowerShell offline retornou HTTP 200 para `index.html`, `vendor/pixi/pixi.min.js` (840.663 bytes) e `battle-display.html`; não há CDN em execução.
+
+### Limitação de evidência
+
+O browser de automação desta sessão bloqueia o loopback local por política da ferramenta. A validação HTTP foi possível, mas screenshots e interação da janela secundária precisam ser feitos pelo proprietário no UAT. Esta limitação não foi convertida em aprovação visual.

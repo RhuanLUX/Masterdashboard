@@ -60,9 +60,15 @@
     if (!source) return participant;
     participant.name = participant.name || source.name;
     if (!participant.type || participant.type === 'Personalizado') participant.type = source.type;
-    if ((!positive(participant.hpMax) || (participant.hpMax === 1 && (source.hpMax || 0) > 1)) && source.hpMax) {
+    /* A versão 3.1 gravou 1/1, CA e movimento vazios por um binding defeituoso.
+       Nunca tratamos apenas 1 PV como defeito: um combatente pode estar ferido. */
+    const legacyFallback = participant.hpMax === 1 && (source.hpMax || 0) > 1
+      && ['—', 'CA não definida', ''].includes(String(participant.ac ?? ''))
+      && ['—', 'Movimento não definido', ''].includes(String(participant.movement ?? ''));
+    if ((!positive(participant.hpMax) || legacyFallback) && source.hpMax) {
       participant.hpMax = source.hpMax;
-      if (!positive(participant.hpCurrent) || participant.hpCurrent === 1) participant.hpCurrent = source.hpCurrent || source.hpMax;
+      if (!positive(participant.hpCurrent) || legacyFallback) participant.hpCurrent = source.hpCurrent || source.hpMax;
+      if (legacyFallback) participant.migration = { version: '3.2', repairedLegacyFallback: true };
     }
     if (!participant.ac || participant.ac === '—' || participant.ac === 'CA não definida') participant.ac = source.ac || 'CA não definida';
     if (!participant.movement || participant.movement === '—' || participant.movement === 'Movimento não definido') participant.movement = source.movement || 'Movimento não definido';
@@ -110,6 +116,30 @@
     return combat;
   }
 
+  function enrichAddedParticipant(input = {}) {
+    const state = global.RPGMasterHost?.getState?.();
+    const source = state ? sourceFor(state, input) : null;
+    if (!source) return input;
+    const legacyIncoming = Number(input.hpMax) === 1 && (source.hpMax || 0) > 1
+      && ['—', 'CA não definida', ''].includes(String(input.ac ?? ''))
+      && ['—', 'Movimento não definido', ''].includes(String(input.movement ?? ''));
+    return {
+      ...input, name: input.name || source.name, type: input.type || source.type,
+      hpMax: legacyIncoming ? source.hpMax : positive(input.hpMax, source.hpMax), hpCurrent: legacyIncoming ? (source.hpCurrent || source.hpMax) : positive(input.hpCurrent, source.hpCurrent || source.hpMax),
+      ac: input.ac ?? source.ac, movement: input.movement ?? source.movement, image: input.image || source.image,
+      attributes: input.attributes?.length || Object.keys(input.attributes || {}).length ? input.attributes : copy(source.attributes),
+      attacks: input.attacks?.length ? input.attacks : copy(source.attacks), damage: input.damage || source.damage || '',
+      special: input.special || source.special || '', details: input.details || source.details || ''
+    };
+  }
+
+  /* Compatibilidade com o painel V3: entradas antigas chegam incompletas; o wrapper
+     usa o sourceId e a ficha canônica antes do normalizador persistir qualquer campo. */
+  const rawAddParticipant = global.RPGV3.addParticipant;
+  global.RPGV3.addParticipant = function addParticipantWithCanonicalData(combat, input) {
+    return rawAddParticipant(combat, enrichAddedParticipant(input));
+  };
+
   function combat(state) { const v = ensure(state); return v.combats.find(item => item.id === v.activeCombatId) || null; }
   function event(combat, input = {}) {
     ensureCombat(combat);
@@ -136,5 +166,5 @@
     lines.push('', '## Cronologia'); combat.battleEvents.forEach(entry => lines.push(`- ${new Date(entry.at).toLocaleString('pt-BR')}: ${entry.type} · ${who(entry.actorId)} → ${who(entry.targetId)}${entry.label ? ` · ${entry.label}` : ''}${entry.narrative ? ` — ${entry.narrative}` : ''}${entry.dialogue ? ` “${entry.dialogue}”` : ''}`)); return lines.join('\n');
   }
 
-  global.RPGBattle = { ensure, combat, event, pendingRoll, confirmRoll, applyHp, narrate, saveTemplate, duplicate, archive, toMarkdown, characterSource, creatureSource, sourceFor, resolveImage, hydrateParticipant, hydrateCombat, auditParticipants };
+  global.RPGBattle = { ensure, combat, event, pendingRoll, confirmRoll, applyHp, narrate, saveTemplate, duplicate, archive, toMarkdown, characterSource, creatureSource, sourceFor, resolveImage, hydrateParticipant, hydrateCombat, auditParticipants, enrichAddedParticipant };
 })(window);

@@ -51,4 +51,14 @@ expected.forEach(([id, hp, ac, image]) => {
 if (audit.missing.length || audit.mismatched.length) throw new Error('Auditoria de imagem encontrou mapeamento inválido.');
 if (new Set(audit.rows.map(row => row.asset)).size !== audit.rows.length) throw new Error('Auditoria encontrou retrato repetido indevidamente.');
 
-console.log(`BATTLE_ARENA_AUDIT_PASS combatentes=${audit.rows.length} assets=${new Set(audit.rows.map(row => row.asset)).size}`);
+// Regressão V3.2: 1 PV real é dano válido e não pode ser curado pela migração.
+const wounded = combat.participants.find(entry => entry.sourceId === 'anao');
+wounded.hpCurrent = 1; wounded.hpMax = 52; wounded.ac = '16'; wounded.movement = '7,5 m / 12m montado';
+RPGBattle.ensure(state);
+if (wounded.hpCurrent !== 1) throw new Error(`Migração curou dano histórico indevidamente: ${wounded.hpCurrent}/52`);
+
+// O renderer deve receber listas sem limite artificial de quatro participantes.
+for (let index = 0; index < 13; index += 1) RPGV3.addParticipant(combat, { name: `Teste ${index + 1}`, type: 'Personalizado', hpMax: 10 });
+if (combat.participants.length !== 20) throw new Error(`Participantes insuficientes para a arena: ${combat.participants.length}`);
+
+console.log(`BATTLE_ARENA_AUDIT_PASS combatentes=${audit.rows.length} arenaCapacity=${combat.participants.length} assets=${new Set(audit.rows.map(row => row.asset)).size}`);
