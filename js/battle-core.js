@@ -15,6 +15,7 @@
   };
 
   function creatureCatalog(state) {
+    if(global.RPGBattleCatalog)return global.RPGBattleCatalog.creatures(state);
     const official = global.RPG_MASTER_CAMPAIGN_CODEX?.creatures || [];
     const local = state?.v2?.creatures || [];
     return [...official, ...local].reduce((catalog, entry) => {
@@ -24,6 +25,7 @@
   }
 
   function characterSource(state, id) {
+    if(global.RPGBattleCatalog)return global.RPGBattleCatalog.source(state,'character',id);
     const character = state?.characters?.[id];
     if (!character) return null;
     const combat = character.combat || {};
@@ -35,6 +37,7 @@
   }
 
   function creatureSource(state, id) {
+    if(global.RPGBattleCatalog)return global.RPGBattleCatalog.source(state,'creature',id);
     const creature = creatureCatalog(state).find(item => item.id === id);
     if (!creature) return null;
     return {
@@ -46,12 +49,13 @@
 
   function sourceFor(state, participant) {
     if (!participant?.sourceId) return null;
+    if(global.RPGBattleCatalog)return global.RPGBattleCatalog.source(state,participant.sourceType,participant.sourceId);
     return participant.sourceType === 'character' ? characterSource(state, participant.sourceId) : creatureSource(state, participant.sourceId);
   }
 
   function resolveImage(state, participant) {
     const source = sourceFor(state, participant);
-    const image = participant?.image || participant?.portrait || source?.image || '';
+    const image = source?.image || participant?.image || participant?.portrait || '';
     return { image, source, fallback: !image };
   }
 
@@ -123,9 +127,11 @@
     const legacyIncoming = Number(input.hpMax) === 1 && (source.hpMax || 0) > 1
       && ['—', 'CA não definida', ''].includes(String(input.ac ?? ''))
       && ['—', 'Movimento não definido', ''].includes(String(input.movement ?? ''));
+    const currentHp=input.hpCurrent ?? source.hpCurrent;
+    const explicitZero=currentHp!=null && currentHp!=='' && Number(currentHp)===0;
     return {
       ...input, name: input.name || source.name, type: input.type || source.type,
-      hpMax: legacyIncoming ? source.hpMax : positive(input.hpMax, source.hpMax), hpCurrent: legacyIncoming ? (source.hpCurrent || source.hpMax) : positive(input.hpCurrent, source.hpCurrent || source.hpMax),
+      hpMax: legacyIncoming ? source.hpMax : positive(input.hpMax, source.hpMax), hpCurrent: legacyIncoming ? (source.hpCurrent || source.hpMax) : explicitZero ? 0 : positive(input.hpCurrent, source.hpCurrent || source.hpMax),
       ac: input.ac ?? source.ac, movement: input.movement ?? source.movement, image: input.image || source.image,
       attributes: input.attributes?.length || Object.keys(input.attributes || {}).length ? input.attributes : copy(source.attributes),
       attacks: input.attacks?.length ? input.attacks : copy(source.attacks), damage: input.damage || source.damage || '',
@@ -137,7 +143,10 @@
      usa o sourceId e a ficha canônica antes do normalizador persistir qualquer campo. */
   const rawAddParticipant = global.RPGV3.addParticipant;
   global.RPGV3.addParticipant = function addParticipantWithCanonicalData(combat, input) {
-    return rawAddParticipant(combat, enrichAddedParticipant(input));
+    const enriched=enrichAddedParticipant(input),participant=rawAddParticipant(combat,enriched);
+    // Source binding must not turn a character's real 0 PV into the legacy default 1 PV.
+    if(enriched.hpCurrent===0)participant.hpCurrent=0;
+    return participant;
   };
 
   function combat(state) { const v = ensure(state); return v.combats.find(item => item.id === v.activeCombatId) || null; }

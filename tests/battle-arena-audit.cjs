@@ -8,6 +8,7 @@ global.crypto = crypto.webcrypto;
 require('../data/campaign-codex.js');
 require('../js/dice-logic.js');
 require('../js/v3-core.js');
+require('../js/battle-catalog.js');
 require('../js/battle-core.js');
 
 const root = path.resolve(__dirname, '..');

@@ -13,7 +13,7 @@
   function publicPayload(combat) {
     const revealed = combat.visibility?.revealedParticipantIds || [];
     return { title: combat.title, round: combat.round, activeId: window.RPGV3.activeParticipant(combat)?.id || null,
-      participants: combat.participants.filter(p => !enemy(p) || revealed.includes(p.id)).map(p => ({ id: p.id, name: p.name, sourceId: p.sourceId, sourceType: p.sourceType, type: p.type })) };
+      participants: combat.participants.filter(p => !enemy(p) || revealed.includes(p.id)).map(p => ({ id: p.id, name: p.name, sourceId: p.sourceId, sourceType: p.sourceType, type: p.type, arenaVisual: window.RPGBattleCatalog.visualFor(p,state()) })) };
   }
   function broadcast(combat, effect) {
     if (!('BroadcastChannel' in window)) return;

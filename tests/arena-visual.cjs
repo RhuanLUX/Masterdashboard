@@ -5,7 +5,7 @@ const path = require('node:path');
 const { spawn } = require('node:child_process');
 const phase = process.argv[2] || 'after';
 const root = path.resolve(__dirname, '..');
-const out = path.join(root, 'docs', 'qa-v3.2.1', phase);
+const out = process.env.ARENA_QA_OUTPUT ? path.resolve(root,process.env.ARENA_QA_OUTPUT) : path.join(root, 'docs', 'qa-v3.2.1', phase);
 const url = 'http://127.0.0.1:43992';
 async function run() {
   fs.mkdirSync(out, { recursive: true });

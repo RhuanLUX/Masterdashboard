@@ -1,0 +1,1573 @@
+{
+  "roster": [
+    {
+      "id": "anao",
+      "kind": "character",
+      "name": "Anão Caolho de Hirnath",
+      "type": "Anão · Bárbaro Rúnico - Nível 4",
+      "hpMax": 52,
+      "hpCurrent": 52,
+      "ac": "16",
+      "movement": "7,5m / 12m montado",
+      "image": "assets/portraits/anao-caolho-hd.png",
+      "attributes": [
+        {
+          "name": "Força (FOR)",
+          "value": "18",
+          "modifier": "4",
+          "save": "",
+          "allocated": "10"
+        },
+        {
+          "name": "Destreza (DES)",
+          "value": "12",
+          "modifier": "1",
+          "save": "",
+          "allocated": "4"
+        },
+        {
+          "name": "Constituição (CON)",
+          "value": "18",
+          "modifier": "4",
+          "save": "",
+          "allocated": "10"
+        },
+        {
+          "name": "Inteligência (INT)",
+          "value": "11",
+          "modifier": "0",
+          "save": "",
+          "allocated": "3"
+        },
+        {
+          "name": "Sabedoria (SAB)",
+          "value": "14",
+          "modifier": "2",
+          "save": "",
+          "allocated": "6"
+        },
+        {
+          "name": "Carisma (CAR)",
+          "value": "10",
+          "modifier": "0",
+          "save": "",
+          "allocated": "2"
+        }
+      ],
+      "attacks": [
+        [
+          "Fúria da Forja",
+          "Ação bônus / 3x por descanso longo",
+          "Por 5 turnos: resistência a dano físico comum, +2 dano corpo a corpo e o corpo começa a aquecer. No primeiro acerto de cada turno, ganha 1 Carga de Brasa, máximo 3."
+        ],
+        [
+          "Runa da Brasa",
+          "Ofensiva / 1 Carga",
+          "Após acertar com o martelo, gaste 1 Carga de Brasa para causar +1d6 de dano de fogo."
+        ],
+        [
+          "Impacto da Forja",
+          "Ofensiva / 3 Cargas",
+          "Após acertar ou golpeando o chão, libera uma explosão de calor. Inimigos a até 3m fazem DES CD 14; falha: 2d6 fogo e ficam desequilibrados; sucesso: metade."
+        ],
+        [
+          "Runa da Rocha",
+          "Reação / 2x por descanso curto",
+          "Reduz o dano recebido em 1d10+4 e impede que o Anão seja derrubado ou empurrado por aquele ataque."
+        ],
+        [
+          "Marca do Desafio",
+          "Controle / ação bônus",
+          "Escolha 1 inimigo a até 6m. Até o início do próximo turno do Anão, o alvo tem desvantagem para atacar qualquer outro personagem. Se ignorá-lo, o Anão pode realizar 1 ataque de reação."
+        ],
+        [
+          "Guarda da Primeira Linha",
+          "Reação / 1x por rodada",
+          "Quando um aliado adjacente é atacado, o Anão pode interpor-se. O ataque é feito com desvantagem; se ainda acertar, o Anão pode receber o dano no lugar do aliado."
+        ],
+        [
+          "Sangue de Fogo Antigo",
+          "Lendário / 1x por descanso longo",
+          "Ao cair a 0 PV, permanece com 1 PV, recebe imediatamente 3 Cargas de Brasa e emite uma aura de fogo por 2 rodadas. Inimigos adjacentes sofrem 1d6 fogo no início do turno deles."
+        ],
+        [
+          "Investida de Brasa",
+          "Montaria / 1x por combate",
+          "Montado no javali, avança pelo menos 6m em linha reta e desfere o impacto. Ataque +5, dano 1d8+3; o alvo faz FOR CD 13 ou cai no chão. Esta investida usa a ação do Anão, não cria um turno extra."
+        ]
+      ],
+      "details": "O Anão Caolho de Hirnath é um ferreiro-guerreiro conhecido pelas runas gravadas no próprio martelo e pela estranha capacidade de despertar fogo a partir do próprio corpo. Durante o inverno em Hirnath, sua aldeia foi salva por Elenya, Calion e Nando Serenata quando os aventureiros enfrentaram o Vigia de Hrim e encerraram o inverno sobrenatural.\nDesde então, ele considera que possui uma dívida com o grupo. Caolho, teimoso e difícil de derrubar, viaja montado em um enorme javali de guerra e prefere ocupar o ponto mais perigoso de qualquer batalha.\nAs runas que utiliza não funcionam como magia comum. Elas respondem ao calor, ao impacto e à vontade do portador. Quanto mais pressionado fica em combate, mais quente seu corpo e seu martelo se tornam.\nObjetivo: pagar sua dívida e proteger aqueles que aceitar como sua companhia.\nPersonalidade: direto, sarcástico, leal e barulhento.\nVirtude: coragem e lealdade absoluta.\nFraqueza: orgulho, teimosia e tendência a resolver problemas de frente.\nOcupa a linha de frente, força inimigos a enfrentá-lo e usa fogo/runa para controlar espaço.\nElenya, Calion e Nando Serenata ajudaram Hirnath durante o inverno sobrenatural. Ele considera a dívida pessoal.\nMantém uma amizade antiga e improvável com Barbárvore, baseada em respeito, provocações e favores acumulados.\nAs runas e o Coração da Forja Antiga podem evoluir com o nível. Em níveis muito altos (16), o Anão tornar-se uma figura lendária.",
+      "sourceType": "character",
+      "sourceId": "anao",
+      "key": "character:anao",
+      "group": "Companhia",
+      "visual": {
+        "key": "character:anao",
+        "kind": "sheet",
+        "asset": "assets/pixel-sprites/anao-caolho-sheet-v1.png",
+        "columns": 4,
+        "frame": null,
+        "fallback": false,
+        "reason": ""
+      }
+    },
+    {
+      "id": "calion",
+      "kind": "character",
+      "name": "Calion Aranwë",
+      "type": "Elfo · Feiticeiro",
+      "hpMax": null,
+      "hpCurrent": null,
+      "ac": "—",
+      "movement": "—",
+      "image": "assets/portraits/calion-hd.png",
+      "attributes": [
+        {
+          "name": "Força (FOR)",
+          "value": "8",
+          "modifier": "-1",
+          "save": "—",
+          "allocated": ""
+        },
+        {
+          "name": "Destreza (DES)",
+          "value": "13 + 2",
+          "modifier": "+3",
+          "save": "—",
+          "allocated": ""
+        },
+        {
+          "name": "Constituição (CON)",
+          "value": "15",
+          "modifier": "+2",
+          "save": "—",
+          "allocated": ""
+        },
+        {
+          "name": "Inteligência (INT)",
+          "value": "12",
+          "modifier": "+1",
+          "save": "—",
+          "allocated": ""
+        },
+        {
+          "name": "Sabedoria (SAB)",
+          "value": "12",
+          "modifier": "+1",
+          "save": "—",
+          "allocated": ""
+        },
+        {
+          "name": "Carisma (CAR)",
+          "value": "15",
+          "modifier": "+2",
+          "save": "—",
+          "allocated": ""
+        }
+      ],
+      "attacks": [],
+      "details": "Nome: Calion Aranwë\n Título: “Descendente do Luz”\n Raça: Elfo\n Classe e Nível: Feiticeiro\n Antecedente: Exilado de Aman\n Jogador: Rodrigo\n🧮 Atributos\n🎯 Perícias\n⚔️ Combate\nPontos de Vida (PV): 10\nClasse de Armadura (CA): 12 + (bônus da veste leve = +1) → 13\nInspiração: +1\nAtaques e Conjuração: Encantado – Testes de Conjuração +1\n🎒 Equipamento & Inventário\nVeste leve (+1 CA)\nEspada e Machado Preto\n🧝 Proficências, Características e Talentos\nVisão no escuro\nSentidos aguçados – teste de percepção\nAncestralidade feérica – vantagem em resistir a encantamentos\n\nMagias Conhecidas (nível 1)\nTruques: Luz, Rajada Mística, Toque Gélido\nMagias de 1º nível: Escudo Arcano, Mísseis Mágicos, Disfarçar-s\n\nHistória\n\nOs ventos que sopram das Montanhas Sombrias trazem frio e silêncio.\nAs antigas estradas dos reinos do norte estão quase desertas, cruzadas apenas por viajantes solitários e por aqueles que não têm mais lar.\nEntre eles caminha Calion, um elfo noldor de longos cabelos negros e olhar profundo como o céu sem estrelas — um dos últimos herdeiros da Casa de Fingolfin.\nNos dias imortais de Aman, antes da queda das Duas Árvores, Calion foi um estudioso e artesão da luz.\nSeu nome, Calion, significa “Filho da Luz Dourada”, dado por sua mãe em homenagem a Laurelin, a Árvore do Sol.\nEle testemunhou o orgulho e a beleza de Fëanor, a rebelião dos Noldor e, com relutância, seguiu Fingolfin através do gelo de Helcaraxë — um ato de lealdade que selou seu exílio eterno.\nNas eras seguintes, Calion lutou nas guerras contra Morgoth, viu o brilho das Silmarils desaparecer e os reinos élficos se tornarem apenas lembranças.\nQuando o mar se ergueu para engolir Beleriand, ele sobreviveu — mas algo de sua alma ficou submerso para sempre.\nAgora vive em Lindon, entre as ruínas do esplendor antigo, um erudito que fala pouco e observa muito.\nMas o mundo muda outra vez.\nOs reinos dos homens estão inquietos, o comércio rareia e as sombras se alongam nas fronteiras.\nDizem que um rei humano enviou um chamado aos povos livres — uma missão para levar um artefato sagrado através das montanhas até as forjas dos anões.\nPoucos atenderam.\nCalion, porém, ouviu o eco desse chamado como se fosse o murmúrio distante das Árvores de Aman.\nEle parte não por glória, mas por esperança.\nTalvez, entre os ecos dos antigos reinos, encontre algum vestígio da luz que perdeu — ou algo que o aproxime da redenção dos Noldor.\nSeu poder vem das sombras, mas nelas brilha a lembrança do ouro de Laurelin.\n\nEnquanto as estrelas ainda dançarem sobre as terras mortais, Calion, o Filho da Luz Dourada, seguirá seu caminho — buscando não apenas a luz do mundo, mas a que sobrevive em seu coração.",
+      "sourceType": "character",
+      "sourceId": "calion",
+      "key": "character:calion",
+      "group": "Companhia",
+      "visual": {
+        "key": "character:calion",
+        "kind": "sheet",
+        "asset": "assets/pixel-sprites/calion-sheet-v1.png",
+        "columns": 4,
+        "frame": null,
+        "fallback": false,
+        "reason": ""
+      }
+    },
+    {
+      "id": "elenya",
+      "kind": "character",
+      "name": "Elenya",
+      "type": "Humana · Ladina",
+      "hpMax": null,
+      "hpCurrent": null,
+      "ac": "—",
+      "movement": "9 m",
+      "image": "assets/portraits/elenya-hd.png",
+      "attributes": [
+        {
+          "name": "Força (FOR)",
+          "value": "12",
+          "modifier": "+1",
+          "save": "+2",
+          "allocated": ""
+        },
+        {
+          "name": "Destreza (DES)",
+          "value": "15",
+          "modifier": "+3",
+          "save": "+3",
+          "allocated": ""
+        },
+        {
+          "name": "Constituição (CON)",
+          "value": "14",
+          "modifier": "+2",
+          "save": "—",
+          "allocated": ""
+        },
+        {
+          "name": "Inteligência (INT)",
+          "value": "10",
+          "modifier": "0",
+          "save": "—",
+          "allocated": ""
+        },
+        {
+          "name": "Sabedoria (SAB)",
+          "value": "13",
+          "modifier": "+1",
+          "save": "+2",
+          "allocated": ""
+        },
+        {
+          "name": "Carisma (CAR)",
+          "value": "8",
+          "modifier": "-1",
+          "save": "—",
+          "allocated": ""
+        }
+      ],
+      "attacks": [],
+      "details": "Nome: Elenya\n Raça: Humana\n Classe e Nível: Ladina\n Jogador: Chico\n🧮 Atributos\n🎯 Perícias\n⚔️ Combate\nPontos de Vida (PV): 14\nClasse de Armadura (CA): 13\nIniciativa: +3\nDeslocamento: 9 m\nDados de Vida (DV): —\nAtaques:\nAdaga +3\n\n🎒 Equipamento & Inventário\n2 adagas (lindas) +1\nCapa do ladino\n1 ponto de inspiração\n🧠 Proficências, Características & Talentos\n(não há anotações específicas além das vantagens raciais e de classe)\nElenya, filha da Estrela palida.\n\nReflexo de uma paixao proibida, sua mae, uma camponesa das florestas do norte se apaixonou por um errante. Um homem intenso, reconhecido por sua frieza e por um colar em forma de Estrela no peito. O amor nao resistiu ao preconceito e seu pais desapareceu deixando-a apenas o colar como lembranca. Sua mae rejeitada pelo preconceito, enxergou a filha como um simbolo de sua vergonha. Incapaz de suportar o desprezo e a culpa, Elenya fugiu para a Floresta, levando consigo apenas um arco, duas adagas e o colar, que acreditava ter inspirado seu nome: Elenya, a nascida sob a Estrela.\nAnos depois, encontrou seu proposito como mensageira entre pequenas aldeias. Em uma dessas viagens, carregando um mapa de enorme valor, sua caravana foi emboscada por orcs. Todos foram massacrados, humanos, elfos, halflings, menos ela.\nEla sabia que poderia ter sido facilmente morta, mas de alguma forma a pouparam. No meio do sangue e da lama, antes de perder a consciencia, ela viu algo impossivel de esquecer: o mesmo simbolo de seu colar gravado em cicatriz no peito dos orcs.\nDesde entao se pergunta: quem realmente era seu pai? O que significa esse simbolo? Porque foi poupada?\nPara honrar os mortos, seus primeiros amigos, tatuou os nomes de todos em suas costas. Cada nome é uma lembranca, uma ferida, uma promessa de descobrir a verdade.\nAgora, anos depois, uma nova carta chega com uma missao: levar um artefato. Mas o que gela seu coracao é o selo da mensagem: o simbolo da Estrela.\nNao é apenas uma missao, é um chamado, um caminho para a origem do misterio que moldou sua vida.\n",
+      "sourceType": "character",
+      "sourceId": "elenya",
+      "key": "character:elenya",
+      "group": "Companhia",
+      "visual": {
+        "key": "character:elenya",
+        "kind": "sheet",
+        "asset": "assets/pixel-sprites/elenya-sheet-v1.png",
+        "columns": 4,
+        "frame": null,
+        "fallback": false,
+        "reason": ""
+      }
+    },
+    {
+      "id": "nando",
+      "kind": "character",
+      "name": "Nando Serenata",
+      "type": "Meio-Elfo · Bardo - Nível 1",
+      "hpMax": 9,
+      "hpCurrent": 9,
+      "ac": "13",
+      "movement": "9m",
+      "image": "assets/portraits/nando-hd.png",
+      "attributes": [
+        {
+          "name": "Força (FOR)",
+          "value": "8",
+          "modifier": "-1",
+          "save": "",
+          "allocated": "0"
+        },
+        {
+          "name": "Destreza (DES)",
+          "value": "14",
+          "modifier": "2",
+          "save": "",
+          "allocated": "6"
+        },
+        {
+          "name": "Constituição (CON)",
+          "value": "12",
+          "modifier": "1",
+          "save": "",
+          "allocated": "4"
+        },
+        {
+          "name": "Inteligência (INT)",
+          "value": "15",
+          "modifier": "2",
+          "save": "",
+          "allocated": "7"
+        },
+        {
+          "name": "Sabedoria (SAB)",
+          "value": "10",
+          "modifier": "0",
+          "save": "",
+          "allocated": "2"
+        },
+        {
+          "name": "Carisma (CAR)",
+          "value": "17",
+          "modifier": "3",
+          "save": "",
+          "allocated": "9"
+        }
+      ],
+      "attacks": [
+        [
+          "Inspiração Heroica",
+          "Suporte",
+          "Aliado recebe +1d6 em rolagens de ataque ou teste."
+        ],
+        [
+          "Voz Persuasiva",
+          "Encantamento",
+          "Vantagem em testes de Carisma por 1 minuto."
+        ],
+        [
+          "Canção de Cura",
+          "Cura",
+          "Aliados em 6m recuperam 1d6 PV."
+        ]
+      ],
+      "details": "Elarion Dúnhir nasceu em Rivendell, entre estudiosos e conselheiros da corte de Elrond. \nSeu pai, um humano embaixador de Gondor, ensinou-lhe sobre dever e política; sua mãe, uma erudita élfica, sobre arte e harmonia.\n\nAo longo dos anos, Elarion tornou-se um diplomata viajante, conhecido por resolver disputas entre reinos humanos e enclaves élficos. \nEle acredita que a verdadeira força vem da compreensão e da palavra — não da espada.\n\nObjetivo: Unir os povos livres sob um pacto de razão e equilíbrio.\nPersonalidade: Calmo, racional, confiante.\nVirtude: Sabedoria e empatia.\nFraqueza: Idealismo e dificuldade em aceitar corrupção política.\n",
+      "sourceType": "character",
+      "sourceId": "nando",
+      "key": "character:nando",
+      "group": "Companhia",
+      "visual": {
+        "key": "character:nando",
+        "kind": "sheet",
+        "asset": "assets/pixel-sprites/nando-sheet-v1.png",
+        "columns": 4,
+        "frame": null,
+        "fallback": false,
+        "reason": ""
+      }
+    },
+    {
+      "id": "uruk-hai-capitao",
+      "kind": "creature",
+      "name": "Capitão Uruk-hai",
+      "type": "Humanoide médio",
+      "hpMax": 45,
+      "hpCurrent": 45,
+      "ac": 16,
+      "movement": "9 m",
+      "image": "assets/generated/codex/creatures/uruk-capitao.jpg",
+      "attributes": {
+        "for": 18,
+        "des": 12,
+        "con": 17,
+        "int": 10,
+        "sab": 11,
+        "car": 12
+      },
+      "attacks": [
+        "Espada serrilhada +6"
+      ],
+      "damage": "1d10+4",
+      "special": "Comando cruel: um aliado uruk-hai faz um ataque simples imediatamente.",
+      "details": "Líder de patrulha que impõe disciplina com espada serrilhada e voz brutal.\nUse como comandante de encontro, não como substituto de evento narrativo.",
+      "origin": "Aventura 5",
+      "status": "",
+      "sourceType": "creature",
+      "sourceId": "uruk-hai-capitao",
+      "key": "creature:uruk-hai-capitao",
+      "group": "Criaturas e inimigos",
+      "visual": {
+        "key": "creature:uruk-hai-capitao",
+        "kind": "portrait",
+        "asset": "assets/generated/codex/creatures/uruk-capitao.jpg",
+        "columns": 1,
+        "frame": null,
+        "fallback": true,
+        "reason": "Sprite próprio não cadastrado; retrato da própria entidade (R)."
+      }
+    },
+    {
+      "id": "criatura-aglor",
+      "kind": "creature",
+      "name": "Criatura de Aglor",
+      "type": "Aberração",
+      "hpMax": 24,
+      "hpCurrent": 24,
+      "ac": 13,
+      "movement": "9 m",
+      "image": "assets/generated/codex/entities/aglor.jpg",
+      "attributes": {
+        "for": 11,
+        "des": 15,
+        "con": 12,
+        "int": 7,
+        "sab": 12,
+        "car": 10
+      },
+      "attacks": [
+        "Mordida escura +4"
+      ],
+      "damage": "1d8+2 necrótico",
+      "special": "Foge da luz intensa: sofre desvantagem no primeiro ataque sob luz mágica.",
+      "details": "Manifestação ligada aos rostos que surgem no escuro e aos sussurros da floresta.\nBoa para encontros de tensão curta.",
+      "origin": "Aventura 5",
+      "status": "",
+      "sourceType": "creature",
+      "sourceId": "criatura-aglor",
+      "key": "creature:criatura-aglor",
+      "group": "Criaturas e inimigos",
+      "visual": {
+        "key": "creature:criatura-aglor",
+        "kind": "portrait",
+        "asset": "assets/generated/codex/entities/aglor.jpg",
+        "columns": 1,
+        "frame": null,
+        "fallback": true,
+        "reason": "Sprite próprio não cadastrado; retrato da própria entidade (R)."
+      }
+    },
+    {
+      "id": "espectro-sombras",
+      "kind": "creature",
+      "name": "Espectro das Sombras",
+      "type": "Entidade incorpórea",
+      "hpMax": 38,
+      "hpCurrent": 38,
+      "ac": 14,
+      "movement": "Voo 12 m",
+      "image": "assets/generated/entities/espectro-das-sombras.png",
+      "attributes": {
+        "for": 6,
+        "des": 16,
+        "con": 14,
+        "int": 12,
+        "sab": 14,
+        "car": 16
+      },
+      "attacks": [
+        "Garra sombria +5"
+      ],
+      "damage": "2d6+3 necrótico",
+      "special": "Roubar rosto: em falha de SAB CD 13, a vítima vê um aliado como ameaça até o próximo turno.",
+      "details": "Sombra sem rosto que perturba percepções e memórias.\nUse como ameaça de mistério, não apenas combate.",
+      "origin": "Aventura 5",
+      "status": "",
+      "sourceType": "creature",
+      "sourceId": "espectro-sombras",
+      "key": "creature:espectro-sombras",
+      "group": "Criaturas e inimigos",
+      "visual": {
+        "key": "creature:espectro-sombras",
+        "kind": "sheet",
+        "asset": "assets/pixel-sprites/spectro-sheet-v1.png",
+        "columns": 4,
+        "frame": null,
+        "fallback": false,
+        "reason": ""
+      }
+    },
+    {
+      "id": "goblin-arqueiro",
+      "kind": "creature",
+      "name": "Goblin Arqueiro de Fangorn",
+      "type": "Humanoide pequeno",
+      "hpMax": 9,
+      "hpCurrent": 9,
+      "ac": 12,
+      "movement": "9 m",
+      "image": "assets/generated/codex/creatures/goblin-arqueiro.jpg",
+      "attributes": {
+        "for": 7,
+        "des": 15,
+        "con": 9,
+        "int": 9,
+        "sab": 10,
+        "car": 6
+      },
+      "attacks": [
+        "Arco curto +4"
+      ],
+      "damage": "1d6+2",
+      "special": "Tiro de cobertura: após acertar, pode deslocar-se 3 m.",
+      "details": "Atirador escondido nos galhos baixos e nas raízes tortas.\nPrefere fugir a lutar de perto.",
+      "origin": "Aventura 5",
+      "status": "",
+      "sourceType": "creature",
+      "sourceId": "goblin-arqueiro",
+      "key": "creature:goblin-arqueiro",
+      "group": "Criaturas e inimigos",
+      "visual": {
+        "key": "creature:goblin-arqueiro",
+        "kind": "sheet",
+        "asset": "assets/pixel-sprites/goblins-roster-v1.png",
+        "columns": 4,
+        "frame": 1,
+        "fallback": false,
+        "reason": ""
+      }
+    },
+    {
+      "id": "goblin-espadachim",
+      "kind": "creature",
+      "name": "Goblin Espadachim de Fangorn",
+      "type": "Humanoide pequeno",
+      "hpMax": 12,
+      "hpCurrent": 12,
+      "ac": 13,
+      "movement": "9 m",
+      "image": "assets/generated/codex/creatures/goblin-espadachim.jpg",
+      "attributes": {
+        "for": 10,
+        "des": 14,
+        "con": 11,
+        "int": 8,
+        "sab": 8,
+        "car": 7
+      },
+      "attacks": [
+        "Espada curta +4"
+      ],
+      "damage": "1d6+2",
+      "special": "Ataque em bando: +1 no ataque com aliado adjacente ao alvo.",
+      "details": "Combatente nervoso que avança quando se sente acuado.\nMantenha o comportamento de medo sugerido pela aventura.",
+      "origin": "Aventura 5",
+      "status": "",
+      "sourceType": "creature",
+      "sourceId": "goblin-espadachim",
+      "key": "creature:goblin-espadachim",
+      "group": "Criaturas e inimigos",
+      "visual": {
+        "key": "creature:goblin-espadachim",
+        "kind": "sheet",
+        "asset": "assets/pixel-sprites/goblins-roster-v1.png",
+        "columns": 4,
+        "frame": 2,
+        "fallback": false,
+        "reason": ""
+      }
+    },
+    {
+      "id": "goblin-lanceiro",
+      "kind": "creature",
+      "name": "Goblin Lanceiro de Fangorn",
+      "type": "Humanoide pequeno",
+      "hpMax": 10,
+      "hpCurrent": 10,
+      "ac": 13,
+      "movement": "9 m",
+      "image": "assets/generated/codex/creatures/goblin-lanceiro.jpg",
+      "attributes": {
+        "for": 8,
+        "des": 14,
+        "con": 10,
+        "int": 8,
+        "sab": 8,
+        "car": 6
+      },
+      "attacks": [
+        "Lança +4"
+      ],
+      "damage": "1d6+2",
+      "special": "Pânico de Fangorn: uma vez por cena, pode recuar sem provocar reação.",
+      "details": "Batedor assustado que mantém distância com sua lança enferrujada.\nUse grupos de quatro, conforme a aventura.",
+      "origin": "Aventura 5",
+      "status": "",
+      "sourceType": "creature",
+      "sourceId": "goblin-lanceiro",
+      "key": "creature:goblin-lanceiro",
+      "group": "Criaturas e inimigos",
+      "visual": {
+        "key": "creature:goblin-lanceiro",
+        "kind": "sheet",
+        "asset": "assets/pixel-sprites/goblins-roster-v1.png",
+        "columns": 4,
+        "frame": 0,
+        "fallback": false,
+        "reason": ""
+      }
+    },
+    {
+      "id": "orc-lanceiro-inverno",
+      "kind": "creature",
+      "name": "Orc Lanceiro de Inverno",
+      "type": "Humanoide médio",
+      "hpMax": 26,
+      "hpCurrent": 26,
+      "ac": 14,
+      "movement": "9 m",
+      "image": "assets/generated/codex/creatures/orc-lanceiro-inverno.jpg",
+      "attributes": {
+        "for": 16,
+        "des": 11,
+        "con": 15,
+        "int": 8,
+        "sab": 10,
+        "car": 8
+      },
+      "attacks": [
+        "Lança congelada +4"
+      ],
+      "damage": "1d8+2 frio",
+      "special": "Passo na neve: ignora terreno difícil causado por gelo ou neve.",
+      "details": "Guerreiro adaptado ao frio e aos ataques em terreno hostil.\nFicha resumida de apoio.",
+      "origin": "Aventura 3",
+      "status": "",
+      "sourceType": "creature",
+      "sourceId": "orc-lanceiro-inverno",
+      "key": "creature:orc-lanceiro-inverno",
+      "group": "Criaturas e inimigos",
+      "visual": {
+        "key": "creature:orc-lanceiro-inverno",
+        "kind": "portrait",
+        "asset": "assets/generated/codex/creatures/orc-lanceiro-inverno.jpg",
+        "columns": 1,
+        "frame": null,
+        "fallback": true,
+        "reason": "Sprite próprio não cadastrado; retrato da própria entidade (R)."
+      }
+    },
+    {
+      "id": "uruk-hai-batedor",
+      "kind": "creature",
+      "name": "Uruk-hai Batedor",
+      "type": "Humanoide médio",
+      "hpMax": 32,
+      "hpCurrent": 32,
+      "ac": 15,
+      "movement": "9 m",
+      "image": "assets/generated/enemies/uruk-hai.png",
+      "attributes": {
+        "for": 17,
+        "des": 12,
+        "con": 16,
+        "int": 9,
+        "sab": 10,
+        "car": 9
+      },
+      "attacks": [
+        "Cutelo de guerra +5"
+      ],
+      "damage": "1d10+3",
+      "special": "Disciplina brutal: vantagem contra medo enquanto tiver um aliado visível.",
+      "details": "Batedor de armadura pesada, resistente e direto.\nFicha resumida de uso rápido, baseada no D20 Simplificado.",
+      "origin": "Aventura 5",
+      "status": "",
+      "sourceType": "creature",
+      "sourceId": "uruk-hai-batedor",
+      "key": "creature:uruk-hai-batedor",
+      "group": "Criaturas e inimigos",
+      "visual": {
+        "key": "creature:uruk-hai-batedor",
+        "kind": "sheet",
+        "asset": "assets/pixel-sprites/uruk-hai-sheet-v1.png",
+        "columns": 4,
+        "frame": null,
+        "fallback": false,
+        "reason": ""
+      }
+    },
+    {
+      "id": "draig-cinzas",
+      "kind": "creature",
+      "name": "Draig das Cinzas",
+      "type": "Dragão menor",
+      "hpMax": 95,
+      "hpCurrent": 95,
+      "ac": 17,
+      "movement": "9 m, voo 18 m",
+      "image": "assets/generated/codex/creatures/draig-cinzas.jpg",
+      "attributes": {
+        "for": 20,
+        "des": 12,
+        "con": 18,
+        "int": 12,
+        "sab": 13,
+        "car": 16
+      },
+      "attacks": [
+        "Mordida ardente +7"
+      ],
+      "damage": "2d10+5 fogo",
+      "special": "Sopro de cinzas: cone de fogo, DES CD 15 para metade.",
+      "details": "Dragão jovem de escamas de brasa que guarda ruínas e tesouros esquecidos.\nLenda opcional para arcos futuros; não altera a história existente.",
+      "origin": "Ermos do Norte",
+      "status": "",
+      "sourceType": "creature",
+      "sourceId": "draig-cinzas",
+      "key": "creature:draig-cinzas",
+      "group": "Criaturas especiais / bosses",
+      "visual": {
+        "key": "creature:draig-cinzas",
+        "kind": "portrait",
+        "asset": "assets/generated/codex/creatures/draig-cinzas.jpg",
+        "columns": 1,
+        "frame": null,
+        "fallback": true,
+        "reason": "Sprite próprio não cadastrado; retrato da própria entidade (R)."
+      }
+    },
+    {
+      "id": "serpe-gelo-hrim",
+      "kind": "creature",
+      "name": "Serpe de Gelo de Hrim",
+      "type": "Dragão menor",
+      "hpMax": 88,
+      "hpCurrent": 88,
+      "ac": 16,
+      "movement": "9 m, voo 18 m",
+      "image": "assets/generated/codex/creatures/serpe-gelo-hrim.jpg",
+      "attributes": {
+        "for": 19,
+        "des": 14,
+        "con": 17,
+        "int": 10,
+        "sab": 13,
+        "car": 14
+      },
+      "attacks": [
+        "Presas glaciais +6"
+      ],
+      "damage": "2d8+4 frio",
+      "special": "Sopro de geada: cone de frio, CON CD 14 para metade.",
+      "details": "Serpe alada de gelo azul que ronda cavernas e lagos congelados.\nAmeaça opcional de campanha; mantenha a Vigia de Hrim como elemento próprio.",
+      "origin": "Aventura 3",
+      "status": "",
+      "sourceType": "creature",
+      "sourceId": "serpe-gelo-hrim",
+      "key": "creature:serpe-gelo-hrim",
+      "group": "Criaturas especiais / bosses",
+      "visual": {
+        "key": "creature:serpe-gelo-hrim",
+        "kind": "portrait",
+        "asset": "assets/generated/codex/creatures/serpe-gelo-hrim.jpg",
+        "columns": 1,
+        "frame": null,
+        "fallback": true,
+        "reason": "Sprite próprio não cadastrado; retrato da própria entidade (R)."
+      }
+    },
+    {
+      "id": "vigia-hrim",
+      "kind": "creature",
+      "name": "Vigia de Hrim",
+      "type": "Constructo invernal",
+      "hpMax": 72,
+      "hpCurrent": 72,
+      "ac": 16,
+      "movement": "7,5 m",
+      "image": "assets/generated/creatures/vigia-de-hrim.png",
+      "attributes": {
+        "for": 19,
+        "des": 8,
+        "con": 18,
+        "int": 8,
+        "sab": 12,
+        "car": 7
+      },
+      "attacks": [
+        "Punho glacial +6"
+      ],
+      "damage": "2d8+4 frio",
+      "special": "Aura de geada: terreno próximo torna-se difícil; resistência ao frio.",
+      "details": "Guardião gigantesco de gelo, ferro e ruínas congeladas.\nFicha resumida; respeite os eventos da aventura antes de iniciar combate.",
+      "origin": "Aventura 3",
+      "status": "",
+      "sourceType": "creature",
+      "sourceId": "vigia-hrim",
+      "key": "creature:vigia-hrim",
+      "group": "Criaturas especiais / bosses",
+      "visual": {
+        "key": "creature:vigia-hrim",
+        "kind": "portrait",
+        "asset": "assets/generated/creatures/vigia-de-hrim.png",
+        "columns": 1,
+        "frame": null,
+        "fallback": true,
+        "reason": "Sprite próprio não cadastrado; retrato da própria entidade (R)."
+      }
+    },
+    {
+      "id": "aglor",
+      "kind": "visual",
+      "name": "Aglor",
+      "type": "Entidade",
+      "hpMax": null,
+      "hpCurrent": null,
+      "ac": "",
+      "movement": "",
+      "image": "assets/generated/codex/entities/aglor.jpg",
+      "attributes": {},
+      "attacks": [],
+      "damage": "",
+      "special": "",
+      "details": "Nome associado aos rostos e às sombras que observam o grupo.\nIlustração própria de apoio; a fonte narrativa permanece a autoridade sobre sua natureza.",
+      "origin": "Aventura 5",
+      "status": "desconhecido",
+      "sourceType": "visual",
+      "sourceId": "aglor",
+      "key": "visual:aglor",
+      "group": "NPCs e entidades",
+      "visual": {
+        "key": "visual:aglor",
+        "kind": "portrait",
+        "asset": "assets/generated/codex/entities/aglor.jpg",
+        "columns": 1,
+        "frame": null,
+        "fallback": true,
+        "reason": "Sprite próprio não cadastrado; retrato da própria entidade (R)."
+      }
+    },
+    {
+      "id": "eira",
+      "kind": "visual",
+      "name": "Eira",
+      "type": "NPC",
+      "hpMax": null,
+      "hpCurrent": null,
+      "ac": "",
+      "movement": "",
+      "image": "assets/generated/codex/npcs/eira.jpg",
+      "attributes": {},
+      "attacks": [],
+      "damage": "",
+      "special": "",
+      "details": "Vigia e guardiã de memórias entre os caminhos antigos de Fangorn.\nO nome é preservado nas fontes; detalhes adicionais podem ser ajustados pelo mestre.",
+      "origin": "Aventura 5",
+      "status": "mencionado",
+      "sourceType": "visual",
+      "sourceId": "eira",
+      "key": "visual:eira",
+      "group": "NPCs e entidades",
+      "visual": {
+        "key": "visual:eira",
+        "kind": "portrait",
+        "asset": "assets/generated/codex/npcs/eira.jpg",
+        "columns": 1,
+        "frame": null,
+        "fallback": true,
+        "reason": "Sprite próprio não cadastrado; retrato da própria entidade (R)."
+      }
+    },
+    {
+      "id": "guarda-minas-tirith",
+      "kind": "visual",
+      "name": "Guarda da Cidade Branca",
+      "type": "NPC",
+      "hpMax": null,
+      "hpCurrent": null,
+      "ac": "",
+      "movement": "",
+      "image": "assets/generated/codex/npcs/guarda-minas-tirith.jpg",
+      "attributes": {},
+      "attacks": [],
+      "damage": "",
+      "special": "",
+      "details": "Sentinela de portão, adequada para encontros de cidade, protocolo e segurança.\nNPC de apoio genérico; personalize nome e posto no detalhe.",
+      "origin": "Minas Tirith",
+      "status": "disponível",
+      "sourceType": "visual",
+      "sourceId": "guarda-minas-tirith",
+      "key": "visual:guarda-minas-tirith",
+      "group": "NPCs e entidades",
+      "visual": {
+        "key": "visual:guarda-minas-tirith",
+        "kind": "portrait",
+        "asset": "assets/generated/codex/npcs/guarda-minas-tirith.jpg",
+        "columns": 1,
+        "frame": null,
+        "fallback": true,
+        "reason": "Sprite próprio não cadastrado; retrato da própria entidade (R)."
+      }
+    },
+    {
+      "id": "lethariel",
+      "kind": "visual",
+      "name": "Lethariel",
+      "type": "Aliado",
+      "hpMax": null,
+      "hpCurrent": null,
+      "ac": "",
+      "movement": "",
+      "image": "assets/generated/codex/npcs/lethariel.jpg",
+      "attributes": {},
+      "attacks": [],
+      "damage": "",
+      "special": "",
+      "details": "Ranger élfica de uma vigia da Floresta das Trevas, conhecedora de trilhas e fronteiras.\nNPC local de apoio; o mestre pode mudar seu papel sem alterar fontes originais.",
+      "origin": "Floresta das Trevas",
+      "status": "disponível",
+      "sourceType": "visual",
+      "sourceId": "lethariel",
+      "key": "visual:lethariel",
+      "group": "NPCs e entidades",
+      "visual": {
+        "key": "visual:lethariel",
+        "kind": "portrait",
+        "asset": "assets/generated/codex/npcs/lethariel.jpg",
+        "columns": 1,
+        "frame": null,
+        "fallback": true,
+        "reason": "Sprite próprio não cadastrado; retrato da própria entidade (R)."
+      }
+    },
+    {
+      "id": "maelith",
+      "kind": "visual",
+      "name": "Maelith",
+      "type": "NPC",
+      "hpMax": null,
+      "hpCurrent": null,
+      "ac": "",
+      "movement": "",
+      "image": "assets/generated/codex/npcs/maelith.jpg",
+      "attributes": {},
+      "attacks": [],
+      "damage": "",
+      "special": "",
+      "details": "Arquivista élfica ligada a runas, registros e transformações narrativas.\nUse como presença discreta, não como revelação automática.",
+      "origin": "Aventura 5",
+      "status": "mencionado",
+      "sourceType": "visual",
+      "sourceId": "maelith",
+      "key": "visual:maelith",
+      "group": "NPCs e entidades",
+      "visual": {
+        "key": "visual:maelith",
+        "kind": "portrait",
+        "asset": "assets/generated/codex/npcs/maelith.jpg",
+        "columns": 1,
+        "frame": null,
+        "fallback": true,
+        "reason": "Sprite próprio não cadastrado; retrato da própria entidade (R)."
+      }
+    },
+    {
+      "id": "orc-inverno",
+      "kind": "visual",
+      "name": "Orc de Inverno",
+      "type": "Inimigo",
+      "hpMax": null,
+      "hpCurrent": null,
+      "ac": "",
+      "movement": "",
+      "image": "assets/generated/enemies/uruk-hai.png",
+      "attributes": {},
+      "attacks": [],
+      "damage": "",
+      "special": "",
+      "details": "Guerreiro de ferro e peles, adaptado ao frio e aos ataques em terreno hostil.\nUse em patrulhas e encontros de fronteira.",
+      "origin": "Aventura 3",
+      "status": "ativo",
+      "sourceType": "visual",
+      "sourceId": "orc-inverno",
+      "key": "visual:orc-inverno",
+      "group": "NPCs e entidades",
+      "visual": {
+        "key": "visual:orc-inverno",
+        "kind": "missing",
+        "asset": "",
+        "columns": 1,
+        "frame": null,
+        "fallback": true,
+        "reason": "Retrato antigo pertence ao Uruk-hai; arte própria do Orc de Inverno não cadastrada."
+      }
+    },
+    {
+      "id": "rei-edran",
+      "kind": "visual",
+      "name": "Rei Édran",
+      "type": "NPC",
+      "hpMax": null,
+      "hpCurrent": null,
+      "ac": "",
+      "movement": "",
+      "image": "assets/generated/codex/npcs/rei-edran.jpg",
+      "attributes": {},
+      "attacks": [],
+      "damage": "",
+      "special": "",
+      "details": "Figura real citada na crônica de origem, soberano de uma fortaleza fronteiriça.\nA fonte original define o que é canônico; este retrato é apoio visual.",
+      "origin": "Aventura 2",
+      "status": "mencionado",
+      "sourceType": "visual",
+      "sourceId": "rei-edran",
+      "key": "visual:rei-edran",
+      "group": "NPCs e entidades",
+      "visual": {
+        "key": "visual:rei-edran",
+        "kind": "portrait",
+        "asset": "assets/generated/codex/npcs/rei-edran.jpg",
+        "columns": 1,
+        "frame": null,
+        "fallback": true,
+        "reason": "Sprite próprio não cadastrado; retrato da própria entidade (R)."
+      }
+    },
+    {
+      "id": "talenir",
+      "kind": "visual",
+      "name": "Talenir",
+      "type": "NPC",
+      "hpMax": null,
+      "hpCurrent": null,
+      "ac": "",
+      "movement": "",
+      "image": "assets/generated/codex/npcs/talenir.jpg",
+      "attributes": {},
+      "attacks": [],
+      "damage": "",
+      "special": "",
+      "details": "Lorde élfico e diplomata das estradas antigas, guardião de mapas e arquivos.\nFigura de consulta para pactos, ruínas e rotas.",
+      "origin": "Aventura 2",
+      "status": "mencionado",
+      "sourceType": "visual",
+      "sourceId": "talenir",
+      "key": "visual:talenir",
+      "group": "NPCs e entidades",
+      "visual": {
+        "key": "visual:talenir",
+        "kind": "portrait",
+        "asset": "assets/generated/codex/npcs/talenir.jpg",
+        "columns": 1,
+        "frame": null,
+        "fallback": true,
+        "reason": "Sprite próprio não cadastrado; retrato da própria entidade (R)."
+      }
+    },
+    {
+      "id": "alatar",
+      "kind": "visual",
+      "name": "Alatar, o Mago Azul",
+      "type": "Lenda",
+      "hpMax": null,
+      "hpCurrent": null,
+      "ac": "",
+      "movement": "",
+      "image": "assets/generated/npcs/alatar.png",
+      "attributes": {},
+      "attacks": [],
+      "damage": "",
+      "special": "",
+      "details": "Mago antigo citado nas cartas; presença sábia ligada à luz azul.\nUse como figura distante e misteriosa.",
+      "origin": "Carta",
+      "status": "mencionado",
+      "sourceType": "visual",
+      "sourceId": "alatar",
+      "key": "visual:alatar",
+      "group": "Lendas / encontros especiais",
+      "visual": {
+        "key": "visual:alatar",
+        "kind": "portrait",
+        "asset": "assets/generated/npcs/alatar.png",
+        "columns": 1,
+        "frame": null,
+        "fallback": true,
+        "reason": "Sprite próprio não cadastrado; retrato da própria entidade (R)."
+      }
+    },
+    {
+      "id": "barbarvore",
+      "kind": "visual",
+      "name": "Bárbárvore",
+      "type": "Lenda",
+      "hpMax": null,
+      "hpCurrent": null,
+      "ac": "",
+      "movement": "",
+      "image": "assets/generated/codex/legends/barbarvore.jpg",
+      "attributes": {},
+      "attacks": [],
+      "damage": "",
+      "special": "",
+      "details": "Pastor ancestral das árvores e voz paciente da floresta viva.\nNão trate como combate comum; priorize conversa, tempo e memória.",
+      "origin": "Fangorn",
+      "status": "mencionado",
+      "sourceType": "visual",
+      "sourceId": "barbarvore",
+      "key": "visual:barbarvore",
+      "group": "Lendas / encontros especiais",
+      "visual": {
+        "key": "visual:barbarvore",
+        "kind": "portrait",
+        "asset": "assets/generated/codex/legends/barbarvore.jpg",
+        "columns": 1,
+        "frame": null,
+        "fallback": true,
+        "reason": "Sprite próprio não cadastrado; retrato da própria entidade (R)."
+      }
+    },
+    {
+      "id": "durin-i",
+      "kind": "visual",
+      "name": "Durin I, o Imortal",
+      "type": "Lenda",
+      "hpMax": null,
+      "hpCurrent": null,
+      "ac": "",
+      "movement": "",
+      "image": "assets/generated/codex/legends/durin-i.jpg",
+      "attributes": {},
+      "attacks": [],
+      "damage": "",
+      "special": "",
+      "details": "Fundador e primeiro rei de Khazad-dûm, matriz das linhagens de Durin.\nFigura histórica; útil para inscrições, juramentos e memória anã.",
+      "origin": "Khazad-dûm",
+      "status": "histórico",
+      "sourceType": "visual",
+      "sourceId": "durin-i",
+      "key": "visual:durin-i",
+      "group": "Lendas / encontros especiais",
+      "visual": {
+        "key": "visual:durin-i",
+        "kind": "portrait",
+        "asset": "assets/generated/codex/legends/durin-i.jpg",
+        "columns": 1,
+        "frame": null,
+        "fallback": true,
+        "reason": "Sprite próprio não cadastrado; retrato da própria entidade (R)."
+      }
+    },
+    {
+      "id": "durin-iii",
+      "kind": "visual",
+      "name": "Durin III",
+      "type": "Lenda",
+      "hpMax": null,
+      "hpCurrent": null,
+      "ac": "",
+      "movement": "",
+      "image": "assets/generated/codex/legends/durin-iii.jpg",
+      "attributes": {},
+      "attacks": [],
+      "damage": "",
+      "special": "",
+      "details": "Rei de Khazad-dûm no período associado à criação dos Anéis de Poder.\nReferência para forjas, alianças e relíquias da Segunda Era.",
+      "origin": "Khazad-dûm",
+      "status": "histórico",
+      "sourceType": "visual",
+      "sourceId": "durin-iii",
+      "key": "visual:durin-iii",
+      "group": "Lendas / encontros especiais",
+      "visual": {
+        "key": "visual:durin-iii",
+        "kind": "portrait",
+        "asset": "assets/generated/codex/legends/durin-iii.jpg",
+        "columns": 1,
+        "frame": null,
+        "fallback": true,
+        "reason": "Sprite próprio não cadastrado; retrato da própria entidade (R)."
+      }
+    },
+    {
+      "id": "durin-vi",
+      "kind": "visual",
+      "name": "Durin VI",
+      "type": "Lenda",
+      "hpMax": null,
+      "hpCurrent": null,
+      "ac": "",
+      "movement": "",
+      "image": "assets/generated/codex/legends/durin-vi.jpg",
+      "attributes": {},
+      "attacks": [],
+      "damage": "",
+      "special": "",
+      "details": "Rei morto pelo Balrog, tragédia lembrada como a Ruína de Durin.\nReferência para a queda de Moria e presságios subterrâneos.",
+      "origin": "Khazad-dûm",
+      "status": "histórico",
+      "sourceType": "visual",
+      "sourceId": "durin-vi",
+      "key": "visual:durin-vi",
+      "group": "Lendas / encontros especiais",
+      "visual": {
+        "key": "visual:durin-vi",
+        "kind": "portrait",
+        "asset": "assets/generated/codex/legends/durin-vi.jpg",
+        "columns": 1,
+        "frame": null,
+        "fallback": true,
+        "reason": "Sprite próprio não cadastrado; retrato da própria entidade (R)."
+      }
+    },
+    {
+      "id": "morgoth",
+      "kind": "visual",
+      "name": "Morgoth",
+      "type": "Lenda",
+      "hpMax": null,
+      "hpCurrent": null,
+      "ac": "",
+      "movement": "",
+      "image": "assets/generated/codex/legends/morgoth.jpg",
+      "attributes": {},
+      "attacks": [],
+      "damage": "",
+      "special": "",
+      "details": "Senhor sombrio da lenda antiga, referência histórica e mítica para ameaças de eras passadas.\nUse como contexto remoto; não o coloque como presença imediata sem alterar a cronologia.",
+      "origin": "Primeira Era",
+      "status": "histórico",
+      "sourceType": "visual",
+      "sourceId": "morgoth",
+      "key": "visual:morgoth",
+      "group": "Lendas / encontros especiais",
+      "visual": {
+        "key": "visual:morgoth",
+        "kind": "portrait",
+        "asset": "assets/generated/codex/legends/morgoth.jpg",
+        "columns": 1,
+        "frame": null,
+        "fallback": true,
+        "reason": "Sprite próprio não cadastrado; retrato da própria entidade (R)."
+      }
+    }
+  ],
+  "results": [
+    {
+      "key": "character:anao",
+      "name": "Anão Caolho de Hirnath",
+      "asset": "assets/pixel-sprites/anao-caolho-sheet-v1.png",
+      "kind": "sheet",
+      "frame": null,
+      "master": true,
+      "public": true,
+      "stats": true
+    },
+    {
+      "key": "character:calion",
+      "name": "Calion Aranwë",
+      "asset": "assets/pixel-sprites/calion-sheet-v1.png",
+      "kind": "sheet",
+      "frame": null,
+      "master": true,
+      "public": true,
+      "stats": true
+    },
+    {
+      "key": "character:elenya",
+      "name": "Elenya",
+      "asset": "assets/pixel-sprites/elenya-sheet-v1.png",
+      "kind": "sheet",
+      "frame": null,
+      "master": true,
+      "public": true,
+      "stats": true
+    },
+    {
+      "key": "character:nando",
+      "name": "Nando Serenata",
+      "asset": "assets/pixel-sprites/nando-sheet-v1.png",
+      "kind": "sheet",
+      "frame": null,
+      "master": true,
+      "public": true,
+      "stats": true
+    },
+    {
+      "key": "creature:uruk-hai-capitao",
+      "name": "Capitão Uruk-hai",
+      "asset": "assets/generated/codex/creatures/uruk-capitao.jpg",
+      "kind": "portrait",
+      "frame": null,
+      "master": true,
+      "public": true,
+      "stats": true
+    },
+    {
+      "key": "creature:criatura-aglor",
+      "name": "Criatura de Aglor",
+      "asset": "assets/generated/codex/entities/aglor.jpg",
+      "kind": "portrait",
+      "frame": null,
+      "master": true,
+      "public": true,
+      "stats": true
+    },
+    {
+      "key": "creature:espectro-sombras",
+      "name": "Espectro das Sombras",
+      "asset": "assets/pixel-sprites/spectro-sheet-v1.png",
+      "kind": "sheet",
+      "frame": null,
+      "master": true,
+      "public": true,
+      "stats": true
+    },
+    {
+      "key": "creature:goblin-arqueiro",
+      "name": "Goblin Arqueiro de Fangorn",
+      "asset": "assets/pixel-sprites/goblins-roster-v1.png",
+      "kind": "sheet",
+      "frame": 1,
+      "master": true,
+      "public": true,
+      "stats": true
+    },
+    {
+      "key": "creature:goblin-espadachim",
+      "name": "Goblin Espadachim de Fangorn",
+      "asset": "assets/pixel-sprites/goblins-roster-v1.png",
+      "kind": "sheet",
+      "frame": 2,
+      "master": true,
+      "public": true,
+      "stats": true
+    },
+    {
+      "key": "creature:goblin-lanceiro",
+      "name": "Goblin Lanceiro de Fangorn",
+      "asset": "assets/pixel-sprites/goblins-roster-v1.png",
+      "kind": "sheet",
+      "frame": 0,
+      "master": true,
+      "public": true,
+      "stats": true
+    },
+    {
+      "key": "creature:orc-lanceiro-inverno",
+      "name": "Orc Lanceiro de Inverno",
+      "asset": "assets/generated/codex/creatures/orc-lanceiro-inverno.jpg",
+      "kind": "portrait",
+      "frame": null,
+      "master": true,
+      "public": true,
+      "stats": true
+    },
+    {
+      "key": "creature:uruk-hai-batedor",
+      "name": "Uruk-hai Batedor",
+      "asset": "assets/pixel-sprites/uruk-hai-sheet-v1.png",
+      "kind": "sheet",
+      "frame": null,
+      "master": true,
+      "public": true,
+      "stats": true
+    },
+    {
+      "key": "creature:draig-cinzas",
+      "name": "Draig das Cinzas",
+      "asset": "assets/generated/codex/creatures/draig-cinzas.jpg",
+      "kind": "portrait",
+      "frame": null,
+      "master": true,
+      "public": true,
+      "stats": true
+    },
+    {
+      "key": "creature:serpe-gelo-hrim",
+      "name": "Serpe de Gelo de Hrim",
+      "asset": "assets/generated/codex/creatures/serpe-gelo-hrim.jpg",
+      "kind": "portrait",
+      "frame": null,
+      "master": true,
+      "public": true,
+      "stats": true
+    },
+    {
+      "key": "creature:vigia-hrim",
+      "name": "Vigia de Hrim",
+      "asset": "assets/generated/creatures/vigia-de-hrim.png",
+      "kind": "portrait",
+      "frame": null,
+      "master": true,
+      "public": true,
+      "stats": true
+    },
+    {
+      "key": "visual:aglor",
+      "name": "Aglor",
+      "asset": "assets/generated/codex/entities/aglor.jpg",
+      "kind": "portrait",
+      "frame": null,
+      "master": true,
+      "public": true,
+      "stats": true
+    },
+    {
+      "key": "visual:eira",
+      "name": "Eira",
+      "asset": "assets/generated/codex/npcs/eira.jpg",
+      "kind": "portrait",
+      "frame": null,
+      "master": true,
+      "public": true,
+      "stats": true
+    },
+    {
+      "key": "visual:guarda-minas-tirith",
+      "name": "Guarda da Cidade Branca",
+      "asset": "assets/generated/codex/npcs/guarda-minas-tirith.jpg",
+      "kind": "portrait",
+      "frame": null,
+      "master": true,
+      "public": true,
+      "stats": true
+    },
+    {
+      "key": "visual:lethariel",
+      "name": "Lethariel",
+      "asset": "assets/generated/codex/npcs/lethariel.jpg",
+      "kind": "portrait",
+      "frame": null,
+      "master": true,
+      "public": true,
+      "stats": true
+    },
+    {
+      "key": "visual:maelith",
+      "name": "Maelith",
+      "asset": "assets/generated/codex/npcs/maelith.jpg",
+      "kind": "portrait",
+      "frame": null,
+      "master": true,
+      "public": true,
+      "stats": true
+    },
+    {
+      "key": "visual:orc-inverno",
+      "name": "Orc de Inverno",
+      "asset": "",
+      "kind": "missing",
+      "frame": null,
+      "master": true,
+      "public": true,
+      "stats": true
+    },
+    {
+      "key": "visual:rei-edran",
+      "name": "Rei Édran",
+      "asset": "assets/generated/codex/npcs/rei-edran.jpg",
+      "kind": "portrait",
+      "frame": null,
+      "master": true,
+      "public": true,
+      "stats": true
+    },
+    {
+      "key": "visual:talenir",
+      "name": "Talenir",
+      "asset": "assets/generated/codex/npcs/talenir.jpg",
+      "kind": "portrait",
+      "frame": null,
+      "master": true,
+      "public": true,
+      "stats": true
+    },
+    {
+      "key": "visual:alatar",
+      "name": "Alatar, o Mago Azul",
+      "asset": "assets/generated/npcs/alatar.png",
+      "kind": "portrait",
+      "frame": null,
+      "master": true,
+      "public": true,
+      "stats": true
+    },
+    {
+      "key": "visual:barbarvore",
+      "name": "Bárbárvore",
+      "asset": "assets/generated/codex/legends/barbarvore.jpg",
+      "kind": "portrait",
+      "frame": null,
+      "master": true,
+      "public": true,
+      "stats": true
+    },
+    {
+      "key": "visual:durin-i",
+      "name": "Durin I, o Imortal",
+      "asset": "assets/generated/codex/legends/durin-i.jpg",
+      "kind": "portrait",
+      "frame": null,
+      "master": true,
+      "public": true,
+      "stats": true
+    },
+    {
+      "key": "visual:durin-iii",
+      "name": "Durin III",
+      "asset": "assets/generated/codex/legends/durin-iii.jpg",
+      "kind": "portrait",
+      "frame": null,
+      "master": true,
+      "public": true,
+      "stats": true
+    },
+    {
+      "key": "visual:durin-vi",
+      "name": "Durin VI",
+      "asset": "assets/generated/codex/legends/durin-vi.jpg",
+      "kind": "portrait",
+      "frame": null,
+      "master": true,
+      "public": true,
+      "stats": true
+    },
+    {
+      "key": "visual:morgoth",
+      "name": "Morgoth",
+      "asset": "assets/generated/codex/legends/morgoth.jpg",
+      "kind": "portrait",
+      "frame": null,
+      "master": true,
+      "public": true,
+      "stats": true
+    },
+    {
+      "key": "creature:vigia-hrim",
+      "name": "Vigia de Hrim",
+      "asset": "assets/generated/creatures/vigia-de-hrim.png",
+      "kind": "portrait",
+      "frame": null,
+      "master": true,
+      "public": true,
+      "stats": true
+    },
+    {
+      "key": "creature:goblin-arqueiro",
+      "name": "Goblin Arqueiro de Fangorn",
+      "asset": "assets/pixel-sprites/goblins-roster-v1.png",
+      "kind": "sheet",
+      "frame": 1,
+      "master": true,
+      "public": true,
+      "stats": true
+    },
+    {
+      "key": "creature:uruk-hai-capitao",
+      "name": "Capitão Uruk-hai",
+      "asset": "assets/generated/codex/creatures/uruk-capitao.jpg",
+      "kind": "portrait",
+      "frame": null,
+      "master": true,
+      "public": true,
+      "stats": true
+    },
+    {
+      "key": "visual:barbarvore",
+      "name": "Bárbárvore",
+      "asset": "assets/generated/codex/legends/barbarvore.jpg",
+      "kind": "portrait",
+      "frame": null,
+      "master": true,
+      "public": true,
+      "stats": true
+    },
+    {
+      "key": "creature:vigia-hrim",
+      "name": "Vigia de Hrim",
+      "asset": "assets/generated/creatures/vigia-de-hrim.png",
+      "kind": "portrait",
+      "frame": null,
+      "master": true,
+      "public": true,
+      "stats": true
+    },
+    {
+      "key": "creature:espectro-sombras",
+      "name": "Espectro das Sombras",
+      "asset": "assets/pixel-sprites/spectro-sheet-v1.png",
+      "kind": "sheet",
+      "frame": null,
+      "master": true,
+      "public": true,
+      "stats": true
+    }
+  ],
+  "repeatedSelectionPass": true,
+  "missingAssetRecoveryPass": true,
+  "reloadPass": true,
+  "backupRoundTripPass": true,
+  "privateDataAbsent": true,
+  "errors": []
+}

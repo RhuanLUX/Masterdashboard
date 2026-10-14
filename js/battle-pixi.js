@@ -1,17 +1,11 @@
 /* Arena V3.2.1 — composição visual local, sem regras ou mutações de combate. */
 (function (global) {
   'use strict';
-  const sheet = {
-    elenya: 'assets/pixel-sprites/elenya-sheet-v1.png', calion: 'assets/pixel-sprites/calion-sheet-v1.png',
-    nando: 'assets/pixel-sprites/nando-sheet-v1.png', anao: 'assets/pixel-sprites/anao-caolho-sheet-v1.png',
-    'goblin-lanceiro': 'assets/pixel-sprites/goblins-roster-v1.png', 'goblin-arqueiro': 'assets/pixel-sprites/goblins-roster-v1.png',
-    'goblin-espadachim': 'assets/pixel-sprites/goblins-roster-v1.png', 'uruk-hai-batedor': 'assets/pixel-sprites/uruk-hai-sheet-v1.png',
-    'uruk-hai-capitao': 'assets/pixel-sprites/uruk-hai-sheet-v1.png', 'espectro-sombras': 'assets/pixel-sprites/spectro-sheet-v1.png'
-  };
-  const sourceFrame = { 'goblin-lanceiro': 0, 'goblin-arqueiro': 1, 'goblin-espadachim': 2 };
   const cache = new Map();
-  const isEnemy = p => p?.sourceType === 'creature' || /goblin|orc|uruk|inimigo|criatura|espectro/i.test(p?.type || '');
-  const assetFor = p => sheet[p.sourceId] || (isEnemy(p) ? sheet['goblin-espadachim'] : sheet.elenya);
+  const catalog = () => global.RPGBattleCatalog;
+  const isEnemy = p => catalog().isEnemy(p);
+  const visualFor = p => catalog().visualFor(p,global.RPGMasterHost?.getState?.());
+  const assetFor = p => visualFor(p).asset;
   const P = () => global.PIXI;
 
   // Measure each frame's actual silhouette and foot line, not the transparent cell.
@@ -34,26 +28,36 @@
     }
     return { left, right: right + 1, top, bottom: bottom + 1, footX: count ? sum / count : (left + right) / 2, footY: footY + 1 };
   }
-  async function framesFor(participant) {
-    const path = assetFor(participant);
-    if (!cache.has(path)) {
+  async function framesFor(visual) {
+    const path=visual.asset,cacheKey=`${visual.kind}:${path}:${visual.columns}`;
+    if (!cache.has(cacheKey)) {
       const promise = (async () => {
-        const base = await P().Assets.load(path);
+        let base;
+        if(visual.kind==='missing'){
+          const neutral=document.createElement('canvas');neutral.width=96;neutral.height=128;
+          const ctx=neutral.getContext('2d');ctx.fillStyle='#13212a';ctx.fillRect(1,1,94,126);ctx.strokeStyle='#a08a62';ctx.strokeRect(2,2,92,124);
+          ctx.fillStyle='#d3c19b';ctx.font='40px Georgia';ctx.textAlign='center';ctx.fillText('?',48,80);base=P().Texture.from(neutral);
+        }else base = await P().Assets.load(path);
         base.source.scaleMode = 'nearest';
-        const width = Math.floor(base.width / 4), height = base.height;
+        if(visual.kind!=='sheet'){
+          const width=base.width,height=base.height;
+          const texture=new (P().Texture)({source:base.source,frame:new (P().Rectangle)(0,0,width,height),defaultAnchor:{x:.5,y:1}});
+          return [{texture,left:0,right:width,top:0,bottom:height,footX:width/2,footY:height}];
+        }
+        const width = Math.floor(base.width / visual.columns), height = base.height;
         const canvas = document.createElement('canvas'); canvas.width = base.width; canvas.height = height;
         const context = canvas.getContext('2d', { willReadFrequently: true });
         context.drawImage(base.source.resource, 0, 0);
         const pixels = context.getImageData(0, 0, canvas.width, height).data;
-        return Array.from({ length: 4 }, (_, index) => {
+        return Array.from({ length: visual.columns }, (_, index) => {
           const bounds = measureFrame(pixels, canvas.width, index * width, width, height);
           const texture = new (P().Texture)({ source: base.source, frame: new (P().Rectangle)(index * width, 0, width, height), defaultAnchor: { x: bounds.footX / width, y: bounds.footY / height } });
           return { texture, ...bounds };
         });
       })();
-      cache.set(path, promise); promise.catch(() => cache.delete(path));
+      cache.set(cacheKey, promise); promise.catch(() => cache.delete(cacheKey));
     }
-    return cache.get(path);
+    return cache.get(cacheKey);
   }
   function envelope(frames) {
     return frames.reduce((b, f) => ({ left: Math.min(b.left, f.left - f.footX), right: Math.max(b.right, f.right - f.footX), top: Math.min(b.top, f.top - f.footY), bottom: Math.max(b.bottom, f.bottom - f.footY) }), { left: 0, right: 0, top: 0, bottom: 0 });
@@ -149,17 +153,20 @@
     const scene={app,actors:new Map(),container,public:!!options.public,layers,destroyed:false,selected:{actorId:options.actorId,targetId:options.targetId},tweens:new Set()};
     try {
       await Promise.all(participants.map(async p=>{
-        const atlas=await framesFor(p),fixed=sourceFrame[p.sourceId];
-        const frames=fixed===undefined?atlas:[atlas[fixed]],measured=envelope(frames);
-        const extent=isEnemy(p)?{...measured,left:-measured.right,right:-measured.left}:measured;
+        let visual=visualFor(p),atlas;
+        try{atlas=await framesFor(visual);}catch(error){visual={...visual,kind:'missing',asset:'',columns:1,frame:null,fallback:true,reason:'Falha ao carregar a arte desta entidade; marcador neutro (?).'};atlas=await framesFor(visual);}
+        const fixed=visual.frame,frames=fixed==null?atlas:[atlas[fixed]],measured=envelope(frames);
+        const facing=isEnemy(p)&&visual.kind==='sheet'?-1:1;
+        const extent=facing===-1?{...measured,left:-measured.right,right:-measured.left}:measured;
         const wrap=new (P().Container)(),sprite=new (P().AnimatedSprite)(frames.map(f=>f.texture));
         sprite.updateAnchor=true;sprite.gotoAndStop(0);sprite.anchor.copyFrom(frames[0].texture.defaultAnchor);
         wrap.addChild(sprite);layers.characters.addChild(wrap);
-        const name=text(compactName(p));name.anchor.set(.5,0);layers.indicators.addChild(name);
+        const name=text(compactName(p)+(visual.fallback?(visual.kind==='portrait'?' [R]':' [?]'):''));name.anchor.set(.5,0);layers.indicators.addChild(name);
         const shadow=new (P().Graphics)(),marker=new (P().Graphics)();layers.shadows.addChild(shadow);layers.indicators.addChild(marker);
-        scene.actors.set(p.id,{p,wrap,sprite,frames,extent,name,shadow,marker,side:isEnemy(p)?-1:1,homeX:0,homeY:0});
+        scene.actors.set(p.id,{p,wrap,sprite,frames,extent,name,shadow,marker,visual,facing,side:isEnemy(p)?-1:1,homeX:0,homeY:0});
       }));
     } catch(error){app.destroy(true,{children:true,texture:false,textureSource:false});throw error;}
+    app.canvas.title=[...scene.actors.values()].filter(a=>a.visual.fallback).map(a=>`${a.p.name}: ${a.visual.reason}`).join('\n');
     function paintSelection(){
       for(const [id,a] of scene.actors){a.marker.clear();const active=id===scene.selected.actorId,target=id===scene.selected.targetId;
         a.name.style.fill=active?'#e4c478':target?'#e2a28e':'#b9c4bd';
@@ -187,9 +194,13 @@
           // Center the entire action envelope inside its slot; anchor itself stays on the feet.
           a.homeX=cellX+plan.cw/2-(extent.left+extent.right)*scale/2;
           a.homeY=cellY+plan.ch-22-extent.bottom*scale;
-          a.wrap.position.set(a.homeX,a.homeY);a.wrap.zIndex=a.homeY;a.sprite.scale.set(a.side*scale,scale);a.baseScale=scale;
+          a.wrap.position.set(a.homeX,a.homeY);a.wrap.zIndex=a.homeY;a.sprite.scale.set(a.facing*scale,scale);a.baseScale=scale;
           a.shadow.clear().ellipse(a.homeX,a.homeY+1,Math.min(plan.cw*.22,commonHeight*.24),Math.max(2,commonHeight*.035)).fill({color:'#020709',alpha:.50});
           a.name.position.set(cellX+plan.cw/2,a.homeY+12);a.name.style.fontSize=Math.max(9,Math.min(12,plan.cw/8));
+          if(a.visual.fallback){
+            const tag=a.visual.kind==='portrait'?' [R]':' [?]';let label=compactName(p);a.name.text=label+tag;
+            while(label.length>3&&a.name.width>plan.cw-8){label=label.slice(0,-1);a.name.text=label+'…'+tag;}
+          }
           a.bounds={left:a.homeX+extent.left*scale,right:a.homeX+extent.right*scale,top:a.homeY+extent.top*scale,bottom:a.homeY+extent.bottom*scale};
         });
       });paintSelection();

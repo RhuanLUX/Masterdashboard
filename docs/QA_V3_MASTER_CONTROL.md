@@ -99,6 +99,8 @@ Foi iniciado o servidor local e a página respondeu HTTP 200. A ferramenta de na
 
 ## V3.2 — True 16-Bit Battle Arena Visual Rebuild
 
+Rodada posterior V3.2.2: [catálogo completo, mapeamentos, fallbacks e QA](QA_V3_2_2.md). Cenário e companhia V3.2.1 preservados; aceite artístico permanece com o proprietário.
+
 Atualização posterior: a V3.2.1 tem QA de navegador e capturas reais antes/depois em [QA_V3_2_1.md](QA_V3_2_1.md). As limitações descritas abaixo pertencem à rodada V3.2.
 
 Status: **TECHNICALLY READY FOR OWNER UAT**. Não equivale a OWNER UAT APPROVED.
