@@ -14,8 +14,10 @@
     elenya: 'assets/portraits/elenya-hd.png', calion: 'assets/portraits/calion-hd.png',
     nando: 'assets/portraits/nando-hd.png', anao: 'assets/portraits/anao-caolho-hd.png'
   };
-  const avatar = participant => partyPortraits[participant.sourceId]
-    || participant.image || participant.portrait || 'assets/generated/enemies/uruk-hai.png';
+  function avatar(participant) {
+    const resolved = battle()?.resolveImage?.(state(), participant);
+    return resolved?.image || partyPortraits[participant.sourceId] || 'assets/generated/enemies/uruk-hai.png';
+  }
   const isEnemy = participant => participant.sourceType === 'creature'
     || /goblin|orc|uruk|inimigo|criatura/i.test(participant.type || '');
 
@@ -28,9 +30,9 @@
     list.before(root); bind(root, current);
   }
 
-  function unitCard(participant, side, focused) {
+  function unitCard(participant, side, focused, targeted) {
     const percent = Math.max(0, Math.min(100, (participant.hpCurrent / participant.hpMax) * 100));
-    return `<button class="arena-unit ${side} ${focused ? 'focused' : ''}" data-arena-select="${participant.id}" title="Selecionar ${esc(participant.name)}"><img src="${esc(avatar(participant))}" alt="${esc(participant.name)}"><span>${esc(participant.name)}</span><i style="--pv:${percent}%"></i></button>`;
+    return `<button class="arena-unit ${side} ${focused ? 'focused' : ''} ${targeted ? 'selected-target' : ''}" data-arena-select="${participant.id}" title="Selecionar ${esc(participant.name)}"><img src="${esc(avatar(participant))}" alt="${esc(participant.name)}"><span>${esc(participant.name)}</span><small>${participant.hpCurrent}/${participant.hpMax} PV · CA ${esc(participant.ac || 'não definida')}</small><i style="--pv:${percent}%"></i></button>`;
   }
 
   function render(current) {
@@ -44,7 +46,7 @@
     const options = selected => current.participants.map(participant => `<option value="${participant.id}" ${participant.id === selected ? 'selected' : ''}>${esc(participant.name)}</option>`).join('');
     const effects = battle().ensure(state()).battlePreferences.effects;
     return `<header class="arena-head"><div><small>ARENA 2D · AÇÃO REPRESENTATIVA</small><strong>${esc(current.title)}</strong><span>${esc(adventure)} · Rodada ${current.round}</span></div><div class="arena-turn">Turno: <b>${esc(active?.name || '—')}</b><small>Próximo: ${esc(next?.name || '—')}</small></div></header>
-      <div class="battle-layout"><div class="arena-stage" data-arena-stage><div class="arena-backdrop"></div><div class="arena-side left">${party.slice(0, 4).map(participant => unitCard(participant, 'ally', participant.id === actor?.id)).join('')}</div><div class="arena-clash"><span class="arena-versus">⚔</span><div class="arena-fx" data-arena-fx></div><output data-arena-result>Selecione ação e alvo.</output></div><div class="arena-side right">${enemies.slice(0, 4).map(participant => unitCard(participant, 'foe', participant.id === target?.id)).join('')}</div></div><aside class="arena-controls">
+      <div class="battle-layout"><div class="arena-stage" data-arena-stage><div class="arena-backdrop"></div><div class="arena-side left"><b class="arena-side-label">COMPANHIA</b>${party.slice(0, 4).map(participant => unitCard(participant, 'ally', participant.id === actor?.id, participant.id === target?.id)).join('')}</div><div class="arena-clash"><span class="arena-versus">⚔</span><span class="arena-action-state">Ação representativa</span><div class="arena-fx" data-arena-fx></div><output data-arena-result>Selecione ação e alvo.</output></div><div class="arena-side right"><b class="arena-side-label">INIMIGOS</b>${enemies.slice(0, 4).map(participant => unitCard(participant, 'foe', participant.id === actor?.id, participant.id === target?.id)).join('')}</div></div><aside class="arena-controls">
         <label>Atacante<select data-arena-actor>${options(actor?.id)}</select></label><label>Alvo<select data-arena-target>${options(target?.id)}</select></label><label>Ação<select data-arena-type><option value="melee">Corpo a corpo</option><option value="ranged">À distância</option><option value="magic">Magia</option><option value="heal">Cura</option></select></label><label>Resultado<select data-arena-outcome><option value="normal">Normal</option><option value="critical">Crítico</option><option value="fail">Falha</option></select></label>
         <div class="arena-actions"><button data-arena-roll class="fantasy-btn">⚄ Dados</button><button data-arena-d3 class="mini-btn">Dados 3D</button><button data-arena-confirm class="fantasy-btn">Confirmar ação</button><button data-arena-skip class="mini-btn">Pular efeito</button></div>
         <div class="arena-roll" data-arena-rollbox hidden><label>Dado<select data-arena-die>${[4, 6, 8, 10, 12, 20, 100].map(sides => `<option value="${sides}" ${sides === 20 ? 'selected' : ''}>d${sides}</option>`).join('')}</select></label><label>Bônus<input data-arena-bonus type="number" value="0"></label><label>Aplicado<input data-arena-applied type="number" placeholder="auto"></label><button data-arena-roll-now class="mini-btn">Rolar</button><button data-arena-roll-close class="mini-btn">Cancelar</button></div>
@@ -74,16 +76,29 @@
     const actor = $(`[data-arena-select="${actorId}"]`, root); const target = $(`[data-arena-select="${targetId}"]`, root); const fx = $('[data-arena-fx]', root);
     stage.classList.remove('effect-melee', 'effect-ranged', 'effect-magic', 'effect-heal', 'effect-fail', 'effect-critical');
     void stage.offsetWidth; stage.classList.add(`effect-${effectType}`); actor?.classList.add('acting'); target?.classList.add('targeted');
-    const spark = document.createElement('i'); spark.className = `fx-${effectType}`; fx.append(spark);
-    setTimeout(() => { stage.classList.remove(`effect-${effectType}`); actor?.classList.remove('acting'); target?.classList.remove('targeted'); spark.remove(); }, 850);
+    const spark = document.createElement('i'); spark.className = `fx-${effectType}`;
+    const feedback = document.createElement('b'); feedback.className = `arena-feedback ${effectType}`; feedback.textContent = text;
+    fx.append(spark, feedback);
+    setTimeout(() => { stage.classList.remove(`effect-${effectType}`); actor?.classList.remove('acting'); target?.classList.remove('targeted'); spark.remove(); feedback.remove(); }, 850);
   }
 
   function bind(root, current) {
     const currentState = state(); const api = battle(); const save = () => host().persist(); const refresh = () => { root.remove(); mount(); };
+    const syncSelection = () => {
+      const actorId = $('[data-arena-actor]', root).value; const targetId = $('[data-arena-target]', root).value;
+      root.querySelectorAll('[data-arena-select]').forEach(button => {
+        button.classList.toggle('focused', button.dataset.arenaSelect === actorId);
+        button.classList.toggle('selected-target', button.dataset.arenaSelect === targetId);
+      });
+      $('[data-arena-result]', root).textContent = `Atacante: ${current.participants.find(item => item.id === actorId)?.name || '—'} · Alvo: ${current.participants.find(item => item.id === targetId)?.name || '—'}`;
+    };
     root.querySelectorAll('[data-arena-select]').forEach(button => button.onclick = () => {
       const participant = current.participants.find(item => item.id === button.dataset.arenaSelect);
       (isEnemy(participant) ? $('[data-arena-target]', root) : $('[data-arena-actor]', root)).value = button.dataset.arenaSelect;
+      syncSelection();
     });
+    $('[data-arena-actor]', root).onchange = syncSelection;
+    $('[data-arena-target]', root).onchange = syncSelection;
     $('[data-arena-roll]', root).onclick = () => { $('[data-arena-rollbox]', root).hidden = false; };
     $('[data-arena-roll-close]', root).onclick = () => { $('[data-arena-rollbox]', root).hidden = true; };
     $('[data-arena-roll-now]', root).onclick = () => {

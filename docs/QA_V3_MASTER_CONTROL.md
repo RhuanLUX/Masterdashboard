@@ -63,3 +63,36 @@ Status: validação técnica concluída; aguardando UAT visual do mestre.
 2. Fluxo do núcleo aprovado: criação de combate, participantes, rolagem pendente, confirmação com ajuste manual, dano, narração, modelo, duplicação, arquivamento e Markdown.
 3. Regressão d100 aprovada: casos 00+0, 00+7, 30+0, 40+6, 90+9 e 2.000 rolagens aleatórias dentro de 1–100.
 4. Integridade de diff aprovada com `git diff --check`.
+
+## V3.1.1 — Battle Arena Correction Pass
+
+Status: **TECHNICALLY READY FOR OWNER UAT**. Não equivale a OWNER UAT APPROVED.
+
+### Correções entregues
+
+- A arena agora explicita os lados **Companhia** e **Inimigos**, exibe PV/CA por combatente, destaca atacante e alvo e mostra estado de ação no centro do palco.
+- O núcleo hidrata participantes antigos pelo `sourceId`. Isso corrige encontros que receberam os fallbacks anteriores `1/1`, `CA —`, tipo personalizado ou movimento ausente.
+- Cada combatente resolve seu retrato pelo catálogo estável da ficha/criatura. O fallback somente ocorre quando não há imagem cadastrada.
+- Ações possuem deslocamento curto para ataque físico, projétil para distância, brilho para magia, elevação para cura, tremor no alvo e feedback flutuante para dano, falha, crítico e cura.
+- Inputs, selects, placeholders e a iniciativa receberam acabamento dark fantasy; nenhum campo novo usa a aparência branca padrão do navegador.
+- A apresentação de jogadores conserva o bloqueio de inimigos por padrão e não inclui notas narrativas privadas.
+
+### Auditoria obrigatória de imagens e dados
+
+O comando `node tests/battle-arena-audit.cjs` foi aprovado com sete combatentes e sete assets distintos:
+
+| Combatente | PV | CA | Asset efetivo |
+| --- | ---: | ---: | --- |
+| Elenya | 14/14 | 13 | `assets/portraits/elenya-hd.png` |
+| Calion Aranwë | 10/10 | 13 | `assets/portraits/calion-hd.png` |
+| Nando Serenata | 9/9 | 13 | `assets/portraits/nando-hd.png` |
+| Anão Caolho de Hirnath | 52/52 | 16 | `assets/portraits/anao-caolho-hd.png` |
+| Goblin Espadachim de Fangorn | 12/12 | 13 | `assets/generated/codex/creatures/goblin-espadachim.jpg` |
+| Goblin Arqueiro de Fangorn | 9/9 | 12 | `assets/generated/codex/creatures/goblin-arqueiro.jpg` |
+| Espectro das Sombras | 38/38 | 14 | `assets/generated/entities/espectro-das-sombras.png` |
+
+O teste verifica asset ausente, caminho divergente, retrato repetido indevidamente, PV e CA. A verificação de contrato visual confirma os seis efeitos da arena. O servidor offline retornou HTTP 200.
+
+### Evidência visual
+
+Foi iniciado o servidor local e a página respondeu HTTP 200. A ferramenta de navegador deste ambiente recusou abrir o loopback por política de segurança, portanto não foi possível capturar screenshots reais a partir daqui. Essa limitação está registrada em vez de declarar aprovação visual indevida. O UAT local precisa abrir `http://127.0.0.1:4174/`, entrar em **Mestre → Combate** e registrar os screenshots solicitados.
