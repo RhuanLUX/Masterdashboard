@@ -99,6 +99,8 @@ Foi iniciado o servidor local e a página respondeu HTTP 200. A ferramenta de na
 
 ## V3.2 — True 16-Bit Battle Arena Visual Rebuild
 
+Atualização posterior: a V3.2.1 tem QA de navegador e capturas reais antes/depois em [QA_V3_2_1.md](QA_V3_2_1.md). As limitações descritas abaixo pertencem à rodada V3.2.
+
 Status: **TECHNICALLY READY FOR OWNER UAT**. Não equivale a OWNER UAT APPROVED.
 
 - A Arena deixou de montar retratos HTML em grupos limitados: o palco é agora um canvas PixiJS 8.22.0 local, com grade para todos os participantes. A auditoria inclui 20 combatentes.

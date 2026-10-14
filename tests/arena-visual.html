@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>QA isolado — Arena</title>
+<link rel="stylesheet" href="../css/app.css"><link rel="stylesheet" href="../css/v3.css"><link rel="stylesheet" href="../css/battle-arena.css">
+<style>body{overflow:auto;padding:24px;background:#050e17}.v3-page{width:100%;max-width:1320px}.arena-stage{height:540px}.arena-controls{height:540px}body>p{color:#b8c8ca;font:13px Georgia}#qa{width:100%}</style></head>
+<body><p>QA isolado • renderer real • dados fictícios • armazenamento do usuário não utilizado</p><main class="v3-page"><section class="battle-shell"><header class="arena-head"><div><small>CRÔNICA DOS TRÊS DESTINOS</small><strong>A sombra da torre</strong><span id="scenario"></span></div><div class="arena-turn">Turno: <b>Elenya</b><small>Próximo: Calion</small></div></header><div class="battle-layout"><section class="arena-stage"><div id="qa" class="pixi-arena-host"></div><output>Atacante: Elenya · Alvo: Goblin 1</output></section><aside class="arena-controls"><label>Atacante<select><option>Elenya</option></select></label><label>Alvo<select><option>Goblin 1</option></select></label><label>Ação<select><option>Corpo a corpo</option></select></label><label>Resultado<select><option>Normal</option></select></label><button class="fantasy-btn">Confirmar ação</button><label>Nota narrativa<textarea placeholder="Descrição do mestre…"></textarea></label></aside></div></section></main>
+<script src="../vendor/pixi/pixi.min.js"></script><script src="../js/battle-pixi.js"></script>
+<script>
+const allies=['elenya','calion','nando','anao'], names=['Elenya','Calion','Nando','Caolho'];
+const enemies=['goblin-lanceiro','goblin-arqueiro','goblin-espadachim','uruk-hai-batedor','espectro-sombras','uruk-hai-capitao'];
+window.qaParticipants=(a,b)=>[...Array.from({length:a},(_,i)=>({id:'a'+i,name:names[i%4]+(i>=4?' '+(i+1):''),sourceId:allies[i%4],sourceType:'character'})),...Array.from({length:b},(_,i)=>({id:'e'+i,name:(i%6===4?'Espectro':i%6>=3?'Uruk':'Goblin')+' '+(i+1),sourceId:enemies[i%6],sourceType:'creature'}))];
+window.qaMount=async(a,b)=>{window.qaScene?.destroy();document.querySelector('#scenario').textContent=`${a} aliados × ${b} inimigos`;window.qaScene=await RPGBattlePixi.mount(document.querySelector('#qa'),qaParticipants(a,b),{actorId:'a0',targetId:'e0'});return qaScene.actors.size};
+</script></body></html>

@@ -18,8 +18,11 @@
   function broadcast(combat, effect) {
     if (!('BroadcastChannel' in window)) return;
     channel ||= new BroadcastChannel('rpg-master-battle-v32');
-    channel.onmessage = message => { if (message.data?.type === 'ready') channel.postMessage({ type: 'scene', scene: publicPayload(current()), effect: null }); };
-    channel.postMessage({ type: 'scene', scene: publicPayload(combat), effect });
+    channel.onmessage = message => { const encounter=current(); if (message.data?.type === 'ready' && encounter) channel.postMessage({ type: 'scene', scene: publicPayload(encounter), effect: null }); };
+    const payload=publicPayload(combat), visible=new Set(payload.participants.map(p=>p.id));
+    const publicEffect=effect&&visible.has(effect.actorId)&&visible.has(effect.targetId)
+      ? {actorId:effect.actorId,targetId:effect.targetId,kind:effect.kind,text:{heal:'Cura',magic:'Magia',ranged:'Disparo',melee:'Ataque',critical:'Crítico',fail:'Falha'}[effect.kind]||'Ação'} : null;
+    channel.postMessage({ type: 'scene', scene: payload, effect: publicEffect });
   }
   function options(combat, chosen) { return combat.participants.map(p => `<option value="${p.id}" ${p.id === chosen ? 'selected' : ''}>${esc(p.name)}</option>`).join(''); }
   function render(combat) {
@@ -35,7 +38,7 @@
     const combat = current(), list = $('.combat-list'); if (!combat || !list || $('#battle-arena-shell')) return;
     api().ensure(state()); const root = document.createElement('section'); root.id = 'battle-arena-shell'; root.className = 'battle-shell'; root.innerHTML = render(combat); list.before(root);
     list.hidden = true; list.classList.add('battle-details-drawer');
-    try { scene?.destroy?.(); scene = await window.RPGBattlePixi.mount($('[data-pixi-arena]', root), combat.participants); } catch (error) { console.error(error); $('[data-pixi-arena]', root).innerHTML = '<p class="arena-error">A arena 16-bit não pôde ser inicializada.</p>'; }
+    try { scene?.destroy?.(); const mounted = await window.RPGBattlePixi.mount($('[data-pixi-arena]', root), combat.participants, { actorId: $('[data-arena-actor]', root).value, targetId: $('[data-arena-target]', root).value }); if (!root.isConnected) { mounted.destroy(); return; } scene=mounted; } catch (error) { console.error(error); $('[data-pixi-arena]', root).innerHTML = '<p class="arena-error">A arena 16-bit não pôde ser inicializada.</p>'; }
     bind(root, combat, list); broadcast(combat);
   }
   function roll(sides) { if (sides === 100) { const x = window.RPGDiceLogic.rollPercentile(); return { raw: x.value, detail: `d100: ${x.tensText} + ${x.units} = ${x.value}` }; } const raw = window.RPGDiceLogic.rollDie(sides); return { raw, detail: `d${sides}: ${raw}` }; }
@@ -44,7 +47,7 @@
     const save = () => host().persist(); const refresh = () => { scene?.destroy?.(); root.remove(); mount(); };
     const actorId = () => $('[data-arena-actor]', root).value, targetId = () => $('[data-arena-target]', root).value;
     const output = text => { $('[data-arena-result]', root).textContent = text; };
-    const sync = () => output(`Atacante: ${combat.participants.find(p => p.id === actorId())?.name || '—'} · Alvo: ${combat.participants.find(p => p.id === targetId())?.name || '—'}`);
+    const sync = () => { scene?.select(actorId(), targetId()); output(`Atacante: ${combat.participants.find(p => p.id === actorId())?.name || '—'} · Alvo: ${combat.participants.find(p => p.id === targetId())?.name || '—'}`); };
     $('[data-arena-actor]', root).onchange = sync; $('[data-arena-target]', root).onchange = sync;
     $('[data-arena-roll]', root).onclick = () => { $('[data-arena-rollbox]', root).hidden = false; };
     $('[data-arena-d3]', root).onclick = () => { $('[data-arena-rollbox]', root).hidden = false; output('Mesa de dados integrada: selecione o dado e role sem sair da Arena.'); };
@@ -62,5 +65,5 @@
     $('[data-arena-md]', root).onclick = () => download(`batalha-${combat.id}.md`, 'text/markdown;charset=utf-8', api().toMarkdown(state(), combat));
     $('[data-arena-present]', root).onclick = () => { const win = window.open('battle-display.html', 'rpg-master-player-display', 'popup=yes,width=1200,height=720'); if (!win) return alert('Permita pop-ups para mostrar a arena.'); setTimeout(() => broadcast(combat), 300); setTimeout(() => broadcast(combat), 1000); };
   }
-  new MutationObserver(() => { if ($('.combat-list')) mount(); }).observe(document.documentElement, { childList: true, subtree: true }); setTimeout(mount, 400);
+  new MutationObserver(() => { if(scene&&!scene.container.isConnected){scene.destroy();scene=null;} if ($('.combat-list')) mount(); }).observe(document.documentElement, { childList: true, subtree: true }); setTimeout(mount, 400);
 })();
