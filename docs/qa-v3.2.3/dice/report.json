@@ -1,0 +1,79 @@
+{
+  "rolls": [
+    {
+      "notation": "1d4",
+      "die": 4,
+      "roll": 3,
+      "historyDetail": "d4: 3",
+      "bonus": 2,
+      "total": 5,
+      "at": 1792040308929
+    },
+    {
+      "notation": "1d6",
+      "die": 6,
+      "roll": 1,
+      "historyDetail": "d6: 1",
+      "bonus": 2,
+      "total": 3,
+      "at": 1792040312385
+    },
+    {
+      "notation": "1d8",
+      "die": 8,
+      "roll": 4,
+      "historyDetail": "d8: 4",
+      "bonus": 2,
+      "total": 6,
+      "at": 1792040315277
+    },
+    {
+      "notation": "1d10",
+      "die": 10,
+      "roll": 7,
+      "historyDetail": "d10: 7",
+      "bonus": 2,
+      "total": 9,
+      "at": 1792040317735
+    },
+    {
+      "notation": "1d12",
+      "die": 12,
+      "roll": 1,
+      "historyDetail": "d12: 1",
+      "bonus": 2,
+      "total": 3,
+      "at": 1792040321610
+    },
+    {
+      "notation": "1d20",
+      "die": 20,
+      "roll": 18,
+      "historyDetail": "d20: 18",
+      "bonus": 2,
+      "total": 20,
+      "at": 1792040325114
+    },
+    {
+      "notation": "1d100",
+      "die": 100,
+      "roll": 89,
+      "historyDetail": "d100 80 + 9 = 89",
+      "bonus": -2,
+      "total": 87,
+      "at": 1792040329939
+    },
+    {
+      "notation": "1d100 + 1d6 + 1d8",
+      "die": 100,
+      "roll": 43,
+      "historyDetail": "d100 30 + 2 = 32; d6: 3; d8: 8",
+      "bonus": 3,
+      "total": 46,
+      "at": 1792040334723
+    }
+  ],
+  "errors": [],
+  "externalRequests": [],
+  "networkRestrictedToLocalhost": true
+}

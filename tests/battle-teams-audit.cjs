@@ -1,0 +1,17 @@
+const assert=require('node:assert/strict');global.window=global;
+require('../data/campaign-codex.js');require('../js/v3-core.js');require('../js/battle-catalog.js');require('../js/battle-core.js');
+const state={characters:{},v2:{}};global.RPGMasterHost={getState:()=>state};
+const c=RPGV3.createCombat(state,{title:'Transferência'}),p=RPGV3.addParticipant(c,{sourceType:'creature',sourceId:'goblin-arqueiro',team:'left',hpMax:9,hpCurrent:4,initiative:17,resources:{arrows:7},conditions:[{id:'c',name:'Ferido'}],details:'PRIVATE'});
+RPGV3.addParticipant(c,{sourceType:'character',sourceId:'elenya',team:'right',hpMax:20});RPGV3.beginCombat(c);c.turnIndex=1;RPGBattle.ensure(state);
+const original=JSON.parse(JSON.stringify(p)),active=RPGV3.activeParticipant(c).id,history=c.history.length;
+assert(!RPGBattleCatalog.isPublic(p,c),'Hidden creature remains hidden on left');
+assert(RPGBattle.transfer(c,p.id,'right'));assert.strictEqual(c.participants[0],p);assert.equal(p.facing,'left');assert.equal(c.history.length,history+1);
+for(const k of Object.keys(original).filter(k=>!['team','facing'].includes(k)))assert.deepEqual(p[k],original[k],k);
+assert.equal(RPGV3.activeParticipant(c).id,active);assert(!RPGBattleCatalog.isPublic(p,c));
+assert.equal(RPGV3.undo(c),'Equipe alterada');assert.deepEqual(c.participants[0],original);assert.equal(RPGV3.activeParticipant(c).id,active);
+RPGBattle.transfer(c,p.id,'right');const restored=JSON.parse(JSON.stringify(state));RPGBattle.ensure(restored);assert.equal(restored.v3.combats[0].participants[0].team,'right');
+const legacy=RPGV3.createCombat(state);legacy.participants=[{id:'old',sourceType:'character',sourceId:'old'},{id:'ambiguous',sourceType:'custom'}];RPGBattle.ensure(state);assert.equal(legacy.participants[0].team,'left');assert(!('team'in legacy.participants[1]));
+const ended=RPGV3.createCombat(state);ended.status='ended';ended.participants=[{id:'history',sourceType:'custom'}];const before=JSON.stringify(ended.participants);RPGBattle.ensure(state);assert.equal(JSON.stringify(ended.participants),before);
+c.visibility.hiddenParticipantIds=[c.participants[1].id];c.visibility.revealedParticipantIds=[c.participants[0].id];
+const dup=RPGBattle.duplicate(state,c);assert(!RPGBattleCatalog.isPublic(dup.participants[1],dup));assert(RPGBattleCatalog.isPublic(dup.participants[0],dup));assert.equal(dup.participants[0].team,c.participants[0].team);
+console.log('TEAMS_PASS: identity, HP, initiative, conditions, resources, turn, history, undo, visibility, legacy migration, JSON persistence, duplicated visibility');

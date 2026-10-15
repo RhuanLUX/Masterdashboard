@@ -2,18 +2,19 @@
 (function () {
   'use strict';
   const $ = (s, r = document) => r.querySelector(s);
-  const esc = v => String(v ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&gt;', '>': '&quot;', '"': '&quot;', "'": '&#39;' }[c]));
+  const esc = v => String(v ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   const host = () => window.RPGMasterHost;
   const state = () => host()?.getState();
   const api = () => window.RPGBattle;
   const current = () => api()?.combat(state());
   const enemy = p => window.RPGBattlePixi?.isEnemy(p);
-  let scene, channel;
+  let scene, channel, managerOpen=false;
 
   function publicPayload(combat) {
-    const revealed = combat.visibility?.revealedParticipantIds || [];
+    const catalog=window.RPGBattleCatalog;
     return { title: combat.title, round: combat.round, activeId: window.RPGV3.activeParticipant(combat)?.id || null,
-      participants: combat.participants.filter(p => !enemy(p) || revealed.includes(p.id)).map(p => ({ id: p.id, name: p.name, sourceId: p.sourceId, sourceType: p.sourceType, type: p.type, arenaVisual: window.RPGBattleCatalog.visualFor(p,state()) })) };
+      participants: combat.participants.filter(p => catalog.isPublic(p,combat)).map(p => ({ id: p.id, name: p.name, sourceId: p.sourceId, sourceType: p.sourceType, type: p.type,
+        team:catalog.teamOf(p),facing:catalog.defaultFacing(p),incapacitated:catalog.incapacitated(p),arenaVisual:catalog.visualFor(p,state()) })) };
   }
   function broadcast(combat, effect) {
     if (!('BroadcastChannel' in window)) return;
@@ -37,14 +38,24 @@
   async function mount() {
     const combat = current(), list = $('.combat-list'); if (!combat || !list || $('#battle-arena-shell')) return;
     api().ensure(state()); const root = document.createElement('section'); root.id = 'battle-arena-shell'; root.className = 'battle-shell'; root.innerHTML = render(combat); list.before(root);
-    list.hidden = true; list.classList.add('battle-details-drawer');
+    const manager=document.createElement('section');manager.className='participant-manager';manager.hidden=!managerOpen;
+    manager.id='arena-participant-manager';manager.innerHTML='<h2>Gerenciar participantes</h2><p>Escolha a equipe livremente. Mudar de lado não revela participantes ocultos.</p>';
+    const form=$('[data-roster-form]');if(form)manager.append(form);manager.append(list);root.append(manager);
+    list.hidden=false;list.classList.add('battle-details-drawer');
+    $('[data-arena-details]',root).setAttribute('aria-expanded',String(managerOpen));
+    $('[data-arena-details]',root).setAttribute('aria-controls',manager.id);
     try { scene?.destroy?.(); const mounted = await window.RPGBattlePixi.mount($('[data-pixi-arena]', root), combat.participants, { actorId: $('[data-arena-actor]', root).value, targetId: $('[data-arena-target]', root).value }); if (!root.isConnected) { mounted.destroy(); return; } scene=mounted; } catch (error) { console.error(error); $('[data-pixi-arena]', root).innerHTML = '<p class="arena-error">A arena 16-bit não pôde ser inicializada.</p>'; }
     bind(root, combat, list); broadcast(combat);
   }
   function roll(sides) { if (sides === 100) { const x = window.RPGDiceLogic.rollPercentile(); return { raw: x.value, detail: `d100: ${x.tensText} + ${x.units} = ${x.value}` }; } const raw = window.RPGDiceLogic.rollDie(sides); return { raw, detail: `d${sides}: ${raw}` }; }
   function download(name, type, data) { const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([data], { type })); a.download = name; a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 800); }
   function bind(root, combat, list) {
-    const save = () => host().persist(); const refresh = () => { scene?.destroy?.(); root.remove(); mount(); };
+    const save = () => host().persist(); const refresh = () => {
+      if(!root.isConnected)return;scene?.destroy?.();
+      for(const p of combat.participants){const row=$(`[data-participant-row="${p.id}"]`,list),hp=row&&$('.combat-hp b',row);if(hp)hp.textContent=`${p.hpCurrent}/${p.hpMax}`;}
+      const history=$('.combat-history');if(history){history.replaceChildren();for(const entry of combat.history.slice(0,12)){const line=document.createElement('p');line.textContent=entry.text;history.append(line);}}
+      const form=$('[data-roster-form]',root);if(form)root.before(form);root.before(list);root.remove();mount();
+    };
     const actorId = () => $('[data-arena-actor]', root).value, targetId = () => $('[data-arena-target]', root).value;
     const output = text => { $('[data-arena-result]', root).textContent = text; };
     const sync = () => { scene?.select(actorId(), targetId()); output(`Atacante: ${combat.participants.find(p => p.id === actorId())?.name || '—'} · Alvo: ${combat.participants.find(p => p.id === targetId())?.name || '—'}`); };
@@ -56,8 +67,26 @@
     $('[data-arena-confirm]', root).onclick = () => { const action = $('[data-arena-type]', root).value, outcome = $('[data-arena-outcome]', root).value, applied = Number($('[data-arena-applied]', root).value) || 0, amount = Number($('[data-arena-damage]', root).value) || 0, note = $('[data-arena-note]', root).value.trim(), pending = combat.battleEvents.find(x => x.id === root.dataset.pendingEvent); const label = outcome === 'critical' ? 'Crítico' : outcome === 'fail' ? 'Falha' : 'Confirmado'; if (pending) api().confirmRoll(combat, pending.id, { original: pending.roll.total, applied, manualAdjustment: applied - pending.roll.total, result: label }); if (action === 'heal' && amount) api().applyHp(combat, targetId(), Math.abs(amount), { actorId: actorId(), label: 'Cura', narrative: note }); else if (amount) api().applyHp(combat, targetId(), -Math.abs(amount), { actorId: actorId(), label: 'Dano', narrative: note }); else api().event(combat, { type: 'action', actorId: actorId(), targetId: targetId(), label: action, narrative: note, result: label }); const text = `${label}${amount ? `: ${amount}` : ''}`; output(text); scene && window.RPGBattlePixi.flash(scene, actorId(), targetId(), outcome === 'normal' ? action : outcome, text); broadcast(combat, { actorId: actorId(), targetId: targetId(), kind: action, text }); save(); setTimeout(refresh, 850); };
     $('[data-arena-skip]', root).onclick = () => output('Efeito visual pulado.');
     $('[data-arena-narrate]', root).onclick = () => { const text = $('[data-arena-note]', root).value.trim(); if (!text) return; api().narrate(combat, { actorId: actorId(), targetId: targetId(), action: $('[data-arena-type]', root).value, text, dialogue: prompt('Diálogo opcional:', '') || '' }); $('[data-arena-note]', root).value = ''; save(); };
-    $('[data-arena-details]', root).onclick = () => { list.hidden = !list.hidden; };
-    $('[data-arena-reveal]', root).onclick = () => { const p = combat.participants.find(x => x.id === targetId()); if (!p || !enemy(p)) return output('Selecione um inimigo como alvo para controlar a revelação.'); const ids = combat.visibility.revealedParticipantIds ||= []; const index = ids.indexOf(p.id); index < 0 ? ids.push(p.id) : ids.splice(index, 1); save(); broadcast(combat); output(`${p.name}: ${index < 0 ? 'revelado' : 'ocultado'} para os jogadores.`); };
+    $('[data-arena-details]', root).onclick = () => { managerOpen=!managerOpen;$('.participant-manager',root).hidden=!managerOpen;$('[data-arena-details]',root).setAttribute('aria-expanded',String(managerOpen)); };
+    root.querySelectorAll('[data-arena-transfer]').forEach(button=>button.onclick=()=>{
+      const id=button.dataset.arenaTransfer,p=combat.participants.find(x=>x.id===id),team=window.RPGBattleCatalog.teamOf(p)==='left'?'right':'left';
+      if(!api().transfer(combat,id,team))return;
+      scene?.updateParticipants(combat.participants);
+      const row=button.closest('[data-participant-row]');$(`[data-team-rows="${team}"]`,root).append(row);
+      $('[data-team-label]',row).textContent=team==='left'?'Equipe Esquerda':'Equipe Direita';
+      button.textContent=team==='left'?'Mover para direita':'Mover para esquerda';
+      const history=$('.combat-history');if(history){const item=document.createElement('p');item.textContent=combat.history[0].text;history.prepend(item);}
+      save();broadcast(combat);output(combat.history[0].text);
+    });
+    $('[data-arena-reveal]', root).textContent='Revelar / ocultar alvo';
+    $('[data-arena-reveal]', root).onclick = () => {
+      const p=combat.participants.find(x=>x.id===targetId());if(!p)return output('Selecione um participante como alvo.');
+      const visible=window.RPGBattleCatalog.isPublic(p,combat),v=combat.visibility;
+      v.revealedParticipantIds=(v.revealedParticipantIds||[]).filter(id=>id!==p.id);
+      v.hiddenParticipantIds=(v.hiddenParticipantIds||[]).filter(id=>id!==p.id);
+      (visible?v.hiddenParticipantIds:v.revealedParticipantIds).push(p.id);
+      save();broadcast(combat);output(`${p.name}: ${visible?'ocultado':'revelado'} para os jogadores.`);
+    };
     $('[data-arena-template]', root).onclick = () => { api().saveTemplate(state(), combat, prompt('Nome do modelo:', combat.title) || combat.title); save(); };
     $('[data-arena-duplicate]', root).onclick = () => { api().duplicate(state(), combat, prompt('Nome da cópia:', `${combat.title} (cópia)`) || undefined); save(); host().render(); };
     $('[data-arena-archive]', root).onclick = () => { api().archive(state(), combat); save(); output('Batalha arquivada.'); };

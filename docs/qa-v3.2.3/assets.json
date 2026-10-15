@@ -1,0 +1,332 @@
+[
+  {
+    "key": "visual:barbarvore",
+    "path": "assets/pixel-sprites/v3.2.3/barbarvore-base.png",
+    "columns": 1,
+    "nativeFacing": "right",
+    "width": 1226,
+    "height": 1283,
+    "transparentPixels": 693345,
+    "opaquePixels": 716362
+  },
+  {
+    "key": "creature:orc-lanceiro-inverno",
+    "path": "assets/pixel-sprites/v3.2.3/orc-lanceiro-inverno-base.png",
+    "columns": 1,
+    "nativeFacing": "right",
+    "width": 1159,
+    "height": 1356,
+    "transparentPixels": 921531,
+    "opaquePixels": 589554
+  },
+  {
+    "key": "creature:uruk-hai-capitao",
+    "path": "assets/pixel-sprites/v3.2.3/uruk-hai-capitao-base.png",
+    "columns": 1,
+    "nativeFacing": "right",
+    "width": 1100,
+    "height": 1429,
+    "transparentPixels": 876767,
+    "opaquePixels": 622471
+  },
+  {
+    "key": "creature:vigia-hrim",
+    "path": "assets/pixel-sprites/v3.2.3/vigia-hrim-base.png",
+    "columns": 1,
+    "nativeFacing": "right",
+    "width": 1235,
+    "height": 1274,
+    "transparentPixels": 695290,
+    "opaquePixels": 797835
+  },
+  {
+    "key": "creature:criatura-aglor",
+    "path": "assets/pixel-sprites/v3.2.3/criatura-aglor-base.png",
+    "columns": 1,
+    "nativeFacing": "right",
+    "width": 1230,
+    "height": 1278,
+    "transparentPixels": 909256,
+    "opaquePixels": 535983
+  },
+  {
+    "key": "creature:draig-cinzas",
+    "path": "assets/pixel-sprites/v3.2.3/draig-cinzas-base.png",
+    "columns": 1,
+    "nativeFacing": "right",
+    "width": 1536,
+    "height": 1024,
+    "transparentPixels": 793818,
+    "opaquePixels": 687236
+  },
+  {
+    "key": "creature:serpe-gelo-hrim",
+    "path": "assets/pixel-sprites/v3.2.3/serpe-gelo-hrim-base.png",
+    "columns": 1,
+    "nativeFacing": "right",
+    "width": 1536,
+    "height": 1024,
+    "transparentPixels": 739949,
+    "opaquePixels": 694040
+  },
+  {
+    "key": "visual:aglor",
+    "path": "assets/pixel-sprites/v3.2.3/aglor-base.png",
+    "columns": 1,
+    "nativeFacing": "right",
+    "width": 1086,
+    "height": 1448,
+    "transparentPixels": 667725,
+    "opaquePixels": 708450
+  },
+  {
+    "key": "visual:orc-inverno",
+    "path": "assets/pixel-sprites/v3.2.3/orc-inverno-base.png",
+    "columns": 1,
+    "nativeFacing": "right",
+    "width": 1312,
+    "height": 1199,
+    "transparentPixels": 933770,
+    "opaquePixels": 587712
+  },
+  {
+    "key": "visual:alatar",
+    "path": "assets/pixel-sprites/v3.2.3/alatar-base.png",
+    "columns": 1,
+    "nativeFacing": "right",
+    "width": 1536,
+    "height": 1024,
+    "transparentPixels": 1020349,
+    "opaquePixels": 508765
+  },
+  {
+    "key": "visual:eira",
+    "path": "assets/pixel-sprites/v3.2.3/eira-base.png",
+    "columns": 1,
+    "nativeFacing": "right",
+    "width": 1290,
+    "height": 1219,
+    "transparentPixels": 948338,
+    "opaquePixels": 582580
+  },
+  {
+    "key": "visual:maelith",
+    "path": "assets/pixel-sprites/v3.2.3/maelith-base.png",
+    "columns": 1,
+    "nativeFacing": "right",
+    "width": 1214,
+    "height": 1295,
+    "transparentPixels": 864284,
+    "opaquePixels": 670082
+  },
+  {
+    "key": "visual:rei-edran",
+    "path": "assets/pixel-sprites/v3.2.3/rei-edran-base.png",
+    "columns": 1,
+    "nativeFacing": "right",
+    "width": 1199,
+    "height": 1312,
+    "transparentPixels": 855211,
+    "opaquePixels": 664409
+  },
+  {
+    "key": "visual:talenir",
+    "path": "assets/pixel-sprites/v3.2.3/talenir-base.png",
+    "columns": 1,
+    "nativeFacing": "right",
+    "width": 1275,
+    "height": 1233,
+    "transparentPixels": 890080,
+    "opaquePixels": 648968
+  },
+  {
+    "key": "visual:morgoth",
+    "path": "assets/pixel-sprites/v3.2.3/morgoth-base.png",
+    "columns": 1,
+    "nativeFacing": "right",
+    "width": 1274,
+    "height": 1234,
+    "transparentPixels": 834947,
+    "opaquePixels": 690022
+  },
+  {
+    "key": "visual:durin-i",
+    "path": "assets/pixel-sprites/v3.2.3/durin-i-base.png",
+    "columns": 1,
+    "nativeFacing": "right",
+    "width": 1233,
+    "height": 1275,
+    "transparentPixels": 804533,
+    "opaquePixels": 734682
+  },
+  {
+    "key": "visual:durin-iii",
+    "path": "assets/pixel-sprites/v3.2.3/durin-iii-base.png",
+    "columns": 1,
+    "nativeFacing": "right",
+    "width": 1312,
+    "height": 1199,
+    "transparentPixels": 927190,
+    "opaquePixels": 623347
+  },
+  {
+    "key": "visual:durin-vi",
+    "path": "assets/pixel-sprites/v3.2.3/durin-vi-base.png",
+    "columns": 1,
+    "nativeFacing": "right",
+    "width": 1311,
+    "height": 1200,
+    "transparentPixels": 896183,
+    "opaquePixels": 634709
+  },
+  {
+    "key": "visual:lethariel",
+    "path": "assets/pixel-sprites/v3.2.3/lethariel-base.png",
+    "columns": 1,
+    "nativeFacing": "right",
+    "width": 1330,
+    "height": 1182,
+    "transparentPixels": 1069405,
+    "opaquePixels": 451316
+  },
+  {
+    "key": "visual:guarda-minas-tirith",
+    "path": "assets/pixel-sprites/v3.2.3/guarda-minas-tirith-base.png",
+    "columns": 1,
+    "nativeFacing": "right",
+    "width": 1230,
+    "height": 1278,
+    "transparentPixels": 916348,
+    "opaquePixels": 622902
+  },
+  {
+    "key": "visual:pai-elenya",
+    "path": "assets/pixel-sprites/v3.2.3/pai-elenya-base.png",
+    "columns": 1,
+    "nativeFacing": "right",
+    "width": 1222,
+    "height": 1287,
+    "transparentPixels": 1250529,
+    "opaquePixels": 299369
+  },
+  {
+    "key": "visual:harl-durn",
+    "path": "assets/pixel-sprites/v3.2.3/harl-durn-base.png",
+    "columns": 1,
+    "nativeFacing": "right",
+    "width": 1536,
+    "height": 1024,
+    "transparentPixels": 1265071,
+    "opaquePixels": 289041
+  },
+  {
+    "key": "visual:dito-afinadinho",
+    "path": "assets/pixel-sprites/v3.2.3/dito-afinadinho-base.png",
+    "columns": 1,
+    "nativeFacing": "right",
+    "width": 1199,
+    "height": 1312,
+    "transparentPixels": 1146957,
+    "opaquePixels": 394720
+  },
+  {
+    "key": "visual:pai-inverno",
+    "path": "assets/pixel-sprites/v3.2.3/pai-inverno-base.png",
+    "columns": 1,
+    "nativeFacing": "right",
+    "width": 1230,
+    "height": 1278,
+    "transparentPixels": 877142,
+    "opaquePixels": 628352
+  },
+  {
+    "key": "character:elenya",
+    "path": "assets/pixel-sprites/elenya-sheet-v1.png",
+    "columns": 4,
+    "nativeFacing": "right",
+    "width": 2172,
+    "height": 724,
+    "transparentPixels": 1014380,
+    "opaquePixels": 483471
+  },
+  {
+    "key": "character:calion",
+    "path": "assets/pixel-sprites/calion-sheet-v1.png",
+    "columns": 4,
+    "nativeFacing": "right",
+    "width": 2172,
+    "height": 724,
+    "transparentPixels": 980129,
+    "opaquePixels": 452793
+  },
+  {
+    "key": "character:nando",
+    "path": "assets/pixel-sprites/nando-sheet-v1.png",
+    "columns": 4,
+    "nativeFacing": "right",
+    "width": 2172,
+    "height": 724,
+    "transparentPixels": 976925,
+    "opaquePixels": 467948
+  },
+  {
+    "key": "character:anao",
+    "path": "assets/pixel-sprites/anao-caolho-sheet-v1.png",
+    "columns": 4,
+    "nativeFacing": "right",
+    "width": 2172,
+    "height": 724,
+    "transparentPixels": 833734,
+    "opaquePixels": 641804
+  },
+  {
+    "key": "creature:goblin-lanceiro",
+    "path": "assets/pixel-sprites/goblins-roster-v1.png",
+    "columns": 4,
+    "nativeFacing": "right",
+    "width": 2172,
+    "height": 724,
+    "transparentPixels": 1163539,
+    "opaquePixels": 313710
+  },
+  {
+    "key": "creature:goblin-arqueiro",
+    "path": "assets/pixel-sprites/goblins-roster-v1.png",
+    "columns": 4,
+    "nativeFacing": "right",
+    "width": 2172,
+    "height": 724,
+    "transparentPixels": 1163539,
+    "opaquePixels": 313710
+  },
+  {
+    "key": "creature:goblin-espadachim",
+    "path": "assets/pixel-sprites/goblins-roster-v1.png",
+    "columns": 4,
+    "nativeFacing": "right",
+    "width": 2172,
+    "height": 724,
+    "transparentPixels": 1163539,
+    "opaquePixels": 313710
+  },
+  {
+    "key": "creature:uruk-hai-batedor",
+    "path": "assets/pixel-sprites/uruk-hai-sheet-v1.png",
+    "columns": 4,
+    "nativeFacing": "left",
+    "width": 2172,
+    "height": 724,
+    "transparentPixels": 1045086,
+    "opaquePixels": 444322
+  },
+  {
+    "key": "creature:espectro-sombras",
+    "path": "assets/pixel-sprites/spectro-sheet-v1.png",
+    "columns": 4,
+    "nativeFacing": "right",
+    "width": 2172,
+    "height": 724,
+    "transparentPixels": 938038,
+    "opaquePixels": 433636
+  }
+]

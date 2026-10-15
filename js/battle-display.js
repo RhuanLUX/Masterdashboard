@@ -8,7 +8,7 @@
     document.querySelector('[data-title]').textContent=data.title;
     document.querySelector('[data-round]').textContent=`Rodada ${data.round}`;
     const next=JSON.stringify(data.participants);
-    if(next!==signature||!scene){scene?.destroy();scene=await window.RPGBattlePixi.mount(document.querySelector('[data-public-arena]'),data.participants,{public:true});signature=next;}
+    if(next!==signature||!scene){if(!scene?.updateParticipants(data.participants)){scene?.destroy();scene=await window.RPGBattlePixi.mount(document.querySelector('[data-public-arena]'),data.participants,{public:true});}signature=next;}
     // Only already-revealed actors can receive indicators or effects.
     const actorId=effect?.actorId||data.activeId;
     scene.select(scene.actors.has(actorId)?actorId:null,scene.actors.has(effect?.targetId)?effect.targetId:null);

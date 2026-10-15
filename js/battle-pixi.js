@@ -140,13 +140,24 @@
     if(known[p.sourceId])return known[p.sourceId]+suffix;
     return p.name.length>15?p.name.slice(0,12).trim()+'…'+suffix:p.name;
   }
+  function setFacing(a,direction){
+    a.direction=direction;
+    const native=a.visual.frameFacings?.[a.sprite.currentFrame]||a.visual.nativeFacing||'right';
+    a.facing=direction===native?1:-1;
+    a.sprite.scale.x=a.facing*Math.abs(a.baseScale||a.sprite.scale.x||1);
+  }
+  function resting(a){
+    const down=catalog().incapacitated(a.p);
+    a.sprite.alpha=down?.65:1;a.sprite.tint=down?0x9b9eac:0xffffff;
+    a.sprite.rotation=0;
+  }
   async function mount(container, participants, options = {}) {
     if (!P()) throw new Error('PixiJS não carregou.');
     container.replaceChildren();
     const app = new (P().Application)();
     await app.init({ width: Math.max(1,container.clientWidth), height: Math.max(1,container.clientHeight), backgroundAlpha: 0, antialias: false, autoDensity: true, resolution: Math.min(global.devicePixelRatio || 1, 2) });
     app.ticker.maxFPS=60;
-    app.canvas.className='pixi-arena-canvas';app.canvas.setAttribute('aria-label','Arena de batalha: companhia à esquerda, inimigos à direita');container.append(app.canvas);
+    app.canvas.className='pixi-arena-canvas';app.canvas.setAttribute('aria-label','Arena de batalha: equipe esquerda e equipe direita');container.append(app.canvas);
     const layers={};
     for(const key of ['distant','middle','surface','shadows','characters','effects','indicators']){layers[key]=new (P().Container)();app.stage.addChild(layers[key]);}
     layers.characters.sortableChildren=true;
@@ -156,14 +167,17 @@
         let visual=visualFor(p),atlas;
         try{atlas=await framesFor(visual);}catch(error){visual={...visual,kind:'missing',asset:'',columns:1,frame:null,fallback:true,reason:'Falha ao carregar a arte desta entidade; marcador neutro (?).'};atlas=await framesFor(visual);}
         const fixed=visual.frame,frames=fixed==null?atlas:[atlas[fixed]],measured=envelope(frames);
-        const facing=isEnemy(p)&&visual.kind==='sheet'?-1:1;
-        const extent=facing===-1?{...measured,left:-measured.right,right:-measured.left}:measured;
+        const direction=catalog().defaultFacing(p),facing=direction===(visual.nativeFacing||'right')?1:-1;
+        // Reserve both orientations so same-team attacks cannot clip a wide weapon.
+        const half=Math.max(-measured.left,measured.right);
+        const extent={...measured,left:-half,right:half};
         const wrap=new (P().Container)(),sprite=new (P().AnimatedSprite)(frames.map(f=>f.texture));
         sprite.updateAnchor=true;sprite.gotoAndStop(0);sprite.anchor.copyFrom(frames[0].texture.defaultAnchor);
         wrap.addChild(sprite);layers.characters.addChild(wrap);
         const name=text(compactName(p)+(visual.fallback?(visual.kind==='portrait'?' [R]':' [?]'):''));name.anchor.set(.5,0);layers.indicators.addChild(name);
         const shadow=new (P().Graphics)(),marker=new (P().Graphics)();layers.shadows.addChild(shadow);layers.indicators.addChild(marker);
-        scene.actors.set(p.id,{p,wrap,sprite,frames,extent,name,shadow,marker,visual,facing,side:isEnemy(p)?-1:1,homeX:0,homeY:0});
+        const actor={p,wrap,sprite,frames,extent,name,shadow,marker,visual,facing,direction,side:isEnemy(p)?-1:1,homeX:0,homeY:0};
+        resting(actor);scene.actors.set(p.id,actor);
       }));
     } catch(error){app.destroy(true,{children:true,texture:false,textureSource:false});throw error;}
     app.canvas.title=[...scene.actors.values()].filter(a=>a.visual.fallback).map(a=>`${a.p.name}: ${a.visual.reason}`).join('\n');
@@ -187,6 +201,7 @@
         const plan=plans[side];
         group.forEach((p,index)=>{
           const a=scene.actors.get(p.id),row=Math.floor(index/plan.cols),col=index%plan.cols;
+          a.cancelAction?.();a.side=side?-1:1;setFacing(a,catalog().defaultFacing(p));resting(a);
           const inRow=Math.min(plan.cols,group.length-row*plan.cols),offset=(plan.cols-inRow)/2;
           const cellX=W*(side?.58:.04)+(col+offset)*plan.cw,cellY=fieldTop+row*plan.ch;
           const perspective=plan.rows===1?1:.91+.09*row/(plan.rows-1);
@@ -206,6 +221,12 @@
       });paintSelection();
     }
     scene.select=(actorId,targetId)=>{scene.selected={actorId,targetId};paintSelection();};
+    // Re-layout known instances without another image load or combatant reconstruction.
+    scene.updateParticipants=next=>{
+      if(next.length!==scene.actors.size||next.some(p=>!scene.actors.has(p.id)||catalog().keyOf(p)!==catalog().keyOf(scene.actors.get(p.id).p)))return false;
+      participants=next;for(const p of next){const a=scene.actors.get(p.id);a.p=p;a.name.text=compactName(p);}
+      layout();return true;
+    };
     scene.audit=()=>{
       const entries=[...scene.actors].map(([id,a])=>({id,...a.bounds,footY:a.homeY,scale:a.baseScale,side:a.side})),issues=[];
       for(let i=0;i<entries.length;i++){const a=entries[i];if(a.left<0||a.right>app.screen.width||a.top<0||a.bottom>app.screen.height)issues.push('clipped:'+a.id);
@@ -216,7 +237,13 @@
     const observer=new ResizeObserver(()=>layout());observer.observe(container);layout();
     // Idle is a tiny anchored breathing movement; action frames no longer loop at rest.
     let elapsed=0;
-    const idle=ticker=>{elapsed+=ticker.deltaMS;if(global.matchMedia?.('(prefers-reduced-motion: reduce)').matches)return;let i=0;for(const a of scene.actors.values()){if(!a.acting)a.sprite.scale.y=a.baseScale*(1+Math.sin(elapsed/1100+i++)*.006);}};
+    const idle=ticker=>{elapsed+=ticker.deltaMS;if(global.matchMedia?.('(prefers-reduced-motion: reduce)').matches)return;let i=0;for(const a of scene.actors.values()){
+      const phase=elapsed/1100+i++;
+      if(!a.acting&&!catalog().incapacitated(a.p)){
+        if(a.frames.length>1)a.sprite.scale.y=a.baseScale*(1+Math.sin(phase)*.006);
+        else a.sprite.rotation=Math.sin(phase)*.004; // Rigid, foot-pivot sway: no stretching the new bases.
+      }
+    }};
     app.ticker.add(idle);
     scene.destroy=()=>{if(scene.destroyed)return;scene.destroyed=true;observer.disconnect();scene.tweens.forEach(cancel=>cancel());app.destroy(true,{children:true,texture:false,textureSource:false});};
     return scene;
@@ -227,15 +254,24 @@
     const actor=scene.actors.get(actorId),target=scene.actors.get(targetId);if(!actor||!target)return;
     if(global.matchMedia?.('(prefers-reduced-motion: reduce)').matches)return;
     const dx=target.homeX-actor.homeX,dy=target.homeY-actor.homeY;
-    actor.acting=true;
+    actor.cancelAction?.();target.cancelAction?.();
+    actor.acting=true;target.acting=true;
+    setFacing(actor,dx===0?catalog().defaultFacing(actor.p):dx>0?'right':'left');
+    actor.sprite.rotation=0;actor.sprite.scale.y=actor.baseScale;
     const ranged=kind==='magic'||kind==='ranged'||kind==='heal';
     const lunge=ranged?0:Math.sign(dx)*Math.min(32,Math.abs(dx)*.14);
     const color=kind==='heal'?'#86bd99':kind==='magic'?'#90b9d1':kind==='fail'?'#b6b9bc':'#dec190';
-    tween(scene,650,t=>{
+    const reset=()=>{actor.wrap.position.set(actor.homeX,actor.homeY);actor.sprite.gotoAndStop(0);actor.acting=false;
+      target.wrap.position.set(target.homeX,target.homeY);target.acting=false;resting(actor);resting(target);
+      setFacing(actor,catalog().defaultFacing(actor.p));actor.cancelAction=null;target.cancelAction=null;};
+    const cancelMotion=tween(scene,650,t=>{
       actor.wrap.x=actor.homeX+Math.sin(t*Math.PI)*lunge;
+      if(actor.frames.length===1)actor.sprite.rotation=Math.sin(t*Math.PI*2)*.025*actor.facing;
       actor.sprite.gotoAndStop(Math.min(actor.frames.length-1,Math.floor(t*actor.frames.length)));
+      setFacing(actor,actor.direction);
       if(t>.53){target.wrap.x=target.homeX+(kind==='fail'?Math.sin((t-.53)*Math.PI/.47)*12:Math.sin(t*42)*2);target.sprite.tint=kind==='fail'?0xffffff:kind==='heal'?0xb7dfbe:0xf0d7c5;}
-    },()=>{actor.wrap.x=actor.homeX;actor.sprite.gotoAndStop(0);actor.acting=false;target.wrap.x=target.homeX;target.sprite.tint=0xffffff;});
+    },reset);
+    actor.cancelAction=target.cancelAction=()=>{cancelMotion();reset();};
     const fx=new (P().Graphics)();scene.layers.effects.addChild(fx);
     const y1=actor.homeY-(actor.homeY-actor.bounds.top)*.55,y2=target.homeY-(target.homeY-target.bounds.top)*.55;
     tween(scene,650,t=>{fx.clear();

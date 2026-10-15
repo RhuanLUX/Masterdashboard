@@ -117,7 +117,27 @@
     if (!combat) return null;
     combat.battleEvents ??= []; combat.narrativeNotes ??= []; combat.visibility ??= { revealedParticipantIds: [], showTurn: false }; combat.templateId ??= null;
     if (state) hydrateCombat(state, combat);
+    // Retain archived/ended snapshots; resolve their legacy side read-only in the renderer.
+    if(combat.status!=='ended' && !combat.archived)for(const p of combat.participants||[]){
+      if(!['left','right'].includes(p.team)&&['character','creature','visual'].includes(p.sourceType)){
+        p.team=global.RPGBattleCatalog.teamOf(p);
+        p.presentationMigration={version:'3.2.3',basis:'recorded-sourceType',sourceType:p.sourceType};
+      }
+      if(['left','right'].includes(p.team))p.facing=global.RPGBattleCatalog.defaultFacing(p);
+    }
     return combat;
+  }
+
+  function transfer(combat,id,team){
+    if(!['left','right'].includes(team))return false;
+    const p=combat.participants.find(x=>x.id===id);if(!p)return false;
+    const from=global.RPGBattleCatalog.teamOf(p);if(from===team&&p.team===team)return false;
+    global.RPGV3.snapshot(combat,'Equipe alterada');
+    p.team=team;p.facing=global.RPGBattleCatalog.defaultFacing(p);
+    const label=t=>t==='left'?'esquerda':'direita';
+    combat.history.unshift({id:uid('transfer'),type:'team',participantId:id,from,to:team,at:stamp(),
+      text:`${p.name}: participante transferido da equipe ${label(from)} para a equipe ${label(team)}.`});
+    combat.updatedAt=stamp();return p;
   }
 
   function enrichAddedParticipant(input = {}) {
@@ -146,6 +166,10 @@
     const enriched=enrichAddedParticipant(input),participant=rawAddParticipant(combat,enriched);
     // Source binding must not turn a character's real 0 PV into the legacy default 1 PV.
     if(enriched.hpCurrent===0)participant.hpCurrent=0;
+    participant.team=global.RPGBattleCatalog.teamOf(enriched);
+    participant.facing=global.RPGBattleCatalog.defaultFacing(participant);
+    if(enriched.resources)participant.resources=copy(enriched.resources);
+    if(enriched.presentation)participant.presentation=copy(enriched.presentation);
     return participant;
   };
 
@@ -166,7 +190,14 @@
   }
   function narrate(combat, input = {}) { ensureCombat(combat); const note = { id: uid('narrative'), at: stamp(), actorId: input.actorId || null, targetId: input.targetId || null, action: String(input.action || ''), text: String(input.text || ''), dialogue: String(input.dialogue || ''), result: String(input.result || '') }; combat.narrativeNotes.push(note); event(combat, { type: 'narrative', actorId: note.actorId, targetId: note.targetId, label: note.action, narrative: note.text, dialogue: note.dialogue, result: note.result }); return note; }
   function saveTemplate(state, combat, name) { const v = ensure(state); const template = { id: uid('template'), name: String(name || combat.title || 'Encontro'), createdAt: stamp(), adventureId: combat.adventureId, participants: copy(combat.participants) }; v.battleTemplates.push(template); return template; }
-  function duplicate(state, combat, name) { ensureCombat(combat, state); const v = ensure(state); const clone = { ...copy(combat), id: uid('combat'), title: String(name || `${combat.title} (cópia)`), status: 'setup', round: 1, turnIndex: 0, participants: copy(combat.participants).map(participant => ({ ...participant, id: uid('combatant'), hpCurrent: participant.hpMax, conditions: [] })), history: [], undo: [], battleEvents: [], narrativeNotes: [], createdAt: stamp(), updatedAt: stamp(), endedAt: null, summary: '' }; v.combats.unshift(clone); v.activeCombatId = clone.id; return clone; }
+  function duplicate(state, combat, name) {
+    ensureCombat(combat,state);const v=ensure(state),ids=new Map(combat.participants.map(p=>[p.id,uid('combatant')]));
+    const clone={...copy(combat),id:uid('combat'),title:String(name||`${combat.title} (cópia)`),status:'setup',round:1,turnIndex:0,
+      participants:copy(combat.participants).map(p=>({...p,id:ids.get(p.id),hpCurrent:p.hpMax,conditions:[]})),
+      visibility:{...copy(combat.visibility),revealedParticipantIds:(combat.visibility.revealedParticipantIds||[]).map(id=>ids.get(id)).filter(Boolean),hiddenParticipantIds:(combat.visibility.hiddenParticipantIds||[]).map(id=>ids.get(id)).filter(Boolean)},
+      history:[],undo:[],battleEvents:[],narrativeNotes:[],createdAt:stamp(),updatedAt:stamp(),endedAt:null,summary:''};
+    v.combats.unshift(clone);v.activeCombatId=clone.id;return clone;
+  }
   function archive(state, combat) { ensureCombat(combat, state); const v = ensure(state); const snapshot = copy(combat); if (!v.battleArchives.some(item => item.id === combat.id)) v.battleArchives.unshift(snapshot); return snapshot; }
   function toMarkdown(state, combat) {
     ensureCombat(combat, state); const who = id => combat.participants.find(item => item.id === id)?.name || '—';
@@ -175,5 +206,5 @@
     lines.push('', '## Cronologia'); combat.battleEvents.forEach(entry => lines.push(`- ${new Date(entry.at).toLocaleString('pt-BR')}: ${entry.type} · ${who(entry.actorId)} → ${who(entry.targetId)}${entry.label ? ` · ${entry.label}` : ''}${entry.narrative ? ` — ${entry.narrative}` : ''}${entry.dialogue ? ` “${entry.dialogue}”` : ''}`)); return lines.join('\n');
   }
 
-  global.RPGBattle = { ensure, combat, event, pendingRoll, confirmRoll, applyHp, narrate, saveTemplate, duplicate, archive, toMarkdown, characterSource, creatureSource, sourceFor, resolveImage, hydrateParticipant, hydrateCombat, auditParticipants, enrichAddedParticipant };
+  global.RPGBattle = { ensure, combat, event, pendingRoll, confirmRoll, applyHp, narrate, saveTemplate, duplicate, archive, toMarkdown, characterSource, creatureSource, sourceFor, resolveImage, hydrateParticipant, hydrateCombat, auditParticipants, enrichAddedParticipant, transfer };
 })(window);

@@ -19,15 +19,15 @@ assert.equal(RPGV3.addParticipant(encounter,{sourceType:'character',sourceId:'el
 for(const [id,frame]of [['goblin-lanceiro',0],['goblin-arqueiro',1],['goblin-espadachim',2]])assert.equal(C.visualFor({sourceType:'creature',sourceId:id},state).frame,frame);
 for(const id of ['vigia-hrim','uruk-hai-capitao']){
   const entry=roster.find(x=>x.key==='creature:'+id),visual=C.visualFor(entry,state);
-  assert.equal(visual.kind,'portrait');assert.equal(visual.asset,entry.image);assert(!visual.asset.includes('goblins-roster'));
+  assert.equal(visual.kind,'sheet');assert.equal(visual.columns,1);assert(!visual.fallback);assert(!visual.asset.includes('goblins-roster'));
 }
-assert.equal(C.visualFor({sourceType:'visual',sourceId:'barbarvore'},state).asset,'assets/generated/codex/legends/barbarvore.jpg');
-assert.equal(C.visualFor({sourceType:'visual',sourceId:'orc-inverno'},state).kind,'missing');
+assert.equal(C.visualFor({sourceType:'visual',sourceId:'barbarvore'},state).asset,'assets/pixel-sprites/v3.2.3/barbarvore-base.png');
+assert.equal(C.visualFor({sourceType:'visual',sourceId:'orc-inverno'},state).kind,'sheet');
 assert.equal(C.visualFor({sourceType:'creature',sourceId:'not-registered',name:'Goblin Lanceiro'},state).kind,'missing');
 assert.equal(C.visualFor({sourceType:'visual',sourceId:'goblin-lanceiro',name:'Goblin Lanceiro'},state).kind,'missing');
 assert.equal(C.visualFor({sourceType:'creature',sourceId:'custom',image:'assets/generated/creatures/vigia-de-hrim.png'},state).kind,'missing');
 assert.equal(C.visualFor({sourceType:'visual',sourceId:'custom',image:'assets/fangorn_atmosphere_crop.jpg'},state).kind,'missing');
-assert.equal(C.visualFor({sourceType:'creature',sourceId:'vigia-hrim',image:'WRONG-PREVIOUS-IMAGE'},state).asset,'assets/generated/creatures/vigia-de-hrim.png');
+assert.equal(C.visualFor({sourceType:'creature',sourceId:'vigia-hrim',image:'WRONG-PREVIOUS-IMAGE'},state).asset,'assets/pixel-sprites/v3.2.3/vigia-hrim-base.png');
 const original=C.creatures(state).find(x=>x.id==='vigia-hrim');
 state.v2.visualLibrary.push({id:'vigia-hrim',name:'Vigia renomeado na biblioteca',image:original.image});
 assert.equal(C.source(state,'creature','vigia-hrim').name,'Vigia renomeado na biblioteca');
@@ -43,3 +43,5 @@ state.v2.visualLibrary.push({id:'pai-elenya',name:'Artesão combatente',category
 assert(C.roster(state).some(x=>x.sourceId==='pai-elenya'));
 assert.equal(C.source(state,'visual','barbarvore').hpMax,null); // no invented rules
 console.log(`BATTLE_CATALOG_PASS entities=${roster.length} explicitFallbacks=${roster.filter(x=>C.visualFor(x,{...state,v2:{}}).fallback).length}`);
+assert.equal(roster.filter(x=>C.visualFor(x,state).fallback).length,0);
+assert.equal(Object.keys(C.sprites).length,33);

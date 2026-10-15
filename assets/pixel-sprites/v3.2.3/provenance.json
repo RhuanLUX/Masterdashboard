@@ -1,0 +1,242 @@
+[
+  {
+    "id": "barbarvore",
+    "asset": "assets/pixel-sprites/v3.2.3/barbarvore-base.png",
+    "reference": "assets/generated/codex/legends/barbarvore.jpg",
+    "nativeFacing": "right",
+    "columns": 1,
+    "mode": "built-in image_gen",
+    "prompt": "Original full-body right-facing Ent sprite; identity from Bárbárvore portrait, 16-bit style from Elenya sheet, transparent background; no scenery or sheet.",
+    "usage": "arena"
+  },
+  {
+    "id": "orc-lanceiro-inverno",
+    "asset": "assets/pixel-sprites/v3.2.3/orc-lanceiro-inverno-base.png",
+    "reference": "assets/generated/codex/creatures/orc-lanceiro-inverno.jpg",
+    "nativeFacing": "right",
+    "columns": 1,
+    "mode": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. Asset: ONE original 16-bit battle sprite, not a portrait. Image1 identity reference; image2 pixel-art style reference only. Subject: Winter Orc spearman, grey skin, fur mantle over battered iron scales, spear and round shield. Full body entirely visible including weapon and feet; three-quarter side view clearly facing RIGHT, grounded ready stance. True classic 1990s dark fantasy RPG pixel art with crisp pixel clusters, readable small silhouette, restricted muted palette. One consistent base pose, roughly 480px tall; centered with generous transparent margins. Genuinely transparent alpha background. No scene, no ground patch, no shadow, no text, no panel, no duplicates or sheet. Do not reproduce the woman from style reference.",
+    "usage": "arena"
+  },
+  {
+    "id": "uruk-hai-capitao",
+    "asset": "assets/pixel-sprites/v3.2.3/uruk-hai-capitao-base.png",
+    "reference": "assets/generated/codex/creatures/uruk-capitao.jpg",
+    "nativeFacing": "right",
+    "columns": 1,
+    "mode": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. Asset: ONE original 16-bit battle sprite, not a portrait. Image1 identity reference; image2 pixel-art style reference only. Subject: Uruk-hai captain, massive military silhouette, spiked black steel, dark red tabard and heavy serrated sword. Full body entirely visible including weapon and feet; three-quarter side view clearly facing RIGHT, grounded ready stance. True classic 1990s dark fantasy RPG pixel art with crisp pixel clusters, readable small silhouette, restricted muted palette. One consistent base pose, roughly 480px tall; centered with generous transparent margins. Genuinely transparent alpha background. No scene, no ground patch, no shadow, no text, no panel, no duplicates or sheet. Do not reproduce the woman from style reference.",
+    "usage": "arena"
+  },
+  {
+    "id": "vigia-hrim",
+    "asset": "assets/pixel-sprites/v3.2.3/vigia-hrim-base.png",
+    "reference": "assets/generated/creatures/vigia-de-hrim.png",
+    "nativeFacing": "right",
+    "columns": 1,
+    "mode": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. Asset: ONE original 16-bit battle sprite, not a portrait. Image1 identity reference; image2 pixel-art style reference only. Subject: Vigia de Hrim, giant iron and ice guardian, enormous armored fists, icicles, tall spiked helm with one icy blue eye. Full body entirely visible including weapon and feet; three-quarter side view clearly facing RIGHT, grounded ready stance. True classic 1990s dark fantasy RPG pixel art with crisp pixel clusters, readable small silhouette, restricted muted palette. One consistent base pose, roughly 480px tall; centered with generous transparent margins. Genuinely transparent alpha background. No scene, no ground patch, no shadow, no text, no panel, no duplicates or sheet. Do not reproduce the woman from style reference.",
+    "usage": "arena"
+  },
+  {
+    "id": "criatura-aglor",
+    "asset": "assets/pixel-sprites/v3.2.3/criatura-aglor-base.png",
+    "reference": "assets/generated/codex/entities/aglor.jpg",
+    "nativeFacing": "right",
+    "columns": 1,
+    "mode": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. Asset: ONE original 16-bit battle sprite, not a portrait. Image1 identity reference; image2 pixel-art style reference only. Subject: Creature of Aglor: a smaller hunched biting manifestation of the branch creature in reference, clawed root limbs, eerie face in dark twisted bark, amber eyes. Distinct predatory crouch, not the tall Aglor entity. Full body entirely visible including weapon and feet; three-quarter side view clearly facing RIGHT, grounded ready stance. True classic 1990s dark fantasy RPG pixel art with crisp pixel clusters, readable small silhouette, restricted muted palette. One consistent base pose, roughly 480px tall; centered with generous transparent margins. Genuinely transparent alpha background. No scene, no ground patch, no shadow, no text, no panel, no duplicates or sheet. Do not reproduce the woman from style reference.",
+    "usage": "arena"
+  },
+  {
+    "id": "draig-cinzas",
+    "asset": "assets/pixel-sprites/v3.2.3/draig-cinzas-base.png",
+    "reference": "assets/generated/codex/creatures/draig-cinzas.jpg",
+    "nativeFacing": "right",
+    "columns": 1,
+    "mode": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. ONE original game battle sprite. Image1 identity/reference family, image2 pixel-art style only. Subject: Draig das Cinzas, compact red and charcoal dragon, ember scales, four clawed feet planted, wings partly folded with clear wing silhouette, curved tail; no external fire. Clearly faces RIGHT in three-quarter side view. Full silhouette visible with generous margins, centered. Classic 16-bit 1990s dark fantasy RPG pixel art, crisp clusters, readable at small scale, muted palette. Single consistent base pose. Compact asset about 480px. Actual transparent alpha background, no scene, no floor, no shadow, no text or panel, no duplicates or spritesheet. Never copy the woman from style reference.",
+    "usage": "arena"
+  },
+  {
+    "id": "serpe-gelo-hrim",
+    "asset": "assets/pixel-sprites/v3.2.3/serpe-gelo-hrim-base.png",
+    "reference": "assets/generated/codex/creatures/serpe-gelo-hrim.jpg",
+    "nativeFacing": "right",
+    "columns": 1,
+    "mode": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. ONE original game battle sprite. Image1 identity/reference family, image2 pixel-art style only. Subject: Serpe de Gelo de Hrim, blue-white ice winged serpentine dragon with frosty horns, slender curling tail, wings partly folded, clawed feet planted; no rocks or ground. Clearly faces RIGHT in three-quarter side view. Full silhouette visible with generous margins, centered. Classic 16-bit 1990s dark fantasy RPG pixel art, crisp clusters, readable at small scale, muted palette. Single consistent base pose. Compact asset about 480px. Actual transparent alpha background, no scene, no floor, no shadow, no text or panel, no duplicates or spritesheet. Never copy the woman from style reference.",
+    "usage": "arena"
+  },
+  {
+    "id": "aglor",
+    "asset": "assets/pixel-sprites/v3.2.3/aglor-base.png",
+    "reference": "assets/generated/codex/entities/aglor.jpg",
+    "nativeFacing": "right",
+    "columns": 1,
+    "mode": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. ONE original game battle sprite. Image1 identity/reference family, image2 pixel-art style only. Subject: Aglor itself, tall slender ominous tree entity, branch crown, long root fingers, amber eyes and subtle faces in bark, upright vigilant posture, not a crouched minion. Clearly faces RIGHT in three-quarter side view. Full silhouette visible with generous margins, centered. Classic 16-bit 1990s dark fantasy RPG pixel art, crisp clusters, readable at small scale, muted palette. Single consistent base pose. Compact asset about 480px. Actual transparent alpha background, no scene, no floor, no shadow, no text or panel, no duplicates or spritesheet. Never copy the woman from style reference.",
+    "usage": "arena"
+  },
+  {
+    "id": "orc-inverno",
+    "asset": "assets/pixel-sprites/v3.2.3/orc-inverno-base.png",
+    "reference": "assets/generated/codex/creatures/orc-lanceiro-inverno.jpg",
+    "nativeFacing": "right",
+    "columns": 1,
+    "mode": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. ONE original game battle sprite. Image1 identity/reference family, image2 pixel-art style only. Subject: Winter Orc warrior, grey orc skin, iron and thick fur armor. Distinct variant of referenced spearman, wield a heavy one-handed axe and small shield instead of spear, sturdy short stance. Clearly faces RIGHT in three-quarter side view. Full silhouette visible with generous margins, centered. Classic 16-bit 1990s dark fantasy RPG pixel art, crisp clusters, readable at small scale, muted palette. Single consistent base pose. Compact asset about 480px. Actual transparent alpha background, no scene, no floor, no shadow, no text or panel, no duplicates or spritesheet. Never copy the woman from style reference.",
+    "usage": "arena"
+  },
+  {
+    "id": "alatar",
+    "asset": "assets/pixel-sprites/v3.2.3/alatar-base.png",
+    "reference": "assets/generated/npcs/alatar.png",
+    "nativeFacing": "right",
+    "columns": 1,
+    "mode": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. ONE original 16-bit battle sprite, NOT a portrait. Image1 identity reference, image2 pixel-art style only. Alatar the Blue Wizard, old silver hair and long beard, ornate navy blue robes with fine gold embroidery, twisting staff with small blue crystal. Full body, all feet and accessories visible. Turn head and body clearly towards RIGHT, three-quarter side-view ready pose. Pixel art classic 1990s dark fantasy RPG, defined pixel clusters and limited colors, readable at small scale. Centered compact ~480px sprite with generous alpha margins. Actual TRANSPARENT background, no scenery, no floor or ground shadow, no text, no panels, no duplicates or sprite sheet. Do not reproduce woman from style reference.",
+    "usage": "arena"
+  },
+  {
+    "id": "eira",
+    "asset": "assets/pixel-sprites/v3.2.3/eira-base.png",
+    "reference": "assets/generated/codex/npcs/eira.jpg",
+    "nativeFacing": "right",
+    "columns": 1,
+    "mode": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. ONE original 16-bit battle sprite, NOT a portrait. Image1 identity reference, image2 pixel-art style only. Eira, mature human woman guardian, long brown braid, weathered brown leather and muted green cloak, carrying warm lantern. Full body, all feet and accessories visible. Turn head and body clearly towards RIGHT, three-quarter side-view ready pose. Pixel art classic 1990s dark fantasy RPG, defined pixel clusters and limited colors, readable at small scale. Centered compact ~480px sprite with generous alpha margins. Actual TRANSPARENT background, no scenery, no floor or ground shadow, no text, no panels, no duplicates or sprite sheet. Do not reproduce woman from style reference.",
+    "usage": "arena"
+  },
+  {
+    "id": "maelith",
+    "asset": "assets/pixel-sprites/v3.2.3/maelith-base.png",
+    "reference": "assets/generated/codex/npcs/maelith.jpg",
+    "nativeFacing": "right",
+    "columns": 1,
+    "mode": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. ONE original 16-bit battle sprite, NOT a portrait. Image1 identity reference, image2 pixel-art style only. Maelith, pale dark haired elven archivist woman, charcoal and muted forest green flowing robes, holding a closed brown book and subtle pale rune in other palm. Full body, all feet and accessories visible. Turn head and body clearly towards RIGHT, three-quarter side-view ready pose. Pixel art classic 1990s dark fantasy RPG, defined pixel clusters and limited colors, readable at small scale. Centered compact ~480px sprite with generous alpha margins. Actual TRANSPARENT background, no scenery, no floor or ground shadow, no text, no panels, no duplicates or sprite sheet. Do not reproduce woman from style reference.",
+    "usage": "arena"
+  },
+  {
+    "id": "rei-edran",
+    "asset": "assets/pixel-sprites/v3.2.3/rei-edran-base.png",
+    "reference": "assets/generated/codex/npcs/rei-edran.jpg",
+    "nativeFacing": "right",
+    "columns": 1,
+    "mode": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. ONE original 16-bit battle sprite, NOT a portrait. Image1 identity reference, image2 pixel-art style only. King Edran, mature grey bearded human king, bronze circlet, engraved breastplate, long deep green royal cape and grounded longsword. Full body, all feet and accessories visible. Turn head and body clearly towards RIGHT, three-quarter side-view ready pose. Pixel art classic 1990s dark fantasy RPG, defined pixel clusters and limited colors, readable at small scale. Centered compact ~480px sprite with generous alpha margins. Actual TRANSPARENT background, no scenery, no floor or ground shadow, no text, no panels, no duplicates or sprite sheet. Do not reproduce woman from style reference.",
+    "usage": "arena"
+  },
+  {
+    "id": "talenir",
+    "asset": "assets/pixel-sprites/v3.2.3/talenir-base.png",
+    "reference": "assets/generated/codex/npcs/talenir.jpg",
+    "nativeFacing": "right",
+    "columns": 1,
+    "mode": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. ONE original 16-bit battle sprite, NOT a portrait. Image1 identity reference, image2 pixel-art style only. Talenir, elderly silver-haired elven lord, braided locks and short pointed beard, deep navy robe with subtle gold trim over ivory, rolled scroll and elegant walking staff. Full body, all feet and accessories visible. Turn head and body clearly towards RIGHT, three-quarter side-view ready pose. Pixel art classic 1990s dark fantasy RPG, defined pixel clusters and limited colors, readable at small scale. Centered compact ~480px sprite with generous alpha margins. Actual TRANSPARENT background, no scenery, no floor or ground shadow, no text, no panels, no duplicates or sprite sheet. Do not reproduce woman from style reference.",
+    "usage": "arena"
+  },
+  {
+    "id": "morgoth",
+    "asset": "assets/pixel-sprites/v3.2.3/morgoth-base.png",
+    "reference": "assets/generated/codex/legends/morgoth.jpg",
+    "nativeFacing": "right",
+    "columns": 1,
+    "mode": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. ONE original 16-bit game battle sprite. Image1 identity reference only; image2 style reference only. Morgoth, towering dark lord in black angular armor, spiked iron crown, heavy warhammer, black cape. Stand up from the referenced throne; no throne in sprite. Head and body clearly face RIGHT, three-quarter side view. Single full-body consistent base pose, all feet and equipment visible, standing grounded. Pixel-art classic SNES-era dark fantasy, crisp clusters, readable small silhouette, muted palette. Compact about 480px, centered with generous padding. True transparent alpha background. No scene, floor, ground shadow, panels, text, duplicates or sheet; never copy the style reference woman.",
+    "usage": "arena"
+  },
+  {
+    "id": "durin-i",
+    "asset": "assets/pixel-sprites/v3.2.3/durin-i-base.png",
+    "reference": "assets/generated/codex/legends/durin-i.jpg",
+    "nativeFacing": "right",
+    "columns": 1,
+    "mode": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. ONE original 16-bit game battle sprite. Image1 identity reference only; image2 style reference only. Durin I the Immortal, squat broad dwarf king with long braided grey beard, old gold crown and brown-gold robes, large ornate axe. Head and body clearly face RIGHT, three-quarter side view. Single full-body consistent base pose, all feet and equipment visible, standing grounded. Pixel-art classic SNES-era dark fantasy, crisp clusters, readable small silhouette, muted palette. Compact about 480px, centered with generous padding. True transparent alpha background. No scene, floor, ground shadow, panels, text, duplicates or sheet; never copy the style reference woman.",
+    "usage": "arena"
+  },
+  {
+    "id": "durin-iii",
+    "asset": "assets/pixel-sprites/v3.2.3/durin-iii-base.png",
+    "reference": "assets/generated/codex/legends/durin-iii.jpg",
+    "nativeFacing": "right",
+    "columns": 1,
+    "mode": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. ONE original 16-bit game battle sprite. Image1 identity reference only; image2 style reference only. Durin III, stocky dwarf king with reddish brown braided beard, gold pointed crown, dark blue and gold armor, ring on raised hand and sheathed sword. Head and body clearly face RIGHT, three-quarter side view. Single full-body consistent base pose, all feet and equipment visible, standing grounded. Pixel-art classic SNES-era dark fantasy, crisp clusters, readable small silhouette, muted palette. Compact about 480px, centered with generous padding. True transparent alpha background. No scene, floor, ground shadow, panels, text, duplicates or sheet; never copy the style reference woman.",
+    "usage": "arena"
+  },
+  {
+    "id": "durin-vi",
+    "asset": "assets/pixel-sprites/v3.2.3/durin-vi-base.png",
+    "reference": "assets/generated/codex/legends/durin-vi.jpg",
+    "nativeFacing": "right",
+    "columns": 1,
+    "mode": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. ONE original 16-bit game battle sprite. Image1 identity reference only; image2 style reference only. Durin VI, battle-worn grey-bearded stocky dwarf king, silver angular crown, battered steel armor, dark crimson cape, axe and angular shield. Head and body clearly face RIGHT, three-quarter side view. Single full-body consistent base pose, all feet and equipment visible, standing grounded. Pixel-art classic SNES-era dark fantasy, crisp clusters, readable small silhouette, muted palette. Compact about 480px, centered with generous padding. True transparent alpha background. No scene, floor, ground shadow, panels, text, duplicates or sheet; never copy the style reference woman.",
+    "usage": "arena"
+  },
+  {
+    "id": "lethariel",
+    "asset": "assets/pixel-sprites/v3.2.3/lethariel-base.png",
+    "reference": "assets/generated/codex/npcs/lethariel.jpg",
+    "nativeFacing": "right",
+    "columns": 1,
+    "mode": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. ONE original 16-bit game battle sprite. Image1 identity reference only; image2 style reference only. Lethariel, slender long brown-haired elven ranger woman, green cloak and brown forest leather, longbow ready. Head and body clearly face RIGHT, three-quarter side view. Single full-body consistent base pose, all feet and equipment visible, standing grounded. Pixel-art classic SNES-era dark fantasy, crisp clusters, readable small silhouette, muted palette. Compact about 480px, centered with generous padding. True transparent alpha background. No scene, floor, ground shadow, panels, text, duplicates or sheet; never copy the style reference woman.",
+    "usage": "arena"
+  },
+  {
+    "id": "guarda-minas-tirith",
+    "asset": "assets/pixel-sprites/v3.2.3/guarda-minas-tirith-base.png",
+    "reference": "assets/generated/codex/npcs/guarda-minas-tirith.jpg",
+    "nativeFacing": "right",
+    "columns": 1,
+    "mode": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. ONE original 16-bit game battle sprite. Image1 identity reference only; image2 style reference only. Guard of the White City, dark-haired human man in silver armor over ivory tunic, dark navy cloak, long spear and dark round shield with silver tree emblem. Head and body clearly face RIGHT, three-quarter side view. Single full-body consistent base pose, all feet and equipment visible, standing grounded. Pixel-art classic SNES-era dark fantasy, crisp clusters, readable small silhouette, muted palette. Compact about 480px, centered with generous padding. True transparent alpha background. No scene, floor, ground shadow, panels, text, duplicates or sheet; never copy the style reference woman.",
+    "usage": "arena"
+  },
+  {
+    "id": "pai-elenya",
+    "asset": "assets/pixel-sprites/v3.2.3/pai-elenya-base.png",
+    "reference": "assets/generated/npcs/pai-elenya-v2.jpg",
+    "nativeFacing": "right",
+    "columns": 1,
+    "mode": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. ONE original 16-bit game character sprite prepared for narrative use. Image1 character identity reference, image2 style only. Elenya's father, lean middle-aged master craftsman of Pelargir, narrow shoulders, sinewy not muscular, soot-smudged face and hands, messy brown-grey hair and short beard. Dirty leather apron over worn dark linen, delicate brass mechanism in one hand, small fine tool in other, leather tool belt. Skilled sophisticated artisan who helped ancient elves, not warrior or muscular smith. Whole body including feet and accessories, clear three-quarter view facing RIGHT, standing relaxed. Classic SNES-era dark fantasy pixel art, crisp pixel clusters, muted colors, high readability small. Centered ~480px sprite with generous padding, genuinely transparent alpha background. No workshop or landscape, no ground, no shadow, no panel or text, no duplicates or sheet. Do not copy the style reference woman.",
+    "usage": "narrative-prepared"
+  },
+  {
+    "id": "harl-durn",
+    "asset": "assets/pixel-sprites/v3.2.3/harl-durn-base.png",
+    "reference": "assets/generated/codex/npcs/mercador-dale.jpg",
+    "nativeFacing": "right",
+    "columns": 1,
+    "mode": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. ONE original 16-bit game character sprite prepared for narrative use. Image1 character identity reference, image2 style only. Harl Durn, friendly middle-aged travelling human merchant with short salt-and-pepper beard, burgundy long coat over brown waistcoat, leather pouch and account book. Whole body including feet and accessories, clear three-quarter view facing RIGHT, standing relaxed. Classic SNES-era dark fantasy pixel art, crisp pixel clusters, muted colors, high readability small. Centered ~480px sprite with generous padding, genuinely transparent alpha background. No workshop or landscape, no ground, no shadow, no panel or text, no duplicates or sheet. Do not copy the style reference woman.",
+    "usage": "narrative-prepared"
+  },
+  {
+    "id": "dito-afinadinho",
+    "asset": "assets/pixel-sprites/v3.2.3/dito-afinadinho-base.png",
+    "reference": "assets/generated/codex/npcs/dito-afinadinho.jpg",
+    "nativeFacing": "right",
+    "columns": 1,
+    "mode": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. ONE original 16-bit game character sprite prepared for narrative use. Image1 character identity reference, image2 style only. Dito Afinadinho, slim curly dark-haired young human travelling instrument repairer, patched teal long coat, burgundy scarf, small lute case in hand and tool vest. Not Nando the bard. Whole body including feet and accessories, clear three-quarter view facing RIGHT, standing relaxed. Classic SNES-era dark fantasy pixel art, crisp pixel clusters, muted colors, high readability small. Centered ~480px sprite with generous padding, genuinely transparent alpha background. No workshop or landscape, no ground, no shadow, no panel or text, no duplicates or sheet. Do not copy the style reference woman.",
+    "usage": "narrative-prepared"
+  },
+  {
+    "id": "pai-inverno",
+    "asset": "assets/pixel-sprites/v3.2.3/pai-inverno-base.png",
+    "reference": "assets/generated/codex/legends/pai-do-inverno.jpg",
+    "nativeFacing": "right",
+    "columns": 1,
+    "mode": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. ONE original 16-bit game character sprite prepared for narrative use. Image1 character identity reference, image2 style only. Father of Winter, ancient mythical grey-white bearded tall humanoid, antler crown and carved pale wooden mask, long frosted fur cloak, branching walking staff with hanging lantern. Atmospheric legend with clear independent silhouette, not ice-armored Vigia. Whole body including feet and accessories, clear three-quarter view facing RIGHT, standing relaxed. Classic SNES-era dark fantasy pixel art, crisp pixel clusters, muted colors, high readability small. Centered ~480px sprite with generous padding, genuinely transparent alpha background. No workshop or landscape, no ground, no shadow, no panel or text, no duplicates or sheet. Do not copy the style reference woman.",
+    "usage": "narrative-prepared"
+  }
+]

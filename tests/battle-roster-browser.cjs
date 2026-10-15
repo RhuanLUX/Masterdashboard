@@ -1,7 +1,7 @@
 /* V3.2.2: actual selector -> canonical combatant -> Pixi visual -> public window. */
 const {chromium}=require('playwright');
 const fs=require('node:fs'),path=require('node:path'),{spawn}=require('node:child_process');
-const root=path.resolve(__dirname,'..'),out=path.join(root,'docs/qa-v3.2.2'),url='http://127.0.0.1:43993';
+const root=path.resolve(__dirname,'..'),out=path.join(root,'docs/qa-v3.2.3/roster'),url='http://127.0.0.1:43993';
 const assert=require('node:assert/strict');
 async function run(){
   fs.mkdirSync(out,{recursive:true});
@@ -21,6 +21,7 @@ async function run(){
     if(await page.locator('[data-enter-adventure]').count())await page.locator('[data-enter-adventure]').click();
     await page.locator('#v3-master-button').click();await page.locator('[data-v3-page="combat"]').first().click();
     await page.waitForFunction(()=>window.qaScene&&!qaScene.destroyed);
+    await page.locator('[data-arena-details]').click();
     const roster=await page.evaluate(()=>RPGBattleCatalog.roster(RPGMasterHost.getState()).map(x=>({...x,visual:RPGBattleCatalog.visualFor(x,RPGMasterHost.getState())})));
     assert.equal(await page.locator('[data-v3-creature] option').count(),roster.length);
     assert(await page.locator('[data-v3-creature] optgroup').count()>=4);
@@ -53,7 +54,7 @@ async function run(){
         await popup.bringToFront();await popup.evaluate(()=>qaScene.app.render());
         await popup.screenshot({path:path.join(out,expected.sourceId+'-public.png')});
       }
-      await page.locator('[data-arena-details]').click();await page.locator('[data-v3-remove-p]').click();
+      await page.locator('[data-v3-remove-p]').click();
       await page.waitForFunction(()=>window.qaScene&&!qaScene.destroyed&&qaScene.actors.size===0);
     }
     const messages=await popup.evaluate(()=>qaPublicMessages);
@@ -74,7 +75,7 @@ async function run(){
     await page.screenshot({path:path.join(out,'mixed-roster-master.png')});
     assert.deepEqual(await page.evaluate(()=>qaScene.audit().issues),[]);
     // Reload preserves stable identities, source selection and snapshots in persisted encounter.
-    const saved=await page.evaluate(()=>RPGV3.currentCombat(RPGMasterHost.getState()).participants.map(p=>({id:p.id,sourceId:p.sourceId,sourceType:p.sourceType,hp:p.hpCurrent})));
+    const saved=await page.evaluate(()=>RPGV3.currentCombat(RPGMasterHost.getState()).participants.map(p=>({id:p.id,sourceId:p.sourceId,sourceType:p.sourceType,hp:p.hpCurrent,team:p.team,facing:p.facing})));
     // Await the app's existing 250ms debounced persistence before closing/reloading it.
     await page.waitForFunction(saved=>{
       const s=JSON.parse(localStorage.getItem('fangorn-rpg-state')||'null');
@@ -82,14 +83,14 @@ async function run(){
       return c?.participants.map(p=>p.id).join('|')===saved.map(p=>p.id).join('|')&&document.querySelector('#save-state')?.textContent==='Salvo localmente';
     },saved);
     await page.reload();await page.waitForSelector('[data-enter-adventure]');
-    assert.deepEqual(await page.evaluate(()=>RPGV3.currentCombat(RPGMasterHost.getState()).participants.map(p=>({id:p.id,sourceId:p.sourceId,sourceType:p.sourceType,hp:p.hpCurrent}))),saved);
+    assert.deepEqual(await page.evaluate(()=>RPGV3.currentCombat(RPGMasterHost.getState()).participants.map(p=>({id:p.id,sourceId:p.sourceId,sourceType:p.sourceType,hp:p.hpCurrent,team:p.team,facing:p.facing}))),saved);
     const downloadWait=page.waitForEvent('download');await page.evaluate(()=>RPGMasterHost.exportBackup());
     const download=await downloadWait,backup=fs.readFileSync(await download.path(),'utf8');
     assert.equal(JSON.parse(backup).state.v3.combats[0].participants.length,saved.length);
     await page.evaluate(()=>{const c=RPGV3.currentCombat(RPGMasterHost.getState());RPGV3.removeParticipant(c,c.participants[0].id)});
     acceptRestore=true;
     await page.evaluate(json=>RPGMasterHost.importBackup({target:{files:[new File([json],'qa-backup.json',{type:'application/json'})],value:''}}),backup);
-    assert.deepEqual(await page.evaluate(()=>RPGV3.currentCombat(RPGMasterHost.getState()).participants.map(p=>({id:p.id,sourceId:p.sourceId,sourceType:p.sourceType,hp:p.hpCurrent}))),saved);
+    assert.deepEqual(await page.evaluate(()=>RPGV3.currentCombat(RPGMasterHost.getState()).participants.map(p=>({id:p.id,sourceId:p.sourceId,sourceType:p.sourceType,hp:p.hpCurrent,team:p.team,facing:p.facing}))),saved);
     assert.deepEqual(errors,[]);
     fs.writeFileSync(path.join(out,'report.json'),JSON.stringify({roster,results,repeatedSelectionPass:true,missingAssetRecoveryPass:true,reloadPass:true,backupRoundTripPass:true,privateDataAbsent:true,errors},null,2));
     console.log(JSON.stringify({entities:roster.length,selectionChecks:results.length,errors}));

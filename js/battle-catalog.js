@@ -1,8 +1,32 @@
-/* V3.2.2 — identidade da arena. IDs qualificados; nunca resolver arte pelo nome. */
+/* V3.2.3 — identidade visual e equipes independentes. Resolver arte somente por ID. */
 (function (global) {
   'use strict';
   const keyOf = p => `${p.sourceType}:${p.sourceId}`;
   const sprites = Object.freeze({
+    'visual:barbarvore': { asset:'assets/pixel-sprites/v3.2.3/barbarvore-base.png', columns:1, nativeFacing:'right' },
+    'creature:orc-lanceiro-inverno': { asset:'assets/pixel-sprites/v3.2.3/orc-lanceiro-inverno-base.png', columns:1, nativeFacing:'right' },
+    'creature:uruk-hai-capitao': { asset:'assets/pixel-sprites/v3.2.3/uruk-hai-capitao-base.png', columns:1, nativeFacing:'right' },
+    'creature:vigia-hrim': { asset:'assets/pixel-sprites/v3.2.3/vigia-hrim-base.png', columns:1, nativeFacing:'right' },
+    'creature:criatura-aglor': { asset:'assets/pixel-sprites/v3.2.3/criatura-aglor-base.png', columns:1, nativeFacing:'right' },
+    'creature:draig-cinzas': { asset:'assets/pixel-sprites/v3.2.3/draig-cinzas-base.png', columns:1, nativeFacing:'right' },
+    'creature:serpe-gelo-hrim': { asset:'assets/pixel-sprites/v3.2.3/serpe-gelo-hrim-base.png', columns:1, nativeFacing:'right' },
+    'visual:aglor': { asset:'assets/pixel-sprites/v3.2.3/aglor-base.png', columns:1, nativeFacing:'right' },
+    'visual:orc-inverno': { asset:'assets/pixel-sprites/v3.2.3/orc-inverno-base.png', columns:1, nativeFacing:'right' },
+    'visual:alatar': { asset:'assets/pixel-sprites/v3.2.3/alatar-base.png', columns:1, nativeFacing:'right' },
+    'visual:eira': { asset:'assets/pixel-sprites/v3.2.3/eira-base.png', columns:1, nativeFacing:'right' },
+    'visual:maelith': { asset:'assets/pixel-sprites/v3.2.3/maelith-base.png', columns:1, nativeFacing:'right' },
+    'visual:rei-edran': { asset:'assets/pixel-sprites/v3.2.3/rei-edran-base.png', columns:1, nativeFacing:'right' },
+    'visual:talenir': { asset:'assets/pixel-sprites/v3.2.3/talenir-base.png', columns:1, nativeFacing:'right' },
+    'visual:morgoth': { asset:'assets/pixel-sprites/v3.2.3/morgoth-base.png', columns:1, nativeFacing:'right' },
+    'visual:durin-i': { asset:'assets/pixel-sprites/v3.2.3/durin-i-base.png', columns:1, nativeFacing:'right' },
+    'visual:durin-iii': { asset:'assets/pixel-sprites/v3.2.3/durin-iii-base.png', columns:1, nativeFacing:'right' },
+    'visual:durin-vi': { asset:'assets/pixel-sprites/v3.2.3/durin-vi-base.png', columns:1, nativeFacing:'right' },
+    'visual:lethariel': { asset:'assets/pixel-sprites/v3.2.3/lethariel-base.png', columns:1, nativeFacing:'right' },
+    'visual:guarda-minas-tirith': { asset:'assets/pixel-sprites/v3.2.3/guarda-minas-tirith-base.png', columns:1, nativeFacing:'right' },
+    'visual:pai-elenya': { asset:'assets/pixel-sprites/v3.2.3/pai-elenya-base.png', columns:1, nativeFacing:'right' },
+    'visual:harl-durn': { asset:'assets/pixel-sprites/v3.2.3/harl-durn-base.png', columns:1, nativeFacing:'right' },
+    'visual:dito-afinadinho': { asset:'assets/pixel-sprites/v3.2.3/dito-afinadinho-base.png', columns:1, nativeFacing:'right' },
+    'visual:pai-inverno': { asset:'assets/pixel-sprites/v3.2.3/pai-inverno-base.png', columns:1, nativeFacing:'right' },
     'character:elenya': { asset:'assets/pixel-sprites/elenya-sheet-v1.png' },
     'character:calion': { asset:'assets/pixel-sprites/calion-sheet-v1.png' },
     'character:nando': { asset:'assets/pixel-sprites/nando-sheet-v1.png' },
@@ -10,7 +34,7 @@
     'creature:goblin-lanceiro': { asset:'assets/pixel-sprites/goblins-roster-v1.png', frame:0 },
     'creature:goblin-arqueiro': { asset:'assets/pixel-sprites/goblins-roster-v1.png', frame:1 },
     'creature:goblin-espadachim': { asset:'assets/pixel-sprites/goblins-roster-v1.png', frame:2 },
-    'creature:uruk-hai-batedor': { asset:'assets/pixel-sprites/uruk-hai-sheet-v1.png' },
+    'creature:uruk-hai-batedor': { asset:'assets/pixel-sprites/uruk-hai-sheet-v1.png', nativeFacing:'left', frameFacings:['left','right','right','left'] },
     'creature:espectro-sombras': { asset:'assets/pixel-sprites/spectro-sheet-v1.png' }
   });
   const exclusions = Object.freeze({
@@ -62,7 +86,7 @@
   }
   function visualFor(participant,state) {
     const key=keyOf(participant),mapping=sprites[key];
-    if(mapping)return {key,kind:'sheet',asset:mapping.asset,columns:4,frame:mapping.frame??null,fallback:false,reason:''};
+    if(mapping)return {key,kind:'sheet',asset:mapping.asset,columns:mapping.columns||4,frame:mapping.frame??null,nativeFacing:mapping.nativeFacing||'right',frameFacings:mapping.frameFacings||null,fallback:false,reason:''};
     // Public descriptors carry only the visual identity selected on the master side.
     const transmitted=participant.arenaVisual;
     if(!state&&transmitted?.key===key&&['portrait','missing'].includes(transmitted.kind))return {...transmitted};
@@ -81,6 +105,13 @@
       reason:asset?reason:reason==='Sprite próprio não cadastrado; retrato da própria entidade (R).'?'Arte própria não cadastrada; marcador neutro (?) com a identidade da entidade.':reason};
   }
   // Never infer team, identity or sprite from partial display names or arbitrary array order.
-  const isEnemy = p => p?.sourceType!=='character';
-  global.RPGBattleCatalog={keyOf,sprites,exclusions,merge,creatures,visuals,source,roster,visualFor,isEnemy};
+  // Team is operational, origin is identity, visibility is a separate decision.
+  const teamOf = p => ['left','right'].includes(p?.team) ? p.team : p?.sourceType==='character'?'left':'right';
+  const defaultFacing = p => teamOf(p)==='left'?'right':'left';
+  const isEnemy = p => teamOf(p)==='right';
+  const isPublic = (p,combat) => combat.visibility?.hiddenParticipantIds?.includes(p.id)?false:
+    combat.visibility?.revealedParticipantIds?.includes(p.id)?true:p.sourceType==='character';
+  const incapacitated = p => p.incapacitated===true || (p.hpCurrent!=null && Number(p.hpCurrent)===0) ||
+    (p.conditions||[]).some(c=>/incapacitado|inconsciente/i.test(c.name||c));
+  global.RPGBattleCatalog={keyOf,sprites,exclusions,merge,creatures,visuals,source,roster,visualFor,isEnemy,teamOf,defaultFacing,isPublic,incapacitated};
 })(window);
