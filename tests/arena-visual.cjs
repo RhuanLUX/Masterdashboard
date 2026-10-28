@@ -44,7 +44,7 @@ async function run() {
       await page.evaluate(kind=>RPGBattlePixi.flash(qaScene,'a0','e0',kind,kind),kind);
       await page.waitForTimeout(260);
       if(phase==='after'&&kind==='magic')await page.screenshot({path:path.join(out,'action-magic.png')});
-      await page.waitForTimeout(500);
+      await page.waitForTimeout(kind==='magic'||kind==='ranged'?1000:500);
       if(phase==='after')await page.evaluate(()=>{if(qaScene.layers.effects.children.length)throw Error('Temporary effects remain');for(const a of qaScene.actors.values()){if(a.wrap.x!==a.homeX||a.sprite.currentFrame!==0)throw Error('Action failed to return to idle')}});
     }
     let integrated=null,performance=null;

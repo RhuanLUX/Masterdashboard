@@ -7,7 +7,7 @@
 .battle-shell .arena-head strong{font-size:19px}
 .battle-shell .arena-head small{letter-spacing:.07em}
 .battle-shell .arena-controls{gap:8px;padding:12px}
-.battle-shell .arena-roll[hidden]{display:none}
+.battle-shell .arena-roll[hidden],.battle-shell [data-arena-spell-field][hidden]{display:none!important}
 .v3-form label:has([data-v3-creature]){width:min(440px,100%);min-width:0}
 [data-arena-roster-note]{max-width:440px;line-height:1.45;overflow-wrap:anywhere;color:#b9c4bd}
 .v3-host:has(#battle-arena-shell){box-sizing:border-box;min-width:0;max-width:100vw}

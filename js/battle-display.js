@@ -12,7 +12,7 @@
     // Only already-revealed actors can receive indicators or effects.
     const actorId=effect?.actorId||data.activeId;
     scene.select(scene.actors.has(actorId)?actorId:null,scene.actors.has(effect?.targetId)?effect.targetId:null);
-    if(effect)window.RPGBattlePixi.flash(scene,effect.actorId,effect.targetId,effect.kind,effect.text);
+    if(effect)window.RPGBattlePixi.flash(scene,effect.actorId,effect.targetId,effect.kind,effect.text,{spell:effect.spell,outcome:effect.outcome});
   }
   channel.onmessage=event=>{if(event.data?.type==='scene')queue=queue.then(()=>draw(event.data.scene,event.data.effect)).catch(console.error);};
   channel.postMessage({type:'ready'});
