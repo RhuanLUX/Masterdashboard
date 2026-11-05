@@ -1,6 +1,11 @@
 /* RPG Master — camada global de ambientação, sem dependências externas. */
 (()=>{'use strict';
-const validThemes=new Set(['normal','winter','horror']);
+const themeLabels=Object.freeze({normal:'Normal',winter:'Natal / Inverno',horror:'Terror / Halloween',medieval:'Castelo Medieval',dragon:'Reino dos Dragões',elven:'Bosque Élfico'});
+window.RPGThemeLabels=themeLabels;
+const validThemes=new Set(Object.keys(themeLabels));
+const atmosphereThemes=new Set(['medieval','dragon','elven']);
+const crest='<svg viewBox="0 0 100 160"><path d="M8 0H92V119L50 154 8 119Z" fill="#531d2c" stroke="#b99a5f" stroke-width="2"/><path d="M17 0V114L50 141 83 114V0M28 48H72V91L50 109 28 91Z" fill="none" stroke="#b99a5f"/><path d="M35 80V58H43V66H57V58H65V80M32 80H68V94H32ZM46 94V83H54V94" fill="#c3a873"/></svg>';
+const dragonArt='<svg viewBox="0 0 260 120"><g fill="#18101d" stroke="#b16b48" stroke-width=".7"><path d="M125 62Q86 10 16 7L57 32 32 43Q69 38 65 61Q90 49 97 72L124 78Z"/><path d="M132 64Q143 7 208 1L183 28 232 29Q200 42 201 60Q176 46 158 76Z"/><path d="M39 102Q90 114 113 76Q128 53 152 62L175 49 185 44 179 35 192 43 210 42 220 48 205 55 188 56 165 80Q153 85 139 78L127 90 110 100 118 88Q85 121 39 102Z"/><path d="M151 76L164 91 178 93 166 96 150 87M130 77L139 95 151 99 136 100 123 88"/></g><path d="M193 47L199 47" stroke="#eac989" stroke-width="2"/></svg>';
 const random=(min,max)=>min+Math.random()*(max-min);
 const clamp=(value,min,max)=>Math.min(max,Math.max(min,value));
 // Original vector silhouette: separate mirrored structure from wing animation.
@@ -21,7 +26,7 @@ class ThemeManager{
   constructor(){
     this.active='normal';this.root=null;this.canvas=null;this.ctx=null;this.particles=[];
     this.frame=0;this.last=0;this.paused=false;this.reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
-    this.batLayer=null;this.batTimer=0;this.batSpawnTimers=[];this.activeBats=new Set();
+    this.batLayer=null;this.batTimer=0;this.batSpawnTimers=[];this.activeBats=new Set();this.atmosphere=null;
     this.resize=this.resize.bind(this);this.tick=this.tick.bind(this);this.visibility=this.visibility.bind(this);
   }
   initialize(){
@@ -35,15 +40,26 @@ class ThemeManager{
     name=validThemes.has(name)?name:'normal';this.initialize();
     if(this.active===name){
       this.root.dataset.theme=name;document.documentElement.dataset.rpgTheme=name;
-      if(name==='winter')this.startWinter();if(name==='horror')this.startHorror();return;
+      if(name==='winter')this.startWinter();if(name==='horror')this.startHorror();if(atmosphereThemes.has(name))this.startAtmosphere();return;
     }
     this.deactivate();this.active=name;this.root.dataset.theme=name;document.documentElement.dataset.rpgTheme=name;
-    if(name==='winter')this.startWinter();if(name==='horror')this.startHorror();
+    if(name==='winter')this.startWinter();if(name==='horror')this.startHorror();if(atmosphereThemes.has(name))this.startAtmosphere();
   }
-  deactivate(){this.stopWinter();this.stopHorror();if(this.root)this.root.dataset.theme='normal';document.documentElement.dataset.rpgTheme='normal'}
-  pause(){this.paused=true;this.stopFrame();this.stopBatTimer();this.activeBats.forEach(bat=>bat.node.getAnimations({subtree:true}).forEach(a=>a.pause()))}
-  resume(){this.paused=false;this.activeBats.forEach(bat=>bat.node.getAnimations({subtree:true}).forEach(a=>a.play()));if(this.active==='winter'&&!this.reduced)this.startFrame();if(this.active==='horror')this.startHorror()}
-  destroy(){this.stopWinter();this.stopHorror();removeEventListener('resize',this.resize);document.removeEventListener('visibilitychange',this.visibility);this.root?.remove();this.root=this.canvas=this.ctx=this.batLayer=null}
+  deactivate(){this.stopWinter();this.stopHorror();this.stopAtmosphere();if(this.root)this.root.dataset.theme='normal';document.documentElement.dataset.rpgTheme='normal'}
+  pause(){this.paused=true;this.root?.classList.add('effects-paused');this.stopFrame();this.stopBatTimer();this.activeBats.forEach(bat=>bat.node.getAnimations({subtree:true}).forEach(a=>a.pause()))}
+  resume(){this.paused=false;this.root?.classList.remove('effects-paused');this.activeBats.forEach(bat=>bat.node.getAnimations({subtree:true}).forEach(a=>a.play()));if(this.active==='winter'&&!this.reduced)this.startFrame();if(this.active==='horror')this.startHorror()}
+  destroy(){this.stopWinter();this.stopHorror();this.stopAtmosphere();removeEventListener('resize',this.resize);document.removeEventListener('visibilitychange',this.visibility);this.root?.remove();this.root=this.canvas=this.ctx=this.batLayer=null}
+  stopAtmosphere(){this.atmosphere?.remove();this.atmosphere=null}
+  startAtmosphere(){
+    if(this.atmosphere)return;
+    const node=document.createElement('div');node.className='theme-atmosphere atmosphere-'+this.active;this.atmosphere=node;this.root.append(node);
+    if(this.active==='medieval')node.innerHTML=`<div class="theme-standard left">${crest}</div><div class="theme-standard right">${crest}</div><div class="theme-torch left"></div><div class="theme-torch right"></div>`;
+    if(this.active==='dragon')node.innerHTML=`<div class="theme-dragon-flight">${dragonArt}</div><div class="theme-ember-haze"></div>`;
+    if(this.active==='elven')node.innerHTML='<div class="theme-moon"></div><div class="theme-branch left">❧</div><div class="theme-branch right">❧</div>';
+    if(this.reduced)return;
+    const count=this.intensity==='soft'?10:this.intensity==='intense'?30:18;
+    for(let i=0;i<count;i++){const p=document.createElement('i');p.className='ambience-mote';p.style.cssText=`--x:${random(2,98)}vw;--y:${random(12,95)}vh;--drift:${random(-65,65)}px;--duration:${random(7,18)}s;--delay:${random(-20,0)}s;--size:${random(2,4)}px`;node.append(p);}
+  }
   visibility(){document.hidden?this.pause():this.resume()}
   resize(){
     if(!this.canvas)return;let ratio=Math.min(devicePixelRatio||1,1.5),w=innerWidth,h=innerHeight;
@@ -102,9 +118,11 @@ class ThemeManager{
 /* Intensidade V3: conserva o tema ativo e limita a carga visual em máquinas modestas. */
 const baseSeed=ThemeManager.prototype.seed;
 ThemeManager.prototype.setIntensity=function(value){
+  const previous=this.intensity;
   this.intensity=['soft','normal','intense'].includes(value)?value:'normal';
   document.documentElement.dataset.themeIntensity=this.intensity;
   if(this.active==='winter')this.seed();
+  if(previous!==this.intensity&&atmosphereThemes.has(this.active)){this.stopAtmosphere();this.startAtmosphere();}
 };
 ThemeManager.prototype.seed=function(){
   baseSeed.call(this);
