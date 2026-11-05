@@ -1,5 +1,5 @@
 const {_electron:electron}=require('playwright'),fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
-const root=path.resolve(__dirname,'..'),out=path.join(root,'docs/qa-platform-v4'),profile=path.join(root,'test-results/desktop-'+Date.now()),exe=process.env.RPG_TEST_EXE;
+const root=path.resolve(__dirname,'..'),out=process.env.RPG_QA_OUTPUT||path.join(root,'docs/qa-platform-v4'),profile=path.join(root,'test-results/desktop-'+Date.now()),exe=process.env.RPG_TEST_EXE;
 (async()=>{fs.mkdirSync(out,{recursive:true});let app;
 async function launch(){app=await electron.launch({executablePath:exe||require('electron'),args:[...(exe?[]:[root]),'--rpg-profile='+profile,'--disable-gpu-sandbox']});const page=await app.firstWindow();page.on('pageerror',e=>console.error('DESKTOP_PAGE',e.message));await page.waitForSelector('[data-enter-adventure]',{timeout:60000});return page}
 try{

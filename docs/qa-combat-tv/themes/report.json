@@ -1,0 +1,28 @@
+{
+  "cases": [
+    {
+      "theme": "medieval",
+      "persisted": true,
+      "paused": true,
+      "intensity": true
+    },
+    {
+      "theme": "dragon",
+      "persisted": true,
+      "paused": true,
+      "intensity": true
+    },
+    {
+      "theme": "elven",
+      "persisted": true,
+      "paused": true,
+      "intensity": true
+    }
+  ],
+  "backup": true,
+  "adventureTheme": true,
+  "oldThemes": true,
+  "reducedMotion": true,
+  "offline": true,
+  "errors": []
+}

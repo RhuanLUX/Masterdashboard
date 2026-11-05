@@ -11,10 +11,11 @@ A aplicação continua em HTML/CSS/JavaScript, com PixiJS e Dice Box locais. `in
 - `js/character-sheets.js`: migração somente de campos ausentes, fichas, fonte original, histórico e transferência explícita de PV do encontro. Não recalcula regras.
 - `js/adventure-import.js`: Mammoth, PDF.js e Tesseract locais; blocos tipados/escapados, imagens, originais SHA-256, revisões, prévia e publicação transacional.
 - `js/platform-ui.js`, `css/platform.css`: navegação, retomada, busca e diálogos.
-- `js/live-session.js`, `css/live-session.css`: Mesa ao vivo, direção de cena sem mutação de combate, coordenação das janelas e cortina. Somente a janela principal grava estado.
-- `js/session-reader.js`, `js/session-screen.js`, `session-screen.html`: leitura privada destacada. Documento e comandos via canal privado; sem banco/bridge.
-- `js/campaign-search.js`: índice textual local, prévias e referências persistentes por identificador. Sem APIs de IA ou busca remota.
-- `battle-display.html`, `js/battle-display.js`: TV pública filtrada, arena/imagem/trecho preparado, heartbeat e espera quando o mestre desconecta.
+- `js/combat-tv.js`: única janela pública de combate, com canal por sessão, snapshot filtrado e sincronização de ações. A janela principal continua sendo a única escritora.
+- `js/campaign-search.js`, `css/campaign-search.css`: índice textual local e prévias. Sem APIs de IA ou busca remota.
+- `battle-display.html`, `js/battle-display.js`, `css/combat-tv.css`: somente a arena na TV, ocupando a janela inteira, sem história, imagens de catálogo, dados privados ou bridge de disco.
+- `js/battle-arena.js`: seleção do mestre em `combat.arenaSelection`, preservada após dano, cura e remontagem. O turno só avança por comando explícito.
+- `assets/themes/dragon-flight/`: frames individuais locais, fonte e licença CC BY 3.0 do dragão de ZaPaper/Buko Studios, via Stendhal. Rotas e batidas de asas independentes no tema.
 
 Os módulos de combate, dados, temas e conteúdo existente são preservados. Adaptadores de interface receberam diálogos assíncronos porque prompt nativo não é suportado pelo Electron. O participante da companhia é criado diretamente da ficha canônica; os encontros continuam com cópias próprias.
 

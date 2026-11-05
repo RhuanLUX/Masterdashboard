@@ -1,6 +1,6 @@
 {
   "name": "rpg-master-dashboard",
-  "version": "4.1.0",
+  "version": "4.1.1",
   "private": true,
   "description": "Crônica dos Três Destinos — campanha local e offline",
   "author": "Rhuan LUX",
@@ -29,7 +29,7 @@
     "appId": "com.rhuanlux.rpgmaster",
     "productName": "RPG Master",
     "directories": {"output": "dist"},
-    "files": ["index.html", "battle-display.html", "session-screen.html", "js/**/*", "css/**/*", "data/**/*", "assets/**/*", "vendor/**/*", "source/**/*", "RPG_Master_V2_Content_Handoff/originais/**/*", "desktop/**/*", "README_USO.md", "docs/GUIA_PLATAFORMA_V4.md", "docs/THIRD_PARTY_NOTICES.md", "package.json"],
+    "files": ["index.html", "battle-display.html", "js/**/*", "css/**/*", "data/**/*", "assets/**/*", "vendor/**/*", "source/**/*", "RPG_Master_V2_Content_Handoff/originais/**/*", "desktop/**/*", "README_USO.md", "docs/GUIA_PLATAFORMA_V4.md", "docs/THIRD_PARTY_NOTICES.md", "package.json"],
     "asar": true,
     "icon": "desktop/icon.png",
     "win": {"target": "nsis", "icon": "desktop/icon.ico", "signExecutable": false},

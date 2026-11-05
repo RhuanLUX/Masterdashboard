@@ -1,0 +1,18 @@
+{
+  "runtime": "development",
+  "persistAfterProcessRestart": true,
+  "independentUserData": true,
+  "isolatedBridge": true,
+  "publicWindow": true,
+  "pixi": true,
+  "d100": {
+    "notation": "1d100",
+    "die": 100,
+    "roll": 29,
+    "historyDetail": "d100 20 + 9 = 29",
+    "bonus": 0,
+    "total": 29,
+    "at": 1793902072999
+  },
+  "profile": "E:\\1.Programacao\\RPG_Master_Dashboard\\test-results\\desktop-1793902062766"
+}

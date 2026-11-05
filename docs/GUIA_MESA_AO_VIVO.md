@@ -1,5 +1,7 @@
 # Mesa ao vivo — RPG Master 4.1
 
+**Documento histórico. A Mesa ao vivo foi retirada a pedido do proprietário na 4.1.1. O recurso atual está em [TV de combate](GUIA_TV_COMBATE.md).**
+
 A Mesa ao vivo reúne leitura e direção de cena. Você pode interpretar e disparar os efeitos aprovados na TV enquanto consulta a aventura e suas referências em privado. Não há novos instaladores nesta entrega.
 
 ## Abrir

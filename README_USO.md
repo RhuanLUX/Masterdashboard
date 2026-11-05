@@ -1,8 +1,8 @@
 # RPG Master — Crônica dos Três Destinos
 
-**Versão atual do código: 4.1 — Mesa ao vivo. Não foram gerados novos instaladores nesta atualização.** Para usar os novos recursos, execute **INICIAR_RPG.bat** (Windows) ou **INICIAR_RPG.command** (macOS) nesta pasta. Abra **Mesa → Mesa ao vivo → Organizar telas**.
+**Versão atual do código: 4.1.1 — TV de combate. Nenhum novo instalador foi gerado.** Execute **INICIAR_RPG.bat** (Windows) ou **INICIAR_RPG.command** (macOS) nesta pasta. Seus controles continuam em **Mesa → Combate**. Para os jogadores, abra **TV de combate** e arraste a janela para a segunda tela.
 
-Os instaladores **4.0.0** existentes continuam disponíveis, mas não incluem a Mesa ao vivo e não são atualizados automaticamente. O runtime desktop de desenvolvimento pode executar o código atual com `pnpm start`, usando as dependências já instaladas.
+Os instaladores **4.0.0** existentes continuam disponíveis, mas não incluem estas alterações e não são atualizados automaticamente. O runtime desktop de desenvolvimento pode executar o código atual com `pnpm start`, usando as dependências já instaladas.
 
 Para executar direto da pasta: use apenas **INICIAR_RPG.bat** (Windows) ou **INICIAR_RPG.command** (macOS). O servidor e o navegador abrem juntos no endereço fixo `http://127.0.0.1:41731/`. Não é necessário abrir outro arquivo. O modo navegador no macOS requer Python 3 ou Node.js; os pacotes desktop incluem o runtime.
 
@@ -13,8 +13,8 @@ A navegação foi organizada em Campanha, Companhia, Mesa e Biblioteca. A págin
 O núcleo funciona offline. LOFI só abre o YouTube quando solicitado e precisa de conexão para ouvir.
 
 - [Guia completo de uso, backup e importação](docs/GUIA_PLATAFORMA_V4.md)
-- [Mesa ao vivo: duas ou três telas, busca e interpretação](docs/GUIA_MESA_AO_VIVO.md)
-- [QA da Mesa ao vivo](docs/QA_MESA_AO_VIVO.md)
+- [TV de combate e troca manual de turno](docs/GUIA_TV_COMBATE.md)
+- [QA da TV de combate e dragões](docs/QA_TV_COMBATE.md)
 - [Relatório de QA e limitações](docs/QA_PLATAFORMA_V4.md)
 - [Arquitetura e builds](README_ARQUITETURA.md)
 

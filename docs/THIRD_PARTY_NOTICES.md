@@ -9,6 +9,14 @@
 
 O ícone `desktop/icon.svg` foi desenhado como vetor original para este aplicativo.
 
+## Voo de dragões do tema Reino dos Dragões — 4.1.1
+
+Arte de **ZaPaper**, créditos a **Buko Studios** (http://www.buko-studios.com/), encomendada por **PlayCraft** (https://www.playcraftapp.com/). Licença **CC BY 3.0**: https://creativecommons.org/licenses/by/3.0/.
+
+Fonte: [`flying_golden_dragon.png` do Stendhal](https://github.com/arianne/stendhal/blob/fcd8330db06034098f9b164aa67fed82f261ae59/data/sprites/monsters/dragon/flying_golden_dragon.png). A licença específica consta em [`doc/sources/graphics-entity.txt`](https://github.com/arianne/stendhal/blob/fcd8330db06034098f9b164aa67fed82f261ae59/doc/sources/graphics-entity.txt).
+
+A fonte foi preservada e três células de voo foram recortadas para arquivos PNG individuais. Não houve redesenho. O aplicativo acrescenta trajetórias, espelhamento e opacidade atmosférica. Licença integral, origem e descrição das alterações em `assets/themes/dragon-flight/`. A arte é carregada offline; nenhum código do jogo Stendhal foi incorporado.
+
 ## PixiJS 8.22.0
 
 O renderizador local da Arena V3.2 usa PixiJS 8.22.0, distribuído sob a licença MIT.

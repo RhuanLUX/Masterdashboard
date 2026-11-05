@@ -1,5 +1,7 @@
 # QA — Mesa ao vivo 4.1
 
+**Registro histórico da 4.1. A interface foi retirada na 4.1.1 por decisão do proprietário. Consulte o [QA atual da TV de combate](QA_TV_COMBATE.md).**
+
 Data: 2026-11-05. Checkpoint anterior: `checkpoint-before-live-table-2026-11-05` em `da8cc44`. Testes usam perfis isolados, sem acessar ou alterar a campanha pessoal do mestre. Nenhum instalador ou novo executável foi gerado; o workflow de instaladores não foi disparado.
 
 ## Decisões de experiência

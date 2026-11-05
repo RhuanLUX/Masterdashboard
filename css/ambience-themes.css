@@ -19,8 +19,9 @@ html:is([data-rpg-theme="medieval"],[data-rpg-theme="dragon"],[data-rpg-theme="e
 .atmosphere-medieval .ambience-mote{opacity:0;filter:sepia(.4);animation-duration:calc(var(--duration)*1.8)}
 .atmosphere-dragon .ambience-mote{background:#f5b16b;box-shadow:0 0 8px #e75c32}
 .theme-ember-haze{position:absolute;bottom:-70px;width:100%;height:170px;background:radial-gradient(ellipse at bottom,#b95c2824,transparent 65%)}
-.theme-dragon-flight{position:absolute;top:13%;left:0;width:190px;opacity:0;animation:distant-dragon 29s -7s linear infinite;filter:drop-shadow(0 2px 3px #0006)}
-.theme-dragon-flight svg{width:100%;display:block}
+.theme-dragon-flight{position:absolute;top:0;left:0;aspect-ratio:144/128;opacity:0;will-change:transform;pointer-events:none;filter:drop-shadow(0 3px 4px #0007) saturate(.65) brightness(.66)}
+.dragon-body{width:100%;height:100%;transform:scaleX(var(--direction,1))}
+.dragon-sprite{display:block;width:100%;height:100%;background:url('../assets/themes/dragon-flight/fly-0.png') center/contain no-repeat;animation:dragon-wingbeat var(--flap,.8s) var(--wing-delay,0s) steps(1,end) infinite}
 .theme-moon{position:absolute;top:84px;right:3px;width:12px;height:12px;border-radius:50%;box-shadow:-4px 2px 0 0 #d2e4c1;opacity:.45;transform:rotate(-18deg)}
 .theme-branch{position:absolute;bottom:26px;font:44px Georgia,serif;line-height:1;color:#85b398;opacity:.18;transform:rotate(-65deg)}
 .theme-branch.left{left:-12px}.theme-branch.right{right:-12px;transform:scaleX(-1) rotate(-65deg)}
@@ -29,7 +30,7 @@ html:is([data-rpg-theme="medieval"],[data-rpg-theme="dragon"],[data-rpg-theme="e
 @keyframes torch-flicker{0%{transform:scale(.9,1) rotate(-4deg);opacity:.8}45%{transform:scale(1.05,.91) rotate(3deg);opacity:1}100%{transform:scale(.93,1.1) rotate(-2deg);opacity:.9}}
 @keyframes ember-rise{0%,100%{opacity:0}15%{opacity:.4}55%{opacity:.55}85%{opacity:.15}0%{transform:translate(0,60px)}100%{transform:translate(var(--drift),-180px)}}
 @keyframes forest-firefly{0%,100%{opacity:0;transform:translate(0,0)}25%{opacity:.65;transform:translate(calc(var(--drift)*.4),-14px)}55%{opacity:.12;transform:translate(var(--drift),-35px)}75%{opacity:.6;transform:translate(calc(var(--drift)*.6),-58px)}}
-@keyframes distant-dragon{0%{opacity:0;transform:translateX(-220px) translateY(35px) rotate(-6deg) scale(.75)}8%{opacity:.55}30%{transform:translateX(42vw) translateY(-15px) rotate(3deg) scale(1)}55%{opacity:.5}63%,100%{opacity:0;transform:translateX(calc(100vw + 220px)) translateY(45px) rotate(7deg) scale(.8)}}
+@keyframes dragon-wingbeat{0%,100%{background-image:url('../assets/themes/dragon-flight/fly-0.png')}25%,75%{background-image:url('../assets/themes/dragon-flight/fly-1.png')}50%{background-image:url('../assets/themes/dragon-flight/fly-2.png')}}
 .theme-menu .theme-nav-btn:is(.ui-theme-medieval,.ui-theme-dragon,.ui-theme-elven){width:148px;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 @media(max-width:700px){.theme-standard{top:130px;opacity:.3}.theme-moon{top:140px}.theme-dragon-flight{width:125px}}
 @media(prefers-reduced-motion:reduce){.theme-atmosphere *{animation:none!important}.ambience-mote,.theme-dragon-flight{display:none}.theme-torch:before{filter:none}}

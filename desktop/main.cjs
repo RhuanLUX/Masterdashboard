@@ -35,9 +35,9 @@ if(gotLock){
   bindIPC('campaign:load',()=>store.load());bindIPC('campaign:save',(x,options)=>store.save(x,{forceBackup:options?.forceBackup===true}));bindIPC('campaign:list',()=>store.list());bindIPC('campaign:recovery',id=>store.readRecovery(id));bindIPC('campaign:location',()=>store.directory);
   bindIPC('session:displays',()=>screen.getAllDisplays().map((d,i)=>({id:d.id,label:d.label||'Monitor '+(i+1),width:d.workArea.width,height:d.workArea.height})));
   bindIPC('session:place',(role,displayId)=>{
-    if(!['tv','reader'].includes(role))throw Error('Janela inválida.');
+    if(role!=='tv')throw Error('Janela inválida.');
     const display=screen.getAllDisplays().find(d=>d.id===displayId);if(!display)throw Error('Monitor desconectado.');
-    const pathname=role==='tv'?'/battle-display.html':'/session-screen.html';
+    const pathname='/battle-display.html';
     const win=BrowserWindow.getAllWindows().find(w=>{try{const u=new URL(w.webContents.getURL());return u.protocol==='rpg:'&&u.hostname==='app'&&u.pathname===pathname}catch(_){return false}});
     if(!win)throw Error('Abra esta janela antes de escolher o monitor.');
     if(win.isFullScreen())win.setFullScreen(false);win.setBounds(display.workArea);win.show();return true;

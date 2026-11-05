@@ -1,0 +1,4 @@
+html,body.combat-tv{margin:0;width:100%;height:100%;overflow:hidden;background:#060c12;color:#dfc99e;font-family:Georgia,serif}
+.combat-tv *{box-sizing:border-box}.combat-tv .public{position:fixed;inset:4px;width:calc(100% - 8px);height:calc(100dvh - 8px);min-height:0;max-width:none;max-height:none;margin:0;border:1px solid #80663b}.combat-tv canvas{display:block}
+.combat-tv [hidden]{display:none!important}[data-tv-waiting]{position:fixed;inset:0;margin:0;display:grid;place-items:center;font-size:18px;background:#060c12}
+.tv-fullscreen{position:fixed;right:14px;bottom:12px;z-index:2;padding:7px 12px;border:1px solid #897044;background:#0a111ce8;color:#dfc99e;font:12px Georgia,serif;opacity:0;transition:opacity .2s}.tv-fullscreen:hover,.tv-fullscreen:focus-visible{opacity:1}

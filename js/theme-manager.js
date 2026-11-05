@@ -5,7 +5,6 @@ window.RPGThemeLabels=themeLabels;
 const validThemes=new Set(Object.keys(themeLabels));
 const atmosphereThemes=new Set(['medieval','dragon','elven']);
 const crest='<svg viewBox="0 0 100 160"><path d="M8 0H92V119L50 154 8 119Z" fill="#531d2c" stroke="#b99a5f" stroke-width="2"/><path d="M17 0V114L50 141 83 114V0M28 48H72V91L50 109 28 91Z" fill="none" stroke="#b99a5f"/><path d="M35 80V58H43V66H57V58H65V80M32 80H68V94H32ZM46 94V83H54V94" fill="#c3a873"/></svg>';
-const dragonArt='<svg viewBox="0 0 260 120"><g fill="#18101d" stroke="#b16b48" stroke-width=".7"><path d="M125 62Q86 10 16 7L57 32 32 43Q69 38 65 61Q90 49 97 72L124 78Z"/><path d="M132 64Q143 7 208 1L183 28 232 29Q200 42 201 60Q176 46 158 76Z"/><path d="M39 102Q90 114 113 76Q128 53 152 62L175 49 185 44 179 35 192 43 210 42 220 48 205 55 188 56 165 80Q153 85 139 78L127 90 110 100 118 88Q85 121 39 102Z"/><path d="M151 76L164 91 178 93 166 96 150 87M130 77L139 95 151 99 136 100 123 88"/></g><path d="M193 47L199 47" stroke="#eac989" stroke-width="2"/></svg>';
 const random=(min,max)=>min+Math.random()*(max-min);
 const clamp=(value,min,max)=>Math.min(max,Math.max(min,value));
 // Original vector silhouette: separate mirrored structure from wing animation.
@@ -26,7 +25,7 @@ class ThemeManager{
   constructor(){
     this.active='normal';this.root=null;this.canvas=null;this.ctx=null;this.particles=[];
     this.frame=0;this.last=0;this.paused=false;this.reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
-    this.batLayer=null;this.batTimer=0;this.batSpawnTimers=[];this.activeBats=new Set();this.atmosphere=null;
+    this.batLayer=null;this.batTimer=0;this.batSpawnTimers=[];this.activeBats=new Set();this.atmosphere=null;this.dragons=new Set();this.dragonTimers=new Set();
     this.resize=this.resize.bind(this);this.tick=this.tick.bind(this);this.visibility=this.visibility.bind(this);
   }
   initialize(){
@@ -46,19 +45,34 @@ class ThemeManager{
     if(name==='winter')this.startWinter();if(name==='horror')this.startHorror();if(atmosphereThemes.has(name))this.startAtmosphere();
   }
   deactivate(){this.stopWinter();this.stopHorror();this.stopAtmosphere();if(this.root)this.root.dataset.theme='normal';document.documentElement.dataset.rpgTheme='normal'}
-  pause(){this.paused=true;this.root?.classList.add('effects-paused');this.stopFrame();this.stopBatTimer();this.activeBats.forEach(bat=>bat.node.getAnimations({subtree:true}).forEach(a=>a.pause()))}
-  resume(){this.paused=false;this.root?.classList.remove('effects-paused');this.activeBats.forEach(bat=>bat.node.getAnimations({subtree:true}).forEach(a=>a.play()));if(this.active==='winter'&&!this.reduced)this.startFrame();if(this.active==='horror')this.startHorror()}
+  pause(){this.paused=true;this.root?.classList.add('effects-paused');this.stopFrame();this.stopBatTimer();this.dragons.forEach(d=>d.animation?.pause());this.activeBats.forEach(bat=>bat.node.getAnimations({subtree:true}).forEach(a=>a.pause()))}
+  resume(){this.paused=false;this.root?.classList.remove('effects-paused');this.dragons.forEach(d=>d.animation?.play());this.activeBats.forEach(bat=>bat.node.getAnimations({subtree:true}).forEach(a=>a.play()));if(this.active==='winter'&&!this.reduced)this.startFrame();if(this.active==='horror')this.startHorror()}
   destroy(){this.stopWinter();this.stopHorror();this.stopAtmosphere();removeEventListener('resize',this.resize);document.removeEventListener('visibilitychange',this.visibility);this.root?.remove();this.root=this.canvas=this.ctx=this.batLayer=null}
-  stopAtmosphere(){this.atmosphere?.remove();this.atmosphere=null}
+  stopAtmosphere(){this.dragonTimers.forEach(clearTimeout);this.dragonTimers.clear();this.dragons.forEach(d=>d.animation?.cancel());this.dragons.clear();this.atmosphere?.remove();this.atmosphere=null}
   startAtmosphere(){
     if(this.atmosphere)return;
     const node=document.createElement('div');node.className='theme-atmosphere atmosphere-'+this.active;this.atmosphere=node;this.root.append(node);
     if(this.active==='medieval')node.innerHTML=`<div class="theme-standard left">${crest}</div><div class="theme-standard right">${crest}</div><div class="theme-torch left"></div><div class="theme-torch right"></div>`;
-    if(this.active==='dragon')node.innerHTML=`<div class="theme-dragon-flight">${dragonArt}</div><div class="theme-ember-haze"></div>`;
+    if(this.active==='dragon')node.innerHTML='<div class="theme-ember-haze"></div>';
     if(this.active==='elven')node.innerHTML='<div class="theme-moon"></div><div class="theme-branch left">❧</div><div class="theme-branch right">❧</div>';
     if(this.reduced)return;
+    if(this.active==='dragon'){const dragons=this.intensity==='soft'?2:this.intensity==='intense'?5:3;for(let i=0;i<dragons;i++)this.spawnDragon(node,i,true)}
     const count=this.intensity==='soft'?10:this.intensity==='intense'?30:18;
     for(let i=0;i<count;i++){const p=document.createElement('i');p.className='ambience-mote';p.style.cssText=`--x:${random(2,98)}vw;--y:${random(12,95)}vh;--drift:${random(-65,65)}px;--duration:${random(7,18)}s;--delay:${random(-20,0)}s;--size:${random(2,4)}px`;node.append(p);}
+  }
+  spawnDragon(layer,index,initial=false){
+    if(this.active!=='dragon'||!layer.isConnected||this.reduced)return;
+    const node=document.createElement('div');node.className='theme-dragon-flight';
+    const direction=Math.random()<.5?1:-1,width=random(index===0?160:85,index===0?235:150);
+    node.style.cssText=`width:${width}px;--direction:${direction};--flap:${random(.65,.95)}s;--wing-delay:${random(-2,0)}s;`;
+    node.innerHTML='<div class="dragon-body"><span class="dragon-sprite"></span></div>';layer.append(node);
+    const startX=direction===1?-width:innerWidth+width,endX=direction===1?innerWidth+width:-width;
+    const startY=random(90,innerHeight*.63),endY=clamp(startY+random(-150,150),70,innerHeight*.7),curve=random(-100,100),duration=random(18000,29000);
+    const frames=Array.from({length:49},(_,i)=>{const t=i/48,x=startX+(endX-startX)*t,y=startY+(endY-startY)*t+Math.sin(t*Math.PI)*curve+Math.sin(t*4*Math.PI)*8;
+      return {offset:t,transform:`translate3d(${x}px,${y}px,0) rotate(${Math.cos(t*Math.PI)*direction*5}deg)`,opacity:t<.08?t/.08*.42:t>.9?(1-t)/.1*.42:.42}});
+    const animation=node.animate(frames,{duration,fill:'both',easing:'linear'}),dragon={node,animation};this.dragons.add(dragon);
+    if(initial)animation.currentTime=duration*(.12+(index%5)*.15);if(this.paused||document.hidden)animation.pause();
+    animation.onfinish=()=>{this.dragons.delete(dragon);node.remove();if(!layer.isConnected)return;const timer=setTimeout(()=>{this.dragonTimers.delete(timer);this.spawnDragon(layer,index)},random(1200,4500));this.dragonTimers.add(timer)};
   }
   visibility(){document.hidden?this.pause():this.resume()}
   resize(){
