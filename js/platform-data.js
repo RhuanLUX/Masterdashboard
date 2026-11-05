@@ -7,6 +7,12 @@
     if (Number(s.schemaVersion || 1) > 5) throw Error('Backup de uma versão mais nova do RPG Master.');
     if (s.diceHistory !== undefined && !Array.isArray(s.diceHistory)) throw Error('Histórico de dados inválido.');
     if (s.app.char !== undefined && !['elenya','calion','nando','anao'].includes(s.app.char)) throw Error('Personagem selecionado inválido.');
+    if (s.app.liveWorkspace !== undefined) {
+      const w = s.app.liveWorkspace;
+      if (!plain(w) || (w.enabled !== undefined && typeof w.enabled !== 'boolean') || (w.adventureId !== undefined && typeof w.adventureId !== 'string')) throw Error('Mesa ao vivo inválida.');
+      if (w.pins !== undefined && (!Array.isArray(w.pins) || w.pins.length > 12 || w.pins.some(p => !plain(p) || !['id','title','kind'].every(k => typeof p[k] === 'string')))) throw Error('Referências da sessão inválidas.');
+      if (w.reading !== undefined && (!plain(w.reading) || Object.values(w.reading).some(i => !Number.isInteger(i) || i < 0))) throw Error('Posição de leitura inválida.');
+    }
     for (const id of ['elenya', 'calion', 'nando', 'anao']) {
       const c = s.characters[id];
       if (!plain(c) || c.id !== id || typeof c.name !== 'string' || !plain(c.combat) || !plain(c.info)) throw Error('Ficha inválida: ' + id);

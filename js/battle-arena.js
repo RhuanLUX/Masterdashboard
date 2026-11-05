@@ -25,6 +25,7 @@
     const publicEffect=effect&&visible.has(effect.actorId)&&visible.has(effect.targetId)
       ? {actorId:effect.actorId,targetId:effect.targetId,kind:effect.kind,spell:Object.hasOwn(spells,effect.spell)?effect.spell:'fire',outcome:['normal','critical','fail'].includes(effect.outcome)?effect.outcome:'normal',text:{heal:'Cura',magic:'Magia',ranged:'Disparo',melee:'Ataque',critical:'Crítico',fail:'Falha'}[effect.kind]||'Ação'} : null;
     channel.postMessage({ type: 'scene', scene: payload, effect: publicEffect });
+    window.RPGLive?.publishBattle(combat,publicEffect);
   }
   function options(combat, chosen) { return combat.participants.map(p => `<option value="${p.id}" ${p.id === chosen ? 'selected' : ''}>${esc(p.name)}</option>`).join(''); }
   function render(combat) {
@@ -103,7 +104,8 @@
     $('[data-arena-archive]', root).onclick=async()=> { api().archive(state(), combat); save(); output('Batalha arquivada.'); };
     $('[data-arena-json]', root).onclick=async()=> download(`batalha-${combat.id}.json`, 'application/json', JSON.stringify({ schemaVersion: 5, combat }, null, 2));
     $('[data-arena-md]', root).onclick=async()=> download(`batalha-${combat.id}.md`, 'text/markdown;charset=utf-8', api().toMarkdown(state(), combat));
-    $('[data-arena-present]', root).onclick=async()=> { const win = window.open('battle-display.html', 'rpg-master-player-display', 'popup=yes,width=1200,height=720'); if (!win) return RPGUI.alert('Permita pop-ups para mostrar a arena.'); setTimeout(() => broadcast(combat), 300); setTimeout(() => broadcast(combat), 1000); };
+    $('[data-arena-present]', root).onclick=async()=> { if(window.RPGLive){RPGLive.showArena();RPGLive.openScreen('tv');return} const win = window.open('battle-display.html', 'rpg-master-player-display', 'popup=yes,width=1200,height=720'); if (!win) return RPGUI.alert('Permita pop-ups para mostrar a arena.'); setTimeout(() => broadcast(combat), 300); setTimeout(() => broadcast(combat), 1000); };
   }
+  window.RPGBattleArena={publicPayload};
   new MutationObserver(() => { if(scene&&!scene.container.isConnected){scene.destroy();scene=null;} if ($('.combat-list')) mount(); }).observe(document.documentElement, { childList: true, subtree: true }); setTimeout(mount, 400);
 })();

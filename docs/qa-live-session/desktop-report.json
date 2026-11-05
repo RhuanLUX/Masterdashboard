@@ -1,0 +1,28 @@
+{
+  "runtime": "development",
+  "installersGenerated": false,
+  "threeWindows": true,
+  "onlyMainHasStorageBridge": true,
+  "availableDisplays": [
+    {
+      "id": 302514872,
+      "label": "UG27P",
+      "width": 1920,
+      "height": 1032
+    },
+    {
+      "id": 3343024190,
+      "label": "HUAWEI AD80HW",
+      "width": 1080,
+      "height": 1872
+    }
+  ],
+  "nativePlacement": true,
+  "secondMonitorPlacement": true,
+  "invalidPlacementRejected": true,
+  "tvFullscreen": true,
+  "persistAfterProcessRestart": true,
+  "noAutomaticPublicWindow": true,
+  "popupBlockedHandled": true,
+  "errors": []
+}

@@ -1,0 +1,141 @@
+{
+  "sheets": [
+    {
+      "id": "elenya",
+      "width": 1920,
+      "body": 1920,
+      "viewport": 1920,
+      "main": 1398,
+      "client": 1398
+    },
+    {
+      "id": "calion",
+      "width": 1920,
+      "body": 1920,
+      "viewport": 1920,
+      "main": 1398,
+      "client": 1398
+    },
+    {
+      "id": "nando",
+      "width": 1920,
+      "body": 1920,
+      "viewport": 1920,
+      "main": 1398,
+      "client": 1398
+    },
+    {
+      "id": "anao",
+      "width": 1920,
+      "body": 1920,
+      "viewport": 1920,
+      "main": 1398,
+      "client": 1398
+    },
+    {
+      "id": "elenya",
+      "width": 1366,
+      "body": 1366,
+      "viewport": 1366,
+      "main": 1124,
+      "client": 1124
+    },
+    {
+      "id": "calion",
+      "width": 1366,
+      "body": 1366,
+      "viewport": 1366,
+      "main": 1124,
+      "client": 1124
+    },
+    {
+      "id": "nando",
+      "width": 1366,
+      "body": 1366,
+      "viewport": 1366,
+      "main": 1124,
+      "client": 1124
+    },
+    {
+      "id": "anao",
+      "width": 1366,
+      "body": 1366,
+      "viewport": 1366,
+      "main": 1124,
+      "client": 1124
+    },
+    {
+      "id": "elenya",
+      "width": 1280,
+      "body": 1280,
+      "viewport": 1280,
+      "main": 1038,
+      "client": 1038
+    },
+    {
+      "id": "calion",
+      "width": 1280,
+      "body": 1280,
+      "viewport": 1280,
+      "main": 1038,
+      "client": 1038
+    },
+    {
+      "id": "nando",
+      "width": 1280,
+      "body": 1280,
+      "viewport": 1280,
+      "main": 1038,
+      "client": 1038
+    },
+    {
+      "id": "anao",
+      "width": 1280,
+      "body": 1280,
+      "viewport": 1280,
+      "main": 1038,
+      "client": 1038
+    }
+  ],
+  "viewports": [
+    [
+      1920,
+      1080
+    ],
+    [
+      1366,
+      768
+    ],
+    [
+      1280,
+      800
+    ]
+  ],
+  "imports": [
+    {
+      "format": "docx",
+      "blocks": 171,
+      "headings": 26
+    },
+    {
+      "format": "digital",
+      "blocks": 4,
+      "ocr": 0
+    },
+    {
+      "format": "scan",
+      "blocks": 4,
+      "ocr": 1
+    }
+  ],
+  "sheetEditsPersisted": true,
+  "originalDocxTextComplete": true,
+  "reimportVersionAndNotes": true,
+  "invalidBackupRejected": true,
+  "backupRoundtrip": true,
+  "storageFailureVisible": true,
+  "search": true,
+  "story5Intact": true,
+  "errors": [],
+  "external": []
+}

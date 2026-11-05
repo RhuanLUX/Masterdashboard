@@ -1,5 +1,5 @@
 const {chromium}=require('playwright'),{spawn}=require('node:child_process'),fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
-const root=path.resolve(__dirname,'..'),out=path.join(root,'docs/qa-platform-v4'),url='http://127.0.0.1:43991',temp=path.join(root,'test-results/platform');
+const root=path.resolve(__dirname,'..'),out=process.env.RPG_QA_OUTPUT||path.join(root,'docs/qa-platform-v4'),url='http://127.0.0.1:43991',temp=path.join(root,'test-results/platform');
 const wait=ms=>new Promise(r=>setTimeout(r,ms));
 (async()=>{fs.mkdirSync(out,{recursive:true});fs.mkdirSync(temp,{recursive:true});const server=spawn(process.execPath,['js/offline-server.mjs','43991'],{cwd:root,windowsHide:true});let browser;
 try{

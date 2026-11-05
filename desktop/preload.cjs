@@ -5,6 +5,8 @@ contextBridge.exposeInMainWorld('RPGDesktop',{
   recoveries:()=>ipcRenderer.invoke('campaign:list'),
   recovery:id=>ipcRenderer.invoke('campaign:recovery',id),
   location:()=>ipcRenderer.invoke('campaign:location'),
+  displays:()=>ipcRenderer.invoke('session:displays'),
+  placeWindow:(role,displayId)=>ipcRenderer.invoke('session:place',role,displayId),
   onBeforeClose:callback=>ipcRenderer.on('campaign:closing',()=>callback()),
   closed:ok=>ipcRenderer.invoke('campaign:closed',ok)
 });

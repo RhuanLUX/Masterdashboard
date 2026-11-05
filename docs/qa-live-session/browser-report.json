@@ -1,0 +1,47 @@
+{
+  "viewports": [
+    {
+      "width": 1920,
+      "height": 1080,
+      "body": 1920,
+      "room": 1800,
+      "roomClient": 1800
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "body": 1366,
+      "room": 1326,
+      "roomClient": 1326
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "body": 1280,
+      "room": 1240,
+      "roomClient": 1240
+    }
+  ],
+  "effects": [
+    "melee",
+    "ranged",
+    "fire",
+    "ice",
+    "lightning",
+    "missiles"
+  ],
+  "legacyReadingLocations": true,
+  "threeWindows": true,
+  "visualOnlyNoCombatMutation": true,
+  "curtain": true,
+  "previewAndPin": true,
+  "imageAndText": true,
+  "heartbeatPreservesContent": true,
+  "navigationKeepsWindows": true,
+  "publicPrivacy": true,
+  "restartSafeNeutral": true,
+  "tvReopen": true,
+  "ownerDisconnectHidden": true,
+  "errors": [],
+  "external": []
+}

@@ -11,12 +11,16 @@ A aplicação continua em HTML/CSS/JavaScript, com PixiJS e Dice Box locais. `in
 - `js/character-sheets.js`: migração somente de campos ausentes, fichas, fonte original, histórico e transferência explícita de PV do encontro. Não recalcula regras.
 - `js/adventure-import.js`: Mammoth, PDF.js e Tesseract locais; blocos tipados/escapados, imagens, originais SHA-256, revisões, prévia e publicação transacional.
 - `js/platform-ui.js`, `css/platform.css`: navegação, retomada, busca e diálogos.
+- `js/live-session.js`, `css/live-session.css`: Mesa ao vivo, direção de cena sem mutação de combate, coordenação das janelas e cortina. Somente a janela principal grava estado.
+- `js/session-reader.js`, `js/session-screen.js`, `session-screen.html`: leitura privada destacada. Documento e comandos via canal privado; sem banco/bridge.
+- `js/campaign-search.js`: índice textual local, prévias e referências persistentes por identificador. Sem APIs de IA ou busca remota.
+- `battle-display.html`, `js/battle-display.js`: TV pública filtrada, arena/imagem/trecho preparado, heartbeat e espera quando o mestre desconecta.
 
 Os módulos de combate, dados, temas e conteúdo existente são preservados. Adaptadores de interface receberam diálogos assíncronos porque prompt nativo não é suportado pelo Electron. O participante da companhia é criado diretamente da ficha canônica; os encontros continuam com cópias próprias.
 
 ## Desenvolvimento
 
-Use Node.js 24 e pnpm 11.25.0. Instalação de dependências/build requer internet; uso do pacote final não requer.
+Use Node.js 24 e pnpm 11.25.0. Instalação de dependências/build requer internet; uso do pacote final não requer. **A entrega 4.1 é apenas código: não gerar novos instaladores conforme orientação do proprietário.** Os comandos de build abaixo permanecem como referência histórica, não como etapa desta entrega.
 
 ```sh
 pnpm install --frozen-lockfile --ignore-scripts
