@@ -11,12 +11,15 @@
   let scene, channel, managerOpen=false, actionType='melee', magicSpell='fire';
   const spells={fire:'Fogo',ice:'Gelo',lightning:'Eletricidade',missiles:'Mísseis mágicos'};
 
-  function publicPayload(combat) {
+  function visualPayload(combat,mirror=false) {
     const catalog=window.RPGBattleCatalog;
-    return { title: combat.title, round: combat.round, activeId: selection(combat).actorId || null,
-      participants: combat.participants.filter(p => catalog.isPublic(p,combat)).map(p => ({ id: p.id, name: p.name, sourceId: p.sourceId, sourceType: p.sourceType, type: p.type,
+    const picked=selection(combat);
+    return { title: combat.title, round: combat.round, activeId: picked.actorId || null,targetId:picked.targetId||null,
+      participants: combat.participants.filter(p => mirror||catalog.isPublic(p,combat)).map(p => ({ id: p.id, name: p.name, sourceId: p.sourceId, sourceType: p.sourceType, type: p.type,
         team:catalog.teamOf(p),facing:catalog.defaultFacing(p),incapacitated:catalog.incapacitated(p),arenaVisual:catalog.visualFor(p,state()) })) };
   }
+  const publicPayload=combat=>visualPayload(combat);
+  const mirrorPayload=combat=>visualPayload(combat,true);
   function broadcast(combat, effect) {
     if (!('BroadcastChannel' in window)) return;
     channel ||= new BroadcastChannel('rpg-master-battle-v32');
@@ -25,7 +28,13 @@
     const publicEffect=effect&&visible.has(effect.actorId)&&visible.has(effect.targetId)
       ? {actorId:effect.actorId,targetId:effect.targetId,kind:effect.kind,spell:Object.hasOwn(spells,effect.spell)?effect.spell:'fire',outcome:['normal','critical','fail'].includes(effect.outcome)?effect.outcome:'normal',text:{heal:'Cura',magic:'Magia',ranged:'Disparo',melee:'Ataque',critical:'Crítico',fail:'Falha'}[effect.kind]||'Ação'} : null;
     channel.postMessage({ type: 'scene', scene: payload, effect: publicEffect });
-    window.RPGCombatTV?.publish(publicEffect);
+    // TV mirrors the master's arena: legacy reveal flags must never drop an actor or attack.
+    const present=new Set(combat.participants.map(p=>p.id));
+    const mirrorEffect=effect&&present.has(effect.actorId)&&present.has(effect.targetId)?{
+      actorId:effect.actorId,targetId:effect.targetId,kind:effect.kind,spell:Object.hasOwn(spells,effect.spell)?effect.spell:'fire',
+      outcome:['normal','critical','fail'].includes(effect.outcome)?effect.outcome:'normal',text:String(effect.text||'').slice(0,120)
+    }:null;
+    window.RPGCombatTV?.publish(mirrorEffect);
   }
   function options(combat, chosen) { return combat.participants.map(p => `<option value="${p.id}" ${p.id === chosen ? 'selected' : ''}>${esc(p.name)}</option>`).join(''); }
   function selection(combat) {
@@ -41,11 +50,12 @@
     return `<header class="arena-head"><div><small>ARENA 16-BIT · PIXIJS LOCAL</small><strong>${esc(combat.title)}</strong><span>Rodada ${combat.round} · ${combat.participants.length} participantes</span></div><div class="arena-turn">Turno: <b>${esc(active?.name || '—')}</b><small>Próximo: ${esc(next?.name || '—')}</small></div></header>
     <div class="battle-layout"><section class="arena-stage"><div data-pixi-arena class="pixi-arena-host"><p>Preparando arena 16-bit…</p></div><output data-arena-result>Selecione ação e alvo.</output></section>
     <aside class="arena-controls"><label>Atacante<select data-arena-actor>${options(combat, picked.actorId)}</select></label><label>Alvo<select data-arena-target>${options(combat, picked.targetId)}</select></label><label>Ação<select data-arena-type><option value="melee">Corpo a corpo</option><option value="ranged">À distância</option><option value="magic">Magia</option><option value="heal">Cura</option></select></label><label data-arena-spell-field hidden>Magia<select data-arena-spell><option value="fire">Fogo</option><option value="ice">Gelo</option><option value="lightning">Eletricidade</option><option value="missiles">Mísseis mágicos</option></select></label><label>Resultado<select data-arena-outcome><option value="normal">Normal</option><option value="critical">Crítico</option><option value="fail">Falha</option></select></label><div class="arena-actions"><button data-arena-roll class="fantasy-btn">⚄ Dados</button><button data-arena-d3 class="mini-btn">Mesa de Dados</button><button data-arena-confirm class="fantasy-btn">Confirmar ação</button><button data-arena-skip class="mini-btn">Pular efeito</button></div><div class="arena-roll" data-arena-rollbox hidden><label>Dado<select data-arena-die>${[4,6,8,10,12,20,100].map(n => `<option value="${n}" ${n === 20 ? 'selected' : ''}>d${n}</option>`).join('')}</select></label><label>Bônus<input data-arena-bonus type="number" value="0"></label><label>Aplicado<input data-arena-applied type="number" placeholder="auto"></label><button data-arena-roll-now class="mini-btn">Rolar</button><button data-arena-roll-close class="mini-btn">Fechar</button></div><label>Dano/Cura<input data-arena-damage type="number" min="0" value="0"></label><label>Nota narrativa<textarea data-arena-note placeholder="Ação, descrição ou diálogo do mestre..."></textarea></label><button data-arena-narrate class="mini-btn">Narrar ação</button></aside></div>
-    <footer class="arena-footer"><button data-arena-details class="mini-btn">Gerenciar participantes</button><button data-arena-reveal class="mini-btn">Revelar / ocultar inimigo</button><button data-arena-template class="mini-btn">Salvar modelo</button><button data-arena-duplicate class="mini-btn">Duplicar encontro</button><button data-arena-archive class="mini-btn">Arquivar</button><button data-arena-json class="mini-btn">Exportar JSON</button><button data-arena-md class="mini-btn">Exportar Markdown</button><button data-arena-present class="mini-btn">TV de combate ↗</button></footer>`;
+    <footer class="arena-footer"><button data-arena-details class="mini-btn">Gerenciar participantes</button><button data-arena-template class="mini-btn">Salvar modelo</button><button data-arena-duplicate class="mini-btn">Duplicar encontro</button><button data-arena-archive class="mini-btn">Arquivar</button><button data-arena-json class="mini-btn">Exportar JSON</button><button data-arena-md class="mini-btn">Exportar Markdown</button><button data-arena-present class="mini-btn">TV de combate ↗</button></footer>`;
   }
   async function mount() {
     const combat = current(), list = $('.combat-list'); if (!combat || !list || $('#battle-arena-shell')) return;
     api().ensure(state()); const root = document.createElement('section'); root.id = 'battle-arena-shell'; root.className = 'battle-shell'; root.innerHTML = render(combat); list.before(root);
+    root.dataset.arenaReady='false';root.querySelectorAll('.arena-controls input,.arena-controls select,.arena-controls button,.arena-controls textarea').forEach(n=>n.disabled=true);
     const manager=document.createElement('section');manager.className='participant-manager';manager.hidden=!managerOpen;
     manager.id='arena-participant-manager';manager.innerHTML='<h2>Gerenciar participantes</h2><p>Escolha a equipe livremente. Mudar de lado não revela participantes ocultos.</p>';
     const form=$('[data-roster-form]');if(form)manager.append(form);manager.append(list);root.append(manager);
@@ -53,7 +63,7 @@
     $('[data-arena-details]',root).setAttribute('aria-expanded',String(managerOpen));
     $('[data-arena-details]',root).setAttribute('aria-controls',manager.id);
     try { scene?.destroy?.(); const mounted = await window.RPGBattlePixi.mount($('[data-pixi-arena]', root), combat.participants, { actorId: $('[data-arena-actor]', root).value, targetId: $('[data-arena-target]', root).value }); if (!root.isConnected) { mounted.destroy(); return; } scene=mounted; } catch (error) { console.error(error); $('[data-pixi-arena]', root).innerHTML = '<p class="arena-error">A arena 16-bit não pôde ser inicializada.</p>'; }
-    bind(root, combat, list); broadcast(combat);
+    bind(root, combat, list);root.querySelectorAll('.arena-controls input,.arena-controls select,.arena-controls button,.arena-controls textarea').forEach(n=>n.disabled=false);root.dataset.arenaReady='true';broadcast(combat);
   }
   function roll(sides) { if (sides === 100) { const x = window.RPGDiceLogic.rollPercentile(); return { raw: x.value, detail: `d100: ${x.tensText} + ${x.units} = ${x.value}` }; } const raw = window.RPGDiceLogic.rollDie(sides); return { raw, detail: `d${sides}: ${raw}` }; }
   function download(name, type, data) { const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([data], { type })); a.download = name; a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 800); }
@@ -99,15 +109,6 @@
       const history=$('.combat-history');if(history){const item=document.createElement('p');item.textContent=combat.history[0].text;history.prepend(item);}
       save();broadcast(combat);output(combat.history[0].text);
     });
-    $('[data-arena-reveal]', root).textContent='Revelar / ocultar alvo';
-    $('[data-arena-reveal]', root).onclick=async()=> {
-      const p=combat.participants.find(x=>x.id===targetId());if(!p)return output('Selecione um participante como alvo.');
-      const visible=window.RPGBattleCatalog.isPublic(p,combat),v=combat.visibility;
-      v.revealedParticipantIds=(v.revealedParticipantIds||[]).filter(id=>id!==p.id);
-      v.hiddenParticipantIds=(v.hiddenParticipantIds||[]).filter(id=>id!==p.id);
-      (visible?v.hiddenParticipantIds:v.revealedParticipantIds).push(p.id);
-      save();broadcast(combat);output(`${p.name}: ${visible?'ocultado':'revelado'} para os jogadores.`);
-    };
     $('[data-arena-template]', root).onclick=async()=> { api().saveTemplate(state(), combat, await RPGUI.prompt('Nome do modelo:', combat.title) || combat.title); save(); };
     $('[data-arena-duplicate]', root).onclick=async()=> { api().duplicate(state(), combat, await RPGUI.prompt('Nome da cópia:', `${combat.title} (cópia)`) || undefined); save(); host().render(); };
     $('[data-arena-archive]', root).onclick=async()=> { api().archive(state(), combat); save(); output('Batalha arquivada.'); };
@@ -115,6 +116,6 @@
     $('[data-arena-md]', root).onclick=async()=> download(`batalha-${combat.id}.md`, 'text/markdown;charset=utf-8', api().toMarkdown(state(), combat));
     $('[data-arena-present]', root).onclick=()=>window.RPGCombatTV.open();
   }
-  window.RPGBattleArena={publicPayload};
+  window.RPGBattleArena={publicPayload,mirrorPayload};
   new MutationObserver(() => { if(scene&&!scene.container.isConnected){scene.destroy();scene=null;} if ($('.combat-list')) mount(); }).observe(document.documentElement, { childList: true, subtree: true }); setTimeout(mount, 400);
 })();

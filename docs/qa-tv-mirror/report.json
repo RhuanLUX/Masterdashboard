@@ -1,0 +1,28 @@
+{
+  "damagePreservesSelectionAndTurn": true,
+  "arenaOnly": true,
+  "effectsSynced": true,
+  "hiddenEnemyAndAllSpellsMirrored": true,
+  "targetHighlightSynced": true,
+  "nextTurnOnlyOnCommand": true,
+  "viewports": [
+    {
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "width": 1366,
+      "height": 768
+    },
+    {
+      "width": 1280,
+      "height": 800
+    }
+  ],
+  "dragonFramesPathsPauseCleanup": true,
+  "selectionAfterReload": true,
+  "publicPrivacy": true,
+  "reducedMotion": true,
+  "errors": [],
+  "external": []
+}

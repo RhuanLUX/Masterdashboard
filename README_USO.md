@@ -1,6 +1,6 @@
 # RPG Master — Crônica dos Três Destinos
 
-**Versão atual do código: 4.1.1 — TV de combate. Nenhum novo instalador foi gerado.** Execute **INICIAR_RPG.bat** (Windows) ou **INICIAR_RPG.command** (macOS) nesta pasta. Seus controles continuam em **Mesa → Combate**. Para os jogadores, abra **TV de combate** e arraste a janela para a segunda tela.
+**Versão atual do código: 4.1.2 — TV de combate espelhada. Nenhum novo instalador foi gerado.** Execute **INICIAR_RPG.bat** (Windows) ou **INICIAR_RPG.command** (macOS) nesta pasta. Seus controles continuam em **Mesa → Combate**. Para os jogadores, abra **TV de combate** e arraste a janela para a segunda tela. Todos os participantes, alvos e efeitos da arena são refletidos na TV; flags antigas de revelação não escondem inimigos nem bloqueiam ataques.
 
 Os instaladores **4.0.0** existentes continuam disponíveis, mas não incluem estas alterações e não são atualizados automaticamente. O runtime desktop de desenvolvimento pode executar o código atual com `pnpm start`, usando as dependências já instaladas.
 
@@ -14,7 +14,7 @@ O núcleo funciona offline. LOFI só abre o YouTube quando solicitado e precisa 
 
 - [Guia completo de uso, backup e importação](docs/GUIA_PLATAFORMA_V4.md)
 - [TV de combate e troca manual de turno](docs/GUIA_TV_COMBATE.md)
-- [QA da TV de combate e dragões](docs/QA_TV_COMBATE.md)
+- [QA do espelhamento da TV de combate](docs/QA_TV_ESPELHADA.md)
 - [Relatório de QA e limitações](docs/QA_PLATAFORMA_V4.md)
 - [Arquitetura e builds](README_ARQUITETURA.md)
 

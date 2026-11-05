@@ -1,5 +1,7 @@
 # QA — TV de combate e dragões 4.1.1
 
+**Correção posterior em 4.1.2:** o teste original revelava o inimigo manualmente e não cobria inimigos não revelados de saves existentes. O proprietário encontrou a omissão de inimigo/ataque na TV. O filtro foi removido do espelhamento; veja [QA da TV espelhada](QA_TV_ESPELHADA.md).
+
 Data: 2026-11-05. Checkpoint anterior: `checkpoint-before-combat-tv-2026-11-05` em `9037b9d`. Nenhum instalador foi gerado e nenhum workflow de empacotamento foi acionado.
 
 ## Correções

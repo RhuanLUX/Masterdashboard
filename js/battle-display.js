@@ -6,7 +6,7 @@
   function visibility(){stage.hidden=!connected;waiting.hidden=connected}
   async function draw(data,effect){if(!data||!Array.isArray(data.participants))return;const next=JSON.stringify(data.participants);
     if(next!==signature||!scene){if(!scene?.updateParticipants(data.participants)){scene?.destroy();scene=await RPGBattlePixi.mount(stage,data.participants,{public:true})}signature=next}
-    const actor=effect?.actorId||data.activeId;scene.select(scene.actors.has(actor)?actor:null,scene.actors.has(effect?.targetId)?effect.targetId:null);
+    const actor=effect?.actorId||data.activeId,target=effect?.targetId||data.targetId;scene.select(scene.actors.has(actor)?actor:null,scene.actors.has(target)?target:null);
     if(effect&&connected)RPGBattlePixi.flash(scene,effect.actorId,effect.targetId,effect.kind,effect.text,{spell:effect.spell,outcome:effect.outcome});
   }
   channel.onmessage=e=>{const m=e.data;if(!m)return;if(m.type==='sleep'){connected=false;visibility();return}

@@ -63,7 +63,7 @@ async function run() {
         c.summary='PRIVATE_QA_SENTINEL';c.participants[0].details='PRIVATE_QA_SENTINEL';
       });
       if(await page.locator('[data-enter-adventure]').count())await page.locator('[data-enter-adventure]').click();
-      await page.locator('#v3-master-button').click();await page.locator('[data-v3-page="combat"]').first().click();
+      await page.locator('[data-menu-toggle="table-menu"]').click();await page.locator('#v3-master-button').click();await page.locator('[data-v3-page="combat"]').first().click();
       await page.waitForFunction(()=>window.liveScene?.actors.size===8&&!liveScene.destroyed);
       if(phase==='after'){
         if(await page.locator('[data-arena-rollbox]').isVisible())throw Error('Closed dice panel is visible');
@@ -89,16 +89,16 @@ async function run() {
       await context.addInitScript(()=>{window.publicMessages=[];const Original=BroadcastChannel;window.BroadcastChannel=class extends Original{constructor(...args){super(...args);this.addEventListener('message',e=>window.publicMessages.push(e.data));}};});
       const popupWait=page.waitForEvent('popup');await page.locator('[data-arena-present]').click();const popup=await popupWait;
       popup.on('pageerror',e=>errors.push(e.message));
-      await popup.waitForFunction(()=>document.querySelector('canvas')&&window.publicMessages?.some(m=>m.scene?.participants?.length===4));
+      await popup.waitForFunction(()=>document.querySelector('canvas')&&window.publicMessages?.some(m=>m.scene?.participants?.length===5));
       await popup.waitForTimeout(500);
-      await popup.screenshot({path:path.join(out,'app-players-hidden.png')});
-      await page.locator('[data-arena-reveal]').click();
+      await popup.screenshot({path:path.join(out,'app-players-mirror.png')});
+      // TV mirrors all combatants immediately, regardless of old reveal flags.
       await popup.waitForFunction(()=>window.publicMessages?.some(m=>m.scene?.participants?.length===5));
       await popup.waitForTimeout(250);await popup.evaluate(()=>window.qaPublicCanvas=document.querySelector('canvas'));
       await page.locator('[data-arena-type]').selectOption('magic');await page.locator('[data-arena-damage]').fill('0');
       await page.locator('[data-arena-confirm]').click();
       await popup.waitForFunction(()=>window.publicMessages?.some(m=>m.effect?.kind==='magic'));
-      await popup.waitForTimeout(1000);await popup.screenshot({path:path.join(out,'app-players-revealed.png')});
+      await popup.waitForTimeout(1000);await popup.screenshot({path:path.join(out,'app-players-effect.png')});
       if(!await popup.evaluate(()=>window.qaPublicCanvas===document.querySelector('canvas')))throw Error('Public canvas recreated for an action');
       const messages=await popup.evaluate(()=>window.publicMessages);
       if(JSON.stringify(messages).includes('PRIVATE_QA_SENTINEL')||messages.some(m=>m.scene?.participants?.some(p=>'hpCurrent'in p||'ac'in p||'details'in p)))throw Error('Private state leaked');

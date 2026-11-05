@@ -1,6 +1,6 @@
 /* V3.2.3 actual browser renderer + operational team UAT, isolated storage. */
 const {chromium}=require('playwright'),fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict'),{spawn}=require('node:child_process');
-const root=path.resolve(__dirname,'..'),out=path.join(root,'docs/qa-v3.2.3/teams'),url='http://127.0.0.1:43994';
+const root=path.resolve(__dirname,'..'),out=process.env.RPG_QA_OUTPUT||path.join(root,'docs/qa-v3.2.3/teams'),url='http://127.0.0.1:43994';
 async function run(){
  fs.mkdirSync(out,{recursive:true});const server=spawn(process.execPath,['js/offline-server.mjs','43994'],{cwd:root,windowsHide:true});let browser;
  try{
@@ -44,8 +44,8 @@ async function run(){
   // Operational UI, real transfer and same-team attack, public sync and actual backup.
   await page.goto(url);await page.waitForSelector('[data-enter-adventure]');await page.locator('[data-enter-adventure]').click();
   await page.evaluate(()=>{const s=RPGMasterHost.getState(),c=RPGV3.createCombat(s,{title:'QA — Equipes livres'});for(const [sourceType,sourceId,team]of [['character','elenya','left'],['visual','barbarvore','left'],['creature','goblin-arqueiro','right'],['creature','vigia-hrim','right']]){const src=RPGBattleCatalog.source(s,sourceType,sourceId);RPGV3.addParticipant(c,{...src,sourceType,sourceId,team,hpMax:40,hpCurrent:19,initiative:12,conditions:[{id:'test',name:'Vigiando'}],resources:{test:3}})}RPGBattle.ensure(s);RPGV3.beginCombat(c);c.turnIndex=1;RPGMasterHost.persist()});
-  await page.locator('#v3-master-button').click();await page.locator('[data-v3-page="combat"]').first().click();await page.waitForFunction(()=>window.qaScene?.actors.size===4&&!qaScene.destroyed);
-  const popupWait=page.waitForEvent('popup');await page.locator('[data-arena-present]').click();const popup=await popupWait;popup.on('pageerror',e=>errors.push(e.message));await popup.waitForFunction(()=>window.qaScene?.actors.size===1);
+  await page.locator('[data-menu-toggle="table-menu"]').click();await page.locator('#v3-master-button').click();await page.locator('[data-v3-page="combat"]').first().click();await page.waitForFunction(()=>window.qaScene?.actors.size===4&&!qaScene.destroyed);
+  const popupWait=page.waitForEvent('popup');await page.locator('[data-arena-present]').click();const popup=await popupWait;popup.on('pageerror',e=>errors.push(e.message));await popup.waitForFunction(()=>window.qaScene?.actors.size===4);
   await page.locator('[data-arena-details]').click();assert(await page.locator('.participant-manager').isVisible());
   const ids=await page.evaluate(()=>Object.fromEntries(RPGV3.currentCombat(RPGMasterHost.getState()).participants.map(p=>[p.sourceId,p.id])));
   const before=await page.evaluate(()=>{const c=RPGV3.currentCombat(RPGMasterHost.getState());window.savedCanvas=qaScene.app.canvas;return {participants:JSON.parse(JSON.stringify(c.participants)),turnId:RPGV3.activeParticipant(c).id}});
@@ -53,9 +53,9 @@ async function run(){
   const after=await page.evaluate(()=>{const c=RPGV3.currentCombat(RPGMasterHost.getState());return {participants:c.participants,turnId:RPGV3.activeParticipant(c).id,sameCanvas:savedCanvas===qaScene.app.canvas,issues:qaScene.audit().issues}});
   assert(after.sameCanvas);assert.deepEqual(after.issues,[]);assert.equal(after.turnId,before.turnId);
   for(let i=0;i<4;i++)for(const k of Object.keys(before.participants[i]).filter(k=>!['team','facing'].includes(k)))assert.deepEqual(after.participants[i][k],before.participants[i][k],k);
-  await popup.waitForFunction(()=>qaScene.actors.size===1&&[...qaScene.actors.values()][0].p.team==='right');
-  await page.locator('[data-arena-target]').selectOption(ids.barbarvore);await page.locator('[data-arena-reveal]').click();
-  await popup.waitForFunction(()=>qaScene.actors.size===2);await popup.evaluate(()=>window.beforeMoveCanvas=qaScene.app.canvas);
+  await popup.waitForFunction(id=>qaScene.actors.size===4&&qaScene.actors.get(id).p.team==='right',ids.elenya);
+  await page.locator('[data-arena-target]').selectOption(ids.barbarvore);
+  await popup.waitForFunction(id=>qaScene.actors.size===4&&qaScene.selected.targetId===id,ids.barbarvore);await popup.evaluate(()=>window.beforeMoveCanvas=qaScene.app.canvas);
   await page.locator(`[data-arena-transfer="${ids.barbarvore}"]`).click();
   await popup.waitForFunction(id=>qaScene.actors.get(id)?.p.team==='left',ids.barbarvore);assert(await popup.evaluate(()=>beforeMoveCanvas===qaScene.app.canvas));
   // Same-team target is legal: Elenya and Vigia both right, face actual positions.
@@ -70,10 +70,10 @@ async function run(){
   for(const [width,height] of [[1920,1080],[1366,768],[1280,800]]){await page.setViewportSize({width,height});await page.locator('.participant-manager').scrollIntoViewIfNeeded();await page.screenshot({path:path.join(out,`manager-${width}x${height}.png`)});assert.equal(await page.locator('.participant-manager').evaluate(el=>el.scrollWidth<=el.clientWidth+2),true);}
   await page.locator('[data-arena-details]').click();await page.locator('#battle-arena-shell').scrollIntoViewIfNeeded();await page.screenshot({path:path.join(out,'mixed-master.png')});
   await popup.bringToFront();await popup.evaluate(()=>qaScene.app.render());await popup.screenshot({path:path.join(out,'mixed-public.png')});await page.bringToFront();
-  const saved=await page.evaluate(()=>JSON.parse(JSON.stringify(RPGV3.currentCombat(RPGMasterHost.getState()).participants)));
+  const saved=await page.evaluate(()=>{RPGBattle.ensure(RPGMasterHost.getState());RPGMasterHost.persist();return JSON.parse(JSON.stringify(RPGV3.currentCombat(RPGMasterHost.getState()).participants))});
   await page.waitForFunction(()=>document.querySelector('#save-state').textContent==='Salvo localmente');await page.reload();await page.waitForSelector('[data-enter-adventure]');assert.deepEqual(await page.evaluate(()=>RPGV3.currentCombat(RPGMasterHost.getState()).participants),saved);
   const dw=page.waitForEvent('download');await page.evaluate(()=>RPGMasterHost.exportBackup());const d=await dw,backup=fs.readFileSync(await d.path(),'utf8');
-  await page.evaluate(()=>RPGV3.currentCombat(RPGMasterHost.getState()).participants=[]);page.on('dialog',d=>d.accept());await page.evaluate(json=>RPGMasterHost.importBackup({target:{files:[new File([json],'qa.json',{type:'application/json'})],value:''}}),backup);assert.deepEqual(await page.evaluate(()=>RPGV3.currentCombat(RPGMasterHost.getState()).participants),saved);
+  await page.evaluate(()=>RPGV3.currentCombat(RPGMasterHost.getState()).participants=[]);page.on('dialog',d=>d.accept());const restoring=page.evaluate(json=>RPGMasterHost.importBackup({target:{files:[new File([json],'qa.json',{type:'application/json'})],value:''}}),backup);await page.locator('[data-yes]').click();await restoring;assert.deepEqual(await page.evaluate(()=>RPGV3.currentCombat(RPGMasterHost.getState()).participants),saved);
   const messages=await popup.evaluate(()=>qaMessages);for(const m of messages)for(const p of m.scene?.participants||[])for(const field of ['hpCurrent','hpMax','ac','notes','details','resources','conditions'])assert(!(field in p));
   assert.deepEqual(errors,[]);fs.writeFileSync(path.join(out,'report.json'),JSON.stringify({art,layouts,transfer:true,sameTeamAttack:true,quantity:true,search:true,reload:true,backup:true,publicPrivacy:true,publicCanvasReused:true,errors},null,2));console.log(JSON.stringify({artChecks:art.length,layouts:layouts.length,errors}));
  }finally{await browser?.close();server.kill()}

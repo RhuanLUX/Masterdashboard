@@ -11,7 +11,7 @@ A aplicação continua em HTML/CSS/JavaScript, com PixiJS e Dice Box locais. `in
 - `js/character-sheets.js`: migração somente de campos ausentes, fichas, fonte original, histórico e transferência explícita de PV do encontro. Não recalcula regras.
 - `js/adventure-import.js`: Mammoth, PDF.js e Tesseract locais; blocos tipados/escapados, imagens, originais SHA-256, revisões, prévia e publicação transacional.
 - `js/platform-ui.js`, `css/platform.css`: navegação, retomada, busca e diálogos.
-- `js/combat-tv.js`: única janela pública de combate, com canal por sessão, snapshot filtrado e sincronização de ações. A janela principal continua sendo a única escritora.
+- `js/combat-tv.js`: única janela pública de combate, com canal por sessão, snapshot visual completo da arena e sincronização de ações. A janela principal continua sendo a única escritora. `mirrorPayload` inclui todos os combatentes e os indicadores de atacante/alvo, sem notas nem campos privados. A compatibilidade com o payload antigo filtrado é separada da TV espelhada.
 - `js/campaign-search.js`, `css/campaign-search.css`: índice textual local e prévias. Sem APIs de IA ou busca remota.
 - `battle-display.html`, `js/battle-display.js`, `css/combat-tv.css`: somente a arena na TV, ocupando a janela inteira, sem história, imagens de catálogo, dados privados ou bridge de disco.
 - `js/battle-arena.js`: seleção do mestre em `combat.arenaSelection`, preservada após dano, cura e remontagem. O turno só avança por comando explícito.
