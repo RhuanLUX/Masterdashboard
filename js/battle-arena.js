@@ -67,19 +67,19 @@
     const output = text => { $('[data-arena-result]', root).textContent = text; };
     const sync = () => { scene?.select(actorId(), targetId()); output(`Atacante: ${combat.participants.find(p => p.id === actorId())?.name || '—'} · Alvo: ${combat.participants.find(p => p.id === targetId())?.name || '—'}`); };
     $('[data-arena-actor]', root).onchange = sync; $('[data-arena-target]', root).onchange = sync;
-    $('[data-arena-roll]', root).onclick = () => { $('[data-arena-rollbox]', root).hidden = false; };
-    $('[data-arena-d3]', root).onclick = () => { $('[data-arena-rollbox]', root).hidden = false; output('Mesa de dados integrada: selecione o dado e role sem sair da Arena.'); };
-    $('[data-arena-roll-close]', root).onclick = () => { $('[data-arena-rollbox]', root).hidden = true; };
-    $('[data-arena-roll-now]', root).onclick = () => { const sides = Number($('[data-arena-die]', root).value), bonus = Number($('[data-arena-bonus]', root).value) || 0, result = roll(sides), total = result.raw + bonus; $('[data-arena-applied]', root).value = total; output(`${result.detail} ${bonus ? `${bonus > 0 ? '+' : ''}${bonus}` : ''} = ${total}`); const event = api().pendingRoll(combat, { actorId: actorId(), targetId: targetId(), label: $('[data-arena-type]', root).value, roll: { notation: `d${sides}`, raw: result.raw, bonus, total, detail: result.detail } }); root.dataset.pendingEvent = event.id; save(); };
-    $('[data-arena-confirm]', root).onclick = () => { const action = $('[data-arena-type]', root).value, outcome = $('[data-arena-outcome]', root).value, applied = Number($('[data-arena-applied]', root).value) || 0, amount = Number($('[data-arena-damage]', root).value) || 0, note = $('[data-arena-note]', root).value.trim(), pending = combat.battleEvents.find(x => x.id === root.dataset.pendingEvent); const label = outcome === 'critical' ? 'Crítico' : outcome === 'fail' ? 'Falha' : 'Confirmado'; if (pending) api().confirmRoll(combat, pending.id, { original: pending.roll.total, applied, manualAdjustment: applied - pending.roll.total, result: label }); if (action === 'heal' && amount) api().applyHp(combat, targetId(), Math.abs(amount), { actorId: actorId(), label: 'Cura', narrative: note }); else if (amount) api().applyHp(combat, targetId(), -Math.abs(amount), { actorId: actorId(), label: 'Dano', narrative: note }); else api().event(combat, { type: 'action', actorId: actorId(), targetId: targetId(), label: action, narrative: note, result: label }); const text = `${label}${amount ? `: ${amount}` : ''}`; output(text); const enhanced=action==='magic'||action==='ranged',kind=enhanced?action:outcome==='normal'?action:outcome;
+    $('[data-arena-roll]', root).onclick=async()=> { $('[data-arena-rollbox]', root).hidden = false; };
+    $('[data-arena-d3]', root).onclick=async()=> { $('[data-arena-rollbox]', root).hidden = false; output('Mesa de dados integrada: selecione o dado e role sem sair da Arena.'); };
+    $('[data-arena-roll-close]', root).onclick=async()=> { $('[data-arena-rollbox]', root).hidden = true; };
+    $('[data-arena-roll-now]', root).onclick=async()=> { const sides = Number($('[data-arena-die]', root).value), bonus = Number($('[data-arena-bonus]', root).value) || 0, result = roll(sides), total = result.raw + bonus; $('[data-arena-applied]', root).value = total; output(`${result.detail} ${bonus ? `${bonus > 0 ? '+' : ''}${bonus}` : ''} = ${total}`); const event = api().pendingRoll(combat, { actorId: actorId(), targetId: targetId(), label: $('[data-arena-type]', root).value, roll: { notation: `d${sides}`, raw: result.raw, bonus, total, detail: result.detail } }); root.dataset.pendingEvent = event.id; save(); };
+    $('[data-arena-confirm]', root).onclick=async()=> { const action = $('[data-arena-type]', root).value, outcome = $('[data-arena-outcome]', root).value, applied = Number($('[data-arena-applied]', root).value) || 0, amount = Number($('[data-arena-damage]', root).value) || 0, note = $('[data-arena-note]', root).value.trim(), pending = combat.battleEvents.find(x => x.id === root.dataset.pendingEvent); const label = outcome === 'critical' ? 'Crítico' : outcome === 'fail' ? 'Falha' : 'Confirmado'; if (pending) api().confirmRoll(combat, pending.id, { original: pending.roll.total, applied, manualAdjustment: applied - pending.roll.total, result: label }); if (action === 'heal' && amount) api().applyHp(combat, targetId(), Math.abs(amount), { actorId: actorId(), label: 'Cura', narrative: note }); else if (amount) api().applyHp(combat, targetId(), -Math.abs(amount), { actorId: actorId(), label: 'Dano', narrative: note }); else api().event(combat, { type: 'action', actorId: actorId(), targetId: targetId(), label: action, narrative: note, result: label }); const text = `${label}${amount ? `: ${amount}` : ''}`; output(text); const enhanced=action==='magic'||action==='ranged',kind=enhanced?action:outcome==='normal'?action:outcome;
       effectHandle=scene&&window.RPGBattlePixi.flash(scene,actorId(),targetId(),kind,text,{spell:magicSpell,outcome});
       broadcast(combat,{actorId:actorId(),targetId:targetId(),kind,spell:magicSpell,outcome,text});save();
       $('[data-arena-confirm]',root).disabled=true;
       clearTimeout(refreshTimer);refreshTimer=setTimeout(refresh,(effectHandle?.duration||650)+150); };
-    $('[data-arena-skip]', root).onclick = () => {effectHandle?.cancel();clearTimeout(refreshTimer);refresh();};
-    $('[data-arena-narrate]', root).onclick = () => { const text = $('[data-arena-note]', root).value.trim(); if (!text) return; api().narrate(combat, { actorId: actorId(), targetId: targetId(), action: $('[data-arena-type]', root).value, text, dialogue: prompt('Diálogo opcional:', '') || '' }); $('[data-arena-note]', root).value = ''; save(); };
-    $('[data-arena-details]', root).onclick = () => { managerOpen=!managerOpen;$('.participant-manager',root).hidden=!managerOpen;$('[data-arena-details]',root).setAttribute('aria-expanded',String(managerOpen)); };
-    root.querySelectorAll('[data-arena-transfer]').forEach(button=>button.onclick=()=>{
+    $('[data-arena-skip]', root).onclick=async()=> {effectHandle?.cancel();clearTimeout(refreshTimer);refresh();};
+    $('[data-arena-narrate]', root).onclick=async()=> { const text = $('[data-arena-note]', root).value.trim(); if (!text) return; api().narrate(combat, { actorId: actorId(), targetId: targetId(), action: $('[data-arena-type]', root).value, text, dialogue: await RPGUI.prompt('Diálogo opcional:', '') || '' }); $('[data-arena-note]', root).value = ''; save(); };
+    $('[data-arena-details]', root).onclick=async()=> { managerOpen=!managerOpen;$('.participant-manager',root).hidden=!managerOpen;$('[data-arena-details]',root).setAttribute('aria-expanded',String(managerOpen)); };
+    root.querySelectorAll('[data-arena-transfer]').forEach(button=>button.onclick=async()=>{
       const id=button.dataset.arenaTransfer,p=combat.participants.find(x=>x.id===id),team=window.RPGBattleCatalog.teamOf(p)==='left'?'right':'left';
       if(!api().transfer(combat,id,team))return;
       scene?.updateParticipants(combat.participants);
@@ -90,7 +90,7 @@
       save();broadcast(combat);output(combat.history[0].text);
     });
     $('[data-arena-reveal]', root).textContent='Revelar / ocultar alvo';
-    $('[data-arena-reveal]', root).onclick = () => {
+    $('[data-arena-reveal]', root).onclick=async()=> {
       const p=combat.participants.find(x=>x.id===targetId());if(!p)return output('Selecione um participante como alvo.');
       const visible=window.RPGBattleCatalog.isPublic(p,combat),v=combat.visibility;
       v.revealedParticipantIds=(v.revealedParticipantIds||[]).filter(id=>id!==p.id);
@@ -98,12 +98,12 @@
       (visible?v.hiddenParticipantIds:v.revealedParticipantIds).push(p.id);
       save();broadcast(combat);output(`${p.name}: ${visible?'ocultado':'revelado'} para os jogadores.`);
     };
-    $('[data-arena-template]', root).onclick = () => { api().saveTemplate(state(), combat, prompt('Nome do modelo:', combat.title) || combat.title); save(); };
-    $('[data-arena-duplicate]', root).onclick = () => { api().duplicate(state(), combat, prompt('Nome da cópia:', `${combat.title} (cópia)`) || undefined); save(); host().render(); };
-    $('[data-arena-archive]', root).onclick = () => { api().archive(state(), combat); save(); output('Batalha arquivada.'); };
-    $('[data-arena-json]', root).onclick = () => download(`batalha-${combat.id}.json`, 'application/json', JSON.stringify({ schemaVersion: 5, combat }, null, 2));
-    $('[data-arena-md]', root).onclick = () => download(`batalha-${combat.id}.md`, 'text/markdown;charset=utf-8', api().toMarkdown(state(), combat));
-    $('[data-arena-present]', root).onclick = () => { const win = window.open('battle-display.html', 'rpg-master-player-display', 'popup=yes,width=1200,height=720'); if (!win) return alert('Permita pop-ups para mostrar a arena.'); setTimeout(() => broadcast(combat), 300); setTimeout(() => broadcast(combat), 1000); };
+    $('[data-arena-template]', root).onclick=async()=> { api().saveTemplate(state(), combat, await RPGUI.prompt('Nome do modelo:', combat.title) || combat.title); save(); };
+    $('[data-arena-duplicate]', root).onclick=async()=> { api().duplicate(state(), combat, await RPGUI.prompt('Nome da cópia:', `${combat.title} (cópia)`) || undefined); save(); host().render(); };
+    $('[data-arena-archive]', root).onclick=async()=> { api().archive(state(), combat); save(); output('Batalha arquivada.'); };
+    $('[data-arena-json]', root).onclick=async()=> download(`batalha-${combat.id}.json`, 'application/json', JSON.stringify({ schemaVersion: 5, combat }, null, 2));
+    $('[data-arena-md]', root).onclick=async()=> download(`batalha-${combat.id}.md`, 'text/markdown;charset=utf-8', api().toMarkdown(state(), combat));
+    $('[data-arena-present]', root).onclick=async()=> { const win = window.open('battle-display.html', 'rpg-master-player-display', 'popup=yes,width=1200,height=720'); if (!win) return RPGUI.alert('Permita pop-ups para mostrar a arena.'); setTimeout(() => broadcast(combat), 300); setTimeout(() => broadcast(combat), 1000); };
   }
   new MutationObserver(() => { if(scene&&!scene.container.isConnected){scene.destroy();scene=null;} if ($('.combat-list')) mount(); }).observe(document.documentElement, { childList: true, subtree: true }); setTimeout(mount, 400);
 })();

@@ -1,5 +1,42 @@
-# Arquitetura offline
+# Arquitetura offline e desktop
 
-`index.html` usa scripts clássicos locais para permanecer compatível com `file://`; os dados da aventura e das fichas foram incorporados em `data/*-data.js`, gerados dos JSONs originais preservados em `data/`. A camada V2 está em `data/v2-content.js`, gerada por `tools/generate_v2_content.py` a partir de `RPG_Master_V2_Content_Handoff/originais/`, que permanece imutável.
+A aplicação continua em HTML/CSS/JavaScript, com PixiJS e Dice Box locais. `index.html` usa os dados incorporados de `data/`; `file://` não é o modo suportado para workers/WebAssembly. Use o servidor local ou o aplicativo Electron.
 
-`js/app.js` contém renderização, roteamento de views, armazenamento IndexedDB/fallback, backup, galeria, Aventuras, LOFI, Atlas, Regras e Documentos. O estado editável V2 vive em `state.v2` e é adicionado por `ensureV2()` sem migrar ou apagar as fichas existentes. Não há fetch, CDN, login, telemetria ou API remota; URLs do YouTube só são abertas sob ação explícita do usuário.
+## Módulos da evolução
+
+- `js/platform-data.js`: contrato validado de estado/backup V5; aceita backups antigos compatíveis.
+- `js/platform-storage.js`: IndexedDB transacional, fila de gravação, recuperação e bridge desktop.
+- `desktop/store.cjs`: JSON versionado em pasta userData, escrita temporária + fsync + rename, backups rotativos. Escolha intencional para manter o mesmo formato portátil sem um módulo SQLite nativo adicional.
+- `desktop/main.cjs` e `preload.cjs`: Electron, protocolo local rpg://app, contextIsolation/sandbox, Node desabilitado no renderer, API IPC restrita à janela principal. Instância única e flush antes de fechar.
+- `js/character-sheets.js`: migração somente de campos ausentes, fichas, fonte original, histórico e transferência explícita de PV do encontro. Não recalcula regras.
+- `js/adventure-import.js`: Mammoth, PDF.js e Tesseract locais; blocos tipados/escapados, imagens, originais SHA-256, revisões, prévia e publicação transacional.
+- `js/platform-ui.js`, `css/platform.css`: navegação, retomada, busca e diálogos.
+
+Os módulos de combate, dados, temas e conteúdo existente são preservados. Adaptadores de interface receberam diálogos assíncronos porque prompt nativo não é suportado pelo Electron. O participante da companhia é criado diretamente da ficha canônica; os encontros continuam com cópias próprias.
+
+## Desenvolvimento
+
+Use Node.js 24 e pnpm 11.25.0. Instalação de dependências/build requer internet; uso do pacote final não requer.
+
+```sh
+pnpm install --frozen-lockfile --ignore-scripts
+node node_modules/electron/install.js
+pnpm start
+pnpm test
+node test/verify.js
+pnpm dist:win
+# em um Mac, gera Intel e Apple Silicon:
+pnpm dist:mac
+```
+
+`vendor/import/` já está versionado. Para regenerar: `pnpm vendor`. Licenças estão na mesma pasta. `tools/build-icon.cjs` rasteriza o ícone vetorial original para os formatos de empacotamento. Para QA no navegador Windows: `node tests/platform-browser.cjs`. Para desktop em perfil isolado: `node tests/desktop-smoke.cjs`; use a variável `RPG_TEST_EXE` para testar o executável empacotado.
+
+O workflow manual **Desktop installers** usa runners Windows/macOS, testes de núcleo e smoke desktop, e publica os instaladores como artefatos de Actions. Builds não recebem assinatura/notarização sem certificados configurados. `dist/` e perfis QA não entram no Git.
+
+## Migração
+
+O navegador mantém IndexedDB por origem; o iniciador agora fixa 41731. O desktop usa pasta de dados própria e a importação de backup é a ponte suportada. Nunca buscar credenciais ou bancos de perfis pessoais do navegador. Antes da restauração há validação e cópia de recuperação. Não foi alterado qualquer documento-fonte ou regra D20.
+
+## Limites deliberados
+
+50 MB por importação, 160 páginas por PDF, 512 MB no arquivo de campanha desktop, 150 alterações por ficha, 5 recuperações no navegador / 10 no desktop. Imagens importadas e versões podem aumentar o backup. Originais e transcrições permanecem distintos: OCR não é tratado como fonte infalível. Não há modelo de IA, API remota, CDN ou download de idioma durante o uso.

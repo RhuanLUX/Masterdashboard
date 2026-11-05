@@ -1,0 +1,39 @@
+{
+  "name": "rpg-master-dashboard",
+  "version": "4.0.0",
+  "private": true,
+  "description": "Crônica dos Três Destinos — campanha local e offline",
+  "author": "Rhuan LUX",
+  "main": "desktop/main.cjs",
+  "scripts": {
+    "start": "electron .",
+    "vendor": "node tools/vendor-import.cjs",
+    "test": "node tests/platform-core.cjs",
+    "dist:win": "electron-builder --win nsis --x64",
+    "dist:mac": "electron-builder --mac dmg --x64 --arm64"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1",
+    "pdf-lib": "1.17.1",
+    "sharp": "0.34.5",
+    "electron": "45.2.3",
+    "electron-builder": "26.18.0",
+    "mammoth": "1.13.0",
+    "pdfjs-dist": "6.5.438",
+    "tesseract.js": "7.0.0",
+    "tesseract.js-core": "7.0.0",
+    "@tesseract.js-data/por": "1.0.0",
+    "@tesseract.js-data/eng": "1.0.0"
+  },
+  "build": {
+    "appId": "com.rhuanlux.rpgmaster",
+    "productName": "RPG Master",
+    "directories": {"output": "dist"},
+    "files": ["index.html", "battle-display.html", "js/**/*", "css/**/*", "data/**/*", "assets/**/*", "vendor/**/*", "source/**/*", "RPG_Master_V2_Content_Handoff/originais/**/*", "desktop/**/*", "README_USO.md", "docs/GUIA_PLATAFORMA_V4.md", "docs/THIRD_PARTY_NOTICES.md", "package.json"],
+    "asar": true,
+    "icon": "desktop/icon.png",
+    "win": {"target": "nsis", "icon": "desktop/icon.ico", "signExecutable": false},
+    "nsis": {"oneClick": false, "perMachine": false, "allowToChangeInstallationDirectory": true, "deleteAppDataOnUninstall": false, "createDesktopShortcut": true, "artifactName": "RPG-Master-${version}-Windows-${arch}.${ext}"},
+    "mac": {"target": "dmg", "category": "public.app-category.role-playing-games", "artifactName": "RPG-Master-${version}-macOS-${arch}.${ext}"}
+  }
+}

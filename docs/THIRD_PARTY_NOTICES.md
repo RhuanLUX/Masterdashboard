@@ -1,5 +1,14 @@
 # Componentes de terceiros
 
+## Importação e aplicativo desktop 4.0
+
+- Mammoth 1.13.0 (BSD-2-Clause): https://github.com/mwilliamson/mammoth.js. Licença em `vendor/import/licenses/mammoth.txt`.
+- PDF.js 6.5.438 (Apache-2.0): https://github.com/mozilla/pdf.js. Licença em `vendor/import/licenses/pdfjs.txt`; fontes/CMaps/WASM incluídos localmente.
+- Tesseract.js 7.0.0 e tesseract.js-core 7.0.0 (Apache-2.0): https://github.com/naptha/tesseract.js. Licenças em `vendor/import/licenses/`; dados de idioma português/inglês de `@tesseract.js-data` incluídos para uso offline.
+- Electron 45.2.3 (MIT e componentes Chromium): https://www.electronjs.org/. Os avisos de licença do runtime acompanham o pacote gerado. Electron-builder é ferramenta de build, não uma dependência externa do usuário final.
+
+O ícone `desktop/icon.svg` foi desenhado como vetor original para este aplicativo.
+
 ## PixiJS 8.22.0
 
 O renderizador local da Arena V3.2 usa PixiJS 8.22.0, distribuído sob a licença MIT.

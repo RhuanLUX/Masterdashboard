@@ -1,6 +1,6 @@
 /* Actual offline 3D dice regression; isolated browser storage, never user data. */
 const {chromium}=require('playwright'),fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict'),{spawn}=require('node:child_process');
-const root=path.resolve(__dirname,'..'),out=path.join(root,'docs/qa-v3.2.3/dice'),url='http://127.0.0.1:43995';
+const root=path.resolve(__dirname,'..'),out=process.env.RPG_QA_OUTPUT||path.join(root,'docs/qa-v3.2.3/dice'),url='http://127.0.0.1:43995';
 async function run(){
  fs.mkdirSync(out,{recursive:true});const server=spawn(process.execPath,['js/offline-server.mjs','43995'],{cwd:root,windowsHide:true});let browser;
  try{
@@ -9,7 +9,7 @@ async function run(){
   const context=await browser.newContext({viewport:{width:1366,height:768}}),page=await context.newPage(),errors=[],rolls=[],externalRequests=[];
   await context.route('**/*',route=>{const u=route.request().url();if(u.startsWith(url)||u.startsWith('data:')||u.startsWith('blob:'))return route.continue();externalRequests.push(u);return route.abort()});
   page.on('pageerror',e=>errors.push(e.message));
-  await page.goto(url);await page.locator('[data-enter-adventure]').click();await page.locator('[data-view="dice"]').click();
+  await page.goto(url);await page.locator('[data-enter-adventure]').click();await page.locator('[data-menu-toggle="table-menu"]').click();await page.locator('[data-view="dice"]').click();
   await page.waitForSelector('#dice-3d-stage[data-dice-ready="true"]',{timeout:60000});
   async function roll(button){
    const previous=await page.evaluate(()=>RPGMasterHost.getState().diceHistory[0]?.at||0);

@@ -1,6 +1,6 @@
 /* Real Pixi FX and UI/public regression; isolated browser data, localhost only. */
 const {chromium}=require('playwright'),fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict'),{spawn}=require('node:child_process');
-const root=path.resolve(__dirname,'..'),out=path.join(root,'docs/qa-effects-2026-10-28'),url='http://127.0.0.1:43996';
+const root=path.resolve(__dirname,'..'),out=process.env.RPG_QA_OUTPUT||path.join(root,'docs/qa-effects-2026-10-28'),url='http://127.0.0.1:43996';
 async function run(){
  fs.mkdirSync(out,{recursive:true});const server=spawn(process.execPath,['js/offline-server.mjs','43996'],{cwd:root,windowsHide:true});let browser;
  try{
@@ -35,7 +35,7 @@ async function run(){
   assert(await page.evaluate(()=>fxScene.layers.effects.children.length===0));await page.emulateMedia({reducedMotion:'no-preference'});
   await page.goto(url);await page.locator('[data-enter-adventure]').click();
   await page.evaluate(()=>{const s=RPGMasterHost.getState(),c=RPGV3.createCombat(s,{title:'QA — Magias elementais'});for(const id of ['calion','elenya'])RPGV3.addParticipant(c,{sourceType:'character',sourceId:id,name:id,team:id==='calion'?'left':'right',hpMax:20,hpCurrent:20});RPGMasterHost.persist()});
-  await page.locator('#v3-master-button').click();await page.locator('[data-v3-page="combat"]').first().click();await page.waitForFunction(()=>window.fxScene?.actors.size===2&&!fxScene.destroyed);
+  await page.locator('[data-menu-toggle="table-menu"]').click();await page.locator('#v3-master-button').click();await page.locator('[data-v3-page="combat"]').first().click();await page.waitForFunction(()=>window.fxScene?.actors.size===2&&!fxScene.destroyed);
   const publicWait=page.waitForEvent('popup');await page.locator('[data-arena-present]').click();const popup=await publicWait;popup.on('pageerror',e=>errors.push(e.message));await popup.waitForFunction(()=>window.fxScene?.actors.size===2);
   assert(!(await page.locator('[data-arena-spell]').isVisible()));await page.locator('[data-arena-type]').selectOption('magic');
   for(const spell of ['fire','ice','lightning','missiles']){

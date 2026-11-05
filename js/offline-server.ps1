@@ -26,7 +26,7 @@ try {
       $relative = [uri]::UnescapeDataString($rawPath.TrimStart('/'))
       if ([string]::IsNullOrWhiteSpace($relative)) { $relative = 'index.html' }
       $candidate = [IO.Path]::GetFullPath((Join-Path $root $relative))
-      if (-not $candidate.StartsWith($root, [StringComparison]::OrdinalIgnoreCase) -or -not (Test-Path -LiteralPath $candidate -PathType Leaf)) {
+      if (-not $candidate.StartsWith($root + [IO.Path]::DirectorySeparatorChar, [StringComparison]::OrdinalIgnoreCase) -or -not (Test-Path -LiteralPath $candidate -PathType Leaf)) {
         $body = [Text.Encoding]::UTF8.GetBytes('Not found')
         $head = "HTTP/1.1 404 Not Found`r`nContent-Length: $($body.Length)`r`nConnection: close`r`n`r`n"
         $headBytes = [Text.Encoding]::ASCII.GetBytes($head)
