@@ -2,6 +2,8 @@
 
 No Windows, instale o arquivo **RPG-Master-4.0.0-Windows-x64.exe** da pasta `dist/` e abra o atalho RPG Master. Ele inclui todos os recursos locais, sem exigir Node.js ou Python.
 
+No Mac, abra **RPG-Master-4.0.0-macOS-arm64.dmg** (Apple Silicon) ou **RPG-Master-4.0.0-macOS-x64.dmg** (Intel) e arraste o app para Aplicativos. Os instaladores também estão nos artefatos do [build verificado](https://github.com/RhuanLUX/Masterdashboard/actions/runs/42041203893). São builds sem certificado de editor/notarização; veja os limites no relatório de QA.
+
 Para executar direto da pasta: use apenas **INICIAR_RPG.bat** (Windows) ou **INICIAR_RPG.command** (macOS). O servidor e o navegador abrem juntos no endereço fixo `http://127.0.0.1:41731/`. Não é necessário abrir outro arquivo. O modo navegador no macOS requer Python 3 ou Node.js; os pacotes desktop incluem o runtime.
 
 **Antes de trocar do navegador para o instalável, exporte um backup em Configurações e importe-o no aplicativo.** Os dois armazenamentos são separados. Versões antigas podiam salvar em outra porta local: exporte pelo endereço onde suas alterações aparecem.

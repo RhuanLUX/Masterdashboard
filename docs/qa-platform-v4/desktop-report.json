@@ -8,11 +8,11 @@
   "d100": {
     "notation": "1d100",
     "die": 100,
-    "roll": 75,
-    "historyDetail": "d100 70 + 5 = 75",
+    "roll": 42,
+    "historyDetail": "d100 40 + 2 = 42",
     "bonus": 0,
-    "total": 75,
-    "at": 1793886529463
+    "total": 42,
+    "at": 1793887525070
   },
-  "profile": "E:\\1.Programacao\\RPG_Master_Dashboard\\test-results\\desktop-1793886517566"
+  "profile": "E:\\1.Programacao\\RPG_Master_Dashboard\\test-results\\desktop-1793887510801"
 }

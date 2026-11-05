@@ -31,7 +31,7 @@ pnpm dist:mac
 
 `vendor/import/` já está versionado. Para regenerar: `pnpm vendor`. Licenças estão na mesma pasta. `tools/build-icon.cjs` rasteriza o ícone vetorial original para os formatos de empacotamento. Para QA no navegador Windows: `node tests/platform-browser.cjs`. Para desktop em perfil isolado: `node tests/desktop-smoke.cjs`; use a variável `RPG_TEST_EXE` para testar o executável empacotado.
 
-O workflow manual **Desktop installers** usa runners Windows/macOS, testes de núcleo e smoke desktop, e publica os instaladores como artefatos de Actions. Builds não recebem assinatura/notarização sem certificados configurados. `dist/` e perfis QA não entram no Git.
+O workflow manual **Desktop installers** usa runners Windows, Mac Intel e Apple Silicon separados. Testa núcleo, persistência, arena, dados e importação/OCR tanto em desenvolvimento quanto no aplicativo empacotado; publica instaladores como artefatos de Actions. Não cria releases automaticamente. O Mac recebe assinatura técnica ad-hoc para executar o pacote, sem certificado de desenvolvedor nem notarização Apple; o Windows não recebe assinatura de editor. `dist/` e perfis QA não entram no Git.
 
 ## Migração
 

@@ -26,9 +26,25 @@ Ambiente local: Windows 11, Edge headless e Electron 45.2.3, perfis de teste sep
 
 Resultados estruturados: `qa-platform-v4/browser-report.json`, `formats-report.json`, `desktop-report.json`, `desktop-import-report.json`, `effects/report.json`, `themes/report.json`, `dice/report.json`. Os scripts estão em `tests/`; bibliotecas de teste estão fixadas em `package.json`/`pnpm-lock.yaml`.
 
+## Builds e testes em cada plataforma
+
+Execução [Desktop installers 42041203893](https://github.com/RhuanLUX/Masterdashboard/actions/runs/42041203893), commit de implementação `c1f1987`, concluída com sucesso nos três ambientes:
+
+| Ambiente | Build | Aplicativo empacotado | DOCX, PDF e OCR locais |
+|---|---|---|---|
+| Windows x64 | Instalador NSIS gerado | Persistência/reabertura, arena Pixi, apresentação e d100 passaram | Passaram |
+| macOS Intel x64 | DMG gerado em runner Intel | Persistência/reabertura, arena Pixi, apresentação e d100 passaram | Passaram |
+| macOS Apple Silicon arm64 | DMG gerado em runner arm64 | Persistência/reabertura, arena Pixi, apresentação e d100 passaram | Passaram |
+
+Os testes também passaram antes do empacotamento. Resultado da API do GitHub registrado em `qa-platform-v4/ci-report.json`. Cada artefato da execução contém o instalador, capturas reais e os relatórios desktop/importação de sua arquitetura. As evidências Mac também foram baixadas para `qa-platform-v4/macOS-x64/` e `qa-platform-v4/macOS-arm64/`; os três instaladores estão na pasta local `dist/`. Artefatos de Actions têm retenção de 14 dias; preserve uma cópia dos instaladores.
+
+As capturas de sessão, importação e arena Mac foram inspecionadas. No display público, o goblin permanece oculto porque o teste não o revela ao jogador; a imagem do mestre contém ambos os participantes. O runner Apple Silicon limita a janela à sua área de trabalho menor, com rolagem disponível. A matriz de 1920×1080 / 1366×768 / 1280×800 foi exercitada no navegador Windows.
+
+Na primeira execução remota, o build Windows tentou publicar uma release automaticamente sem token; o instalador havia sido gerado, mas o job falhou. O build foi corrigido para `--publish never`. O encerramento após salvar no Mac também foi corrigido para concluir o pedido de sair do aplicativo, sem depender do comportamento Windows de fechar a última janela. A execução acima testa ambas as correções.
+
 ## Limites de aceite
 
-O ambiente local não é macOS. O projeto inclui empacotamento Intel/Apple Silicon e workflow em runner macOS; a situação dos artefatos e desse teste remoto deve ser consultada no GitHub. Um build não equivale a teste presencial em ambos os tipos de Mac. Sem assinatura Windows e sem certificado/notarização Apple nesta entrega.
+Os testes Mac foram automatizados em runners nativos de cada arquitetura, com capturas do aplicativo real; não houve teste presencial do mestre nesses computadores. O arraste pelo Finder e o assistente NSIS/desinstalação não passaram por teste manual. Windows 10 não foi executado diretamente nesta rodada. Sem assinatura de editor Windows e sem certificado/notarização Apple nesta entrega; os pacotes Mac usam assinatura técnica ad-hoc.
 
 OCR, colunas/tabelas complexas de PDF e recursos exóticos do Word exigem conferência. O arquivo original permanece preservado. Não há IA remota, geração automática de arte ou inventário de regras criado por inferência.
 

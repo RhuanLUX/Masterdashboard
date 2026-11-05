@@ -4,7 +4,7 @@
 
 **Windows:** abra `RPG-Master-4.0.0-Windows-x64.exe`, escolha a pasta de instalação e use o atalho **RPG Master**. O aplicativo inclui seu próprio navegador; não exige Node.js, Python, servidor ou internet no computador do jogador. Os dados ficam fora da pasta de instalação.
 
-**macOS:** o projeto gera dois DMGs, para Intel (`x64`) e Apple Silicon (`arm64`), pelo workflow **Desktop installers** do GitHub ou por `pnpm dist:mac` em um Mac. Arraste RPG Master para Aplicativos. Consulte o relatório de QA para saber quais builds e sistemas foram efetivamente testados. O pacote ainda não possui assinatura de desenvolvedor ou notarização Apple.
+**macOS:** há dois pacotes DMG, para Intel (`x64`) e Apple Silicon (`arm64`), gerados pelo workflow **Desktop installers** do GitHub ou por `pnpm dist:mac` em um Mac. Arraste RPG Master para Aplicativos. Consulte o relatório de QA para saber quais builds e sistemas foram efetivamente testados. O pacote usa assinatura técnica ad-hoc; ainda não possui certificado de desenvolvedor ou notarização Apple.
 
 **Pasta do projeto, sem instalar:** use somente `INICIAR_RPG.bat` no Windows ou `INICIAR_RPG.command` no macOS. O iniciador abre `http://127.0.0.1:41731/` quando o servidor está pronto. Não abra `index.html` diretamente: os workers e os dados 3D precisam do servidor ou do aplicativo. No macOS, o modo navegador requer Node.js ou Python 3; o `.command` pode precisar de `chmod +x INICIAR_RPG.command` uma vez.
 

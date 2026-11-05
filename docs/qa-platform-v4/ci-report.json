@@ -1,0 +1,113 @@
+{
+  "url": "https://github.com/RhuanLUX/Masterdashboard/actions/runs/42041203893",
+  "commit": "c1f1987af6b0916ffce4dc990360e4f2b6e5578f",
+  "status": "completed",
+  "conclusion": "success",
+  "jobs": [
+    {
+      "name": "package (windows-latest, x64)",
+      "status": "completed",
+      "conclusion": "success",
+      "steps": [
+        {
+          "name": "Run node node_modules/electron/install.js",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run node tests/platform-core.cjs",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run node tests/desktop-smoke.cjs",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run node tests/desktop-import.cjs",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run pnpm dist:win",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run pnpm exec electron-builder --mac dmg --x64 --publish never",
+          "conclusion": "skipped"
+        },
+        {
+          "name": "Run node tools/test-packaged.cjs",
+          "conclusion": "success"
+        }
+      ]
+    },
+    {
+      "name": "package (macos-latest, arm64)",
+      "status": "completed",
+      "conclusion": "success",
+      "steps": [
+        {
+          "name": "Run node node_modules/electron/install.js",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run node tests/platform-core.cjs",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run node tests/desktop-smoke.cjs",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run node tests/desktop-import.cjs",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run pnpm dist:win",
+          "conclusion": "skipped"
+        },
+        {
+          "name": "Run pnpm exec electron-builder --mac dmg --arm64 --publish never",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run node tools/test-packaged.cjs",
+          "conclusion": "success"
+        }
+      ]
+    },
+    {
+      "name": "package (macos-15-intel, x64)",
+      "status": "completed",
+      "conclusion": "success",
+      "steps": [
+        {
+          "name": "Run node node_modules/electron/install.js",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run node tests/platform-core.cjs",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run node tests/desktop-smoke.cjs",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run node tests/desktop-import.cjs",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run pnpm dist:win",
+          "conclusion": "skipped"
+        },
+        {
+          "name": "Run pnpm exec electron-builder --mac dmg --x64 --publish never",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run node tools/test-packaged.cjs",
+          "conclusion": "success"
+        }
+      ]
+    }
+  ]
+}
