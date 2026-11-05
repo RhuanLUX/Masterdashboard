@@ -8,7 +8,7 @@
     setInterval(()=>channel.postMessage({type:'heartbeat'}),2000);
     addEventListener('pagehide',()=>channel.postMessage({type:'sleep'}));
   }
-  function publish(effect=null){if(!channel)return;const c=current();channel.postMessage({type:'scene',scene:c&&window.RPGBattleArena?.mirrorPayload(c)||{participants:[],activeId:null,targetId:null},effect})}
+  function publish(effect=null,speech=null){if(!channel)return;const c=current();channel.postMessage({type:'scene',scene:c&&window.RPGBattleArena?.mirrorPayload(c)||{participants:[],activeId:null,targetId:null},effect,speech})}
   function open(){if(!('BroadcastChannel'in window))return RPGUI.alert('Este navegador não oferece a sincronização da TV. Abra o RPG Master em um navegador atualizado.');init();if(tv&&!tv.closed){tv.focus();publish();return}
     tv=window.open('battle-display.html?tv='+token,'rpg-combat-tv-'+token,'popup=yes,width=1280,height=800');if(!tv)return RPGUI.alert('Permita pop-ups deste endereço para abrir a TV de combate.');publish();
   }

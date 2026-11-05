@@ -1,0 +1,2682 @@
+{
+  "art": [
+    {
+      "key": "visual:barbarvore",
+      "team": "left",
+      "idle": true,
+      "attack": true,
+      "damage": true,
+      "incapacitated": true,
+      "unmirrored": true
+    },
+    {
+      "key": "visual:barbarvore",
+      "team": "right",
+      "idle": true,
+      "attack": true,
+      "damage": true,
+      "incapacitated": true,
+      "unmirrored": true
+    },
+    {
+      "key": "creature:orc-lanceiro-inverno",
+      "team": "left",
+      "idle": true,
+      "attack": true,
+      "damage": true,
+      "incapacitated": true,
+      "unmirrored": true
+    },
+    {
+      "key": "creature:orc-lanceiro-inverno",
+      "team": "right",
+      "idle": true,
+      "attack": true,
+      "damage": true,
+      "incapacitated": true,
+      "unmirrored": true
+    },
+    {
+      "key": "creature:uruk-hai-capitao",
+      "team": "left",
+      "idle": true,
+      "attack": true,
+      "damage": true,
+      "incapacitated": true,
+      "unmirrored": true
+    },
+    {
+      "key": "creature:uruk-hai-capitao",
+      "team": "right",
+      "idle": true,
+      "attack": true,
+      "damage": true,
+      "incapacitated": true,
+      "unmirrored": true
+    },
+    {
+      "key": "creature:vigia-hrim",
+      "team": "left",
+      "idle": true,
+      "attack": true,
+      "damage": true,
+      "incapacitated": true,
+      "unmirrored": true
+    },
+    {
+      "key": "creature:vigia-hrim",
+      "team": "right",
+      "idle": true,
+      "attack": true,
+      "damage": true,
+      "incapacitated": true,
+      "unmirrored": true
+    },
+    {
+      "key": "creature:criatura-aglor",
+      "team": "left",
+      "idle": true,
+      "attack": true,
+      "damage": true,
+      "incapacitated": true,
+      "unmirrored": true
+    },
+    {
+      "key": "creature:criatura-aglor",
+      "team": "right",
+      "idle": true,
+      "attack": true,
+      "damage": true,
+      "incapacitated": true,
+      "unmirrored": true
+    },
+    {
+      "key": "creature:draig-cinzas",
+      "team": "left",
+      "idle": true,
+      "attack": true,
+      "damage": true,
+      "incapacitated": true,
+      "unmirrored": true
+    },
+    {
+      "key": "creature:draig-cinzas",
+      "team": "right",
+      "idle": true,
+      "attack": true,
+      "damage": true,
+      "incapacitated": true,
+      "unmirrored": true
+    },
+    {
+      "key": "creature:serpe-gelo-hrim",
+      "team": "left",
+      "idle": true,
+      "attack": true,
+      "damage": true,
+      "incapacitated": true,
+      "unmirrored": true
+    },
+    {
+      "key": "creature:serpe-gelo-hrim",
+      "team": "right",
+      "idle": true,
+      "attack": true,
+      "damage": true,
+      "incapacitated": true,
+      "unmirrored": true
+    },
+    {
+      "key": "visual:aglor",
+      "team": "left",
+      "idle": true,
+      "attack": true,
+      "damage": true,
+      "incapacitated": true,
+      "unmirrored": true
+    },
+    {
+      "key": "visual:aglor",
+      "team": "right",
+      "idle": true,
+      "attack": true,
+      "damage": true,
+      "incapacitated": true,
+      "unmirrored": true
+    },
+    {
+      "key": "visual:orc-inverno",
+      "team": "left",
+      "idle": true,
+      "attack": true,
+      "damage": true,
+      "incapacitated": true,
+      "unmirrored": true
+    },
+    {
+      "key": "visual:orc-inverno",
+      "team": "right",
+      "idle": true,
+      "attack": true,
+      "damage": true,
+      "incapacitated": true,
+      "unmirrored": true
+    },
+    {
+      "key": "visual:alatar",
+      "team": "left",
+      "idle": true,
+      "attack": true,
+      "damage": true,
+      "incapacitated": true,
+      "unmirrored": true
+    },
+    {
+      "key": "visual:alatar",
+      "team": "right",
+      "idle": true,
+      "attack": true,
+      "damage": true,
+      "incapacitated": true,
+      "unmirrored": true
+    },
+    {
+      "key": "visual:eira",
+      "team": "left",
+      "idle": true,
+      "attack": true,
+      "damage": true,
+      "incapacitated": true,
+      "unmirrored": true
+    },
+    {
+      "key": "visual:eira",
+      "team": "right",
+      "idle": true,
+      "attack": true,
+      "damage": true,
+      "incapacitated": true,
+      "unmirrored": true
+    },
+    {
+      "key": "visual:maelith",
+      "team": "left",
+      "idle": true,
+      "attack": true,
+      "damage": true,
+      "incapacitated": true,
+      "unmirrored": true
+    },
+    {
+      "key": "visual:maelith",
+      "team": "right",
+      "idle": true,
+      "attack": true,
+      "damage": true,
+      "incapacitated": true,
+      "unmirrored": true
+    },
+    {
+      "key": "visual:rei-edran",
+      "team": "left",
+      "idle": true,
+      "attack": true,
+      "damage": true,
+      "incapacitated": true,
+      "unmirrored": true
+    },
+    {
+      "key": "visual:rei-edran",
+      "team": "right",
+      "idle": true,
+      "attack": true,
+      "damage": true,
+      "incapacitated": true,
+      "unmirrored": true
+    },
+    {
+      "key": "visual:talenir",
+      "team": "left",
+      "idle": true,
+      "attack": true,
+      "damage": true,
+      "incapacitated": true,
+      "unmirrored": true
+    },
+    {
+      "key": "visual:talenir",
+      "team": "right",
+      "idle": true,
+      "attack": true,
+      "damage": true,
+      "incapacitated": true,
+      "unmirrored": true
+    },
+    {
+      "key": "visual:morgoth",
+      "team": "left",
+      "idle": true,
+      "attack": true,
+      "damage": true,
+      "incapacitated": true,
+      "unmirrored": true
+    },
+    {
+      "key": "visual:morgoth",
+      "team": "right",
+      "idle": true,
+      "attack": true,
+      "damage": true,
+      "incapacitated": true,
+      "unmirrored": true
+    },
+    {
+      "key": "visual:durin-i",
+      "team": "left",
+      "idle": true,
+      "attack": true,
+      "damage": true,
+      "incapacitated": true,
+      "unmirrored": true
+    },
+    {
+      "key": "visual:durin-i",
+      "team": "right",
+      "idle": true,
+      "attack": true,
+      "damage": true,
+      "incapacitated": true,
+      "unmirrored": true
+    },
+    {
+      "key": "visual:durin-iii",
+      "team": "left",
+      "idle": true,
+      "attack": true,
+      "damage": true,
+      "incapacitated": true,
+      "unmirrored": true
+    },
+    {
+      "key": "visual:durin-iii",
+      "team": "right",
+      "idle": true,
+      "attack": true,
+      "damage": true,
+      "incapacitated": true,
+      "unmirrored": true
+    },
+    {
+      "key": "visual:durin-vi",
+      "team": "left",
+      "idle": true,
+      "attack": true,
+      "damage": true,
+      "incapacitated": true,
+      "unmirrored": true
+    },
+    {
+      "key": "visual:durin-vi",
+      "team": "right",
+      "idle": true,
+      "attack": true,
+      "damage": true,
+      "incapacitated": true,
+      "unmirrored": true
+    },
+    {
+      "key": "visual:lethariel",
+      "team": "left",
+      "idle": true,
+      "attack": true,
+      "damage": true,
+      "incapacitated": true,
+      "unmirrored": true
+    },
+    {
+      "key": "visual:lethariel",
+      "team": "right",
+      "idle": true,
+      "attack": true,
+      "damage": true,
+      "incapacitated": true,
+      "unmirrored": true
+    },
+    {
+      "key": "visual:guarda-minas-tirith",
+      "team": "left",
+      "idle": true,
+      "attack": true,
+      "damage": true,
+      "incapacitated": true,
+      "unmirrored": true
+    },
+    {
+      "key": "visual:guarda-minas-tirith",
+      "team": "right",
+      "idle": true,
+      "attack": true,
+      "damage": true,
+      "incapacitated": true,
+      "unmirrored": true
+    },
+    {
+      "key": "visual:pai-elenya",
+      "team": "left",
+      "idle": true,
+      "attack": true,
+      "damage": true,
+      "incapacitated": true,
+      "unmirrored": true
+    },
+    {
+      "key": "visual:pai-elenya",
+      "team": "right",
+      "idle": true,
+      "attack": true,
+      "damage": true,
+      "incapacitated": true,
+      "unmirrored": true
+    },
+    {
+      "key": "visual:harl-durn",
+      "team": "left",
+      "idle": true,
+      "attack": true,
+      "damage": true,
+      "incapacitated": true,
+      "unmirrored": true
+    },
+    {
+      "key": "visual:harl-durn",
+      "team": "right",
+      "idle": true,
+      "attack": true,
+      "damage": true,
+      "incapacitated": true,
+      "unmirrored": true
+    },
+    {
+      "key": "visual:dito-afinadinho",
+      "team": "left",
+      "idle": true,
+      "attack": true,
+      "damage": true,
+      "incapacitated": true,
+      "unmirrored": true
+    },
+    {
+      "key": "visual:dito-afinadinho",
+      "team": "right",
+      "idle": true,
+      "attack": true,
+      "damage": true,
+      "incapacitated": true,
+      "unmirrored": true
+    },
+    {
+      "key": "visual:pai-inverno",
+      "team": "left",
+      "idle": true,
+      "attack": true,
+      "damage": true,
+      "incapacitated": true,
+      "unmirrored": true
+    },
+    {
+      "key": "visual:pai-inverno",
+      "team": "right",
+      "idle": true,
+      "attack": true,
+      "damage": true,
+      "incapacitated": true,
+      "unmirrored": true
+    },
+    {
+      "key": "character:elenya",
+      "team": "left",
+      "idle": true,
+      "attack": true,
+      "damage": true,
+      "incapacitated": true,
+      "unmirrored": true
+    },
+    {
+      "key": "character:elenya",
+      "team": "right",
+      "idle": true,
+      "attack": true,
+      "damage": true,
+      "incapacitated": true,
+      "unmirrored": true
+    },
+    {
+      "key": "character:calion",
+      "team": "left",
+      "idle": true,
+      "attack": true,
+      "damage": true,
+      "incapacitated": true,
+      "unmirrored": true
+    },
+    {
+      "key": "character:calion",
+      "team": "right",
+      "idle": true,
+      "attack": true,
+      "damage": true,
+      "incapacitated": true,
+      "unmirrored": true
+    },
+    {
+      "key": "character:nando",
+      "team": "left",
+      "idle": true,
+      "attack": true,
+      "damage": true,
+      "incapacitated": true,
+      "unmirrored": true
+    },
+    {
+      "key": "character:nando",
+      "team": "right",
+      "idle": true,
+      "attack": true,
+      "damage": true,
+      "incapacitated": true,
+      "unmirrored": true
+    },
+    {
+      "key": "character:anao",
+      "team": "left",
+      "idle": true,
+      "attack": true,
+      "damage": true,
+      "incapacitated": true,
+      "unmirrored": true
+    },
+    {
+      "key": "character:anao",
+      "team": "right",
+      "idle": true,
+      "attack": true,
+      "damage": true,
+      "incapacitated": true,
+      "unmirrored": true
+    },
+    {
+      "key": "creature:goblin-lanceiro",
+      "team": "left",
+      "idle": true,
+      "attack": true,
+      "damage": true,
+      "incapacitated": true,
+      "unmirrored": true
+    },
+    {
+      "key": "creature:goblin-lanceiro",
+      "team": "right",
+      "idle": true,
+      "attack": true,
+      "damage": true,
+      "incapacitated": true,
+      "unmirrored": true
+    },
+    {
+      "key": "creature:goblin-arqueiro",
+      "team": "left",
+      "idle": true,
+      "attack": true,
+      "damage": true,
+      "incapacitated": true,
+      "unmirrored": true
+    },
+    {
+      "key": "creature:goblin-arqueiro",
+      "team": "right",
+      "idle": true,
+      "attack": true,
+      "damage": true,
+      "incapacitated": true,
+      "unmirrored": true
+    },
+    {
+      "key": "creature:goblin-espadachim",
+      "team": "left",
+      "idle": true,
+      "attack": true,
+      "damage": true,
+      "incapacitated": true,
+      "unmirrored": true
+    },
+    {
+      "key": "creature:goblin-espadachim",
+      "team": "right",
+      "idle": true,
+      "attack": true,
+      "damage": true,
+      "incapacitated": true,
+      "unmirrored": true
+    },
+    {
+      "key": "creature:uruk-hai-batedor",
+      "team": "left",
+      "idle": true,
+      "attack": true,
+      "damage": true,
+      "incapacitated": true,
+      "unmirrored": true
+    },
+    {
+      "key": "creature:uruk-hai-batedor",
+      "team": "right",
+      "idle": true,
+      "attack": true,
+      "damage": true,
+      "incapacitated": true,
+      "unmirrored": true
+    },
+    {
+      "key": "creature:espectro-sombras",
+      "team": "left",
+      "idle": true,
+      "attack": true,
+      "damage": true,
+      "incapacitated": true,
+      "unmirrored": true
+    },
+    {
+      "key": "creature:espectro-sombras",
+      "team": "right",
+      "idle": true,
+      "attack": true,
+      "damage": true,
+      "incapacitated": true,
+      "unmirrored": true
+    }
+  ],
+  "layouts": [
+    {
+      "width": 1920,
+      "height": 1080,
+      "a": 1,
+      "b": 0,
+      "bounds": {
+        "width": 964,
+        "height": 560,
+        "entries": [
+          {
+            "id": "p0",
+            "left": 140.3748607942496,
+            "right": 303.06513920575037,
+            "top": 358.80000000000007,
+            "bottom": 515.6,
+            "footY": 515.4753577106519,
+            "scale": 0.12464228934817172,
+            "side": 1
+          }
+        ],
+        "issues": []
+      }
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "a": 1,
+      "b": 1,
+      "bounds": {
+        "width": 964,
+        "height": 560,
+        "entries": [
+          {
+            "id": "p0",
+            "left": 140.3748607942496,
+            "right": 303.06513920575037,
+            "top": 358.80000000000007,
+            "bottom": 515.6,
+            "footY": 515.4753577106519,
+            "scale": 0.12464228934817172,
+            "side": 1
+          },
+          {
+            "id": "p1",
+            "left": 676.7949907066514,
+            "right": 807.7650092933485,
+            "top": 358.79999999999995,
+            "bottom": 515.6,
+            "footY": 515.4722086389568,
+            "scale": 0.1277913610431948,
+            "side": -1
+          }
+        ],
+        "issues": []
+      }
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "a": 4,
+      "b": 4,
+      "bounds": {
+        "width": 964,
+        "height": 560,
+        "entries": [
+          {
+            "id": "p0",
+            "left": 83.39455615672182,
+            "right": 176.88544384327815,
+            "top": 268.69399408258835,
+            "bottom": 358.8,
+            "footY": 358.7283736041992,
+            "scale": 0.07162639580080415,
+            "side": 1
+          },
+          {
+            "id": "p1",
+            "left": 275.66866942035574,
+            "right": 350.9313305796443,
+            "top": 268.69399408258835,
+            "bottom": 358.8,
+            "footY": 358.72656397235744,
+            "scale": 0.07343602764255226,
+            "side": 1
+          },
+          {
+            "id": "p2",
+            "left": 68.68715561657291,
+            "right": 191.59284438342706,
+            "top": 416.58241107976744,
+            "bottom": 515.6,
+            "footY": 515.6,
+            "scale": 0.07564368901469255,
+            "side": 1
+          },
+          {
+            "id": "p3",
+            "left": 258.67934111770074,
+            "right": 367.9206588822993,
+            "top": 416.5824110797675,
+            "bottom": 515.6,
+            "footY": 515.5148601986929,
+            "scale": 0.08513980130716471,
+            "side": 1
+          },
+          {
+            "id": "p4",
+            "left": 583.8392407014735,
+            "right": 717.5607592985266,
+            "top": 268.69399408258835,
+            "bottom": 358.8,
+            "footY": 358.2641104151046,
+            "scale": 0.0765556549850566,
+            "side": -1
+          },
+          {
+            "id": "p5",
+            "left": 756.8922,
+            "right": 910.8278,
+            "top": 268.6939940825884,
+            "bottom": 358.8,
+            "footY": 357.7399293421481,
+            "scale": 0.09637005980471831,
+            "side": -1
+          },
+          {
+            "id": "p6",
+            "left": 572.0236967273786,
+            "right": 729.3763032726215,
+            "top": 416.5824110797675,
+            "bottom": 515.6,
+            "footY": 512.1891644735202,
+            "scale": 0.10335865231757052,
+            "side": -1
+          },
+          {
+            "id": "p7",
+            "left": 791.1011659609708,
+            "right": 876.6188340390293,
+            "top": 416.5824110797675,
+            "bottom": 515.6,
+            "footY": 515.254268195111,
+            "scale": 0.06914636097781603,
+            "side": -1
+          }
+        ],
+        "issues": []
+      }
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "a": 6,
+      "b": 2,
+      "bounds": {
+        "width": 964,
+        "height": 560,
+        "entries": [
+          {
+            "id": "p0",
+            "left": 93.53710834369818,
+            "right": 166.7428916563018,
+            "top": 235.978,
+            "bottom": 306.53333333333336,
+            "footY": 306.47724801271863,
+            "scale": 0.05608532061473239,
+            "side": 1
+          },
+          {
+            "id": "p1",
+            "left": 283.83369477660307,
+            "right": 342.76630522339696,
+            "top": 235.97800000000004,
+            "bottom": 306.53333333333336,
+            "footY": 306.47583102417826,
+            "scale": 0.057502309155120904,
+            "side": 1
+          },
+          {
+            "id": "p2",
+            "left": 84.1861957978642,
+            "right": 176.09380420213577,
+            "top": 337.02233333333334,
+            "bottom": 411.0666666666667,
+            "footY": 411.0666666666667,
+            "scale": 0.05656557168321876,
+            "side": 1
+          },
+          {
+            "id": "p3",
+            "left": 272.45523375927337,
+            "right": 354.14476624072665,
+            "top": 337.02233333333334,
+            "bottom": 411.0666666666667,
+            "footY": 411.00300000000004,
+            "scale": 0.06366666666666669,
+            "side": 1
+          },
+          {
+            "id": "p4",
+            "left": 72.60845718182352,
+            "right": 187.67154281817645,
+            "top": 438.06666666666666,
+            "bottom": 515.6,
+            "footY": 515.1388841687907,
+            "scale": 0.0658736901727556,
+            "side": 1
+          },
+          {
+            "id": "p5",
+            "left": 247.07167223677607,
+            "right": 379.52832776322396,
+            "top": 438.0666666666667,
+            "bottom": 515.6,
+            "footY": 514.687843137255,
+            "scale": 0.08292335115864528,
+            "side": 1
+          },
+          {
+            "id": "p6",
+            "left": 686.2189217272693,
+            "right": 798.3410782727307,
+            "top": 288.2446666666667,
+            "bottom": 358.8,
+            "footY": 356.3695970772443,
+            "scale": 0.07364857341684065,
+            "side": -1
+          },
+          {
+            "id": "p7",
+            "left": 708.798726938873,
+            "right": 775.761273061127,
+            "top": 438.0666666666667,
+            "bottom": 515.6,
+            "footY": 515.3292830540038,
+            "scale": 0.054143389199255126,
+            "side": -1
+          }
+        ],
+        "issues": []
+      }
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "a": 2,
+      "b": 8,
+      "bounds": {
+        "width": 964,
+        "height": 560,
+        "entries": [
+          {
+            "id": "p0",
+            "left": 191.84595107737846,
+            "right": 251.59404892262154,
+            "top": 301.2151102720601,
+            "bottom": 358.8,
+            "footY": 358.754225047911,
+            "scale": 0.045774952088982426,
+            "side": 1
+          },
+          {
+            "id": "p1",
+            "left": 195.29208006986855,
+            "right": 248.14791993013145,
+            "top": 452.31990139786825,
+            "bottom": 515.6,
+            "footY": 515.5484269775044,
+            "scale": 0.0515730224956249,
+            "side": 1
+          },
+          {
+            "id": "p2",
+            "left": 584.434680172038,
+            "right": 655.9119864946285,
+            "top": 248.94844360539346,
+            "bottom": 306.53333333333336,
+            "footY": 306.53333333333336,
+            "scale": 0.04399151239720389,
+            "side": -1
+          },
+          {
+            "id": "p3",
+            "left": 710.5146878680467,
+            "right": 774.0453121319532,
+            "top": 248.94844360539346,
+            "bottom": 306.53333333333336,
+            "footY": 306.483819240704,
+            "scale": 0.04951409262935503,
+            "side": -1
+          },
+          {
+            "id": "p4",
+            "left": 821.6573345635333,
+            "right": 907.1159987698001,
+            "top": 248.94844360539344,
+            "bottom": 306.53333333333336,
+            "footY": 306.19085735364297,
+            "scale": 0.04892513995576882,
+            "side": -1
+          },
+          {
+            "id": "p5",
+            "left": 568.5523999999999,
+            "right": 671.7942666666667,
+            "top": 350.63417250163087,
+            "bottom": 411.0666666666667,
+            "footY": 410.35569614707805,
+            "scale": 0.0646336835989688,
+            "side": -1
+          },
+          {
+            "id": "p6",
+            "left": 694.2622155811172,
+            "right": 790.2977844188828,
+            "top": 350.63417250163087,
+            "bottom": 411.0666666666667,
+            "footY": 408.98496279668115,
+            "scale": 0.06308193545410838,
+            "side": -1
+          },
+          {
+            "id": "p7",
+            "left": 838.2900608338481,
+            "right": 890.4832724994852,
+            "top": 350.63417250163087,
+            "bottom": 411.0666666666667,
+            "footY": 410.85565935463796,
+            "scale": 0.042201462405751275,
+            "side": -1
+          },
+          {
+            "id": "p8",
+            "left": 641.2618121713107,
+            "right": 721.1915211620225,
+            "top": 452.3199013978683,
+            "bottom": 515.6,
+            "footY": 515.5336686597462,
+            "scale": 0.06633134025380687,
+            "side": -1
+          },
+          {
+            "id": "p9",
+            "left": 768.7812847108437,
+            "right": 837.8853819558228,
+            "top": 452.31990139786825,
+            "bottom": 515.6,
+            "footY": 515.6,
+            "scale": 0.0666106301075071,
+            "side": -1
+          }
+        ],
+        "issues": []
+      }
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "a": 1,
+      "b": 10,
+      "bounds": {
+        "width": 964,
+        "height": 560,
+        "entries": [
+          {
+            "id": "p0",
+            "left": 195.0545653368905,
+            "right": 248.3854346631095,
+            "top": 464.2,
+            "bottom": 515.6,
+            "footY": 515.5591414944356,
+            "scale": 0.04085850556438792,
+            "side": 1
+          },
+          {
+            "id": "p1",
+            "left": 600.6389211860942,
+            "right": 639.7077454805724,
+            "top": 233.62599999999995,
+            "bottom": 280.4,
+            "footY": 280.36187938060306,
+            "scale": 0.03812061939690302,
+            "side": -1
+          },
+          {
+            "id": "p2",
+            "left": 713.2508610910936,
+            "right": 771.3091389089063,
+            "top": 233.62599999999998,
+            "bottom": 280.4,
+            "footY": 280.4,
+            "scale": 0.03573262032085562,
+            "side": -1
+          },
+          {
+            "id": "p3",
+            "left": 838.5849204676272,
+            "right": 890.1884128657061,
+            "top": 233.62599999999998,
+            "bottom": 280.4,
+            "footY": 280.3597815993121,
+            "scale": 0.04021840068787619,
+            "side": -1
+          },
+          {
+            "id": "p4",
+            "left": 584.3217337271035,
+            "right": 656.0249329395631,
+            "top": 310.4839999999999,
+            "bottom": 358.79999999999995,
+            "footY": 358.5126491079014,
+            "scale": 0.04105012744265082,
+            "side": -1
+          },
+          {
+            "id": "p5",
+            "left": 701.0088750962004,
+            "right": 783.5511249037995,
+            "top": 310.484,
+            "bottom": 358.79999999999995,
+            "footY": 358.2315764705882,
+            "scale": 0.05167486631016044,
+            "side": -1
+          },
+          {
+            "id": "p6",
+            "left": 825.9962724915239,
+            "right": 902.7770608418094,
+            "top": 310.4839999999999,
+            "bottom": 358.79999999999995,
+            "footY": 357.1356701461377,
+            "scale": 0.050434237995824645,
+            "side": -1
+          },
+          {
+            "id": "p7",
+            "left": 598.6431186435439,
+            "right": 641.7035480231227,
+            "top": 387.34200000000004,
+            "bottom": 437.20000000000005,
+            "footY": 437.0259148044693,
+            "scale": 0.03481703910614525,
+            "side": -1
+          },
+          {
+            "id": "p8",
+            "left": 710.7919372528548,
+            "right": 773.7680627471451,
+            "top": 387.3420000000001,
+            "bottom": 437.20000000000005,
+            "footY": 437.14773794549274,
+            "scale": 0.05226205450733753,
+            "side": -1
+          },
+          {
+            "id": "p9",
+            "left": 837.1633203338585,
+            "right": 891.6100129994749,
+            "top": 387.34200000000004,
+            "bottom": 437.20000000000005,
+            "footY": 437.20000000000005,
+            "scale": 0.0524821052631579,
+            "side": -1
+          },
+          {
+            "id": "p10",
+            "left": 706.6585054014923,
+            "right": 777.9014945985076,
+            "top": 464.2,
+            "bottom": 515.6,
+            "footY": 515.5530593607306,
+            "scale": 0.0469406392694064,
+            "side": -1
+          }
+        ],
+        "issues": []
+      }
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "a": 10,
+      "b": 10,
+      "bounds": {
+        "width": 964,
+        "height": 560,
+        "entries": [
+          {
+            "id": "p0",
+            "left": 75.34778778990369,
+            "right": 123.878878876763,
+            "top": 233.62599999999998,
+            "bottom": 280.4,
+            "footY": 280.3628187599364,
+            "scale": 0.03718124006359301,
+            "side": 1
+          },
+          {
+            "id": "p1",
+            "left": 202.18558785276096,
+            "right": 241.2544121472391,
+            "top": 233.62599999999995,
+            "bottom": 280.4,
+            "footY": 280.36187938060306,
+            "scale": 0.03812061939690302,
+            "side": 1
+          },
+          {
+            "id": "p2",
+            "left": 314.7975277577603,
+            "right": 372.855805575573,
+            "top": 233.62599999999998,
+            "bottom": 280.4,
+            "footY": 280.4,
+            "scale": 0.03573262032085562,
+            "side": 1
+          },
+          {
+            "id": "p3",
+            "left": 72.96098011674307,
+            "right": 126.26568654992361,
+            "top": 310.4839999999999,
+            "bottom": 358.79999999999995,
+            "footY": 358.7584557179707,
+            "scale": 0.04154428202923475,
+            "side": 1
+          },
+          {
+            "id": "p4",
+            "left": 185.86840039377026,
+            "right": 257.57159960622977,
+            "top": 310.4839999999999,
+            "bottom": 358.79999999999995,
+            "footY": 358.5126491079014,
+            "scale": 0.04105012744265082,
+            "side": 1
+          },
+          {
+            "id": "p5",
+            "left": 302.55554176286705,
+            "right": 385.09779157046626,
+            "top": 310.484,
+            "bottom": 358.79999999999995,
+            "footY": 358.2315764705882,
+            "scale": 0.05167486631016044,
+            "side": 1
+          },
+          {
+            "id": "p6",
+            "left": 59.9977138121754,
+            "right": 139.2289528544913,
+            "top": 387.34200000000004,
+            "bottom": 437.20000000000005,
+            "footY": 435.4825532359082,
+            "scale": 0.05204384133611691,
+            "side": 1
+          },
+          {
+            "id": "p7",
+            "left": 200.1897853102106,
+            "right": 243.25021468978946,
+            "top": 387.34200000000004,
+            "bottom": 437.20000000000005,
+            "footY": 437.0259148044693,
+            "scale": 0.03481703910614525,
+            "side": 1
+          },
+          {
+            "id": "p8",
+            "left": 312.3386039195215,
+            "right": 375.3147294138118,
+            "top": 387.3420000000001,
+            "bottom": 437.20000000000005,
+            "footY": 437.14773794549274,
+            "scale": 0.05226205450733753,
+            "side": 1
+          },
+          {
+            "id": "p9",
+            "left": 193.65469450225962,
+            "right": 249.78530549774044,
+            "top": 464.20000000000005,
+            "bottom": 515.6,
+            "footY": 515.6,
+            "scale": 0.05410526315789474,
+            "side": 1
+          },
+          {
+            "id": "p10",
+            "left": 587.7577732486914,
+            "right": 652.5888934179752,
+            "top": 233.62599999999998,
+            "bottom": 280.4,
+            "footY": 280.3572840182648,
+            "scale": 0.04271598173515982,
+            "side": -1
+          },
+          {
+            "id": "p11",
+            "left": 714.450824563756,
+            "right": 770.109175436244,
+            "top": 233.62599999999998,
+            "bottom": 280.4,
+            "footY": 280.3586802120141,
+            "scale": 0.04131978798586573,
+            "side": -1
+          },
+          {
+            "id": "p12",
+            "left": 833.5356325603192,
+            "right": 895.2377007730141,
+            "top": 233.62599999999998,
+            "bottom": 280.4,
+            "footY": 280.359184991274,
+            "scale": 0.0408150087260035,
+            "side": -1
+          },
+          {
+            "id": "p13",
+            "left": 582.7716974573461,
+            "right": 657.5749692093204,
+            "top": 310.484,
+            "bottom": 358.79999999999995,
+            "footY": 358.75546912442394,
+            "scale": 0.044530875576036875,
+            "side": -1
+          },
+          {
+            "id": "p14",
+            "left": 708.4619882140154,
+            "right": 776.0980117859846,
+            "top": 310.4839999999999,
+            "bottom": 358.79999999999995,
+            "footY": 358.75863356164376,
+            "scale": 0.041366438356164395,
+            "side": -1
+          },
+          {
+            "id": "p15",
+            "left": 837.7968439251081,
+            "right": 890.9764894082252,
+            "top": 310.4839999999999,
+            "bottom": 358.79999999999995,
+            "footY": 358.75611625794727,
+            "scale": 0.04388374205267939,
+            "side": -1
+          },
+          {
+            "id": "p16",
+            "left": 594.3804239781653,
+            "right": 645.9662426885013,
+            "top": 387.342,
+            "bottom": 437.20000000000005,
+            "footY": 437.10826494940204,
+            "scale": 0.04586752529898804,
+            "side": -1
+          },
+          {
+            "id": "p17",
+            "left": 698.7599933297336,
+            "right": 785.8000066702664,
+            "top": 387.34200000000004,
+            "bottom": 437.20000000000005,
+            "footY": 437.20000000000005,
+            "scale": 0.05177362409138111,
+            "side": -1
+          },
+          {
+            "id": "p18",
+            "left": 836.7644847083914,
+            "right": 892.008848624942,
+            "top": 387.34200000000004,
+            "bottom": 437.20000000000005,
+            "footY": 437.20000000000005,
+            "scale": 0.043850483729111704,
+            "side": -1
+          },
+          {
+            "id": "p19",
+            "left": 716.3985206959753,
+            "right": 768.1614793040246,
+            "top": 464.2,
+            "bottom": 515.6,
+            "footY": 515.5146887966805,
+            "scale": 0.04265560165975104,
+            "side": -1
+          }
+        ],
+        "issues": []
+      }
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "a": 1,
+      "b": 0,
+      "bounds": {
+        "width": 962,
+        "height": 408,
+        "entries": [
+          {
+            "id": "p0",
+            "left": 161.9942557215247,
+            "right": 280.52574427847526,
+            "top": 255.44000000000005,
+            "bottom": 369.68000000000006,
+            "footY": 369.58918918918926,
+            "scale": 0.09081081081081081,
+            "side": 1
+          }
+        ],
+        "issues": []
+      }
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "a": 1,
+      "b": 1,
+      "bounds": {
+        "width": 962,
+        "height": 408,
+        "entries": [
+          {
+            "id": "p0",
+            "left": 161.9942557215247,
+            "right": 280.52574427847526,
+            "top": 255.44000000000005,
+            "bottom": 369.68000000000006,
+            "footY": 369.58918918918926,
+            "scale": 0.09081081081081081,
+            "side": 1
+          },
+          {
+            "id": "p1",
+            "left": 693.0294932291316,
+            "right": 788.4505067708682,
+            "top": 255.44000000000005,
+            "bottom": 369.68000000000006,
+            "footY": 369.5868948655257,
+            "scale": 0.09310513447432764,
+            "side": -1
+          }
+        ],
+        "issues": []
+      }
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "a": 4,
+      "b": 4,
+      "bounds": {
+        "width": 962,
+        "height": 408,
+        "entries": [
+          {
+            "id": "p0",
+            "left": 88.68466550177428,
+            "right": 171.05533449822573,
+            "top": 176.05160000000006,
+            "bottom": 255.44000000000005,
+            "footY": 255.37689316375204,
+            "scale": 0.06310683624801272,
+            "side": 1
+          },
+          {
+            "id": "p1",
+            "left": 279.49470591974443,
+            "right": 345.8052940802555,
+            "top": 176.05160000000006,
+            "bottom": 255.44000000000005,
+            "footY": 255.37529877750617,
+            "scale": 0.06470122249388753,
+            "side": 1
+          },
+          {
+            "id": "p2",
+            "left": 75.7266280751488,
+            "right": 184.0133719248512,
+            "top": 282.44000000000005,
+            "bottom": 369.68000000000006,
+            "footY": 369.68000000000006,
+            "scale": 0.066646294881589,
+            "side": 1
+          },
+          {
+            "id": "p3",
+            "left": 264.5261632872064,
+            "right": 360.7738367127936,
+            "top": 282.44000000000005,
+            "bottom": 369.68000000000006,
+            "footY": 369.6049871023217,
+            "scale": 0.07501289767841789,
+            "side": 1
+          },
+          {
+            "id": "p4",
+            "left": 590.4419544213259,
+            "right": 708.2580455786739,
+            "top": 176.05160000000006,
+            "bottom": 255.44000000000005,
+            "footY": 254.967851486831,
+            "scale": 0.067449787595582,
+            "side": -1
+          },
+          {
+            "id": "p5",
+            "left": 764.3170897360542,
+            "right": 899.9429102639456,
+            "top": 176.05160000000006,
+            "bottom": 255.44000000000005,
+            "footY": 254.50601882352947,
+            "scale": 0.08490737967914438,
+            "side": -1
+          },
+          {
+            "id": "p6",
+            "left": 580.0318033810859,
+            "right": 718.668196618914,
+            "top": 282.44000000000005,
+            "bottom": 369.68000000000006,
+            "footY": 366.6748643006264,
+            "scale": 0.09106471816283926,
+            "side": -1
+          },
+          {
+            "id": "p7",
+            "left": 794.4570903458375,
+            "right": 869.8029096541622,
+            "top": 282.44000000000005,
+            "bottom": 369.68000000000006,
+            "footY": 369.3753910614526,
+            "scale": 0.060921787709497216,
+            "side": -1
+          }
+        ],
+        "issues": []
+      }
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "a": 6,
+      "b": 2,
+      "bounds": {
+        "width": 962,
+        "height": 408,
+        "entries": [
+          {
+            "id": "p0",
+            "left": 69.60262353209765,
+            "right": 129.21070980123568,
+            "top": 197.99005266288785,
+            "bottom": 255.44000000000005,
+            "footY": 255.39433231531237,
+            "scale": 0.045667684687688566,
+            "side": 1
+          },
+          {
+            "id": "p1",
+            "left": 197.26694939239047,
+            "right": 245.25305060760957,
+            "top": 197.99005266288785,
+            "bottom": 255.44000000000005,
+            "footY": 255.3931785270277,
+            "scale": 0.046821472972381595,
+            "side": 1
+          },
+          {
+            "id": "p2",
+            "left": 307.4584288659287,
+            "right": 378.768237800738,
+            "top": 197.99005266288785,
+            "bottom": 255.44000000000005,
+            "footY": 255.44000000000005,
+            "scale": 0.043888424245311086,
+            "side": 1
+          },
+          {
+            "id": "p3",
+            "left": 64.58152993624033,
+            "right": 134.23180339709302,
+            "top": 306.5481897394372,
+            "bottom": 369.68000000000006,
+            "footY": 369.6257164142214,
+            "scale": 0.054283585778643915,
+            "side": 1
+          },
+          {
+            "id": "p4",
+            "left": 174.41472340677691,
+            "right": 268.1052765932231,
+            "top": 306.5481897394372,
+            "bottom": 369.68000000000006,
+            "footY": 369.30453468833997,
+            "scale": 0.05363790166572886,
+            "side": 1
+          },
+          {
+            "id": "p5",
+            "left": 289.18666666666667,
+            "right": 397.04,
+            "top": 306.5481897394372,
+            "bottom": 369.68000000000006,
+            "footY": 368.93727282046405,
+            "scale": 0.06752065268509398,
+            "side": 1
+          },
+          {
+            "id": "p6",
+            "left": 599.1874227814112,
+            "right": 699.5125772185886,
+            "top": 306.5481897394372,
+            "bottom": 369.68000000000006,
+            "footY": 367.5053134252625,
+            "scale": 0.0658995931738652,
+            "side": -1
+          },
+          {
+            "id": "p7",
+            "left": 804.8677466271215,
+            "right": 859.3922533728783,
+            "top": 306.54818973943725,
+            "bottom": 369.68000000000006,
+            "footY": 369.45956770160427,
+            "scale": 0.04408645967916402,
+            "side": -1
+          }
+        ],
+        "issues": []
+      }
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "a": 2,
+      "b": 8,
+      "bounds": {
+        "width": 962,
+        "height": 408,
+        "entries": [
+          {
+            "id": "p0",
+            "left": 104.3666387541155,
+            "right": 155.3733612458845,
+            "top": 320.52000000000004,
+            "bottom": 369.68000000000006,
+            "footY": 369.6409220985692,
+            "scale": 0.03907790143084262,
+            "side": 1
+          },
+          {
+            "id": "p1",
+            "left": 292.1191131577741,
+            "right": 333.18088684222585,
+            "top": 320.52000000000004,
+            "bottom": 369.68000000000006,
+            "footY": 369.63993480032605,
+            "scale": 0.04006519967400164,
+            "side": 1
+          },
+          {
+            "id": "p2",
+            "left": 591.1226108541795,
+            "right": 646.6507224791536,
+            "top": 172.6244,
+            "bottom": 217.36,
+            "footY": 217.36,
+            "scale": 0.034175401069518725,
+            "side": -1
+          },
+          {
+            "id": "p3",
+            "left": 716.0626878765605,
+            "right": 765.4173121234393,
+            "top": 172.6244,
+            "bottom": 217.36,
+            "footY": 217.3215343078246,
+            "scale": 0.038465692175408434,
+            "side": -1
+          },
+          {
+            "id": "p4",
+            "left": 829.3984740870287,
+            "right": 895.7881925796378,
+            "top": 172.62439999999998,
+            "bottom": 217.36,
+            "footY": 217.09394290569244,
+            "scale": 0.03800815632965167,
+            "side": -1
+          },
+          {
+            "id": "p5",
+            "left": 578.7842468107472,
+            "right": 658.9890865225859,
+            "top": 246.5722,
+            "bottom": 293.52000000000004,
+            "footY": 292.9676729411765,
+            "scale": 0.05021155080213905,
+            "side": -1
+          },
+          {
+            "id": "p6",
+            "left": 703.4367350845316,
+            "right": 778.0432649154682,
+            "top": 246.57220000000004,
+            "bottom": 293.52000000000004,
+            "footY": 291.9028002087683,
+            "scale": 0.049006054279749495,
+            "side": -1
+          },
+          {
+            "id": "p7",
+            "left": 842.3198323262071,
+            "right": 882.8668343404594,
+            "top": 246.57220000000004,
+            "bottom": 293.52000000000004,
+            "footY": 293.3560761173185,
+            "scale": 0.03278477653631286,
+            "side": -1
+          },
+          {
+            "id": "p8",
+            "left": 648.7660958859897,
+            "right": 710.8605707806767,
+            "top": 320.5200000000001,
+            "bottom": 369.68000000000006,
+            "footY": 369.62846960167724,
+            "scale": 0.05153039832285117,
+            "side": -1
+          },
+          {
+            "id": "p9",
+            "left": 774.8244406303062,
+            "right": 828.5088927030268,
+            "top": 320.52000000000004,
+            "bottom": 369.68000000000006,
+            "footY": 369.68000000000006,
+            "scale": 0.051747368421052646,
+            "side": -1
+          }
+        ],
+        "issues": []
+      }
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "a": 1,
+      "b": 10,
+      "bounds": {
+        "width": 962,
+        "height": 408,
+        "entries": [
+          {
+            "id": "p0",
+            "left": 197.75906909752325,
+            "right": 244.76093090247673,
+            "top": 324.3798628130953,
+            "bottom": 369.68000000000006,
+            "footY": 369.64399035199773,
+            "scale": 0.03600964800230898,
+            "side": 1
+          },
+          {
+            "id": "p1",
+            "left": 586.4388219818002,
+            "right": 620.8711780181998,
+            "top": 176.1368751599167,
+            "bottom": 217.36,
+            "footY": 217.32640332123873,
+            "scale": 0.03359667876127406,
+            "side": -1
+          },
+          {
+            "id": "p2",
+            "left": 669.4608759729343,
+            "right": 720.6291240270656,
+            "top": 176.13687515991674,
+            "bottom": 217.36,
+            "footY": 217.36,
+            "scale": 0.031492073980201124,
+            "side": -1
+          },
+          {
+            "id": "p3",
+            "left": 763.6952598739651,
+            "right": 809.1747401260347,
+            "top": 176.13687515991674,
+            "bottom": 217.36,
+            "footY": 217.32455449282884,
+            "scale": 0.0354455071711808,
+            "side": -1
+          },
+          {
+            "id": "p4",
+            "left": 847.2364792970384,
+            "right": 908.4135207029615,
+            "top": 176.13687515991674,
+            "bottom": 217.36,
+            "footY": 217.1148327324719,
+            "scale": 0.03502389536115826,
+            "side": -1
+          },
+          {
+            "id": "p5",
+            "left": 566.701275,
+            "right": 640.6087249999999,
+            "top": 250.258368986506,
+            "bottom": 293.52000000000004,
+            "footY": 293.0110396351354,
+            "scale": 0.04626912407860319,
+            "side": -1
+          },
+          {
+            "id": "p6",
+            "left": 660.6706505657005,
+            "right": 729.4193494342994,
+            "top": 250.25836898650607,
+            "bottom": 293.52000000000004,
+            "footY": 292.0297768022492,
+            "scale": 0.04515827871972232,
+            "side": -1
+          },
+          {
+            "id": "p7",
+            "left": 767.7532999006984,
+            "right": 805.1167000993015,
+            "top": 250.25836898650607,
+            "bottom": 293.52000000000004,
+            "footY": 293.368946819087,
+            "scale": 0.03021063618260753,
+            "side": -1
+          },
+          {
+            "id": "p8",
+            "left": 850.5029062157179,
+            "right": 905.147093784282,
+            "top": 250.25836898650604,
+            "bottom": 293.52000000000004,
+            "footY": 293.4746523783926,
+            "scale": 0.045347621607436044,
+            "side": -1
+          },
+          {
+            "id": "p9",
+            "left": 670.3103270575868,
+            "right": 719.7796729424131,
+            "top": 324.3798628130954,
+            "bottom": 369.68000000000006,
+            "footY": 369.68000000000006,
+            "scale": 0.04768435493358389,
+            "side": -1
+          },
+          {
+            "id": "p10",
+            "left": 755.0408639666346,
+            "right": 817.8291360333653,
+            "top": 324.3798628130954,
+            "bottom": 369.68000000000006,
+            "footY": 369.63863001170154,
+            "scale": 0.041369988298543096,
+            "side": -1
+          }
+        ],
+        "issues": []
+      }
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "a": 10,
+      "b": 10,
+      "bounds": {
+        "width": 962,
+        "height": 408,
+        "entries": [
+          {
+            "id": "p0",
+            "left": 63.24700168511957,
+            "right": 105.10299831488045,
+            "top": 177.01941950786807,
+            "bottom": 217.36,
+            "footY": 217.3279327659045,
+            "scale": 0.0320672340954944,
+            "side": 1
+          },
+          {
+            "id": "p1",
+            "left": 158.717402497281,
+            "right": 192.412597502719,
+            "top": 177.01941950786804,
+            "bottom": 217.36,
+            "footY": 217.32712259128596,
+            "scale": 0.032877408714043974,
+            "side": 1
+          },
+          {
+            "id": "p2",
+            "left": 241.91860553358666,
+            "right": 291.9913944664133,
+            "top": 177.01941950786807,
+            "bottom": 217.36,
+            "footY": 217.36,
+            "scale": 0.030817861338527087,
+            "side": 1
+          },
+          {
+            "id": "p3",
+            "left": 336.0920941253707,
+            "right": 380.59790587462936,
+            "top": 177.01941950786807,
+            "bottom": 217.36,
+            "footY": 217.3253133443748,
+            "scale": 0.03468665562522094,
+            "side": 1
+          },
+          {
+            "id": "p4",
+            "left": 52.761112251830866,
+            "right": 115.58888774816916,
+            "top": 251.18455563737803,
+            "bottom": 293.52000000000004,
+            "footY": 293.2682174082087,
+            "scale": 0.035968941684470686,
+            "side": 1
+          },
+          {
+            "id": "p5",
+            "left": 139.40241592541537,
+            "right": 211.72758407458463,
+            "top": 251.18455563737805,
+            "bottom": 293.52000000000004,
+            "footY": 293.0219359486751,
+            "scale": 0.04527855012045134,
+            "side": 1
+          },
+          {
+            "id": "p6",
+            "left": 233.31656973547305,
+            "right": 300.59343026452694,
+            "top": 251.18455563737803,
+            "bottom": 293.52000000000004,
+            "footY": 292.0616809353168,
+            "scale": 0.04419148680858246,
+            "side": 1
+          },
+          {
+            "id": "p7",
+            "left": 340.0632557239583,
+            "right": 376.62674427604173,
+            "top": 251.18455563737803,
+            "bottom": 293.52000000000004,
+            "footY": 293.3721807110244,
+            "scale": 0.029563857795127095,
+            "side": 1
+          },
+          {
+            "id": "p8",
+            "left": 147.56797791238085,
+            "right": 203.56202208761914,
+            "top": 325.34969176688804,
+            "bottom": 369.68000000000006,
+            "footY": 369.6335321716635,
+            "scale": 0.04646782833659543,
+            "side": 1
+          },
+          {
+            "id": "p9",
+            "left": 242.74987075153138,
+            "right": 291.1601292484686,
+            "top": 325.34969176688804,
+            "bottom": 369.68000000000006,
+            "footY": 369.68000000000006,
+            "scale": 0.04666348235064425,
+            "side": 1
+          },
+          {
+            "id": "p10",
+            "left": 575.697961671184,
+            "right": 631.612038328816,
+            "top": 177.01941950786807,
+            "bottom": 217.36,
+            "footY": 217.3231592872218,
+            "scale": 0.0368407127782027,
+            "side": -1
+          },
+          {
+            "id": "p11",
+            "left": 671.0435228606606,
+            "right": 719.0464771393393,
+            "top": 177.01941950786807,
+            "bottom": 217.36,
+            "footY": 217.32436344479495,
+            "scale": 0.035636555205063564,
+            "side": -1
+          },
+          {
+            "id": "p12",
+            "left": 759.8272986139176,
+            "right": 813.0427013860823,
+            "top": 177.01941950786807,
+            "bottom": 217.36,
+            "footY": 217.3247987953821,
+            "scale": 0.03520120461791619,
+            "side": -1
+          },
+          {
+            "id": "p13",
+            "left": 846.5971727255428,
+            "right": 909.0528272744571,
+            "top": 177.01941950786804,
+            "bottom": 217.36,
+            "footY": 217.3228197414819,
+            "scale": 0.03718025851809397,
+            "side": -1
+          },
+          {
+            "id": "p14",
+            "left": 574.0229825229728,
+            "right": 633.2870174770271,
+            "top": 251.18455563737803,
+            "bottom": 293.52000000000004,
+            "footY": 293.4837539003745,
+            "scale": 0.03624609962553253,
+            "side": -1
+          },
+          {
+            "id": "p15",
+            "left": 671.7464661543332,
+            "right": 718.3435338456667,
+            "top": 251.18455563737803,
+            "bottom": 293.52000000000004,
+            "footY": 293.48154818858984,
+            "scale": 0.03845181141019255,
+            "side": -1
+          },
+          {
+            "id": "p16",
+            "left": 764.5337147708318,
+            "right": 808.3362852291681,
+            "top": 251.18455563737805,
+            "bottom": 293.52000000000004,
+            "footY": 293.4421058981369,
+            "scale": 0.038947050931574974,
+            "side": -1
+          },
+          {
+            "id": "p17",
+            "left": 840.871275,
+            "right": 914.7787249999999,
+            "top": 251.18455563737803,
+            "bottom": 293.52000000000004,
+            "footY": 293.52000000000004,
+            "scale": 0.04396203983657528,
+            "side": -1
+          },
+          {
+            "id": "p18",
+            "left": 670.4852535143517,
+            "right": 719.6047464856482,
+            "top": 325.34969176688804,
+            "bottom": 369.68000000000006,
+            "footY": 369.68000000000006,
+            "scale": 0.03898883749614075,
+            "side": -1
+          },
+          {
+            "id": "p19",
+            "left": 764.1133277222505,
+            "right": 808.7566722777494,
+            "top": 325.34969176688804,
+            "bottom": 369.68000000000006,
+            "footY": 369.60642272492436,
+            "scale": 0.03678863753785231,
+            "side": -1
+          }
+        ],
+        "issues": []
+      }
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "a": 1,
+      "b": 0,
+      "bounds": {
+        "width": 876,
+        "height": 414,
+        "entries": [
+          {
+            "id": "p0",
+            "left": 141.34270065860593,
+            "right": 261.617299341394,
+            "top": 259.52000000000004,
+            "bottom": 375.44000000000005,
+            "footY": 375.34785373608906,
+            "scale": 0.0921462639109698,
+            "side": 1
+          }
+        ],
+        "issues": []
+      }
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "a": 1,
+      "b": 1,
+      "bounds": {
+        "width": 876,
+        "height": 414,
+        "entries": [
+          {
+            "id": "p0",
+            "left": 141.34270065860593,
+            "right": 261.617299341394,
+            "top": 259.52000000000004,
+            "bottom": 375.44000000000005,
+            "footY": 375.34785373608906,
+            "scale": 0.0921462639109698,
+            "side": 1
+          },
+          {
+            "id": "p1",
+            "left": 626.1078681295602,
+            "right": 722.9321318704398,
+            "top": 259.52000000000004,
+            "bottom": 375.44000000000005,
+            "footY": 375.3455256723717,
+            "scale": 0.09447432762836187,
+            "side": -1
+          }
+        ],
+        "issues": []
+      }
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "a": 4,
+      "b": 4,
+      "bounds": {
+        "width": 876,
+        "height": 414,
+        "entries": [
+          {
+            "id": "p0",
+            "left": 76.28155039451818,
+            "right": 160.2384496054818,
+            "top": 178.6028,
+            "bottom": 259.52000000000004,
+            "footY": 259.4556779014309,
+            "scale": 0.06432209856915741,
+            "side": 1
+          },
+          {
+            "id": "p1",
+            "left": 250.90622707913428,
+            "right": 318.4937729208657,
+            "top": 178.60280000000006,
+            "bottom": 259.52000000000004,
+            "footY": 259.454052811736,
+            "scale": 0.0659471882640587,
+            "side": 1
+          },
+          {
+            "id": "p2",
+            "left": 63.07397717150651,
+            "right": 173.44602282849348,
+            "top": 286.52000000000004,
+            "bottom": 375.44000000000005,
+            "footY": 375.44000000000005,
+            "scale": 0.06792971734148207,
+            "side": 1
+          },
+          {
+            "id": "p3",
+            "left": 235.64943190621725,
+            "right": 333.7505680937827,
+            "top": 286.52,
+            "bottom": 375.44000000000005,
+            "footY": 375.3635425623388,
+            "scale": 0.076457437661221,
+            "side": 1
+          },
+          {
+            "id": "p4",
+            "left": 531.2575491419568,
+            "right": 651.3424508580431,
+            "top": 178.60280000000006,
+            "bottom": 259.52000000000004,
+            "footY": 259.0387592183518,
+            "scale": 0.06874868309260834,
+            "side": -1
+          },
+          {
+            "id": "p5",
+            "left": 688.6212015053868,
+            "right": 826.8587984946132,
+            "top": 178.6028,
+            "bottom": 259.52000000000004,
+            "footY": 258.5680329411765,
+            "scale": 0.08654245989304815,
+            "side": -1
+          },
+          {
+            "id": "p6",
+            "left": 520.646927517723,
+            "right": 661.9530724822769,
+            "top": 286.52000000000004,
+            "bottom": 375.44000000000005,
+            "footY": 372.37699373695204,
+            "scale": 0.09281837160751567,
+            "side": -1
+          },
+          {
+            "id": "p7",
+            "left": 719.3416147816584,
+            "right": 796.1383852183416,
+            "top": 286.52000000000004,
+            "bottom": 375.44000000000005,
+            "footY": 375.12952513966485,
+            "scale": 0.062094972067039116,
+            "side": -1
+          }
+        ],
+        "issues": []
+      }
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "a": 6,
+      "b": 2,
+      "bounds": {
+        "width": 876,
+        "height": 414,
+        "entries": [
+          {
+            "id": "p0",
+            "left": 63.726205751689214,
+            "right": 117.31379424831078,
+            "top": 207.8725754684782,
+            "bottom": 259.52000000000004,
+            "footY": 259.478944813568,
+            "scale": 0.041055186432052325,
+            "side": 1
+          },
+          {
+            "id": "p1",
+            "left": 179.91028013122303,
+            "right": 223.04971986877695,
+            "top": 207.8725754684782,
+            "bottom": 259.52000000000004,
+            "footY": 259.47790755946903,
+            "scale": 0.04209244053098763,
+            "side": 1
+          },
+          {
+            "id": "p2",
+            "left": 280.38628936988914,
+            "right": 344.49371063011085,
+            "top": 207.8725754684782,
+            "bottom": 259.52000000000004,
+            "footY": 259.52000000000004,
+            "scale": 0.03945563371392041,
+            "side": 1
+          },
+          {
+            "id": "p3",
+            "left": 59.21224943705522,
+            "right": 121.82775056294477,
+            "top": 318.68458842689915,
+            "bottom": 375.44000000000005,
+            "footY": 375.39119913020374,
+            "scale": 0.04880086979630344,
+            "side": 1
+          },
+          {
+            "id": "p4",
+            "left": 159.3661600462457,
+            "right": 243.59383995375427,
+            "top": 318.68458842689915,
+            "bottom": 375.44000000000005,
+            "footY": 375.10245719540217,
+            "scale": 0.04822040065684019,
+            "side": 1
+          },
+          {
+            "id": "p5",
+            "left": 263.96,
+            "right": 360.92,
+            "top": 318.68458842689915,
+            "bottom": 375.44000000000005,
+            "footY": 374.77228927561066,
+            "scale": 0.06070097494449294,
+            "side": 1
+          },
+          {
+            "id": "p6",
+            "left": 546.2039112951444,
+            "right": 636.3960887048555,
+            "top": 318.68458842689915,
+            "bottom": 375.44000000000005,
+            "footY": 373.48495972660515,
+            "scale": 0.0592436446483308,
+            "side": -1
+          },
+          {
+            "id": "p7",
+            "left": 733.2312712909419,
+            "right": 782.2487287090581,
+            "top": 318.68458842689915,
+            "bottom": 375.44000000000005,
+            "footY": 375.2418316635018,
+            "scale": 0.03963366729965147,
+            "side": -1
+          }
+        ],
+        "issues": []
+      }
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "a": 2,
+      "b": 8,
+      "bounds": {
+        "width": 876,
+        "height": 414,
+        "entries": [
+          {
+            "id": "p0",
+            "left": 92.17560204550298,
+            "right": 144.344397954497,
+            "top": 325.16,
+            "bottom": 375.44000000000005,
+            "footY": 375.40003179650245,
+            "scale": 0.039968203497615276,
+            "side": 1
+          },
+          {
+            "id": "p1",
+            "left": 263.70136309139303,
+            "right": 305.69863690860694,
+            "top": 325.16,
+            "bottom": 375.44000000000005,
+            "footY": 375.39902200489,
+            "scale": 0.040977995110024465,
+            "side": 1
+          },
+          {
+            "id": "p2",
+            "left": 535.1634026393032,
+            "right": 591.9565973606967,
+            "top": 175.12520000000004,
+            "bottom": 220.88000000000005,
+            "footY": 220.88000000000005,
+            "scale": 0.03495401069518718,
+            "side": -1
+          },
+          {
+            "id": "p3",
+            "left": 649.2804708387605,
+            "right": 699.7595291612395,
+            "top": 175.12520000000004,
+            "bottom": 220.88000000000005,
+            "footY": 220.8406579535684,
+            "scale": 0.03934204643164232,
+            "side": -1
+          },
+          {
+            "id": "p4",
+            "left": 751.5288705674493,
+            "right": 819.4311294325507,
+            "top": 175.12520000000004,
+            "bottom": 220.88000000000005,
+            "footY": 220.60788139337302,
+            "scale": 0.03887408666100256,
+            "side": -1
+          },
+          {
+            "id": "p5",
+            "left": 522.5439367299506,
+            "right": 604.5760632700493,
+            "top": 250.14260000000004,
+            "bottom": 298.1600000000001,
+            "footY": 297.5950894117648,
+            "scale": 0.05135550802139039,
+            "side": -1
+          },
+          {
+            "id": "p6",
+            "left": 636.3668641181906,
+            "right": 712.6731358818093,
+            "top": 250.14260000000004,
+            "bottom": 298.1600000000001,
+            "footY": 296.5059559498957,
+            "scale": 0.050122546972860144,
+            "side": -1
+          },
+          {
+            "id": "p7",
+            "left": 764.7446128836798,
+            "right": 806.2153871163202,
+            "top": 250.14260000000007,
+            "bottom": 298.1600000000001,
+            "footY": 297.992341480447,
+            "scale": 0.03353170391061454,
+            "side": -1
+          },
+          {
+            "id": "p8",
+            "left": 587.2854210973874,
+            "right": 650.7945789026126,
+            "top": 325.16000000000014,
+            "bottom": 375.4400000000001,
+            "footY": 375.3872955974844,
+            "scale": 0.05270440251572329,
+            "side": -1
+          },
+          {
+            "id": "p9",
+            "left": 702.5462342329496,
+            "right": 757.4537657670504,
+            "top": 325.1600000000001,
+            "bottom": 375.4400000000001,
+            "footY": 375.4400000000001,
+            "scale": 0.0529263157894737,
+            "side": -1
+          }
+        ],
+        "issues": []
+      }
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "a": 1,
+      "b": 10,
+      "bounds": {
+        "width": 876,
+        "height": 414,
+        "entries": [
+          {
+            "id": "p0",
+            "left": 180.46004345432948,
+            "right": 222.4999565456705,
+            "top": 334.9221618286918,
+            "bottom": 375.44000000000005,
+            "footY": 375.4077918615491,
+            "scale": 0.032208138450960426,
+            "side": 1
+          },
+          {
+            "id": "p1",
+            "left": 534.2913200359246,
+            "right": 565.0886799640753,
+            "top": 184.00876726410957,
+            "bottom": 220.88000000000005,
+            "footY": 220.84995009556982,
+            "scale": 0.030049904430228584,
+            "side": -1
+          },
+          {
+            "id": "p2",
+            "left": 610.0267713509047,
+            "right": 655.7932286490952,
+            "top": 184.00876726410957,
+            "bottom": 220.88000000000005,
+            "footY": 220.88000000000005,
+            "scale": 0.028167481081658115,
+            "side": -1
+          },
+          {
+            "id": "p3",
+            "left": 695.7908759332714,
+            "right": 736.4691240667286,
+            "top": 184.00876726410957,
+            "bottom": 220.88000000000005,
+            "footY": 220.8482964464868,
+            "scale": 0.03170355351323342,
+            "side": -1
+          },
+          {
+            "id": "p4",
+            "left": 771.9906848034759,
+            "right": 826.7093151965241,
+            "top": 184.00876726410957,
+            "bottom": 220.88000000000005,
+            "footY": 220.6607148435419,
+            "scale": 0.03132645092259174,
+            "side": -1
+          },
+          {
+            "id": "p5",
+            "left": 516.63745,
+            "right": 582.7425499999999,
+            "top": 259.46546454640077,
+            "bottom": 298.1600000000001,
+            "footY": 297.7047701711342,
+            "scale": 0.04138452989689769,
+            "side": -1
+          },
+          {
+            "id": "p6",
+            "left": 602.1645229636619,
+            "right": 663.6554770363381,
+            "top": 259.4654645464007,
+            "bottom": 298.1600000000001,
+            "footY": 296.8270984655859,
+            "scale": 0.04039095558830829,
+            "side": -1
+          },
+          {
+            "id": "p7",
+            "left": 699.4205119411596,
+            "right": 732.8394880588404,
+            "top": 259.46546454640077,
+            "bottom": 298.1600000000001,
+            "footY": 298.0248933817962,
+            "scale": 0.027021323640781664,
+            "side": -1
+          },
+          {
+            "id": "p8",
+            "left": 774.9122776618684,
+            "right": 823.7877223381316,
+            "top": 259.4654645464007,
+            "bottom": 298.1600000000001,
+            "footY": 298.1194396903003,
+            "scale": 0.040560309699789666,
+            "side": -1
+          },
+          {
+            "id": "p9",
+            "left": 610.7865465683701,
+            "right": 655.0334534316298,
+            "top": 334.9221618286919,
+            "bottom": 375.4400000000001,
+            "footY": 375.4400000000001,
+            "scale": 0.04265035596979812,
+            "side": -1
+          },
+          {
+            "id": "p10",
+            "left": 688.0501176349716,
+            "right": 744.2098823650284,
+            "top": 334.9221618286919,
+            "bottom": 375.4400000000001,
+            "footY": 375.40299740806284,
+            "scale": 0.03700259193726777,
+            "side": -1
+          }
+        ],
+        "issues": []
+      }
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "a": 10,
+      "b": 10,
+      "bounds": {
+        "width": 876,
+        "height": 414,
+        "entries": [
+          {
+            "id": "p0",
+            "left": 57.931353619898914,
+            "right": 95.3686463801011,
+            "top": 184.79814211570783,
+            "bottom": 220.88000000000005,
+            "footY": 220.85131807799345,
+            "scale": 0.028681922006591573,
+            "side": 1
+          },
+          {
+            "id": "p1",
+            "left": 144.8009898030985,
+            "right": 174.9390101969015,
+            "top": 184.79814211570783,
+            "bottom": 220.88000000000005,
+            "footY": 220.85059343285718,
+            "scale": 0.029406567142862428,
+            "side": 1
+          },
+          {
+            "id": "p2",
+            "left": 220.6966775427687,
+            "right": 265.4833224572313,
+            "top": 184.79814211570786,
+            "bottom": 220.88000000000005,
+            "footY": 220.88000000000005,
+            "scale": 0.027564444525815277,
+            "side": 1
+          },
+          {
+            "id": "p3",
+            "left": 306.4063154846641,
+            "right": 346.2136845153359,
+            "top": 184.79814211570783,
+            "bottom": 220.88000000000005,
+            "footY": 220.84897518668595,
+            "scale": 0.031024813314094752,
+            "side": 1
+          },
+          {
+            "id": "p4",
+            "left": 48.55245109279923,
+            "right": 104.74754890720078,
+            "top": 260.293874418133,
+            "bottom": 298.1600000000001,
+            "footY": 297.9347978937358,
+            "scale": 0.03217172946632718,
+            "side": 1
+          },
+          {
+            "id": "p5",
+            "left": 127.52507081479845,
+            "right": 192.21492918520156,
+            "top": 260.293874418133,
+            "bottom": 298.1600000000001,
+            "footY": 297.7145161696252,
+            "scale": 0.04049853003408246,
+            "side": 1
+          },
+          {
+            "id": "p6",
+            "left": 213.0027517391064,
+            "right": 273.1772482608936,
+            "top": 260.293874418133,
+            "bottom": 298.1600000000001,
+            "footY": 296.8556345050088,
+            "scale": 0.03952622712094686,
+            "side": 1
+          },
+          {
+            "id": "p7",
+            "left": 309.95824475012785,
+            "right": 342.66175524987216,
+            "top": 260.293874418133,
+            "bottom": 298.1600000000001,
+            "footY": 298.02778587436507,
+            "scale": 0.026442825127002162,
+            "side": 1
+          },
+          {
+            "id": "p8",
+            "left": 134.8286009961882,
+            "right": 184.91139900381182,
+            "top": 335.78960672055814,
+            "bottom": 375.4400000000001,
+            "footY": 375.3984377428938,
+            "scale": 0.04156225710633331,
+            "side": 1
+          },
+          {
+            "id": "p9",
+            "left": 221.44018676083473,
+            "right": 264.7398132391652,
+            "top": 335.78960672055814,
+            "bottom": 375.4400000000001,
+            "footY": 375.4400000000001,
+            "scale": 0.04173725608362314,
+            "side": 1
+          },
+          {
+            "id": "p10",
+            "left": 524.6843637017619,
+            "right": 574.695636298238,
+            "top": 184.79814211570783,
+            "bottom": 220.88000000000005,
+            "footY": 220.84704853161256,
+            "scale": 0.03295146838748146,
+            "side": -1
+          },
+          {
+            "id": "p11",
+            "left": 611.4423394807459,
+            "right": 654.377660519254,
+            "top": 184.79814211570786,
+            "bottom": 220.88000000000005,
+            "footY": 220.8481255672401,
+            "scale": 0.03187443275997544,
+            "side": -1
+          },
+          {
+            "id": "p12",
+            "left": 692.3312522296857,
+            "right": 739.9287477703143,
+            "top": 184.79814211570786,
+            "bottom": 220.88000000000005,
+            "footY": 220.8485149582162,
+            "scale": 0.03148504178385009,
+            "side": -1
+          },
+          {
+            "id": "p13",
+            "left": 771.4188693120827,
+            "right": 827.2811306879173,
+            "top": 184.79814211570783,
+            "bottom": 220.88000000000005,
+            "footY": 220.8467448314431,
+            "scale": 0.033255168556951334,
+            "side": -1
+          },
+          {
+            "id": "p14",
+            "left": 523.1862107538465,
+            "right": 576.1937892461534,
+            "top": 260.293874418133,
+            "bottom": 298.1600000000001,
+            "footY": 298.1275803719334,
+            "scale": 0.03241962806666703,
+            "side": -1
+          },
+          {
+            "id": "p15",
+            "left": 612.0710736167844,
+            "right": 653.7489263832156,
+            "top": 260.293874418133,
+            "bottom": 298.1600000000001,
+            "footY": 298.12560751536626,
+            "scale": 0.034392484633848405,
+            "side": -1
+          },
+          {
+            "id": "p16",
+            "left": 696.5408158216434,
+            "right": 735.7191841783566,
+            "top": 260.293874418133,
+            "bottom": 298.1600000000001,
+            "footY": 298.0903291157648,
+            "scale": 0.03483544211763302,
+            "side": -1
+          },
+          {
+            "id": "p17",
+            "left": 766.29745,
+            "right": 832.40255,
+            "top": 260.293874418133,
+            "bottom": 298.1600000000001,
+            "footY": 298.1600000000001,
+            "scale": 0.03932100268106656,
+            "side": -1
+          },
+          {
+            "id": "p18",
+            "left": 610.9430061799125,
+            "right": 654.8769938200875,
+            "top": 335.78960672055814,
+            "bottom": 375.4400000000001,
+            "footY": 375.4400000000001,
+            "scale": 0.03487281730821634,
+            "side": -1
+          },
+          {
+            "id": "p19",
+            "left": 696.1648086953635,
+            "right": 736.0951913046365,
+            "top": 335.78960672055814,
+            "bottom": 375.4400000000001,
+            "footY": 375.3741902186234,
+            "scale": 0.03290489068833359,
+            "side": -1
+          }
+        ],
+        "issues": []
+      }
+    }
+  ],
+  "transfer": true,
+  "sameTeamAttack": true,
+  "quantity": true,
+  "search": true,
+  "reload": true,
+  "backup": true,
+  "publicPrivacy": true,
+  "publicCanvasReused": true,
+  "errors": []
+}

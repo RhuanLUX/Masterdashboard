@@ -1,0 +1,47 @@
+/* Real renderer and two-window lifecycle; isolated campaign, no network assets. */
+const {chromium}=require('playwright'),{spawn}=require('node:child_process'),fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const root=path.resolve(__dirname,'..'),out=path.join(root,'docs/qa-battle-life'),url='http://127.0.0.1:43992';
+(async()=>{fs.mkdirSync(out,{recursive:true});const server=spawn(process.execPath,['js/offline-server.mjs','43992'],{cwd:root,windowsHide:true});let browser;
+try{await new Promise((r,j)=>{server.stdout.once('data',r);server.once('error',j)});browser=await chromium.launch({executablePath:process.env.ARENA_QA_BROWSER||'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe',headless:true});
+const context=await browser.newContext({viewport:{width:1366,height:768}}),errors=[],external=[],report={};context.on('page',p=>p.on('pageerror',e=>errors.push(e.message)));
+await context.route('**/*',r=>{if(r.request().url().startsWith(url)||/^(blob:|data:)/.test(r.request().url()))return r.continue();external.push(r.request().url());return r.abort()});
+await context.addInitScript(()=>{
+ window.qaSpeech=[];window.qaTime=0;
+ Object.defineProperty(window,'RPGBattlePixi',{configurable:true,set(api){const mount=api.mount,speak=api.speak;api.mount=async(...args)=>{window.qaScene=await mount(...args);return qaScene};api.speak=(scene,line)=>{qaSpeech.push(line);return speak(scene,line)};Object.defineProperty(window,'RPGBattlePixi',{value:api,configurable:true})}});
+ Object.defineProperty(window,'RPGBattleLife',{configurable:true,set(api){const create=api.createDirector;api.createDirector=opts=>{const director=create({...opts,random:()=>0});return {tick:c=>director.tick(c,Date.now()+qaTime)}};Object.defineProperty(window,'RPGBattleLife',{value:api,configurable:true})}});
+});
+const page=await context.newPage();await page.goto(url);await page.locator('[data-enter-adventure]').click();
+await page.evaluate(()=>{const s=RPGMasterHost.getState(),c=RPGV3.createCombat(s,{title:'QA — Vozes e queda'});for(const id of ['elenya','calion','nando','anao'])RPGV3.addParticipant(c,{sourceType:'character',sourceId:id,team:'left',hpMax:30,hpCurrent:30});RPGV3.addParticipant(c,{sourceType:'creature',sourceId:'goblin-arqueiro',team:'right',hpCurrent:12,hpMax:12});RPGBattle.ensure(s);RPGV3.beginCombat(c);RPGMasterHost.persist();RPGMasterUI.open('combat')});
+await page.waitForSelector('[data-arena-ready="true"]');const ids=await page.evaluate(()=>RPGV3.currentCombat(RPGMasterHost.getState()).participants.map(p=>p.id));
+await page.locator('[data-arena-actor]').selectOption(ids[1]);await page.locator('[data-arena-target]').selectOption(ids[4]);await page.locator('[data-arena-type]').selectOption('magic');await page.locator('[data-arena-spell]').selectOption('fire');
+const open=page.waitForEvent('popup');await page.locator('[data-arena-present]').click();const tv=await open;await tv.waitForFunction(()=>window.qaScene?.actors.size===5);
+await page.locator('[data-arena-damage]').fill('3');await page.locator('[data-arena-confirm]').click();await tv.waitForFunction(()=>qaSpeech.some(s=>s.tone==='fear'));
+assert.equal(await page.evaluate(()=>qaSpeech.at(-1).text),await tv.evaluate(()=>qaSpeech.at(-1).text));assert.equal(await tv.evaluate(()=>qaSpeech.at(-1).speakerId),ids[4]);
+await tv.waitForFunction(()=>qaScene.layers.indicators.children.some(n=>n.label==='battle-speech'&&n.alpha>.9));await tv.screenshot({path:path.join(out,'damage-speech.png')});await page.waitForFunction(()=>!document.querySelector('[data-arena-confirm]').disabled);
+await page.locator('[data-arena-damage]').fill('9');await page.locator('[data-arena-confirm]').click();
+await tv.waitForFunction(id=>qaScene.actors.get(id).falling,ids[4]);await tv.waitForFunction(id=>Math.abs(qaScene.actors.get(id).sprite.rotation)>.25,ids[4]);
+assert(await page.evaluate(id=>qaScene.actors.get(id).falling,ids[4]));await tv.screenshot({path:path.join(out,'fall-midpoint.png')});
+await tv.waitForFunction(id=>qaScene.actors.get(id).fallen&&!qaScene.actors.get(id).falling,ids[4]);await page.waitForFunction(()=>!document.querySelector('[data-arena-confirm]').disabled);
+for(const p of [page,tv])assert(await p.evaluate(id=>{const a=qaScene.actors.get(id);return a.fallen&&Math.abs(a.sprite.rotation)>1.4&&a.sprite.alpha<.7},ids[4]));
+assert.equal(await page.locator('[data-arena-actor]').inputValue(),ids[1]);assert.equal(await page.evaluate(()=>RPGV3.currentCombat(RPGMasterHost.getState()).turnIndex),0);report.fatalAttackSynced=true;
+await tv.screenshot({path:path.join(out,'fallen-tv.png')});
+await page.locator('[data-arena-type]').selectOption('heal');await page.locator('[data-arena-damage]').fill('4');await page.locator('[data-arena-confirm]').click();await tv.waitForFunction(id=>!qaScene.actors.get(id).fallen&&!qaScene.actors.get(id).down,ids[4]);await page.waitForFunction(()=>!document.querySelector('[data-arena-confirm]').disabled);report.healingRestoresPose=true;
+// Real legacy manager path destroys and recreates the DOM after changing HP.
+await page.locator('[data-arena-details]').click();await page.locator(`[data-v3-damage="${ids[4]}"]`).click();await page.locator('.rpg-dialog [data-answer]').fill('4');await page.locator('.rpg-dialog button[type="submit"]').click();await page.waitForSelector('[data-arena-ready="true"]');await page.waitForFunction(id=>qaScene.actors.get(id).falling,ids[4]);await tv.waitForFunction(id=>qaScene.actors.get(id).fallen&&!qaScene.actors.get(id).falling,ids[4]);
+await page.locator('[data-v3-undo]').click();await page.waitForSelector('[data-arena-ready="true"]');await tv.waitForFunction(id=>!qaScene.actors.get(id).fallen,ids[4]);report.manualDamageAndUndo=true;
+// Advance only the director's clock; actual Pixi/TV timers keep running normally.
+await page.evaluate(()=>qaTime+=70000);await tv.waitForFunction(()=>qaSpeech.some(s=>s.tone==='courage'));assert.equal(await page.evaluate(()=>qaSpeech.at(-1).text),await tv.evaluate(()=>qaSpeech.at(-1).text));await tv.waitForFunction(()=>qaScene.layers.indicators.children.some(n=>n.label==='battle-speech'&&n.alpha>.9));await tv.screenshot({path:path.join(out,'courage-tv.png')});report.timedSpeechSynced=true;
+await page.waitForTimeout(5100);assert.equal(await tv.evaluate(()=>qaScene.layers.indicators.children.filter(n=>n.label==='battle-speech').length),0);report.bubblesCleaned=true;
+await page.evaluate(()=>{const c=RPGV3.currentCombat(RPGMasterHost.getState());c.participants[4].hpCurrent=0;RPGMasterHost.persist();RPGMasterHost.render()});await page.waitForTimeout(1300);await page.reload();await page.locator('[data-enter-adventure]').click();await page.evaluate(()=>RPGMasterUI.open('combat'));await page.waitForSelector('[data-arena-ready="true"]');assert(await page.evaluate(id=>qaScene.actors.get(id).fallen&&!qaScene.actors.get(id).falling,ids[4]));report.reloadNoDeathReplay=true;
+await page.emulateMedia({reducedMotion:'reduce'});await page.evaluate(id=>{const c=RPGV3.currentCombat(RPGMasterHost.getState());c.participants.find(p=>p.id===id).hpCurrent=5;qaScene.updateParticipants(c.participants);c.participants.find(p=>p.id===id).hpCurrent=0;qaScene.updateParticipants(c.participants)},ids[4]);assert(await page.evaluate(id=>qaScene.actors.get(id).fallen&&!qaScene.actors.get(id).falling,ids[4]));report.reducedMotion=true;
+const layouts=[];await page.emulateMedia({reducedMotion:'no-preference'});
+for(const [width,height]of [[1920,1080],[1366,768],[1280,800]]){
+ await page.setViewportSize({width,height});await page.goto(url+'/tests/arena-visual.html');await page.evaluate(()=>{const b=document.createElement('base');b.href='/';document.head.prepend(b)});
+ for(const [allies,enemies]of [[4,1],[4,4],[4,8],[4,16]]){
+  await page.evaluate(async({allies,enemies})=>{await qaMount(allies,enemies);const ps=[...qaScene.actors.values()].map(a=>({...a.p,hpCurrent:0}));qaScene.updateParticipants(ps)},{allies,enemies});await page.waitForTimeout(1100);
+  const result=await page.evaluate(()=>{const issues=[],bounds=[];for(const [id,a]of qaScene.actors){const f=a.frames[0],points=[[f.left-f.footX,f.top-f.footY],[f.right-f.footX,f.top-f.footY],[f.left-f.footX,f.bottom-f.footY],[f.right-f.footX,f.bottom-f.footY]].map(([x,y])=>a.sprite.toGlobal({x,y}));const b={id,left:Math.min(...points.map(p=>p.x)),right:Math.max(...points.map(p=>p.x)),top:Math.min(...points.map(p=>p.y)),bottom:Math.max(...points.map(p=>p.y))};bounds.push(b);if(Math.abs(b.bottom-a.homeY)>1)issues.push('floating:'+id);if(b.left<0||b.right>qaScene.app.screen.width||b.top<0||b.bottom>qaScene.app.screen.height)issues.push('clipped:'+id);if(!a.fallen)issues.push('standing:'+id)}for(let i=0;i<bounds.length;i++)for(let j=i+1;j<bounds.length;j++){const a=bounds[i],b=bounds[j];if(a.left<b.right&&a.right>b.left&&a.top<b.bottom&&a.bottom>b.top)issues.push('overlap:'+a.id+':'+b.id)}return {issues,tweens:qaScene.tweens.size}});
+  assert.deepEqual(result.issues,[]);assert.equal(result.tweens,0);layouts.push({width,height,allies,enemies});if(width===1366&&enemies===16)await page.screenshot({path:path.join(out,'twenty-fallen.png')});
+ }
+}
+report.layouts=layouts;assert.deepEqual(errors,[]);assert.deepEqual(external,[]);fs.writeFileSync(path.join(out,'report.json'),JSON.stringify({...report,errors,external},null,2));console.log('BATTLE_LIFE_PASS',JSON.stringify(report));
+}finally{await browser?.close();server.kill()}})().catch(e=>{console.error(e);process.exitCode=1});

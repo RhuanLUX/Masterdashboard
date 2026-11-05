@@ -28,7 +28,7 @@ async function run(){
     const action=await page.evaluate(()=>{const a=qaScene.actors.get('tested'),b=qaScene.actors.get('target');return {active:a.acting,direction:a.direction,want:b.homeX>a.homeX?'right':'left',damage:b.sprite.tint!==0xffffff,moved:a.wrap.x!==a.homeX||a.sprite.currentFrame>0||a.sprite.rotation!==0}});
     assert(action.active&&action.damage&&action.moved);assert.equal(action.direction,action.want);
     await page.waitForTimeout(420);
-    await page.evaluate(()=>{const a=qaScene.actors.get('tested');if(a.acting||a.wrap.x!==a.homeX||a.direction!==RPGBattleCatalog.defaultFacing(a.p))throw Error('Failed action reset');a.p.hpCurrent=0;qaScene.updateParticipants([...qaScene.actors.values()].map(a=>a.p));if(a.sprite.alpha>=1)throw Error('No incapacitated visual');});
+    await page.evaluate(()=>{const a=qaScene.actors.get('tested');if(a.acting||a.wrap.x!==a.homeX||a.direction!==RPGBattleCatalog.defaultFacing(a.p))throw Error('Failed action reset');a.p.hpCurrent=0;qaScene.updateParticipants([...qaScene.actors.values()].map(a=>a.p));if(!a.falling&&!a.fallen)throw Error('No defeat transition');});
     art.push({key,team,idle:true,attack:true,damage:true,incapacitated:true,unmirrored:true});
    }
   }

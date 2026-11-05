@@ -7,6 +7,8 @@
   const visualFor = p => catalog().visualFor(p,global.RPGMasterHost?.getState?.());
   const assetFor = p => visualFor(p).asset;
   const P = () => global.PIXI;
+  // Zero PV is a visual defeat only; unconscious conditions do not mean death.
+  const defeated = p => p.defeated === true || (p.hpCurrent != null && Number(p.hpCurrent) === 0);
 
   // Measure each frame's actual silhouette and foot line, not the transparent cell.
   // This is runtime geometry: original art files remain untouched.
@@ -147,9 +149,39 @@
     a.sprite.scale.x=a.facing*Math.abs(a.baseScale||a.sprite.scale.x||1);
   }
   function resting(a){
+    if(a.falling)return;
+    if(a.fallen){fallPose(a,1);return;}
     const down=catalog().incapacitated(a.p);
     a.sprite.alpha=down?.65:1;a.sprite.tint=down?0x9b9eac:0xffffff;
-    a.sprite.rotation=0;
+    a.sprite.rotation=0;a.sprite.position.set(0,0);
+    if(a.baseScale)a.sprite.scale.set(a.facing*a.baseScale,a.baseScale);
+  }
+  // Rotate the measured silhouette about its feet, then settle onto the same floor.
+  // Fit the body to its own slot (including crowded encounters), not the atlas cell.
+  function fallPose(a,t){
+    if(!a.baseScale)return;
+    const f=a.frames[0],angle=-a.side*Math.PI*.48*t,c=Math.cos(angle),s=Math.sin(angle),fold=1-.38*t;
+    const corners=[[f.left-f.footX,f.top-f.footY],[f.right-f.footX,f.top-f.footY],[f.left-f.footX,f.bottom-f.footY],[f.right-f.footX,f.bottom-f.footY]]
+      .map(([x,y])=>({x:c*x*a.facing*fold-s*y,y:s*x*a.facing*fold+c*y}));
+    const minX=Math.min(...corners.map(p=>p.x)),maxX=Math.max(...corners.map(p=>p.x)),maxY=Math.max(...corners.map(p=>p.y));
+    const scale=Math.min(a.baseScale,(a.slotWidth*.80)/Math.max(1,maxX-minX));
+    a.sprite.gotoAndStop(0);a.sprite.rotation=angle;a.sprite.scale.set(a.facing*scale*fold,scale);
+    a.sprite.position.set(-(minX+maxX)*scale*.5*t,-maxY*scale*t);
+    a.sprite.alpha=1-.35*t;a.sprite.tint=t>.45?0x92959b:0xffffff;
+  }
+  function collapse(scene,a,delay=0){
+    a.cancelDefeat?.();a.fallen=false;a.falling=true;
+    const reduced=global.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
+    if(reduced){a.falling=false;a.fallen=true;resting(a);return;}
+    const dust=new (P().Graphics)();dust.label='defeat-dust';dust.eventMode='none';scene.layers.effects.addChild(dust);
+    const clear=()=>{if(!dust.destroyed)dust.destroy();a.cancelDefeat=null;};
+    const stop=tween(scene,delay+900,t=>{
+      const u=Math.max(0,(t*(delay+900)-delay)/900);if(!u)return;
+      const progress=u<.16?u*.3:Math.min(1,1-Math.pow(1-(u-.16)/.84,3));
+      fallPose(a,progress);dust.clear();
+      if(u>.48){const d=(u-.48)/.52;for(let i=0;i<7;i++)dust.rect(a.homeX+(i-3)*(3+d*5),a.homeY-1-Math.sin(d*Math.PI)*(2+i%3),2+i%2,2).fill({color:0x99917b,alpha:(1-d)*.28});}
+    },()=>{a.falling=false;a.fallen=true;resting(a);clear();});
+    a.cancelDefeat=()=>{stop();clear();a.falling=false;};
   }
   async function mount(container, participants, options = {}) {
     if (!P()) throw new Error('PixiJS não carregou.');
@@ -176,7 +208,8 @@
         wrap.addChild(sprite);layers.characters.addChild(wrap);
         const name=text(compactName(p)+(visual.fallback?(visual.kind==='portrait'?' [R]':' [?]'):''));name.anchor.set(.5,0);layers.indicators.addChild(name);
         const shadow=new (P().Graphics)(),marker=new (P().Graphics)();layers.shadows.addChild(shadow);layers.indicators.addChild(marker);
-        const actor={p,wrap,sprite,frames,extent,name,shadow,marker,visual,facing,direction,side:isEnemy(p)?-1:1,homeX:0,homeY:0};
+        const down=defeated(p),wasDown=options.previousDefeated?.get(p.id);
+        const actor={p,wrap,sprite,frames,extent,name,shadow,marker,visual,facing,direction,side:isEnemy(p)?-1:1,homeX:0,homeY:0,down,fallen:down&&wasDown!==false,falling:false};
         resting(actor);scene.actors.set(p.id,actor);
       }));
     } catch(error){app.destroy(true,{children:true,texture:false,textureSource:false});throw error;}
@@ -201,7 +234,7 @@
         const plan=plans[side];
         group.forEach((p,index)=>{
           const a=scene.actors.get(p.id),row=Math.floor(index/plan.cols),col=index%plan.cols;
-          a.cancelAction?.();a.side=side?-1:1;setFacing(a,catalog().defaultFacing(p));resting(a);
+          a.cancelAction?.();a.side=side?-1:1;setFacing(a,catalog().defaultFacing(p));
           const inRow=Math.min(plan.cols,group.length-row*plan.cols),offset=(plan.cols-inRow)/2;
           const cellX=W*(side?.58:.04)+(col+offset)*plan.cw,cellY=fieldTop+row*plan.ch;
           const perspective=plan.rows===1?1:.91+.09*row/(plan.rows-1);
@@ -210,6 +243,7 @@
           a.homeX=cellX+plan.cw/2-(extent.left+extent.right)*scale/2;
           a.homeY=cellY+plan.ch-22-extent.bottom*scale;
           a.wrap.position.set(a.homeX,a.homeY);a.wrap.zIndex=a.homeY;a.sprite.scale.set(a.facing*scale,scale);a.baseScale=scale;
+          a.slotWidth=plan.cw;resting(a);
           a.shadow.clear().ellipse(a.homeX,a.homeY+1,Math.min(plan.cw*.22,commonHeight*.24),Math.max(2,commonHeight*.035)).fill({color:'#020709',alpha:.50});
           a.name.position.set(cellX+plan.cw/2,a.homeY+12);a.name.style.fontSize=Math.max(9,Math.min(12,plan.cw/8));
           if(a.visual.fallback){
@@ -222,10 +256,16 @@
     }
     scene.select=(actorId,targetId)=>{scene.selected={actorId,targetId};paintSelection();};
     // Re-layout known instances without another image load or combatant reconstruction.
-    scene.updateParticipants=next=>{
+    scene.updateParticipants=(next,updateOptions={})=>{
       if(next.length!==scene.actors.size||next.some(p=>!scene.actors.has(p.id)||catalog().keyOf(p)!==catalog().keyOf(scene.actors.get(p.id).p)))return false;
-      participants=next;for(const p of next){const a=scene.actors.get(p.id);a.p=p;a.name.text=compactName(p);}
-      layout();return true;
+      let moved=false;const falls=[];
+      participants=next;for(const p of next){const a=scene.actors.get(p.id),down=defeated(p);moved ||= a.side!==(isEnemy(p)?-1:1);a.p=p;a.name.text=compactName(p);
+        if(down!==a.down){a.down=down;if(down)falls.push(a);else{a.cancelDefeat?.();a.fallen=false;resting(a);}}
+        else if(!a.acting&&!a.falling)resting(a);
+      }
+      if(moved)layout();else paintSelection();
+      for(const a of falls)collapse(scene,a,updateOptions.impactDelay||0);
+      return true;
     };
     scene.audit=()=>{
       const entries=[...scene.actors].map(([id,a])=>({id,...a.bounds,footY:a.homeY,scale:a.baseScale,side:a.side})),issues=[];
@@ -235,11 +275,12 @@
       }return {width:app.screen.width,height:app.screen.height,entries,issues};
     };
     const observer=new ResizeObserver(()=>layout());observer.observe(container);layout();
+    for(const a of scene.actors.values())if(a.down&&!a.fallen)collapse(scene,a);
     // Idle is a tiny anchored breathing movement; action frames no longer loop at rest.
     let elapsed=0;
     const idle=ticker=>{elapsed+=ticker.deltaMS;if(global.matchMedia?.('(prefers-reduced-motion: reduce)').matches)return;let i=0;for(const a of scene.actors.values()){
       const phase=elapsed/1100+i++;
-      if(!a.acting&&!catalog().incapacitated(a.p)){
+      if(!a.acting&&!a.falling&&!a.fallen&&!catalog().incapacitated(a.p)){
         if(a.frames.length>1)a.sprite.scale.y=a.baseScale*(1+Math.sin(phase)*.006);
         else a.sprite.rotation=Math.sin(phase)*.004; // Rigid, foot-pivot sway: no stretching the new bases.
       }
@@ -249,6 +290,24 @@
     return scene;
   }
   function tween(scene,duration,update,done){let elapsed=0;const cancel=()=>{scene.app.ticker.remove(tick);scene.tweens.delete(cancel);};const tick=ticker=>{elapsed+=ticker.deltaMS;update(Math.min(1,elapsed/duration));if(elapsed>=duration){cancel();done?.();}};scene.tweens.add(cancel);scene.app.ticker.add(tick);return cancel;}
+  function speak(scene,line){
+    if(!scene||scene.destroyed||!line)return;
+    const actor=scene.actors.get(line.speakerId);if(!actor||actor.down||actor.falling)return;
+    const age=Date.now()-Number(line.at||Date.now()),duration=Math.min(4800,Math.max(3200,String(line.text).length*60));
+    if(age>duration)return;scene.clearSpeech?.();
+    const bubble=new (P().Container)();bubble.label='battle-speech';bubble.eventMode='none';bubble.alpha=0;
+    const bg=new (P().Graphics)(),label=text(String(line.text).slice(0,110),Math.max(11,Math.min(15,scene.app.screen.width/75)),line.tone==='fear'?'#edd1bf':'#f1deb3');
+    label.style.wordWrap=true;label.style.wordWrapWidth=Math.min(240,scene.app.screen.width*.30);label.style.lineHeight=label.style.fontSize*1.35;
+    const w=label.width+22,h=label.height+18;label.position.set(11,8);
+    const position=()=>{const x=Math.max(6,Math.min(scene.app.screen.width-w-6,actor.homeX-w/2)),y=Math.max(7,actor.bounds.top-h-12);bubble.position.set(x,y);};
+    bg.roundRect(0,0,w,h,5).fill({color:0x0b1520,alpha:.94}).stroke({color:0x9e8150,width:1,alpha:.85});
+    bg.poly([w/2-4,h,w/2,h+6,w/2+4,h]).fill(0x0b1520);bubble.addChild(bg,label);scene.layers.indicators.addChild(bubble);
+    const remaining=duration-Math.max(0,age);let stop;
+    const clear=()=>{stop?.();if(!bubble.destroyed)bubble.destroy({children:true});if(scene.clearSpeech===clear)scene.clearSpeech=null;};
+    scene.clearSpeech=clear;position();
+    stop=tween(scene,remaining,t=>{position();bubble.alpha=Math.min(1,t*10,(1-t)*7);if(actor.down)clear();},clear);
+    return clear;
+  }
   // Local, bounded vector/particle effects. No external assets, timers or physics changes.
   const spellNames={fire:'Fogo',ice:'Gelo',lightning:'Eletricidade',missiles:'Mísseis mágicos'};
   function projectileEffect(scene,actor,target,kind,spell,outcome,tween){
@@ -337,19 +396,21 @@
     actor.cancelAction?.();target.cancelAction?.();
     actor.acting=true;target.acting=true;
     setFacing(actor,dx===0?catalog().defaultFacing(actor.p):dx>0?'right':'left');
-    actor.sprite.rotation=0;actor.sprite.scale.y=actor.baseScale;
+    if(actor.fallen)resting(actor);
+    if(!actor.fallen&&!actor.falling){actor.sprite.rotation=0;actor.sprite.scale.y=actor.baseScale;}
     const ranged=kind==='magic'||kind==='ranged'||kind==='heal';
     const lunge=ranged?0:Math.sign(dx)*Math.min(32,Math.abs(dx)*.14);
     const color=kind==='heal'?'#86bd99':kind==='magic'?'#90b9d1':kind==='fail'?'#b6b9bc':'#dec190';
     const reset=()=>{actor.wrap.position.set(actor.homeX,actor.homeY);actor.sprite.gotoAndStop(0);actor.acting=false;
-      target.wrap.position.set(target.homeX,target.homeY);target.acting=false;resting(actor);resting(target);
-      setFacing(actor,catalog().defaultFacing(actor.p));actor.cancelAction=null;target.cancelAction=null;};
+      target.wrap.position.set(target.homeX,target.homeY);target.acting=false;
+      setFacing(actor,catalog().defaultFacing(actor.p));resting(actor);resting(target);actor.cancelAction=null;target.cancelAction=null;};
     const cancelMotion=tween(scene,duration,t=>{
-      actor.wrap.x=actor.homeX+Math.sin(t*Math.PI)*lunge;
-      if(actor.frames.length===1)actor.sprite.rotation=Math.sin(t*Math.PI*2)*.025*actor.facing;
-      actor.sprite.gotoAndStop(Math.min(actor.frames.length-1,Math.floor(t*actor.frames.length)));
-      setFacing(actor,actor.direction);
-      if(t>(enhanced?.72:.53)){target.wrap.x=target.homeX+(outcome==='fail'?Math.sin(t*Math.PI)*12:Math.sin(t*42)*2);target.sprite.tint=outcome==='fail'?0xffffff:kind==='heal'?0xb7dfbe:0xf0d7c5;}
+      if(!actor.fallen&&!actor.falling){actor.wrap.x=actor.homeX+Math.sin(t*Math.PI)*lunge;
+        if(actor.frames.length===1)actor.sprite.rotation=Math.sin(t*Math.PI*2)*.025*actor.facing;
+        actor.sprite.gotoAndStop(Math.min(actor.frames.length-1,Math.floor(t*actor.frames.length)));
+        setFacing(actor,actor.direction);
+      }
+      if(!target.falling&&!target.fallen&&t>(enhanced?.72:.53)){target.wrap.x=target.homeX+(outcome==='fail'?Math.sin(t*Math.PI)*12:Math.sin(t*42)*2);target.sprite.tint=outcome==='fail'?0xffffff:kind==='heal'?0xb7dfbe:0xf0d7c5;}
     },reset);
     actor.cancelAction=target.cancelAction=()=>{cancelMotion();reset();};
     let cancelFX=()=>{};
@@ -367,5 +428,5 @@
     const cancel=actor.cancelAction;actor.cancelAction=target.cancelAction=()=>{cancelFX();cancel();};
     return {duration,cancel:actor.cancelAction};
   }
-  global.RPGBattlePixi={mount,flash,assetFor,isEnemy};
+  global.RPGBattlePixi={mount,flash,speak,defeated,assetFor,isEnemy};
 })(window);
