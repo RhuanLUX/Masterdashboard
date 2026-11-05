@@ -3,6 +3,19 @@
 const validThemes=new Set(['normal','winter','horror']);
 const random=(min,max)=>min+Math.random()*(max-min);
 const clamp=(value,min,max)=>Math.min(max,Math.max(min,value));
+// Original vector silhouette: separate mirrored structure from wing animation.
+// No bitmap download, emoji or external artwork; crisp at every depth.
+const batArt=`<svg viewBox="-50 -30 100 60" aria-hidden="true" focusable="false">
+ <defs><linearGradient id="bat-membrane" x2="0.2" y2="1"><stop stop-color="#292331"/><stop offset="1" stop-color="#0b0b12"/></linearGradient></defs>
+ <g class="bat-wing bat-wing-left"><path d="M-3,-3 Q-14,-17 -25,-15 Q-33,-18 -46,-24 Q-43,-8 -36,5 Q-31,-6 -25,0 Q-22,4 -21,11 Q-16,3 -12,8 L-4,14 Z" fill="url(#bat-membrane)" stroke="#716477" stroke-opacity=".4" stroke-width=".6"/>
+ <path d="M-5,1 Q-21,-9 -45,-23 M-5,2 Q-21,-9 -36,4 M-5,3 Q-17,-6 -21,10" fill="none" stroke="#9a839f" stroke-opacity=".17" stroke-width=".7"/></g>
+ <g transform="scale(-1 1)"><g class="bat-wing bat-wing-right"><path d="M-3,-3 Q-14,-17 -25,-15 Q-33,-18 -46,-24 Q-43,-8 -36,5 Q-31,-6 -25,0 Q-22,4 -21,11 Q-16,3 -12,8 L-4,14 Z" fill="url(#bat-membrane)" stroke="#716477" stroke-opacity=".4" stroke-width=".6"/>
+ <path d="M-5,1 Q-21,-9 -45,-23 M-5,2 Q-21,-9 -36,4 M-5,3 Q-17,-6 -21,10" fill="none" stroke="#9a839f" stroke-opacity=".17" stroke-width=".7"/></g></g>
+ <path d="M-4,7 L0,20 L4,7" fill="#0b0b12"/>
+ <ellipse cy="3" rx="4.7" ry="10" fill="#111019"/>
+ <path d="M-4,-5 L-5,-15 L-1,-10 Q0,-11 1,-10 L5,-15 L4,-5 Q0,0 -4,-5" fill="#17131e" stroke="#716477" stroke-opacity=".35" stroke-width=".5"/>
+ <path d="M-1,0 Q-2,6 0,11" fill="none" stroke="#6f596f" stroke-opacity=".24" stroke-width="1"/>
+</svg>`;
 
 class ThemeManager{
   constructor(){
@@ -28,8 +41,8 @@ class ThemeManager{
     if(name==='winter')this.startWinter();if(name==='horror')this.startHorror();
   }
   deactivate(){this.stopWinter();this.stopHorror();if(this.root)this.root.dataset.theme='normal';document.documentElement.dataset.rpgTheme='normal'}
-  pause(){this.paused=true;this.stopFrame();this.stopBatTimer();this.activeBats.forEach(bat=>bat.animation?.pause())}
-  resume(){this.paused=false;this.activeBats.forEach(bat=>bat.animation?.play());if(this.active==='winter'&&!this.reduced)this.startFrame();if(this.active==='horror')this.startHorror()}
+  pause(){this.paused=true;this.stopFrame();this.stopBatTimer();this.activeBats.forEach(bat=>bat.node.getAnimations({subtree:true}).forEach(a=>a.pause()))}
+  resume(){this.paused=false;this.activeBats.forEach(bat=>bat.node.getAnimations({subtree:true}).forEach(a=>a.play()));if(this.active==='winter'&&!this.reduced)this.startFrame();if(this.active==='horror')this.startHorror()}
   destroy(){this.stopWinter();this.stopHorror();removeEventListener('resize',this.resize);document.removeEventListener('visibilitychange',this.visibility);this.root?.remove();this.root=this.canvas=this.ctx=this.batLayer=null}
   visibility(){document.hidden?this.pause():this.resume()}
   resize(){
@@ -56,7 +69,7 @@ class ThemeManager{
     this.batTimer=setTimeout(()=>{
       this.batTimer=0;if(this.active!=='horror'||this.paused||document.hidden||this.reduced)return;
       const group=Math.random()<.38?2+Math.floor(Math.random()*3):1;
-      for(let index=0;index<group;index++){const timer=setTimeout(()=>this.spawnBat(index,group),index*random(105,310));this.batSpawnTimers.push(timer)}
+      for(let index=0;index<group;index++){const timer=setTimeout(()=>{this.batSpawnTimers=this.batSpawnTimers.filter(id=>id!==timer);this.spawnBat(index,group)},index*random(105,310));this.batSpawnTimers.push(timer)}
       const factor=this.intensity==='soft'?.58:this.intensity==='intense'?1.55:1;
       this.scheduleBatWave(random(540,1320)/factor);
     },delay);
@@ -65,19 +78,24 @@ class ThemeManager{
     const factor=this.intensity==='soft'?.58:this.intensity==='intense'?1.55:1;
     if(this.active!=='horror'||this.paused||document.hidden||this.reduced||!this.batLayer||this.activeBats.size>=Math.round(14*factor))return;
     const close=Math.random()<.19,fromLeft=Math.random()<.56,wide=this.width||innerWidth,tall=this.height||innerHeight;
-    const scale=close?random(1.7,3.25):random(.5,1.4),duration=random(3300,7200),startX=fromLeft?-72*scale:wide+72*scale,endX=fromLeft?wide+72*scale:-72*scale;
+    const scale=close?random(1.15,1.85):random(.38,.92),duration=random(3300,7200),startX=fromLeft?-72*scale:wide+72*scale,endX=fromLeft?wide+72*scale:-72*scale;
     const startY=clamp(random(tall*.07,tall*.86)+(group>1?(index-(group-1)/2)*random(22,58):0),28,tall-28);
     const endY=clamp(startY+random(-tall*.34,tall*.34),22,tall-20),curveX=wide*.5+random(-wide*.22,wide*.22),curveY=clamp((startY+endY)/2+random(-tall*.29,tall*.29),18,tall-18);
-    const baseAngle=fromLeft?random(-14,13):random(166,194),midAngle=baseAngle+random(-28,28),endAngle=baseAngle+random(-12,12);
-    const node=document.createElement('div');node.className=`theme-bat${close?' theme-bat-close':''}`;node.style.setProperty('--bat-opacity',String(close?random(.7,.94):random(.34,.72)));node.style.setProperty('--wing-speed',`${random(.28,.57)}s`);node.style.zIndex=close?'5':String(2+Math.floor(Math.random()*2));this.batLayer.append(node);
+    const node=document.createElement('div');node.className=`theme-bat${close?' theme-bat-close':''}`;node.innerHTML=batArt;
+    // Unique SVG paint server per instance (no duplicate document IDs).
+    const paintId='bat-'+Math.random().toString(36).slice(2);node.innerHTML=node.innerHTML.replaceAll('bat-membrane',paintId);
+    node.style.setProperty('--bat-opacity',String(close?random(.78,.94):random(.4,.75)));node.style.setProperty('--wing-speed',`${random(.29,.43)}s`);node.style.setProperty('--wing-delay',`${-random(0,1)}s`);node.style.zIndex=close?'5':String(2+Math.floor(Math.random()*2));this.batLayer.append(node);
     const transform=(x,y,angle,amount)=>`translate3d(${x}px,${y}px,0) rotate(${angle}deg) scale(${amount})`;
     const opacity=Number(node.style.getPropertyValue('--bat-opacity'));
-    const animation=node.animate([
-      {transform:transform(startX,startY,baseAngle,scale*.78),opacity:0,offset:0},
-      {transform:transform(startX+(curveX-startX)*.42,startY+(curveY-startY)*.42,midAngle,scale),opacity,offset:.18},
-      {transform:transform(curveX,curveY,midAngle+random(-17,17),scale*random(.88,1.1)),opacity,offset:.54},
-      {transform:transform(endX,endY,endAngle,scale*.82),opacity:0,offset:1}
-    ],{duration,easing:'cubic-bezier(.36,.06,.68,.94)',fill:'forwards'});
+    const phase=random(0,Math.PI*2),sway=random(5,16),keyframes=[];
+    for(let i=0;i<=32;i++){
+      const t=i/32,u=1-t,x=u*u*startX+2*u*t*curveX+t*t*endX;
+      const y=u*u*startY+2*u*t*curveY+t*t*endY+Math.sin(t*Math.PI*4+phase)*sway*Math.sin(t*Math.PI);
+      const vx=2*u*(curveX-startX)+2*t*(endX-curveX),vy=2*u*(curveY-startY)+2*t*(endY-curveY);
+      const bank=clamp(Math.atan2(vy,Math.abs(vx))*180/Math.PI*(fromLeft?1:-1),-28,28)+Math.sin(t*Math.PI*3+phase)*5;
+      keyframes.push({offset:t,transform:transform(x,y,bank,scale*(.88+.12*Math.sin(t*Math.PI))),opacity:opacity*Math.min(1,t*9,(1-t)*9)});
+    }
+    const animation=node.animate(keyframes,{duration,easing:'linear',fill:'forwards'});
     const bat={node,animation};this.activeBats.add(bat);animation.onfinish=()=>{node.remove();this.activeBats.delete(bat)};
   }
 }

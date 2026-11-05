@@ -1,0 +1,24 @@
+{
+  "state": {
+    "count": 9,
+    "pointers": true,
+    "svg": true,
+    "frames": [
+      33,
+      33,
+      33,
+      33,
+      33,
+      33,
+      33,
+      33,
+      33
+    ]
+  },
+  "cleanup": true,
+  "cap": true,
+  "clickThrough": true,
+  "reducedMotion": true,
+  "winter": true,
+  "errors": []
+}
