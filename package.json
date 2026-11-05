@@ -9,8 +9,8 @@
     "start": "electron .",
     "vendor": "node tools/vendor-import.cjs",
     "test": "node tests/platform-core.cjs",
-    "dist:win": "electron-builder --win nsis --x64",
-    "dist:mac": "electron-builder --mac dmg --x64 --arm64"
+    "dist:win": "electron-builder --win nsis --x64 --publish never",
+    "dist:mac": "electron-builder --mac dmg --x64 --arm64 --publish never"
   },
   "devDependencies": {
     "playwright": "1.62.1",
@@ -34,6 +34,6 @@
     "icon": "desktop/icon.png",
     "win": {"target": "nsis", "icon": "desktop/icon.ico", "signExecutable": false},
     "nsis": {"oneClick": false, "perMachine": false, "allowToChangeInstallationDirectory": true, "deleteAppDataOnUninstall": false, "createDesktopShortcut": true, "artifactName": "RPG-Master-${version}-Windows-${arch}.${ext}"},
-    "mac": {"target": "dmg", "category": "public.app-category.role-playing-games", "artifactName": "RPG-Master-${version}-macOS-${arch}.${ext}"}
+    "mac": {"target": "dmg", "identity": "-", "entitlements": "desktop/entitlements.mac.plist", "entitlementsInherit": "desktop/entitlements.mac.plist", "notarize": false, "category": "public.app-category.role-playing-games", "artifactName": "RPG-Master-${version}-macOS-${arch}.${ext}"}
   }
 }

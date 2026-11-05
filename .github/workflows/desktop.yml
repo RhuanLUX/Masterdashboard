@@ -3,10 +3,17 @@ on:
   workflow_dispatch:
 jobs:
   package:
+    timeout-minutes: 25
     strategy:
       fail-fast: false
       matrix:
-        os: [windows-latest, macos-latest]
+        include:
+          - os: windows-latest
+            arch: x64
+          - os: macos-15-intel
+            arch: x64
+          - os: macos-latest
+            arch: arm64
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v4
@@ -21,17 +28,20 @@ jobs:
       - run: node node_modules/electron/install.js
       - run: node tests/platform-core.cjs
       - run: node tests/desktop-smoke.cjs
+        timeout-minutes: 4
       - run: node tests/desktop-import.cjs
+        timeout-minutes: 5
       - if: runner.os == 'Windows'
         run: pnpm dist:win
       - if: runner.os == 'macOS'
-        run: pnpm dist:mac
+        run: pnpm exec electron-builder --mac dmg --${{ matrix.arch }} --publish never
         env:
           CSC_IDENTITY_AUTO_DISCOVERY: 'false'
       - run: node tools/test-packaged.cjs
+        timeout-minutes: 6
       - uses: actions/upload-artifact@v4
         with:
-          name: RPG-Master-${{ runner.os }}
+          name: RPG-Master-${{ runner.os }}-${{ matrix.arch }}
           path: |
             dist/*.exe
             dist/*.dmg
