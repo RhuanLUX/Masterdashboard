@@ -1,5 +1,7 @@
 # RPG Master — Crônica dos Três Destinos
 
+**V2 — Versão 2 aprovada pelo proprietário em 6 de novembro de 2026.** Esta versão está preservada na tag Git **V2**, sobre a base técnica 4.4.1. Registro em [VERSAO_APROVADA.txt](VERSAO_APROVADA.txt). Nenhum instalador foi gerado para este marco.
+
 **Versão atual do código: 4.4.1 — visitantes animados nos cenários, catálogo animado e 13 efeitos de magia. Nenhum novo instalador foi gerado.** Execute **INICIAR_RPG.bat** (Windows) ou **INICIAR_RPG.command** (macOS) nesta pasta. Seus controles continuam em **Mesa → Combate**. Para os jogadores, abra **TV de combate** e arraste a janela para a segunda tela. Todos os participantes, alvos e efeitos da arena são refletidos na TV; flags antigas de revelação não escondem inimigos nem bloqueiam ataques.
 
 Além do dragão, os cenários recebem aparições ocasionais de corvos, águias, corujas, cervos e uma caravana. Cada ambiente tem visitantes próprios, com quadros individuais e passagens em direções e intervalos variados, sincronizadas na TV. O recurso respeita **reduzir movimento** do sistema. Atualize as duas janelas com **F5**. Veja as [aparições e a verificação visual](docs/AMBIENTACAO_V4_4_1.md).

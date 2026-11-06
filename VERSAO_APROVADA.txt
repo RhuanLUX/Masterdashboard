@@ -1,0 +1,17 @@
+RPG MASTER — V2 — VERSÃO 2 APROVADA
+
+Status: aprovado explicitamente pelo proprietário.
+Data: 2026-11-06
+Tag Git: V2
+Base técnica: 4.4.1
+Commit do aplicativo aprovado: c1f8446faa22be8852e1476abeac6df91730ccf8
+Repositório: https://github.com/RhuanLUX/Masterdashboard.git
+
+Este marco preserva o estado atual aprovado do aplicativo, incluindo a arena,
+as animações, magias, cenários, visitantes e sincronização da TV de combate.
+O registro de aprovação não modifica código, regras nem dados do usuário.
+Os testes e as capturas desta base estão em docs/AMBIENTACAO_V4_4_1.md.
+
+V2 é o nome da versão aprovada solicitado pelo proprietário; a numeração
+técnica 4.4.1 permanece preservada para manter a continuidade do histórico.
+Nenhum instalador foi gerado.
