@@ -1,0 +1,674 @@
+[
+  {
+    "id": "exp-berserker",
+    "asset": "assets/pixel-sprites/v4.3/exp-berserker.png",
+    "reference": "assets/library-expansion/p053.webp",
+    "subject": "Brann: old muscular human barbarian with white braided hair and beard, black angular tattoos, twin axes, black fur-trimmed leather trousers, red wraps and boots",
+    "width": 456,
+    "height": 480,
+    "bounds": {
+      "left": 99,
+      "right": 373,
+      "top": 53,
+      "bottom": 440
+    },
+    "transparentFraction": 0.7747852704678363,
+    "sha256": "c379a08f1f4f19d55eeb71339558303b1ea0453bb054b6ab778982500cdebfb0"
+  },
+  {
+    "id": "exp-coracao",
+    "asset": "assets/pixel-sprites/v4.3/exp-coracao.png",
+    "reference": "assets/library-expansion/p054.webp",
+    "subject": "Yara: brown-skinned female barbarian, dark hair in two buns, brown and gold armor, poleaxe, bear totem ornaments",
+    "width": 439,
+    "height": 480,
+    "bounds": {
+      "left": 76,
+      "right": 403,
+      "top": 26,
+      "bottom": 435
+    },
+    "transparentFraction": 0.7159975322703113,
+    "sha256": "0b634f159267bc7aa892980c86f1b30e788d15736682aa067d3b3413fdbc132b"
+  },
+  {
+    "id": "exp-arvore",
+    "asset": "assets/pixel-sprites/v4.3/exp-arvore.png",
+    "reference": "assets/library-expansion/p055.webp",
+    "subject": "Torva: pale gray female elf, long white hair, green and gold leather barbarian armor, a large battle axe and root motifs",
+    "width": 439,
+    "height": 480,
+    "bounds": {
+      "left": 71,
+      "right": 392,
+      "top": 40,
+      "bottom": 437
+    },
+    "transparentFraction": 0.7265233485193622,
+    "sha256": "aea8828703058a69ba19e2140b0a6f9a5e26114b28793b928eed443e19ae3661"
+  },
+  {
+    "id": "exp-zelote",
+    "asset": "assets/pixel-sprites/v4.3/exp-zelote.png",
+    "reference": "assets/library-expansion/p056.webp",
+    "subject": "Darian: massive white dragonborn male barbarian, elongated white dragon snout and horns, muscular torso, red leather bracers and waist armor, huge wooden war mallet",
+    "width": 439,
+    "height": 480,
+    "bounds": {
+      "left": 31,
+      "right": 427,
+      "top": 20,
+      "bottom": 457
+    },
+    "transparentFraction": 0.6131074411541382,
+    "sha256": "d73ffc3871a15ef4dea2003efc305167689e00acda71b3d1b23ab3a78f5f6e3b"
+  },
+  {
+    "id": "exp-mestre-armas",
+    "asset": "assets/pixel-sprites/v4.3/exp-mestre-armas.png",
+    "reference": "assets/library-expansion/p093.webp",
+    "subject": "Draven: blue dragonborn archer, blue reptilian snout, purple tabard, golden scale armor sleeves, longbow and quiver",
+    "width": 439,
+    "height": 480,
+    "bounds": {
+      "left": 97,
+      "right": 372,
+      "top": 46,
+      "bottom": 430
+    },
+    "transparentFraction": 0.779660212604404,
+    "sha256": "4a2cf9a06142b5246283f2c7340ba5b20d8f2b781a7eb9ca05fc46b1f9e775c2"
+  },
+  {
+    "id": "exp-campea",
+    "asset": "assets/pixel-sprites/v4.3/exp-campea.png",
+    "reference": "assets/library-expansion/p095.webp",
+    "subject": "Sera: tan human woman warrior, braided dark brown hair, black armor, blue cape, sword and shield",
+    "width": 453,
+    "height": 480,
+    "bounds": {
+      "left": 54,
+      "right": 348,
+      "top": 39,
+      "bottom": 438
+    },
+    "transparentFraction": 0.7045437821927888,
+    "sha256": "5fd04bd13854f1fef39132a07613fb757271117dc6846ffefb285da178c0c135"
+  },
+  {
+    "id": "exp-arcano",
+    "asset": "assets/pixel-sprites/v4.3/exp-arcano.png",
+    "reference": "assets/library-expansion/p096.webp",
+    "subject": "Kael: mysterious helmeted elven knight, black and gold plate armor, longsword, subtle blue magic in free hand",
+    "width": 451,
+    "height": 480,
+    "bounds": {
+      "left": 75,
+      "right": 319,
+      "top": 55,
+      "bottom": 436
+    },
+    "transparentFraction": 0.7954129711751663,
+    "sha256": "9217730af4ae526380840819ce429ff3f2eb1c22741e5c1d5882d470ba30df7c"
+  },
+  {
+    "id": "exp-barda",
+    "asset": "assets/pixel-sprites/v4.3/exp-barda.png",
+    "reference": "assets/library-expansion/p066.webp",
+    "subject": "Liora: red dragonborn bard, red reptilian snout, elegant violet pink military coat, decorated round buckler, confident spellcasting hand",
+    "width": 451,
+    "height": 480,
+    "bounds": {
+      "left": 54,
+      "right": 408,
+      "top": 45,
+      "bottom": 432
+    },
+    "transparentFraction": 0.7745796378418329,
+    "sha256": "dd60a01f0d861419e4019578129ce894afdd9dbe53e222d5126f2a3560eea47a"
+  },
+  {
+    "id": "exp-bardo-guerra",
+    "asset": "assets/pixel-sprites/v4.3/exp-bardo-guerra.png",
+    "reference": "assets/library-expansion/p065.webp",
+    "subject": "Ravel: cheerful small brown-skinned halfling man, curly black hair, green and gold coat, red scarf, green bardic book and short sword",
+    "width": 439,
+    "height": 480,
+    "bounds": {
+      "left": 57,
+      "right": 414,
+      "top": 28,
+      "bottom": 448
+    },
+    "transparentFraction": 0.7112756264236902,
+    "sha256": "0e59a68d6b41b237465bbd163bfc970b44c83404dafc478e3e3b5ec50738b682"
+  },
+  {
+    "id": "exp-curadora",
+    "asset": "assets/pixel-sprites/v4.3/exp-curadora.png",
+    "reference": "assets/library-expansion/p073.webp",
+    "subject": "Miro: heavyset male human cleric, black hair, navy and gold robes, circular belt ornaments, warm orange healing light in hand",
+    "width": 439,
+    "height": 480,
+    "bounds": {
+      "left": 96,
+      "right": 319,
+      "top": 35,
+      "bottom": 451
+    },
+    "transparentFraction": 0.7033029612756264,
+    "sha256": "9bf80d9ecddc2564d1c73c1b1befdc7f816de6e52b69b5c6645f27b724737f28"
+  },
+  {
+    "id": "exp-luz",
+    "asset": "assets/pixel-sprites/v4.3/exp-luz.png",
+    "reference": "assets/library-expansion/p074.webp",
+    "subject": "Auren: pale golden-haired elf cleric, slender golden halo, white dark red and gold robes, small ornate golden shield",
+    "width": 456,
+    "height": 480,
+    "bounds": {
+      "left": 132,
+      "right": 322,
+      "top": 29,
+      "bottom": 454
+    },
+    "transparentFraction": 0.7836668494152047,
+    "sha256": "dfca637f73416fc3e3ce0a6e9fb422638d5c3da033a9870fc06240cc089ce6d3"
+  },
+  {
+    "id": "exp-druida-terra",
+    "asset": "assets/pixel-sprites/v4.3/exp-druida-terra.png",
+    "reference": "assets/library-expansion/p084.webp",
+    "subject": "Nimue: orange red skinned female humanoid druid, pointed leaf-petal hat, flowing red gold robes, branching wooden staff",
+    "width": 454,
+    "height": 480,
+    "bounds": {
+      "left": 81,
+      "right": 360,
+      "top": 31,
+      "bottom": 441
+    },
+    "transparentFraction": 0.7279873348017621,
+    "sha256": "ba7d52dcf63097b1e6e120136c8bf23812911fe9dd8d73d3a81651686b16e65e"
+  },
+  {
+    "id": "exp-druida-lua",
+    "asset": "assets/pixel-sprites/v4.3/exp-druida-lua.png",
+    "reference": "assets/library-expansion/p085.webp",
+    "subject": "Oren: purple gray skinned male orc druid, muscular bare arms, dark fur and leather armor, potion flask and curved wooden staff",
+    "width": 456,
+    "height": 480,
+    "bounds": {
+      "left": 109,
+      "right": 371,
+      "top": 31,
+      "bottom": 456
+    },
+    "transparentFraction": 0.7288148757309941,
+    "sha256": "cc7767f1fa4d0ae8a8f7ac9660d68e6bacc128ec8ed1d14d718698dd9587284a"
+  },
+  {
+    "id": "exp-paladina",
+    "asset": "assets/pixel-sprites/v4.3/exp-paladina.png",
+    "reference": "assets/library-expansion/p112.webp",
+    "subject": "Helena: older woman paladin, curled white hair, green and gold heavy armor, large shield and sword",
+    "width": 456,
+    "height": 480,
+    "bounds": {
+      "left": 69,
+      "right": 344,
+      "top": 35,
+      "bottom": 439
+    },
+    "transparentFraction": 0.7200246710526316,
+    "sha256": "dbf81a48c86aca4ef7be396571e1ff4e756aac8e3ea90edb9dced7fe9ed41c40"
+  },
+  {
+    "id": "exp-paladino-voto",
+    "asset": "assets/pixel-sprites/v4.3/exp-paladino-voto.png",
+    "reference": "assets/library-expansion/p116.webp",
+    "subject": "Valen: fully helmeted black and teal armored male paladin, long sword, restrained translucent blue spectral wing accents",
+    "width": 420,
+    "height": 480,
+    "bounds": {
+      "left": 52,
+      "right": 353,
+      "top": 32,
+      "bottom": 433
+    },
+    "transparentFraction": 0.7559771825396825,
+    "sha256": "86b13becfb92f6d425c43764aa9504e224f6c609bcb8f461584f8f9ccae2fd22"
+  },
+  {
+    "id": "exp-rastreadora",
+    "asset": "assets/pixel-sprites/v4.3/exp-rastreadora.png",
+    "reference": "assets/library-expansion/p126.webp",
+    "subject": "Taren: male elf ranger with curly dark hair, white fur mantle, black armor, longbow, quiver and hunting boots",
+    "width": 439,
+    "height": 480,
+    "bounds": {
+      "left": 67,
+      "right": 356,
+      "top": 33,
+      "bottom": 447
+    },
+    "transparentFraction": 0.7317103264996203,
+    "sha256": "c1424f9f3867a21c66d04da8f58bfba7effb59c54e389ee5059a94ad6e32f2b5"
+  },
+  {
+    "id": "exp-sombras",
+    "asset": "assets/pixel-sprites/v4.3/exp-sombras.png",
+    "reference": "assets/library-expansion/p125.webp",
+    "subject": "Vaelis: female elf with dark hair, purple black leather ranger armor, turquoise scarf, elegant purple bow",
+    "width": 439,
+    "height": 480,
+    "bounds": {
+      "left": 123,
+      "right": 358,
+      "top": 36,
+      "bottom": 443
+    },
+    "transparentFraction": 0.7952258921791951,
+    "sha256": "2b6ba35c099c022d1f711cfcd39d495b25fa8de15a549e84e387722b72871705"
+  },
+  {
+    "id": "exp-ladra",
+    "asset": "assets/pixel-sprites/v4.3/exp-ladra.png",
+    "reference": "assets/library-expansion/p136.webp",
+    "subject": "Nessa: slender female human thief, gray blond hair, goggles on forehead, black hooded leather outfit, dagger and lockpicks",
+    "width": 439,
+    "height": 480,
+    "bounds": {
+      "left": 103,
+      "right": 308,
+      "top": 41,
+      "bottom": 447
+    },
+    "transparentFraction": 0.8081435079726651,
+    "sha256": "53551992cb242a2df67fc0f35b0502dee703085596655bd9e43929a04885ace9"
+  },
+  {
+    "id": "exp-assassino",
+    "asset": "assets/pixel-sprites/v4.3/exp-assassino.png",
+    "reference": "assets/library-expansion/p133.webp",
+    "subject": "Corvin: green reptilian humanoid assassin, navy hooded cloak, brown trousers, curved dagger, slender agile stance",
+    "width": 456,
+    "height": 480,
+    "bounds": {
+      "left": 81,
+      "right": 338,
+      "top": 43,
+      "bottom": 442
+    },
+    "transparentFraction": 0.7669042397660819,
+    "sha256": "3869a06eefd41f9382a96b66aaaabe14c3737794aabc29756b4f9913081b982c"
+  },
+  {
+    "id": "exp-evocadora",
+    "asset": "assets/pixel-sprites/v4.3/exp-evocadora.png",
+    "reference": "assets/library-expansion/p173.webp",
+    "subject": "Ilyra: slender pale female elf wizard, light blond hair, wide pointed blue hat, long teal blue coat, small orange flame in hand",
+    "width": 439,
+    "height": 480,
+    "bounds": {
+      "left": 89,
+      "right": 344,
+      "top": 33,
+      "bottom": 445
+    },
+    "transparentFraction": 0.747636674259681,
+    "sha256": "59cc8a9a1161f0295998d00a503ce49df3782ede08f2da4509091c44cff45ce9"
+  },
+  {
+    "id": "exp-abjurador",
+    "asset": "assets/pixel-sprites/v4.3/exp-abjurador.png",
+    "reference": "assets/library-expansion/p171.webp",
+    "subject": "Edrik: dark bearded human male wizard, hooded navy blue purple robes, long staff, small arcane shield sigil",
+    "width": 456,
+    "height": 480,
+    "bounds": {
+      "left": 62,
+      "right": 370,
+      "top": 43,
+      "bottom": 435
+    },
+    "transparentFraction": 0.6864720394736842,
+    "sha256": "6563c83e9d5d04702406b46a39604df846cbae99f073bdd888c037a8233ccc7b"
+  },
+  {
+    "id": "exp-feiticeira",
+    "asset": "assets/pixel-sprites/v4.3/exp-feiticeira.png",
+    "reference": "assets/library-expansion/p147.webp",
+    "subject": "Zarek: fit pale blond male sorcerer, teal scarf, bare torso, white light-blue flowing trousers and wraps, subtle icy dragon magic",
+    "width": 439,
+    "height": 480,
+    "bounds": {
+      "left": 76,
+      "right": 375,
+      "top": 35,
+      "bottom": 445
+    },
+    "transparentFraction": 0.7323035307517084,
+    "sha256": "28bd896a4cc0eb2a1cf8255ee152da2c53364eb32c7f77b1384694c8c6df1ab9"
+  },
+  {
+    "id": "exp-bruxa",
+    "asset": "assets/pixel-sprites/v4.3/exp-bruxa.png",
+    "reference": "assets/library-expansion/p159.webp",
+    "subject": "Selene: light blue skinned female elf warlock, lavender hair, long dark purple robe, ornate staff with purple orb",
+    "width": 320,
+    "height": 480,
+    "bounds": {
+      "left": 37,
+      "right": 263,
+      "top": 19,
+      "bottom": 450
+    },
+    "transparentFraction": 0.6274739583333333,
+    "sha256": "9064933f8ed44e30662e9cea17c4232c4447ea158794ee2f54644a5573f4dcc1"
+  },
+  {
+    "id": "exp-mercador",
+    "asset": "assets/pixel-sprites/v4.3/exp-mercador.png",
+    "reference": "assets/library-expansion/p228.webp",
+    "subject": "Tomas: golden lizardfolk merchant with neck frills, red tan traveling robes, lantern, wooden staff and pack",
+    "width": 439,
+    "height": 480,
+    "bounds": {
+      "left": 94,
+      "right": 354,
+      "top": 11,
+      "bottom": 437
+    },
+    "transparentFraction": 0.6954584282460137,
+    "sha256": "fbc7a23d39901fd4a8ce38d42f02ee87725cc3aa9f9a2f9af8814e270103fcca"
+  },
+  {
+    "id": "exp-morcego",
+    "asset": "assets/pixel-sprites/v4.3/exp-morcego.png",
+    "reference": "assets/library-expansion/p345.webp",
+    "subject": "Small natural dark brown bat with leathery wings open, hooked feet visible, right-facing profile, no humanoid features",
+    "width": 480,
+    "height": 320,
+    "bounds": {
+      "left": 30,
+      "right": 435,
+      "top": 33,
+      "bottom": 282
+    },
+    "transparentFraction": 0.7629817708333333,
+    "sha256": "4d0b89d77be7deb6370238aa94e05bfd5882013012691b3ab944d6eff363599b"
+  },
+  {
+    "id": "exp-gato",
+    "asset": "assets/pixel-sprites/v4.3/exp-gato.png",
+    "reference": "assets/library-expansion/p346.webp",
+    "subject": "Sleek black cat standing on all four paws, curved tail and amber eyes, facing right",
+    "width": 480,
+    "height": 320,
+    "bounds": {
+      "left": 76,
+      "right": 411,
+      "top": 24,
+      "bottom": 294
+    },
+    "transparentFraction": 0.719296875,
+    "sha256": "48b3a4725fb46cd7fa07f2f2c7430910a6e6ea04b18b0ba321b11e70a8b87d66"
+  },
+  {
+    "id": "exp-sapo",
+    "asset": "assets/pixel-sprites/v4.3/exp-sapo.png",
+    "reference": "assets/library-expansion/p348.webp",
+    "subject": "Small natural green brown frog with speckled skin, crouching right-facing on all four webbed feet",
+    "width": 480,
+    "height": 320,
+    "bounds": {
+      "left": 70,
+      "right": 407,
+      "top": 48,
+      "bottom": 269
+    },
+    "transparentFraction": 0.6672265625,
+    "sha256": "837f73d187ef98495147be2d793125978f79317c777e8864cefa1328746522ae"
+  },
+  {
+    "id": "exp-diabrete",
+    "asset": "assets/pixel-sprites/v4.3/exp-diabrete.png",
+    "reference": "assets/library-expansion/p351.webp",
+    "subject": "Small red imp devil with curved horns, pointed tail, leathery wings, clawed hands and feet, mischievous face",
+    "width": 462,
+    "height": 480,
+    "bounds": {
+      "left": 26,
+      "right": 424,
+      "top": 58,
+      "bottom": 423
+    },
+    "transparentFraction": 0.7064303751803752,
+    "sha256": "68338accc062c82f8daf9f1522281ab28f67e3741ae54802f76b97527a54255b"
+  },
+  {
+    "id": "exp-mastim",
+    "asset": "assets/pixel-sprites/v4.3/exp-mastim.png",
+    "reference": "assets/library-expansion/p352.webp",
+    "subject": "Stocky brown mastiff dog, short fur, sturdy leather harness and small saddlebags, standing right-facing on all four paws",
+    "width": 480,
+    "height": 320,
+    "bounds": {
+      "left": 49,
+      "right": 414,
+      "top": 29,
+      "bottom": 294
+    },
+    "transparentFraction": 0.6769661458333334,
+    "sha256": "fd249a5dc8f31e8ad471fe3c8221329026aadf2a2ea7f6d482a011c0f5cbe306"
+  },
+  {
+    "id": "exp-pseudodragao",
+    "asset": "assets/pixel-sprites/v4.3/exp-pseudodragao.png",
+    "reference": "assets/library-expansion/p353.webp",
+    "subject": "Small red pseudodragon, slender neck, four clawed legs, pointed tail and delicate spread leathery wings, alert right-facing stance",
+    "width": 480,
+    "height": 320,
+    "bounds": {
+      "left": 69,
+      "right": 397,
+      "top": 50,
+      "bottom": 265
+    },
+    "transparentFraction": 0.76359375,
+    "sha256": "0c331ec6499809f83967f9ddeca8262689f2d9500593c2c19bc5199a2bf2f4fe"
+  },
+  {
+    "id": "exp-quasit",
+    "asset": "assets/pixel-sprites/v4.3/exp-quasit.png",
+    "reference": "assets/library-expansion/p354.webp",
+    "subject": "Small green quasit demon, knobbly skin, curled horns, claws and hunched goblin-like body, standing ready facing right",
+    "width": 480,
+    "height": 360,
+    "bounds": {
+      "left": 88,
+      "right": 388,
+      "top": 28,
+      "bottom": 337
+    },
+    "transparentFraction": 0.7727314814814815,
+    "sha256": "7f093c6a6ce62a2c4af5df7bbb50ad8010fbd19abe5526b21371e3d885a22fef"
+  },
+  {
+    "id": "exp-esfinge",
+    "asset": "assets/pixel-sprites/v4.3/exp-esfinge.png",
+    "reference": "assets/library-expansion/p356.webp",
+    "subject": "Tiny Sphinx of Wonder, bright blue purple winged feline, ornate long feathers, feline face and four paws, magical jewel collar",
+    "width": 480,
+    "height": 454,
+    "bounds": {
+      "left": 31,
+      "right": 438,
+      "top": 8,
+      "bottom": 422
+    },
+    "transparentFraction": 0.6056809838472834,
+    "sha256": "180a8f3e11f2a52f8794d36ba59f9972e100d88fedc7c174274b091fc60311d4"
+  },
+  {
+    "id": "exp-fada",
+    "asset": "assets/pixel-sprites/v4.3/exp-fada.png",
+    "reference": "assets/library-expansion/p357.webp",
+    "subject": "Tiny red-haired female fairy warrior, green leaf clothing, translucent dragonfly wings, needle-like sword, full body and feet",
+    "width": 439,
+    "height": 480,
+    "bounds": {
+      "left": 37,
+      "right": 409,
+      "top": 35,
+      "bottom": 445
+    },
+    "transparentFraction": 0.7622484813971147,
+    "sha256": "ab7b98d4a98b61d5a56e2399f363360c03f7130f54a3cf9b6f8344fca21e1bde"
+  },
+  {
+    "id": "exp-lobo",
+    "asset": "assets/pixel-sprites/v4.3/exp-lobo.png",
+    "reference": "assets/library-expansion/p358.webp",
+    "subject": "Natural gray wolf, thick silver gray fur, alert ears, long bushy tail, standing right-facing on all four paws",
+    "width": 480,
+    "height": 320,
+    "bounds": {
+      "left": 63,
+      "right": 404,
+      "top": 51,
+      "bottom": 264
+    },
+    "transparentFraction": 0.75076171875,
+    "sha256": "da71cfd686041f3ffdf45385cd196a4fb56286490769fb6d1fe5b3cab6bc8f71"
+  },
+  {
+    "id": "exp-construto",
+    "asset": "assets/pixel-sprites/v4.3/exp-construto.png",
+    "reference": "assets/library-expansion/p323.webp",
+    "subject": "Sentinela de Bronze: heavy humanoid armored construct, weathered gray bronze gold plates, closed helmet, articulated metal boots, heavy guard weapon",
+    "width": 456,
+    "height": 480,
+    "bounds": {
+      "left": 35,
+      "right": 436,
+      "top": 35,
+      "bottom": 432
+    },
+    "transparentFraction": 0.7276087353801169,
+    "sha256": "018d32318371c27c2cefb7dc6d49cea37b659c396ec3f1a61fb2f4e888291f42"
+  },
+  {
+    "id": "exp-serpe",
+    "asset": "assets/pixel-sprites/v4.3/exp-serpe.png",
+    "reference": "assets/library-expansion/p324.webp",
+    "subject": "Serpe de Cristal: blue white ice dragon, crystalline horns and scales, four legs, long tail, folded but readable crystalline wings, right-facing battle stance",
+    "width": 480,
+    "height": 320,
+    "bounds": {
+      "left": 62,
+      "right": 411,
+      "top": 41,
+      "bottom": 284
+    },
+    "transparentFraction": 0.6774739583333333,
+    "sha256": "2c6a25b33503ad2238248e4f251ec77638bb219823b737fcc076ff40f411f7cb"
+  },
+  {
+    "id": "exp-infernal",
+    "asset": "assets/pixel-sprites/v4.3/exp-infernal.png",
+    "reference": "assets/library-expansion/p326.webp",
+    "subject": "Carrasco das Brasas: towering muscular red fiend, large curved black horns, charcoal armor, fiery trident, clawed feet, restrained embers",
+    "width": 450,
+    "height": 480,
+    "bounds": {
+      "left": 15,
+      "right": 427,
+      "top": 35,
+      "bottom": 452
+    },
+    "transparentFraction": 0.5810694444444444,
+    "sha256": "8446a632fd519391192727996f22b91bb6fee79026cda26902395b88c20a21dd"
+  },
+  {
+    "id": "exp-espectro",
+    "asset": "assets/pixel-sprites/v4.3/exp-espectro.png",
+    "reference": "assets/library-expansion/p327.webp",
+    "subject": "Lamento da Cripta: haunting gray skeletal wraith, ragged gray cloak and long spectral arms, full floating tapering silhouette, face aimed right",
+    "width": 439,
+    "height": 480,
+    "bounds": {
+      "left": 33,
+      "right": 418,
+      "top": 8,
+      "bottom": 472
+    },
+    "transparentFraction": 0.6852553151100987,
+    "sha256": "7cfc13d122bcca14c925ef45bd61254c63a697278ec38438bb71576f58ac2d47"
+  },
+  {
+    "id": "exp-raizes",
+    "asset": "assets/pixel-sprites/v4.3/exp-raizes.png",
+    "reference": "assets/library-expansion/p306.webp",
+    "subject": "Guardiao de Raizes: huge ancient walking tree guardian, wise bark face with branch beard, leafy crown, full wooden body, root fingers and two wide root feet",
+    "width": 456,
+    "height": 480,
+    "bounds": {
+      "left": 15,
+      "right": 436,
+      "top": 7,
+      "bottom": 458
+    },
+    "transparentFraction": 0.5092379385964912,
+    "sha256": "8fe61e87d0d1ab7296b6473a7bd11d0b5b9eeab0263a889865bc2f32a24a773b"
+  },
+  {
+    "id": "exp-larva",
+    "asset": "assets/pixel-sprites/v4.3/exp-larva.png",
+    "reference": "assets/library-expansion/p355.webp",
+    "subject": "Larva Rubra: monstrous red segmented worm, curled full body on ground, huge fanged mouth raised toward right, chitin ridges, no legs",
+    "width": 480,
+    "height": 439,
+    "bounds": {
+      "left": 64,
+      "right": 429,
+      "top": 40,
+      "bottom": 411
+    },
+    "transparentFraction": 0.6011911541381929,
+    "sha256": "5c1d5f873ff4465a2f4b8646d19fbd0ad0a814cd672c78f4e55e65d863abf7c2"
+  },
+  {
+    "id": "exp-elemental",
+    "asset": "assets/pixel-sprites/v4.3/exp-elemental.png",
+    "reference": "assets/library-expansion/p383.webp",
+    "subject": "Draco da Tempestade: emerald green storm dragon, long horned head, four legs, ridged tail, great leathery wings, tiny blue electric accents, entire body",
+    "width": 480,
+    "height": 320,
+    "bounds": {
+      "left": 20,
+      "right": 443,
+      "top": 8,
+      "bottom": 301
+    },
+    "transparentFraction": 0.5572005208333334,
+    "sha256": "50b3573a38dfc3174158d607f02b5e0d0270a325cecbbd75fef32b421444510c"
+  },
+  {
+    "id": "exp-montaria",
+    "asset": "assets/pixel-sprites/v4.3/exp-montaria.png",
+    "reference": "assets/library-expansion/p303.webp",
+    "subject": "Corcel do Veu: spectral teal horse, luminous mane and tail, ornate purple harness, four complete hooves planted, elegant right-facing stance",
+    "width": 480,
+    "height": 320,
+    "bounds": {
+      "left": 51,
+      "right": 383,
+      "top": 10,
+      "bottom": 300
+    },
+    "transparentFraction": 0.6734309895833334,
+    "sha256": "5d00461fdfaf516b7217aa11cc77535daf0b1b1fa570be8a82039a12ebc85388"
+  }
+]

@@ -44,4 +44,4 @@ assert(C.roster(state).some(x=>x.sourceId==='pai-elenya'));
 assert.equal(C.source(state,'visual','barbarvore').hpMax,null); // no invented rules
 console.log(`BATTLE_CATALOG_PASS entities=${roster.length} explicitFallbacks=${roster.filter(x=>C.visualFor(x,{...state,v2:{}}).fallback).length}`);
 assert.equal(roster.filter(x=>C.visualFor(x,state).fallback).length,0);
-assert.equal(Object.keys(C.sprites).length,33);
+assert.equal(Object.keys(C.sprites).length,75);

@@ -1,0 +1,22 @@
+{
+  "viewports": [
+    1920,
+    1366,
+    1280
+  ],
+  "favoritesAcrossTabs": true,
+  "ndFilter": true,
+  "copyAndArchive": true,
+  "editSynchronizesLibrary": true,
+  "initiativeCopied": true,
+  "classesAndSpells": true,
+  "globalSearch": true,
+  "customImageBackup": true,
+  "reopenPreservesEdits": true,
+  "backupRestore": true,
+  "newEntriesInCombatAndTV": true,
+  "originalCharactersUnchanged": true,
+  "errors": [],
+  "externalRequests": [],
+  "failedRequests": []
+}

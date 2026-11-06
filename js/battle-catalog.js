@@ -3,6 +3,48 @@
   'use strict';
   const keyOf = p => `${p.sourceType}:${p.sourceId}`;
   const sprites = Object.freeze({
+    'creature:exp-berserker': { asset:'assets/pixel-sprites/v4.3/exp-berserker.png', columns:1, nativeFacing:'right' },
+    'creature:exp-coracao': { asset:'assets/pixel-sprites/v4.3/exp-coracao.png', columns:1, nativeFacing:'right' },
+    'creature:exp-arvore': { asset:'assets/pixel-sprites/v4.3/exp-arvore.png', columns:1, nativeFacing:'right' },
+    'creature:exp-zelote': { asset:'assets/pixel-sprites/v4.3/exp-zelote.png', columns:1, nativeFacing:'right' },
+    'creature:exp-mestre-armas': { asset:'assets/pixel-sprites/v4.3/exp-mestre-armas.png', columns:1, nativeFacing:'right' },
+    'creature:exp-campea': { asset:'assets/pixel-sprites/v4.3/exp-campea.png', columns:1, nativeFacing:'right' },
+    'creature:exp-arcano': { asset:'assets/pixel-sprites/v4.3/exp-arcano.png', columns:1, nativeFacing:'right' },
+    'creature:exp-barda': { asset:'assets/pixel-sprites/v4.3/exp-barda.png', columns:1, nativeFacing:'right' },
+    'creature:exp-bardo-guerra': { asset:'assets/pixel-sprites/v4.3/exp-bardo-guerra.png', columns:1, nativeFacing:'right' },
+    'creature:exp-curadora': { asset:'assets/pixel-sprites/v4.3/exp-curadora.png', columns:1, nativeFacing:'right' },
+    'creature:exp-luz': { asset:'assets/pixel-sprites/v4.3/exp-luz.png', columns:1, nativeFacing:'right' },
+    'creature:exp-druida-terra': { asset:'assets/pixel-sprites/v4.3/exp-druida-terra.png', columns:1, nativeFacing:'right' },
+    'creature:exp-druida-lua': { asset:'assets/pixel-sprites/v4.3/exp-druida-lua.png', columns:1, nativeFacing:'right' },
+    'creature:exp-paladina': { asset:'assets/pixel-sprites/v4.3/exp-paladina.png', columns:1, nativeFacing:'right' },
+    'creature:exp-paladino-voto': { asset:'assets/pixel-sprites/v4.3/exp-paladino-voto.png', columns:1, nativeFacing:'right' },
+    'creature:exp-rastreadora': { asset:'assets/pixel-sprites/v4.3/exp-rastreadora.png', columns:1, nativeFacing:'right' },
+    'creature:exp-sombras': { asset:'assets/pixel-sprites/v4.3/exp-sombras.png', columns:1, nativeFacing:'right' },
+    'creature:exp-ladra': { asset:'assets/pixel-sprites/v4.3/exp-ladra.png', columns:1, nativeFacing:'right' },
+    'creature:exp-assassino': { asset:'assets/pixel-sprites/v4.3/exp-assassino.png', columns:1, nativeFacing:'right' },
+    'creature:exp-evocadora': { asset:'assets/pixel-sprites/v4.3/exp-evocadora.png', columns:1, nativeFacing:'right' },
+    'creature:exp-abjurador': { asset:'assets/pixel-sprites/v4.3/exp-abjurador.png', columns:1, nativeFacing:'right' },
+    'creature:exp-feiticeira': { asset:'assets/pixel-sprites/v4.3/exp-feiticeira.png', columns:1, nativeFacing:'right' },
+    'creature:exp-bruxa': { asset:'assets/pixel-sprites/v4.3/exp-bruxa.png', columns:1, nativeFacing:'right' },
+    'creature:exp-mercador': { asset:'assets/pixel-sprites/v4.3/exp-mercador.png', columns:1, nativeFacing:'right' },
+    'creature:exp-morcego': { asset:'assets/pixel-sprites/v4.3/exp-morcego.png', columns:1, nativeFacing:'right' },
+    'creature:exp-gato': { asset:'assets/pixel-sprites/v4.3/exp-gato.png', columns:1, nativeFacing:'right' },
+    'creature:exp-sapo': { asset:'assets/pixel-sprites/v4.3/exp-sapo.png', columns:1, nativeFacing:'right' },
+    'creature:exp-diabrete': { asset:'assets/pixel-sprites/v4.3/exp-diabrete.png', columns:1, nativeFacing:'right' },
+    'creature:exp-mastim': { asset:'assets/pixel-sprites/v4.3/exp-mastim.png', columns:1, nativeFacing:'right' },
+    'creature:exp-pseudodragao': { asset:'assets/pixel-sprites/v4.3/exp-pseudodragao.png', columns:1, nativeFacing:'right' },
+    'creature:exp-quasit': { asset:'assets/pixel-sprites/v4.3/exp-quasit.png', columns:1, nativeFacing:'right' },
+    'creature:exp-esfinge': { asset:'assets/pixel-sprites/v4.3/exp-esfinge.png', columns:1, nativeFacing:'right' },
+    'creature:exp-fada': { asset:'assets/pixel-sprites/v4.3/exp-fada.png', columns:1, nativeFacing:'right' },
+    'creature:exp-lobo': { asset:'assets/pixel-sprites/v4.3/exp-lobo.png', columns:1, nativeFacing:'right' },
+    'creature:exp-construto': { asset:'assets/pixel-sprites/v4.3/exp-construto.png', columns:1, nativeFacing:'right' },
+    'creature:exp-serpe': { asset:'assets/pixel-sprites/v4.3/exp-serpe.png', columns:1, nativeFacing:'right' },
+    'creature:exp-infernal': { asset:'assets/pixel-sprites/v4.3/exp-infernal.png', columns:1, nativeFacing:'right' },
+    'creature:exp-espectro': { asset:'assets/pixel-sprites/v4.3/exp-espectro.png', columns:1, nativeFacing:'right' },
+    'creature:exp-raizes': { asset:'assets/pixel-sprites/v4.3/exp-raizes.png', columns:1, nativeFacing:'right' },
+    'creature:exp-larva': { asset:'assets/pixel-sprites/v4.3/exp-larva.png', columns:1, nativeFacing:'right' },
+    'creature:exp-elemental': { asset:'assets/pixel-sprites/v4.3/exp-elemental.png', columns:1, nativeFacing:'right' },
+    'creature:exp-montaria': { asset:'assets/pixel-sprites/v4.3/exp-montaria.png', columns:1, nativeFacing:'right' },
     'visual:barbarvore': { asset:'assets/pixel-sprites/v3.2.3/barbarvore-base.png', columns:1, nativeFacing:'right' },
     'creature:orc-lanceiro-inverno': { asset:'assets/pixel-sprites/v3.2.3/orc-lanceiro-inverno-base.png', columns:1, nativeFacing:'right' },
     'creature:uruk-hai-capitao': { asset:'assets/pixel-sprites/v3.2.3/uruk-hai-capitao-base.png', columns:1, nativeFacing:'right' },
@@ -91,8 +133,13 @@
     return entries.sort((a,b)=>groups.indexOf(a.group)-groups.indexOf(b.group)||a.name.localeCompare(b.name,'pt-BR'));
   }
   function visualFor(participant,state) {
-    const key=keyOf(participant),mapping=sprites[key];
-    if(mapping)return {key,kind:'sheet',asset:mapping.asset,columns:mapping.columns||4,frame:mapping.frame??null,nativeFacing:mapping.nativeFacing||'right',frameFacings:mapping.frameFacings||null,fallback:false,reason:''};
+    const key=keyOf(participant);
+    // Same-ID records in the visual library and bestiary are the same entity.
+    const alias=participant.sourceType==='visual'&&['vigia-hrim','espectro-sombras',...Object.keys(sprites).filter(k=>k.startsWith('creature:exp-')).map(k=>k.slice(9))].includes(participant.sourceId)?'creature:'+participant.sourceId:null;
+    const entry=(participant.sourceType==='creature'?creatures(state):visuals(state)).find(x=>x.id===participant.sourceId);
+    const inherited=entry?.miniatureKey||(!state&&participant.arenaVisual?.key===key?participant.arenaVisual.templateKey:null);
+    const templateKey=sprites[key]?key:alias||inherited,mapping=sprites[templateKey];
+    if(mapping)return {key,templateKey,kind:'sheet',asset:mapping.asset,columns:mapping.columns||4,frame:mapping.frame??null,nativeFacing:mapping.nativeFacing||'right',frameFacings:mapping.frameFacings||null,fallback:false,reason:''};
     // Public descriptors carry only the visual identity selected on the master side.
     const transmitted=participant.arenaVisual;
     if(!state&&transmitted?.key===key&&['portrait','missing'].includes(transmitted.kind))return {...transmitted};

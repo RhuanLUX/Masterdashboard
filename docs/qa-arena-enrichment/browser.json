@@ -1,0 +1,3001 @@
+{
+  "miniatures": [
+    {
+      "key": "creature:exp-arcano",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.12290000000000004,
+      "footAnchor": 0.9104166666666667,
+      "footError": 0,
+      "bounds": {
+        "left": 250.51011559963928,
+        "right": 283.3998844003607,
+        "top": 246.5722,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "creature:exp-arcano",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.12290000000000004,
+      "footAnchor": 0.9104166666666667,
+      "footError": 0,
+      "bounds": {
+        "left": 769.9901155996392,
+        "right": 802.8798844003607,
+        "top": 246.5722,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "creature:exp-coracao",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.10911121951219516,
+      "footAnchor": 0.90625,
+      "footError": 0,
+      "bounds": {
+        "left": 153.67582739622526,
+        "right": 197.45417260377474,
+        "top": 172.6244,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "creature:exp-coracao",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.10911121951219516,
+      "footAnchor": 0.90625,
+      "footError": 0,
+      "bounds": {
+        "left": 673.1558273962253,
+        "right": 716.9341726037746,
+        "top": 172.6244,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "creature:exp-mestre-armas",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.1219423376623377,
+      "footAnchor": 0.8916666666666667,
+      "footError": 0,
+      "bounds": {
+        "left": 56.93253852955954,
+        "right": 111.41746147044049,
+        "top": 246.5722,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "creature:exp-mestre-armas",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.1219423376623377,
+      "footAnchor": 0.8916666666666667,
+      "footError": 0,
+      "bounds": {
+        "left": 576.4125385295595,
+        "right": 630.8974614704405,
+        "top": 246.5722,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "creature:exp-barda",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.12099948453608252,
+      "footAnchor": 0.8979166666666667,
+      "footError": 0,
+      "bounds": {
+        "left": 332.5397191625694,
+        "right": 384.15028083743067,
+        "top": 246.57220000000004,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "creature:exp-barda",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.12099948453608252,
+      "footAnchor": 0.8979166666666667,
+      "footError": 0,
+      "bounds": {
+        "left": 852.0197191625693,
+        "right": 903.6302808374305,
+        "top": 246.57220000000004,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "creature:exp-campea",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.11736950000000004,
+      "footAnchor": 0.9145833333333333,
+      "footError": 0,
+      "bounds": {
+        "left": 155.3919097161616,
+        "right": 195.7380902838384,
+        "top": 246.5722,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "creature:exp-campea",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.11736950000000004,
+      "footAnchor": 0.9145833333333333,
+      "footError": 0,
+      "bounds": {
+        "left": 674.8719097161616,
+        "right": 715.2180902838384,
+        "top": 246.5722,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "creature:exp-zelote",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.10213607305936076,
+      "footAnchor": 0.9458333333333333,
+      "footError": 0,
+      "bounds": {
+        "left": 331.0351610937606,
+        "right": 385.65483890623943,
+        "top": 172.62439999999998,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "creature:exp-zelote",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.10213607305936076,
+      "footAnchor": 0.9458333333333333,
+      "footError": 0,
+      "bounds": {
+        "left": 850.5151610937605,
+        "right": 905.1348389062393,
+        "top": 172.62439999999998,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "creature:exp-curadora",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.1178896882494005,
+      "footAnchor": 0.9395833333333333,
+      "footError": 0,
+      "bounds": {
+        "left": 252.51503238646194,
+        "right": 281.39496761353803,
+        "top": 320.52000000000004,
+        "bottom": 369.68000000000006
+      }
+    },
+    {
+      "key": "creature:exp-curadora",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.1178896882494005,
+      "footAnchor": 0.9395833333333333,
+      "footError": 0,
+      "bounds": {
+        "left": 771.995032386462,
+        "right": 800.8749676135379,
+        "top": 320.52000000000004,
+        "bottom": 369.68000000000006
+      }
+    },
+    {
+      "key": "creature:exp-berserker",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.11529793814432993,
+      "footAnchor": 0.9166666666666666,
+      "footError": 0,
+      "bounds": {
+        "left": 66.7044391333155,
+        "right": 101.64556086668452,
+        "top": 172.6244,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "creature:exp-berserker",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.11529793814432993,
+      "footAnchor": 0.9166666666666666,
+      "footError": 0,
+      "bounds": {
+        "left": 586.1844391333154,
+        "right": 621.1255608666845,
+        "top": 172.6244,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "creature:exp-bardo-guerra",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.11676959619952497,
+      "footAnchor": 0.9354166666666667,
+      "footError": 0,
+      "bounds": {
+        "left": 149.13207842027677,
+        "right": 201.99792157972323,
+        "top": 320.52000000000004,
+        "bottom": 369.68000000000006
+      }
+    },
+    {
+      "key": "creature:exp-bardo-guerra",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.11676959619952497,
+      "footAnchor": 0.9354166666666667,
+      "footError": 0,
+      "bounds": {
+        "left": 668.6120784202767,
+        "right": 721.4779215797232,
+        "top": 320.52000000000004,
+        "bottom": 369.68000000000006
+      }
+    },
+    {
+      "key": "creature:exp-arvore",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.11240100502512566,
+      "footAnchor": 0.9104166666666667,
+      "footError": 0,
+      "bounds": {
+        "left": 247.01564416902525,
+        "right": 286.89435583097475,
+        "top": 172.62439999999998,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "creature:exp-arvore",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.11240100502512566,
+      "footAnchor": 0.9104166666666667,
+      "footError": 0,
+      "bounds": {
+        "left": 766.4956441690252,
+        "right": 806.3743558309747,
+        "top": 172.62439999999998,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "creature:exp-sombras",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.17184076664815823,
+      "footAnchor": 0.925,
+      "footError": 0,
+      "bounds": {
+        "left": 124.63140555247085,
+        "right": 171.66459444752914,
+        "top": 299.5689672075515,
+        "bottom": 369.68000000000006
+      }
+    },
+    {
+      "key": "creature:exp-sombras",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.17184076664815823,
+      "footAnchor": 0.925,
+      "footError": 0,
+      "bounds": {
+        "left": 644.1114055524707,
+        "right": 691.1445944475291,
+        "top": 299.5689672075515,
+        "bottom": 369.68000000000006
+      }
+    },
+    {
+      "key": "creature:exp-assassino",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.1752775819811214,
+      "footAnchor": 0.9145833333333333,
+      "footError": 0,
+      "bounds": {
+        "left": 269.4121828283805,
+        "right": 319.33181717161943,
+        "top": 299.5689672075515,
+        "bottom": 369.68000000000006
+      }
+    },
+    {
+      "key": "creature:exp-assassino",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.1752775819811214,
+      "footAnchor": 0.9145833333333333,
+      "footError": 0,
+      "bounds": {
+        "left": 788.8921828283806,
+        "right": 838.8118171716194,
+        "top": 299.5689672075515,
+        "bottom": 369.68000000000006
+      }
+    },
+    {
+      "key": "creature:exp-evocadora",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.16976036995750254,
+      "footAnchor": 0.9270833333333334,
+      "footError": 0,
+      "bounds": {
+        "left": 345.5737755136232,
+        "right": 389.39422448637674,
+        "top": 299.5689672075515,
+        "bottom": 369.68000000000006
+      }
+    },
+    {
+      "key": "creature:exp-evocadora",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.16976036995750254,
+      "footAnchor": 0.9270833333333334,
+      "footError": 0,
+      "bounds": {
+        "left": 865.0537755136232,
+        "right": 908.8742244863766,
+        "top": 299.5689672075515,
+        "bottom": 369.68000000000006
+      }
+    },
+    {
+      "key": "creature:exp-druida-lua",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.1497676991575779,
+      "footAnchor": 0.9520833333333333,
+      "footError": 0,
+      "bounds": {
+        "left": 197.92150199178235,
+        "right": 244.59849800821763,
+        "top": 191.63896015887187,
+        "bottom": 255.44000000000005
+      }
+    },
+    {
+      "key": "creature:exp-druida-lua",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.1497676991575779,
+      "footAnchor": 0.9520833333333333,
+      "footError": 0,
+      "bounds": {
+        "left": 717.4015019917824,
+        "right": 764.0784980082176,
+        "top": 191.63896015887187,
+        "bottom": 255.44000000000005
+      }
+    },
+    {
+      "key": "creature:exp-druida-terra",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.1552336735793873,
+      "footAnchor": 0.91875,
+      "footError": 0,
+      "bounds": {
+        "left": 123.08747697395142,
+        "right": 173.20852302604857,
+        "top": 191.6389601588719,
+        "bottom": 255.44000000000005
+      }
+    },
+    {
+      "key": "creature:exp-druida-terra",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.1552336735793873,
+      "footAnchor": 0.91875,
+      "footError": 0,
+      "bounds": {
+        "left": 642.5674769739513,
+        "right": 692.6885230260485,
+        "top": 191.6389601588719,
+        "bottom": 255.44000000000005
+      }
+    },
+    {
+      "key": "creature:exp-ladra",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.17226297983402594,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 202.72640708473028,
+        "right": 239.7935929152697,
+        "top": 299.5689672075515,
+        "bottom": 369.68000000000006
+      }
+    },
+    {
+      "key": "creature:exp-ladra",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.17226297983402594,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 722.2064070847302,
+        "right": 759.2735929152698,
+        "top": 299.5689672075515,
+        "bottom": 369.68000000000006
+      }
+    },
+    {
+      "key": "creature:exp-rastreadora",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.16894224769264712,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 50.04530661613914,
+        "right": 100.02669338386086,
+        "top": 299.5689672075515,
+        "bottom": 369.68000000000006
+      }
+    },
+    {
+      "key": "creature:exp-rastreadora",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.16894224769264712,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 569.5253066161391,
+        "right": 619.5066933838608,
+        "top": 299.5689672075515,
+        "bottom": 369.68000000000006
+      }
+    },
+    {
+      "key": "creature:exp-luz",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.1497676991575779,
+      "footAnchor": 0.9479166666666666,
+      "footError": 0,
+      "bounds": {
+        "left": 60.24608434911008,
+        "right": 89.82591565088993,
+        "top": 191.63896015887187,
+        "bottom": 255.44000000000005
+      }
+    },
+    {
+      "key": "creature:exp-luz",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.1497676991575779,
+      "footAnchor": 0.9479166666666666,
+      "footError": 0,
+      "bounds": {
+        "left": 579.72608434911,
+        "right": 609.3059156508899,
+        "top": 191.63896015887187,
+        "bottom": 255.44000000000005
+      }
+    },
+    {
+      "key": "creature:exp-paladina",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.15753343170648934,
+      "footAnchor": 0.9166666666666666,
+      "footError": 0,
+      "bounds": {
+        "left": 267.47603999999995,
+        "right": 321.26795999999996,
+        "top": 191.63896015887187,
+        "bottom": 255.44000000000005
+      }
+    },
+    {
+      "key": "creature:exp-paladina",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.15753343170648934,
+      "footAnchor": 0.9166666666666666,
+      "footError": 0,
+      "bounds": {
+        "left": 786.95604,
+        "right": 840.7479599999999,
+        "top": 191.63896015887187,
+        "bottom": 255.44000000000005
+      }
+    },
+    {
+      "key": "creature:exp-paladino-voto",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.15870905433116464,
+      "footAnchor": 0.9,
+      "footError": 0,
+      "bounds": {
+        "left": 341.60741422029537,
+        "right": 393.3605857797046,
+        "top": 191.63896015887187,
+        "bottom": 255.44000000000005
+      }
+    },
+    {
+      "key": "creature:exp-paladino-voto",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.15870905433116464,
+      "footAnchor": 0.9,
+      "footError": 0,
+      "bounds": {
+        "left": 861.0874142202954,
+        "right": 912.8405857797045,
+        "top": 191.63896015887187,
+        "bottom": 255.44000000000005
+      }
+    },
+    {
+      "key": "creature:exp-sapo",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.16828920729610233,
+      "footAnchor": 0.8375,
+      "footError": 0,
+      "bounds": {
+        "left": 235.7454524111678,
+        "right": 298.1645475888322,
+        "top": 256.1597959802653,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "creature:exp-sapo",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.16828920729610233,
+      "footAnchor": 0.8375,
+      "footError": 0,
+      "bounds": {
+        "left": 755.2254524111678,
+        "right": 817.6445475888321,
+        "top": 256.1597959802653,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "creature:exp-diabrete",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.10207706016320961,
+      "footAnchor": 0.86875,
+      "footError": 0,
+      "bounds": {
+        "left": 334.6984276919933,
+        "right": 381.99157230800677,
+        "top": 256.1597959802653,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "creature:exp-diabrete",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.10207706016320961,
+      "footAnchor": 0.86875,
+      "footError": 0,
+      "bounds": {
+        "left": 854.1784276919932,
+        "right": 901.4715723080067,
+        "top": 256.1597959802653,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "creature:exp-mastim",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.14707004692254738,
+      "footAnchor": 0.915625,
+      "footError": 0,
+      "bounds": {
+        "left": 143.4523091921318,
+        "right": 207.6776908078682,
+        "top": 330.55936751860247,
+        "bottom": 369.68000000000006
+      }
+    },
+    {
+      "key": "creature:exp-mastim",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.14707004692254738,
+      "footAnchor": 0.915625,
+      "footError": 0,
+      "bounds": {
+        "left": 662.9323091921318,
+        "right": 727.1576908078681,
+        "top": 330.55936751860247,
+        "bottom": 369.68000000000006
+      }
+    },
+    {
+      "key": "creature:exp-gato",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.13786053143813548,
+      "footAnchor": 0.915625,
+      "footError": 0,
+      "bounds": {
+        "left": 151.56338330533677,
+        "right": 199.56661669466322,
+        "top": 256.15979598026536,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "creature:exp-gato",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.13786053143813548,
+      "footAnchor": 0.915625,
+      "footError": 0,
+      "bounds": {
+        "left": 671.0433833053368,
+        "right": 719.0466166946632,
+        "top": 256.15979598026536,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "creature:exp-pseudodragao",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.18111403926572966,
+      "footAnchor": 0.81875,
+      "footError": 0,
+      "bounds": {
+        "left": 233.2394580088679,
+        "right": 300.67054199113204,
+        "top": 330.5593675186024,
+        "bottom": 369.68000000000006
+      }
+    },
+    {
+      "key": "creature:exp-pseudodragao",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.18111403926572966,
+      "footAnchor": 0.81875,
+      "footError": 0,
+      "bounds": {
+        "left": 752.7194580088678,
+        "right": 820.1505419911321,
+        "top": 330.5593675186024,
+        "bottom": 369.68000000000006
+      }
+    },
+    {
+      "key": "creature:exp-mercador",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.08337183971445393,
+      "footAnchor": 0.9041666666666667,
+      "footError": 0,
+      "bounds": {
+        "left": 346.6290466641268,
+        "right": 370.06095333587325,
+        "top": 181.7602244419282,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "creature:exp-mercador",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.08337183971445393,
+      "footAnchor": 0.9041666666666667,
+      "footError": 0,
+      "bounds": {
+        "left": 866.1090466641267,
+        "right": 889.5409533358732,
+        "top": 181.7602244419282,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "creature:exp-feiticeira",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.08661745877876356,
+      "footAnchor": 0.9270833333333334,
+      "footError": 0,
+      "bounds": {
+        "left": 160.94350166776718,
+        "right": 190.18649833223282,
+        "top": 181.7602244419282,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "creature:exp-feiticeira",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.08661745877876356,
+      "footAnchor": 0.9270833333333334,
+      "footError": 0,
+      "bounds": {
+        "left": 680.4235016677671,
+        "right": 709.6664983322328,
+        "top": 181.7602244419282,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "creature:exp-morcego",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.14944081607893886,
+      "footAnchor": 0.8625,
+      "footError": 0,
+      "bounds": {
+        "left": 47.22127500000001,
+        "right": 121.128725,
+        "top": 256.15979598026536,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "creature:exp-morcego",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.14944081607893886,
+      "footAnchor": 0.8625,
+      "footError": 0,
+      "bounds": {
+        "left": 566.701275,
+        "right": 640.6087249999999,
+        "top": 256.15979598026536,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "creature:exp-bruxa",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.08240688786590701,
+      "footAnchor": 0.9354166666666667,
+      "footError": 0,
+      "bounds": {
+        "left": 257.453396701471,
+        "right": 276.456603298529,
+        "top": 181.7602244419282,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "creature:exp-bruxa",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.08240688786590701,
+      "footAnchor": 0.9354166666666667,
+      "footError": 0,
+      "bounds": {
+        "left": 776.933396701471,
+        "right": 795.9366032985289,
+        "top": 181.7602244419282,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "creature:exp-abjurador",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.09058467063122602,
+      "footAnchor": 0.9083333333333333,
+      "footError": 0,
+      "bounds": {
+        "left": 69.29650310492025,
+        "right": 99.05349689507977,
+        "top": 181.7602244419282,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "creature:exp-abjurador",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.09058467063122602,
+      "footAnchor": 0.9083333333333333,
+      "footError": 0,
+      "bounds": {
+        "left": 588.7765031049202,
+        "right": 618.5334968950798,
+        "top": 181.7602244419282,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "creature:exp-serpe",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.1396348973880597,
+      "footAnchor": 0.878125,
+      "footError": 0,
+      "bounds": {
+        "left": 138.61127499999998,
+        "right": 212.51872500000002,
+        "top": 259.44908503731347,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "creature:exp-serpe",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.1396348973880597,
+      "footAnchor": 0.878125,
+      "footError": 0,
+      "bounds": {
+        "left": 658.091275,
+        "right": 731.9987249999999,
+        "top": 259.44908503731347,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "creature:exp-raizes",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.07892997952714303,
+      "footAnchor": 0.9541666666666667,
+      "footError": 0,
+      "bounds": {
+        "left": 149.25996669859725,
+        "right": 201.87003330140274,
+        "top": 334.00364925373145,
+        "bottom": 369.68000000000006
+      }
+    },
+    {
+      "key": "creature:exp-raizes",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.07892997952714303,
+      "footAnchor": 0.9541666666666667,
+      "footError": 0,
+      "bounds": {
+        "left": 668.7399666985972,
+        "right": 721.3500333014027,
+        "top": 334.00364925373145,
+        "bottom": 369.68000000000006
+      }
+    },
+    {
+      "key": "creature:exp-construto",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.08560531397659941,
+      "footAnchor": 0.9020833333333333,
+      "footError": 0,
+      "bounds": {
+        "left": 65.24655350992967,
+        "right": 103.10344649007035,
+        "top": 259.44908503731347,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "creature:exp-construto",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.08560531397659941,
+      "footAnchor": 0.9020833333333333,
+      "footError": 0,
+      "bounds": {
+        "left": 584.7265535099297,
+        "right": 622.5834464900703,
+        "top": 259.44908503731347,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "creature:exp-lobo",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.15170784663132933,
+      "footAnchor": 0.828125,
+      "footError": 0,
+      "bounds": {
+        "left": 329.96839498099087,
+        "right": 386.7216050190092,
+        "top": 184.89452082089554,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "creature:exp-lobo",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.15170784663132933,
+      "footAnchor": 0.828125,
+      "footError": 0,
+      "bounds": {
+        "left": 849.4483949809908,
+        "right": 906.2016050190091,
+        "top": 184.89452082089554,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "creature:exp-espectro",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.07327078486599262,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 339.9594705336909,
+        "right": 376.7305294663092,
+        "top": 259.44908503731347,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "creature:exp-espectro",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.07327078486599262,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 859.4394705336907,
+        "right": 896.2105294663091,
+        "top": 259.44908503731347,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "creature:exp-quasit",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.10472735219065961,
+      "footAnchor": 0.925,
+      "footError": 0,
+      "bounds": {
+        "left": 65.6681059576276,
+        "right": 102.68189404237242,
+        "top": 184.89452082089554,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "creature:exp-quasit",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.10472735219065961,
+      "footAnchor": 0.925,
+      "footError": 0,
+      "bounds": {
+        "left": 585.1481059576275,
+        "right": 622.1618940423724,
+        "top": 184.89452082089554,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "creature:exp-fada",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.07899143352580165,
+      "footAnchor": 0.9291666666666667,
+      "footError": 0,
+      "bounds": {
+        "left": 250.432639295152,
+        "right": 283.47736070484797,
+        "top": 184.89452082089554,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "creature:exp-fada",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.07899143352580165,
+      "footAnchor": 0.9291666666666667,
+      "footError": 0,
+      "bounds": {
+        "left": 769.912639295152,
+        "right": 802.9573607048479,
+        "top": 184.89452082089554,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "creature:exp-infernal",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.08150936593944154,
+      "footAnchor": 0.9291666666666667,
+      "footError": 0,
+      "bounds": {
+        "left": 246.24780380834886,
+        "right": 287.6621961916511,
+        "top": 259.44908503731347,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "creature:exp-infernal",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.08150936593944154,
+      "footAnchor": 0.9291666666666667,
+      "footError": 0,
+      "bounds": {
+        "left": 765.7278038083488,
+        "right": 807.1421961916511,
+        "top": 259.44908503731347,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "creature:exp-esfinge",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.07823007031109512,
+      "footAnchor": 0.9295154185022027,
+      "footError": 0,
+      "bounds": {
+        "left": 157.12995321256395,
+        "right": 194.00004678743605,
+        "top": 184.89452082089554,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "creature:exp-esfinge",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.07823007031109512,
+      "footAnchor": 0.9295154185022027,
+      "footError": 0,
+      "bounds": {
+        "left": 676.6099532125639,
+        "right": 713.480046787436,
+        "top": 184.89452082089554,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "creature:exp-larva",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.0959041686727652,
+      "footAnchor": 0.9362186788154897,
+      "footError": 0,
+      "bounds": {
+        "left": 247.59050095127262,
+        "right": 286.3194990487273,
+        "top": 334.0036492537314,
+        "bottom": 369.68000000000006
+      }
+    },
+    {
+      "key": "creature:exp-larva",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.0959041686727652,
+      "footAnchor": 0.9362186788154897,
+      "footError": 0,
+      "bounds": {
+        "left": 767.0705009512726,
+        "right": 805.7994990487273,
+        "top": 334.0036492537314,
+        "bottom": 369.68000000000006
+      }
+    },
+    {
+      "key": "creature:exp-elemental",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.1402147103404193,
+      "footAnchor": 0.928125,
+      "footError": 0,
+      "bounds": {
+        "left": 49.03764833910285,
+        "right": 119.31235166089718,
+        "top": 176.1368751599167,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "creature:exp-elemental",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.1402147103404193,
+      "footAnchor": 0.928125,
+      "footError": 0,
+      "bounds": {
+        "left": 568.5176483391028,
+        "right": 638.7923516608971,
+        "top": 176.1368751599167,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "creature:criatura-aglor",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.036755846230666085,
+      "footAnchor": 0.9608763693270735,
+      "footError": 0,
+      "bounds": {
+        "left": 234.8538601413975,
+        "right": 299.0561398586025,
+        "top": 250.25836898650604,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "creature:criatura-aglor",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.036755846230666085,
+      "footAnchor": 0.9608763693270735,
+      "footError": 0,
+      "bounds": {
+        "left": 754.3338601413975,
+        "right": 818.5361398586024,
+        "top": 250.25836898650604,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "visual:aglor",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.0316341740132016,
+      "footAnchor": 0.9910220994475138,
+      "footError": 0,
+      "bounds": {
+        "left": 247.39301036722347,
+        "right": 286.5169896327765,
+        "top": 324.3798628130954,
+        "bottom": 369.68000000000006
+      }
+    },
+    {
+      "key": "visual:aglor",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.0316341740132016,
+      "footAnchor": 0.9910220994475138,
+      "footError": 0,
+      "bounds": {
+        "left": 766.8730103672234,
+        "right": 805.9969896327765,
+        "top": 324.3798628130954,
+        "bottom": 369.68000000000006
+      }
+    },
+    {
+      "key": "creature:vigia-hrim",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.037198306976349085,
+      "footAnchor": 0.9615384615384616,
+      "footError": 0,
+      "bounds": {
+        "left": 151.7007672303701,
+        "right": 199.4292327696299,
+        "top": 250.25836898650607,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "creature:vigia-hrim",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.037198306976349085,
+      "footAnchor": 0.9615384615384616,
+      "footError": 0,
+      "bounds": {
+        "left": 671.1807672303701,
+        "right": 718.9092327696299,
+        "top": 250.25836898650607,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "creature:exp-montaria",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.14166022281815557,
+      "footAnchor": 0.940625,
+      "footError": 0,
+      "bounds": {
+        "left": 149.25540219888205,
+        "right": 201.87459780111794,
+        "top": 176.13687515991674,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "creature:exp-montaria",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.14166022281815557,
+      "footAnchor": 0.940625,
+      "footError": 0,
+      "bounds": {
+        "left": 668.735402198882,
+        "right": 721.354597801118,
+        "top": 176.13687515991674,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "creature:serpe-gelo-hrim",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.047286155727457924,
+      "footAnchor": 0.9462890625,
+      "footError": 0,
+      "bounds": {
+        "left": 139.57091682272304,
+        "right": 211.55908317727696,
+        "top": 324.3798628130954,
+        "bottom": 369.68000000000006
+      }
+    },
+    {
+      "key": "creature:serpe-gelo-hrim",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.047286155727457924,
+      "footAnchor": 0.9462890625,
+      "footError": 0,
+      "bounds": {
+        "left": 659.050916822723,
+        "right": 731.0390831772769,
+        "top": 324.3798628130954,
+        "bottom": 369.68000000000006
+      }
+    },
+    {
+      "key": "creature:orc-lanceiro-inverno",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.03359667876127406,
+      "footAnchor": 0.9668141592920354,
+      "footError": 0,
+      "bounds": {
+        "left": 341.1288219818003,
+        "right": 375.56117801819977,
+        "top": 176.1368751599167,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "creature:orc-lanceiro-inverno",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.03359667876127406,
+      "footAnchor": 0.9668141592920354,
+      "footError": 0,
+      "bounds": {
+        "left": 860.6088219818001,
+        "right": 895.0411780181997,
+        "top": 176.1368751599167,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "creature:draig-cinzas",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.04626912407860319,
+      "footAnchor": 0.9423828125,
+      "footError": 0,
+      "bounds": {
+        "left": 321.391275,
+        "right": 395.29872500000005,
+        "top": 250.258368986506,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "creature:draig-cinzas",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.04626912407860319,
+      "footAnchor": 0.9423828125,
+      "footError": 0,
+      "bounds": {
+        "left": 840.871275,
+        "right": 914.7787249999999,
+        "top": 250.258368986506,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "creature:uruk-hai-capitao",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.03304937434185942,
+      "footAnchor": 0.9650104968509448,
+      "footError": 0,
+      "bounds": {
+        "left": 57.32572698258504,
+        "right": 111.02427301741498,
+        "top": 250.25836898650607,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "creature:uruk-hai-capitao",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.03304937434185942,
+      "footAnchor": 0.9650104968509448,
+      "footError": 0,
+      "bounds": {
+        "left": 576.805726982585,
+        "right": 630.5042730174149,
+        "top": 250.25836898650607,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "visual:barbarvore",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.03276877968210117,
+      "footAnchor": 0.9859703819173812,
+      "footError": 0,
+      "bounds": {
+        "left": 245.56915287874614,
+        "right": 288.34084712125383,
+        "top": 176.13687515991674,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "visual:barbarvore",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.03276877968210117,
+      "footAnchor": 0.9859703819173812,
+      "footError": 0,
+      "bounds": {
+        "left": 765.0491528787461,
+        "right": 807.8208471212538,
+        "top": 176.13687515991674,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "visual:durin-vi",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.04603354956709453,
+      "footAnchor": 0.9383333333333334,
+      "footError": 0,
+      "bounds": {
+        "left": 228.26,
+        "right": 305.65,
+        "top": 325.34969176688804,
+        "bottom": 369.68000000000006
+      }
+    },
+    {
+      "key": "visual:durin-vi",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.04603354956709453,
+      "footAnchor": 0.9383333333333334,
+      "footError": 0,
+      "bounds": {
+        "left": 747.7399999999999,
+        "right": 825.13,
+        "top": 325.34969176688804,
+        "bottom": 369.68000000000006
+      }
+    },
+    {
+      "key": "visual:eira",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.0368407127782027,
+      "footAnchor": 0.9606234618539786,
+      "footError": 0,
+      "bounds": {
+        "left": 238.99796167118402,
+        "right": 294.9120383288159,
+        "top": 177.01941950786807,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "visual:eira",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.0368407127782027,
+      "footAnchor": 0.9606234618539786,
+      "footError": 0,
+      "bounds": {
+        "left": 758.477961671184,
+        "right": 814.3920383288159,
+        "top": 177.01941950786807,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "visual:morgoth",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.03624609962553253,
+      "footAnchor": 0.9619124797406807,
+      "footError": 0,
+      "bounds": {
+        "left": 237.32298252297284,
+        "right": 296.58701747702713,
+        "top": 251.18455563737803,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "visual:morgoth",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.03624609962553253,
+      "footAnchor": 0.9619124797406807,
+      "footError": 0,
+      "bounds": {
+        "left": 756.8029825229728,
+        "right": 816.0670174770271,
+        "top": 251.18455563737803,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "visual:rei-edran",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.036941923527593366,
+      "footAnchor": 0.9451219512195121,
+      "footError": 0,
+      "bounds": {
+        "left": 56.25153316075971,
+        "right": 112.0984668392403,
+        "top": 251.18455563737803,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "visual:rei-edran",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.036941923527593366,
+      "footAnchor": 0.9451219512195121,
+      "footError": 0,
+      "bounds": {
+        "left": 575.7315331607597,
+        "right": 631.5784668392403,
+        "top": 251.18455563737803,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "visual:maelith",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.035636555205063564,
+      "footAnchor": 0.9552123552123553,
+      "footError": 0,
+      "bounds": {
+        "left": 334.3435228606606,
+        "right": 382.34647713933947,
+        "top": 177.01941950786807,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "visual:maelith",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.035636555205063564,
+      "footAnchor": 0.9552123552123553,
+      "footError": 0,
+      "bounds": {
+        "left": 853.8235228606605,
+        "right": 901.8264771393393,
+        "top": 177.01941950786807,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "visual:durin-i",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.03845181141019255,
+      "footAnchor": 0.9411764705882353,
+      "footError": 0,
+      "bounds": {
+        "left": 335.04646615433325,
+        "right": 381.6435338456668,
+        "top": 251.18455563737803,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "visual:durin-i",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.03845181141019255,
+      "footAnchor": 0.9411764705882353,
+      "footError": 0,
+      "bounds": {
+        "left": 854.5264661543332,
+        "right": 901.1235338456667,
+        "top": 251.18455563737803,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "visual:durin-iii",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.0407822522843717,
+      "footAnchor": 0.969140950792327,
+      "footError": 0,
+      "bounds": {
+        "left": 152.63171703752022,
+        "right": 198.49828296247978,
+        "top": 325.34969176688804,
+        "bottom": 369.68000000000006
+      }
+    },
+    {
+      "key": "visual:durin-iii",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.0407822522843717,
+      "footAnchor": 0.969140950792327,
+      "footError": 0,
+      "bounds": {
+        "left": 672.1117170375202,
+        "right": 717.9782829624797,
+        "top": 325.34969176688804,
+        "bottom": 369.68000000000006
+      }
+    },
+    {
+      "key": "visual:talenir",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.039018842730527185,
+      "footAnchor": 0.9448499594484996,
+      "footError": 0,
+      "bounds": {
+        "left": 142.7929395086741,
+        "right": 208.3370604913259,
+        "top": 251.18455563737805,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "visual:talenir",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.039018842730527185,
+      "footAnchor": 0.9448499594484996,
+      "footError": 0,
+      "bounds": {
+        "left": 662.2729395086741,
+        "right": 727.8170604913258,
+        "top": 251.18455563737805,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "visual:orc-inverno",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.04228572378630184,
+      "footAnchor": 0.9316096747289407,
+      "footError": 0,
+      "bounds": {
+        "left": 58.69770990026659,
+        "right": 109.65229009973343,
+        "top": 177.01941950786807,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "visual:orc-inverno",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.04228572378630184,
+      "footAnchor": 0.9316096747289407,
+      "footError": 0,
+      "bounds": {
+        "left": 578.1777099002666,
+        "right": 629.1322900997334,
+        "top": 177.01941950786807,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "visual:alatar",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.042463768939086266,
+      "footAnchor": 0.9697265625,
+      "footError": 0,
+      "bounds": {
+        "left": 153.53833238389356,
+        "right": 197.59166761610643,
+        "top": 177.01941950786807,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "visual:alatar",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.042463768939086266,
+      "footAnchor": 0.9697265625,
+      "footError": 0,
+      "bounds": {
+        "left": 673.0183323838935,
+        "right": 717.0716676161064,
+        "top": 177.01941950786807,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "character:elenya",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.07696360655737708,
+      "footAnchor": 0.8922651933701657,
+      "footError": 0,
+      "bounds": {
+        "left": 237.07752147467687,
+        "right": 296.8324785253231,
+        "top": 246.5722,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "character:elenya",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.07696360655737708,
+      "footAnchor": 0.8922651933701657,
+      "footError": 0,
+      "bounds": {
+        "left": 756.5575214746768,
+        "right": 816.3124785253231,
+        "top": 246.5722,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "visual:dito-afinadinho",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.03922121971595657,
+      "footAnchor": 0.9588414634146342,
+      "footError": 0,
+      "bounds": {
+        "left": 67.2913638390506,
+        "right": 101.05863616094942,
+        "top": 246.5722,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "visual:dito-afinadinho",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.03922121971595657,
+      "footAnchor": 0.9588414634146342,
+      "footError": 0,
+      "bounds": {
+        "left": 586.7713638390505,
+        "right": 620.5386361609494,
+        "top": 246.5722,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "character:nando",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.07954692556634306,
+      "footAnchor": 0.9226519337016574,
+      "footError": 0,
+      "bounds": {
+        "left": 150.77830942432504,
+        "right": 200.35169057567495,
+        "top": 320.52000000000004,
+        "bottom": 369.68000000000006
+      }
+    },
+    {
+      "key": "character:nando",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.07954692556634306,
+      "footAnchor": 0.9226519337016574,
+      "footError": 0,
+      "bounds": {
+        "left": 670.258309424325,
+        "right": 719.8316905756749,
+        "top": 320.52000000000004,
+        "bottom": 369.68000000000006
+      }
+    },
+    {
+      "key": "visual:guarda-minas-tirith",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.03712497925311204,
+      "footAnchor": 0.9796557120500783,
+      "footError": 0,
+      "bounds": {
+        "left": 153.0392508647252,
+        "right": 198.0907491352748,
+        "top": 172.6244,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "visual:guarda-minas-tirith",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.03712497925311204,
+      "footAnchor": 0.9796557120500783,
+      "footError": 0,
+      "bounds": {
+        "left": 672.5192508647251,
+        "right": 717.5707491352748,
+        "top": 172.6244,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "visual:pai-elenya",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.0392073619631902,
+      "footAnchor": 0.9549339549339549,
+      "footError": 0,
+      "bounds": {
+        "left": 257.62783146188673,
+        "right": 276.28216853811324,
+        "top": 172.6244,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "visual:pai-elenya",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.0392073619631902,
+      "footAnchor": 0.9549339549339549,
+      "footError": 0,
+      "bounds": {
+        "left": 777.1078314618867,
+        "right": 795.7621685381132,
+        "top": 172.6244,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "visual:lethariel",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.039345294635004406,
+      "footAnchor": 0.9788494077834179,
+      "footError": 0,
+      "bounds": {
+        "left": 59.39071496625174,
+        "right": 108.95928503374827,
+        "top": 172.6244,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "visual:lethariel",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.039345294635004406,
+      "footAnchor": 0.9788494077834179,
+      "footError": 0,
+      "bounds": {
+        "left": 578.8707149662517,
+        "right": 628.4392850337482,
+        "top": 172.6244,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "visual:pai-inverno",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.03734908512330948,
+      "footAnchor": 0.985133020344288,
+      "footError": 0,
+      "bounds": {
+        "left": 158.47930307796767,
+        "right": 192.65069692203232,
+        "top": 246.5722,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "visual:pai-inverno",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.03734908512330948,
+      "footAnchor": 0.985133020344288,
+      "footError": 0,
+      "bounds": {
+        "left": 677.9593030779677,
+        "right": 712.1306969220323,
+        "top": 246.5722,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "character:calion",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.07028113772455093,
+      "footAnchor": 0.9350828729281768,
+      "footError": 0,
+      "bounds": {
+        "left": 334.49282419963106,
+        "right": 382.197175800369,
+        "top": 246.5722,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "character:calion",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.07028113772455093,
+      "footAnchor": 0.9350828729281768,
+      "footError": 0,
+      "bounds": {
+        "left": 853.972824199631,
+        "right": 901.6771758003689,
+        "top": 246.5722,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "visual:harl-durn",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.04743966065747615,
+      "footAnchor": 0.96484375,
+      "footError": 0,
+      "bounds": {
+        "left": 345.8827101878895,
+        "right": 370.8072898121106,
+        "top": 172.62439999999998,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "visual:harl-durn",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.04743966065747615,
+      "footAnchor": 0.96484375,
+      "footError": 0,
+      "bounds": {
+        "left": 865.3627101878894,
+        "right": 890.2872898121104,
+        "top": 172.62439999999998,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "character:anao",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.07293768545994067,
+      "footAnchor": 0.9447513812154696,
+      "footError": 0,
+      "bounds": {
+        "left": 243.37196361573032,
+        "right": 290.5380363842696,
+        "top": 320.52000000000004,
+        "bottom": 369.68000000000006
+      }
+    },
+    {
+      "key": "character:anao",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.07293768545994067,
+      "footAnchor": 0.9447513812154696,
+      "footError": 0,
+      "bounds": {
+        "left": 762.8519636157303,
+        "right": 810.0180363842696,
+        "top": 320.52000000000004,
+        "bottom": 369.68000000000006
+      }
+    },
+    {
+      "key": "creature:goblin-lanceiro",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.11871452528444976,
+      "footAnchor": 0.8674033149171271,
+      "footError": 0,
+      "bounds": {
+        "left": 66.99915965188755,
+        "right": 131.81417368144577,
+        "top": 188.84115131542376,
+        "bottom": 255.44000000000005
+      }
+    },
+    {
+      "key": "creature:goblin-lanceiro",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.11871452528444976,
+      "footAnchor": 0.8674033149171271,
+      "footError": 0,
+      "bounds": {
+        "left": 586.4791596518875,
+        "right": 651.2941736814456,
+        "top": 188.84115131542376,
+        "bottom": 255.44000000000005
+      }
+    },
+    {
+      "key": "creature:goblin-arqueiro",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.14832705720395614,
+      "footAnchor": 0.8632596685082873,
+      "footError": 0,
+      "bounds": {
+        "left": 180.70999126309331,
+        "right": 261.81000873690675,
+        "top": 188.84115131542376,
+        "bottom": 255.44000000000005
+      }
+    },
+    {
+      "key": "creature:goblin-arqueiro",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.14832705720395614,
+      "footAnchor": 0.8632596685082873,
+      "footError": 0,
+      "bounds": {
+        "left": 700.1899912630931,
+        "right": 781.2900087369067,
+        "top": 188.84115131542376,
+        "bottom": 255.44000000000005
+      }
+    },
+    {
+      "key": "creature:goblin-espadachim",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.15240011140635312,
+      "footAnchor": 0.8674033149171271,
+      "footError": 0,
+      "bounds": {
+        "left": 295.7004923474337,
+        "right": 390.526174319233,
+        "top": 188.84115131542373,
+        "bottom": 255.44000000000005
+      }
+    },
+    {
+      "key": "creature:goblin-espadachim",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.15240011140635312,
+      "footAnchor": 0.8674033149171271,
+      "footError": 0,
+      "bounds": {
+        "left": 815.1804923474335,
+        "right": 910.006174319233,
+        "top": 188.84115131542373,
+        "bottom": 255.44000000000005
+      }
+    },
+    {
+      "key": "creature:uruk-hai-batedor",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": -0.11804120645972405,
+      "footAnchor": 0.9005524861878453,
+      "footError": 0,
+      "bounds": {
+        "left": 118.0157901451929,
+        "right": 202.65087652147378,
+        "top": 296.4944519949712,
+        "bottom": 369.68000000000006
+      }
+    },
+    {
+      "key": "creature:uruk-hai-batedor",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": 0.11804120645972405,
+      "footAnchor": 0.9005524861878453,
+      "footError": 0,
+      "bounds": {
+        "left": 637.4957901451927,
+        "right": 722.1308765214736,
+        "top": 296.4944519949712,
+        "bottom": 369.68000000000006
+      }
+    },
+    {
+      "key": "creature:espectro-sombras",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.11997630820496542,
+      "footAnchor": 0.9129834254143646,
+      "footError": 0,
+      "bounds": {
+        "left": 228.26,
+        "right": 336.11333333333334,
+        "top": 296.49445199497114,
+        "bottom": 369.68000000000006
+      }
+    },
+    {
+      "key": "creature:espectro-sombras",
+      "kind": "sheet",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.11997630820496542,
+      "footAnchor": 0.9129834254143646,
+      "footError": 0,
+      "bounds": {
+        "left": 747.7399999999998,
+        "right": 855.5933333333332,
+        "top": 296.49445199497114,
+        "bottom": 369.68000000000006
+      }
+    }
+  ],
+  "layouts": [
+    {
+      "width": 1920,
+      "height": 1080,
+      "id": "mordor",
+      "left": 4,
+      "right": 1,
+      "issues": []
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "id": "mordor",
+      "left": 4,
+      "right": 4,
+      "issues": []
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "id": "mordor",
+      "left": 4,
+      "right": 8,
+      "issues": []
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "id": "mordor",
+      "left": 10,
+      "right": 10,
+      "issues": []
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "id": "fangorn",
+      "left": 4,
+      "right": 1,
+      "issues": []
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "id": "fangorn",
+      "left": 4,
+      "right": 4,
+      "issues": []
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "id": "fangorn",
+      "left": 4,
+      "right": 8,
+      "issues": []
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "id": "fangorn",
+      "left": 10,
+      "right": 10,
+      "issues": []
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "id": "rivendell",
+      "left": 4,
+      "right": 1,
+      "issues": []
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "id": "rivendell",
+      "left": 4,
+      "right": 4,
+      "issues": []
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "id": "rivendell",
+      "left": 4,
+      "right": 8,
+      "issues": []
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "id": "rivendell",
+      "left": 10,
+      "right": 10,
+      "issues": []
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "id": "road",
+      "left": 4,
+      "right": 1,
+      "issues": []
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "id": "road",
+      "left": 4,
+      "right": 4,
+      "issues": []
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "id": "road",
+      "left": 4,
+      "right": 8,
+      "issues": []
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "id": "road",
+      "left": 10,
+      "right": 10,
+      "issues": []
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "id": "hrim",
+      "left": 4,
+      "right": 1,
+      "issues": []
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "id": "hrim",
+      "left": 4,
+      "right": 4,
+      "issues": []
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "id": "hrim",
+      "left": 4,
+      "right": 8,
+      "issues": []
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "id": "hrim",
+      "left": 10,
+      "right": 10,
+      "issues": []
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "id": "mordor",
+      "left": 4,
+      "right": 1,
+      "issues": []
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "id": "mordor",
+      "left": 4,
+      "right": 4,
+      "issues": []
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "id": "mordor",
+      "left": 4,
+      "right": 8,
+      "issues": []
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "id": "mordor",
+      "left": 10,
+      "right": 10,
+      "issues": []
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "id": "fangorn",
+      "left": 4,
+      "right": 1,
+      "issues": []
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "id": "fangorn",
+      "left": 4,
+      "right": 4,
+      "issues": []
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "id": "fangorn",
+      "left": 4,
+      "right": 8,
+      "issues": []
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "id": "fangorn",
+      "left": 10,
+      "right": 10,
+      "issues": []
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "id": "rivendell",
+      "left": 4,
+      "right": 1,
+      "issues": []
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "id": "rivendell",
+      "left": 4,
+      "right": 4,
+      "issues": []
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "id": "rivendell",
+      "left": 4,
+      "right": 8,
+      "issues": []
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "id": "rivendell",
+      "left": 10,
+      "right": 10,
+      "issues": []
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "id": "road",
+      "left": 4,
+      "right": 1,
+      "issues": []
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "id": "road",
+      "left": 4,
+      "right": 4,
+      "issues": []
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "id": "road",
+      "left": 4,
+      "right": 8,
+      "issues": []
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "id": "road",
+      "left": 10,
+      "right": 10,
+      "issues": []
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "id": "hrim",
+      "left": 4,
+      "right": 1,
+      "issues": []
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "id": "hrim",
+      "left": 4,
+      "right": 4,
+      "issues": []
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "id": "hrim",
+      "left": 4,
+      "right": 8,
+      "issues": []
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "id": "hrim",
+      "left": 10,
+      "right": 10,
+      "issues": []
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "id": "mordor",
+      "left": 4,
+      "right": 1,
+      "issues": []
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "id": "mordor",
+      "left": 4,
+      "right": 4,
+      "issues": []
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "id": "mordor",
+      "left": 4,
+      "right": 8,
+      "issues": []
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "id": "mordor",
+      "left": 10,
+      "right": 10,
+      "issues": []
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "id": "fangorn",
+      "left": 4,
+      "right": 1,
+      "issues": []
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "id": "fangorn",
+      "left": 4,
+      "right": 4,
+      "issues": []
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "id": "fangorn",
+      "left": 4,
+      "right": 8,
+      "issues": []
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "id": "fangorn",
+      "left": 10,
+      "right": 10,
+      "issues": []
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "id": "rivendell",
+      "left": 4,
+      "right": 1,
+      "issues": []
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "id": "rivendell",
+      "left": 4,
+      "right": 4,
+      "issues": []
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "id": "rivendell",
+      "left": 4,
+      "right": 8,
+      "issues": []
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "id": "rivendell",
+      "left": 10,
+      "right": 10,
+      "issues": []
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "id": "road",
+      "left": 4,
+      "right": 1,
+      "issues": []
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "id": "road",
+      "left": 4,
+      "right": 4,
+      "issues": []
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "id": "road",
+      "left": 4,
+      "right": 8,
+      "issues": []
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "id": "road",
+      "left": 10,
+      "right": 10,
+      "issues": []
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "id": "hrim",
+      "left": 4,
+      "right": 1,
+      "issues": []
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "id": "hrim",
+      "left": 4,
+      "right": 4,
+      "issues": []
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "id": "hrim",
+      "left": 4,
+      "right": 8,
+      "issues": []
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "id": "hrim",
+      "left": 10,
+      "right": 10,
+      "issues": []
+    }
+  ],
+  "fourFrameScenery": true,
+  "effects": [
+    {
+      "spell": "fire",
+      "fx": [
+        {
+          "label": "combat-fx:fire",
+          "w": 83.60586249856209,
+          "h": 46.367999999999995
+        }
+      ]
+    },
+    {
+      "spell": "ice",
+      "fx": [
+        {
+          "label": "combat-fx:ice",
+          "w": 76.8010138517547,
+          "h": 11.20965793163208
+        }
+      ]
+    },
+    {
+      "spell": "lightning",
+      "fx": [
+        {
+          "label": "combat-fx:lightning",
+          "w": 321.9725991192561,
+          "h": 50.21656088661473
+        }
+      ]
+    },
+    {
+      "spell": "missiles",
+      "fx": [
+        {
+          "label": "combat-fx:missiles",
+          "w": 116.50518393234671,
+          "h": 117.53735933551775
+        }
+      ]
+    },
+    {
+      "spell": "wind",
+      "fx": [
+        {
+          "label": "combat-fx:wind",
+          "w": 84.42915020766401,
+          "h": 44.0501330207091
+        }
+      ]
+    },
+    {
+      "spell": "stone",
+      "fx": [
+        {
+          "label": "combat-fx:stone",
+          "w": 71.06730472731311,
+          "h": 33.11739026694204
+        }
+      ]
+    },
+    {
+      "spell": "heal",
+      "fx": [
+        {
+          "label": "combat-fx:heal",
+          "w": 59.615999999999985,
+          "h": 265.34376256684493
+        }
+      ]
+    },
+    {
+      "spell": "arrow",
+      "fx": [
+        {
+          "label": "combat-fx:arrow",
+          "w": 49.65222427454694,
+          "h": 10.024096006392966
+        }
+      ]
+    }
+  ],
+  "cleanup": {
+    "roots": 7,
+    "actors": 8,
+    "tweens": 0
+  },
+  "synchronizedScenes": [
+    "mordor",
+    "fangorn",
+    "rivendell",
+    "road",
+    "hrim"
+  ],
+  "damageAndHealingPreserved": true,
+  "tvPrivacyAndMiniatures": true,
+  "sceneAfterReload": true,
+  "sceneInBackup": true,
+  "sceneRestoredFromBackup": true,
+  "catalogCoverage": {
+    "selectable": 71,
+    "fallbacks": []
+  },
+  "performance": {
+    "samples": 150,
+    "medianMs": 16.69999998807907,
+    "p95Ms": 20.80000001192093,
+    "intervalsAbove50ms": 0,
+    "participants": 20
+  },
+  "reducedMotion": true,
+  "errors": [],
+  "external": [],
+  "failed": []
+}

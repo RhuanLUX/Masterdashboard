@@ -1,0 +1,303 @@
+{
+  "date": "2026-11-06",
+  "generator": "OpenAI built-in image generation",
+  "method": "One independent generation per asset; existing project portrait identity and pai-elenya-base.png style reference. Resize only, nearest neighbour, no sprite-sheet crops.",
+  "styleReference": "assets/pixel-sprites/v3.2.3/pai-elenya-base.png",
+  "delivery": "Individual alpha PNG, max 480x480. Runtime foot-anchor measurement, left/right reflection, existing Pixi idle/actions.",
+  "miniatures": [
+    {
+      "id": "exp-berserker",
+      "asset": "assets/pixel-sprites/v4.3/exp-berserker.png",
+      "reference": "assets/library-expansion/p053.webp",
+      "generationFile": "exec-e01b2bad-129d-4121-9903-112799ea862e.png",
+      "prompt": "Use case: stylized-concept. ONE individual game battle miniature of Brann, an old muscular human berserker with white hair and beard, black angular tattoos, fur-trimmed dark leather trousers and boots, twin battle axes. Full body and BOTH FEET entirely visible, all weapons inside frame, facing RIGHT in three-quarter side view. Match the detailed crisp 16-bit pixel art style of the second reference (style only); first reference supplies Brann's identity. Single standing ready pose, natural grounded feet. Transparent background with generous empty margins. No scenery, no ground patch, no shadow, no text, no border, no portrait framing, no other characters. Designed to read clearly around 100px tall in a classic SNES dark fantasy arena."
+    },
+    {
+      "id": "exp-coracao",
+      "asset": "assets/pixel-sprites/v4.3/exp-coracao.png",
+      "reference": "assets/library-expansion/p054.webp",
+      "generationFile": "exec-9bc7c037-ae33-4d5e-894b-4fc00a239792.png",
+      "prompt": "Use case: stylized-concept. ONE individual 16-bit dark fantasy battle miniature. Subject: Yara: brown-skinned female barbarian, dark hair in two buns, brown and gold armor, poleaxe, bear totem ornaments. Reference1 supplies identity/clothes, reference2 supplies crisp detailed pixel-art style ONLY, do not copy its character. Entire full body and feet and weapons inside canvas, generous transparent margins. Three-quarter side view clearly facing RIGHT, natural grounded ready stance. Crisp visible pixel clusters, restrained rich palette, readable silhouette at 100px display height, classic SNES RPG. One pose only. Genuinely transparent alpha background. No scenery, no ground patch, no shadow, no text, border, portrait panel or duplicates."
+    },
+    {
+      "id": "exp-arvore",
+      "asset": "assets/pixel-sprites/v4.3/exp-arvore.png",
+      "reference": "assets/library-expansion/p055.webp",
+      "generationFile": "exec-be6b426e-d239-462f-a381-f5b5d43dbacb.png",
+      "prompt": "Use case: stylized-concept. ONE individual 16-bit dark fantasy battle miniature. Subject: Torva: pale gray female elf, long white hair, green and gold leather barbarian armor, a large battle axe and root motifs. Reference1 supplies identity/clothes, reference2 supplies crisp detailed pixel-art style ONLY, do not copy its character. Entire full body and feet and weapons inside canvas, generous transparent margins. Three-quarter side view clearly facing RIGHT, natural grounded ready stance. Crisp visible pixel clusters, restrained rich palette, readable silhouette at 100px display height, classic SNES RPG. One pose only. Genuinely transparent alpha background. No scenery, no ground patch, no shadow, no text, border, portrait panel or duplicates."
+    },
+    {
+      "id": "exp-zelote",
+      "asset": "assets/pixel-sprites/v4.3/exp-zelote.png",
+      "reference": "assets/library-expansion/p056.webp",
+      "generationFile": "exec-a2509fb8-2faf-4d3e-b3ff-5c0c36534ac3.png",
+      "prompt": "Use case: stylized-concept. ONE individual 16-bit dark fantasy battle miniature. Subject: Darian: massive white dragonborn male barbarian, elongated white dragon snout and horns, muscular torso, red leather bracers and waist armor, huge wooden war mallet. Reference1 supplies identity/clothes, reference2 supplies crisp detailed pixel-art style ONLY, do not copy its character. Entire full body and feet and weapons inside canvas, generous transparent margins. Three-quarter side view clearly facing RIGHT, natural grounded ready stance. Crisp visible pixel clusters, restrained rich palette, readable silhouette at 100px display height, classic SNES RPG. One pose only. Genuinely transparent alpha background. No scenery, no ground patch, no shadow, no text, border, portrait panel or duplicates."
+    },
+    {
+      "id": "exp-mestre-armas",
+      "asset": "assets/pixel-sprites/v4.3/exp-mestre-armas.png",
+      "reference": "assets/library-expansion/p093.webp",
+      "generationFile": "exec-1dac8bbe-89f9-40e9-bf6c-d68ad962c87f.png",
+      "prompt": "Use case: stylized-concept. ONE individual 16-bit dark fantasy battle miniature. Subject: Draven: blue dragonborn archer, blue reptilian snout, purple tabard, golden scale armor sleeves, longbow and quiver. Reference1 supplies identity/clothes, reference2 supplies crisp detailed pixel-art style ONLY, do not copy its character. Entire full body and feet and weapons inside canvas, generous transparent margins. Three-quarter side view clearly facing RIGHT, natural grounded ready stance. Crisp visible pixel clusters, restrained rich palette, readable silhouette at 100px display height, classic SNES RPG. One pose only. Genuinely transparent alpha background. No scenery, no ground patch, no shadow, no text, border, portrait panel or duplicates."
+    },
+    {
+      "id": "exp-campea",
+      "asset": "assets/pixel-sprites/v4.3/exp-campea.png",
+      "reference": "assets/library-expansion/p095.webp",
+      "generationFile": "exec-9ed5194e-add2-4b9f-8cf7-1c51a34a7410.png",
+      "prompt": "Use case: stylized-concept. ONE individual 16-bit dark fantasy battle miniature. Subject: Sera: tan human woman warrior, braided dark brown hair, black armor, blue cape, sword and shield. Reference1 supplies identity/clothes, reference2 supplies crisp detailed pixel-art style ONLY, do not copy its character. Entire full body and feet and weapons inside canvas, generous transparent margins. Three-quarter side view clearly facing RIGHT, natural grounded ready stance. Crisp visible pixel clusters, restrained rich palette, readable silhouette at 100px display height, classic SNES RPG. One pose only. Genuinely transparent alpha background. No scenery, no ground patch, no shadow, no text, border, portrait panel or duplicates."
+    },
+    {
+      "id": "exp-arcano",
+      "asset": "assets/pixel-sprites/v4.3/exp-arcano.png",
+      "reference": "assets/library-expansion/p096.webp",
+      "generationFile": "exec-d9ab5c22-5c07-4be1-a53f-223131f9b048.png",
+      "prompt": "Use case: stylized-concept. ONE individual 16-bit dark fantasy battle miniature. Subject: Kael: mysterious helmeted elven knight, black and gold plate armor, longsword, subtle blue magic in free hand. Reference1 supplies identity/clothes, reference2 supplies crisp detailed pixel-art style ONLY, do not copy its character. Entire full body and feet and weapons inside canvas, generous transparent margins. Three-quarter side view clearly facing RIGHT, natural grounded ready stance. Crisp visible pixel clusters, restrained rich palette, readable silhouette at 100px display height, classic SNES RPG. One pose only. Genuinely transparent alpha background. No scenery, no ground patch, no shadow, no text, border, portrait panel or duplicates."
+    },
+    {
+      "id": "exp-barda",
+      "asset": "assets/pixel-sprites/v4.3/exp-barda.png",
+      "reference": "assets/library-expansion/p066.webp",
+      "generationFile": "exec-45b7c62b-013c-4146-833c-21756919f1fe.png",
+      "prompt": "Use case: stylized-concept. ONE individual 16-bit dark fantasy battle miniature. Subject: Liora: red dragonborn bard, red reptilian snout, elegant violet pink military coat, decorated round buckler, confident spellcasting hand. Reference1 supplies identity/clothes, reference2 supplies crisp detailed pixel-art style ONLY, do not copy its character. Entire full body and feet and weapons inside canvas, generous transparent margins. Three-quarter side view clearly facing RIGHT, natural grounded ready stance. Crisp visible pixel clusters, restrained rich palette, readable silhouette at 100px display height, classic SNES RPG. One pose only. Genuinely transparent alpha background. No scenery, no ground patch, no shadow, no text, border, portrait panel or duplicates."
+    },
+    {
+      "id": "exp-bardo-guerra",
+      "asset": "assets/pixel-sprites/v4.3/exp-bardo-guerra.png",
+      "reference": "assets/library-expansion/p065.webp",
+      "generationFile": "exec-749eb622-73d5-4994-99ae-e826bc1e78f4.png",
+      "prompt": "Use case: stylized-concept. ONE individual 16-bit dark fantasy battle miniature. Subject: Ravel: cheerful small brown-skinned halfling man, curly black hair, green and gold coat, red scarf, green bardic book and short sword. Reference1 supplies identity/clothes, reference2 supplies crisp detailed pixel-art style ONLY, do not copy its character. Entire full body and feet and weapons inside canvas, generous transparent margins. Three-quarter side view clearly facing RIGHT, natural grounded ready stance. Crisp visible pixel clusters, restrained rich palette, readable silhouette at 100px display height, classic SNES RPG. One pose only. Genuinely transparent alpha background. No scenery, no ground patch, no shadow, no text, border, portrait panel or duplicates."
+    },
+    {
+      "id": "exp-curadora",
+      "asset": "assets/pixel-sprites/v4.3/exp-curadora.png",
+      "reference": "assets/library-expansion/p073.webp",
+      "generationFile": "exec-09f115a4-442b-4df1-9fff-a5f306ffc2c3.png",
+      "prompt": "Use case: stylized-concept. ONE individual 16-bit dark fantasy battle miniature. Subject: Miro: heavyset male human cleric, black hair, navy and gold robes, circular belt ornaments, warm orange healing light in hand. Reference1 supplies identity/clothes, reference2 supplies crisp detailed pixel-art style ONLY, do not copy its character. Entire full body and feet and weapons inside canvas, generous transparent margins. Three-quarter side view clearly facing RIGHT, natural grounded ready stance. Crisp visible pixel clusters, restrained rich palette, readable silhouette at 100px display height, classic SNES RPG. One pose only. Genuinely transparent alpha background. No scenery, no ground patch, no shadow, no text, border, portrait panel or duplicates."
+    },
+    {
+      "id": "exp-luz",
+      "asset": "assets/pixel-sprites/v4.3/exp-luz.png",
+      "reference": "assets/library-expansion/p074.webp",
+      "generationFile": "exec-32b19233-822d-4c60-b74d-ea1d4e9a7527.png",
+      "prompt": "Use case: stylized-concept. ONE individual 16-bit dark fantasy battle miniature. Subject: Auren: pale golden-haired elf cleric, slender golden halo, white dark red and gold robes, small ornate golden shield. Reference1 supplies identity/clothes, reference2 supplies crisp detailed pixel-art style ONLY, do not copy its character. Entire full body and feet and weapons inside canvas, generous transparent margins. Three-quarter side view clearly facing RIGHT, natural grounded ready stance. Crisp visible pixel clusters, restrained rich palette, readable silhouette at 100px display height, classic SNES RPG. One pose only. Genuinely transparent alpha background. No scenery, no ground patch, no shadow, no text, border, portrait panel or duplicates."
+    },
+    {
+      "id": "exp-druida-terra",
+      "asset": "assets/pixel-sprites/v4.3/exp-druida-terra.png",
+      "reference": "assets/library-expansion/p084.webp",
+      "generationFile": "exec-9b20ab38-ca8a-4930-b799-d49e019c78a7.png",
+      "prompt": "Use case: stylized-concept. ONE individual 16-bit dark fantasy battle miniature. Subject: Nimue: orange red skinned female humanoid druid, pointed leaf-petal hat, flowing red gold robes, branching wooden staff. Reference1 supplies identity/clothes, reference2 supplies crisp detailed pixel-art style ONLY, do not copy its character. Entire full body and feet and weapons inside canvas, generous transparent margins. Three-quarter side view clearly facing RIGHT, natural grounded ready stance. Crisp visible pixel clusters, restrained rich palette, readable silhouette at 100px display height, classic SNES RPG. One pose only. Genuinely transparent alpha background. No scenery, no ground patch, no shadow, no text, border, portrait panel or duplicates."
+    },
+    {
+      "id": "exp-druida-lua",
+      "asset": "assets/pixel-sprites/v4.3/exp-druida-lua.png",
+      "reference": "assets/library-expansion/p085.webp",
+      "generationFile": "exec-fb99113e-fbe2-4f7e-8849-ca000c82f799.png",
+      "prompt": "Use case: stylized-concept. ONE individual 16-bit dark fantasy battle miniature. Subject: Oren: purple gray skinned male orc druid, muscular bare arms, dark fur and leather armor, potion flask and curved wooden staff. Reference1 supplies identity/clothes, reference2 supplies crisp detailed pixel-art style ONLY, do not copy its character. Entire full body and feet and weapons inside canvas, generous transparent margins. Three-quarter side view clearly facing RIGHT, natural grounded ready stance. Crisp visible pixel clusters, restrained rich palette, readable silhouette at 100px display height, classic SNES RPG. One pose only. Genuinely transparent alpha background. No scenery, no ground patch, no shadow, no text, border, portrait panel or duplicates."
+    },
+    {
+      "id": "exp-paladina",
+      "asset": "assets/pixel-sprites/v4.3/exp-paladina.png",
+      "reference": "assets/library-expansion/p112.webp",
+      "generationFile": "exec-72677ebb-17df-4db3-8527-66c27f2f0050.png",
+      "prompt": "Use case: stylized-concept. ONE individual 16-bit dark fantasy battle miniature. Subject: Helena: older woman paladin, curled white hair, green and gold heavy armor, large shield and sword. Reference1 supplies identity/clothes, reference2 supplies crisp detailed pixel-art style ONLY, do not copy its character. Entire full body and feet and weapons inside canvas, generous transparent margins. Three-quarter side view clearly facing RIGHT, natural grounded ready stance. Crisp visible pixel clusters, restrained rich palette, readable silhouette at 100px display height, classic SNES RPG. One pose only. Genuinely transparent alpha background. No scenery, no ground patch, no shadow, no text, border, portrait panel or duplicates."
+    },
+    {
+      "id": "exp-paladino-voto",
+      "asset": "assets/pixel-sprites/v4.3/exp-paladino-voto.png",
+      "reference": "assets/library-expansion/p116.webp",
+      "generationFile": "exec-4d4a2e70-eb10-4fd5-8571-195ebafcbd0a.png",
+      "prompt": "Use case: stylized-concept. ONE individual 16-bit dark fantasy battle miniature. Subject: Valen: fully helmeted black and teal armored male paladin, long sword, restrained translucent blue spectral wing accents. Reference1 supplies identity/clothes, reference2 supplies crisp detailed pixel-art style ONLY, do not copy its character. Entire full body and feet and weapons inside canvas, generous transparent margins. Three-quarter side view clearly facing RIGHT, natural grounded ready stance. Crisp visible pixel clusters, restrained rich palette, readable silhouette at 100px display height, classic SNES RPG. One pose only. Genuinely transparent alpha background. No scenery, no ground patch, no shadow, no text, border, portrait panel or duplicates."
+    },
+    {
+      "id": "exp-rastreadora",
+      "asset": "assets/pixel-sprites/v4.3/exp-rastreadora.png",
+      "reference": "assets/library-expansion/p126.webp",
+      "generationFile": "exec-30dc5352-b862-4e59-8be4-73f9d0bc8ad2.png",
+      "prompt": "Use case: stylized-concept. ONE individual 16-bit dark fantasy battle miniature. Subject: Taren: male elf ranger with curly dark hair, white fur mantle, black armor, longbow, quiver and hunting boots. Reference1 supplies identity/clothes, reference2 supplies crisp detailed pixel-art style ONLY, do not copy its character. Entire full body and feet and weapons inside canvas, generous transparent margins. Three-quarter side view clearly facing RIGHT, natural grounded ready stance. Crisp visible pixel clusters, restrained rich palette, readable silhouette at 100px display height, classic SNES RPG. One pose only. Genuinely transparent alpha background. No scenery, no ground patch, no shadow, no text, border, portrait panel or duplicates."
+    },
+    {
+      "id": "exp-sombras",
+      "asset": "assets/pixel-sprites/v4.3/exp-sombras.png",
+      "reference": "assets/library-expansion/p125.webp",
+      "generationFile": "exec-8e5f45da-dc93-4401-941f-26ccbb2c8aed.png",
+      "prompt": "Use case: stylized-concept. ONE individual 16-bit dark fantasy battle miniature. Subject: Vaelis: female elf with dark hair, purple black leather ranger armor, turquoise scarf, elegant purple bow. Reference1 supplies identity/clothes, reference2 supplies crisp detailed pixel-art style ONLY, do not copy its character. Entire full body and feet and weapons inside canvas, generous transparent margins. Three-quarter side view clearly facing RIGHT, natural grounded ready stance. Crisp visible pixel clusters, restrained rich palette, readable silhouette at 100px display height, classic SNES RPG. One pose only. Genuinely transparent alpha background. No scenery, no ground patch, no shadow, no text, border, portrait panel or duplicates."
+    },
+    {
+      "id": "exp-ladra",
+      "asset": "assets/pixel-sprites/v4.3/exp-ladra.png",
+      "reference": "assets/library-expansion/p136.webp",
+      "generationFile": "exec-31c717bc-f96e-406e-8fde-8b5e643c1037.png",
+      "prompt": "Use case: stylized-concept. ONE individual 16-bit dark fantasy battle miniature. Subject: Nessa: slender female human thief, gray blond hair, goggles on forehead, black hooded leather outfit, dagger and lockpicks. Reference1 supplies identity/clothes, reference2 supplies crisp detailed pixel-art style ONLY, do not copy its character. Entire full body and feet and weapons inside canvas, generous transparent margins. Three-quarter side view clearly facing RIGHT, natural grounded ready stance. Crisp visible pixel clusters, restrained rich palette, readable silhouette at 100px display height, classic SNES RPG. One pose only. Genuinely transparent alpha background. No scenery, no ground patch, no shadow, no text, border, portrait panel or duplicates."
+    },
+    {
+      "id": "exp-assassino",
+      "asset": "assets/pixel-sprites/v4.3/exp-assassino.png",
+      "reference": "assets/library-expansion/p133.webp",
+      "generationFile": "exec-0cc80cf5-df87-4a9b-94e0-6dca73e8bec6.png",
+      "prompt": "Use case: stylized-concept. ONE individual 16-bit dark fantasy battle miniature. Subject: Corvin: green reptilian humanoid assassin, navy hooded cloak, brown trousers, curved dagger, slender agile stance. Reference1 supplies identity/clothes, reference2 supplies crisp detailed pixel-art style ONLY, do not copy its character. Entire full body and feet and weapons inside canvas, generous transparent margins. Three-quarter side view clearly facing RIGHT, natural grounded ready stance. Crisp visible pixel clusters, restrained rich palette, readable silhouette at 100px display height, classic SNES RPG. One pose only. Genuinely transparent alpha background. No scenery, no ground patch, no shadow, no text, border, portrait panel or duplicates."
+    },
+    {
+      "id": "exp-evocadora",
+      "asset": "assets/pixel-sprites/v4.3/exp-evocadora.png",
+      "reference": "assets/library-expansion/p173.webp",
+      "generationFile": "exec-4221cd17-fe58-4671-8660-3e113c2aca7c.png",
+      "prompt": "Use case: stylized-concept. ONE individual 16-bit dark fantasy battle miniature. Subject: Ilyra: slender pale female elf wizard, light blond hair, wide pointed blue hat, long teal blue coat, small orange flame in hand. Reference1 supplies identity/clothes, reference2 supplies crisp detailed pixel-art style ONLY, do not copy its character. Entire full body and feet and weapons inside canvas, generous transparent margins. Three-quarter side view clearly facing RIGHT, natural grounded ready stance. Crisp visible pixel clusters, restrained rich palette, readable silhouette at 100px display height, classic SNES RPG. One pose only. Genuinely transparent alpha background. No scenery, no ground patch, no shadow, no text, border, portrait panel or duplicates."
+    },
+    {
+      "id": "exp-abjurador",
+      "asset": "assets/pixel-sprites/v4.3/exp-abjurador.png",
+      "reference": "assets/library-expansion/p171.webp",
+      "generationFile": "exec-67911eb2-819b-4721-b68b-191e31e2994b.png",
+      "prompt": "Use case: stylized-concept. ONE individual 16-bit dark fantasy battle miniature. Subject: Edrik: dark bearded human male wizard, hooded navy blue purple robes, long staff, small arcane shield sigil. Reference1 supplies identity/clothes, reference2 supplies crisp detailed pixel-art style ONLY, do not copy its character. Entire full body and feet and weapons inside canvas, generous transparent margins. Three-quarter side view clearly facing RIGHT, natural grounded ready stance. Crisp visible pixel clusters, restrained rich palette, readable silhouette at 100px display height, classic SNES RPG. One pose only. Genuinely transparent alpha background. No scenery, no ground patch, no shadow, no text, border, portrait panel or duplicates."
+    },
+    {
+      "id": "exp-feiticeira",
+      "asset": "assets/pixel-sprites/v4.3/exp-feiticeira.png",
+      "reference": "assets/library-expansion/p147.webp",
+      "generationFile": "exec-220277a3-94bc-4977-a6c8-61ddcc490603.png",
+      "prompt": "Use case: stylized-concept. ONE individual 16-bit dark fantasy battle miniature. Subject: Zarek: fit pale blond male sorcerer, teal scarf, bare torso, white light-blue flowing trousers and wraps, subtle icy dragon magic. Reference1 supplies identity/clothes, reference2 supplies crisp detailed pixel-art style ONLY, do not copy its character. Entire full body and feet and weapons inside canvas, generous transparent margins. Three-quarter side view clearly facing RIGHT, natural grounded ready stance. Crisp visible pixel clusters, restrained rich palette, readable silhouette at 100px display height, classic SNES RPG. One pose only. Genuinely transparent alpha background. No scenery, no ground patch, no shadow, no text, border, portrait panel or duplicates."
+    },
+    {
+      "id": "exp-bruxa",
+      "asset": "assets/pixel-sprites/v4.3/exp-bruxa.png",
+      "reference": "assets/library-expansion/p159.webp",
+      "generationFile": "exec-f4c0532f-a6f6-40ba-b5d5-2deec94d3128.png",
+      "prompt": "Use case: stylized-concept. ONE individual 16-bit dark fantasy battle miniature. Subject: Selene: light blue skinned female elf warlock, lavender hair, long dark purple robe, ornate staff with purple orb. Reference1 supplies identity/clothes, reference2 supplies crisp detailed pixel-art style ONLY, do not copy its character. Entire full body and feet and weapons inside canvas, generous transparent margins. Three-quarter side view clearly facing RIGHT, natural grounded ready stance. Crisp visible pixel clusters, restrained rich palette, readable silhouette at 100px display height, classic SNES RPG. One pose only. Genuinely transparent alpha background. No scenery, no ground patch, no shadow, no text, border, portrait panel or duplicates."
+    },
+    {
+      "id": "exp-mercador",
+      "asset": "assets/pixel-sprites/v4.3/exp-mercador.png",
+      "reference": "assets/library-expansion/p228.webp",
+      "generationFile": "exec-7a367fe8-4fbe-48b5-b359-2ae06dcebf64.png",
+      "prompt": "Use case: stylized-concept. ONE individual 16-bit dark fantasy battle miniature. Subject: Tomas: golden lizardfolk merchant with neck frills, red tan traveling robes, lantern, wooden staff and pack. Reference1 supplies identity/clothes, reference2 supplies crisp detailed pixel-art style ONLY, do not copy its character. Entire full body and feet and weapons inside canvas, generous transparent margins. Three-quarter side view clearly facing RIGHT, natural grounded ready stance. Crisp visible pixel clusters, restrained rich palette, readable silhouette at 100px display height, classic SNES RPG. One pose only. Genuinely transparent alpha background. No scenery, no ground patch, no shadow, no text, border, portrait panel or duplicates."
+    },
+    {
+      "id": "exp-morcego",
+      "asset": "assets/pixel-sprites/v4.3/exp-morcego.png",
+      "reference": "assets/library-expansion/p345.webp",
+      "generationFile": "exec-bf93c09d-74e4-4222-b226-6c59b9788790.png",
+      "prompt": "Use case: stylized-concept. ONE individual creature miniature for a classic 16-bit dark fantasy battle game. Subject: Small natural dark brown bat with leathery wings open, hooked feet visible, right-facing profile, no humanoid features. First reference is the creature identity/anatomy. Second reference is PIXEL ART STYLE ONLY, do not add human parts to animals. Crisp detailed SNES pixel clusters. Entire full body and ALL feet/wings/tail contained in canvas, centered with generous transparent margins, clear right-facing three-quarter side view, resting battle-ready pose, one creature only. Truly transparent alpha background, not a black backdrop. NO scene, no floor, no shadow, no aura, text, frames or labels. Preserve animal anatomy and scale proportions. Readable at 90px tall."
+    },
+    {
+      "id": "exp-gato",
+      "asset": "assets/pixel-sprites/v4.3/exp-gato.png",
+      "reference": "assets/library-expansion/p346.webp",
+      "generationFile": "exec-9c74112d-f400-411f-9e5d-7436c6dc9042.png",
+      "prompt": "Use case: stylized-concept. ONE individual creature miniature for a classic 16-bit dark fantasy battle game. Subject: Sleek black cat standing on all four paws, curved tail and amber eyes, facing right. First reference is the creature identity/anatomy. Second reference is PIXEL ART STYLE ONLY, do not add human parts to animals. Crisp detailed SNES pixel clusters. Entire full body and ALL feet/wings/tail contained in canvas, centered with generous transparent margins, clear right-facing three-quarter side view, resting battle-ready pose, one creature only. Truly transparent alpha background, not a black backdrop. NO scene, no floor, no shadow, no aura, text, frames or labels. Preserve animal anatomy and scale proportions. Readable at 90px tall."
+    },
+    {
+      "id": "exp-sapo",
+      "asset": "assets/pixel-sprites/v4.3/exp-sapo.png",
+      "reference": "assets/library-expansion/p348.webp",
+      "generationFile": "exec-34b086bb-8909-4615-82cb-6b1ed56909f9.png",
+      "prompt": "Use case: stylized-concept. ONE individual creature miniature for a classic 16-bit dark fantasy battle game. Subject: Small natural green brown frog with speckled skin, crouching right-facing on all four webbed feet. First reference is the creature identity/anatomy. Second reference is PIXEL ART STYLE ONLY, do not add human parts to animals. Crisp detailed SNES pixel clusters. Entire full body and ALL feet/wings/tail contained in canvas, centered with generous transparent margins, clear right-facing three-quarter side view, resting battle-ready pose, one creature only. Truly transparent alpha background, not a black backdrop. NO scene, no floor, no shadow, no aura, text, frames or labels. Preserve animal anatomy and scale proportions. Readable at 90px tall."
+    },
+    {
+      "id": "exp-diabrete",
+      "asset": "assets/pixel-sprites/v4.3/exp-diabrete.png",
+      "reference": "assets/library-expansion/p351.webp",
+      "generationFile": "exec-6a9713f9-e610-425a-895a-506117e7f30b.png",
+      "prompt": "Use case: stylized-concept. ONE individual creature miniature for a classic 16-bit dark fantasy battle game. Subject: Small red imp devil with curved horns, pointed tail, leathery wings, clawed hands and feet, mischievous face. First reference is the creature identity/anatomy. Second reference is PIXEL ART STYLE ONLY, do not add human parts to animals. Crisp detailed SNES pixel clusters. Entire full body and ALL feet/wings/tail contained in canvas, centered with generous transparent margins, clear right-facing three-quarter side view, resting battle-ready pose, one creature only. Truly transparent alpha background, not a black backdrop. NO scene, no floor, no shadow, no aura, text, frames or labels. Preserve animal anatomy and scale proportions. Readable at 90px tall."
+    },
+    {
+      "id": "exp-mastim",
+      "asset": "assets/pixel-sprites/v4.3/exp-mastim.png",
+      "reference": "assets/library-expansion/p352.webp",
+      "generationFile": "exec-ea0d8b74-87bb-496b-9689-834f9391941a.png",
+      "prompt": "Use case: stylized-concept. ONE individual creature miniature for a classic 16-bit dark fantasy battle game. Subject: Stocky brown mastiff dog, short fur, sturdy leather harness and small saddlebags, standing right-facing on all four paws. First reference is the creature identity/anatomy. Second reference is PIXEL ART STYLE ONLY, do not add human parts to animals. Crisp detailed SNES pixel clusters. Entire full body and ALL feet/wings/tail contained in canvas, centered with generous transparent margins, clear right-facing three-quarter side view, resting battle-ready pose, one creature only. Truly transparent alpha background, not a black backdrop. NO scene, no floor, no shadow, no aura, text, frames or labels. Preserve animal anatomy and scale proportions. Readable at 90px tall."
+    },
+    {
+      "id": "exp-pseudodragao",
+      "asset": "assets/pixel-sprites/v4.3/exp-pseudodragao.png",
+      "reference": "assets/library-expansion/p353.webp",
+      "generationFile": "exec-33dda9d4-e289-4368-bced-87718d9f37ca.png",
+      "prompt": "Use case: stylized-concept. ONE individual creature miniature for a classic 16-bit dark fantasy battle game. Subject: Small red pseudodragon, slender neck, four clawed legs, pointed tail and delicate spread leathery wings, alert right-facing stance. First reference is the creature identity/anatomy. Second reference is PIXEL ART STYLE ONLY, do not add human parts to animals. Crisp detailed SNES pixel clusters. Entire full body and ALL feet/wings/tail contained in canvas, centered with generous transparent margins, clear right-facing three-quarter side view, resting battle-ready pose, one creature only. Truly transparent alpha background, not a black backdrop. NO scene, no floor, no shadow, no aura, text, frames or labels. Preserve animal anatomy and scale proportions. Readable at 90px tall."
+    },
+    {
+      "id": "exp-quasit",
+      "asset": "assets/pixel-sprites/v4.3/exp-quasit.png",
+      "reference": "assets/library-expansion/p354.webp",
+      "generationFile": "exec-2a7c97dc-ff87-4b1a-9fd0-df818765988b.png",
+      "prompt": "Use case: stylized-concept. ONE individual creature miniature for a classic 16-bit dark fantasy battle game. Subject: Small green quasit demon, knobbly skin, curled horns, claws and hunched goblin-like body, standing ready facing right. First reference is the creature identity/anatomy. Second reference is PIXEL ART STYLE ONLY, do not add human parts to animals. Crisp detailed SNES pixel clusters. Entire full body and ALL feet/wings/tail contained in canvas, centered with generous transparent margins, clear right-facing three-quarter side view, resting battle-ready pose, one creature only. Truly transparent alpha background, not a black backdrop. NO scene, no floor, no shadow, no aura, text, frames or labels. Preserve animal anatomy and scale proportions. Readable at 90px tall."
+    },
+    {
+      "id": "exp-esfinge",
+      "asset": "assets/pixel-sprites/v4.3/exp-esfinge.png",
+      "reference": "assets/library-expansion/p356.webp",
+      "generationFile": "exec-6d0eb162-541f-4d77-9ac3-899916c18cf3.png",
+      "prompt": "Use case: stylized-concept. ONE individual creature miniature for a classic 16-bit dark fantasy battle game. Subject: Tiny Sphinx of Wonder, bright blue purple winged feline, ornate long feathers, feline face and four paws, magical jewel collar. First reference is the creature identity/anatomy. Second reference is PIXEL ART STYLE ONLY, do not add human parts to animals. Crisp detailed SNES pixel clusters. Entire full body and ALL feet/wings/tail contained in canvas, centered with generous transparent margins, clear right-facing three-quarter side view, resting battle-ready pose, one creature only. Truly transparent alpha background, not a black backdrop. NO scene, no floor, no shadow, no aura, text, frames or labels. Preserve animal anatomy and scale proportions. Readable at 90px tall."
+    },
+    {
+      "id": "exp-fada",
+      "asset": "assets/pixel-sprites/v4.3/exp-fada.png",
+      "reference": "assets/library-expansion/p357.webp",
+      "generationFile": "exec-1bba6375-5b3f-4c59-925a-407fc6cefd99.png",
+      "prompt": "Use case: stylized-concept. ONE individual creature miniature for a classic 16-bit dark fantasy battle game. Subject: Tiny red-haired female fairy warrior, green leaf clothing, translucent dragonfly wings, needle-like sword, full body and feet. First reference is the creature identity/anatomy. Second reference is PIXEL ART STYLE ONLY, do not add human parts to animals. Crisp detailed SNES pixel clusters. Entire full body and ALL feet/wings/tail contained in canvas, centered with generous transparent margins, clear right-facing three-quarter side view, resting battle-ready pose, one creature only. Truly transparent alpha background, not a black backdrop. NO scene, no floor, no shadow, no aura, text, frames or labels. Preserve animal anatomy and scale proportions. Readable at 90px tall."
+    },
+    {
+      "id": "exp-lobo",
+      "asset": "assets/pixel-sprites/v4.3/exp-lobo.png",
+      "reference": "assets/library-expansion/p358.webp",
+      "generationFile": "exec-69f85630-ff47-4f35-87a1-e4497c115a07.png",
+      "prompt": "Use case: stylized-concept. ONE individual creature miniature for a classic 16-bit dark fantasy battle game. Subject: Natural gray wolf, thick silver gray fur, alert ears, long bushy tail, standing right-facing on all four paws. First reference is the creature identity/anatomy. Second reference is PIXEL ART STYLE ONLY, do not add human parts to animals. Crisp detailed SNES pixel clusters. Entire full body and ALL feet/wings/tail contained in canvas, centered with generous transparent margins, clear right-facing three-quarter side view, resting battle-ready pose, one creature only. Truly transparent alpha background, not a black backdrop. NO scene, no floor, no shadow, no aura, text, frames or labels. Preserve animal anatomy and scale proportions. Readable at 90px tall."
+    },
+    {
+      "id": "exp-construto",
+      "asset": "assets/pixel-sprites/v4.3/exp-construto.png",
+      "reference": "assets/library-expansion/p323.webp",
+      "generationFile": "exec-2f5c576a-64e3-490f-8969-72d24117aed3.png",
+      "prompt": "Use case: stylized-concept. ONE individual creature miniature for a classic 16-bit dark fantasy battle game. Subject: Sentinela de Bronze: heavy humanoid armored construct, weathered gray bronze gold plates, closed helmet, articulated metal boots, heavy guard weapon. First reference supplies identity/anatomy, second reference is PIXEL ART STYLE ONLY. Entire full body with ALL limbs, wings, tail and feet inside canvas; generous transparent margins; clear right-facing three-quarter side view, battle-ready stance. Crisp detailed SNES pixel clusters, natural proportions, restricted rich palette. Single pose, one creature. Truly transparent alpha background. NO backdrop, gradient, glow halo, ground, shadow, text, borders or labels. Do not add a human body to a dragon or animal. Preserve the subject's distinct anatomy."
+    },
+    {
+      "id": "exp-serpe",
+      "asset": "assets/pixel-sprites/v4.3/exp-serpe.png",
+      "reference": "assets/library-expansion/p324.webp",
+      "generationFile": "exec-03b01997-26b0-42c0-ba00-c28434e087e4.png",
+      "prompt": "Use case: stylized-concept. ONE individual creature miniature for a classic 16-bit dark fantasy battle game. Subject: Serpe de Cristal: blue white ice dragon, crystalline horns and scales, four legs, long tail, folded but readable crystalline wings, right-facing battle stance. First reference supplies identity/anatomy, second reference is PIXEL ART STYLE ONLY. Entire full body with ALL limbs, wings, tail and feet inside canvas; generous transparent margins; clear right-facing three-quarter side view, battle-ready stance. Crisp detailed SNES pixel clusters, natural proportions, restricted rich palette. Single pose, one creature. Truly transparent alpha background. NO backdrop, gradient, glow halo, ground, shadow, text, borders or labels. Do not add a human body to a dragon or animal. Preserve the subject's distinct anatomy."
+    },
+    {
+      "id": "exp-infernal",
+      "asset": "assets/pixel-sprites/v4.3/exp-infernal.png",
+      "reference": "assets/library-expansion/p326.webp",
+      "generationFile": "exec-83ad28a3-5d47-4b17-9b42-820199b060b0.png",
+      "prompt": "Use case: stylized-concept. ONE individual creature miniature for a classic 16-bit dark fantasy battle game. Subject: Carrasco das Brasas: towering muscular red fiend, large curved black horns, charcoal armor, fiery trident, clawed feet, restrained embers. First reference supplies identity/anatomy, second reference is PIXEL ART STYLE ONLY. Entire full body with ALL limbs, wings, tail and feet inside canvas; generous transparent margins; clear right-facing three-quarter side view, battle-ready stance. Crisp detailed SNES pixel clusters, natural proportions, restricted rich palette. Single pose, one creature. Truly transparent alpha background. NO backdrop, gradient, glow halo, ground, shadow, text, borders or labels. Do not add a human body to a dragon or animal. Preserve the subject's distinct anatomy."
+    },
+    {
+      "id": "exp-espectro",
+      "asset": "assets/pixel-sprites/v4.3/exp-espectro.png",
+      "reference": "assets/library-expansion/p327.webp",
+      "generationFile": "exec-8f58218a-acf3-403d-a4f7-e4d50ece4512.png",
+      "prompt": "Use case: stylized-concept. ONE individual creature miniature for a classic 16-bit dark fantasy battle game. Subject: Lamento da Cripta: haunting gray skeletal wraith, ragged gray cloak and long spectral arms, full floating tapering silhouette, face aimed right. First reference supplies identity/anatomy, second reference is PIXEL ART STYLE ONLY. Entire full body with ALL limbs, wings, tail and feet inside canvas; generous transparent margins; clear right-facing three-quarter side view, battle-ready stance. Crisp detailed SNES pixel clusters, natural proportions, restricted rich palette. Single pose, one creature. Truly transparent alpha background. NO backdrop, gradient, glow halo, ground, shadow, text, borders or labels. Do not add a human body to a dragon or animal. Preserve the subject's distinct anatomy."
+    },
+    {
+      "id": "exp-raizes",
+      "asset": "assets/pixel-sprites/v4.3/exp-raizes.png",
+      "reference": "assets/library-expansion/p306.webp",
+      "generationFile": "exec-6a3e78a8-2575-4de7-8dfb-6a6afddb620c.png",
+      "prompt": "Use case: stylized-concept. ONE individual creature miniature for a classic 16-bit dark fantasy battle game. Subject: Guardiao de Raizes: huge ancient walking tree guardian, wise bark face with branch beard, leafy crown, full wooden body, root fingers and two wide root feet. First reference supplies identity/anatomy, second reference is PIXEL ART STYLE ONLY. Entire full body with ALL limbs, wings, tail and feet inside canvas; generous transparent margins; clear right-facing three-quarter side view, battle-ready stance. Crisp detailed SNES pixel clusters, natural proportions, restricted rich palette. Single pose, one creature. Truly transparent alpha background. NO backdrop, gradient, glow halo, ground, shadow, text, borders or labels. Do not add a human body to a dragon or animal. Preserve the subject's distinct anatomy."
+    },
+    {
+      "id": "exp-larva",
+      "asset": "assets/pixel-sprites/v4.3/exp-larva.png",
+      "reference": "assets/library-expansion/p355.webp",
+      "generationFile": "exec-1ec75854-5a4d-4d84-9af1-260ae6e51314.png",
+      "prompt": "Use case: stylized-concept. ONE individual creature miniature for a classic 16-bit dark fantasy battle game. Subject: Larva Rubra: monstrous red segmented worm, curled full body on ground, huge fanged mouth raised toward right, chitin ridges, no legs. First reference supplies identity/anatomy, second reference is PIXEL ART STYLE ONLY. Entire full body with ALL limbs, wings, tail and feet inside canvas; generous transparent margins; clear right-facing three-quarter side view, battle-ready stance. Crisp detailed SNES pixel clusters, natural proportions, restricted rich palette. Single pose, one creature. Truly transparent alpha background. NO backdrop, gradient, glow halo, ground, shadow, text, borders or labels. Do not add a human body to a dragon or animal. Preserve the subject's distinct anatomy."
+    },
+    {
+      "id": "exp-elemental",
+      "asset": "assets/pixel-sprites/v4.3/exp-elemental.png",
+      "reference": "assets/library-expansion/p383.webp",
+      "generationFile": "exec-580e8e58-1afc-403d-ba43-6b031c376391.png",
+      "prompt": "Use case: stylized-concept. ONE individual creature miniature for a classic 16-bit dark fantasy battle game. Subject: Draco da Tempestade: emerald green storm dragon, long horned head, four legs, ridged tail, great leathery wings, tiny blue electric accents, entire body. First reference supplies identity/anatomy, second reference is PIXEL ART STYLE ONLY. Entire full body with ALL limbs, wings, tail and feet inside canvas; generous transparent margins; clear right-facing three-quarter side view, battle-ready stance. Crisp detailed SNES pixel clusters, natural proportions, restricted rich palette. Single pose, one creature. Truly transparent alpha background. NO backdrop, gradient, glow halo, ground, shadow, text, borders or labels. Do not add a human body to a dragon or animal. Preserve the subject's distinct anatomy."
+    },
+    {
+      "id": "exp-montaria",
+      "asset": "assets/pixel-sprites/v4.3/exp-montaria.png",
+      "reference": "assets/library-expansion/p303.webp",
+      "generationFile": "exec-7b591e4b-b054-48cd-8c0f-f6dcbaab040e.png",
+      "prompt": "Use case: stylized-concept. ONE individual creature miniature for a classic 16-bit dark fantasy battle game. Subject: Corcel do Veu: spectral teal horse, luminous mane and tail, ornate purple harness, four complete hooves planted, elegant right-facing stance. First reference supplies identity/anatomy, second reference is PIXEL ART STYLE ONLY. Entire full body with ALL limbs, wings, tail and feet inside canvas; generous transparent margins; clear right-facing three-quarter side view, battle-ready stance. Crisp detailed SNES pixel clusters, natural proportions, restricted rich palette. Single pose, one creature. Truly transparent alpha background. NO backdrop, gradient, glow halo, ground, shadow, text, borders or labels. Do not add a human body to a dragon or animal. Preserve the subject's distinct anatomy."
+    }
+  ]
+}

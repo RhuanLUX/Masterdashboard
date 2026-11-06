@@ -63,7 +63,7 @@ Os modelos possuem uma reserva D20 por descanso, sem tabela de espaços de D&D. 
 4. Magias podem ser adaptadas por **Editar para minha mesa**. A alteração vale para as referências futuras daquela magia; não reescreve históricos nem participantes já copiados para um encontro.
 5. Favoritos, edições, imagens personalizadas, cópias e magias adaptadas integram o backup JSON existente. Use **Configurações → Exportar backup** e restaure pelo mesmo fluxo de antes.
 
-As novas artes são **ilustrações estáticas**, não sprites novos. Na arena/TV, utilizam o suporte existente a retratos próprios, marcado `[R]`. A geração de recortes ou sprites 16-bit para essas 42 entidades não faz parte desta entrega. Os sprites, animações, efeitos, quedas e falas anteriores permanecem preservados. A TV recebe apenas a apresentação pública; notas do mestre e textos completos das fichas permanecem nos controles.
+Desde a atualização **4.3.0**, as 42 entidades possuem **miniaturas individuais transparentes**, voltadas para a equipe adversária. A arena/TV usa essas miniaturas; as fichas e a galeria conservam suas ilustrações. Cada miniatura nova tem uma pose base com movimento e ações do renderer Pixi, sem recortes de retratos ou folhas de sprites. Cópias criadas pelo compêndio herdam a miniatura da origem. Os sprites dos quatro jogadores, quedas e falas anteriores permanecem preservados. A TV recebe apenas a apresentação pública; notas do mestre e textos completos das fichas permanecem nos controles. Veja o [guia da arena](ARENA_V4_3.md).
 
 ## Arquivos e reprodução
 
