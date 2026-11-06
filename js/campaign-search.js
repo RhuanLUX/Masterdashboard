@@ -16,9 +16,10 @@
       const title=doc.title||key,text=(doc.blocks||[]).map(blockText).join('\n');add(kind+':'+key,title,kind==='rules'?'Regras':'Documentos',text,{type:'document',kind,key,title});
     }
     for(const x of host().visualEntries())add('visual:'+x.id,x.name,'NPCs',[x.description,x.notes,x.origin].filter(Boolean).join('\n'),{type:'visual',id:x.id});
-    for(const x of host().creaturesList())add('creature:'+x.id,x.name,'Criaturas',[x.description,x.special,x.attack,x.damage].filter(Boolean).join('\n'),{type:'creature',id:x.id});
+    for(const x of host().creaturesList())add('creature:'+x.id,x.name,'Criaturas',window.RPGCompendium?.textOf(x)||[x.description,x.special,x.attack,x.damage].filter(Boolean).join('\n'),{type:'creature',id:x.id});
     for(const x of s.v3?.journal||[])add('journal:'+x.id,x.title,'Notas',x.description,{type:'journal',id:x.id});
     for(const a of s.v2.adventures){const note=s.v2.adventureState[a.id]?.notes;if(note)add('note:'+a.id,'Notas · '+a.title,'Notas',note,{type:'adventure',id:a.id})}
+    all.push(...(window.RPGCompendium?.searchEntries()||[]));
     return all;
   }
   function find(query,kind='Todas',list=entries()){
@@ -32,6 +33,8 @@
     else if(t.type==='document')host().openSourceReader(t.kind,t.key,t.title);
     else if(t.type==='visual'){const x=host().visualEntries().find(x=>x.id===t.id);if(x)host().visualDetail(x)}
     else if(t.type==='creature'){const x=host().creaturesList().find(x=>x.id===t.id);if(x)host().creatureDetail(x)}
+    else if(t.type==='spell')window.RPGCompendium.spellDetail(window.RPGCompendium.spells().find(x=>x.id===t.id));
+    else if(t.type==='class')window.RPGCompendium.classDetail(window.RPG_LIBRARY_EXPANSION.classes.find(x=>x.id===t.id));
     else if(t.type==='journal')window.RPGMasterUI.open('journal');
   }
   function preview(entry,query=''){
@@ -39,7 +42,7 @@
     d.querySelector('[data-open-reference]').onclick=()=>{d.close();open(entry)};return d;
   }
   function search(){
-    const list=entries(),d=RPGUI.dialog('Consultar sem sair da mesa',`<div class="search-tools"><label class="sheet-field"><span>Palavras-chave · acentos e maiúsculas não importam</span><input data-search-all type="search" placeholder="Ex.: goblin arco, medo, fogo…" autocomplete="off"></label><label class="sheet-field"><span>Onde procurar</span><select data-search-kind>${['Todas','Aventuras','Companhia','Regras','Documentos','NPCs','Criaturas','Notas'].map(k=>`<option>${k}</option>`).join('')}</select></label></div><p data-search-count role="status"></p><div class="search-workspace"><div data-search-results class="search-results"></div><aside data-search-preview class="reference-preview"><p>Escolha um resultado para consultar aqui, sem interromper a leitura ou o combate.</p></aside></div>`,{wide:true});
+    const list=entries(),d=RPGUI.dialog('Consultar sem sair da mesa',`<div class="search-tools"><label class="sheet-field"><span>Palavras-chave · acentos e maiúsculas não importam</span><input data-search-all type="search" placeholder="Ex.: goblin arco, medo, fogo…" autocomplete="off"></label><label class="sheet-field"><span>Onde procurar</span><select data-search-kind>${['Todas','Aventuras','Companhia','Regras','Documentos','NPCs','Criaturas','Classes','Magias','Notas'].map(k=>`<option>${k}</option>`).join('')}</select></label></div><p data-search-count role="status"></p><div class="search-workspace"><div data-search-results class="search-results"></div><aside data-search-preview class="reference-preview"><p>Escolha um resultado para consultar aqui, sem interromper a leitura ou o combate.</p></aside></div>`,{wide:true});
     let matches=[],query='',timer;
     const choose=i=>{const x=matches[i];if(!x)return;d.querySelectorAll('[data-result]').forEach(n=>n.setAttribute('aria-pressed',String(+n.dataset.result===i)));d.querySelector('[data-search-preview]').innerHTML=`<small>${E(x.kind)} · privado</small><h3>${E(x.title)}</h3><div class="reference-text">${marked(x.text,query)}</div><div class="reference-actions"><button class="metal-btn" data-open-reference>Abrir na origem</button></div>`;d.querySelector('[data-open-reference]').onclick=()=>{d.close();open(x)}};
     const update=()=>{query=d.querySelector('input').value.trim();matches=find(query,d.querySelector('select').value,list);d.querySelector('[data-search-count]').textContent=query?`${matches.length}${matches.length===60?' primeiros':''} resultados · Enter seleciona o primeiro`:'Busque por uma ou mais palavras. A consulta fica apenas na tela do mestre.';const results=d.querySelector('[data-search-results]');results.innerHTML=matches.map((x,i)=>`<button data-result="${i}" aria-pressed="false"><small>${E(x.kind)}</small><strong>${marked(x.title,query)}</strong><span>${marked(snippet(x.text,query),query)}</span></button>`).join('')||(query?'<p>Nenhum resultado. Tente menos palavras ou outra categoria.</p>':'');d.querySelector('[data-search-preview]').innerHTML='<p>Selecione um resultado para consultar.</p>';results.querySelectorAll('[data-result]').forEach(b=>b.onclick=()=>choose(+b.dataset.result));};

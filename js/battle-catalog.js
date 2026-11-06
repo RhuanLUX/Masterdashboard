@@ -53,6 +53,12 @@
   const creatures = state => merge(global.RPG_MASTER_CAMPAIGN_CODEX?.creatures,state?.v2?.creatures);
   const visuals = state => merge(global.RPG_MASTER_CAMPAIGN_CODEX?.visualEntries,state?.v2?.visualLibrary);
   const numeric = value => value===null||value===undefined||value===''?null:Number.isFinite(Number(value))?Number(value):null;
+  function libraryDetails(x,state){
+    const fields=[['Descrição',x.description],['Sistema',x.system],['Classe / especialização',[x.className,x.subclass].filter(Boolean).join(' · ')],['Nível / ND',x.cr!=null?'ND '+x.cr:x.level?'Nível '+x.level:''],['Ações',x.actions],['Ações bônus',x.bonusActions],['Reações',x.reactions],['Recursos',x.resources],['Conjuração',x.casting],['Salvaguardas',x.saves],['Perícias',x.skills],['Resistências',x.resistances],['Sentidos',x.senses],['Idiomas',x.languages],['Equipamentos',x.equipment],['Tática',x.tactics],['Notas do mestre',x.notes||x.note]];
+    const spells=merge(global.RPG_LIBRARY_EXPANSION?.spells,state?.v2?.spellLibrary);
+    for(const id of x.spellIds||[]){const s=spells.find(s=>s.id===id);if(s)fields.push([s.name,`${s.casting}; ${s.range}; ${s.duration}; ${s.cost}. ${s.effect}`]);}
+    return fields.filter(([,v])=>v).map(([label,v])=>`${label}: ${v}`).join('\n\n');
+  }
   function source(state, kind, id) {
     if(kind==='character'){
       const x=state?.characters?.[id];if(!x)return null;const c=x.combat||{};
@@ -68,14 +74,14 @@
       if(localVisual)x={...x,name:localVisual.name||x.name,image:localVisual.image||localVisual.url||x.image};
     }
     return {id,kind,name:x.name,type:x.type||x.category||'Entidade',hpMax:numeric(x.hp??x.pv),hpCurrent:numeric(x.hp??x.pv),
-      ac:x.ac??'',movement:x.movement||'',image:x.image||x.url||'',attributes:x.attributes||{},attacks:x.attack?[x.attack]:[],
-      damage:x.damage||'',special:x.special||'',details:[x.description,x.notes||x.note].filter(Boolean).join('\n'),origin:x.origin||'',status:x.status||''};
+      ac:x.ac??'',movement:x.movement||'',image:x.image||x.url||'',attributes:x.attributes||{},attacks:x.attack?[x.attack]:[],...(x.kind?{initiativeModifier:numeric(x.initiative)??0}:{}),
+      damage:x.damage||'',special:x.special||'',details:x.kind?libraryDetails(x,state):[x.description,x.notes||x.note].filter(Boolean).join('\n'),origin:x.origin||'',status:x.status||''};
   }
   function roster(state) {
     const entries=[];const creatureIds=new Set([...(global.RPG_MASTER_CAMPAIGN_CODEX?.creatures||[]),...(state?.v2?.creatures||[])].map(x=>x.id));
     const add=(kind,id,group)=>{const x=source(state,kind,id);if(x)entries.push({...x,sourceType:kind,sourceId:id,key:`${kind}:${id}`,group});};
     Object.keys(state?.characters||{}).forEach(id=>add('character',id,'Companhia'));
-    creatures(state).forEach(x=>add('creature',x.id,x.tags?.some(t=>['chefe','dragão'].includes(t))?'Criaturas especiais / bosses':'Criaturas e inimigos'));
+    creatures(state).forEach(x=>add('creature',x.id,x.kind==='npc'?'NPCs e entidades':x.tags?.some(t=>['chefe','dragão'].includes(t))?'Criaturas especiais / bosses':'Criaturas e inimigos'));
     visuals(state).forEach(x=>{
       if(creatureIds.has(x.id)||x.combatEligible===false)return;
       if(x.combatEligible!==true&&(exclusions[x.id]||!categories.has(x.category)))return;

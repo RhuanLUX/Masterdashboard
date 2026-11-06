@@ -1,6 +1,8 @@
 # RPG Master — Crônica dos Três Destinos
 
-**Versão atual do código: 4.1.4 — banco ampliado de falas contextuais. Nenhum novo instalador foi gerado.** Execute **INICIAR_RPG.bat** (Windows) ou **INICIAR_RPG.command** (macOS) nesta pasta. Seus controles continuam em **Mesa → Combate**. Para os jogadores, abra **TV de combate** e arraste a janela para a segunda tela. Todos os participantes, alvos e efeitos da arena são refletidos na TV; flags antigas de revelação não escondem inimigos nem bloqueiam ataques.
+**Versão atual do código: 4.2.0 — biblioteca ampliada de NPCs, criaturas, classes e magias. Nenhum novo instalador foi gerado.** Execute **INICIAR_RPG.bat** (Windows) ou **INICIAR_RPG.command** (macOS) nesta pasta. Seus controles continuam em **Mesa → Combate**. Para os jogadores, abra **TV de combate** e arraste a janela para a segunda tela. Todos os participantes, alvos e efeitos da arena são refletidos na TV; flags antigas de revelação não escondem inimigos nem bloqueiam ataques.
+
+A nova biblioteca fica em **Biblioteca → Compêndio ampliado**: 42 fichas novas, 12 classes e 48 subclasses de referência, 36 magias adaptadas e 54 ilustrações locais. Pesquise, filtre por nível/ND, salve favoritos, edite ou duplique fichas e adicione aliados ou inimigos ao combate. As adaptações D20 estão identificadas separadamente das referências de D&D 2024. Consulte o [guia da expansão](docs/BIBLIOTECA_EXPANDIDA.md).
 
 Ao chegar a zero PV, o combatente cai e permanece no chão; cura ou desfazer restauram sua posição. As falas periódicas agora são três vezes mais frequentes: aproximadamente **9–22 segundos**. Um banco local de **18.432 variações contextuais** separa receber dano, atacar e inspirar/desafiar durante a luta. O encontro guarda as falas usadas para evitar repetição, inclusive após recarregar e no backup. Quedas e falas acompanham a TV. Atualize com **F5 nas duas janelas** depois desta atualização.
 

@@ -28,6 +28,15 @@
       for (const key of keys) if (s[section]?.[key] !== undefined && !Array.isArray(s[section][key])) throw Error('Lista inválida: ' + key);
       for (const key of keys) if ((s[section]?.[key]||[]).some(x=>!plain(x))) throw Error('Registro inválido: '+key);
     }
+    if(s.v2?.spellLibrary!==undefined){
+      if(!Array.isArray(s.v2.spellLibrary))throw Error('Biblioteca de magias inválida.');
+      for(const x of s.v2.spellLibrary)if(!plain(x)||!['id','name','effect','school','casting','range','duration','cost','components','note','system'].every(k=>typeof x[k]==='string')||!Number.isInteger(x.circle)||x.circle<0||x.circle>3||!Array.isArray(x.classes)||x.classes.some(k=>typeof k!=='string'))throw Error('Ficha de magia inválida.');
+      if(new Set(s.v2.spellLibrary.map(x=>x.id)).size!==s.v2.spellLibrary.length)throw Error('Magias duplicadas no backup.');
+    }
+    if(s.v2?.ui?.compendium!==undefined){
+      const c=s.v2.ui.compendium;
+      if(!plain(c)||(c.favorites!==undefined&&(!Array.isArray(c.favorites)||c.favorites.some(x=>typeof x!=='string'))))throw Error('Preferências do compêndio inválidas.');
+    }
     for (const a of s.v2?.adventures || []) {
       if (!plain(a) || typeof a.id !== 'string' || typeof a.title !== 'string') throw Error('Aventura inválida.');
       if (a.content && (!Array.isArray(a.content.blocks) || !Array.isArray(a.content.headings))) throw Error('Conteúdo de aventura inválido.');

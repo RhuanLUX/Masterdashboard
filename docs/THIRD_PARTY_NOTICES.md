@@ -36,3 +36,18 @@ Não há serviço de geração nem download de arte durante a execução do apli
 Essa procedência não transfere direitos sobre nomes, personagens ou universos
 preexistentes de terceiros e não representa uma licença oficial de Tolkien.
 A licença MIT do PixiJS se refere à biblioteca, não a essas propriedades.
+
+## Acervo fornecido para a biblioteca 4.2.0
+
+As 54 imagens WebP em `assets/library-expansion/` são cópias proporcionais das
+ilustrações fornecidas pelo usuário no projeto `Reconstrucao_PHB_2024`, pasta
+`Livro_Completo/project/art_generated`. O manifesto nessa pasta identifica cada
+arquivo de origem. Não foram baixadas de serviços externos nem geradas durante
+a execução do aplicativo. Não se declara licença aberta para essas ilustrações;
+o licenciamento de bibliotecas de software não se estende a elas.
+
+As fichas e magias autorais D20 da expansão são identificadas como adaptações.
+O guia de classes e as dez criaturas do apêndice B indicam separadamente sua
+referência ao Livro do Jogador 2024 fornecido. Isso não transfere a titularidade
+de marcas ou propriedades de Dungeons & Dragons e não substitui os documentos
+da campanha.
