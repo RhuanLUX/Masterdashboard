@@ -1,0 +1,2402 @@
+[
+  {
+    "key": "character:elenya",
+    "file": "assets/animation-frames/v4.4/elenya/0.png",
+    "left": 110,
+    "top": 79,
+    "right": 369,
+    "bottom": 447
+  },
+  {
+    "key": "character:elenya",
+    "file": "assets/animation-frames/v4.4/elenya/1.png",
+    "left": 110,
+    "top": 104,
+    "right": 369,
+    "bottom": 447
+  },
+  {
+    "key": "character:elenya",
+    "file": "assets/animation-frames/v4.4/elenya/2.png",
+    "left": 32,
+    "top": 134,
+    "right": 447,
+    "bottom": 447
+  },
+  {
+    "key": "character:elenya",
+    "file": "assets/animation-frames/v4.4/elenya/3.png",
+    "left": 113,
+    "top": 104,
+    "right": 365,
+    "bottom": 447
+  },
+  {
+    "key": "character:calion",
+    "file": "assets/animation-frames/v4.4/calion/0.png",
+    "left": 144,
+    "top": 131,
+    "right": 334,
+    "bottom": 447
+  },
+  {
+    "key": "character:calion",
+    "file": "assets/animation-frames/v4.4/calion/1.png",
+    "left": 114,
+    "top": 73,
+    "right": 365,
+    "bottom": 447
+  },
+  {
+    "key": "character:calion",
+    "file": "assets/animation-frames/v4.4/calion/2.png",
+    "left": 32,
+    "top": 166,
+    "right": 447,
+    "bottom": 447
+  },
+  {
+    "key": "character:calion",
+    "file": "assets/animation-frames/v4.4/calion/3.png",
+    "left": 131,
+    "top": 132,
+    "right": 347,
+    "bottom": 447
+  },
+  {
+    "key": "character:nando",
+    "file": "assets/animation-frames/v4.4/nando/0.png",
+    "left": 128,
+    "top": 33,
+    "right": 350,
+    "bottom": 447
+  },
+  {
+    "key": "character:nando",
+    "file": "assets/animation-frames/v4.4/nando/1.png",
+    "left": 112,
+    "top": 38,
+    "right": 367,
+    "bottom": 447
+  },
+  {
+    "key": "character:nando",
+    "file": "assets/animation-frames/v4.4/nando/2.png",
+    "left": 54,
+    "top": 32,
+    "right": 425,
+    "bottom": 446
+  },
+  {
+    "key": "character:nando",
+    "file": "assets/animation-frames/v4.4/nando/3.png",
+    "left": 128,
+    "top": 32,
+    "right": 350,
+    "bottom": 446
+  },
+  {
+    "key": "character:anao",
+    "file": "assets/animation-frames/v4.4/anao/0.png",
+    "left": 79,
+    "top": 122,
+    "right": 399,
+    "bottom": 447
+  },
+  {
+    "key": "character:anao",
+    "file": "assets/animation-frames/v4.4/anao/1.png",
+    "left": 87,
+    "top": 32,
+    "right": 391,
+    "bottom": 447
+  },
+  {
+    "key": "character:anao",
+    "file": "assets/animation-frames/v4.4/anao/2.png",
+    "left": 77,
+    "top": 130,
+    "right": 402,
+    "bottom": 447
+  },
+  {
+    "key": "character:anao",
+    "file": "assets/animation-frames/v4.4/anao/3.png",
+    "left": 93,
+    "top": 129,
+    "right": 385,
+    "bottom": 447
+  },
+  {
+    "key": "creature:uruk-hai-batedor",
+    "file": "assets/animation-frames/v4.4/uruk-hai-batedor/0.png",
+    "left": 68,
+    "top": 96,
+    "right": 410,
+    "bottom": 447
+  },
+  {
+    "key": "creature:uruk-hai-batedor",
+    "file": "assets/animation-frames/v4.4/uruk-hai-batedor/1.png",
+    "left": 99,
+    "top": 38,
+    "right": 379,
+    "bottom": 447
+  },
+  {
+    "key": "creature:uruk-hai-batedor",
+    "file": "assets/animation-frames/v4.4/uruk-hai-batedor/2.png",
+    "left": 32,
+    "top": 120,
+    "right": 447,
+    "bottom": 447
+  },
+  {
+    "key": "creature:uruk-hai-batedor",
+    "file": "assets/animation-frames/v4.4/uruk-hai-batedor/3.png",
+    "left": 62,
+    "top": 101,
+    "right": 417,
+    "bottom": 447
+  },
+  {
+    "key": "creature:espectro-sombras",
+    "file": "assets/animation-frames/v4.4/espectro-sombras/0.png",
+    "left": 111,
+    "top": 76,
+    "right": 368,
+    "bottom": 447
+  },
+  {
+    "key": "creature:espectro-sombras",
+    "file": "assets/animation-frames/v4.4/espectro-sombras/1.png",
+    "left": 110,
+    "top": 91,
+    "right": 368,
+    "bottom": 447
+  },
+  {
+    "key": "creature:espectro-sombras",
+    "file": "assets/animation-frames/v4.4/espectro-sombras/2.png",
+    "left": 32,
+    "top": 95,
+    "right": 447,
+    "bottom": 447
+  },
+  {
+    "key": "creature:espectro-sombras",
+    "file": "assets/animation-frames/v4.4/espectro-sombras/3.png",
+    "left": 115,
+    "top": 78,
+    "right": 363,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-berserker",
+    "file": "assets/animation-frames/v4.4/exp-berserker/0.png",
+    "left": 107,
+    "top": 49,
+    "right": 371,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-berserker",
+    "file": "assets/animation-frames/v4.4/exp-berserker/1.png",
+    "left": 114,
+    "top": 32,
+    "right": 364,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-berserker",
+    "file": "assets/animation-frames/v4.4/exp-berserker/2.png",
+    "left": 50,
+    "top": 71,
+    "right": 428,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-berserker",
+    "file": "assets/animation-frames/v4.4/exp-berserker/3.png",
+    "left": 106,
+    "top": 54,
+    "right": 373,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-coracao",
+    "file": "assets/animation-frames/v4.4/exp-coracao/0.png",
+    "left": 109,
+    "top": 98,
+    "right": 369,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-coracao",
+    "file": "assets/animation-frames/v4.4/exp-coracao/1.png",
+    "left": 122,
+    "top": 77,
+    "right": 357,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-coracao",
+    "file": "assets/animation-frames/v4.4/exp-coracao/2.png",
+    "left": 32,
+    "top": 143,
+    "right": 447,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-coracao",
+    "file": "assets/animation-frames/v4.4/exp-coracao/3.png",
+    "left": 85,
+    "top": 125,
+    "right": 393,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-arvore",
+    "file": "assets/animation-frames/v4.4/exp-arvore/0.png",
+    "left": 86,
+    "top": 49,
+    "right": 393,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-arvore",
+    "file": "assets/animation-frames/v4.4/exp-arvore/1.png",
+    "left": 103,
+    "top": 39,
+    "right": 375,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-arvore",
+    "file": "assets/animation-frames/v4.4/exp-arvore/2.png",
+    "left": 32,
+    "top": 89,
+    "right": 447,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-arvore",
+    "file": "assets/animation-frames/v4.4/exp-arvore/3.png",
+    "left": 88,
+    "top": 50,
+    "right": 391,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-zelote",
+    "file": "assets/animation-frames/v4.4/exp-zelote/0.png",
+    "left": 96,
+    "top": 99,
+    "right": 383,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-zelote",
+    "file": "assets/animation-frames/v4.4/exp-zelote/1.png",
+    "left": 113,
+    "top": 63,
+    "right": 367,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-zelote",
+    "file": "assets/animation-frames/v4.4/exp-zelote/2.png",
+    "left": 32,
+    "top": 154,
+    "right": 447,
+    "bottom": 446
+  },
+  {
+    "key": "creature:exp-zelote",
+    "file": "assets/animation-frames/v4.4/exp-zelote/3.png",
+    "left": 90,
+    "top": 122,
+    "right": 389,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-mestre-armas",
+    "file": "assets/animation-frames/v4.4/exp-mestre-armas/0.png",
+    "left": 107,
+    "top": 58,
+    "right": 372,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-mestre-armas",
+    "file": "assets/animation-frames/v4.4/exp-mestre-armas/1.png",
+    "left": 93,
+    "top": 51,
+    "right": 385,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-mestre-armas",
+    "file": "assets/animation-frames/v4.4/exp-mestre-armas/2.png",
+    "left": 97,
+    "top": 32,
+    "right": 381,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-mestre-armas",
+    "file": "assets/animation-frames/v4.4/exp-mestre-armas/3.png",
+    "left": 94,
+    "top": 58,
+    "right": 384,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-campea",
+    "file": "assets/animation-frames/v4.4/exp-campea/0.png",
+    "left": 106,
+    "top": 70,
+    "right": 373,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-campea",
+    "file": "assets/animation-frames/v4.4/exp-campea/1.png",
+    "left": 104,
+    "top": 47,
+    "right": 374,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-campea",
+    "file": "assets/animation-frames/v4.4/exp-campea/2.png",
+    "left": 32,
+    "top": 99,
+    "right": 447,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-campea",
+    "file": "assets/animation-frames/v4.4/exp-campea/3.png",
+    "left": 100,
+    "top": 94,
+    "right": 379,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-arcano",
+    "file": "assets/animation-frames/v4.4/exp-arcano/0.png",
+    "left": 121,
+    "top": 72,
+    "right": 357,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-arcano",
+    "file": "assets/animation-frames/v4.4/exp-arcano/1.png",
+    "left": 90,
+    "top": 99,
+    "right": 388,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-arcano",
+    "file": "assets/animation-frames/v4.4/exp-arcano/2.png",
+    "left": 32,
+    "top": 106,
+    "right": 447,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-arcano",
+    "file": "assets/animation-frames/v4.4/exp-arcano/3.png",
+    "left": 120,
+    "top": 76,
+    "right": 358,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-barda",
+    "file": "assets/animation-frames/v4.4/exp-barda/0.png",
+    "left": 93,
+    "top": 58,
+    "right": 386,
+    "bottom": 446
+  },
+  {
+    "key": "creature:exp-barda",
+    "file": "assets/animation-frames/v4.4/exp-barda/1.png",
+    "left": 97,
+    "top": 66,
+    "right": 381,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-barda",
+    "file": "assets/animation-frames/v4.4/exp-barda/2.png",
+    "left": 32,
+    "top": 72,
+    "right": 447,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-barda",
+    "file": "assets/animation-frames/v4.4/exp-barda/3.png",
+    "left": 96,
+    "top": 60,
+    "right": 382,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-bardo-guerra",
+    "file": "assets/animation-frames/v4.4/exp-bardo-guerra/0.png",
+    "left": 112,
+    "top": 75,
+    "right": 367,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-bardo-guerra",
+    "file": "assets/animation-frames/v4.4/exp-bardo-guerra/1.png",
+    "left": 102,
+    "top": 75,
+    "right": 376,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-bardo-guerra",
+    "file": "assets/animation-frames/v4.4/exp-bardo-guerra/2.png",
+    "left": 32,
+    "top": 75,
+    "right": 447,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-bardo-guerra",
+    "file": "assets/animation-frames/v4.4/exp-bardo-guerra/3.png",
+    "left": 106,
+    "top": 75,
+    "right": 372,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-curadora",
+    "file": "assets/animation-frames/v4.4/exp-curadora/0.png",
+    "left": 127,
+    "top": 32,
+    "right": 351,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-curadora",
+    "file": "assets/animation-frames/v4.4/exp-curadora/1.png",
+    "left": 86,
+    "top": 49,
+    "right": 392,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-curadora",
+    "file": "assets/animation-frames/v4.4/exp-curadora/2.png",
+    "left": 58,
+    "top": 33,
+    "right": 420,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-curadora",
+    "file": "assets/animation-frames/v4.4/exp-curadora/3.png",
+    "left": 123,
+    "top": 33,
+    "right": 355,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-luz",
+    "file": "assets/animation-frames/v4.4/exp-luz/0.png",
+    "left": 151,
+    "top": 32,
+    "right": 327,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-luz",
+    "file": "assets/animation-frames/v4.4/exp-luz/1.png",
+    "left": 119,
+    "top": 32,
+    "right": 360,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-luz",
+    "file": "assets/animation-frames/v4.4/exp-luz/2.png",
+    "left": 49,
+    "top": 34,
+    "right": 429,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-luz",
+    "file": "assets/animation-frames/v4.4/exp-luz/3.png",
+    "left": 146,
+    "top": 32,
+    "right": 332,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-druida-terra",
+    "file": "assets/animation-frames/v4.4/exp-druida-terra/0.png",
+    "left": 119,
+    "top": 65,
+    "right": 360,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-druida-terra",
+    "file": "assets/animation-frames/v4.4/exp-druida-terra/1.png",
+    "left": 97,
+    "top": 47,
+    "right": 381,
+    "bottom": 446
+  },
+  {
+    "key": "creature:exp-druida-terra",
+    "file": "assets/animation-frames/v4.4/exp-druida-terra/2.png",
+    "left": 32,
+    "top": 98,
+    "right": 447,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-druida-terra",
+    "file": "assets/animation-frames/v4.4/exp-druida-terra/3.png",
+    "left": 111,
+    "top": 63,
+    "right": 368,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-druida-lua",
+    "file": "assets/animation-frames/v4.4/exp-druida-lua/0.png",
+    "left": 134,
+    "top": 67,
+    "right": 345,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-druida-lua",
+    "file": "assets/animation-frames/v4.4/exp-druida-lua/1.png",
+    "left": 98,
+    "top": 81,
+    "right": 381,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-druida-lua",
+    "file": "assets/animation-frames/v4.4/exp-druida-lua/2.png",
+    "left": 32,
+    "top": 125,
+    "right": 447,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-druida-lua",
+    "file": "assets/animation-frames/v4.4/exp-druida-lua/3.png",
+    "left": 135,
+    "top": 68,
+    "right": 344,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-paladina",
+    "file": "assets/animation-frames/v4.4/exp-paladina/0.png",
+    "left": 114,
+    "top": 83,
+    "right": 365,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-paladina",
+    "file": "assets/animation-frames/v4.4/exp-paladina/1.png",
+    "left": 96,
+    "top": 51,
+    "right": 382,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-paladina",
+    "file": "assets/animation-frames/v4.4/exp-paladina/2.png",
+    "left": 32,
+    "top": 118,
+    "right": 447,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-paladina",
+    "file": "assets/animation-frames/v4.4/exp-paladina/3.png",
+    "left": 118,
+    "top": 85,
+    "right": 360,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-paladino-voto",
+    "file": "assets/animation-frames/v4.4/exp-paladino-voto/0.png",
+    "left": 100,
+    "top": 54,
+    "right": 379,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-paladino-voto",
+    "file": "assets/animation-frames/v4.4/exp-paladino-voto/1.png",
+    "left": 85,
+    "top": 58,
+    "right": 393,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-paladino-voto",
+    "file": "assets/animation-frames/v4.4/exp-paladino-voto/2.png",
+    "left": 32,
+    "top": 73,
+    "right": 447,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-paladino-voto",
+    "file": "assets/animation-frames/v4.4/exp-paladino-voto/3.png",
+    "left": 98,
+    "top": 73,
+    "right": 380,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-rastreadora",
+    "file": "assets/animation-frames/v4.4/exp-rastreadora/0.png",
+    "left": 108,
+    "top": 68,
+    "right": 371,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-rastreadora",
+    "file": "assets/animation-frames/v4.4/exp-rastreadora/1.png",
+    "left": 92,
+    "top": 34,
+    "right": 386,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-rastreadora",
+    "file": "assets/animation-frames/v4.4/exp-rastreadora/2.png",
+    "left": 72,
+    "top": 32,
+    "right": 406,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-rastreadora",
+    "file": "assets/animation-frames/v4.4/exp-rastreadora/3.png",
+    "left": 109,
+    "top": 70,
+    "right": 369,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-sombras",
+    "file": "assets/animation-frames/v4.4/exp-sombras/0.png",
+    "left": 125,
+    "top": 40,
+    "right": 354,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-sombras",
+    "file": "assets/animation-frames/v4.4/exp-sombras/1.png",
+    "left": 112,
+    "top": 44,
+    "right": 366,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-sombras",
+    "file": "assets/animation-frames/v4.4/exp-sombras/2.png",
+    "left": 102,
+    "top": 32,
+    "right": 376,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-sombras",
+    "file": "assets/animation-frames/v4.4/exp-sombras/3.png",
+    "left": 127,
+    "top": 40,
+    "right": 351,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-ladra",
+    "file": "assets/animation-frames/v4.4/exp-ladra/0.png",
+    "left": 141,
+    "top": 54,
+    "right": 337,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-ladra",
+    "file": "assets/animation-frames/v4.4/exp-ladra/1.png",
+    "left": 108,
+    "top": 152,
+    "right": 370,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-ladra",
+    "file": "assets/animation-frames/v4.4/exp-ladra/2.png",
+    "left": 32,
+    "top": 137,
+    "right": 447,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-ladra",
+    "file": "assets/animation-frames/v4.4/exp-ladra/3.png",
+    "left": 142,
+    "top": 58,
+    "right": 336,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-assassino",
+    "file": "assets/animation-frames/v4.4/exp-assassino/0.png",
+    "left": 114,
+    "top": 62,
+    "right": 364,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-assassino",
+    "file": "assets/animation-frames/v4.4/exp-assassino/1.png",
+    "left": 93,
+    "top": 146,
+    "right": 385,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-assassino",
+    "file": "assets/animation-frames/v4.4/exp-assassino/2.png",
+    "left": 32,
+    "top": 130,
+    "right": 447,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-assassino",
+    "file": "assets/animation-frames/v4.4/exp-assassino/3.png",
+    "left": 110,
+    "top": 81,
+    "right": 368,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-evocadora",
+    "file": "assets/animation-frames/v4.4/exp-evocadora/0.png",
+    "left": 115,
+    "top": 32,
+    "right": 364,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-evocadora",
+    "file": "assets/animation-frames/v4.4/exp-evocadora/1.png",
+    "left": 111,
+    "top": 51,
+    "right": 368,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-evocadora",
+    "file": "assets/animation-frames/v4.4/exp-evocadora/2.png",
+    "left": 61,
+    "top": 75,
+    "right": 418,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-evocadora",
+    "file": "assets/animation-frames/v4.4/exp-evocadora/3.png",
+    "left": 115,
+    "top": 32,
+    "right": 363,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-abjurador",
+    "file": "assets/animation-frames/v4.4/exp-abjurador/0.png",
+    "left": 110,
+    "top": 74,
+    "right": 369,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-abjurador",
+    "file": "assets/animation-frames/v4.4/exp-abjurador/1.png",
+    "left": 97,
+    "top": 49,
+    "right": 382,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-abjurador",
+    "file": "assets/animation-frames/v4.4/exp-abjurador/2.png",
+    "left": 57,
+    "top": 32,
+    "right": 422,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-abjurador",
+    "file": "assets/animation-frames/v4.4/exp-abjurador/3.png",
+    "left": 114,
+    "top": 74,
+    "right": 365,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-feiticeira",
+    "file": "assets/animation-frames/v4.4/exp-feiticeira/0.png",
+    "left": 100,
+    "top": 35,
+    "right": 378,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-feiticeira",
+    "file": "assets/animation-frames/v4.4/exp-feiticeira/1.png",
+    "left": 89,
+    "top": 69,
+    "right": 390,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-feiticeira",
+    "file": "assets/animation-frames/v4.4/exp-feiticeira/2.png",
+    "left": 52,
+    "top": 66,
+    "right": 426,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-feiticeira",
+    "file": "assets/animation-frames/v4.4/exp-feiticeira/3.png",
+    "left": 103,
+    "top": 32,
+    "right": 376,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-bruxa",
+    "file": "assets/animation-frames/v4.4/exp-bruxa/0.png",
+    "left": 134,
+    "top": 37,
+    "right": 344,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-bruxa",
+    "file": "assets/animation-frames/v4.4/exp-bruxa/1.png",
+    "left": 101,
+    "top": 32,
+    "right": 377,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-bruxa",
+    "file": "assets/animation-frames/v4.4/exp-bruxa/2.png",
+    "left": 77,
+    "top": 33,
+    "right": 402,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-bruxa",
+    "file": "assets/animation-frames/v4.4/exp-bruxa/3.png",
+    "left": 129,
+    "top": 37,
+    "right": 350,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-mercador",
+    "file": "assets/animation-frames/v4.4/exp-mercador/0.png",
+    "left": 135,
+    "top": 96,
+    "right": 343,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-mercador",
+    "file": "assets/animation-frames/v4.4/exp-mercador/1.png",
+    "left": 84,
+    "top": 101,
+    "right": 394,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-mercador",
+    "file": "assets/animation-frames/v4.4/exp-mercador/2.png",
+    "left": 32,
+    "top": 135,
+    "right": 447,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-mercador",
+    "file": "assets/animation-frames/v4.4/exp-mercador/3.png",
+    "left": 129,
+    "top": 98,
+    "right": 350,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-morcego",
+    "file": "assets/animation-frames/v4.4/exp-morcego/0.png",
+    "left": 42,
+    "top": 142,
+    "right": 437,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-morcego",
+    "file": "assets/animation-frames/v4.4/exp-morcego/1.png",
+    "left": 84,
+    "top": 239,
+    "right": 395,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-morcego",
+    "file": "assets/animation-frames/v4.4/exp-morcego/2.png",
+    "left": 50,
+    "top": 245,
+    "right": 428,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-morcego",
+    "file": "assets/animation-frames/v4.4/exp-morcego/3.png",
+    "left": 32,
+    "top": 233,
+    "right": 447,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-gato",
+    "file": "assets/animation-frames/v4.4/exp-gato/0.png",
+    "left": 100,
+    "top": 194,
+    "right": 378,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-gato",
+    "file": "assets/animation-frames/v4.4/exp-gato/1.png",
+    "left": 104,
+    "top": 211,
+    "right": 374,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-gato",
+    "file": "assets/animation-frames/v4.4/exp-gato/2.png",
+    "left": 32,
+    "top": 212,
+    "right": 447,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-gato",
+    "file": "assets/animation-frames/v4.4/exp-gato/3.png",
+    "left": 107,
+    "top": 212,
+    "right": 371,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-sapo",
+    "file": "assets/animation-frames/v4.4/exp-sapo/0.png",
+    "left": 66,
+    "top": 209,
+    "right": 413,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-sapo",
+    "file": "assets/animation-frames/v4.4/exp-sapo/1.png",
+    "left": 48,
+    "top": 246,
+    "right": 430,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-sapo",
+    "file": "assets/animation-frames/v4.4/exp-sapo/2.png",
+    "left": 32,
+    "top": 255,
+    "right": 447,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-sapo",
+    "file": "assets/animation-frames/v4.4/exp-sapo/3.png",
+    "left": 59,
+    "top": 222,
+    "right": 419,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-diabrete",
+    "file": "assets/animation-frames/v4.4/exp-diabrete/0.png",
+    "left": 45,
+    "top": 64,
+    "right": 433,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-diabrete",
+    "file": "assets/animation-frames/v4.4/exp-diabrete/1.png",
+    "left": 66,
+    "top": 100,
+    "right": 412,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-diabrete",
+    "file": "assets/animation-frames/v4.4/exp-diabrete/2.png",
+    "left": 32,
+    "top": 131,
+    "right": 447,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-diabrete",
+    "file": "assets/animation-frames/v4.4/exp-diabrete/3.png",
+    "left": 50,
+    "top": 67,
+    "right": 428,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-mastim",
+    "file": "assets/animation-frames/v4.4/exp-mastim/0.png",
+    "left": 66,
+    "top": 173,
+    "right": 412,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-mastim",
+    "file": "assets/animation-frames/v4.4/exp-mastim/1.png",
+    "left": 70,
+    "top": 223,
+    "right": 409,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-mastim",
+    "file": "assets/animation-frames/v4.4/exp-mastim/2.png",
+    "left": 32,
+    "top": 238,
+    "right": 447,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-mastim",
+    "file": "assets/animation-frames/v4.4/exp-mastim/3.png",
+    "left": 64,
+    "top": 173,
+    "right": 414,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-pseudodragao",
+    "file": "assets/animation-frames/v4.4/exp-pseudodragao/0.png",
+    "left": 36,
+    "top": 161,
+    "right": 443,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-pseudodragao",
+    "file": "assets/animation-frames/v4.4/exp-pseudodragao/1.png",
+    "left": 42,
+    "top": 126,
+    "right": 436,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-pseudodragao",
+    "file": "assets/animation-frames/v4.4/exp-pseudodragao/2.png",
+    "left": 32,
+    "top": 100,
+    "right": 447,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-pseudodragao",
+    "file": "assets/animation-frames/v4.4/exp-pseudodragao/3.png",
+    "left": 39,
+    "top": 176,
+    "right": 440,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-quasit",
+    "file": "assets/animation-frames/v4.4/exp-quasit/0.png",
+    "left": 66,
+    "top": 56,
+    "right": 413,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-quasit",
+    "file": "assets/animation-frames/v4.4/exp-quasit/1.png",
+    "left": 98,
+    "top": 78,
+    "right": 381,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-quasit",
+    "file": "assets/animation-frames/v4.4/exp-quasit/2.png",
+    "left": 32,
+    "top": 54,
+    "right": 447,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-quasit",
+    "file": "assets/animation-frames/v4.4/exp-quasit/3.png",
+    "left": 66,
+    "top": 70,
+    "right": 412,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-esfinge",
+    "file": "assets/animation-frames/v4.4/exp-esfinge/0.png",
+    "left": 63,
+    "top": 34,
+    "right": 415,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-esfinge",
+    "file": "assets/animation-frames/v4.4/exp-esfinge/1.png",
+    "left": 78,
+    "top": 35,
+    "right": 400,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-esfinge",
+    "file": "assets/animation-frames/v4.4/exp-esfinge/2.png",
+    "left": 36,
+    "top": 32,
+    "right": 442,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-esfinge",
+    "file": "assets/animation-frames/v4.4/exp-esfinge/3.png",
+    "left": 56,
+    "top": 35,
+    "right": 423,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-fada",
+    "file": "assets/animation-frames/v4.4/exp-fada/0.png",
+    "left": 77,
+    "top": 36,
+    "right": 401,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-fada",
+    "file": "assets/animation-frames/v4.4/exp-fada/1.png",
+    "left": 90,
+    "top": 35,
+    "right": 389,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-fada",
+    "file": "assets/animation-frames/v4.4/exp-fada/2.png",
+    "left": 32,
+    "top": 83,
+    "right": 447,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-fada",
+    "file": "assets/animation-frames/v4.4/exp-fada/3.png",
+    "left": 81,
+    "top": 36,
+    "right": 397,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-lobo",
+    "file": "assets/animation-frames/v4.4/exp-lobo/0.png",
+    "left": 62,
+    "top": 209,
+    "right": 416,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-lobo",
+    "file": "assets/animation-frames/v4.4/exp-lobo/1.png",
+    "left": 63,
+    "top": 254,
+    "right": 416,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-lobo",
+    "file": "assets/animation-frames/v4.4/exp-lobo/2.png",
+    "left": 32,
+    "top": 251,
+    "right": 447,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-lobo",
+    "file": "assets/animation-frames/v4.4/exp-lobo/3.png",
+    "left": 60,
+    "top": 245,
+    "right": 419,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-construto",
+    "file": "assets/animation-frames/v4.4/exp-construto/0.png",
+    "left": 72,
+    "top": 75,
+    "right": 406,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-construto",
+    "file": "assets/animation-frames/v4.4/exp-construto/1.png",
+    "left": 68,
+    "top": 32,
+    "right": 411,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-construto",
+    "file": "assets/animation-frames/v4.4/exp-construto/2.png",
+    "left": 49,
+    "top": 131,
+    "right": 429,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-construto",
+    "file": "assets/animation-frames/v4.4/exp-construto/3.png",
+    "left": 77,
+    "top": 75,
+    "right": 402,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-serpe",
+    "file": "assets/animation-frames/v4.4/exp-serpe/0.png",
+    "left": 45,
+    "top": 189,
+    "right": 433,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-serpe",
+    "file": "assets/animation-frames/v4.4/exp-serpe/1.png",
+    "left": 51,
+    "top": 117,
+    "right": 428,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-serpe",
+    "file": "assets/animation-frames/v4.4/exp-serpe/2.png",
+    "left": 32,
+    "top": 127,
+    "right": 447,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-serpe",
+    "file": "assets/animation-frames/v4.4/exp-serpe/3.png",
+    "left": 47,
+    "top": 189,
+    "right": 432,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-infernal",
+    "file": "assets/animation-frames/v4.4/exp-infernal/0.png",
+    "left": 110,
+    "top": 146,
+    "right": 369,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-infernal",
+    "file": "assets/animation-frames/v4.4/exp-infernal/1.png",
+    "left": 92,
+    "top": 89,
+    "right": 386,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-infernal",
+    "file": "assets/animation-frames/v4.4/exp-infernal/2.png",
+    "left": 32,
+    "top": 157,
+    "right": 447,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-infernal",
+    "file": "assets/animation-frames/v4.4/exp-infernal/3.png",
+    "left": 107,
+    "top": 149,
+    "right": 372,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-espectro",
+    "file": "assets/animation-frames/v4.4/exp-espectro/0.png",
+    "left": 83,
+    "top": 32,
+    "right": 395,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-espectro",
+    "file": "assets/animation-frames/v4.4/exp-espectro/1.png",
+    "left": 123,
+    "top": 110,
+    "right": 355,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-espectro",
+    "file": "assets/animation-frames/v4.4/exp-espectro/2.png",
+    "left": 38,
+    "top": 73,
+    "right": 441,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-espectro",
+    "file": "assets/animation-frames/v4.4/exp-espectro/3.png",
+    "left": 92,
+    "top": 32,
+    "right": 387,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-raizes",
+    "file": "assets/animation-frames/v4.4/exp-raizes/0.png",
+    "left": 65,
+    "top": 39,
+    "right": 414,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-raizes",
+    "file": "assets/animation-frames/v4.4/exp-raizes/1.png",
+    "left": 60,
+    "top": 32,
+    "right": 419,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-raizes",
+    "file": "assets/animation-frames/v4.4/exp-raizes/2.png",
+    "left": 41,
+    "top": 49,
+    "right": 438,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-raizes",
+    "file": "assets/animation-frames/v4.4/exp-raizes/3.png",
+    "left": 58,
+    "top": 41,
+    "right": 421,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-larva",
+    "file": "assets/animation-frames/v4.4/exp-larva/0.png",
+    "left": 115,
+    "top": 166,
+    "right": 363,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-larva",
+    "file": "assets/animation-frames/v4.4/exp-larva/1.png",
+    "left": 117,
+    "top": 197,
+    "right": 362,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-larva",
+    "file": "assets/animation-frames/v4.4/exp-larva/2.png",
+    "left": 32,
+    "top": 202,
+    "right": 447,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-larva",
+    "file": "assets/animation-frames/v4.4/exp-larva/3.png",
+    "left": 112,
+    "top": 168,
+    "right": 367,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-elemental",
+    "file": "assets/animation-frames/v4.4/exp-elemental/0.png",
+    "left": 44,
+    "top": 173,
+    "right": 434,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-elemental",
+    "file": "assets/animation-frames/v4.4/exp-elemental/1.png",
+    "left": 55,
+    "top": 107,
+    "right": 423,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-elemental",
+    "file": "assets/animation-frames/v4.4/exp-elemental/2.png",
+    "left": 32,
+    "top": 107,
+    "right": 447,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-elemental",
+    "file": "assets/animation-frames/v4.4/exp-elemental/3.png",
+    "left": 46,
+    "top": 178,
+    "right": 433,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-montaria",
+    "file": "assets/animation-frames/v4.4/exp-montaria/0.png",
+    "left": 58,
+    "top": 110,
+    "right": 420,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-montaria",
+    "file": "assets/animation-frames/v4.4/exp-montaria/1.png",
+    "left": 59,
+    "top": 61,
+    "right": 420,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-montaria",
+    "file": "assets/animation-frames/v4.4/exp-montaria/2.png",
+    "left": 44,
+    "top": 32,
+    "right": 434,
+    "bottom": 447
+  },
+  {
+    "key": "creature:exp-montaria",
+    "file": "assets/animation-frames/v4.4/exp-montaria/3.png",
+    "left": 56,
+    "top": 122,
+    "right": 422,
+    "bottom": 447
+  },
+  {
+    "key": "visual:barbarvore",
+    "file": "assets/animation-frames/v4.4/barbarvore/0.png",
+    "left": 67,
+    "top": 32,
+    "right": 411,
+    "bottom": 447
+  },
+  {
+    "key": "visual:barbarvore",
+    "file": "assets/animation-frames/v4.4/barbarvore/1.png",
+    "left": 72,
+    "top": 37,
+    "right": 406,
+    "bottom": 447
+  },
+  {
+    "key": "visual:barbarvore",
+    "file": "assets/animation-frames/v4.4/barbarvore/2.png",
+    "left": 63,
+    "top": 43,
+    "right": 416,
+    "bottom": 446
+  },
+  {
+    "key": "visual:barbarvore",
+    "file": "assets/animation-frames/v4.4/barbarvore/3.png",
+    "left": 69,
+    "top": 33,
+    "right": 410,
+    "bottom": 447
+  },
+  {
+    "key": "creature:orc-lanceiro-inverno",
+    "file": "assets/animation-frames/v4.4/orc-lanceiro-inverno/0.png",
+    "left": 121,
+    "top": 102,
+    "right": 357,
+    "bottom": 446
+  },
+  {
+    "key": "creature:orc-lanceiro-inverno",
+    "file": "assets/animation-frames/v4.4/orc-lanceiro-inverno/1.png",
+    "left": 86,
+    "top": 161,
+    "right": 393,
+    "bottom": 447
+  },
+  {
+    "key": "creature:orc-lanceiro-inverno",
+    "file": "assets/animation-frames/v4.4/orc-lanceiro-inverno/2.png",
+    "left": 32,
+    "top": 174,
+    "right": 447,
+    "bottom": 447
+  },
+  {
+    "key": "creature:orc-lanceiro-inverno",
+    "file": "assets/animation-frames/v4.4/orc-lanceiro-inverno/3.png",
+    "left": 118,
+    "top": 130,
+    "right": 360,
+    "bottom": 447
+  },
+  {
+    "key": "creature:uruk-hai-capitao",
+    "file": "assets/animation-frames/v4.4/uruk-hai-capitao/0.png",
+    "left": 106,
+    "top": 61,
+    "right": 373,
+    "bottom": 447
+  },
+  {
+    "key": "creature:uruk-hai-capitao",
+    "file": "assets/animation-frames/v4.4/uruk-hai-capitao/1.png",
+    "left": 78,
+    "top": 33,
+    "right": 400,
+    "bottom": 447
+  },
+  {
+    "key": "creature:uruk-hai-capitao",
+    "file": "assets/animation-frames/v4.4/uruk-hai-capitao/2.png",
+    "left": 32,
+    "top": 91,
+    "right": 447,
+    "bottom": 447
+  },
+  {
+    "key": "creature:uruk-hai-capitao",
+    "file": "assets/animation-frames/v4.4/uruk-hai-capitao/3.png",
+    "left": 122,
+    "top": 65,
+    "right": 357,
+    "bottom": 447
+  },
+  {
+    "key": "creature:vigia-hrim",
+    "file": "assets/animation-frames/v4.4/vigia-hrim/0.png",
+    "left": 75,
+    "top": 81,
+    "right": 404,
+    "bottom": 447
+  },
+  {
+    "key": "creature:vigia-hrim",
+    "file": "assets/animation-frames/v4.4/vigia-hrim/1.png",
+    "left": 76,
+    "top": 80,
+    "right": 403,
+    "bottom": 447
+  },
+  {
+    "key": "creature:vigia-hrim",
+    "file": "assets/animation-frames/v4.4/vigia-hrim/2.png",
+    "left": 32,
+    "top": 116,
+    "right": 447,
+    "bottom": 447
+  },
+  {
+    "key": "creature:vigia-hrim",
+    "file": "assets/animation-frames/v4.4/vigia-hrim/3.png",
+    "left": 67,
+    "top": 87,
+    "right": 412,
+    "bottom": 447
+  },
+  {
+    "key": "creature:criatura-aglor",
+    "file": "assets/animation-frames/v4.4/criatura-aglor/0.png",
+    "left": 72,
+    "top": 80,
+    "right": 406,
+    "bottom": 447
+  },
+  {
+    "key": "creature:criatura-aglor",
+    "file": "assets/animation-frames/v4.4/criatura-aglor/1.png",
+    "left": 93,
+    "top": 99,
+    "right": 386,
+    "bottom": 447
+  },
+  {
+    "key": "creature:criatura-aglor",
+    "file": "assets/animation-frames/v4.4/criatura-aglor/2.png",
+    "left": 32,
+    "top": 103,
+    "right": 447,
+    "bottom": 447
+  },
+  {
+    "key": "creature:criatura-aglor",
+    "file": "assets/animation-frames/v4.4/criatura-aglor/3.png",
+    "left": 81,
+    "top": 83,
+    "right": 398,
+    "bottom": 447
+  },
+  {
+    "key": "creature:draig-cinzas",
+    "file": "assets/animation-frames/v4.4/draig-cinzas/0.png",
+    "left": 48,
+    "top": 155,
+    "right": 430,
+    "bottom": 447
+  },
+  {
+    "key": "creature:draig-cinzas",
+    "file": "assets/animation-frames/v4.4/draig-cinzas/1.png",
+    "left": 44,
+    "top": 94,
+    "right": 435,
+    "bottom": 447
+  },
+  {
+    "key": "creature:draig-cinzas",
+    "file": "assets/animation-frames/v4.4/draig-cinzas/2.png",
+    "left": 32,
+    "top": 69,
+    "right": 447,
+    "bottom": 447
+  },
+  {
+    "key": "creature:draig-cinzas",
+    "file": "assets/animation-frames/v4.4/draig-cinzas/3.png",
+    "left": 54,
+    "top": 157,
+    "right": 424,
+    "bottom": 447
+  },
+  {
+    "key": "creature:serpe-gelo-hrim",
+    "file": "assets/animation-frames/v4.4/serpe-gelo-hrim/0.png",
+    "left": 44,
+    "top": 183,
+    "right": 435,
+    "bottom": 447
+  },
+  {
+    "key": "creature:serpe-gelo-hrim",
+    "file": "assets/animation-frames/v4.4/serpe-gelo-hrim/1.png",
+    "left": 43,
+    "top": 137,
+    "right": 436,
+    "bottom": 447
+  },
+  {
+    "key": "creature:serpe-gelo-hrim",
+    "file": "assets/animation-frames/v4.4/serpe-gelo-hrim/2.png",
+    "left": 32,
+    "top": 145,
+    "right": 447,
+    "bottom": 447
+  },
+  {
+    "key": "creature:serpe-gelo-hrim",
+    "file": "assets/animation-frames/v4.4/serpe-gelo-hrim/3.png",
+    "left": 45,
+    "top": 182,
+    "right": 434,
+    "bottom": 447
+  },
+  {
+    "key": "visual:aglor",
+    "file": "assets/animation-frames/v4.4/aglor/0.png",
+    "left": 111,
+    "top": 77,
+    "right": 367,
+    "bottom": 447
+  },
+  {
+    "key": "visual:aglor",
+    "file": "assets/animation-frames/v4.4/aglor/1.png",
+    "left": 96,
+    "top": 90,
+    "right": 382,
+    "bottom": 447
+  },
+  {
+    "key": "visual:aglor",
+    "file": "assets/animation-frames/v4.4/aglor/2.png",
+    "left": 32,
+    "top": 104,
+    "right": 447,
+    "bottom": 447
+  },
+  {
+    "key": "visual:aglor",
+    "file": "assets/animation-frames/v4.4/aglor/3.png",
+    "left": 105,
+    "top": 77,
+    "right": 373,
+    "bottom": 447
+  },
+  {
+    "key": "visual:orc-inverno",
+    "file": "assets/animation-frames/v4.4/orc-inverno/0.png",
+    "left": 71,
+    "top": 111,
+    "right": 408,
+    "bottom": 447
+  },
+  {
+    "key": "visual:orc-inverno",
+    "file": "assets/animation-frames/v4.4/orc-inverno/1.png",
+    "left": 75,
+    "top": 61,
+    "right": 403,
+    "bottom": 447
+  },
+  {
+    "key": "visual:orc-inverno",
+    "file": "assets/animation-frames/v4.4/orc-inverno/2.png",
+    "left": 32,
+    "top": 123,
+    "right": 447,
+    "bottom": 447
+  },
+  {
+    "key": "visual:orc-inverno",
+    "file": "assets/animation-frames/v4.4/orc-inverno/3.png",
+    "left": 94,
+    "top": 114,
+    "right": 384,
+    "bottom": 447
+  },
+  {
+    "key": "visual:alatar",
+    "file": "assets/animation-frames/v4.4/alatar/0.png",
+    "left": 88,
+    "top": 69,
+    "right": 391,
+    "bottom": 447
+  },
+  {
+    "key": "visual:alatar",
+    "file": "assets/animation-frames/v4.4/alatar/1.png",
+    "left": 82,
+    "top": 49,
+    "right": 396,
+    "bottom": 447
+  },
+  {
+    "key": "visual:alatar",
+    "file": "assets/animation-frames/v4.4/alatar/2.png",
+    "left": 32,
+    "top": 128,
+    "right": 447,
+    "bottom": 447
+  },
+  {
+    "key": "visual:alatar",
+    "file": "assets/animation-frames/v4.4/alatar/3.png",
+    "left": 95,
+    "top": 101,
+    "right": 383,
+    "bottom": 447
+  },
+  {
+    "key": "visual:eira",
+    "file": "assets/animation-frames/v4.4/eira/0.png",
+    "left": 103,
+    "top": 79,
+    "right": 376,
+    "bottom": 447
+  },
+  {
+    "key": "visual:eira",
+    "file": "assets/animation-frames/v4.4/eira/1.png",
+    "left": 59,
+    "top": 112,
+    "right": 420,
+    "bottom": 447
+  },
+  {
+    "key": "visual:eira",
+    "file": "assets/animation-frames/v4.4/eira/2.png",
+    "left": 32,
+    "top": 117,
+    "right": 447,
+    "bottom": 447
+  },
+  {
+    "key": "visual:eira",
+    "file": "assets/animation-frames/v4.4/eira/3.png",
+    "left": 73,
+    "top": 84,
+    "right": 406,
+    "bottom": 447
+  },
+  {
+    "key": "visual:maelith",
+    "file": "assets/animation-frames/v4.4/maelith/0.png",
+    "left": 80,
+    "top": 32,
+    "right": 399,
+    "bottom": 447
+  },
+  {
+    "key": "visual:maelith",
+    "file": "assets/animation-frames/v4.4/maelith/1.png",
+    "left": 76,
+    "top": 50,
+    "right": 402,
+    "bottom": 447
+  },
+  {
+    "key": "visual:maelith",
+    "file": "assets/animation-frames/v4.4/maelith/2.png",
+    "left": 44,
+    "top": 59,
+    "right": 435,
+    "bottom": 447
+  },
+  {
+    "key": "visual:maelith",
+    "file": "assets/animation-frames/v4.4/maelith/3.png",
+    "left": 81,
+    "top": 35,
+    "right": 397,
+    "bottom": 447
+  },
+  {
+    "key": "visual:rei-edran",
+    "file": "assets/animation-frames/v4.4/rei-edran/0.png",
+    "left": 87,
+    "top": 122,
+    "right": 392,
+    "bottom": 447
+  },
+  {
+    "key": "visual:rei-edran",
+    "file": "assets/animation-frames/v4.4/rei-edran/1.png",
+    "left": 86,
+    "top": 57,
+    "right": 393,
+    "bottom": 447
+  },
+  {
+    "key": "visual:rei-edran",
+    "file": "assets/animation-frames/v4.4/rei-edran/2.png",
+    "left": 32,
+    "top": 140,
+    "right": 447,
+    "bottom": 447
+  },
+  {
+    "key": "visual:rei-edran",
+    "file": "assets/animation-frames/v4.4/rei-edran/3.png",
+    "left": 91,
+    "top": 122,
+    "right": 388,
+    "bottom": 447
+  },
+  {
+    "key": "visual:talenir",
+    "file": "assets/animation-frames/v4.4/talenir/0.png",
+    "left": 67,
+    "top": 42,
+    "right": 412,
+    "bottom": 447
+  },
+  {
+    "key": "visual:talenir",
+    "file": "assets/animation-frames/v4.4/talenir/1.png",
+    "left": 56,
+    "top": 37,
+    "right": 422,
+    "bottom": 447
+  },
+  {
+    "key": "visual:talenir",
+    "file": "assets/animation-frames/v4.4/talenir/2.png",
+    "left": 32,
+    "top": 60,
+    "right": 447,
+    "bottom": 447
+  },
+  {
+    "key": "visual:talenir",
+    "file": "assets/animation-frames/v4.4/talenir/3.png",
+    "left": 53,
+    "top": 52,
+    "right": 426,
+    "bottom": 447
+  },
+  {
+    "key": "visual:morgoth",
+    "file": "assets/animation-frames/v4.4/morgoth/0.png",
+    "left": 75,
+    "top": 81,
+    "right": 404,
+    "bottom": 447
+  },
+  {
+    "key": "visual:morgoth",
+    "file": "assets/animation-frames/v4.4/morgoth/1.png",
+    "left": 80,
+    "top": 72,
+    "right": 399,
+    "bottom": 447
+  },
+  {
+    "key": "visual:morgoth",
+    "file": "assets/animation-frames/v4.4/morgoth/2.png",
+    "left": 32,
+    "top": 138,
+    "right": 447,
+    "bottom": 447
+  },
+  {
+    "key": "visual:morgoth",
+    "file": "assets/animation-frames/v4.4/morgoth/3.png",
+    "left": 81,
+    "top": 94,
+    "right": 398,
+    "bottom": 447
+  },
+  {
+    "key": "visual:durin-i",
+    "file": "assets/animation-frames/v4.4/durin-i/0.png",
+    "left": 90,
+    "top": 129,
+    "right": 388,
+    "bottom": 447
+  },
+  {
+    "key": "visual:durin-i",
+    "file": "assets/animation-frames/v4.4/durin-i/1.png",
+    "left": 105,
+    "top": 70,
+    "right": 374,
+    "bottom": 447
+  },
+  {
+    "key": "visual:durin-i",
+    "file": "assets/animation-frames/v4.4/durin-i/2.png",
+    "left": 32,
+    "top": 160,
+    "right": 447,
+    "bottom": 447
+  },
+  {
+    "key": "visual:durin-i",
+    "file": "assets/animation-frames/v4.4/durin-i/3.png",
+    "left": 91,
+    "top": 133,
+    "right": 387,
+    "bottom": 447
+  },
+  {
+    "key": "visual:durin-iii",
+    "file": "assets/animation-frames/v4.4/durin-iii/0.png",
+    "left": 108,
+    "top": 110,
+    "right": 370,
+    "bottom": 447
+  },
+  {
+    "key": "visual:durin-iii",
+    "file": "assets/animation-frames/v4.4/durin-iii/1.png",
+    "left": 98,
+    "top": 110,
+    "right": 381,
+    "bottom": 447
+  },
+  {
+    "key": "visual:durin-iii",
+    "file": "assets/animation-frames/v4.4/durin-iii/2.png",
+    "left": 32,
+    "top": 116,
+    "right": 447,
+    "bottom": 447
+  },
+  {
+    "key": "visual:durin-iii",
+    "file": "assets/animation-frames/v4.4/durin-iii/3.png",
+    "left": 103,
+    "top": 110,
+    "right": 375,
+    "bottom": 447
+  },
+  {
+    "key": "visual:durin-vi",
+    "file": "assets/animation-frames/v4.4/durin-vi/0.png",
+    "left": 74,
+    "top": 146,
+    "right": 405,
+    "bottom": 447
+  },
+  {
+    "key": "visual:durin-vi",
+    "file": "assets/animation-frames/v4.4/durin-vi/1.png",
+    "left": 89,
+    "top": 117,
+    "right": 390,
+    "bottom": 447
+  },
+  {
+    "key": "visual:durin-vi",
+    "file": "assets/animation-frames/v4.4/durin-vi/2.png",
+    "left": 32,
+    "top": 165,
+    "right": 447,
+    "bottom": 447
+  },
+  {
+    "key": "visual:durin-vi",
+    "file": "assets/animation-frames/v4.4/durin-vi/3.png",
+    "left": 96,
+    "top": 148,
+    "right": 383,
+    "bottom": 447
+  },
+  {
+    "key": "visual:lethariel",
+    "file": "assets/animation-frames/v4.4/lethariel/0.png",
+    "left": 91,
+    "top": 43,
+    "right": 388,
+    "bottom": 447
+  },
+  {
+    "key": "visual:lethariel",
+    "file": "assets/animation-frames/v4.4/lethariel/1.png",
+    "left": 81,
+    "top": 35,
+    "right": 397,
+    "bottom": 447
+  },
+  {
+    "key": "visual:lethariel",
+    "file": "assets/animation-frames/v4.4/lethariel/2.png",
+    "left": 63,
+    "top": 32,
+    "right": 416,
+    "bottom": 447
+  },
+  {
+    "key": "visual:lethariel",
+    "file": "assets/animation-frames/v4.4/lethariel/3.png",
+    "left": 78,
+    "top": 33,
+    "right": 400,
+    "bottom": 447
+  },
+  {
+    "key": "visual:guarda-minas-tirith",
+    "file": "assets/animation-frames/v4.4/guarda-minas-tirith/0.png",
+    "left": 108,
+    "top": 112,
+    "right": 370,
+    "bottom": 447
+  },
+  {
+    "key": "visual:guarda-minas-tirith",
+    "file": "assets/animation-frames/v4.4/guarda-minas-tirith/1.png",
+    "left": 94,
+    "top": 154,
+    "right": 385,
+    "bottom": 447
+  },
+  {
+    "key": "visual:guarda-minas-tirith",
+    "file": "assets/animation-frames/v4.4/guarda-minas-tirith/2.png",
+    "left": 32,
+    "top": 157,
+    "right": 447,
+    "bottom": 447
+  },
+  {
+    "key": "visual:guarda-minas-tirith",
+    "file": "assets/animation-frames/v4.4/guarda-minas-tirith/3.png",
+    "left": 107,
+    "top": 123,
+    "right": 371,
+    "bottom": 447
+  },
+  {
+    "key": "visual:pai-elenya",
+    "file": "assets/animation-frames/v4.4/pai-elenya/0.png",
+    "left": 147,
+    "top": 32,
+    "right": 331,
+    "bottom": 447
+  },
+  {
+    "key": "visual:pai-elenya",
+    "file": "assets/animation-frames/v4.4/pai-elenya/1.png",
+    "left": 122,
+    "top": 40,
+    "right": 357,
+    "bottom": 447
+  },
+  {
+    "key": "visual:pai-elenya",
+    "file": "assets/animation-frames/v4.4/pai-elenya/2.png",
+    "left": 81,
+    "top": 53,
+    "right": 397,
+    "bottom": 447
+  },
+  {
+    "key": "visual:pai-elenya",
+    "file": "assets/animation-frames/v4.4/pai-elenya/3.png",
+    "left": 146,
+    "top": 32,
+    "right": 332,
+    "bottom": 447
+  },
+  {
+    "key": "visual:harl-durn",
+    "file": "assets/animation-frames/v4.4/harl-durn/0.png",
+    "left": 133,
+    "top": 32,
+    "right": 346,
+    "bottom": 447
+  },
+  {
+    "key": "visual:harl-durn",
+    "file": "assets/animation-frames/v4.4/harl-durn/1.png",
+    "left": 81,
+    "top": 55,
+    "right": 398,
+    "bottom": 447
+  },
+  {
+    "key": "visual:harl-durn",
+    "file": "assets/animation-frames/v4.4/harl-durn/2.png",
+    "left": 33,
+    "top": 60,
+    "right": 446,
+    "bottom": 447
+  },
+  {
+    "key": "visual:harl-durn",
+    "file": "assets/animation-frames/v4.4/harl-durn/3.png",
+    "left": 122,
+    "top": 35,
+    "right": 356,
+    "bottom": 447
+  },
+  {
+    "key": "visual:dito-afinadinho",
+    "file": "assets/animation-frames/v4.4/dito-afinadinho/0.png",
+    "left": 122,
+    "top": 33,
+    "right": 357,
+    "bottom": 447
+  },
+  {
+    "key": "visual:dito-afinadinho",
+    "file": "assets/animation-frames/v4.4/dito-afinadinho/1.png",
+    "left": 97,
+    "top": 54,
+    "right": 381,
+    "bottom": 447
+  },
+  {
+    "key": "visual:dito-afinadinho",
+    "file": "assets/animation-frames/v4.4/dito-afinadinho/2.png",
+    "left": 38,
+    "top": 69,
+    "right": 440,
+    "bottom": 447
+  },
+  {
+    "key": "visual:dito-afinadinho",
+    "file": "assets/animation-frames/v4.4/dito-afinadinho/3.png",
+    "left": 116,
+    "top": 32,
+    "right": 362,
+    "bottom": 447
+  },
+  {
+    "key": "visual:pai-inverno",
+    "file": "assets/animation-frames/v4.4/pai-inverno/0.png",
+    "left": 109,
+    "top": 33,
+    "right": 369,
+    "bottom": 447
+  },
+  {
+    "key": "visual:pai-inverno",
+    "file": "assets/animation-frames/v4.4/pai-inverno/1.png",
+    "left": 85,
+    "top": 32,
+    "right": 394,
+    "bottom": 447
+  },
+  {
+    "key": "visual:pai-inverno",
+    "file": "assets/animation-frames/v4.4/pai-inverno/2.png",
+    "left": 55,
+    "top": 36,
+    "right": 423,
+    "bottom": 447
+  },
+  {
+    "key": "visual:pai-inverno",
+    "file": "assets/animation-frames/v4.4/pai-inverno/3.png",
+    "left": 84,
+    "top": 66,
+    "right": 395,
+    "bottom": 447
+  },
+  {
+    "key": "creature:goblin-lanceiro",
+    "file": "assets/animation-frames/v4.4/goblin-lanceiro/0.png",
+    "left": 137,
+    "top": 135,
+    "right": 342,
+    "bottom": 447
+  },
+  {
+    "key": "creature:goblin-lanceiro",
+    "file": "assets/animation-frames/v4.4/goblin-lanceiro/1.png",
+    "left": 130,
+    "top": 158,
+    "right": 349,
+    "bottom": 447
+  },
+  {
+    "key": "creature:goblin-lanceiro",
+    "file": "assets/animation-frames/v4.4/goblin-lanceiro/2.png",
+    "left": 32,
+    "top": 204,
+    "right": 447,
+    "bottom": 447
+  },
+  {
+    "key": "creature:goblin-lanceiro",
+    "file": "assets/animation-frames/v4.4/goblin-lanceiro/3.png",
+    "left": 109,
+    "top": 177,
+    "right": 369,
+    "bottom": 447
+  },
+  {
+    "key": "creature:goblin-arqueiro",
+    "file": "assets/animation-frames/v4.4/goblin-arqueiro/0.png",
+    "left": 71,
+    "top": 38,
+    "right": 407,
+    "bottom": 447
+  },
+  {
+    "key": "creature:goblin-arqueiro",
+    "file": "assets/animation-frames/v4.4/goblin-arqueiro/1.png",
+    "left": 34,
+    "top": 33,
+    "right": 445,
+    "bottom": 447
+  },
+  {
+    "key": "creature:goblin-arqueiro",
+    "file": "assets/animation-frames/v4.4/goblin-arqueiro/2.png",
+    "left": 50,
+    "top": 32,
+    "right": 428,
+    "bottom": 447
+  },
+  {
+    "key": "creature:goblin-arqueiro",
+    "file": "assets/animation-frames/v4.4/goblin-arqueiro/3.png",
+    "left": 62,
+    "top": 49,
+    "right": 416,
+    "bottom": 447
+  },
+  {
+    "key": "creature:goblin-espadachim",
+    "file": "assets/animation-frames/v4.4/goblin-espadachim/0.png",
+    "left": 100,
+    "top": 145,
+    "right": 378,
+    "bottom": 447
+  },
+  {
+    "key": "creature:goblin-espadachim",
+    "file": "assets/animation-frames/v4.4/goblin-espadachim/1.png",
+    "left": 97,
+    "top": 115,
+    "right": 382,
+    "bottom": 447
+  },
+  {
+    "key": "creature:goblin-espadachim",
+    "file": "assets/animation-frames/v4.4/goblin-espadachim/2.png",
+    "left": 32,
+    "top": 167,
+    "right": 447,
+    "bottom": 447
+  },
+  {
+    "key": "creature:goblin-espadachim",
+    "file": "assets/animation-frames/v4.4/goblin-espadachim/3.png",
+    "left": 107,
+    "top": 156,
+    "right": 372,
+    "bottom": 447
+  }
+]

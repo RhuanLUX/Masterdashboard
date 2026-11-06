@@ -78,4 +78,4 @@ Exporte backups para uma segunda pasta/dispositivo periodicamente. O JSON inclui
 
 ## O que continua igual
 
-Pergaminho A4; História 5 integral; regras D20 Simplificado; artes, sprites e cenário da arena; flechas e quatro magias aprovadas; dados 3D sem som; temas e suas opções; biblioteca, atlas, cartas, galeria e configurações. LOFI é o único recurso que abre URLs externas por ação do usuário; ouvir YouTube requer internet.
+Pergaminho A4; História 5 integral; regras D20 Simplificado; dados 3D sem som; temas e suas opções; biblioteca, atlas, cartas, galeria e configurações. A arena ganhou [animações individuais e mais efeitos visuais na versão 4.4](ARENA_V4_4.md), preservando o combate e os dados. LOFI é o único recurso que abre URLs externas por ação do usuário; ouvir YouTube requer internet.

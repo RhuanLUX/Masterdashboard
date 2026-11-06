@@ -51,3 +51,14 @@ O guia de classes e as dez criaturas do apêndice B indicam separadamente sua
 referência ao Livro do Jogador 2024 fornecido. Isso não transfere a titularidade
 de marcas ou propriedades de Dungeons & Dragons e não substitui os documentos
 da campanha.
+
+## Arte da arena 4.4.0
+
+As novas sequências de 69 entidades e o cenário de Mordor foram produzidos com
+ImageGen para este projeto, tomando as miniaturas locais como referência. Seis
+sequências existentes foram separadas tecnicamente pela transparência, sem
+redesenhar os personagens. Cada pose entregue é um PNG individual de 480 × 480.
+A procedência e os hashes estão em `assets/animation-frames/v4.4/provenance.json`.
+Não foram extraídos sprites de jogos comerciais; não há geração ou download
+durante o uso. Os novos efeitos são desenhos procedurais locais no PixiJS.
+Isso não altera os direitos sobre personagens ou universos preexistentes.

@@ -1,0 +1,427 @@
+{
+  "report": [
+    {
+      "spell": "fire",
+      "reverse": false,
+      "duration": 1100,
+      "impactDelay": 792,
+      "impact": 0.72,
+      "fx": [
+        {
+          "label": "combat-fx:fire",
+          "w": 89.02656228746031,
+          "h": 45.696
+        }
+      ]
+    },
+    {
+      "spell": "fire",
+      "reverse": true,
+      "duration": 1100,
+      "impactDelay": 792,
+      "impact": 0.72,
+      "fx": [
+        {
+          "label": "combat-fx:fire",
+          "w": 89.02656042737186,
+          "h": 45.696
+        }
+      ]
+    },
+    {
+      "spell": "ice",
+      "reverse": false,
+      "duration": 1100,
+      "impactDelay": 792,
+      "impact": 0.72,
+      "fx": [
+        {
+          "label": "combat-fx:ice",
+          "w": 82.32066260002284,
+          "h": 10.475881449463259
+        }
+      ]
+    },
+    {
+      "spell": "ice",
+      "reverse": true,
+      "duration": 1100,
+      "impactDelay": 792,
+      "impact": 0.72,
+      "fx": [
+        {
+          "label": "combat-fx:ice",
+          "w": 82.32064114296719,
+          "h": 10.475456950834314
+        }
+      ]
+    },
+    {
+      "spell": "lightning",
+      "reverse": false,
+      "duration": 1100,
+      "impactDelay": 792,
+      "impact": 0.72,
+      "fx": [
+        {
+          "label": "combat-fx:lightning",
+          "w": 351.4992926017938,
+          "h": 44.65840064494071
+        }
+      ]
+    },
+    {
+      "spell": "lightning",
+      "reverse": true,
+      "duration": 1100,
+      "impactDelay": 792,
+      "impact": 0.72,
+      "fx": [
+        {
+          "label": "combat-fx:lightning",
+          "w": 351.49929832585354,
+          "h": 44.6738963161838
+        }
+      ]
+    },
+    {
+      "spell": "missiles",
+      "reverse": false,
+      "duration": 1100,
+      "impactDelay": 792,
+      "impact": 0.72,
+      "fx": [
+        {
+          "label": "combat-fx:missiles",
+          "w": 126.8828202959831,
+          "h": 114.78994017999801
+        }
+      ]
+    },
+    {
+      "spell": "missiles",
+      "reverse": true,
+      "duration": 1100,
+      "impactDelay": 792,
+      "impact": 0.72,
+      "fx": [
+        {
+          "label": "combat-fx:missiles",
+          "w": 126.88282029598298,
+          "h": 114.306197199856
+        }
+      ]
+    },
+    {
+      "spell": "wind",
+      "reverse": false,
+      "duration": 1100,
+      "impactDelay": 792,
+      "impact": 0.72,
+      "fx": [
+        {
+          "label": "combat-fx:wind",
+          "w": 89.28595806627595,
+          "h": 43.771360734201465
+        }
+      ]
+    },
+    {
+      "spell": "wind",
+      "reverse": true,
+      "duration": 1100,
+      "impactDelay": 792,
+      "impact": 0.72,
+      "fx": [
+        {
+          "label": "combat-fx:wind",
+          "w": 89.28817656540093,
+          "h": 44.974165929569324
+        }
+      ]
+    },
+    {
+      "spell": "stone",
+      "reverse": false,
+      "duration": 1100,
+      "impactDelay": 792,
+      "impact": 0.72,
+      "fx": [
+        {
+          "label": "combat-fx:stone",
+          "w": 66.23239999999998,
+          "h": 31.143032841905637
+        }
+      ]
+    },
+    {
+      "spell": "stone",
+      "reverse": true,
+      "duration": 1100,
+      "impactDelay": 792,
+      "impact": 0.72,
+      "fx": [
+        {
+          "label": "combat-fx:stone",
+          "w": 77.84690644787008,
+          "h": 31.593857318539705
+        }
+      ]
+    },
+    {
+      "spell": "hurricane",
+      "reverse": false,
+      "duration": 1800,
+      "impactDelay": 1152,
+      "impact": 0.64,
+      "fx": [
+        {
+          "label": "combat-fx:hurricane",
+          "w": 98.93267252741629,
+          "h": 152.5692465984556
+        }
+      ]
+    },
+    {
+      "spell": "hurricane",
+      "reverse": true,
+      "duration": 1800,
+      "impactDelay": 1152,
+      "impact": 0.64,
+      "fx": [
+        {
+          "label": "combat-fx:hurricane",
+          "w": 99.98019092661889,
+          "h": 146.87677758251525
+        }
+      ]
+    },
+    {
+      "spell": "meteor",
+      "reverse": false,
+      "duration": 1500,
+      "impactDelay": 960,
+      "impact": 0.64,
+      "fx": [
+        {
+          "label": "combat-fx:meteor",
+          "w": 63.729600000000005,
+          "h": 104.26847999999998
+        }
+      ]
+    },
+    {
+      "spell": "meteor",
+      "reverse": true,
+      "duration": 1500,
+      "impactDelay": 960,
+      "impact": 0.64,
+      "fx": [
+        {
+          "label": "combat-fx:meteor",
+          "w": 63.72959999999998,
+          "h": 104.26848
+        }
+      ]
+    },
+    {
+      "spell": "blizzard",
+      "reverse": false,
+      "duration": 1700,
+      "impactDelay": 1088,
+      "impact": 0.64,
+      "fx": [
+        {
+          "label": "combat-fx:blizzard",
+          "w": 106.87798524494576,
+          "h": 155.17436788316223
+        }
+      ]
+    },
+    {
+      "spell": "blizzard",
+      "reverse": true,
+      "duration": 1700,
+      "impactDelay": 1088,
+      "impact": 0.64,
+      "fx": [
+        {
+          "label": "combat-fx:blizzard",
+          "w": 106.98281724494547,
+          "h": 156.04665603872184
+        }
+      ]
+    },
+    {
+      "spell": "tidal",
+      "reverse": false,
+      "duration": 1450,
+      "impactDelay": 928,
+      "impact": 0.64,
+      "fx": [
+        {
+          "label": "combat-fx:tidal",
+          "w": 77.52000000000004,
+          "h": 88.95294601068932
+        }
+      ]
+    },
+    {
+      "spell": "tidal",
+      "reverse": true,
+      "duration": 1450,
+      "impactDelay": 928,
+      "impact": 0.64,
+      "fx": [
+        {
+          "label": "combat-fx:tidal",
+          "w": 77.52000000000004,
+          "h": 88.98549014491925
+        }
+      ]
+    },
+    {
+      "spell": "poison",
+      "reverse": false,
+      "duration": 1550,
+      "impactDelay": 992,
+      "impact": 0.64,
+      "fx": [
+        {
+          "label": "combat-fx:poison",
+          "w": 67.48055009983244,
+          "h": 61.90151827968671
+        }
+      ]
+    },
+    {
+      "spell": "poison",
+      "reverse": true,
+      "duration": 1550,
+      "impactDelay": 992,
+      "impact": 0.64,
+      "fx": [
+        {
+          "label": "combat-fx:poison",
+          "w": 66.59273805088179,
+          "h": 61.05860599256607
+        }
+      ]
+    },
+    {
+      "spell": "shadow",
+      "reverse": false,
+      "duration": 1300,
+      "impactDelay": 832,
+      "impact": 0.64,
+      "fx": [
+        {
+          "label": "combat-fx:shadow",
+          "w": 266.9690839575238,
+          "h": 89.57142315160192
+        }
+      ]
+    },
+    {
+      "spell": "shadow",
+      "reverse": true,
+      "duration": 1300,
+      "impactDelay": 832,
+      "impact": 0.64,
+      "fx": [
+        {
+          "label": "combat-fx:shadow",
+          "w": 258.04621342576604,
+          "h": 89.42132716663582
+        }
+      ]
+    },
+    {
+      "spell": "radiance",
+      "reverse": false,
+      "duration": 1450,
+      "impactDelay": 928,
+      "impact": 0.64,
+      "fx": [
+        {
+          "label": "combat-fx:radiance",
+          "w": 40.799999999999955,
+          "h": 79.19092762216727
+        }
+      ]
+    },
+    {
+      "spell": "radiance",
+      "reverse": true,
+      "duration": 1450,
+      "impactDelay": 928,
+      "impact": 0.64,
+      "fx": [
+        {
+          "label": "combat-fx:radiance",
+          "w": 40.799999999999955,
+          "h": 79.17765616377243
+        }
+      ]
+    },
+    {
+      "spell": "heal",
+      "reverse": false,
+      "duration": 1450,
+      "impactDelay": 406,
+      "impact": 0.28,
+      "fx": [
+        {
+          "label": "combat-fx:heal",
+          "w": 58.75199999999995,
+          "h": 261.08381736813874
+        }
+      ]
+    },
+    {
+      "spell": "heal",
+      "reverse": true,
+      "duration": 1450,
+      "impactDelay": 406,
+      "impact": 0.28,
+      "fx": [
+        {
+          "label": "combat-fx:heal",
+          "w": 58.75199999999995,
+          "h": 261.12483907625483
+        }
+      ]
+    },
+    {
+      "spell": "arrow",
+      "reverse": false,
+      "duration": 1100,
+      "impactDelay": 792,
+      "impact": 0.72,
+      "fx": [
+        {
+          "label": "combat-fx:arrow",
+          "w": 48.95798179919615,
+          "h": 9.791589518480578
+        }
+      ]
+    },
+    {
+      "spell": "arrow",
+      "reverse": true,
+      "duration": 1100,
+      "impactDelay": 792,
+      "impact": 0.72,
+      "fx": [
+        {
+          "label": "combat-fx:arrow",
+          "w": 48.95798174120057,
+          "h": 9.791589506684858
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "external": [],
+  "skip": true
+}

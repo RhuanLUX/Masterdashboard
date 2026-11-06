@@ -31,9 +31,19 @@
     return { left, right: right + 1, top, bottom: bottom + 1, footX: count ? sum / count : (left + right) / 2, footY: footY + 1 };
   }
   async function framesFor(visual) {
-    const path=visual.asset,cacheKey=`${visual.kind}:${path}:${visual.columns}`;
+    const path=visual.asset,cacheKey=`${visual.kind}:${visual.frames?.join('|')||path}:${visual.columns}`;
     if (!cache.has(cacheKey)) {
       const promise = (async () => {
+        if(visual.kind==='frames'){
+          return Promise.all(visual.frames.map(async path=>{
+            const base=await P().Assets.load(path);base.source.scaleMode='nearest';
+            const canvas=document.createElement('canvas');canvas.width=base.width;canvas.height=base.height;
+            const ctx=canvas.getContext('2d',{willReadFrequently:true});ctx.drawImage(base.source.resource,0,0);
+            const bounds=measureFrame(ctx.getImageData(0,0,base.width,base.height).data,base.width,0,base.width,base.height);
+            const texture=new (P().Texture)({source:base.source,frame:new (P().Rectangle)(0,0,base.width,base.height),defaultAnchor:{x:bounds.footX/base.width,y:bounds.footY/base.height}});
+            return {texture,...bounds};
+          }));
+        }
         let base;
         if(visual.kind==='missing'){
           const neutral=document.createElement('canvas');neutral.width=96;neutral.height=128;
@@ -225,7 +235,7 @@
       const W=Math.max(1,container.clientWidth),H=Math.max(1,container.clientHeight);app.renderer.resize(W,H);
       scene.scenery?.destroy();
       for(const key of ['distant','middle','surface'])layers[key].removeChildren().forEach(x=>x.destroy());
-      if(!global.RPGBattleEnvironment||global.RPGBattleEnvironment.clean(scene.environment.id)==='mordor')backdrop(layers,W,H);
+      if(!global.RPGBattleEnvironment)backdrop(layers,W,H);
       scene.scenery=global.RPGBattleEnvironment?.mount(layers,W,H,scene.environment);
       scene.scenery?.tick(Date.now(),global.matchMedia?.('(prefers-reduced-motion: reduce)').matches);
       const groups=[participants.filter(p=>!isEnemy(p)),participants.filter(isEnemy)];
@@ -314,7 +324,7 @@
     return clear;
   }
   // Local, bounded vector/particle effects. No external assets, timers or physics changes.
-  const spellNames={fire:'Fogo',ice:'Gelo',lightning:'Eletricidade',missiles:'Mísseis mágicos',wind:'Vento',stone:'Pedra'};
+  const spellNames=global.RPGBattleMagic.names;
   function projectileEffect(scene,actor,target,kind,spell,outcome,tween){
     const fx=new (P().Graphics)();fx.label='combat-fx:'+ (kind==='ranged'?'arrow':spell);
     fx.eventMode='none';scene.layers.effects.addChild(fx);
@@ -425,7 +435,7 @@
     const actor=scene.actors.get(actorId),target=scene.actors.get(targetId);if(!actor||!target)return;
     if(global.matchMedia?.('(prefers-reduced-motion: reduce)').matches)return;
     const dx=target.homeX-actor.homeX,dy=target.homeY-actor.homeY;
-    const enhanced=kind==='magic'||kind==='ranged',duration=kind==='heal'?1450:enhanced?1100:650;
+    const enhanced=kind==='magic'||kind==='ranged',{duration,impact}=global.RPGBattleMagic.timing(kind,options.spell);
     const spell=Object.hasOwn(spellNames,options.spell)?options.spell:'fire',outcome=options.outcome||kind;
     actor.cancelAction?.();target.cancelAction?.();
     actor.acting=true;target.acting=true;
@@ -433,7 +443,13 @@
     if(actor.fallen)resting(actor);
     if(!actor.fallen&&!actor.falling){actor.sprite.rotation=0;actor.sprite.scale.y=actor.baseScale;}
     const ranged=kind==='magic'||kind==='ranged'||kind==='heal';
-    const lunge=ranged?0:Math.sign(dx)*Math.min(32,Math.abs(dx)*.14);
+    // Reserve the entire pose envelope and only move through truly vacant space.
+    let clearance=dx>=0?scene.app.screen.width-actor.bounds.right:actor.bounds.left;
+    for(const other of scene.actors.values())if(other!==actor&&other.bounds.top<actor.bounds.bottom&&other.bounds.bottom>actor.bounds.top){
+      const gap=dx>=0?other.bounds.left-actor.bounds.right:actor.bounds.left-other.bounds.right;
+      if(gap>=0)clearance=Math.min(clearance,gap);
+    }
+    const lunge=ranged?0:Math.sign(dx)*Math.min(28,Math.abs(dx)*.14,Math.max(0,clearance-8));
     const color=kind==='heal'?'#86bd99':kind==='magic'?'#90b9d1':kind==='fail'?'#b6b9bc':'#dec190';
     const reset=()=>{actor.wrap.position.set(actor.homeX,actor.homeY);actor.sprite.gotoAndStop(0);actor.acting=false;
       target.wrap.position.set(target.homeX,target.homeY);target.acting=false;
@@ -441,15 +457,16 @@
     const cancelMotion=tween(scene,duration,t=>{
       if(!actor.fallen&&!actor.falling){actor.wrap.x=actor.homeX+Math.sin(t*Math.PI)*lunge;
         if(actor.frames.length===1)actor.sprite.rotation=Math.sin(t*Math.PI*2)*.025*actor.facing;
-        actor.sprite.gotoAndStop(Math.min(actor.frames.length-1,Math.floor(t*actor.frames.length)));
+        const pose=t<.08?0:t<(enhanced?.2:.40)?1:t<.78?2:3;
+        actor.sprite.gotoAndStop(Math.min(actor.frames.length-1,pose));
         setFacing(actor,actor.direction);
       }
-      if(!target.falling&&!target.fallen&&t>(enhanced?.72:.53)){target.wrap.x=target.homeX+(kind==='heal'?0:outcome==='fail'?Math.sin(t*Math.PI)*12:Math.sin(t*42)*2);target.sprite.tint=outcome==='fail'?0xffffff:kind==='heal'?0xd4f2ce:0xf0d7c5;}
+      if(!target.falling&&!target.fallen&&t>impact){target.wrap.x=target.homeX+(kind==='heal'?0:outcome==='fail'?Math.sin(t*Math.PI)*12:Math.sin(t*42)*2);target.sprite.tint=outcome==='fail'?0xffffff:kind==='heal'?0xd4f2ce:0xf0d7c5;}
     },reset);
     actor.cancelAction=target.cancelAction=()=>{cancelMotion();reset();};
     let cancelFX=()=>{};
     if(kind==='heal')cancelFX=healingEffect(scene,target);
-    else if(enhanced)cancelFX=projectileEffect(scene,actor,target,kind,spell,outcome,tween);
+    else if(enhanced)cancelFX=(kind==='magic'&&global.RPGBattleMagic.effect(scene,actor,target,spell,outcome,tween))||projectileEffect(scene,actor,target,kind,spell,outcome,tween);
     else {
     const fx=new (P().Graphics)();scene.layers.effects.addChild(fx);
     const y1=actor.homeY-(actor.homeY-actor.bounds.top)*.55,y2=target.homeY-(target.homeY-target.bounds.top)*.55;

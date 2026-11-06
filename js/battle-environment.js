@@ -9,7 +9,7 @@
     const P=global.PIXI,id=clean(config.id),seed=Number(config.seed)>>>0,roots=[];
     let disposed=false,mesh,positions,original,dragonSprite,previous=-1,frame=0;
     const motion=new P.Graphics();motion.eventMode='none';motion.scale.set(W/640,H/360);layers.middle.addChild(motion);roots.push(motion);
-    const ready=id==='mordor'?Promise.resolve():P.Assets.load('assets/battle-scenes/v4.3/'+id+'.png').then(texture=>{
+    const ready=P.Assets.load('assets/battle-scenes/'+(id==='mordor'?'v4.4':'v4.3')+'/'+id+'.png').then(texture=>{
       if(disposed)return;texture.source.scaleMode='nearest';
       mesh=new P.MeshPlane({texture,verticesX:17,verticesY:13});mesh.eventMode='none';mesh.scale.set(W/texture.width,H/texture.height);
       positions=mesh.geometry.getBuffer('aPosition');original=new Float32Array(positions.data);
@@ -28,7 +28,7 @@
       if(mesh){
         const tw=mesh.texture.width,th=mesh.texture.height;
         for(let i=0;i<positions.data.length;i+=2){const x=original[i],y=original[i+1],v=y/th,u=x/tw;
-          const foliage=(id==='fangorn'?1:id==='rivendell'||id==='road'?(u<.20||u>.86?1:0):u<.23||u>.87?.45:0);
+          const foliage=(id==='mordor'?0:id==='fangorn'?1:id==='rivendell'||id==='road'?(u<.20||u>.86?1:0):u<.23||u>.87?.45:0);
           const amplitude=!reduced&&v<.34?Math.sin(Math.PI*Math.min(1,v/.34))*Math.sin(Math.PI*u)*foliage:0;
           positions.data[i]=x+Math.sin(frame*Math.PI/2+u*7)*amplitude*tw/850;positions.data[i+1]=y;
         }positions.update();
@@ -37,6 +37,10 @@
         // Waterfalls and river shimmer occupy the same distant bands as the artwork.
         for(const x of [319,395])for(let j=0;j<9;j++)motion.rect(x+j%3,98+(j*7+frame*3)%38,1,3+j%2).fill({color:0xd6ebff,alpha:.15});
         for(let j=0;j<35;j++)motion.rect(157+(j*23+frame*2)%329,139+j%11,2+j%6,1).fill({color:0xd4e6f1,alpha:.10});
+      }
+      if(id==='mordor'){
+        motion.ellipse(380,21,4,1.5).fill({color:0xf9a04a,alpha:reduced?.07:.07+frame*.025});
+        if(!reduced)for(let i=0;i<3;i++){const x=(time*.0009+i*229)%840-100;motion.ellipse(x,29+i*15,83,7).fill({color:0x16181d,alpha:.08});}
       }
       if(id==='road'){
         // A second small wagon passes occasionally along the distant bridge.

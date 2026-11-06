@@ -1,0 +1,3074 @@
+{
+  "miniatures": [
+    {
+      "key": "creature:exp-coracao",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.12058113207547173,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 144.89844753517286,
+        "right": 206.23155246482713,
+        "top": 172.6244,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "creature:exp-coracao",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.12058113207547173,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 664.3784475351728,
+        "right": 725.7115524648272,
+        "top": 172.6244,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "creature:exp-mestre-armas",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.1128552884615385,
+      "footAnchor": 0.9291666666666667,
+      "footError": 0,
+      "bounds": {
+        "left": 61.629871043388434,
+        "right": 106.72012895661159,
+        "top": 246.5722,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "creature:exp-mestre-armas",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.1128552884615385,
+      "footAnchor": 0.9291666666666667,
+      "footError": 0,
+      "bounds": {
+        "left": 581.1098710433884,
+        "right": 626.2001289566116,
+        "top": 246.5722,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "creature:exp-zelote",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.11589533678756479,
+      "footAnchor": 0.9270833333333334,
+      "footError": 0,
+      "bounds": {
+        "left": 324.39179295061615,
+        "right": 392.2982070493839,
+        "top": 172.62439999999998,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "creature:exp-zelote",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.11589533678756479,
+      "footAnchor": 0.9270833333333334,
+      "footError": 0,
+      "bounds": {
+        "left": 843.871792950616,
+        "right": 911.7782070493838,
+        "top": 172.62439999999998,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "creature:exp-arvore",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.10937799511002448,
+      "footAnchor": 0.9333333333333333,
+      "footError": 0,
+      "bounds": {
+        "left": 239.16240804637502,
+        "right": 294.7475919536249,
+        "top": 172.6244,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "creature:exp-arvore",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.10937799511002448,
+      "footAnchor": 0.9333333333333333,
+      "footError": 0,
+      "bounds": {
+        "left": 758.642408046375,
+        "right": 814.2275919536249,
+        "top": 172.6244,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "creature:exp-campea",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.11678557213930352,
+      "footAnchor": 0.9333333333333333,
+      "footError": 0,
+      "bounds": {
+        "left": 146.83820305432783,
+        "right": 204.29179694567216,
+        "top": 246.57220000000004,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "creature:exp-campea",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.11678557213930352,
+      "footAnchor": 0.9333333333333333,
+      "footError": 0,
+      "bounds": {
+        "left": 666.3182030543278,
+        "right": 723.7717969456721,
+        "top": 246.57220000000004,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "creature:exp-arcano",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.12486117021276599,
+      "footAnchor": 0.9291666666666667,
+      "footError": 0,
+      "bounds": {
+        "left": 233.96635690411816,
+        "right": 299.94364309588184,
+        "top": 246.5722,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "creature:exp-arcano",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.12486117021276599,
+      "footAnchor": 0.9291666666666667,
+      "footError": 0,
+      "bounds": {
+        "left": 753.4463569041181,
+        "right": 819.4236430958817,
+        "top": 246.5722,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "creature:exp-barda",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.12037897435897439,
+      "footAnchor": 0.9270833333333334,
+      "footError": 0,
+      "bounds": {
+        "left": 332.30066752422505,
+        "right": 384.389332475775,
+        "top": 246.57220000000004,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "creature:exp-barda",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.12037897435897439,
+      "footAnchor": 0.9270833333333334,
+      "footError": 0,
+      "bounds": {
+        "left": 851.780667524225,
+        "right": 903.8693324757749,
+        "top": 246.57220000000004,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "creature:exp-berserker",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.10753750000000004,
+      "footAnchor": 0.9333333333333333,
+      "footError": 0,
+      "bounds": {
+        "left": 59.45930675875678,
+        "right": 108.89069324124324,
+        "top": 172.62439999999998,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "creature:exp-berserker",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.10753750000000004,
+      "footAnchor": 0.9333333333333333,
+      "footError": 0,
+      "bounds": {
+        "left": 578.9393067587567,
+        "right": 628.3706932412432,
+        "top": 172.62439999999998,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "creature:exp-curadora",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.11817307692307695,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 244.32624124668433,
+        "right": 289.58375875331564,
+        "top": 320.52000000000004,
+        "bottom": 369.68000000000006
+      }
+    },
+    {
+      "key": "creature:exp-curadora",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.11817307692307695,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 763.8062412466843,
+        "right": 809.0637587533156,
+        "top": 320.52000000000004,
+        "bottom": 369.68000000000006
+      }
+    },
+    {
+      "key": "creature:exp-bardo-guerra",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.1314438502673797,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 141.2273245190534,
+        "right": 209.90267548094658,
+        "top": 320.52000000000004,
+        "bottom": 369.68000000000006
+      }
+    },
+    {
+      "key": "creature:exp-bardo-guerra",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.1314438502673797,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 660.7073245190534,
+        "right": 729.3826754809465,
+        "top": 320.52000000000004,
+        "bottom": 369.68000000000006
+      }
+    },
+    {
+      "key": "creature:exp-rastreadora",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.11258465227817749,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 156.23869220896196,
+        "right": 194.89130779103803,
+        "top": 246.5722,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "creature:exp-rastreadora",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.11258465227817749,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 675.7186922089619,
+        "right": 714.371307791038,
+        "top": 246.5722,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "creature:exp-ladra",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.11915685279187821,
+      "footAnchor": 0.9333333333333333,
+      "footError": 0,
+      "bounds": {
+        "left": 326.36379207912506,
+        "right": 390.326207920875,
+        "top": 246.5722,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "creature:exp-ladra",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.11915685279187821,
+      "footAnchor": 0.9333333333333333,
+      "footError": 0,
+      "bounds": {
+        "left": 845.8437920791249,
+        "right": 909.806207920875,
+        "top": 246.5722,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "creature:exp-paladino-voto",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.11885518987341775,
+      "footAnchor": 0.9291666666666667,
+      "footError": 0,
+      "bounds": {
+        "left": 54.81220276137401,
+        "right": 113.53779723862601,
+        "top": 246.5722,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "creature:exp-paladino-voto",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.11885518987341775,
+      "footAnchor": 0.9291666666666667,
+      "footError": 0,
+      "bounds": {
+        "left": 574.292202761374,
+        "right": 633.0177972386259,
+        "top": 246.5722,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "creature:exp-druida-terra",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.11156009975062348,
+      "footAnchor": 0.9291666666666667,
+      "footError": 0,
+      "bounds": {
+        "left": 148.720102946397,
+        "right": 202.409897053603,
+        "top": 172.6244,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "creature:exp-druida-terra",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.11156009975062348,
+      "footAnchor": 0.9291666666666667,
+      "footError": 0,
+      "bounds": {
+        "left": 668.200102946397,
+        "right": 721.8898970536029,
+        "top": 172.6244,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "creature:exp-druida-lua",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.11710890052356024,
+      "footAnchor": 0.9333333333333333,
+      "footError": 0,
+      "bounds": {
+        "left": 238.6340123311671,
+        "right": 295.2759876688329,
+        "top": 172.6244,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "creature:exp-druida-lua",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.11710890052356024,
+      "footAnchor": 0.9333333333333333,
+      "footError": 0,
+      "bounds": {
+        "left": 758.114012331167,
+        "right": 814.7559876688329,
+        "top": 172.6244,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "creature:exp-sombras",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.1128552884615385,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 248.58859314649288,
+        "right": 285.3214068535071,
+        "top": 246.5722,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "creature:exp-sombras",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.1128552884615385,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 768.0685931464928,
+        "right": 804.801406853507,
+        "top": 246.5722,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "creature:exp-paladina",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.11268413098236779,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 327.083188520863,
+        "right": 389.60681147913704,
+        "top": 172.6244,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "creature:exp-paladina",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.11268413098236779,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 846.5631885208629,
+        "right": 909.0868114791369,
+        "top": 172.6244,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "creature:exp-luz",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.10753750000000004,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 63.2608258171071,
+        "right": 105.08917418289292,
+        "top": 172.62439999999998,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "creature:exp-luz",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.10753750000000004,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 582.7408258171071,
+        "right": 624.5691741828929,
+        "top": 172.62439999999998,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "creature:exp-evocadora",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.11817307692307695,
+      "footAnchor": 0.9333333333333333,
+      "footError": 0,
+      "bounds": {
+        "left": 241.76054965255332,
+        "right": 292.14945034744665,
+        "top": 320.52000000000004,
+        "bottom": 369.68000000000006
+      }
+    },
+    {
+      "key": "creature:exp-evocadora",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.11817307692307695,
+      "footAnchor": 0.9333333333333333,
+      "footError": 0,
+      "bounds": {
+        "left": 761.2405496525532,
+        "right": 811.6294503474467,
+        "top": 320.52000000000004,
+        "bottom": 369.68000000000006
+      }
+    },
+    {
+      "key": "creature:exp-assassino",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.1273575129533679,
+      "footAnchor": 0.9270833333333334,
+      "footError": 0,
+      "bounds": {
+        "left": 139.84353871229973,
+        "right": 211.28646128770026,
+        "top": 320.5200000000001,
+        "bottom": 369.68000000000006
+      }
+    },
+    {
+      "key": "creature:exp-assassino",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.1273575129533679,
+      "footAnchor": 0.9270833333333334,
+      "footError": 0,
+      "bounds": {
+        "left": 659.3235387122998,
+        "right": 730.7664612877002,
+        "top": 320.5200000000001,
+        "bottom": 369.68000000000006
+      }
+    },
+    {
+      "key": "creature:exp-abjurador",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.08778581927402863,
+      "footAnchor": 0.9333333333333333,
+      "footError": 0,
+      "bounds": {
+        "left": 66.15975999574003,
+        "right": 102.19024000425999,
+        "top": 180.84109918200411,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "creature:exp-abjurador",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.08778581927402863,
+      "footAnchor": 0.9333333333333333,
+      "footError": 0,
+      "bounds": {
+        "left": 585.63975999574,
+        "right": 621.67024000426,
+        "top": 180.84109918200411,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "creature:exp-feiticeira",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.08757530172181274,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 155.9431872561077,
+        "right": 195.1868127438923,
+        "top": 180.8410991820041,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "creature:exp-feiticeira",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.08757530172181274,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 675.4231872561077,
+        "right": 714.6668127438923,
+        "top": 180.8410991820041,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "creature:exp-bruxa",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.0871572811885344,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 250.64276075208898,
+        "right": 283.267239247911,
+        "top": 180.8410991820041,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "creature:exp-bruxa",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.0871572811885344,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 770.122760752089,
+        "right": 802.7472392479109,
+        "top": 180.8410991820041,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "creature:exp-morcego",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.12483641866050792,
+      "footAnchor": 0.9229166666666667,
+      "footError": 0,
+      "bounds": {
+        "left": 55.10465903770728,
+        "right": 113.24534096229274,
+        "top": 255.19521947122408,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "creature:exp-morcego",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.12483641866050792,
+      "footAnchor": 0.9229166666666667,
+      "footError": 0,
+      "bounds": {
+        "left": 574.5846590377072,
+        "right": 632.7253409622928,
+        "top": 255.19521947122408,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "creature:exp-mercador",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.10374687732385203,
+      "footAnchor": 0.925,
+      "footError": 0,
+      "bounds": {
+        "left": 330.8635737847746,
+        "right": 385.82642621522547,
+        "top": 180.84109918200411,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "creature:exp-mercador",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.10374687732385203,
+      "footAnchor": 0.925,
+      "footError": 0,
+      "bounds": {
+        "left": 850.3435737847744,
+        "right": 905.3064262152254,
+        "top": 180.84109918200411,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "creature:exp-sapo",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.1596865855365664,
+      "footAnchor": 0.9270833333333334,
+      "footError": 0,
+      "bounds": {
+        "left": 230.00127499999996,
+        "right": 303.908725,
+        "top": 255.1952194712241,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "creature:exp-sapo",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.1596865855365664,
+      "footAnchor": 0.9270833333333334,
+      "footError": 0,
+      "bounds": {
+        "left": 749.481275,
+        "right": 823.3887249999999,
+        "top": 255.1952194712241,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "creature:exp-gato",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.1502932569755919,
+      "footAnchor": 0.9333333333333333,
+      "footError": 0,
+      "bounds": {
+        "left": 139.82442121725973,
+        "right": 211.30557878274027,
+        "top": 255.1952194712241,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "creature:exp-gato",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.1502932569755919,
+      "footAnchor": 0.9333333333333333,
+      "footError": 0,
+      "bounds": {
+        "left": 659.3044212172597,
+        "right": 730.7855787827402,
+        "top": 255.1952194712241,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "creature:exp-diabrete",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.09980411596035399,
+      "footAnchor": 0.9208333333333333,
+      "footError": 0,
+      "bounds": {
+        "left": 331.6901935042951,
+        "right": 384.99980649570495,
+        "top": 255.1952194712241,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "creature:exp-diabrete",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.09980411596035399,
+      "footAnchor": 0.9208333333333333,
+      "footError": 0,
+      "bounds": {
+        "left": 851.170193504295,
+        "right": 904.4798064957049,
+        "top": 255.1952194712241,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "creature:exp-pseudodragao",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.11498756515632076,
+      "footAnchor": 0.925,
+      "footError": 0,
+      "bounds": {
+        "left": 238.68960637496247,
+        "right": 295.2203936250375,
+        "top": 329.5493397604441,
+        "bottom": 369.68000000000006
+      }
+    },
+    {
+      "key": "creature:exp-pseudodragao",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.11498756515632076,
+      "footAnchor": 0.925,
+      "footError": 0,
+      "bounds": {
+        "left": 758.1696063749624,
+        "right": 814.7003936250375,
+        "top": 329.5493397604441,
+        "bottom": 369.68000000000006
+      }
+    },
+    {
+      "key": "creature:exp-mastim",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.14592967359838524,
+      "footAnchor": 0.9291666666666667,
+      "footError": 0,
+      "bounds": {
+        "left": 140.23306908208554,
+        "right": 210.89693091791446,
+        "top": 329.5493397604441,
+        "bottom": 369.68000000000006
+      }
+    },
+    {
+      "key": "creature:exp-mastim",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.14592967359838524,
+      "footAnchor": 0.9291666666666667,
+      "footError": 0,
+      "bounds": {
+        "left": 659.7130690820854,
+        "right": 730.3769309179145,
+        "top": 329.5493397604441,
+        "bottom": 369.68000000000006
+      }
+    },
+    {
+      "key": "creature:exp-quasit",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.06956649746192894,
+      "footAnchor": 0.9229166666666667,
+      "footError": 0,
+      "bounds": {
+        "left": 80.36117636630131,
+        "right": 118.45215696703202,
+        "top": 170.91080000000002,
+        "bottom": 198.32000000000002
+      }
+    },
+    {
+      "key": "creature:exp-quasit",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.06956649746192894,
+      "footAnchor": 0.9229166666666667,
+      "footError": 0,
+      "bounds": {
+        "left": 599.8411763663012,
+        "right": 637.9321569670319,
+        "top": 170.91080000000002,
+        "bottom": 198.32000000000002
+      }
+    },
+    {
+      "key": "creature:exp-esfinge",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.06588750000000002,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 205.50185242034314,
+        "right": 237.0181475796569,
+        "top": 170.91080000000002,
+        "bottom": 198.32000000000002
+      }
+    },
+    {
+      "key": "creature:exp-esfinge",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.06588750000000002,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 724.981852420343,
+        "right": 756.4981475796568,
+        "top": 170.91080000000002,
+        "bottom": 198.32000000000002
+      }
+    },
+    {
+      "key": "creature:exp-lobo",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.11797000000000003,
+      "footAnchor": 0.9333333333333333,
+      "footError": 0,
+      "bounds": {
+        "left": 55.58104118028533,
+        "right": 143.232292153048,
+        "top": 227.12720000000004,
+        "bottom": 255.44000000000005
+      }
+    },
+    {
+      "key": "creature:exp-lobo",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.11797000000000003,
+      "footAnchor": 0.9333333333333333,
+      "footError": 0,
+      "bounds": {
+        "left": 575.0610411802852,
+        "right": 662.7122921530479,
+        "top": 227.12720000000004,
+        "bottom": 255.44000000000005
+      }
+    },
+    {
+      "key": "creature:exp-fada",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.06620579710144929,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 324.2419302260227,
+        "right": 361.984736440644,
+        "top": 170.91080000000002,
+        "bottom": 198.32000000000002
+      }
+    },
+    {
+      "key": "creature:exp-fada",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.06620579710144929,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 843.7219302260227,
+        "right": 881.4647364406438,
+        "top": 170.91080000000002,
+        "bottom": 198.32000000000002
+      }
+    },
+    {
+      "key": "creature:exp-construto",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.0680596153846154,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 203.600183430061,
+        "right": 238.91981656993903,
+        "top": 227.12720000000004,
+        "bottom": 255.44000000000005
+      }
+    },
+    {
+      "key": "creature:exp-construto",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.0680596153846154,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 723.0801834300609,
+        "right": 758.3998165699389,
+        "top": 227.12720000000004,
+        "bottom": 255.44000000000005
+      }
+    },
+    {
+      "key": "creature:exp-infernal",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.08115666666666668,
+      "footAnchor": 0.9291666666666667,
+      "footError": 0,
+      "bounds": {
+        "left": 76.27472095056065,
+        "right": 122.53861238277268,
+        "top": 283.34360000000004,
+        "bottom": 312.56000000000006
+      }
+    },
+    {
+      "key": "creature:exp-infernal",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.08115666666666668,
+      "footAnchor": 0.9291666666666667,
+      "footError": 0,
+      "bounds": {
+        "left": 595.7547209505606,
+        "right": 642.0186123827725,
+        "top": 283.34360000000004,
+        "bottom": 312.56000000000006
+      }
+    },
+    {
+      "key": "creature:exp-serpe",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.08553716012084595,
+      "footAnchor": 0.9270833333333334,
+      "footError": 0,
+      "bounds": {
+        "left": 314.6544800871406,
+        "right": 371.5721865795261,
+        "top": 227.12720000000004,
+        "bottom": 255.44000000000005
+      }
+    },
+    {
+      "key": "creature:exp-serpe",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.08553716012084595,
+      "footAnchor": 0.9270833333333334,
+      "footError": 0,
+      "bounds": {
+        "left": 834.1344800871404,
+        "right": 891.052186579526,
+        "top": 227.12720000000004,
+        "bottom": 255.44000000000005
+      }
+    },
+    {
+      "key": "creature:exp-espectro",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.06810349650349651,
+      "footAnchor": 0.9041666666666667,
+      "footError": 0,
+      "bounds": {
+        "left": 200.61803569447795,
+        "right": 241.90196430552209,
+        "top": 283.34360000000004,
+        "bottom": 312.56000000000006
+      }
+    },
+    {
+      "key": "creature:exp-espectro",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.06810349650349651,
+      "footAnchor": 0.9041666666666667,
+      "footError": 0,
+      "bounds": {
+        "left": 720.0980356944779,
+        "right": 761.3819643055219,
+        "top": 283.34360000000004,
+        "bottom": 312.56000000000006
+      }
+    },
+    {
+      "key": "creature:exp-larva",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.10680851063829788,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 191.95198348819545,
+        "right": 250.5680165118046,
+        "top": 339.56000000000006,
+        "bottom": 369.68000000000006
+      }
+    },
+    {
+      "key": "creature:exp-larva",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.10680851063829788,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 711.4319834881953,
+        "right": 770.0480165118045,
+        "top": 339.56000000000006,
+        "bottom": 369.68000000000006
+      }
+    },
+    {
+      "key": "creature:exp-raizes",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.07023173076923078,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 324.75226595864166,
+        "right": 361.47440070802503,
+        "top": 283.34360000000004,
+        "bottom": 312.56000000000006
+      }
+    },
+    {
+      "key": "creature:exp-raizes",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.07023173076923078,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 844.2322659586415,
+        "right": 880.954400708025,
+        "top": 283.34360000000004,
+        "bottom": 312.56000000000006
+      }
+    },
+    {
+      "key": "creature:orc-lanceiro-inverno",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.11847829301191923,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 329.173055525645,
+        "right": 387.51694447435506,
+        "top": 176.36651061787597,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "creature:orc-lanceiro-inverno",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.11847829301191923,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 848.653055525645,
+        "right": 906.9969444743549,
+        "top": 176.36651061787597,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "creature:uruk-hai-capitao",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.10366419266497677,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 56.25700806463034,
+        "right": 112.09299193536968,
+        "top": 250.4993600440347,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "creature:uruk-hai-capitao",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.10366419266497677,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 575.7370080646303,
+        "right": 631.5729919353696,
+        "top": 250.4993600440347,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "creature:exp-elemental",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.11951454630356867,
+      "footAnchor": 0.9270833333333334,
+      "footError": 0,
+      "bounds": {
+        "left": 56.86366762702726,
+        "right": 111.48633237297275,
+        "top": 176.36651061787595,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "creature:exp-elemental",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.11951454630356867,
+      "footAnchor": 0.9270833333333334,
+      "footError": 0,
+      "bounds": {
+        "left": 576.3436676270272,
+        "right": 630.9663323729727,
+        "top": 176.36651061787595,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "visual:barbarvore",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.09854204178395205,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 248.13812554879823,
+        "right": 285.7718744512017,
+        "top": 176.36651061787595,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "visual:barbarvore",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.09854204178395205,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 767.6181255487982,
+        "right": 805.2518744512017,
+        "top": 176.36651061787595,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "creature:exp-montaria",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.09854204178395205,
+      "footAnchor": 0.9291666666666667,
+      "footError": 0,
+      "bounds": {
+        "left": 149.50593676190834,
+        "right": 201.62406323809165,
+        "top": 176.36651061787595,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "creature:exp-montaria",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.09854204178395205,
+      "footAnchor": 0.9291666666666667,
+      "footError": 0,
+      "bounds": {
+        "left": 668.9859367619083,
+        "right": 721.1040632380916,
+        "top": 176.36651061787595,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "creature:vigia-hrim",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.11690391292381891,
+      "footAnchor": 0.9333333333333333,
+      "footError": 0,
+      "bounds": {
+        "left": 150.67340847293332,
+        "right": 200.45659152706668,
+        "top": 250.4993600440347,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "creature:vigia-hrim",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.11690391292381891,
+      "footAnchor": 0.9333333333333333,
+      "footError": 0,
+      "bounds": {
+        "left": 670.1534084729333,
+        "right": 719.9365915270666,
+        "top": 250.4993600440347,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "creature:draig-cinzas",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.1129150655012214,
+      "footAnchor": 0.9270833333333334,
+      "footError": 0,
+      "bounds": {
+        "left": 333.2206209874542,
+        "right": 383.46937901254586,
+        "top": 250.49936004403466,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "creature:draig-cinzas",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.1129150655012214,
+      "footAnchor": 0.9270833333333334,
+      "footError": 0,
+      "bounds": {
+        "left": 852.700620987454,
+        "right": 902.9493790125458,
+        "top": 250.49936004403466,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "creature:criatura-aglor",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.11690391292381891,
+      "footAnchor": 0.9270833333333334,
+      "footError": 0,
+      "bounds": {
+        "left": 230.00127499999996,
+        "right": 303.908725,
+        "top": 250.4993600440347,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "creature:criatura-aglor",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.11690391292381891,
+      "footAnchor": 0.9270833333333334,
+      "footError": 0,
+      "bounds": {
+        "left": 749.481275,
+        "right": 823.3887249999999,
+        "top": 250.4993600440347,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "visual:aglor",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.1210962111016308,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 234.05926600475954,
+        "right": 299.85073399524043,
+        "top": 324.6322094701934,
+        "bottom": 369.68000000000006
+      }
+    },
+    {
+      "key": "visual:aglor",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.1210962111016308,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 753.5392660047595,
+        "right": 819.3307339952404,
+        "top": 324.6322094701934,
+        "bottom": 369.68000000000006
+      }
+    },
+    {
+      "key": "creature:serpe-gelo-hrim",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.14484820106047155,
+      "footAnchor": 0.9208333333333333,
+      "footError": 0,
+      "bounds": {
+        "left": 139.6121355584818,
+        "right": 211.51786444151819,
+        "top": 324.6322094701934,
+        "bottom": 369.68000000000006
+      }
+    },
+    {
+      "key": "creature:serpe-gelo-hrim",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.14484820106047155,
+      "footAnchor": 0.9208333333333333,
+      "footError": 0,
+      "bounds": {
+        "left": 659.0921355584818,
+        "right": 730.9978644415181,
+        "top": 324.6322094701934,
+        "bottom": 369.68000000000006
+      }
+    },
+    {
+      "key": "visual:orc-inverno",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.11529793814432993,
+      "footAnchor": 0.925,
+      "footError": 0,
+      "bounds": {
+        "left": 57.4264143706835,
+        "right": 110.92358562931652,
+        "top": 172.6244,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "visual:orc-inverno",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.11529793814432993,
+      "footAnchor": 0.925,
+      "footError": 0,
+      "bounds": {
+        "left": 576.9064143706835,
+        "right": 630.4035856293165,
+        "top": 172.6244,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "visual:maelith",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.10753750000000004,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 333.3716428661088,
+        "right": 383.31835713389125,
+        "top": 172.62439999999998,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "visual:maelith",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.10753750000000004,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 852.8516428661087,
+        "right": 902.7983571338912,
+        "top": 172.62439999999998,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "visual:alatar",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.11211929824561406,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 151.75706991691945,
+        "right": 199.37293008308055,
+        "top": 172.6244,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "visual:alatar",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.11211929824561406,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 671.2370699169194,
+        "right": 718.8529300830805,
+        "top": 172.6244,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "visual:eira",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.1212346883468835,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 239.71624073267515,
+        "right": 294.1937592673248,
+        "top": 172.6244,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "visual:eira",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.1212346883468835,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 759.1962407326752,
+        "right": 813.6737592673247,
+        "top": 172.6244,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "visual:rei-edran",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.12007109974424557,
+      "footAnchor": 0.9333333333333333,
+      "footError": 0,
+      "bounds": {
+        "left": 59.11344323209239,
+        "right": 109.23655676790763,
+        "top": 246.57220000000004,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "visual:rei-edran",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.12007109974424557,
+      "footAnchor": 0.9333333333333333,
+      "footError": 0,
+      "bounds": {
+        "left": 578.5934432320923,
+        "right": 628.7165567679076,
+        "top": 246.57220000000004,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "visual:morgoth",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.12486117021276599,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 237.88445533654692,
+        "right": 296.02554466345305,
+        "top": 246.57220000000007,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "visual:morgoth",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.12486117021276599,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 757.3644553365468,
+        "right": 815.5055446634531,
+        "top": 246.57220000000007,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "visual:durin-i",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.1238728232189974,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 329.00767939628423,
+        "right": 387.6823206037158,
+        "top": 246.5722,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "visual:durin-i",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.1238728232189974,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 848.4876793962841,
+        "right": 907.1623206037158,
+        "top": 246.5722,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "visual:talenir",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.11422822384428227,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 147.5352006096888,
+        "right": 203.5947993903112,
+        "top": 246.5722,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "visual:talenir",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.11422822384428227,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 667.0152006096887,
+        "right": 723.0747993903112,
+        "top": 246.5722,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "visual:durin-vi",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.14851963746223568,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 232.4146036819522,
+        "right": 301.49539631804777,
+        "top": 320.52000000000004,
+        "bottom": 369.68000000000006
+      }
+    },
+    {
+      "key": "visual:durin-vi",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.14851963746223568,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 751.8946036819522,
+        "right": 820.9753963180477,
+        "top": 320.52000000000004,
+        "bottom": 369.68000000000006
+      }
+    },
+    {
+      "key": "visual:durin-iii",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.14544378698224855,
+      "footAnchor": 0.9333333333333333,
+      "footError": 0,
+      "bounds": {
+        "left": 143.1201272189349,
+        "right": 208.0098727810651,
+        "top": 320.52000000000004,
+        "bottom": 369.68000000000006
+      }
+    },
+    {
+      "key": "visual:durin-iii",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.14544378698224855,
+      "footAnchor": 0.9333333333333333,
+      "footError": 0,
+      "bounds": {
+        "left": 662.6001272189349,
+        "right": 727.4898727810651,
+        "top": 320.52000000000004,
+        "bottom": 369.68000000000006
+      }
+    },
+    {
+      "key": "visual:lethariel",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.10753750000000004,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 63.40198379342432,
+        "right": 104.9480162065757,
+        "top": 172.62439999999998,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "visual:lethariel",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.10753750000000004,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 582.8819837934243,
+        "right": 624.4280162065756,
+        "top": 172.62439999999998,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "visual:guarda-minas-tirith",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.1331416666666667,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 140.5171430109797,
+        "right": 210.6128569890203,
+        "top": 172.6244,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "visual:guarda-minas-tirith",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.1331416666666667,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 659.9971430109797,
+        "right": 730.0928569890202,
+        "top": 172.6244,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "visual:pai-elenya",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.10727961630695447,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 248.9750380473703,
+        "right": 284.9349619526297,
+        "top": 172.6244,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "visual:pai-elenya",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.10727961630695447,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 768.4550380473703,
+        "right": 804.4149619526296,
+        "top": 172.6244,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "visual:harl-durn",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.10753750000000004,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 333.796890562811,
+        "right": 382.8931094371891,
+        "top": 172.62439999999998,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "visual:harl-durn",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.10753750000000004,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 853.2768905628109,
+        "right": 902.373109437189,
+        "top": 172.62439999999998,
+        "bottom": 217.36
+      }
+    },
+    {
+      "key": "visual:dito-afinadinho",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.1128552884615385,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 58.381630123413416,
+        "right": 109.9683698765866,
+        "top": 246.5722,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "visual:dito-afinadinho",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.1128552884615385,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 577.8616301234134,
+        "right": 629.4483698765865,
+        "top": 246.5722,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "character:elenya",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.1265439353099731,
+      "footAnchor": 0.9333333333333333,
+      "footError": 0,
+      "bounds": {
+        "left": 235.01850919313725,
+        "right": 298.8914908068627,
+        "top": 246.57220000000004,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "character:elenya",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.1265439353099731,
+      "footAnchor": 0.9333333333333333,
+      "footError": 0,
+      "bounds": {
+        "left": 754.4985091931372,
+        "right": 818.3714908068627,
+        "top": 246.57220000000004,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "visual:pai-inverno",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.1128552884615385,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 153.58092033012423,
+        "right": 197.54907966987577,
+        "top": 246.5722,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "visual:pai-inverno",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.1128552884615385,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 673.0609203301242,
+        "right": 717.0290796698757,
+        "top": 246.5722,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "character:calion",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.12519413333333337,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 324.575940222376,
+        "right": 392.11405977762405,
+        "top": 246.57220000000004,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "character:calion",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.12519413333333337,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 844.055940222376,
+        "right": 911.5940597776239,
+        "top": 246.57220000000004,
+        "bottom": 293.52000000000004
+      }
+    },
+    {
+      "key": "character:anao",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.11817307692307695,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 246.74921546171987,
+        "right": 287.1607845382801,
+        "top": 320.52000000000004,
+        "bottom": 369.68000000000006
+      }
+    },
+    {
+      "key": "character:anao",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.11817307692307695,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 766.2292154617198,
+        "right": 806.6407845382801,
+        "top": 320.52000000000004,
+        "bottom": 369.68000000000006
+      }
+    },
+    {
+      "key": "character:nando",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.11817307692307695,
+      "footAnchor": 0.9333333333333333,
+      "footError": 0,
+      "bounds": {
+        "left": 148.20887688425955,
+        "right": 202.92112311574044,
+        "top": 320.52000000000004,
+        "bottom": 369.68000000000006
+      }
+    },
+    {
+      "key": "character:nando",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.11817307692307695,
+      "footAnchor": 0.9333333333333333,
+      "footError": 0,
+      "bounds": {
+        "left": 667.6888768842595,
+        "right": 722.4011231157405,
+        "top": 320.52000000000004,
+        "bottom": 369.68000000000006
+      }
+    },
+    {
+      "key": "creature:goblin-lanceiro",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.1611490547162699,
+      "footAnchor": 0.9333333333333333,
+      "footError": 0,
+      "bounds": {
+        "left": 50.3334,
+        "right": 148.47993333333335,
+        "top": 204.8391968190913,
+        "bottom": 255.44000000000005
+      }
+    },
+    {
+      "key": "creature:goblin-lanceiro",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.1611490547162699,
+      "footAnchor": 0.9333333333333333,
+      "footError": 0,
+      "bounds": {
+        "left": 569.8133999999999,
+        "right": 667.9599333333332,
+        "top": 204.8391968190913,
+        "bottom": 255.44000000000005
+      }
+    },
+    {
+      "key": "creature:espectro-sombras",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.1429441599505883,
+      "footAnchor": 0.9291666666666667,
+      "footError": 0,
+      "bounds": {
+        "left": 235.88740002347964,
+        "right": 328.4859333098537,
+        "top": 314.0747217792212,
+        "bottom": 369.68000000000006
+      }
+    },
+    {
+      "key": "creature:espectro-sombras",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.1429441599505883,
+      "footAnchor": 0.9291666666666667,
+      "footError": 0,
+      "bounds": {
+        "left": 755.3674000234795,
+        "right": 847.9659333098535,
+        "top": 314.0747217792212,
+        "bottom": 369.68000000000006
+      }
+    },
+    {
+      "key": "creature:goblin-arqueiro",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.12163654610795373,
+      "footAnchor": 0.9291666666666667,
+      "footError": 0,
+      "bounds": {
+        "left": 192.18310182024928,
+        "right": 250.33689817975076,
+        "top": 204.8391968190913,
+        "bottom": 255.44000000000005
+      }
+    },
+    {
+      "key": "creature:goblin-arqueiro",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.12163654610795373,
+      "footAnchor": 0.9291666666666667,
+      "footError": 0,
+      "bounds": {
+        "left": 711.6631018202492,
+        "right": 769.8168981797506,
+        "top": 204.8391968190913,
+        "bottom": 255.44000000000005
+      }
+    },
+    {
+      "key": "creature:goblin-espadachim",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": 0.1519543639066329,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 299.79242356298255,
+        "right": 386.43424310368414,
+        "top": 204.83919681909128,
+        "bottom": 255.44000000000005
+      }
+    },
+    {
+      "key": "creature:goblin-espadachim",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": -0.1519543639066329,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 819.2724235629825,
+        "right": 905.914243103684,
+        "top": 204.83919681909128,
+        "bottom": 255.44000000000005
+      }
+    },
+    {
+      "key": "creature:uruk-hai-batedor",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "right",
+      "team": "left",
+      "scaleX": -0.13562262980677767,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 122.26398574081956,
+        "right": 198.4026809258471,
+        "top": 314.0747217792212,
+        "bottom": 369.68000000000006
+      }
+    },
+    {
+      "key": "creature:uruk-hai-batedor",
+      "kind": "frames",
+      "fallback": false,
+      "direction": "left",
+      "team": "right",
+      "scaleX": 0.13562262980677767,
+      "footAnchor": 0.93125,
+      "footError": 0,
+      "bounds": {
+        "left": 641.7439857408194,
+        "right": 717.8826809258469,
+        "top": 314.0747217792212,
+        "bottom": 369.68000000000006
+      }
+    }
+  ],
+  "poseChecks": 600,
+  "animatedAttacks": 150,
+  "layouts": [
+    {
+      "width": 1920,
+      "height": 1080,
+      "id": "mordor",
+      "left": 4,
+      "right": 1,
+      "issues": []
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "id": "mordor",
+      "left": 4,
+      "right": 4,
+      "issues": []
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "id": "mordor",
+      "left": 4,
+      "right": 8,
+      "issues": []
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "id": "mordor",
+      "left": 10,
+      "right": 10,
+      "issues": []
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "id": "fangorn",
+      "left": 4,
+      "right": 1,
+      "issues": []
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "id": "fangorn",
+      "left": 4,
+      "right": 4,
+      "issues": []
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "id": "fangorn",
+      "left": 4,
+      "right": 8,
+      "issues": []
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "id": "fangorn",
+      "left": 10,
+      "right": 10,
+      "issues": []
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "id": "rivendell",
+      "left": 4,
+      "right": 1,
+      "issues": []
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "id": "rivendell",
+      "left": 4,
+      "right": 4,
+      "issues": []
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "id": "rivendell",
+      "left": 4,
+      "right": 8,
+      "issues": []
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "id": "rivendell",
+      "left": 10,
+      "right": 10,
+      "issues": []
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "id": "road",
+      "left": 4,
+      "right": 1,
+      "issues": []
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "id": "road",
+      "left": 4,
+      "right": 4,
+      "issues": []
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "id": "road",
+      "left": 4,
+      "right": 8,
+      "issues": []
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "id": "road",
+      "left": 10,
+      "right": 10,
+      "issues": []
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "id": "hrim",
+      "left": 4,
+      "right": 1,
+      "issues": []
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "id": "hrim",
+      "left": 4,
+      "right": 4,
+      "issues": []
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "id": "hrim",
+      "left": 4,
+      "right": 8,
+      "issues": []
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "id": "hrim",
+      "left": 10,
+      "right": 10,
+      "issues": []
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "id": "mordor",
+      "left": 4,
+      "right": 1,
+      "issues": []
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "id": "mordor",
+      "left": 4,
+      "right": 4,
+      "issues": []
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "id": "mordor",
+      "left": 4,
+      "right": 8,
+      "issues": []
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "id": "mordor",
+      "left": 10,
+      "right": 10,
+      "issues": []
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "id": "fangorn",
+      "left": 4,
+      "right": 1,
+      "issues": []
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "id": "fangorn",
+      "left": 4,
+      "right": 4,
+      "issues": []
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "id": "fangorn",
+      "left": 4,
+      "right": 8,
+      "issues": []
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "id": "fangorn",
+      "left": 10,
+      "right": 10,
+      "issues": []
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "id": "rivendell",
+      "left": 4,
+      "right": 1,
+      "issues": []
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "id": "rivendell",
+      "left": 4,
+      "right": 4,
+      "issues": []
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "id": "rivendell",
+      "left": 4,
+      "right": 8,
+      "issues": []
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "id": "rivendell",
+      "left": 10,
+      "right": 10,
+      "issues": []
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "id": "road",
+      "left": 4,
+      "right": 1,
+      "issues": []
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "id": "road",
+      "left": 4,
+      "right": 4,
+      "issues": []
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "id": "road",
+      "left": 4,
+      "right": 8,
+      "issues": []
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "id": "road",
+      "left": 10,
+      "right": 10,
+      "issues": []
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "id": "hrim",
+      "left": 4,
+      "right": 1,
+      "issues": []
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "id": "hrim",
+      "left": 4,
+      "right": 4,
+      "issues": []
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "id": "hrim",
+      "left": 4,
+      "right": 8,
+      "issues": []
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "id": "hrim",
+      "left": 10,
+      "right": 10,
+      "issues": []
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "id": "mordor",
+      "left": 4,
+      "right": 1,
+      "issues": []
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "id": "mordor",
+      "left": 4,
+      "right": 4,
+      "issues": []
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "id": "mordor",
+      "left": 4,
+      "right": 8,
+      "issues": []
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "id": "mordor",
+      "left": 10,
+      "right": 10,
+      "issues": []
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "id": "fangorn",
+      "left": 4,
+      "right": 1,
+      "issues": []
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "id": "fangorn",
+      "left": 4,
+      "right": 4,
+      "issues": []
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "id": "fangorn",
+      "left": 4,
+      "right": 8,
+      "issues": []
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "id": "fangorn",
+      "left": 10,
+      "right": 10,
+      "issues": []
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "id": "rivendell",
+      "left": 4,
+      "right": 1,
+      "issues": []
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "id": "rivendell",
+      "left": 4,
+      "right": 4,
+      "issues": []
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "id": "rivendell",
+      "left": 4,
+      "right": 8,
+      "issues": []
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "id": "rivendell",
+      "left": 10,
+      "right": 10,
+      "issues": []
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "id": "road",
+      "left": 4,
+      "right": 1,
+      "issues": []
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "id": "road",
+      "left": 4,
+      "right": 4,
+      "issues": []
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "id": "road",
+      "left": 4,
+      "right": 8,
+      "issues": []
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "id": "road",
+      "left": 10,
+      "right": 10,
+      "issues": []
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "id": "hrim",
+      "left": 4,
+      "right": 1,
+      "issues": []
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "id": "hrim",
+      "left": 4,
+      "right": 4,
+      "issues": []
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "id": "hrim",
+      "left": 4,
+      "right": 8,
+      "issues": []
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "id": "hrim",
+      "left": 10,
+      "right": 10,
+      "issues": []
+    }
+  ],
+  "fourFrameScenery": true,
+  "effects": [
+    {
+      "spell": "fire",
+      "fx": [
+        {
+          "label": "combat-fx:fire",
+          "w": 83.6058958035951,
+          "h": 46.367999999999995
+        }
+      ]
+    },
+    {
+      "spell": "ice",
+      "fx": [
+        {
+          "label": "combat-fx:ice",
+          "w": 76.80139804206192,
+          "h": 11.280526155336162
+        }
+      ]
+    },
+    {
+      "spell": "lightning",
+      "fx": [
+        {
+          "label": "combat-fx:lightning",
+          "w": 321.9722928692756,
+          "h": 50.06965179281332
+        }
+      ]
+    },
+    {
+      "spell": "missiles",
+      "fx": [
+        {
+          "label": "combat-fx:missiles",
+          "w": 116.50518393234677,
+          "h": 117.42972303823956
+        }
+      ]
+    },
+    {
+      "spell": "wind",
+      "fx": [
+        {
+          "label": "combat-fx:wind",
+          "w": 84.42997097775066,
+          "h": 44.068084025998104
+        }
+      ]
+    },
+    {
+      "spell": "stone",
+      "fx": [
+        {
+          "label": "combat-fx:stone",
+          "w": 71.11074452105743,
+          "h": 33.116283630271994
+        }
+      ]
+    },
+    {
+      "spell": "hurricane",
+      "fx": [
+        {
+          "label": "combat-fx:hurricane",
+          "w": 93.08151958773277,
+          "h": 118.57025436169405
+        }
+      ]
+    },
+    {
+      "spell": "meteor",
+      "fx": [
+        {
+          "label": "combat-fx:meteor",
+          "w": 50.18098243562264,
+          "h": 83.47146194384894
+        }
+      ]
+    },
+    {
+      "spell": "blizzard",
+      "fx": [
+        {
+          "label": "combat-fx:blizzard",
+          "w": 111.35946220101152,
+          "h": 148.91150557531472
+        }
+      ]
+    },
+    {
+      "spell": "tidal",
+      "fx": [
+        {
+          "label": "combat-fx:tidal",
+          "w": 78.65999999999991,
+          "h": 83.18295761982591
+        }
+      ]
+    },
+    {
+      "spell": "poison",
+      "fx": [
+        {
+          "label": "combat-fx:poison",
+          "w": 66.73975959141785,
+          "h": 61.746012224625446
+        }
+      ]
+    },
+    {
+      "spell": "shadow",
+      "fx": [
+        {
+          "label": "combat-fx:shadow",
+          "w": 213.0388350790916,
+          "h": 90.7093372557548
+        }
+      ]
+    },
+    {
+      "spell": "radiance",
+      "fx": [
+        {
+          "label": "combat-fx:radiance",
+          "w": 41.40000000000009,
+          "h": 59.184205779396024
+        }
+      ]
+    },
+    {
+      "spell": "heal",
+      "fx": [
+        {
+          "label": "combat-fx:heal",
+          "w": 59.615999999999985,
+          "h": 265.26023177864124
+        }
+      ]
+    },
+    {
+      "spell": "arrow",
+      "fx": [
+        {
+          "label": "combat-fx:arrow",
+          "w": 49.6169036564616,
+          "h": 10.484525392967328
+        }
+      ]
+    }
+  ],
+  "cleanup": {
+    "roots": 7,
+    "actors": 8,
+    "tweens": 0
+  },
+  "synchronizedScenes": [
+    "mordor",
+    "fangorn",
+    "rivendell",
+    "road",
+    "hrim"
+  ],
+  "damageAndHealingPreserved": true,
+  "hurricaneFatalImpactSynced": true,
+  "tvPrivacyAndMiniatures": true,
+  "sceneAfterReload": true,
+  "sceneInBackup": true,
+  "sceneRestoredFromBackup": true,
+  "catalogCoverage": {
+    "selectable": 71,
+    "fallbacks": []
+  },
+  "performance": {
+    "samples": 150,
+    "medianMs": 16.69999998807907,
+    "p95Ms": 20.599999964237213,
+    "intervalsAbove50ms": 0,
+    "participants": 20
+  },
+  "reducedMotion": true,
+  "errors": [],
+  "external": [],
+  "failed": []
+}

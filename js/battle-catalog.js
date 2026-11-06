@@ -139,6 +139,8 @@
     const entry=(participant.sourceType==='creature'?creatures(state):visuals(state)).find(x=>x.id===participant.sourceId);
     const inherited=entry?.miniatureKey||(!state&&participant.arenaVisual?.key===key?participant.arenaVisual.templateKey:null);
     const templateKey=sprites[key]?key:alias||inherited,mapping=sprites[templateKey];
+    const animation=global.RPG_BATTLE_ANIMATIONS?.[templateKey];
+    if(mapping&&animation)return {key,templateKey,kind:'frames',asset:animation.frames[0],frames:animation.frames,columns:1,frame:null,nativeFacing:animation.nativeFacing||'right',frameFacings:animation.frameFacings||null,fallback:false,reason:''};
     if(mapping)return {key,templateKey,kind:'sheet',asset:mapping.asset,columns:mapping.columns||4,frame:mapping.frame??null,nativeFacing:mapping.nativeFacing||'right',frameFacings:mapping.frameFacings||null,fallback:false,reason:''};
     // Public descriptors carry only the visual identity selected on the master side.
     const transmitted=participant.arenaVisual;

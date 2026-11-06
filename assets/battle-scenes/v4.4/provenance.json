@@ -1,0 +1,9 @@
+{
+  "id": "mordor",
+  "method": "ImageGen, local references; proportional nearest-neighbor export",
+  "prompt": "Use case: stylized-concept. One WIDE 16:9 16-bit pixel-art battle background for an elegant classic SNES dark fantasy RPG. Match reference1's lush detailed pixel clusters, texture, atmospheric depth and quality, but depict MORDOR: distant black serrated mountains, elaborate dark fortress tower inspired by Barad-dur in upper central distance, small fiery luminous eye at its summit, dim orange volcanic light behind ridges, drifting charcoal clouds, ruined masonry at far edges. Camera slight elevated side view. IMPORTANT: horizon at upper 35%, bottom 65% broad flat dark ash-and-basalt battlefield fully usable on left and right, sparse small stones, no foreground obstructions, no central narrow path, no lava across fighting floor. Rich restrained ash charcoal, slate, muted ember palette, readable dark ground contrasting with character miniatures. Grand beautiful environment, finely detailed masonry and rock formations, no simplistic polygons or flat vector shapes. No characters, no text, UI, panels, frame, border. Subtle distant eye, tower does not dominate.",
+  "sourceFile": "exec-9dca78de-9749-4770-b874-a6673fa92191.png",
+  "sourceSHA256": "99e41a2d39aacdb8f1b3a62ece68556a90aeccdbea21c9352cac75ddd30ac81e",
+  "file": "assets/battle-scenes/v4.4/mordor.png",
+  "sha256": "c98008b7d384408165a26a3a27da8eb96eda0d671249f711c9e294c1fd49cd69"
+}
