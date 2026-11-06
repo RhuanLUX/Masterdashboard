@@ -7,7 +7,7 @@
   function settings(combat){return {id:clean(combat?.arenaEnvironment),seed:hash(combat?.id),epoch:0};}
   function mount(layers,W,H,config={}){
     const P=global.PIXI,id=clean(config.id),seed=Number(config.seed)>>>0,roots=[];
-    let disposed=false,mesh,positions,original,dragonSprite,previous=-1,frame=0;
+    let disposed=false,mesh,positions,original,previous=-1,frame=0;
     const motion=new P.Graphics();motion.eventMode='none';motion.scale.set(W/640,H/360);layers.middle.addChild(motion);roots.push(motion);
     const ready=P.Assets.load('assets/battle-scenes/'+(id==='mordor'?'v4.4':'v4.3')+'/'+id+'.png').then(texture=>{
       if(disposed)return;texture.source.scaleMode='nearest';
@@ -18,11 +18,9 @@
       // No bitmap is cut into rectangles, and the lower fighting surface stays fixed.
       const shade=new P.Graphics();shade.rect(0,0,W,H).fill({color:0x07131d,alpha:id==='hrim'?.20:id==='rivendell'?.17:.08});layers.distant.addChild(shade);roots.push(shade);
     });
-    const dragon=new P.Container();dragon.eventMode='none';dragon.visible=false;layers.middle.addChild(dragon);roots.push(dragon);
-    const dragonReady=(id==='mordor'||id==='hrim')?Promise.all([0,1,2].map(i=>P.Assets.load('assets/themes/dragon-flight/fly-'+i+'.png'))).then(textures=>{
-      if(disposed)return;for(const t of textures)t.source.scaleMode='nearest';dragonSprite=new P.AnimatedSprite([textures[0],textures[1],textures[2],textures[1]]);dragonSprite.anchor.set(.5);dragonSprite.tint=id==='mordor'?0x606473:0x758c9b;dragonSprite.alpha=.65;dragon.addChild(dragonSprite);
-    }):Promise.resolve();
+    const visitors=global.RPGBattleAmbience.mount(layers.middle,W,H,{...config,id,seed});
     function tick(now,reduced=false){
+      visitors.tick(now,reduced);
       const time=reduced?0:Math.max(0,now-Number(config.epoch||0)),step=Math.floor(time/125);if(step===previous)return;previous=step;frame=step%4;
       const f=[0,1,0,-1][frame];motion.clear();
       if(mesh){
@@ -43,14 +41,6 @@
         if(!reduced)for(let i=0;i<3;i++){const x=(time*.0009+i*229)%840-100;motion.ellipse(x,29+i*15,83,7).fill({color:0x16181d,alpha:.08});}
       }
       if(id==='road'){
-        // A second small wagon passes occasionally along the distant bridge.
-        const t=((time/1000+seed%29)%54);if(t<16&&!reduced){const x=270+t/16*235,y=109;
-          motion.rect(x,y-8,14,7).fill(0x51372f).poly([x-1,y-8,x+2,y-13,x+11,y-13,x+15,y-8]).fill(0x98805b);
-          motion.rect(x+3,y-6,3,3).fill(0xe6b875).rect(x+8,y-6,3,3).fill(0xe6b875);
-          for(const ox of [3,12])motion.circle(x+ox,y,2.8).fill(0x29272b).moveTo(x+ox-2,y+f).lineTo(x+ox+2,y-f).stroke({color:0x8d7860,width:1});
-          motion.rect(x+14,y-3,7,1).fill(0x4a3025).poly([x+21,y-6,x+29,y-6,x+30,y-10,x+33,y-10,x+34,y-8,x+31,y-6,x+29,y-2,x+21,y-2]).fill(0x30282b);
-          for(const ox of [22,28])motion.moveTo(x+ox,y-2).lineTo(x+ox+f,y+2).stroke({color:0x30282b,width:1});
-        }
         // Cloth tips flutter, offset in phase; no synchronization with combat actions.
         for(const [x,y,phase]of [[155,109,0],[617,96,2]]){const sway=[0,1,0,-1][(frame+phase)%4];motion.poly([x-3,y-8,x+3,y-8,x+3+sway,y,x,y-3,x-3+sway,y]).fill({color:0x7d2943,alpha:.8});}
       }
@@ -62,10 +52,9 @@
         const t=(time/1000*.05+i*.19)%1,x=(time*.009+i*123+seed%100)%640,y=30+t*110;
         motion.poly([x-2,y,x+Math.cos(t*12+i)*3,y-1,x+2,y+1,x,y+2]).fill({color:id==='fangorn'?0x829352:0xb9995a,alpha:.5});
       }
-      const flight=((time/1000+seed%31)%63);dragon.visible=!reduced&&flight<13;
-      if(dragonSprite){dragon.position.set((-45+flight/13*740)*W/640,(32+Math.sin(flight*.4)*9)*H/360);dragonSprite.gotoAndStop(frame);const scale=48/dragonSprite.texture.width;dragonSprite.scale.set(scale*W/640,scale*H/360);}
+
     }
-    return {id,seed,ready:Promise.all([ready,dragonReady]),get frame(){return frame;},tick,destroy(){disposed=true;for(const g of roots)if(!g.destroyed)g.destroy({children:true});}};
+    return {id,seed,ready:Promise.all([ready,visitors.ready]),get frame(){return frame;},get visitors(){return visitors.visitors;},tick,destroy(){disposed=true;visitors.destroy();for(const g of roots)if(!g.destroyed)g.destroy({children:true});}};
   }
   global.RPGBattleEnvironment={choices,clean,settings,mount};
 })(window);

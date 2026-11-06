@@ -62,3 +62,12 @@ A procedência e os hashes estão em `assets/animation-frames/v4.4/provenance.js
 Não foram extraídos sprites de jogos comerciais; não há geração ou download
 durante o uso. Os novos efeitos são desenhos procedurais locais no PixiJS.
 Isso não altera os direitos sobre personagens ou universos preexistentes.
+
+## Visitantes da arena 4.4.1
+
+Corvo, águia, coruja, cervo e caravana receberam quatro poses cada, geradas com
+ImageGen para este projeto. São 20 PNGs locais, transparentes e separados por
+silhueta; nenhum sprite foi extraído de jogos comerciais. O dragão anterior
+continua reutilizado. Prompts, referência e nomes dos originais estão em
+`assets/battle-scenes/visitors/v4.4.1/provenance.json`; hashes e pontos de registro
+estão em `docs/qa-ambient-visitors/`. Não há download nem geração durante o uso.

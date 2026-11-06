@@ -1,0 +1,55 @@
+{
+  "mordor": {
+    "types": [
+      "raven",
+      "dragon"
+    ],
+    "events": 210,
+    "maxVisible": 5,
+    "activeFraction": 0.26903935185185185,
+    "differentIntervals": 152
+  },
+  "fangorn": {
+    "types": [
+      "raven",
+      "stag",
+      "owl"
+    ],
+    "events": 210,
+    "maxVisible": 5,
+    "activeFraction": 0.3117361111111111,
+    "differentIntervals": 152
+  },
+  "rivendell": {
+    "types": [
+      "owl",
+      "eagle"
+    ],
+    "events": 210,
+    "maxVisible": 2,
+    "activeFraction": 0.3020717592592593,
+    "differentIntervals": 152
+  },
+  "road": {
+    "types": [
+      "stag",
+      "caravan",
+      "raven"
+    ],
+    "events": 210,
+    "maxVisible": 5,
+    "activeFraction": 0.33108796296296295,
+    "differentIntervals": 152
+  },
+  "hrim": {
+    "types": [
+      "dragon",
+      "eagle",
+      "raven"
+    ],
+    "events": 210,
+    "maxVisible": 5,
+    "activeFraction": 0.28984953703703703,
+    "differentIntervals": 152
+  }
+}

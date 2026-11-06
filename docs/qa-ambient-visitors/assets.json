@@ -1,0 +1,342 @@
+[
+  {
+    "id": "raven",
+    "frame": 0,
+    "file": "assets/battle-scenes/visitors/v4.4.1/raven/0.png",
+    "hash": "79853fc3001132eb2d67c3e15a3a677ce1a7bc7f2988df6c5fdd6ae62f513790",
+    "opaque": 73318,
+    "bounds": {
+      "left": 39,
+      "right": 439,
+      "top": 85,
+      "bottom": 447
+    },
+    "anchor": [
+      0.60293,
+      0.776534
+    ]
+  },
+  {
+    "id": "raven",
+    "frame": 1,
+    "file": "assets/battle-scenes/visitors/v4.4.1/raven/1.png",
+    "hash": "f2d8c808a1c17c1db0ae0a145bd133ea4a758776884cd9437bbd17642ffb42a9",
+    "opaque": 47371,
+    "bounds": {
+      "left": 38,
+      "right": 441,
+      "top": 224,
+      "bottom": 447
+    },
+    "anchor": [
+      0.613599,
+      0.776534
+    ]
+  },
+  {
+    "id": "raven",
+    "frame": 2,
+    "file": "assets/battle-scenes/visitors/v4.4.1/raven/2.png",
+    "hash": "08f46dc210a04a3206c030524b8d82027f06a360c5010de4aa165e3d4bdeb394",
+    "opaque": 62351,
+    "bounds": {
+      "left": 36,
+      "right": 443,
+      "top": 157,
+      "bottom": 447
+    },
+    "anchor": [
+      0.603308,
+      0.443201
+    ]
+  },
+  {
+    "id": "raven",
+    "frame": 3,
+    "file": "assets/battle-scenes/visitors/v4.4.1/raven/3.png",
+    "hash": "21827e4a657d48b4f15e258c8f675524d45f6938fca43fbbbc77c54822985351",
+    "opaque": 50607,
+    "bounds": {
+      "left": 39,
+      "right": 440,
+      "top": 193,
+      "bottom": 447
+    },
+    "anchor": [
+      0.613725,
+      0.776534
+    ]
+  },
+  {
+    "id": "eagle",
+    "frame": 0,
+    "file": "assets/battle-scenes/visitors/v4.4.1/eagle/0.png",
+    "hash": "f38274acc8e675829c2c179558f5617686997dede2a88890af99fcef141b4e09",
+    "opaque": 81999,
+    "bounds": {
+      "left": 51,
+      "right": 428,
+      "top": 66,
+      "bottom": 447
+    },
+    "anchor": [
+      0.558696,
+      0.830686
+    ]
+  },
+  {
+    "id": "eagle",
+    "frame": 1,
+    "file": "assets/battle-scenes/visitors/v4.4.1/eagle/1.png",
+    "hash": "4196a082d7f3ac8fef7bec9d438f4700e172014098d71e818f6dcf65edeb36ab",
+    "opaque": 62497,
+    "bounds": {
+      "left": 32,
+      "right": 447,
+      "top": 195,
+      "bottom": 447
+    },
+    "anchor": [
+      0.604043,
+      0.830542
+    ]
+  },
+  {
+    "id": "eagle",
+    "frame": 2,
+    "file": "assets/battle-scenes/visitors/v4.4.1/eagle/2.png",
+    "hash": "11e8c66ea1c802c1e9d27ce99429e1f6d5f34e94d906f1c2db1aac95f42deb57",
+    "opaque": 66749,
+    "bounds": {
+      "left": 35,
+      "right": 443,
+      "top": 143,
+      "bottom": 447
+    },
+    "anchor": [
+      0.544168,
+      0.426425
+    ]
+  },
+  {
+    "id": "eagle",
+    "frame": 3,
+    "file": "assets/battle-scenes/visitors/v4.4.1/eagle/3.png",
+    "hash": "7bc2836524f25a1c4cd08b5b3593529abc40cdbab3695cc18cd3a78fb66eb665",
+    "opaque": 63496,
+    "bounds": {
+      "left": 44,
+      "right": 434,
+      "top": 172,
+      "bottom": 447
+    },
+    "anchor": [
+      0.587424,
+      0.832267
+    ]
+  },
+  {
+    "id": "owl",
+    "frame": 0,
+    "file": "assets/battle-scenes/visitors/v4.4.1/owl/0.png",
+    "hash": "7d7ae6df2b03275f0260e90d903130fb2de66d6501524e86dc5bfd6184ea09da",
+    "opaque": 81546,
+    "bounds": {
+      "left": 54,
+      "right": 424,
+      "top": 117,
+      "bottom": 447
+    },
+    "anchor": [
+      0.598006,
+      0.816117
+    ]
+  },
+  {
+    "id": "owl",
+    "frame": 1,
+    "file": "assets/battle-scenes/visitors/v4.4.1/owl/1.png",
+    "hash": "67b542a8c0fedfb6b0e9507476cee533676c72a21fb160c735ee15b2f45b781e",
+    "opaque": 67961,
+    "bounds": {
+      "left": 37,
+      "right": 441,
+      "top": 166,
+      "bottom": 447
+    },
+    "anchor": [
+      0.574711,
+      0.630701
+    ]
+  },
+  {
+    "id": "owl",
+    "frame": 2,
+    "file": "assets/battle-scenes/visitors/v4.4.1/owl/2.png",
+    "hash": "8682f2c87cff332a83cfdf7ac795e3fbe443b91b768f95a124713cc4bb756c8e",
+    "opaque": 80978,
+    "bounds": {
+      "left": 37,
+      "right": 441,
+      "top": 115,
+      "bottom": 447
+    },
+    "anchor": [
+      0.562085,
+      0.422367
+    ]
+  },
+  {
+    "id": "owl",
+    "frame": 3,
+    "file": "assets/battle-scenes/visitors/v4.4.1/owl/3.png",
+    "hash": "a50fab79e88b7b71d7a69ba66ff19d9cf547e73e67fb1f10ab2cdde46d8d3b79",
+    "opaque": 64817,
+    "bounds": {
+      "left": 49,
+      "right": 430,
+      "top": 180,
+      "bottom": 447
+    },
+    "anchor": [
+      0.59788,
+      0.816117
+    ]
+  },
+  {
+    "id": "stag",
+    "frame": 0,
+    "file": "assets/battle-scenes/visitors/v4.4.1/stag/0.png",
+    "hash": "1fda822aa3347cad5f4645f6b9549d1f34c9da3d0e4a99b0ec76eb3b8e013a5e",
+    "opaque": 49071,
+    "bounds": {
+      "left": 66,
+      "right": 413,
+      "top": 69,
+      "bottom": 447
+    },
+    "anchor": [
+      0.491321,
+      0.932263
+    ]
+  },
+  {
+    "id": "stag",
+    "frame": 1,
+    "file": "assets/battle-scenes/visitors/v4.4.1/stag/1.png",
+    "hash": "f24b58bc7a9cd4bf6c825b36ff8c18fcb37f1e376d13acc7a99f2cac61e3cf62",
+    "opaque": 47448,
+    "bounds": {
+      "left": 76,
+      "right": 402,
+      "top": 67,
+      "bottom": 447
+    },
+    "anchor": [
+      0.463985,
+      0.932263
+    ]
+  },
+  {
+    "id": "stag",
+    "frame": 2,
+    "file": "assets/battle-scenes/visitors/v4.4.1/stag/2.png",
+    "hash": "47a3dd2c70de729c23017606c20b06701f137cd6060c1c83bd752808ae35ab8d",
+    "opaque": 48239,
+    "bounds": {
+      "left": 82,
+      "right": 397,
+      "top": 67,
+      "bottom": 447
+    },
+    "anchor": [
+      0.451485,
+      0.932263
+    ]
+  },
+  {
+    "id": "stag",
+    "frame": 3,
+    "file": "assets/battle-scenes/visitors/v4.4.1/stag/3.png",
+    "hash": "7d73db6cfcffba97f4a17d5b533136b142dc9d6963fc5cc73b47f26d2e631b4d",
+    "opaque": 48918,
+    "bounds": {
+      "left": 66,
+      "right": 412,
+      "top": 70,
+      "bottom": 447
+    },
+    "anchor": [
+      0.484945,
+      0.93643
+    ]
+  },
+  {
+    "id": "caravan",
+    "frame": 0,
+    "file": "assets/battle-scenes/visitors/v4.4.1/caravan/0.png",
+    "hash": "bea9da294a3963d55c8ba52166b43c67fbbcecb3206bf3da999971d23e889cd2",
+    "opaque": 62181,
+    "bounds": {
+      "left": 33,
+      "right": 445,
+      "top": 215,
+      "bottom": 447
+    },
+    "anchor": [
+      0.473132,
+      0.931353
+    ]
+  },
+  {
+    "id": "caravan",
+    "frame": 1,
+    "file": "assets/battle-scenes/visitors/v4.4.1/caravan/1.png",
+    "hash": "3061abe7c6fec2ddfc83e68901ee17bc0377b23bf5752c9d90d85a1274b91029",
+    "opaque": 61663,
+    "bounds": {
+      "left": 33,
+      "right": 446,
+      "top": 217,
+      "bottom": 447
+    },
+    "anchor": [
+      0.473132,
+      0.935519
+    ]
+  },
+  {
+    "id": "caravan",
+    "frame": 2,
+    "file": "assets/battle-scenes/visitors/v4.4.1/caravan/2.png",
+    "hash": "8f0af79fe9f076a6e92bc3433c3fbc22e1b54edb35d838dd1aa5c132a4473591",
+    "opaque": 62366,
+    "bounds": {
+      "left": 32,
+      "right": 447,
+      "top": 218,
+      "bottom": 447
+    },
+    "anchor": [
+      0.471049,
+      0.937603
+    ]
+  },
+  {
+    "id": "caravan",
+    "frame": 3,
+    "file": "assets/battle-scenes/visitors/v4.4.1/caravan/3.png",
+    "hash": "75f7a488b327721c93f13806ccbe013a9891137b206e7c83baff0eba8fb2e8ab",
+    "opaque": 61044,
+    "bounds": {
+      "left": 33,
+      "right": 446,
+      "top": 218,
+      "bottom": 447
+    },
+    "anchor": [
+      0.471223,
+      0.937603
+    ]
+  }
+]

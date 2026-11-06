@@ -1,6 +1,8 @@
 # RPG Master — Crônica dos Três Destinos
 
-**Versão atual do código: 4.4.0 — catálogo animado, 13 efeitos de magia e nova arte de Mordor. Nenhum novo instalador foi gerado.** Execute **INICIAR_RPG.bat** (Windows) ou **INICIAR_RPG.command** (macOS) nesta pasta. Seus controles continuam em **Mesa → Combate**. Para os jogadores, abra **TV de combate** e arraste a janela para a segunda tela. Todos os participantes, alvos e efeitos da arena são refletidos na TV; flags antigas de revelação não escondem inimigos nem bloqueiam ataques.
+**Versão atual do código: 4.4.1 — visitantes animados nos cenários, catálogo animado e 13 efeitos de magia. Nenhum novo instalador foi gerado.** Execute **INICIAR_RPG.bat** (Windows) ou **INICIAR_RPG.command** (macOS) nesta pasta. Seus controles continuam em **Mesa → Combate**. Para os jogadores, abra **TV de combate** e arraste a janela para a segunda tela. Todos os participantes, alvos e efeitos da arena são refletidos na TV; flags antigas de revelação não escondem inimigos nem bloqueiam ataques.
+
+Além do dragão, os cenários recebem aparições ocasionais de corvos, águias, corujas, cervos e uma caravana. Cada ambiente tem visitantes próprios, com quadros individuais e passagens em direções e intervalos variados, sincronizadas na TV. O recurso respeita **reduzir movimento** do sistema. Atualize as duas janelas com **F5**. Veja as [aparições e a verificação visual](docs/AMBIENTACAO_V4_4_1.md).
 
 Na arena, escolha **Cenário**: Mordor, Fangorn, Valfenda, Estrada Real ou Hrim. O encontro guarda a escolha e a TV acompanha. As 75 identidades visuais do catálogo têm quatro poses próprias, em PNGs separados: preparação, antecipação, golpe e recuperação. **Magia** oferece também Furacão, Meteoro, Nevasca, Onda das marés, Nuvem venenosa, Lanças das sombras e Luz sagrada. **Cura** continua com a aura descendente. Consulte o [guia das animações e magias](docs/ARENA_V4_4.md) e o [QA com capturas reais](docs/QA_ARENA_V4_4.md).
 

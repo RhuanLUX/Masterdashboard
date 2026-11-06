@@ -1,0 +1,148 @@
+{
+  "visitors": [
+    {
+      "id": "mordor",
+      "type": "raven",
+      "direction": 1,
+      "frames": 4,
+      "visible": 5
+    },
+    {
+      "id": "mordor",
+      "type": "raven",
+      "direction": -1,
+      "frames": 4,
+      "visible": 5
+    },
+    {
+      "id": "hrim",
+      "type": "dragon",
+      "direction": 1,
+      "frames": 4,
+      "visible": 1
+    },
+    {
+      "id": "hrim",
+      "type": "dragon",
+      "direction": -1,
+      "frames": 4,
+      "visible": 1
+    },
+    {
+      "id": "rivendell",
+      "type": "eagle",
+      "direction": 1,
+      "frames": 4,
+      "visible": 1
+    },
+    {
+      "id": "rivendell",
+      "type": "eagle",
+      "direction": -1,
+      "frames": 4,
+      "visible": 1
+    },
+    {
+      "id": "fangorn",
+      "type": "owl",
+      "direction": 1,
+      "frames": 4,
+      "visible": 1
+    },
+    {
+      "id": "fangorn",
+      "type": "owl",
+      "direction": -1,
+      "frames": 4,
+      "visible": 1
+    },
+    {
+      "id": "fangorn",
+      "type": "stag",
+      "direction": 1,
+      "frames": 4,
+      "visible": 1
+    },
+    {
+      "id": "fangorn",
+      "type": "stag",
+      "direction": -1,
+      "frames": 4,
+      "visible": 1
+    },
+    {
+      "id": "road",
+      "type": "caravan",
+      "direction": 1,
+      "frames": 4,
+      "visible": 1
+    },
+    {
+      "id": "road",
+      "type": "caravan",
+      "direction": -1,
+      "frames": 4,
+      "visible": 1
+    }
+  ],
+  "reducedMotion": true,
+  "cleanup": {
+    "roots": 7,
+    "visitors": 1,
+    "actors": 20
+  },
+  "synchronization": [
+    {
+      "id": "mordor",
+      "type": "raven",
+      "visitors": 4
+    },
+    {
+      "id": "fangorn",
+      "type": "stag",
+      "visitors": 1
+    },
+    {
+      "id": "rivendell",
+      "type": "eagle",
+      "visitors": 1
+    },
+    {
+      "id": "road",
+      "type": "caravan",
+      "visitors": 1
+    },
+    {
+      "id": "hrim",
+      "type": "dragon",
+      "visitors": 1
+    }
+  ],
+  "privacy": true,
+  "attackDuringVisitor": true,
+  "viewports": [
+    {
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "width": 1366,
+      "height": 768
+    },
+    {
+      "width": 1280,
+      "height": 800
+    }
+  ],
+  "performance": {
+    "samples": 150,
+    "medianMs": 16.69999998807907,
+    "p95Ms": 20.80000001192093,
+    "over50ms": 0,
+    "participants": 20,
+    "visitors": 5
+  },
+  "errors": [],
+  "external": [],
+  "failed": []
+}

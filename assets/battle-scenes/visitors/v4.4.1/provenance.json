@@ -1,0 +1,65 @@
+{
+  "version": "4.4.1",
+  "mode": "builtin image_gen",
+  "purpose": "Four-frame local pixel-art ambient visitors for the battle arena",
+  "reference": "assets/themes/dragon-flight/fly-0.png",
+  "transparent_background": true,
+  "processing": "Connected-alpha silhouette extraction, proportional nearest-neighbor resize, manual registration point per pose; no runtime atlas slicing.",
+  "jobs": [
+    {
+      "id": "raven",
+      "prompt": "Use case: stylized-concept. Asset: four-frame ambient animation for a classic SNES dark-fantasy RPG battlefield. Create ONE WIDE 3:1 strip with FOUR distinct sequential motion poses of the SAME subject, all facing RIGHT, arranged horizontally. Detailed polished 16-bit pixel art, crisp readable pixel clusters, natural anatomy, restrained rich shading, matching the pixel art reference. No text or panel borders. Each pose fully separate with at least 70px genuinely transparent empty gutter. Complete silhouettes and outer margins: no clipped wings, antlers, wheels or feet. Genuinely transparent alpha background, no white paper, gray haze, backdrop, floor, shadow or scenery. Keep head and torso at the SAME height and scale across frames; only articulated parts move, seamless looping motion. Subject: ONE handsome black raven flying horizontally, glossy charcoal and subtle blue-violet feather highlights, black beak, no equipment. Four wingbeat phases: wings high, wings halfway down, wings low, wings halfway rising. Side/three-quarter view. Bird body axis remains horizontal, legs tucked. No other bird in a pose.",
+      "original": "exec-438b6e27-fb39-4d7f-89e1-8b46df9cba84.png",
+      "files": [
+        "assets/battle-scenes/visitors/v4.4.1/raven/0.png",
+        "assets/battle-scenes/visitors/v4.4.1/raven/1.png",
+        "assets/battle-scenes/visitors/v4.4.1/raven/2.png",
+        "assets/battle-scenes/visitors/v4.4.1/raven/3.png"
+      ]
+    },
+    {
+      "id": "eagle",
+      "prompt": "Use case: stylized-concept. Asset: four-frame ambient animation for a classic SNES dark-fantasy RPG battlefield. Create ONE WIDE 3:1 strip with FOUR distinct sequential motion poses of the SAME subject, all facing RIGHT, arranged horizontally. Detailed polished 16-bit pixel art, crisp readable pixel clusters, natural anatomy, restrained rich shading, matching the pixel art reference. No text or panel borders. Each pose fully separate with at least 70px genuinely transparent empty gutter. Complete silhouettes and outer margins: no clipped wings, antlers, wheels or feet. Genuinely transparent alpha background, no white paper, gray haze, backdrop, floor, shadow or scenery. Keep head and torso at the SAME height and scale across frames; only articulated parts move, seamless looping motion. Subject: ONE majestic natural golden eagle, deep brown wing feathers with pale cream tips, golden nape, hooked beak. Four wingbeat phases high/mid/down/mid rising. Horizontal flight, legs tucked, detailed feather layering, no armor. Torso remains horizontal and level. No other bird in a pose.",
+      "original": "exec-99bb4014-54d5-45ea-a93a-f9833b4855c8.png",
+      "files": [
+        "assets/battle-scenes/visitors/v4.4.1/eagle/0.png",
+        "assets/battle-scenes/visitors/v4.4.1/eagle/1.png",
+        "assets/battle-scenes/visitors/v4.4.1/eagle/2.png",
+        "assets/battle-scenes/visitors/v4.4.1/eagle/3.png"
+      ]
+    },
+    {
+      "id": "owl",
+      "prompt": "Use case: stylized-concept. Asset: four-frame ambient animation for a classic SNES dark-fantasy RPG battlefield. Create ONE WIDE 3:1 strip with FOUR distinct sequential motion poses of the SAME subject, all facing RIGHT, arranged horizontally. Detailed polished 16-bit pixel art, crisp readable pixel clusters, natural anatomy, restrained rich shading, matching the pixel art reference. No text or panel borders. Each pose fully separate with at least 70px genuinely transparent empty gutter. Complete silhouettes and outer margins: no clipped wings, antlers, wheels or feet. Genuinely transparent alpha background, no white paper, gray haze, backdrop, floor, shadow or scenery. Keep head and torso at the SAME height and scale across frames; only articulated parts move, seamless looping motion. Subject: ONE tawny barn owl in graceful flight, cream heart-shaped facial disk and russet/tan patterned wings, golden-brown tones. Four wingbeat phases high/mid/down/mid rising, body horizontal and head level, legs tucked. Side/three-quarter view, natural owl anatomy, no other bird in a pose.",
+      "original": "exec-fc19bd0a-d989-4fbd-a2c5-4165cb864e7d.png",
+      "files": [
+        "assets/battle-scenes/visitors/v4.4.1/owl/0.png",
+        "assets/battle-scenes/visitors/v4.4.1/owl/1.png",
+        "assets/battle-scenes/visitors/v4.4.1/owl/2.png",
+        "assets/battle-scenes/visitors/v4.4.1/owl/3.png"
+      ]
+    },
+    {
+      "id": "stag",
+      "prompt": "Use case: stylized-concept. Asset: four-frame ambient animation for a classic SNES dark-fantasy RPG battlefield. Create ONE WIDE 3:1 strip with FOUR distinct sequential motion poses of the SAME subject, all facing RIGHT, arranged horizontally. Detailed polished 16-bit pixel art, crisp readable pixel clusters, natural anatomy, restrained rich shading, matching the pixel art reference. No text or panel borders. Each pose fully separate with at least 70px genuinely transparent empty gutter. Complete silhouettes and outer margins: no clipped wings, antlers, wheels or feet. Genuinely transparent alpha background, no white paper, gray haze, backdrop, floor, shadow or scenery. Keep head and torso at the SAME height and scale across frames; only articulated parts move, seamless looping motion. Subject: ONE beautiful forest stag, rich chestnut coat, cream throat, branching symmetrical antlers. Four sequential walking/trotting gait phases, calm natural movement with articulate legs. Same head, antlers and torso proportions in every frame. Full hooves and antlers. No rider, no armor, no magic.",
+      "original": "exec-031844d4-77a2-4bdd-b38a-0863070c893b.png",
+      "files": [
+        "assets/battle-scenes/visitors/v4.4.1/stag/0.png",
+        "assets/battle-scenes/visitors/v4.4.1/stag/1.png",
+        "assets/battle-scenes/visitors/v4.4.1/stag/2.png",
+        "assets/battle-scenes/visitors/v4.4.1/stag/3.png"
+      ]
+    },
+    {
+      "id": "caravan",
+      "prompt": "Use case: stylized-concept. Asset: four-frame ambient animation for a classic SNES dark-fantasy RPG battlefield. Create ONE WIDE 3:1 strip with FOUR distinct sequential motion poses of the SAME subject, all facing RIGHT, arranged horizontally. Detailed polished 16-bit pixel art, crisp readable pixel clusters, natural anatomy, restrained rich shading, matching the pixel art reference. No text or panel borders. Each pose fully separate with at least 70px genuinely transparent empty gutter. Complete silhouettes and outer margins: no clipped wings, antlers, wheels or feet. Genuinely transparent alpha background, no white paper, gray haze, backdrop, floor, shadow or scenery. Keep head and torso at the SAME height and scale across frames; only articulated parts move, seamless looping motion. Subject: ONE elegant small medieval horse-drawn merchant caravan, single chestnut horse pulling a wooden wagon with arched dark burgundy canvas roof, brass lantern and luggage, restrained fantasy craftsmanship. The horse and wagon are ONE connected unit with shafts and harness. Four consecutive walking gait phases of the horse with rotated wheel spokes; wagon proportions absolutely constant and level. Empty/no readable driver face. Full horse from head to hooves and full wagon in every pose. It will pass far in the background at small scale, so strong clean silhouette.",
+      "original": "exec-7df5bffb-5d60-4e72-9226-909d128f9c36.png",
+      "files": [
+        "assets/battle-scenes/visitors/v4.4.1/caravan/0.png",
+        "assets/battle-scenes/visitors/v4.4.1/caravan/1.png",
+        "assets/battle-scenes/visitors/v4.4.1/caravan/2.png",
+        "assets/battle-scenes/visitors/v4.4.1/caravan/3.png"
+      ]
+    }
+  ]
+}
