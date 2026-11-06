@@ -1,0 +1,85 @@
+{
+  "fatalAttackSynced": true,
+  "healingRestoresPose": true,
+  "manualDamageAndUndo": true,
+  "timedSpeechSynced": true,
+  "bubblesCleaned": true,
+  "reloadNoDeathReplay": true,
+  "reducedMotion": true,
+  "layouts": [
+    {
+      "width": 1920,
+      "height": 1080,
+      "allies": 4,
+      "enemies": 1
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "allies": 4,
+      "enemies": 4
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "allies": 4,
+      "enemies": 8
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "allies": 4,
+      "enemies": 16
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "allies": 4,
+      "enemies": 1
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "allies": 4,
+      "enemies": 4
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "allies": 4,
+      "enemies": 8
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "allies": 4,
+      "enemies": 16
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "allies": 4,
+      "enemies": 1
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "allies": 4,
+      "enemies": 4
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "allies": 4,
+      "enemies": 8
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "allies": 4,
+      "enemies": 16
+    }
+  ],
+  "errors": [],
+  "external": []
+}

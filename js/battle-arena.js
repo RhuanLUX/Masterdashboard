@@ -99,6 +99,7 @@
       scene?.updateParticipants(combat.participants,{impactDelay});
       effectHandle=scene&&window.RPGBattlePixi.flash(scene,actorId(),targetId(),kind,text,{spell:magicSpell,outcome});
       broadcast(combat,{actorId:actorId(),targetId:targetId(),kind,spell:magicSpell,outcome,text});save();
+      director.action(combat,{actorId:actorId(),targetId:targetId(),kind:action,outcome,damage:action==='heal'?0:amount});
       $('[data-arena-confirm]',root).disabled=true;
       clearTimeout(refreshTimer);refreshTimer=setTimeout(refresh,Math.max((effectHandle?.duration||650)+150,...[...scene?.actors.values()||[]].filter(a=>a.falling).map(()=>impactDelay+950))); };
     $('[data-arena-skip]', root).onclick=async()=> {effectHandle?.cancel();clearTimeout(refreshTimer);refresh();};
@@ -122,7 +123,7 @@
     $('[data-arena-present]', root).onclick=()=>window.RPGCombatTV.open();
   }
   window.RPGBattleArena={publicPayload,mirrorPayload};
-  const director=window.RPGBattleLife.createDirector({emit:speech=>{const combat=current();if(!combat)return;if(scene?.container.isConnected&&sceneCombatId===combat.id)window.RPGBattlePixi.speak(scene,speech);broadcast(combat,null,speech);}});
+  const director=window.RPGBattleLife.createDirector({onChange:()=>host().persist(),emit:speech=>{const combat=current();if(!combat)return;if(scene?.container.isConnected&&sceneCombatId===combat.id)window.RPGBattlePixi.speak(scene,speech);broadcast(combat,null,speech);}});
   const chatter=setInterval(()=>director.tick(state()?current():null),500);
   addEventListener('pagehide',()=>clearInterval(chatter));
   new MutationObserver(() => { if(scene&&!scene.container.isConnected){retainPose();scene.destroy();scene=null;} if ($('.combat-list')) mount(); }).observe(document.documentElement, { childList: true, subtree: true }); setTimeout(mount, 400);

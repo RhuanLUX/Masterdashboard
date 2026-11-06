@@ -1,4 +1,4 @@
-# TV de combate — 4.1.3
+# TV de combate — 4.1.4
 
 Execute o projeto pelo iniciador habitual. Abra **Mesa → Combate** para controlar participantes, iniciativas, ações, danos e cura. A Mesa ao vivo foi retirada; o menu Mesa continua organizado.
 
@@ -13,7 +13,11 @@ A janela dos jogadores recebe o estado visual completo da arena. Marcas antigas 
 
 Quando um combatente passa de PV positivo para 0 PV, ele cai após o impacto do ataque. O corpo permanece deitado e escurecido nas duas arenas. Quem já estava em 0 PV ao abrir o encontro começa deitado, sem repetir a animação. Curar ou desfazer o dano restaura a pose normal. A queda é uma indicação visual de derrota: não muda regras de morte, condições, PV ou iniciativa.
 
-Depois de **Iniciar combate**, falas curtas em português aparecem em balões junto aos combatentes, com intervalos sorteados de 28 a 65 segundos. Heróis encorajam a companhia; adversários desafiam os heróis e feras têm reações narrativas. Ao sofrer dano sem cair, há 55% de chance de uma reação de medo/dor, respeitando uma pausa mínima de 10 segundos entre falas. Só há um balão de cada vez, por cerca de 3 a 5 segundos; quem está derrotado ou inconsciente não fala. O mestre escolhe aleatoriamente a frase e a TV recebe a mesma fala. Elas não são gravadas no histórico nem alteram notas do mestre, e param ao encerrar o combate. Não há voz sintetizada nem serviço externo.
+Depois de **Iniciar combate**, falas curtas em português aparecem em balões junto aos combatentes, em intervalos aleatórios de **9,3 a 21,7 segundos** (três vezes mais frequentes). Heróis encorajam a companhia; adversários desafiam os heróis e feras têm reações narrativas. Ao confirmar um ataque, pode falar o atacante ou, se houve dano e o alvo continua de pé, o alvo reagindo à dor/medo. Dano aplicado pelo gerenciador também pode provocar uma reação. Cura e falhas declaradas não provocam falas de ataque. As reações têm 85% de chance e há uma pausa mínima de seis segundos entre balões; a inspiração periódica recebe espaço mesmo em combate intenso.
+
+O banco offline contém **18.432 variações contextuais**: três situações × três vozes × 2.048 combinações de abertura e mensagem. Cada encontro sorteia sem reposição e guarda os identificadores já usados. Esse registro acompanha o salvamento e o backup, sem ocupar o histórico narrativo; trocar de tela, recarregar ou retomar o encontro não reinicia as falas. Um novo combate, inclusive uma cópia de outro, começa com um sorteio novo. Se uma categoria se esgotar numa sessão excepcionalmente longa, ela fica silenciosa em vez de reciclar falas.
+
+Só há um balão de cada vez, por cerca de 3 a 5 segundos; quem está derrotado ou inconsciente não fala. O mestre escolhe a frase e a TV recebe a mesma fala. As falas param ao encerrar o combate. Não há voz sintetizada nem serviço externo.
 
 Com movimento reduzido no sistema, o combatente assume a pose caída sem a rotação animada. As falas continuam legíveis. Após atualizar o código, recarregue **as duas janelas com F5**.
 

@@ -1,0 +1,13 @@
+{
+  "receivedOnConfirmedDamage": true,
+  "attackOnConfirmation": true,
+  "inspirationWhileActive": true,
+  "exportIncludesMemory": true,
+  "reloadPreservesUsed": true,
+  "noRepeatAfterReload": true,
+  "restorePreservesUsed": true,
+  "noRepeatAfterRestore": true,
+  "selectionAndHpPreserved": true,
+  "errors": [],
+  "external": []
+}

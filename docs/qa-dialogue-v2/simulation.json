@@ -1,0 +1,137 @@
+{
+  "pools": [
+    {
+      "voice": "hero",
+      "type": "received",
+      "count": 2048
+    },
+    {
+      "voice": "hero",
+      "type": "attack",
+      "count": 2048
+    },
+    {
+      "voice": "hero",
+      "type": "inspire",
+      "count": 2048
+    },
+    {
+      "voice": "foe",
+      "type": "received",
+      "count": 2048
+    },
+    {
+      "voice": "foe",
+      "type": "attack",
+      "count": 2048
+    },
+    {
+      "voice": "foe",
+      "type": "inspire",
+      "count": 2048
+    },
+    {
+      "voice": "beast",
+      "type": "received",
+      "count": 2048
+    },
+    {
+      "voice": "beast",
+      "type": "attack",
+      "count": 2048
+    },
+    {
+      "voice": "beast",
+      "type": "inspire",
+      "count": 2048
+    }
+  ],
+  "simulations": [
+    {
+      "voice": "hero",
+      "type": "received",
+      "hours": 3,
+      "count": 1800,
+      "repeats": 0,
+      "reload": true
+    },
+    {
+      "voice": "hero",
+      "type": "attack",
+      "hours": 3,
+      "count": 1800,
+      "repeats": 0,
+      "reload": true
+    },
+    {
+      "voice": "hero",
+      "type": "inspire",
+      "hours": 3,
+      "count": 1136,
+      "repeats": 0,
+      "reload": true
+    },
+    {
+      "voice": "foe",
+      "type": "received",
+      "hours": 3,
+      "count": 1800,
+      "repeats": 0,
+      "reload": true
+    },
+    {
+      "voice": "foe",
+      "type": "attack",
+      "hours": 3,
+      "count": 1800,
+      "repeats": 0,
+      "reload": true
+    },
+    {
+      "voice": "foe",
+      "type": "inspire",
+      "hours": 3,
+      "count": 1136,
+      "repeats": 0,
+      "reload": true
+    },
+    {
+      "voice": "beast",
+      "type": "received",
+      "hours": 3,
+      "count": 1800,
+      "repeats": 0,
+      "reload": true
+    },
+    {
+      "voice": "beast",
+      "type": "attack",
+      "hours": 3,
+      "count": 1800,
+      "repeats": 0,
+      "reload": true
+    },
+    {
+      "voice": "beast",
+      "type": "inspire",
+      "hours": 3,
+      "count": 1136,
+      "repeats": 0,
+      "reload": true
+    }
+  ],
+  "total": 18432,
+  "mixed": {
+    "hours": 3,
+    "count": 1560,
+    "repeats": 0,
+    "contexts": [
+      "received",
+      "attack",
+      "inspire"
+    ]
+  },
+  "randomNewStarts": 30,
+  "duplicateFresh": true,
+  "resumeAndReload": true
+}

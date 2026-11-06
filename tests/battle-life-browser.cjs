@@ -1,6 +1,6 @@
 /* Real renderer and two-window lifecycle; isolated campaign, no network assets. */
 const {chromium}=require('playwright'),{spawn}=require('node:child_process'),fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
-const root=path.resolve(__dirname,'..'),out=path.join(root,'docs/qa-battle-life'),url='http://127.0.0.1:43992';
+const root=path.resolve(__dirname,'..'),out=process.env.RPG_QA_OUTPUT||path.join(root,'docs/qa-battle-life'),url='http://127.0.0.1:43992';
 (async()=>{fs.mkdirSync(out,{recursive:true});const server=spawn(process.execPath,['js/offline-server.mjs','43992'],{cwd:root,windowsHide:true});let browser;
 try{await new Promise((r,j)=>{server.stdout.once('data',r);server.once('error',j)});browser=await chromium.launch({executablePath:process.env.ARENA_QA_BROWSER||'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe',headless:true});
 const context=await browser.newContext({viewport:{width:1366,height:768}}),errors=[],external=[],report={};context.on('page',p=>p.on('pageerror',e=>errors.push(e.message)));
@@ -8,7 +8,7 @@ await context.route('**/*',r=>{if(r.request().url().startsWith(url)||/^(blob:|da
 await context.addInitScript(()=>{
  window.qaSpeech=[];window.qaTime=0;
  Object.defineProperty(window,'RPGBattlePixi',{configurable:true,set(api){const mount=api.mount,speak=api.speak;api.mount=async(...args)=>{window.qaScene=await mount(...args);return qaScene};api.speak=(scene,line)=>{qaSpeech.push(line);return speak(scene,line)};Object.defineProperty(window,'RPGBattlePixi',{value:api,configurable:true})}});
- Object.defineProperty(window,'RPGBattleLife',{configurable:true,set(api){const create=api.createDirector;api.createDirector=opts=>{const director=create({...opts,random:()=>0});return {tick:c=>director.tick(c,Date.now()+qaTime)}};Object.defineProperty(window,'RPGBattleLife',{value:api,configurable:true})}});
+ Object.defineProperty(window,'RPGBattleLife',{configurable:true,set(api){const create=api.createDirector;api.createDirector=opts=>{const director=create({...opts,random:()=>0});return {tick:c=>director.tick(c,Date.now()+qaTime),action:(c,a)=>director.action(c,a,Date.now()+qaTime)}};Object.defineProperty(window,'RPGBattleLife',{value:api,configurable:true})}});
 });
 const page=await context.newPage();await page.goto(url);await page.locator('[data-enter-adventure]').click();
 await page.evaluate(()=>{const s=RPGMasterHost.getState(),c=RPGV3.createCombat(s,{title:'QA — Vozes e queda'});for(const id of ['elenya','calion','nando','anao'])RPGV3.addParticipant(c,{sourceType:'character',sourceId:id,team:'left',hpMax:30,hpCurrent:30});RPGV3.addParticipant(c,{sourceType:'creature',sourceId:'goblin-arqueiro',team:'right',hpCurrent:12,hpMax:12});RPGBattle.ensure(s);RPGV3.beginCombat(c);RPGMasterHost.persist();RPGMasterUI.open('combat')});
