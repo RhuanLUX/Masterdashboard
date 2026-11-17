@@ -1,0 +1,29 @@
+{
+  "version": "4.5.2",
+  "sourceCommit": "862bfe9d24994e7cddc12d4f00a40eaed0cb5224",
+  "publicFeed": "https://github.com/RhuanLUX/Masterdashboard/releases/latest/download/rpg-update.json",
+  "signatureVerified": true,
+  "actualUpdateCheck": "current",
+  "release": "https://github.com/RhuanLUX/Masterdashboard/releases/tag/desktop-v4.5.2",
+  "downloads": [
+    {
+      "name": "RPG-Master-4.5.2-Windows-x64.exe",
+      "size": 365841783,
+      "url": "https://github.com/RhuanLUX/Masterdashboard/releases/download/desktop-v4.5.2/RPG-Master-4.5.2-Windows-x64.exe",
+      "digest": "sha256:b94a2ea910da964159941c8ceca1f6adc3a58382dca7c934176f17b90a8e0419"
+    },
+    {
+      "name": "RPG-Master-4.5.2-macOS-x64.dmg",
+      "size": 383681542,
+      "url": "https://github.com/RhuanLUX/Masterdashboard/releases/download/desktop-v4.5.2/RPG-Master-4.5.2-macOS-x64.dmg",
+      "digest": "sha256:a62bcc38f69560c4a1fa6829b554a8324bb225ab7cbf54928182a5da972cdfd2"
+    },
+    {
+      "name": "RPG-Master-4.5.2-macOS-arm64.dmg",
+      "size": 376655819,
+      "url": "https://github.com/RhuanLUX/Masterdashboard/releases/download/desktop-v4.5.2/RPG-Master-4.5.2-macOS-arm64.dmg",
+      "digest": "sha256:776e79e9844a37acae0bb5e257892904163825d50f53a99e6707305bbe205d07"
+    }
+  ],
+  "localWindowsChecksumVerified": true
+}

@@ -1,0 +1,35 @@
+{
+  "scenes": [
+    {
+      "id": "mordor",
+      "meshPipe": false,
+      "background": "ge",
+      "issues": []
+    },
+    {
+      "id": "fangorn",
+      "meshPipe": false,
+      "background": "ge",
+      "issues": []
+    },
+    {
+      "id": "rivendell",
+      "meshPipe": false,
+      "background": "ge",
+      "issues": []
+    },
+    {
+      "id": "road",
+      "meshPipe": false,
+      "background": "ge",
+      "issues": []
+    },
+    {
+      "id": "hrim",
+      "meshPipe": false,
+      "background": "ge",
+      "issues": []
+    }
+  ],
+  "errors": []
+}

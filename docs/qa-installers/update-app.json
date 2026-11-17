@@ -1,0 +1,11 @@
+{
+  "downloadVerified": true,
+  "installedVersion": "4.5.2",
+  "externalAsar": true,
+  "persistenceAfterUpdate": true,
+  "arenaAndTV": true,
+  "healthyRestart": true,
+  "corruptArchiveRollback": true,
+  "failedBootRollback": true,
+  "errors": []
+}

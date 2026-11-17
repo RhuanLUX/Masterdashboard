@@ -1,0 +1,24 @@
+{
+  "runtime": "packaged",
+  "platform": "win32",
+  "arch": "x64",
+  "imports": [
+    {
+      "format": "docx",
+      "blocks": 171,
+      "ocr": 0
+    },
+    {
+      "format": "digital",
+      "blocks": 3,
+      "ocr": 0
+    },
+    {
+      "format": "scan",
+      "blocks": 4,
+      "ocr": 1
+    }
+  ],
+  "errors": [],
+  "external": []
+}

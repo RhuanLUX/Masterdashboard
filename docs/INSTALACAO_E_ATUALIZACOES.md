@@ -69,11 +69,16 @@ As atualizações comuns do aplicativo usam o mesmo pacote assinado nos dois sis
    o commit da tag. A chave privada fica em `.release-private/update-private.pem`,
    ignorada pelo Git. Preserve uma cópia dessa chave em local seguro. Somente a
    chave pública faz parte dos aplicativos.
-5. Baixe os três artefatos da execução do workflow e coloque os `.exe` e `.dmg`
-   diretamente em `dist/`. Confirme a versão de todos os nomes.
-6. Execute `node tools/publish-desktop.cjs`. Ele confere a tag e o pacote assinado,
-   gera checksums e envia os arquivos a um rascunho. A versão só fica pública
-   depois que todos os instaladores e o pacote comum tiverem sido enviados.
+5. Execute `node tools/publish-desktop.cjs --stage-update`. Ele envia somente o
+   pacote assinado e o manifesto para um rascunho privado da publicação.
+6. Dispare o workflow **Publish tested desktop release**, informando a tag e o
+   número da execução bem-sucedida de **Desktop installers**. Ele confere o commit,
+   baixa os três instaladores diretamente dos artefatos, gera checksums e publica
+   todos os arquivos juntos. Aguarde a conclusão e confira os links e o manifesto.
+
+Para publicar inteiramente por este computador, a alternativa é baixar os três
+artefatos, colocar os `.exe` e `.dmg` diretamente em `dist/` e executar
+`node tools/publish-desktop.cjs` sem a opção de preparação.
 
 O script de publicação usa a credencial GitHub já configurada no Git ou a variável
 `GITHUB_TOKEN`. A chave privada de assinatura permanece neste computador.
