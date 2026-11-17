@@ -199,7 +199,7 @@
     if (!P()) throw new Error('PixiJS não carregou.');
     container.replaceChildren();
     const app = new (P().Application)();
-    await app.init({ width: Math.max(1,container.clientWidth), height: Math.max(1,container.clientHeight), backgroundAlpha: 0, antialias: false, autoDensity: true, resolution: Math.min(global.devicePixelRatio || 1, 2) });
+    await app.init({ width: Math.max(1,container.clientWidth), height: Math.max(1,container.clientHeight), backgroundAlpha: 0, antialias: false, autoDensity: true, autoStart: false, resolution: Math.min(global.devicePixelRatio || 1, 2) });
     app.ticker.maxFPS=60;
     app.canvas.className='pixi-arena-canvas';app.canvas.setAttribute('aria-label','Arena de batalha: equipe esquerda e equipe direita');container.append(app.canvas);
     const layers={};
@@ -303,6 +303,7 @@
       }
     }};
     app.ticker.add(idle);
+    app.start();
     scene.destroy=()=>{if(scene.destroyed)return;scene.destroyed=true;observer.disconnect();scene.tweens.forEach(cancel=>cancel());scene.scenery?.destroy();app.destroy(true,{children:true,texture:false,textureSource:false});};
     return scene;
   }

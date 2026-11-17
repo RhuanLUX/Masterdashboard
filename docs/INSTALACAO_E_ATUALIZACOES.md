@@ -4,15 +4,15 @@ Os pacotes atuais ficam na [página de downloads](https://github.com/RhuanLUX/Ma
 
 ## Windows
 
-Baixe `RPG-Master-4.5.0-Windows-x64.exe`, execute e siga o instalador. Abra o
+Baixe `RPG-Master-4.5.1-Windows-x64.exe`, execute e siga o instalador. Abra o
 atalho **RPG Master**. O aplicativo inclui seu próprio runtime e todos os assets.
 O instalador usa a conta atual e preserva a pasta da campanha nas reinstalações.
 A primeira instalação usa um executável sem certificado comercial de assinatura.
 
 ## Mac
 
-Escolha `RPG-Master-4.5.0-macOS-arm64.dmg` para Apple Silicon (M1 ou posterior)
-ou `RPG-Master-4.5.0-macOS-x64.dmg` para Intel. A informação está no menu Apple,
+Escolha `RPG-Master-4.5.1-macOS-arm64.dmg` para Apple Silicon (M1 ou posterior)
+ou `RPG-Master-4.5.1-macOS-x64.dmg` para Intel. A informação está no menu Apple,
 em **Sobre Este Mac**. Abra o DMG e arraste **RPG Master** para **Aplicativos**.
 Abra a cópia de Aplicativos e ejete o DMG.
 

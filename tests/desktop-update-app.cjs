@@ -3,6 +3,7 @@ const { _electron: electron } = require('playwright');
 const fs = require('node:fs');
 const path = require('node:path');
 const crypto = require('node:crypto');
+const http = require('node:http');
 const assert = require('node:assert/strict');
 const asar = require(require.resolve('@electron/asar', { paths: [path.dirname(require.resolve('electron-builder/package.json'))] }));
 const { readState, writeState, archivePath } = require('../desktop/update-core.cjs');
@@ -23,6 +24,13 @@ const { readState, writeState, archivePath } = require('../desktop/update-core.c
   pkg.version = '4.4.9';
   fs.writeFileSync(path.join(host, 'package.json'), JSON.stringify(pkg));
   let app;
+  const server = http.createServer((request, response) => {
+    const file = request.url === '/manifest' ? manifestPath : compressed;
+    response.setHeader('Content-Length', fs.statSync(file).size);
+    fs.createReadStream(file).pipe(response);
+  });
+  await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
+  const origin = 'http://127.0.0.1:' + server.address().port;
   const errors = [];
   async function open() {
     app = await electron.launch({ args: [host, '--rpg-profile=' + profile, '--disable-gpu-sandbox'] });
@@ -40,16 +48,12 @@ const { readState, writeState, archivePath } = require('../desktop/update-core.c
     assert.equal((await page.evaluate(() => RPGDesktop.updateStatus())).currentVersion, '4.4.9');
     await page.evaluate(() => { RPGMasterHost.getState().characters.elenya.notes = ['Campanha preservada durante atualização']; RPGMasterHost.persist(); return RPGStorage.flush(); });
     // Download through the production service, with an offline fixture transport only.
-    const downloaded = await app.evaluate(async ({}, paths) => {
-      const fs = require('node:fs');
-      const { Readable } = require('node:stream');
+    const downloaded = await app.evaluate(async ({}, origin) => {
       const { updates } = global.RPG_APP_CONTEXT;
       updates.enabled = true;
-      updates.fetchImpl = async url => url.endsWith('rpg-update.json')
-        ? new Response(fs.readFileSync(paths.manifestPath))
-        : new Response(Readable.toWeb(fs.createReadStream(paths.compressed)));
+      updates.fetchImpl = url => fetch(origin + (url.endsWith('rpg-update.json') ? '/manifest' : '/package'));
       return updates.check(true);
-    }, { manifestPath, compressed });
+    }, origin);
     assert.equal(downloaded.phase, 'ready');
     await page.waitForSelector('[data-update-restart]:not([hidden])');
     await page.screenshot({ path: path.join(temp, 'update-ready.png') });
@@ -83,5 +87,5 @@ const { readState, writeState, archivePath } = require('../desktop/update-core.c
     fs.copyFileSync(path.join(temp, 'update-ready.png'), path.join(root, 'docs/qa-installers/update-ready.png'));
     fs.writeFileSync(path.join(root, 'docs/qa-installers/update-app.json'), JSON.stringify({ downloadVerified:true, installedVersion:manifest.version, externalAsar:true, persistenceAfterUpdate:true, arenaAndTV:true, healthyRestart:true, corruptArchiveRollback:true, failedBootRollback:true, errors }, null, 2));
     console.log('DESKTOP_UPDATE_APP_PASS verified download, actual ASAR boot, campaign persistence, arena, TV, restart and rollback');
-  } finally { await app?.close(); }
+  } finally { await app?.close(); await new Promise(resolve => server.close(resolve)); }
 })().catch(error => { console.error(error); process.exitCode = 1; });

@@ -1,6 +1,10 @@
 'use strict';
 
-const fs = require('node:fs');
+// Electron presents *.asar as virtual directories. Integrity checks need the physical bytes.
+const fs = (() => {
+  try { return require('original-fs'); }
+  catch (_) { return require('node:fs'); }
+})();
 const path = require('node:path');
 const crypto = require('node:crypto');
 const zlib = require('node:zlib');

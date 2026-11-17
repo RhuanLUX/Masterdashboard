@@ -2,7 +2,7 @@ const {_electron:electron}=require('playwright'),fs=require('node:fs'),path=requ
 const root=path.resolve(__dirname,'..'),out=process.env.RPG_QA_OUTPUT||path.join(root,'docs/qa-platform-v4'),profile=path.join(root,'test-results/desktop-'+Date.now()),exe=process.env.RPG_TEST_EXE;
 (async()=>{fs.mkdirSync(out,{recursive:true});let app;
 const errors=[];
-async function launch(){app=await electron.launch({executablePath:exe||require('electron'),args:[...(exe?[]:[root]),'--rpg-profile='+profile,'--disable-gpu-sandbox']});const page=await app.firstWindow();page.on('pageerror',e=>errors.push(e.message));await page.waitForSelector('[data-enter-adventure]',{timeout:60000});return page}
+async function launch(){app=await electron.launch({executablePath:exe||require('electron'),args:[...(exe?[]:[root]),'--rpg-profile='+profile,'--disable-gpu-sandbox']});const page=await app.firstWindow();page.on('pageerror',e=>errors.push(e.stack||e.message));await page.waitForSelector('[data-enter-adventure]',{timeout:60000});return page}
 try{
  let page=await launch();await page.locator('[data-enter-adventure]').click();assert(await page.evaluate(()=>!!window.RPGDesktop));assert.equal(await page.evaluate(()=>typeof require),'undefined');assert(await page.evaluate(()=>location.href.startsWith('rpg://app/')));
  await page.evaluate(()=>{const s=RPGMasterHost.getState();s.characters.elenya.notes=['Desktop persistence QA'];s.app.theme='elven';RPGMasterHost.persist();return RPGStorage.flush()});await page.screenshot({path:path.join(out,'desktop-session.png')});
