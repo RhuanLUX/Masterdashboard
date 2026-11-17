@@ -194,6 +194,8 @@
     a.cancelDefeat=()=>{stop();clear();a.falling=false;};
   }
   async function mount(container, participants, options = {}) {
+    // Assets load asynchronously. Keep this mount's roster stable while participants are added.
+    participants = [...participants];
     if (!P()) throw new Error('PixiJS não carregou.');
     container.replaceChildren();
     const app = new (P().Application)();

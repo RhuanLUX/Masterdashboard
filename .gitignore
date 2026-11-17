@@ -10,3 +10,4 @@ node_modules/
 dist/
 .qa-profile/
 test-results/
+.release-private/

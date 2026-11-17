@@ -7,6 +7,13 @@ contextBridge.exposeInMainWorld('RPGDesktop',{
   location:()=>ipcRenderer.invoke('campaign:location'),
   displays:()=>ipcRenderer.invoke('session:displays'),
   placeWindow:(role,displayId)=>ipcRenderer.invoke('session:place',role,displayId),
+  updateStatus:()=>ipcRenderer.invoke('updates:status'),
+  checkUpdates:()=>ipcRenderer.invoke('updates:check'),
+  automaticUpdates:value=>ipcRenderer.invoke('updates:automatic',value),
+  restartToUpdate:()=>ipcRenderer.invoke('updates:restart'),
+  updateRelease:()=>ipcRenderer.invoke('updates:release'),
+  applicationReady:()=>ipcRenderer.invoke('updates:ready'),
+  onUpdateStatus:callback=>ipcRenderer.on('updates:status',(_,status)=>callback(status)),
   onBeforeClose:callback=>ipcRenderer.on('campaign:closing',()=>callback()),
   closed:ok=>ipcRenderer.invoke('campaign:closed',ok)
 });

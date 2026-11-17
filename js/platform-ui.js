@@ -21,6 +21,7 @@
   function search(){return window.RPGSearch.search()}
   async function recovery(){const list=await RPGStorage.recoveries(),d=dialog('Recuperação automática',`<p>Restaurar cria uma cópia do estado atual antes da troca.</p>${list.map((x,i)=>`<button class="metal-btn" data-recover="${i}">${new Date(x.date).toLocaleString('pt-BR')}</button>`).join('')||'<p>Ainda não há cópias de recuperação. Elas são criadas antes de substituir uma gravação anterior.</p>'}`);d.querySelectorAll('[data-recover]').forEach(n=>n.onclick=async()=>{try{const x=await RPGStorage.recovery(list[+n.dataset.recover].id);d.close();await host().restoreBackup(x)}catch(e){alert(e.message)}})}
   function bind(){
+    window.RPGDesktopUpdates?.bind();
     document.querySelectorAll('[data-menu-toggle]').forEach(b=>b.onclick=e=>{e.stopPropagation();const d=document.getElementById(b.dataset.menuToggle),was=d.classList.contains('open');document.querySelectorAll('.dropdown.open').forEach(x=>x.classList.remove('open'));document.querySelectorAll('[data-menu-toggle]').forEach(x=>x.setAttribute('aria-expanded','false'));d.classList.toggle('open',!was);b.setAttribute('aria-expanded',String(!was))});
     document.querySelectorAll('[data-global-search]').forEach(b=>b.onclick=search);
     document.querySelectorAll('[data-master-open]').forEach(b=>b.onclick=()=>window.RPGMasterUI?.open(b.dataset.masterOpen));

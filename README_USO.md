@@ -2,7 +2,7 @@
 
 **V2 — Versão 2 aprovada pelo proprietário em 6 de novembro de 2026.** Esta versão está preservada na tag Git **V2**, sobre a base técnica 4.4.1. Registro em [VERSAO_APROVADA.txt](VERSAO_APROVADA.txt). Nenhum instalador foi gerado para este marco.
 
-**Versão atual do código: 4.4.1 — visitantes animados nos cenários, catálogo animado e 13 efeitos de magia. Nenhum novo instalador foi gerado.** Execute **INICIAR_RPG.bat** (Windows) ou **INICIAR_RPG.command** (macOS) nesta pasta. Seus controles continuam em **Mesa → Combate**. Para os jogadores, abra **TV de combate** e arraste a janela para a segunda tela. Todos os participantes, alvos e efeitos da arena são refletidos na TV; flags antigas de revelação não escondem inimigos nem bloqueiam ataques.
+**Versão atual do código: 4.5.0 — instaladores Windows/macOS e atualizações assinadas.** Baixe o instalador do seu sistema na [página de downloads](https://github.com/RhuanLUX/Masterdashboard/releases/latest). No aplicativo instalado, **Configurações → Atualizações do aplicativo** permite verificar ou reiniciar para aplicar uma atualização. Consulte o [guia de instalação, migração dos dados e atualizações](docs/INSTALACAO_E_ATUALIZACOES.md). Para executar a pasta do projeto, use **INICIAR_RPG.bat** (Windows) ou **INICIAR_RPG.command** (macOS). Seus controles continuam em **Mesa → Combate**. Para os jogadores, abra **TV de combate** e arraste a janela para a segunda tela. Todos os participantes, alvos e efeitos da arena são refletidos na TV.
 
 Além do dragão, os cenários recebem aparições ocasionais de corvos, águias, corujas, cervos e uma caravana. Cada ambiente tem visitantes próprios, com quadros individuais e passagens em direções e intervalos variados, sincronizadas na TV. O recurso respeita **reduzir movimento** do sistema. Atualize as duas janelas com **F5**. Veja as [aparições e a verificação visual](docs/AMBIENTACAO_V4_4_1.md).
 
@@ -12,7 +12,7 @@ A nova biblioteca fica em **Biblioteca → Compêndio ampliado**: 42 fichas nova
 
 Ao chegar a zero PV, o combatente cai e permanece no chão; cura ou desfazer restauram sua posição. As falas periódicas agora são três vezes mais frequentes: aproximadamente **9–22 segundos**. Um banco local de **18.432 variações contextuais** separa receber dano, atacar e inspirar/desafiar durante a luta. O encontro guarda as falas usadas para evitar repetição, inclusive após recarregar e no backup. Quedas e falas acompanham a TV. Atualize com **F5 nas duas janelas** depois desta atualização.
 
-Os instaladores **4.0.0** existentes continuam disponíveis, mas não incluem estas alterações e não são atualizados automaticamente. O runtime desktop de desenvolvimento pode executar o código atual com `pnpm start`, usando as dependências já instaladas.
+Instaladores antigos **4.0.0** não possuem o mecanismo de atualização novo. Instale a versão **4.5.0** para recebê-lo. O runtime desktop de desenvolvimento pode executar o código atual com `pnpm start`, usando as dependências já instaladas.
 
 Para executar direto da pasta: use apenas **INICIAR_RPG.bat** (Windows) ou **INICIAR_RPG.command** (macOS). O servidor e o navegador abrem juntos no endereço fixo `http://127.0.0.1:41731/`. Não é necessário abrir outro arquivo. O modo navegador no macOS requer Python 3 ou Node.js; os pacotes desktop incluem o runtime.
 

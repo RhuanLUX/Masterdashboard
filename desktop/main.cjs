@@ -1,13 +1,10 @@
 const {app,BrowserWindow,protocol,net,ipcMain,shell,dialog,screen}=require('electron');
 const path=require('node:path'),{pathToFileURL}=require('node:url');
 const {CampaignStore}=require('./store.cjs');
+const runtime=global.RPG_APP_CONTEXT;
 protocol.registerSchemesAsPrivileged([{scheme:'rpg',privileges:{standard:true,secure:true,supportFetchAPI:true,corsEnabled:true,stream:true,allowServiceWorkers:true}}]);
 // QA profiles are explicit command-line arguments; normal installs always use userData.
-const qaProfile=process.argv.find(a=>a.startsWith('--rpg-profile='));
-if(qaProfile)app.setPath('userData',path.resolve(qaProfile.slice(14)));
-const gotLock=app.requestSingleInstanceLock();
-if(!gotLock)app.quit();
-let main,store,closing=false,closeRequested=false,quitRequested=false;
+let main,store,closing=false,closeRequested=false,quitRequested=false,restartRequested=false;
 function isMain(event){if(event.sender!==main?.webContents||event.senderFrame!==main.webContents.mainFrame||!event.senderFrame.url.startsWith('rpg://app/index.html'))throw Error('Acesso restrito à janela do mestre.')}
 function bindIPC(name,fn){ipcMain.handle(name,(event,...args)=>{isMain(event);return fn(...args)})}
 function configureWindow(win){
@@ -21,17 +18,27 @@ function configureWindow(win){
 async function createWindow(){
   main=new BrowserWindow({width:1440,height:920,minWidth:800,minHeight:600,backgroundColor:'#050c15',title:'RPG Master',autoHideMenuBar:true,show:false,webPreferences:{preload:path.join(__dirname,'preload.cjs'),nodeIntegration:false,contextIsolation:true,sandbox:true}});
   configureWindow(main);main.once('ready-to-show',()=>main.show());
-  main.on('close',e=>{if(closing)return;e.preventDefault();if(closeRequested)return;closeRequested=true;main.webContents.send('campaign:closing');setTimeout(async()=>{if(!closing&&closeRequested){closeRequested=false;quitRequested=false;await dialog.showMessageBox(main,{type:'error',message:'A gravação ainda não foi confirmada.',detail:'Exporte um backup ou aguarde e tente fechar novamente.'})}},12000).unref()});
+  main.on('close',e=>{if(closing)return;e.preventDefault();if(closeRequested)return;closeRequested=true;main.webContents.send('campaign:closing');setTimeout(async()=>{if(!closing&&closeRequested){closeRequested=false;quitRequested=false;restartRequested=false;await dialog.showMessageBox(main,{type:'error',message:'A gravação ainda não foi confirmada.',detail:'Exporte um backup ou aguarde e tente fechar novamente.'})}},12000).unref()});
   main.on('closed',()=>{main=null;for(const w of BrowserWindow.getAllWindows())w.close()});
   await main.loadURL('rpg://app/index.html');
 }
-if(gotLock){
+{
  app.on('before-quit',()=>{quitRequested=true});
  app.on('second-instance',()=>{if(main){if(main.isMinimized())main.restore();main.focus()}});
  app.whenReady().then(async()=>{
-  const root=app.getAppPath();
+  const root=runtime.root;
   protocol.handle('rpg',request=>{try{const u=new URL(request.url);if(u.hostname!=='app')return new Response('Forbidden',{status:403});const relative=decodeURIComponent(u.pathname).replace(/^\/+/, '')||'index.html';const file=path.resolve(root,relative);if(!file.startsWith(root+path.sep)||/^(desktop|node_modules)([\\/]|$)/.test(relative))return new Response('Forbidden',{status:403});return net.fetch(pathToFileURL(file).href)}catch(_){return new Response('Not found',{status:404})}});
   store=new CampaignStore(path.join(app.getPath('userData'),'campaign'));
+  runtime.updates.notify=status=>main?.webContents.send('updates:status',status);
+  bindIPC('updates:status',()=>({...runtime.updates.status,platform:process.platform,arch:process.arch,restored:runtime.restored}));
+  bindIPC('updates:check',()=>runtime.updates.check(true));
+  bindIPC('updates:automatic',value=>runtime.updates.setAutomatic(value));
+  bindIPC('updates:ready',()=>{runtime.markHealthy();return true});
+  bindIPC('updates:restart',()=>{
+    if(runtime.updates.status.phase!=='ready')throw Error('Nenhuma atualização pronta.');
+    restartRequested=true;quitRequested=true;main.close();return true;
+  });
+  bindIPC('updates:release',()=>shell.openExternal(runtime.updates.status.releasePage));
   bindIPC('campaign:load',()=>store.load());bindIPC('campaign:save',(x,options)=>store.save(x,{forceBackup:options?.forceBackup===true}));bindIPC('campaign:list',()=>store.list());bindIPC('campaign:recovery',id=>store.readRecovery(id));bindIPC('campaign:location',()=>store.directory);
   bindIPC('session:displays',()=>screen.getAllDisplays().map((d,i)=>({id:d.id,label:d.label||'Monitor '+(i+1),width:d.workArea.width,height:d.workArea.height})));
   bindIPC('session:place',(role,displayId)=>{
@@ -42,8 +49,10 @@ if(gotLock){
     if(!win)throw Error('Abra esta janela antes de escolher o monitor.');
     if(win.isFullScreen())win.setFullScreen(false);win.setBounds(display.workArea);win.show();return true;
   });
-  bindIPC('campaign:closed',async ok=>{closeRequested=false;if(ok){await store.chain;closing=true;if(quitRequested)app.quit();else main.close()}else{quitRequested=false;await dialog.showMessageBox(main,{type:'error',message:'Não foi possível salvar. Exporte um backup antes de sair.'})}});
+  bindIPC('campaign:closed',async ok=>{closeRequested=false;if(ok){await store.chain;closing=true;if(restartRequested)app.relaunch();if(quitRequested)app.quit();else main.close()}else{quitRequested=false;restartRequested=false;await dialog.showMessageBox(main,{type:'error',message:'Não foi possível salvar. Exporte um backup antes de sair.'})}});
   await createWindow();
+  setTimeout(()=>runtime.updates.check(),8000).unref();
+  setInterval(()=>runtime.updates.check(),6*60*60*1000).unref();
  });
  app.on('activate',()=>{if(!main){closing=false;quitRequested=false;createWindow()}});
  app.on('window-all-closed',()=>{if(process.platform!=='darwin')app.quit()});
