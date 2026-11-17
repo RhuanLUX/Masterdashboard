@@ -1,0 +1,57 @@
+name: Publish tested desktop release
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Desktop tag containing the tested installers
+        required: true
+      run_id:
+        description: Successful Desktop installers workflow run
+        required: true
+permissions:
+  contents: write
+  actions: read
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      GH_TOKEN: ${{ github.token }}
+      RELEASE_TAG: ${{ inputs.tag }}
+      BUILD_RUN: ${{ inputs.run_id }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.tag }}
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Verify tested revision
+        run: |
+          node <<'NODE'
+          const {execFileSync}=require('node:child_process');
+          if(!/^desktop-v\d+\.\d+\.\d+$/.test(process.env.RELEASE_TAG)||!/^\d+$/.test(process.env.BUILD_RUN))throw Error('Invalid release input');
+          const run=JSON.parse(execFileSync('gh',['api','repos/'+process.env.GITHUB_REPOSITORY+'/actions/runs/'+process.env.BUILD_RUN],{encoding:'utf8'}));
+          const revision=execFileSync('git',['rev-parse',process.env.RELEASE_TAG+'^{commit}'],{encoding:'utf8'}).trim();
+          if(run.conclusion!=='success'||run.head_sha!==revision||run.path!=='.github/workflows/desktop.yml')throw Error('Installer build is not a successful run of this revision');
+          const jobs=JSON.parse(execFileSync('gh',['api','repos/'+process.env.GITHUB_REPOSITORY+'/actions/runs/'+process.env.BUILD_RUN+'/jobs'],{encoding:'utf8'})).jobs;
+          if(jobs.length!==3||jobs.some(job=>job.conclusion!=='success'))throw Error('All three installer jobs must pass');
+          NODE
+      - uses: actions/download-artifact@v4
+        with:
+          github-token: ${{ github.token }}
+          run-id: ${{ inputs.run_id }}
+          pattern: RPG-Master-*
+          path: dist/ci
+      - name: Collect platform installers
+        run: |
+          node <<'NODE'
+          const fs=require('node:fs'),path=require('node:path'),version=require('./package.json').version;
+          const suffixes=['Windows-x64.exe','macOS-x64.dmg','macOS-arm64.dmg'];
+          for(const suffix of suffixes){const name='RPG-Master-'+version+'-'+suffix;const matches=fs.readdirSync('dist/ci',{recursive:true}).filter(file=>path.basename(file)===name);if(matches.length!==1)throw Error('Missing or ambiguous installer '+name);fs.copyFileSync(path.join('dist/ci',matches[0]),path.join('dist',name));}
+          NODE
+      - name: Download locally signed update from draft
+        run: gh release download "$RELEASE_TAG" --pattern '*-update.asar.gz' --pattern rpg-update.json --dir dist
+      - name: Verify and publish all platforms together
+        run: node tools/publish-desktop.cjs

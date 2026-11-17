@@ -12,14 +12,18 @@ async function publish() {
   const root = path.resolve(__dirname, '..');
   const directory = path.join(root, 'dist');
   const version = pkg.version;
+  const stageOnly = process.argv.includes('--stage-update');
   const tag = 'desktop-v' + version;
   const revision = execFileSync('git', ['rev-parse', tag + '^{commit}'], { encoding: 'utf8' }).trim();
   const manifest = verifyManifest(JSON.parse(fs.readFileSync(path.join(directory, 'rpg-update.json'), 'utf8')), fs.readFileSync(path.join(root, 'desktop/update-public.pem')));
   if (manifest.version !== version || manifest.sourceCommit !== revision) throw Error('O pacote assinado não corresponde à tag de publicação.');
-  const names = [
+  const installers = [
     'RPG-Master-' + version + '-Windows-x64.exe',
     'RPG-Master-' + version + '-macOS-x64.dmg',
-    'RPG-Master-' + version + '-macOS-arm64.dmg',
+    'RPG-Master-' + version + '-macOS-arm64.dmg'
+  ];
+  const names = [
+    ...(stageOnly ? [] : installers),
     'RPG-Master-' + version + '-update.asar.gz',
     'rpg-update.json'
   ];
@@ -32,8 +36,10 @@ async function publish() {
     if (name.endsWith('.gz') && digest !== manifest.sha256) throw Error('Hash do pacote de atualização diverge do manifesto.');
     hashes.push(digest + '  ' + name);
   }
-  fs.writeFileSync(path.join(directory, 'SHA256SUMS-' + version + '.txt'), hashes.join('\n') + '\n');
-  names.push('SHA256SUMS-' + version + '.txt');
+  if (!stageOnly) {
+    fs.writeFileSync(path.join(directory, 'SHA256SUMS-' + version + '.txt'), hashes.join('\n') + '\n');
+    names.push('SHA256SUMS-' + version + '.txt');
+  }
   let token = process.env.GITHUB_TOKEN;
   if (!token) {
     const result = spawnSync('git', ['credential', 'fill'], { input: 'protocol=https\nhost=github.com\n\n', encoding: 'utf8', windowsHide: true, env: { ...process.env, GIT_TERMINAL_PROMPT: '0' } });
@@ -73,6 +79,7 @@ async function publish() {
   }
   const assets = await api('/releases/' + release.id + '/assets');
   if (!names.every(name => assets.some(asset => asset.name === name))) throw Error('Publicação incompleta. Rascunho preservado.');
+  if (stageOnly) { console.log('SIGNED_UPDATE_STAGED', tag); return; }
   await api('/releases/' + release.id, { method: 'PATCH', body: JSON.stringify({ draft: false, make_latest: 'true' }) });
   console.log('PUBLISHED', release.html_url);
 }
