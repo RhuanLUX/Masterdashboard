@@ -65,7 +65,7 @@ const { readState, writeState, archivePath } = require('../desktop/update-core.c
     assert.equal(readState(directory).trial, false);
     // Renderer, arena and public TV are served from the verified external ASAR.
     await page.evaluate(() => { const s=RPGMasterHost.getState(), c=RPGV3.createCombat(s,{title:'Atualização verificada'}); RPGV3.addParticipant(c,{sourceType:'character',sourceId:'calion',team:'left'}); RPGV3.addParticipant(c,{sourceType:'creature',sourceId:'goblin-arqueiro',team:'right'}); RPGBattle.ensure(s); RPGMasterHost.persist(); RPGMasterUI.open('combat'); });
-    await page.waitForSelector('[data-pixi-arena] canvas', { timeout: 60000 });
+    await page.waitForSelector('#battle-arena-shell[data-arena-ready="true"] canvas', { timeout: 60000 });
     const popup = app.waitForEvent('window'); await page.locator('[data-arena-present]').click();
     const tv = await popup; await tv.waitForSelector('canvas', { timeout: 60000 });
     assert.equal(await tv.evaluate(() => typeof RPGDesktop), 'undefined'); await tv.close();

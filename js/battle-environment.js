@@ -11,8 +11,14 @@
     const motion=new P.Graphics();motion.eventMode='none';motion.scale.set(W/640,H/360);layers.middle.addChild(motion);roots.push(motion);
     const ready=P.Assets.load('assets/battle-scenes/'+(id==='mordor'?'v4.4':'v4.3')+'/'+id+'.png').then(texture=>{
       if(disposed)return;texture.source.scaleMode='nearest';
-      mesh=new P.MeshPlane({texture,verticesX:17,verticesY:13});mesh.eventMode='none';mesh.scale.set(W/texture.width,H/texture.height);
-      positions=mesh.geometry.getBuffer('aPosition');original=new Float32Array(positions.data);
+      // Pixi's software Canvas renderer has no mesh pipe. Keep the full art as a Sprite there.
+      if(config.meshSupported===false){
+        mesh=new P.Sprite(texture);
+      }else{
+        mesh=new P.MeshPlane({texture,verticesX:17,verticesY:13});
+        positions=mesh.geometry.getBuffer('aPosition');original=new Float32Array(positions.data);
+      }
+      mesh.eventMode='none';mesh.scale.set(W/texture.width,H/texture.height);
       layers.distant.addChild(mesh);roots.push(mesh);
       // The original 16-bit art is retained; a subtle four-pose wind only touches foliage.
       // No bitmap is cut into rectangles, and the lower fighting surface stays fixed.
@@ -23,7 +29,7 @@
       visitors.tick(now,reduced);
       const time=reduced?0:Math.max(0,now-Number(config.epoch||0)),step=Math.floor(time/125);if(step===previous)return;previous=step;frame=step%4;
       const f=[0,1,0,-1][frame];motion.clear();
-      if(mesh){
+      if(mesh&&positions){
         const tw=mesh.texture.width,th=mesh.texture.height;
         for(let i=0;i<positions.data.length;i+=2){const x=original[i],y=original[i+1],v=y/th,u=x/tw;
           const foliage=(id==='mordor'?0:id==='fangorn'?1:id==='rivendell'||id==='road'?(u<.20||u>.86?1:0):u<.23||u>.87?.45:0);

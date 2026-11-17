@@ -238,7 +238,7 @@
       scene.scenery?.destroy();
       for(const key of ['distant','middle','surface'])layers[key].removeChildren().forEach(x=>x.destroy());
       if(!global.RPGBattleEnvironment)backdrop(layers,W,H);
-      scene.scenery=global.RPGBattleEnvironment?.mount(layers,W,H,scene.environment);
+      scene.scenery=global.RPGBattleEnvironment?.mount(layers,W,H,{...scene.environment,meshSupported:!!app.renderer.renderPipes.mesh});
       scene.scenery?.tick(Date.now(),global.matchMedia?.('(prefers-reduced-motion: reduce)').matches);
       const groups=[participants.filter(p=>!isEnemy(p)),participants.filter(isEnemy)];
       const fieldTop=H*.40,fieldHeight=H*.56,sideWidth=W*.38;
@@ -304,7 +304,7 @@
     }};
     app.ticker.add(idle);
     app.start();
-    scene.destroy=()=>{if(scene.destroyed)return;scene.destroyed=true;observer.disconnect();scene.tweens.forEach(cancel=>cancel());scene.scenery?.destroy();app.destroy(true,{children:true,texture:false,textureSource:false});};
+    scene.destroy=()=>{if(scene.destroyed)return;scene.destroyed=true;app.stop();observer.disconnect();scene.tweens.forEach(cancel=>cancel());scene.scenery?.destroy();app.destroy(true,{children:true,texture:false,textureSource:false});};
     return scene;
   }
   function tween(scene,duration,update,done){let elapsed=0;const cancel=()=>{scene.app.ticker.remove(tick);scene.tweens.delete(cancel);};const tick=ticker=>{elapsed+=ticker.deltaMS;update(Math.min(1,elapsed/duration));if(elapsed>=duration){cancel();done?.();}};scene.tweens.add(cancel);scene.app.ticker.add(tick);return cancel;}
